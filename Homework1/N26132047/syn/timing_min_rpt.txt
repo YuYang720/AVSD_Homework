@@ -7,7 +7,7 @@ Report : timing
         -sort_by group
 Design : top
 Version: P-2019.03-SP1-1
-Date   : Thu Sep 25 15:02:02 2025
+Date   : Fri Sep 26 14:20:04 2025
 ****************************************
 
  # A fanout number of 1000 was used for high fanout net computations.

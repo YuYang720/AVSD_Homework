@@ -26,10 +26,6 @@ module LD_Filter(
                 selected_byte = ld_data[31:24];
                 selected_half = 16'b0;
             end
-            default: begin
-                selected_byte = 8'b0;
-                selected_half = 16'b0;
-            end
         endcase
 
         case(func3)

@@ -9,8 +9,6 @@ module ALU (
 );
     
     logic [31:0] fp_result;
-    logic        condition; // for branch s
-
     FP_calculator FP_unit (
         .operand1(operand1),
         .operand2(operand2),
@@ -19,6 +17,7 @@ module ALU (
     );
 
     always_comb begin
+
         case(op)
         // for R_type func7 define add/sub, I_type always add
         `R_type, `I_arth: begin
@@ -34,23 +33,24 @@ module ALU (
             endcase
         end  
         `B_type: begin
+            
             case(func3)
-                `BEQ:     condition = (operand1 == operand2);
-                `BNE:     condition = (operand1 != operand2);
-                `BLT:     condition = ($signed(operand1) < $signed(operand2));
-                `BGE:     condition = ($signed(operand1) >= $signed(operand2));
-                `BLTU:    condition = (operand1 < operand2);
-                `BGEU:    condition = (operand1 >= operand2);
-                default:  condition = 1'b0;
+                `BEQ:     alu_out = {{31{1'b0}}, (operand1 == operand2)};
+                `BNE:     alu_out = {{31{1'b0}}, (operand1 != operand2)};
+                `BLT:     alu_out = {{31{1'b0}}, ($signed(operand1) < $signed(operand2))};
+                `BGE:     alu_out = {{31{1'b0}}, ($signed(operand1) >= $signed(operand2))};
+                `BLTU:    alu_out = {{31{1'b0}}, (operand1 < operand2)};
+                `BGEU:    alu_out = {{31{1'b0}}, (operand1 >= operand2)};
+                default:  alu_out = 32'b0;
             endcase
-            // branch instruction output 1 bit, extend to 32 bits
-            alu_out = {{31{1'b0}}, condition};
         end
         `LUI:             alu_out = operand2; 
         `F_arth:          alu_out = fp_result;
         `JAL, `JALR:      alu_out = operand1 + 32'd4;
         `AUIPC, `I_load, `S_type, `F_FLW, `F_FSW: alu_out = operand1 + operand2;
-        default:   alu_out = 32'b0;
+        default: begin
+            alu_out = 32'b0;
+        end  
         endcase
     end
 

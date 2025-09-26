@@ -101,7 +101,6 @@ module Controller(
                         2'b01: MEM_bweb = 32'hFFFF00FF;  // 寫入 byte 1
                         2'b10: MEM_bweb = 32'hFF00FFFF;  // 寫入 byte 2
                         2'b11: MEM_bweb = 32'h00FFFFFF;  // 寫入 byte 3
-                        default: MEM_bweb = 32'hFFFFFFFF;
                     endcase
                 end
                 3'b001: begin    // SH

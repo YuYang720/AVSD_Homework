@@ -1,5 +1,5 @@
 Loading db file '/usr/cad/CBDK/Executable_Package/Collaterals/IP/stdcell/N16ADFP_StdCell/NLDM/N16ADFP_StdCellss0p72vm40c.db'
-Loading db file '/home/user1/avsd25/avsd2541/N26132047/sim/SRAM/SRAM_ss0p72v0p72vm40c_100a.db'
+Loading db file '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/sim/SRAM/SRAM_ss0p72v0p72vm40c_100a.db'
 Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
 Warning: Design has unannotated primary inputs. (PWR-414)
 Warning: Design has unannotated sequential cell outputs. (PWR-415)
@@ -10,14 +10,14 @@ Report : power
         -analysis_effort low
 Design : top
 Version: P-2019.03-SP1-1
-Date   : Thu Sep 25 15:02:07 2025
+Date   : Fri Sep 26 14:20:09 2025
 ****************************************
 
 
 Library(s) Used:
 
     N16ADFP_StdCellss0p72vm40c (File: /usr/cad/CBDK/Executable_Package/Collaterals/IP/stdcell/N16ADFP_StdCell/NLDM/N16ADFP_StdCellss0p72vm40c.db)
-    SRAM_ss0p72v0p72vm40c_100a (File: /home/user1/avsd25/avsd2541/N26132047/sim/SRAM/SRAM_ss0p72v0p72vm40c_100a.db)
+    SRAM_ss0p72v0p72vm40c_100a (File: /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/sim/SRAM/SRAM_ss0p72v0p72vm40c_100a.db)
 
 
 Operating Conditions: ss0p72vm40c   Library: N16ADFP_StdCellss0p72vm40c
@@ -81,7 +81,7 @@ JB_target_gen_DW01_add_1
                        ZeroWireload      N16ADFP_StdCellss0p72vm40c
 FP_calculator_DW01_sub_J31_0
                        ZeroWireload      N16ADFP_StdCellss0p72vm40c
-FP_calculator_DW01_add_J34_0
+FP_calculator_DW01_add_J32_0
                        ZeroWireload      N16ADFP_StdCellss0p72vm40c
 FP_calculator_DW_cmp_J35_0
                        ZeroWireload      N16ADFP_StdCellss0p72vm40c

@@ -1,0 +1,2213 @@
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+              Version P-2019.03-SP1-1 for linux64 - May 06, 2019 
+
+                    Copyright (c) 1988 - 2019 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+Initializing...
+#   Read in top module
+#read_file -autoread -top CHIP {../src/ ../include}
+read_file -format sverilog {../src/top.sv}
+Loading db file '/usr/cad/CBDK/Executable_Package/Collaterals/IP/stdcell/N16ADFP_StdCell/NLDM/N16ADFP_StdCellss0p72vm40c.db'
+Loading db file '/usr/cad/CBDK/Executable_Package/Collaterals/IP/stdcell/N16ADFP_StdCell/NLDM/N16ADFP_StdCellff0p88v125c.db'
+Loading db file '/usr/cad/CBDK/Executable_Package/Collaterals/IP/stdio/N16ADFP_StdIO/NLDM/N16ADFP_StdIOss0p72v1p62v125c.db'
+Loading db file '/usr/cad/CBDK/Executable_Package/Collaterals/IP/stdio/N16ADFP_StdIO/NLDM/N16ADFP_StdIOff0p88v1p98vm40c.db'
+Loading db file '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/sim/SRAM/SRAM_ss0p72v0p72vm40c_100a.db'
+Loading db file '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/sim/SRAM/SRAM_ff0p88v0p88v125c_100a.db'
+Loading db file '/usr/cad/synopsys/synthesis/cur/libraries/syn/dw_foundation.sldb'
+Loading db file '/usr/cad/synopsys/synthesis/cur/libraries/syn/gtech.db'
+Loading db file '/usr/cad/synopsys/synthesis/cur/libraries/syn/standard.sldb'
+  Loading link library 'N16ADFP_StdCellss0p72vm40c'
+  Loading link library 'N16ADFP_StdCellff0p88v125c'
+  Loading link library 'N16ADFP_StdIOss0p72v1p62v125c'
+  Loading link library 'N16ADFP_StdIOff0p88v1p98vm40c'
+  Loading link library 'SRAM_ss0p72v0p72vm40c_100a'
+  Loading link library 'SRAM_ff0p88v0p88v125c_100a'
+  Loading link library 'gtech'
+Loading sverilog file '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/src/top.sv'
+Detecting input file type automatically (-rtl or -netlist).
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Compiling source file /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/src/top.sv
+Opening include file /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/src/CPU.sv
+Opening include file /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/src/instruction_pkg.sv
+Opening include file /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/src/Controller.sv
+Opening include file /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/src/CSR_Unit.sv
+Opening include file /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/src/Decoder.sv
+Opening include file /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/src/Imm_Extension.sv
+Opening include file /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/src/JB_target_gen.sv
+Opening include file /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/src/LD_Filter.sv
+Opening include file /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/src/MUL.sv
+Opening include file /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/src/Mux2to1.sv
+Opening include file /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/src/Mux3to1.sv
+Opening include file /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/src/Mux4to1.sv
+Opening include file /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/src/Program_Counter_reg.sv
+Opening include file /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/src/Register_File.sv
+Opening include file /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/src/ALU.sv
+Opening include file /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/src/FP_calculator.sv
+Opening include file /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/src/IF_ID_reg.sv
+Opening include file /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/src/ID_EX_reg.sv
+Opening include file /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/src/EX_MEM_reg.sv
+Opening include file /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/src/MEM_WB_reg.sv
+Opening include file /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/src/Branch_History_Buffer.sv
+Opening include file /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/src/SRAM_wrapper.sv
+
+Statistics for case statements in always block at line 92 in file
+	'/home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/src/Controller.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            94            |    user/user     |
+|            99            |    auto/auto     |
+|           107            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 26 in file
+	'/home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/src/CSR_Unit.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            28            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine CSR_Unit line 13 in file
+		'/home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/src/CSR_Unit.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  CSR_cycle_rsg_reg  | Flip-flop |  64   |  Y  | N  | Y  | N  | N  | N  | N  |
+|  CSR_instr_reg_reg  | Flip-flop |  64   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Statistics for case statements in always block at line 5 in file
+	'/home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/src/Imm_Extension.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            6             |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 11 in file
+	'/home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/src/LD_Filter.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            12            |    auto/auto     |
+|            31            |    auto/auto     |
+===============================================
+Warning:  /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/src/MUL.sv:15: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/src/MUL.sv:16: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/src/MUL.sv:19: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/src/MUL.sv:20: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/src/MUL.sv:23: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/src/MUL.sv:24: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/src/MUL.sv:27: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/src/MUL.sv:28: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/src/MUL.sv:31: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/src/MUL.sv:32: unsigned to signed assignment occurs. (VER-318)
+Warning:  /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/src/MUL.sv:41: signed to unsigned part selection occurs. (VER-318)
+Warning:  /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/src/MUL.sv:43: signed to unsigned part selection occurs. (VER-318)
+
+Statistics for case statements in always block at line 12 in file
+	'/home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/src/MUL.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            13            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 9 in file
+	'/home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/src/Mux2to1.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            10            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 10 in file
+	'/home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/src/Mux4to1.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            11            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine Program_Counter_reg line 8 in file
+		'/home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/src/Program_Counter_reg.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   current_pc_reg    | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine Register_File line 21 in file
+		'/home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/src/Register_File.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    register_reg     | Flip-flop | 1024  |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Statistics for MUX_OPs
+======================================================
+| block name/line  | Inputs | Outputs | # sel inputs |
+======================================================
+| Register_File/17 |   32   |   32    |      5       |
+| Register_File/18 |   32   |   32    |      5       |
+======================================================
+
+Statistics for case statements in always block at line 23 in file
+	'/home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/src/FP_calculator.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            24            |    auto/auto     |
+===============================================
+Warning:  /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/src/ALU.sv:30: signed to unsigned assignment occurs. (VER-318)
+
+Statistics for case statements in always block at line 19 in file
+	'/home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/src/ALU.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            21            |    auto/auto     |
+|            37            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine IF_ID_reg line 20 in file
+		'/home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/src/IF_ID_reg.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      ID_pc_reg      | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine IF_ID_reg line 33 in file
+		'/home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/src/IF_ID_reg.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  rst_released_reg   | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|   prev_stall_reg    | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|   prev_flush_reg    | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine IF_ID_reg line 46 in file
+		'/home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/src/IF_ID_reg.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   stored_inst_reg   | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine ID_EX_reg line 33 in file
+		'/home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/src/ID_EX_reg.sv'.
+================================================================================
+|    Register Name     |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+================================================================================
+| EX_predict_taken_reg | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|      EX_pc_reg       | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|      EX_op_reg       | Flip-flop |   7   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     EX_func3_reg     | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+|      EX_rd_reg       | Flip-flop |   5   |  Y  | N  | Y  | N  | N  | N  | N  |
+|      EX_rs1_reg      | Flip-flop |   5   |  Y  | N  | Y  | N  | N  | N  | N  |
+|      EX_rs2_reg      | Flip-flop |   5   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     EX_func7_reg     | Flip-flop |   7   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   EX_rs1_data_reg    | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   EX_rs2_data_reg    | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    EX_imm_ext_reg    | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+================================================================================
+
+Statistics for case statements in always block at line 36 in file
+	'/home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/src/EX_MEM_reg.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            42            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine EX_MEM_reg line 20 in file
+		'/home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/src/EX_MEM_reg.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   MEM_CSR_imm_reg   | Flip-flop |  12   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     MEM_op_reg      | Flip-flop |   7   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    MEM_func3_reg    | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     MEM_rd_reg      | Flip-flop |   5   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   MEM_cal_out_reg   | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine EX_MEM_reg line 36 in file
+		'/home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/src/EX_MEM_reg.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  MEM_rs2_data_reg   | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine MEM_WB_reg line 19 in file
+		'/home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/src/MEM_WB_reg.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   WB_CSR_imm_reg    | Flip-flop |  12   |  Y  | N  | Y  | N  | N  | N  | N  |
+|      WB_op_reg      | Flip-flop |   7   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    WB_func3_reg     | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+|      WB_rd_reg      | Flip-flop |   5   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   WB_cal_out_reg    | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine Branch_History_Buffer line 12 in file
+		'/home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/src/Branch_History_Buffer.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   history_reg_reg   | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Current design is now '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/src/Controller.db:Controller'
+Loaded 22 designs.
+Current design is 'Controller'.
+Controller CSR_Unit Decoder Imm_Extension JB_target_gen LD_Filter MUL Mux2to1 Mux3to1 Mux4to1 Program_Counter_reg Register_File FP_calculator ALU IF_ID_reg ID_EX_reg EX_MEM_reg MEM_WB_reg Branch_History_Buffer CPU SRAM_wrapper top
+# SET POWER INTENT and ENVIRONMENT ###################################
+current_design top
+Current design is 'top'.
+{top}
+link
+
+  Linking design 'top'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  * (22 designs)              /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/src/top.db, etc
+  N16ADFP_StdCellss0p72vm40c (library) /usr/cad/CBDK/Executable_Package/Collaterals/IP/stdcell/N16ADFP_StdCell/NLDM/N16ADFP_StdCellss0p72vm40c.db
+  N16ADFP_StdCellff0p88v125c (library) /usr/cad/CBDK/Executable_Package/Collaterals/IP/stdcell/N16ADFP_StdCell/NLDM/N16ADFP_StdCellff0p88v125c.db
+  N16ADFP_StdIOss0p72v1p62v125c (library) /usr/cad/CBDK/Executable_Package/Collaterals/IP/stdio/N16ADFP_StdIO/NLDM/N16ADFP_StdIOss0p72v1p62v125c.db
+  N16ADFP_StdIOff0p88v1p98vm40c (library) /usr/cad/CBDK/Executable_Package/Collaterals/IP/stdio/N16ADFP_StdIO/NLDM/N16ADFP_StdIOff0p88v1p98vm40c.db
+  SRAM_ss0p72v0p72vm40c_100a (library) /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/sim/SRAM/SRAM_ss0p72v0p72vm40c_100a.db
+  SRAM_ff0p88v0p88v125c_100a (library) /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/sim/SRAM/SRAM_ff0p88v0p88v125c_100a.db
+  dw_foundation.sldb (library) /usr/cad/synopsys/synthesis/cur/libraries/syn/dw_foundation.sldb
+
+1
+#   Set Design Environment
+set_host_options -max_core 8
+1
+source ../script/DC.sdc
+Using operating conditions 'ss0p72vm40c' found in library 'N16ADFP_StdCellss0p72vm40c'.
+Using operating conditions 'ff0p88v125c' found in library 'N16ADFP_StdCellff0p88v125c'.
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: No output ports on design 'top'. (UID-17)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: No output ports on design 'top'. (UID-17)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: The specified replacement character (_) is conflicting with the specified allowed or restricted character.   (UCN-4)
+Warning: In the design Decoder, net 'ID_func7[6]' is connecting multiple ports. (UCN-1)
+Warning: In the design Decoder, net 'ID_func7[5]' is connecting multiple ports. (UCN-1)
+Warning: In the design Decoder, net 'ID_func7[4]' is connecting multiple ports. (UCN-1)
+Warning: In the design Decoder, net 'ID_func7[3]' is connecting multiple ports. (UCN-1)
+Warning: In the design Decoder, net 'ID_func7[2]' is connecting multiple ports. (UCN-1)
+Warning: In the design Decoder, net 'ID_func7[1]' is connecting multiple ports. (UCN-1)
+Warning: In the design Decoder, net 'ID_func7[0]' is connecting multiple ports. (UCN-1)
+Warning: In the design Decoder, net 'ID_rs2_index[4]' is connecting multiple ports. (UCN-1)
+Warning: In the design Decoder, net 'ID_rs2_index[3]' is connecting multiple ports. (UCN-1)
+Warning: In the design Decoder, net 'ID_rs2_index[2]' is connecting multiple ports. (UCN-1)
+Warning: In the design Decoder, net 'ID_rs2_index[1]' is connecting multiple ports. (UCN-1)
+Warning: In the design Decoder, net 'ID_rs2_index[0]' is connecting multiple ports. (UCN-1)
+Warning: In the design Decoder, net 'ID_rs1_index[4]' is connecting multiple ports. (UCN-1)
+Warning: In the design Decoder, net 'ID_rs1_index[3]' is connecting multiple ports. (UCN-1)
+Warning: In the design Decoder, net 'ID_rs1_index[2]' is connecting multiple ports. (UCN-1)
+Warning: In the design Decoder, net 'ID_rs1_index[1]' is connecting multiple ports. (UCN-1)
+Warning: In the design Decoder, net 'ID_rs1_index[0]' is connecting multiple ports. (UCN-1)
+Warning: In the design Decoder, net 'ID_func3[2]' is connecting multiple ports. (UCN-1)
+Warning: In the design Decoder, net 'ID_func3[1]' is connecting multiple ports. (UCN-1)
+Warning: In the design Decoder, net 'ID_func3[0]' is connecting multiple ports. (UCN-1)
+Warning: In the design Decoder, net 'ID_rd_index[4]' is connecting multiple ports. (UCN-1)
+Warning: In the design Decoder, net 'ID_rd_index[3]' is connecting multiple ports. (UCN-1)
+Warning: In the design Decoder, net 'ID_rd_index[2]' is connecting multiple ports. (UCN-1)
+Warning: In the design Decoder, net 'ID_rd_index[1]' is connecting multiple ports. (UCN-1)
+Warning: In the design Decoder, net 'ID_rd_index[0]' is connecting multiple ports. (UCN-1)
+Warning: In the design Decoder, net 'ID_op[6]' is connecting multiple ports. (UCN-1)
+Warning: In the design Decoder, net 'ID_op[5]' is connecting multiple ports. (UCN-1)
+Warning: In the design Decoder, net 'ID_op[4]' is connecting multiple ports. (UCN-1)
+Warning: In the design Decoder, net 'ID_op[3]' is connecting multiple ports. (UCN-1)
+Warning: In the design Decoder, net 'ID_op[2]' is connecting multiple ports. (UCN-1)
+Warning: In the design Decoder, net 'ID_op[1]' is connecting multiple ports. (UCN-1)
+Warning: In the design Decoder, net 'ID_op[0]' is connecting multiple ports. (UCN-1)
+Warning: In the design MEM_WB_reg, net 'WB_ld_data[31]' is connecting multiple ports. (UCN-1)
+Warning: In the design MEM_WB_reg, net 'WB_ld_data[30]' is connecting multiple ports. (UCN-1)
+Warning: In the design MEM_WB_reg, net 'WB_ld_data[29]' is connecting multiple ports. (UCN-1)
+Warning: In the design MEM_WB_reg, net 'WB_ld_data[28]' is connecting multiple ports. (UCN-1)
+Warning: In the design MEM_WB_reg, net 'WB_ld_data[27]' is connecting multiple ports. (UCN-1)
+Warning: In the design MEM_WB_reg, net 'WB_ld_data[26]' is connecting multiple ports. (UCN-1)
+Warning: In the design MEM_WB_reg, net 'WB_ld_data[25]' is connecting multiple ports. (UCN-1)
+Warning: In the design MEM_WB_reg, net 'WB_ld_data[24]' is connecting multiple ports. (UCN-1)
+Warning: In the design MEM_WB_reg, net 'WB_ld_data[23]' is connecting multiple ports. (UCN-1)
+Warning: In the design MEM_WB_reg, net 'WB_ld_data[22]' is connecting multiple ports. (UCN-1)
+Warning: In the design MEM_WB_reg, net 'WB_ld_data[21]' is connecting multiple ports. (UCN-1)
+Warning: In the design MEM_WB_reg, net 'WB_ld_data[20]' is connecting multiple ports. (UCN-1)
+Warning: In the design MEM_WB_reg, net 'WB_ld_data[19]' is connecting multiple ports. (UCN-1)
+Warning: In the design MEM_WB_reg, net 'WB_ld_data[18]' is connecting multiple ports. (UCN-1)
+Warning: In the design MEM_WB_reg, net 'WB_ld_data[17]' is connecting multiple ports. (UCN-1)
+Warning: In the design MEM_WB_reg, net 'WB_ld_data[16]' is connecting multiple ports. (UCN-1)
+Warning: In the design MEM_WB_reg, net 'WB_ld_data[15]' is connecting multiple ports. (UCN-1)
+Warning: In the design MEM_WB_reg, net 'WB_ld_data[14]' is connecting multiple ports. (UCN-1)
+Warning: In the design MEM_WB_reg, net 'WB_ld_data[13]' is connecting multiple ports. (UCN-1)
+Warning: In the design MEM_WB_reg, net 'WB_ld_data[12]' is connecting multiple ports. (UCN-1)
+Warning: In the design MEM_WB_reg, net 'WB_ld_data[11]' is connecting multiple ports. (UCN-1)
+Warning: In the design MEM_WB_reg, net 'WB_ld_data[10]' is connecting multiple ports. (UCN-1)
+Warning: In the design MEM_WB_reg, net 'WB_ld_data[9]' is connecting multiple ports. (UCN-1)
+Warning: In the design MEM_WB_reg, net 'WB_ld_data[8]' is connecting multiple ports. (UCN-1)
+Warning: In the design MEM_WB_reg, net 'WB_ld_data[7]' is connecting multiple ports. (UCN-1)
+Warning: In the design MEM_WB_reg, net 'WB_ld_data[6]' is connecting multiple ports. (UCN-1)
+Warning: In the design MEM_WB_reg, net 'WB_ld_data[5]' is connecting multiple ports. (UCN-1)
+Warning: In the design MEM_WB_reg, net 'WB_ld_data[4]' is connecting multiple ports. (UCN-1)
+Warning: In the design MEM_WB_reg, net 'WB_ld_data[3]' is connecting multiple ports. (UCN-1)
+Warning: In the design MEM_WB_reg, net 'WB_ld_data[2]' is connecting multiple ports. (UCN-1)
+Warning: In the design MEM_WB_reg, net 'WB_ld_data[1]' is connecting multiple ports. (UCN-1)
+Warning: In the design MEM_WB_reg, net 'WB_ld_data[0]' is connecting multiple ports. (UCN-1)
+Warning: In the design Decoder, net 'ID_inst[31]' is connecting multiple ports. (UCN-1)
+Warning: In the design Decoder, net 'ID_inst[30]' is connecting multiple ports. (UCN-1)
+Warning: In the design Decoder, net 'ID_inst[29]' is connecting multiple ports. (UCN-1)
+Warning: In the design Decoder, net 'ID_inst[28]' is connecting multiple ports. (UCN-1)
+Warning: In the design Decoder, net 'ID_inst[27]' is connecting multiple ports. (UCN-1)
+Warning: In the design Decoder, net 'ID_inst[26]' is connecting multiple ports. (UCN-1)
+Warning: In the design Decoder, net 'ID_inst[25]' is connecting multiple ports. (UCN-1)
+Warning: In the design Decoder, net 'ID_inst[24]' is connecting multiple ports. (UCN-1)
+Warning: In the design Decoder, net 'ID_inst[23]' is connecting multiple ports. (UCN-1)
+Warning: In the design Decoder, net 'ID_inst[22]' is connecting multiple ports. (UCN-1)
+Warning: In the design Decoder, net 'ID_inst[21]' is connecting multiple ports. (UCN-1)
+Warning: In the design Decoder, net 'ID_inst[20]' is connecting multiple ports. (UCN-1)
+Warning: In the design Decoder, net 'ID_inst[19]' is connecting multiple ports. (UCN-1)
+Warning: In the design Decoder, net 'ID_inst[18]' is connecting multiple ports. (UCN-1)
+Warning: In the design Decoder, net 'ID_inst[17]' is connecting multiple ports. (UCN-1)
+Warning: In the design Decoder, net 'ID_inst[16]' is connecting multiple ports. (UCN-1)
+Warning: In the design Decoder, net 'ID_inst[15]' is connecting multiple ports. (UCN-1)
+Warning: In the design Decoder, net 'ID_inst[14]' is connecting multiple ports. (UCN-1)
+Warning: In the design Decoder, net 'ID_inst[13]' is connecting multiple ports. (UCN-1)
+Warning: In the design Decoder, net 'ID_inst[12]' is connecting multiple ports. (UCN-1)
+Warning: In the design Decoder, net 'ID_inst[11]' is connecting multiple ports. (UCN-1)
+Warning: In the design Decoder, net 'ID_inst[10]' is connecting multiple ports. (UCN-1)
+Warning: In the design Decoder, net 'ID_inst[9]' is connecting multiple ports. (UCN-1)
+Warning: In the design Decoder, net 'ID_inst[8]' is connecting multiple ports. (UCN-1)
+Warning: In the design Decoder, net 'ID_inst[7]' is connecting multiple ports. (UCN-1)
+Warning: In the design Decoder, net 'ID_inst[6]' is connecting multiple ports. (UCN-1)
+Warning: In the design Decoder, net 'ID_inst[5]' is connecting multiple ports. (UCN-1)
+Warning: In the design Decoder, net 'ID_inst[4]' is connecting multiple ports. (UCN-1)
+Warning: In the design Decoder, net 'ID_inst[3]' is connecting multiple ports. (UCN-1)
+Warning: In the design Decoder, net 'ID_inst[2]' is connecting multiple ports. (UCN-1)
+Warning: In the design Decoder, net 'ID_inst[1]' is connecting multiple ports. (UCN-1)
+Warning: In the design Decoder, net 'ID_inst[0]' is connecting multiple ports. (UCN-1)
+Warning: In the design MEM_WB_reg, net 'MEM_ld_data[31]' is connecting multiple ports. (UCN-1)
+Warning: In the design MEM_WB_reg, net 'MEM_ld_data[30]' is connecting multiple ports. (UCN-1)
+Warning: In the design MEM_WB_reg, net 'MEM_ld_data[29]' is connecting multiple ports. (UCN-1)
+Warning: In the design MEM_WB_reg, net 'MEM_ld_data[28]' is connecting multiple ports. (UCN-1)
+Warning: In the design MEM_WB_reg, net 'MEM_ld_data[27]' is connecting multiple ports. (UCN-1)
+Warning: In the design MEM_WB_reg, net 'MEM_ld_data[26]' is connecting multiple ports. (UCN-1)
+Warning: In the design MEM_WB_reg, net 'MEM_ld_data[25]' is connecting multiple ports. (UCN-1)
+Warning: In the design MEM_WB_reg, net 'MEM_ld_data[24]' is connecting multiple ports. (UCN-1)
+Warning: In the design MEM_WB_reg, net 'MEM_ld_data[23]' is connecting multiple ports. (UCN-1)
+Warning: In the design MEM_WB_reg, net 'MEM_ld_data[22]' is connecting multiple ports. (UCN-1)
+Warning: In the design MEM_WB_reg, net 'MEM_ld_data[21]' is connecting multiple ports. (UCN-1)
+Warning: In the design MEM_WB_reg, net 'MEM_ld_data[20]' is connecting multiple ports. (UCN-1)
+Warning: In the design MEM_WB_reg, net 'MEM_ld_data[19]' is connecting multiple ports. (UCN-1)
+Warning: In the design MEM_WB_reg, net 'MEM_ld_data[18]' is connecting multiple ports. (UCN-1)
+Warning: In the design MEM_WB_reg, net 'MEM_ld_data[17]' is connecting multiple ports. (UCN-1)
+Warning: In the design MEM_WB_reg, net 'MEM_ld_data[16]' is connecting multiple ports. (UCN-1)
+Warning: In the design MEM_WB_reg, net 'MEM_ld_data[15]' is connecting multiple ports. (UCN-1)
+Warning: In the design MEM_WB_reg, net 'MEM_ld_data[14]' is connecting multiple ports. (UCN-1)
+Warning: In the design MEM_WB_reg, net 'MEM_ld_data[13]' is connecting multiple ports. (UCN-1)
+Warning: In the design MEM_WB_reg, net 'MEM_ld_data[12]' is connecting multiple ports. (UCN-1)
+Warning: In the design MEM_WB_reg, net 'MEM_ld_data[11]' is connecting multiple ports. (UCN-1)
+Warning: In the design MEM_WB_reg, net 'MEM_ld_data[10]' is connecting multiple ports. (UCN-1)
+Warning: In the design MEM_WB_reg, net 'MEM_ld_data[9]' is connecting multiple ports. (UCN-1)
+Warning: In the design MEM_WB_reg, net 'MEM_ld_data[8]' is connecting multiple ports. (UCN-1)
+Warning: In the design MEM_WB_reg, net 'MEM_ld_data[7]' is connecting multiple ports. (UCN-1)
+Warning: In the design MEM_WB_reg, net 'MEM_ld_data[6]' is connecting multiple ports. (UCN-1)
+Warning: In the design MEM_WB_reg, net 'MEM_ld_data[5]' is connecting multiple ports. (UCN-1)
+Warning: In the design MEM_WB_reg, net 'MEM_ld_data[4]' is connecting multiple ports. (UCN-1)
+Warning: In the design MEM_WB_reg, net 'MEM_ld_data[3]' is connecting multiple ports. (UCN-1)
+Warning: In the design MEM_WB_reg, net 'MEM_ld_data[2]' is connecting multiple ports. (UCN-1)
+Warning: In the design MEM_WB_reg, net 'MEM_ld_data[1]' is connecting multiple ports. (UCN-1)
+Warning: In the design MEM_WB_reg, net 'MEM_ld_data[0]' is connecting multiple ports. (UCN-1)
+1
+check_design
+ 
+****************************************
+check_design summary:
+Version:     P-2019.03-SP1-1
+Date:        Fri Sep 26 14:10:48 2025
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                    171
+    Unconnected ports (LINT-28)                                   106
+    Feedthrough (LINT-29)                                          64
+    Constant outputs (LINT-52)                                      1
+
+Cells                                                             105
+    Cells do not drive (LINT-1)                                    37
+    Connected to power or ground (LINT-32)                         66
+    Nets connected to multiple pins on same cell (LINT-33)          2
+
+Designs                                                             1
+    Design has no outputs ports (LINT-25)                           1
+
+Nets                                                                4
+    Unloaded nets (LINT-2)                                          4
+--------------------------------------------------------------------------------
+
+Warning: In design 'ALU', cell 'C557' does not drive any nets. (LINT-1)
+Warning: In design 'ALU', cell 'C558' does not drive any nets. (LINT-1)
+Warning: In design 'ALU', cell 'C559' does not drive any nets. (LINT-1)
+Warning: In design 'ALU', cell 'C560' does not drive any nets. (LINT-1)
+Warning: In design 'ALU', cell 'C561' does not drive any nets. (LINT-1)
+Warning: In design 'ALU', cell 'C597' does not drive any nets. (LINT-1)
+Warning: In design 'ALU', cell 'C598' does not drive any nets. (LINT-1)
+Warning: In design 'ALU', cell 'C671' does not drive any nets. (LINT-1)
+Warning: In design 'ALU', cell 'C672' does not drive any nets. (LINT-1)
+Warning: In design 'ALU', cell 'C673' does not drive any nets. (LINT-1)
+Warning: In design 'ALU', cell 'C674' does not drive any nets. (LINT-1)
+Warning: In design 'ALU', cell 'C675' does not drive any nets. (LINT-1)
+Warning: In design 'ALU', cell 'C676' does not drive any nets. (LINT-1)
+Warning: In design 'ALU', cell 'C677' does not drive any nets. (LINT-1)
+Warning: In design 'ALU', cell 'C678' does not drive any nets. (LINT-1)
+Warning: In design 'CSR_Unit', cell 'C641' does not drive any nets. (LINT-1)
+Warning: In design 'CSR_Unit', cell 'C642' does not drive any nets. (LINT-1)
+Warning: In design 'CSR_Unit', cell 'C665' does not drive any nets. (LINT-1)
+Warning: In design 'CSR_Unit', cell 'C666' does not drive any nets. (LINT-1)
+Warning: In design 'FP_calculator', cell 'B_13' does not drive any nets. (LINT-1)
+Warning: In design 'FP_calculator', cell 'C799' does not drive any nets. (LINT-1)
+Warning: In design 'FP_calculator', cell 'C811' does not drive any nets. (LINT-1)
+Warning: In design 'FP_calculator', cell 'C813' does not drive any nets. (LINT-1)
+Warning: In design 'FP_calculator', cell 'B_18' does not drive any nets. (LINT-1)
+Warning: In design 'FP_calculator', cell 'C820' does not drive any nets. (LINT-1)
+Warning: In design 'FP_calculator', cell 'C824' does not drive any nets. (LINT-1)
+Warning: In design 'FP_calculator', cell 'C827' does not drive any nets. (LINT-1)
+Warning: In design 'FP_calculator', cell 'C841' does not drive any nets. (LINT-1)
+Warning: In design 'FP_calculator', cell 'C845' does not drive any nets. (LINT-1)
+Warning: In design 'FP_calculator', cell 'B_20' does not drive any nets. (LINT-1)
+Warning: In design 'FP_calculator', cell 'C849' does not drive any nets. (LINT-1)
+Warning: In design 'FP_calculator', cell 'C853' does not drive any nets. (LINT-1)
+Warning: In design 'FP_calculator', cell 'C857' does not drive any nets. (LINT-1)
+Warning: In design 'FP_calculator', cell 'B_21' does not drive any nets. (LINT-1)
+Warning: In design 'FP_calculator', cell 'C868' does not drive any nets. (LINT-1)
+Warning: In design 'FP_calculator', cell 'C875' does not drive any nets. (LINT-1)
+Warning: In design 'FP_calculator', cell 'C878' does not drive any nets. (LINT-1)
+Warning: In design 'top', net 'cpu/JB/SYNOPSYS_UNCONNECTED_1' driven by pin 'cpu/JB/add_12/Z_0' has no loads. (LINT-2)
+Warning: In design 'top', net 'cpu/alu/FP_unit/SYNOPSYS_UNCONNECTED_3' driven by pin 'cpu/alu/FP_unit/add_143/Z_1' has no loads. (LINT-2)
+Warning: In design 'top', net 'cpu/alu/FP_unit/SYNOPSYS_UNCONNECTED_2' driven by pin 'cpu/alu/FP_unit/add_140/Z_1' has no loads. (LINT-2)
+Warning: In design 'top', net 'cpu/alu/FP_unit/SYNOPSYS_UNCONNECTED_1' driven by pin 'cpu/alu/FP_unit/add_137/Z_1' has no loads. (LINT-2)
+Warning: Design 'top' does not have any output ports. (LINT-25)
+Warning: In design 'SRAM_wrapper', port 'RST' is not connected to any nets. (LINT-28)
+Warning: In design 'Controller', port 'clk' is not connected to any nets. (LINT-28)
+Warning: In design 'Controller', port 'rst' is not connected to any nets. (LINT-28)
+Warning: In design 'Controller', port 'ID_func3[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'Controller', port 'ID_func3[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'Controller', port 'ID_func3[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'Controller', port 'ID_func7[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'Controller', port 'ID_func7[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'Controller', port 'ID_func7[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'Controller', port 'ID_func7[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'Controller', port 'ID_func7[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'Controller', port 'ID_func7[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'Controller', port 'ID_func7[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'Controller', port 'ID_rd[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'Controller', port 'ID_rd[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'Controller', port 'ID_rd[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'Controller', port 'ID_rd[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'Controller', port 'ID_rd[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'Controller', port 'EX_func3[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'Controller', port 'EX_func3[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'Controller', port 'EX_func3[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'Controller', port 'MEM_cal_out[31]' is not connected to any nets. (LINT-28)
+Warning: In design 'Controller', port 'MEM_cal_out[30]' is not connected to any nets. (LINT-28)
+Warning: In design 'Controller', port 'MEM_cal_out[29]' is not connected to any nets. (LINT-28)
+Warning: In design 'Controller', port 'MEM_cal_out[28]' is not connected to any nets. (LINT-28)
+Warning: In design 'Controller', port 'MEM_cal_out[27]' is not connected to any nets. (LINT-28)
+Warning: In design 'Controller', port 'MEM_cal_out[26]' is not connected to any nets. (LINT-28)
+Warning: In design 'Controller', port 'MEM_cal_out[25]' is not connected to any nets. (LINT-28)
+Warning: In design 'Controller', port 'MEM_cal_out[24]' is not connected to any nets. (LINT-28)
+Warning: In design 'Controller', port 'MEM_cal_out[23]' is not connected to any nets. (LINT-28)
+Warning: In design 'Controller', port 'MEM_cal_out[22]' is not connected to any nets. (LINT-28)
+Warning: In design 'Controller', port 'MEM_cal_out[21]' is not connected to any nets. (LINT-28)
+Warning: In design 'Controller', port 'MEM_cal_out[20]' is not connected to any nets. (LINT-28)
+Warning: In design 'Controller', port 'MEM_cal_out[19]' is not connected to any nets. (LINT-28)
+Warning: In design 'Controller', port 'MEM_cal_out[18]' is not connected to any nets. (LINT-28)
+Warning: In design 'Controller', port 'MEM_cal_out[17]' is not connected to any nets. (LINT-28)
+Warning: In design 'Controller', port 'MEM_cal_out[16]' is not connected to any nets. (LINT-28)
+Warning: In design 'Controller', port 'MEM_cal_out[15]' is not connected to any nets. (LINT-28)
+Warning: In design 'Controller', port 'MEM_cal_out[14]' is not connected to any nets. (LINT-28)
+Warning: In design 'Controller', port 'MEM_cal_out[13]' is not connected to any nets. (LINT-28)
+Warning: In design 'Controller', port 'MEM_cal_out[12]' is not connected to any nets. (LINT-28)
+Warning: In design 'Controller', port 'MEM_cal_out[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'Controller', port 'MEM_cal_out[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'Controller', port 'MEM_cal_out[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'Controller', port 'MEM_cal_out[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'Controller', port 'MEM_cal_out[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'Controller', port 'MEM_cal_out[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'Controller', port 'MEM_cal_out[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'Controller', port 'MEM_cal_out[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'Controller', port 'MEM_cal_out[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'Controller', port 'MEM_cal_out[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'Controller', port 'WB_func3[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'Controller', port 'WB_func3[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'Controller', port 'WB_func3[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'ALU', port 'func7[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'ALU', port 'func7[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'EX_MEM_reg', port 'EX_imm_ext[31]' is not connected to any nets. (LINT-28)
+Warning: In design 'EX_MEM_reg', port 'EX_imm_ext[30]' is not connected to any nets. (LINT-28)
+Warning: In design 'EX_MEM_reg', port 'EX_imm_ext[29]' is not connected to any nets. (LINT-28)
+Warning: In design 'EX_MEM_reg', port 'EX_imm_ext[28]' is not connected to any nets. (LINT-28)
+Warning: In design 'EX_MEM_reg', port 'EX_imm_ext[27]' is not connected to any nets. (LINT-28)
+Warning: In design 'EX_MEM_reg', port 'EX_imm_ext[26]' is not connected to any nets. (LINT-28)
+Warning: In design 'EX_MEM_reg', port 'EX_imm_ext[25]' is not connected to any nets. (LINT-28)
+Warning: In design 'EX_MEM_reg', port 'EX_imm_ext[24]' is not connected to any nets. (LINT-28)
+Warning: In design 'EX_MEM_reg', port 'EX_imm_ext[23]' is not connected to any nets. (LINT-28)
+Warning: In design 'EX_MEM_reg', port 'EX_imm_ext[22]' is not connected to any nets. (LINT-28)
+Warning: In design 'EX_MEM_reg', port 'EX_imm_ext[21]' is not connected to any nets. (LINT-28)
+Warning: In design 'EX_MEM_reg', port 'EX_imm_ext[20]' is not connected to any nets. (LINT-28)
+Warning: In design 'EX_MEM_reg', port 'EX_imm_ext[19]' is not connected to any nets. (LINT-28)
+Warning: In design 'EX_MEM_reg', port 'EX_imm_ext[18]' is not connected to any nets. (LINT-28)
+Warning: In design 'EX_MEM_reg', port 'EX_imm_ext[17]' is not connected to any nets. (LINT-28)
+Warning: In design 'EX_MEM_reg', port 'EX_imm_ext[16]' is not connected to any nets. (LINT-28)
+Warning: In design 'EX_MEM_reg', port 'EX_imm_ext[15]' is not connected to any nets. (LINT-28)
+Warning: In design 'EX_MEM_reg', port 'EX_imm_ext[14]' is not connected to any nets. (LINT-28)
+Warning: In design 'EX_MEM_reg', port 'EX_imm_ext[13]' is not connected to any nets. (LINT-28)
+Warning: In design 'EX_MEM_reg', port 'EX_imm_ext[12]' is not connected to any nets. (LINT-28)
+Warning: In design 'LD_Filter', port 'cal_out[31]' is not connected to any nets. (LINT-28)
+Warning: In design 'LD_Filter', port 'cal_out[30]' is not connected to any nets. (LINT-28)
+Warning: In design 'LD_Filter', port 'cal_out[29]' is not connected to any nets. (LINT-28)
+Warning: In design 'LD_Filter', port 'cal_out[28]' is not connected to any nets. (LINT-28)
+Warning: In design 'LD_Filter', port 'cal_out[27]' is not connected to any nets. (LINT-28)
+Warning: In design 'LD_Filter', port 'cal_out[26]' is not connected to any nets. (LINT-28)
+Warning: In design 'LD_Filter', port 'cal_out[25]' is not connected to any nets. (LINT-28)
+Warning: In design 'LD_Filter', port 'cal_out[24]' is not connected to any nets. (LINT-28)
+Warning: In design 'LD_Filter', port 'cal_out[23]' is not connected to any nets. (LINT-28)
+Warning: In design 'LD_Filter', port 'cal_out[22]' is not connected to any nets. (LINT-28)
+Warning: In design 'LD_Filter', port 'cal_out[21]' is not connected to any nets. (LINT-28)
+Warning: In design 'LD_Filter', port 'cal_out[20]' is not connected to any nets. (LINT-28)
+Warning: In design 'LD_Filter', port 'cal_out[19]' is not connected to any nets. (LINT-28)
+Warning: In design 'LD_Filter', port 'cal_out[18]' is not connected to any nets. (LINT-28)
+Warning: In design 'LD_Filter', port 'cal_out[17]' is not connected to any nets. (LINT-28)
+Warning: In design 'LD_Filter', port 'cal_out[16]' is not connected to any nets. (LINT-28)
+Warning: In design 'LD_Filter', port 'cal_out[15]' is not connected to any nets. (LINT-28)
+Warning: In design 'LD_Filter', port 'cal_out[14]' is not connected to any nets. (LINT-28)
+Warning: In design 'LD_Filter', port 'cal_out[13]' is not connected to any nets. (LINT-28)
+Warning: In design 'LD_Filter', port 'cal_out[12]' is not connected to any nets. (LINT-28)
+Warning: In design 'LD_Filter', port 'cal_out[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'LD_Filter', port 'cal_out[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'LD_Filter', port 'cal_out[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'LD_Filter', port 'cal_out[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'LD_Filter', port 'cal_out[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'LD_Filter', port 'cal_out[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'LD_Filter', port 'cal_out[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'LD_Filter', port 'cal_out[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'LD_Filter', port 'cal_out[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'LD_Filter', port 'cal_out[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'Decoder', input port 'ID_inst[31]' is connected directly to output port 'ID_func7[6]'. (LINT-29)
+Warning: In design 'Decoder', input port 'ID_inst[30]' is connected directly to output port 'ID_func7[5]'. (LINT-29)
+Warning: In design 'Decoder', input port 'ID_inst[29]' is connected directly to output port 'ID_func7[4]'. (LINT-29)
+Warning: In design 'Decoder', input port 'ID_inst[28]' is connected directly to output port 'ID_func7[3]'. (LINT-29)
+Warning: In design 'Decoder', input port 'ID_inst[27]' is connected directly to output port 'ID_func7[2]'. (LINT-29)
+Warning: In design 'Decoder', input port 'ID_inst[26]' is connected directly to output port 'ID_func7[1]'. (LINT-29)
+Warning: In design 'Decoder', input port 'ID_inst[25]' is connected directly to output port 'ID_func7[0]'. (LINT-29)
+Warning: In design 'Decoder', input port 'ID_inst[24]' is connected directly to output port 'ID_rs2_index[4]'. (LINT-29)
+Warning: In design 'Decoder', input port 'ID_inst[23]' is connected directly to output port 'ID_rs2_index[3]'. (LINT-29)
+Warning: In design 'Decoder', input port 'ID_inst[22]' is connected directly to output port 'ID_rs2_index[2]'. (LINT-29)
+Warning: In design 'Decoder', input port 'ID_inst[21]' is connected directly to output port 'ID_rs2_index[1]'. (LINT-29)
+Warning: In design 'Decoder', input port 'ID_inst[20]' is connected directly to output port 'ID_rs2_index[0]'. (LINT-29)
+Warning: In design 'Decoder', input port 'ID_inst[19]' is connected directly to output port 'ID_rs1_index[4]'. (LINT-29)
+Warning: In design 'Decoder', input port 'ID_inst[18]' is connected directly to output port 'ID_rs1_index[3]'. (LINT-29)
+Warning: In design 'Decoder', input port 'ID_inst[17]' is connected directly to output port 'ID_rs1_index[2]'. (LINT-29)
+Warning: In design 'Decoder', input port 'ID_inst[16]' is connected directly to output port 'ID_rs1_index[1]'. (LINT-29)
+Warning: In design 'Decoder', input port 'ID_inst[15]' is connected directly to output port 'ID_rs1_index[0]'. (LINT-29)
+Warning: In design 'Decoder', input port 'ID_inst[14]' is connected directly to output port 'ID_func3[2]'. (LINT-29)
+Warning: In design 'Decoder', input port 'ID_inst[13]' is connected directly to output port 'ID_func3[1]'. (LINT-29)
+Warning: In design 'Decoder', input port 'ID_inst[12]' is connected directly to output port 'ID_func3[0]'. (LINT-29)
+Warning: In design 'Decoder', input port 'ID_inst[11]' is connected directly to output port 'ID_rd_index[4]'. (LINT-29)
+Warning: In design 'Decoder', input port 'ID_inst[10]' is connected directly to output port 'ID_rd_index[3]'. (LINT-29)
+Warning: In design 'Decoder', input port 'ID_inst[9]' is connected directly to output port 'ID_rd_index[2]'. (LINT-29)
+Warning: In design 'Decoder', input port 'ID_inst[8]' is connected directly to output port 'ID_rd_index[1]'. (LINT-29)
+Warning: In design 'Decoder', input port 'ID_inst[7]' is connected directly to output port 'ID_rd_index[0]'. (LINT-29)
+Warning: In design 'Decoder', input port 'ID_inst[6]' is connected directly to output port 'ID_op[6]'. (LINT-29)
+Warning: In design 'Decoder', input port 'ID_inst[5]' is connected directly to output port 'ID_op[5]'. (LINT-29)
+Warning: In design 'Decoder', input port 'ID_inst[4]' is connected directly to output port 'ID_op[4]'. (LINT-29)
+Warning: In design 'Decoder', input port 'ID_inst[3]' is connected directly to output port 'ID_op[3]'. (LINT-29)
+Warning: In design 'Decoder', input port 'ID_inst[2]' is connected directly to output port 'ID_op[2]'. (LINT-29)
+Warning: In design 'Decoder', input port 'ID_inst[1]' is connected directly to output port 'ID_op[1]'. (LINT-29)
+Warning: In design 'Decoder', input port 'ID_inst[0]' is connected directly to output port 'ID_op[0]'. (LINT-29)
+Warning: In design 'MEM_WB_reg', input port 'MEM_ld_data[31]' is connected directly to output port 'WB_ld_data[31]'. (LINT-29)
+Warning: In design 'MEM_WB_reg', input port 'MEM_ld_data[30]' is connected directly to output port 'WB_ld_data[30]'. (LINT-29)
+Warning: In design 'MEM_WB_reg', input port 'MEM_ld_data[29]' is connected directly to output port 'WB_ld_data[29]'. (LINT-29)
+Warning: In design 'MEM_WB_reg', input port 'MEM_ld_data[28]' is connected directly to output port 'WB_ld_data[28]'. (LINT-29)
+Warning: In design 'MEM_WB_reg', input port 'MEM_ld_data[27]' is connected directly to output port 'WB_ld_data[27]'. (LINT-29)
+Warning: In design 'MEM_WB_reg', input port 'MEM_ld_data[26]' is connected directly to output port 'WB_ld_data[26]'. (LINT-29)
+Warning: In design 'MEM_WB_reg', input port 'MEM_ld_data[25]' is connected directly to output port 'WB_ld_data[25]'. (LINT-29)
+Warning: In design 'MEM_WB_reg', input port 'MEM_ld_data[24]' is connected directly to output port 'WB_ld_data[24]'. (LINT-29)
+Warning: In design 'MEM_WB_reg', input port 'MEM_ld_data[23]' is connected directly to output port 'WB_ld_data[23]'. (LINT-29)
+Warning: In design 'MEM_WB_reg', input port 'MEM_ld_data[22]' is connected directly to output port 'WB_ld_data[22]'. (LINT-29)
+Warning: In design 'MEM_WB_reg', input port 'MEM_ld_data[21]' is connected directly to output port 'WB_ld_data[21]'. (LINT-29)
+Warning: In design 'MEM_WB_reg', input port 'MEM_ld_data[20]' is connected directly to output port 'WB_ld_data[20]'. (LINT-29)
+Warning: In design 'MEM_WB_reg', input port 'MEM_ld_data[19]' is connected directly to output port 'WB_ld_data[19]'. (LINT-29)
+Warning: In design 'MEM_WB_reg', input port 'MEM_ld_data[18]' is connected directly to output port 'WB_ld_data[18]'. (LINT-29)
+Warning: In design 'MEM_WB_reg', input port 'MEM_ld_data[17]' is connected directly to output port 'WB_ld_data[17]'. (LINT-29)
+Warning: In design 'MEM_WB_reg', input port 'MEM_ld_data[16]' is connected directly to output port 'WB_ld_data[16]'. (LINT-29)
+Warning: In design 'MEM_WB_reg', input port 'MEM_ld_data[15]' is connected directly to output port 'WB_ld_data[15]'. (LINT-29)
+Warning: In design 'MEM_WB_reg', input port 'MEM_ld_data[14]' is connected directly to output port 'WB_ld_data[14]'. (LINT-29)
+Warning: In design 'MEM_WB_reg', input port 'MEM_ld_data[13]' is connected directly to output port 'WB_ld_data[13]'. (LINT-29)
+Warning: In design 'MEM_WB_reg', input port 'MEM_ld_data[12]' is connected directly to output port 'WB_ld_data[12]'. (LINT-29)
+Warning: In design 'MEM_WB_reg', input port 'MEM_ld_data[11]' is connected directly to output port 'WB_ld_data[11]'. (LINT-29)
+Warning: In design 'MEM_WB_reg', input port 'MEM_ld_data[10]' is connected directly to output port 'WB_ld_data[10]'. (LINT-29)
+Warning: In design 'MEM_WB_reg', input port 'MEM_ld_data[9]' is connected directly to output port 'WB_ld_data[9]'. (LINT-29)
+Warning: In design 'MEM_WB_reg', input port 'MEM_ld_data[8]' is connected directly to output port 'WB_ld_data[8]'. (LINT-29)
+Warning: In design 'MEM_WB_reg', input port 'MEM_ld_data[7]' is connected directly to output port 'WB_ld_data[7]'. (LINT-29)
+Warning: In design 'MEM_WB_reg', input port 'MEM_ld_data[6]' is connected directly to output port 'WB_ld_data[6]'. (LINT-29)
+Warning: In design 'MEM_WB_reg', input port 'MEM_ld_data[5]' is connected directly to output port 'WB_ld_data[5]'. (LINT-29)
+Warning: In design 'MEM_WB_reg', input port 'MEM_ld_data[4]' is connected directly to output port 'WB_ld_data[4]'. (LINT-29)
+Warning: In design 'MEM_WB_reg', input port 'MEM_ld_data[3]' is connected directly to output port 'WB_ld_data[3]'. (LINT-29)
+Warning: In design 'MEM_WB_reg', input port 'MEM_ld_data[2]' is connected directly to output port 'WB_ld_data[2]'. (LINT-29)
+Warning: In design 'MEM_WB_reg', input port 'MEM_ld_data[1]' is connected directly to output port 'WB_ld_data[1]'. (LINT-29)
+Warning: In design 'MEM_WB_reg', input port 'MEM_ld_data[0]' is connected directly to output port 'WB_ld_data[0]'. (LINT-29)
+Warning: In design 'top', a pin on submodule 'IM1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CEB' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'IM1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'WEB' is connected to logic 1. 
+Warning: In design 'top', a pin on submodule 'IM1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'BWEB[31]' is connected to logic 1. 
+Warning: In design 'top', a pin on submodule 'IM1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'BWEB[30]' is connected to logic 1. 
+Warning: In design 'top', a pin on submodule 'IM1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'BWEB[29]' is connected to logic 1. 
+Warning: In design 'top', a pin on submodule 'IM1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'BWEB[28]' is connected to logic 1. 
+Warning: In design 'top', a pin on submodule 'IM1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'BWEB[27]' is connected to logic 1. 
+Warning: In design 'top', a pin on submodule 'IM1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'BWEB[26]' is connected to logic 1. 
+Warning: In design 'top', a pin on submodule 'IM1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'BWEB[25]' is connected to logic 1. 
+Warning: In design 'top', a pin on submodule 'IM1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'BWEB[24]' is connected to logic 1. 
+Warning: In design 'top', a pin on submodule 'IM1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'BWEB[23]' is connected to logic 1. 
+Warning: In design 'top', a pin on submodule 'IM1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'BWEB[22]' is connected to logic 1. 
+Warning: In design 'top', a pin on submodule 'IM1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'BWEB[21]' is connected to logic 1. 
+Warning: In design 'top', a pin on submodule 'IM1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'BWEB[20]' is connected to logic 1. 
+Warning: In design 'top', a pin on submodule 'IM1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'BWEB[19]' is connected to logic 1. 
+Warning: In design 'top', a pin on submodule 'IM1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'BWEB[18]' is connected to logic 1. 
+Warning: In design 'top', a pin on submodule 'IM1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'BWEB[17]' is connected to logic 1. 
+Warning: In design 'top', a pin on submodule 'IM1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'BWEB[16]' is connected to logic 1. 
+Warning: In design 'top', a pin on submodule 'IM1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'BWEB[15]' is connected to logic 1. 
+Warning: In design 'top', a pin on submodule 'IM1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'BWEB[14]' is connected to logic 1. 
+Warning: In design 'top', a pin on submodule 'IM1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'BWEB[13]' is connected to logic 1. 
+Warning: In design 'top', a pin on submodule 'IM1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'BWEB[12]' is connected to logic 1. 
+Warning: In design 'top', a pin on submodule 'IM1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'BWEB[11]' is connected to logic 1. 
+Warning: In design 'top', a pin on submodule 'IM1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'BWEB[10]' is connected to logic 1. 
+Warning: In design 'top', a pin on submodule 'IM1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'BWEB[9]' is connected to logic 1. 
+Warning: In design 'top', a pin on submodule 'IM1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'BWEB[8]' is connected to logic 1. 
+Warning: In design 'top', a pin on submodule 'IM1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'BWEB[7]' is connected to logic 1. 
+Warning: In design 'top', a pin on submodule 'IM1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'BWEB[6]' is connected to logic 1. 
+Warning: In design 'top', a pin on submodule 'IM1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'BWEB[5]' is connected to logic 1. 
+Warning: In design 'top', a pin on submodule 'IM1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'BWEB[4]' is connected to logic 1. 
+Warning: In design 'top', a pin on submodule 'IM1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'BWEB[3]' is connected to logic 1. 
+Warning: In design 'top', a pin on submodule 'IM1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'BWEB[2]' is connected to logic 1. 
+Warning: In design 'top', a pin on submodule 'IM1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'BWEB[1]' is connected to logic 1. 
+Warning: In design 'top', a pin on submodule 'IM1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'BWEB[0]' is connected to logic 1. 
+Warning: In design 'top', a pin on submodule 'IM1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'DI[31]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'IM1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'DI[30]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'IM1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'DI[29]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'IM1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'DI[28]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'IM1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'DI[27]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'IM1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'DI[26]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'IM1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'DI[25]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'IM1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'DI[24]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'IM1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'DI[23]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'IM1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'DI[22]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'IM1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'DI[21]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'IM1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'DI[20]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'IM1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'DI[19]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'IM1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'DI[18]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'IM1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'DI[17]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'IM1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'DI[16]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'IM1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'DI[15]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'IM1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'DI[14]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'IM1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'DI[13]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'IM1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'DI[12]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'IM1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'DI[11]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'IM1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'DI[10]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'IM1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'DI[9]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'IM1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'DI[8]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'IM1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'DI[7]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'IM1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'DI[6]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'IM1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'DI[5]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'IM1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'DI[4]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'IM1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'DI[3]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'IM1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'DI[2]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'IM1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'DI[1]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'IM1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'DI[0]' is connected to logic 0. 
+Warning: In design 'top', the same net is connected to more than one pin on submodule 'IM1'. (LINT-33)
+   Net 'n_Logic0_' is connected to pins 'CEB', 'DI[31]'', 'DI[30]', 'DI[29]', 'DI[28]', 'DI[27]', 'DI[26]', 'DI[25]', 'DI[24]', 'DI[23]', 'DI[22]', 'DI[21]', 'DI[20]', 'DI[19]', 'DI[18]', 'DI[17]', 'DI[16]', 'DI[15]', 'DI[14]', 'DI[13]', 'DI[12]', 'DI[11]', 'DI[10]', 'DI[9]', 'DI[8]', 'DI[7]', 'DI[6]', 'DI[5]', 'DI[4]', 'DI[3]', 'DI[2]', 'DI[1]', 'DI[0]'.
+Warning: In design 'top', the same net is connected to more than one pin on submodule 'IM1'. (LINT-33)
+   Net 'n_Logic1_' is connected to pins 'WEB', 'BWEB[31]'', 'BWEB[30]', 'BWEB[29]', 'BWEB[28]', 'BWEB[27]', 'BWEB[26]', 'BWEB[25]', 'BWEB[24]', 'BWEB[23]', 'BWEB[22]', 'BWEB[21]', 'BWEB[20]', 'BWEB[19]', 'BWEB[18]', 'BWEB[17]', 'BWEB[16]', 'BWEB[15]', 'BWEB[14]', 'BWEB[13]', 'BWEB[12]', 'BWEB[11]', 'BWEB[10]', 'BWEB[9]', 'BWEB[8]', 'BWEB[7]', 'BWEB[6]', 'BWEB[5]', 'BWEB[4]', 'BWEB[3]', 'BWEB[2]', 'BWEB[1]', 'BWEB[0]'.
+Warning: In design 'JB_target_gen', output port 'jb_target[0]' is connected directly to 'logic 0'. (LINT-52)
+1
+uniquify
+Information: Uniquified 3 instances of design 'Mux2to1'. (OPT-1056)
+Information: Uniquified 5 instances of design 'Mux3to1'. (OPT-1056)
+Information: Uniquified 2 instances of design 'Register_File'. (OPT-1056)
+Information: Uniquified 2 instances of design 'SRAM_wrapper'. (OPT-1056)
+1
+set_fix_multiple_port_nets -all -buffer_constants [get_designs *]
+1
+set_max_area 0
+1
+#   Synthesize circuit
+compile -map_effort high -area_effort high
+Information: Checking out the license 'DesignWare'. (SEC-104)
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | P-2019.03-DWBB_201903.1 |     *     |
+| Licensed DW Building Blocks        | P-2019.03-DWBB_201903.1 |     *     |
+============================================================================
+
+
+Information: There are 282 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+Warning: IO pad 'PVDD2CDGM_V' is unusable: unknown logic function.  (OPT-1022)
+Warning: IO pad 'PVDD2CDGM_H' is unusable: unknown logic function.  (OPT-1022)
+Warning: IO pad 'PVDD1CDGM_V' is unusable: unknown logic function.  (OPT-1022)
+Warning: IO pad 'PVDD1CDGM_H' is unusable: unknown logic function.  (OPT-1022)
+Warning: Operating condition ss0p72vm40c set on design top has different process,
+voltage and temperatures parameters than the parameters at which target library 
+N16ADFP_StdCellff0p88v125c is characterized. Delays may be inaccurate as a result. (OPT-998)
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'SRAM_wrapper_0'
+Warning: The trip points for the library named N16ADFP_StdIOss0p72v1p62v125c differ from those in the library named N16ADFP_StdCellss0p72vm40c. (TIM-164)
+  Processing 'Mux3to1_0'
+  Processing 'LD_Filter'
+  Processing 'CSR_Unit'
+  Processing 'MEM_WB_reg'
+  Processing 'EX_MEM_reg'
+  Processing 'Mux2to1_0'
+  Processing 'MUL'
+  Processing 'FP_calculator'
+  Processing 'ALU'
+  Processing 'JB_target_gen'
+  Processing 'ID_EX_reg'
+  Processing 'Register_File_0'
+Information: The register 'register_reg_0__31_' is a constant and will be removed. (OPT-1206)
+Information: The register 'register_reg_0__30_' is a constant and will be removed. (OPT-1206)
+Information: The register 'register_reg_0__29_' is a constant and will be removed. (OPT-1206)
+Information: The register 'register_reg_0__28_' is a constant and will be removed. (OPT-1206)
+Information: The register 'register_reg_0__27_' is a constant and will be removed. (OPT-1206)
+Information: The register 'register_reg_0__26_' is a constant and will be removed. (OPT-1206)
+Information: The register 'register_reg_0__25_' is a constant and will be removed. (OPT-1206)
+Information: The register 'register_reg_0__24_' is a constant and will be removed. (OPT-1206)
+Information: The register 'register_reg_0__23_' is a constant and will be removed. (OPT-1206)
+Information: The register 'register_reg_0__22_' is a constant and will be removed. (OPT-1206)
+Information: The register 'register_reg_0__21_' is a constant and will be removed. (OPT-1206)
+Information: The register 'register_reg_0__20_' is a constant and will be removed. (OPT-1206)
+Information: The register 'register_reg_0__19_' is a constant and will be removed. (OPT-1206)
+Information: The register 'register_reg_0__18_' is a constant and will be removed. (OPT-1206)
+Information: The register 'register_reg_0__17_' is a constant and will be removed. (OPT-1206)
+Information: The register 'register_reg_0__16_' is a constant and will be removed. (OPT-1206)
+Information: The register 'register_reg_0__15_' is a constant and will be removed. (OPT-1206)
+Information: The register 'register_reg_0__14_' is a constant and will be removed. (OPT-1206)
+Information: The register 'register_reg_0__13_' is a constant and will be removed. (OPT-1206)
+Information: The register 'register_reg_0__12_' is a constant and will be removed. (OPT-1206)
+Information: The register 'register_reg_0__11_' is a constant and will be removed. (OPT-1206)
+Information: The register 'register_reg_0__10_' is a constant and will be removed. (OPT-1206)
+Information: The register 'register_reg_0__9_' is a constant and will be removed. (OPT-1206)
+Information: The register 'register_reg_0__8_' is a constant and will be removed. (OPT-1206)
+Information: The register 'register_reg_0__7_' is a constant and will be removed. (OPT-1206)
+Information: The register 'register_reg_0__6_' is a constant and will be removed. (OPT-1206)
+Information: The register 'register_reg_0__5_' is a constant and will be removed. (OPT-1206)
+Information: The register 'register_reg_0__4_' is a constant and will be removed. (OPT-1206)
+Information: The register 'register_reg_0__3_' is a constant and will be removed. (OPT-1206)
+Information: The register 'register_reg_0__2_' is a constant and will be removed. (OPT-1206)
+Information: The register 'register_reg_0__1_' is a constant and will be removed. (OPT-1206)
+Information: The register 'register_reg_0__0_' is a constant and will be removed. (OPT-1206)
+  Processing 'Imm_Extension'
+  Processing 'Decoder'
+  Processing 'IF_ID_reg'
+  Processing 'Program_Counter_reg'
+  Processing 'Branch_History_Buffer'
+  Processing 'Mux4to1'
+  Processing 'Controller'
+Information: Added key list 'DesignWare' to design 'Controller'. (DDB-72)
+  Processing 'CPU'
+  Processing 'top'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: Timing loop detected. (OPT-150)
+	cpu/alu/FP_unit/U45/A2 cpu/alu/FP_unit/U45/ZN cpu/alu/FP_unit/U44/B cpu/alu/FP_unit/U44/ZN cpu/alu/FP_unit/U130/B1 cpu/alu/FP_unit/U130/ZN cpu/alu/FP_unit/U98/A2 cpu/alu/FP_unit/U98/ZN cpu/alu/FP_unit/U96/A2 cpu/alu/FP_unit/U96/ZN 
+Information: Timing loop detected. (OPT-150)
+	cpu/alu/FP_unit/U94/A3 cpu/alu/FP_unit/U94/ZN cpu/alu/FP_unit/U45/B1 cpu/alu/FP_unit/U45/ZN cpu/alu/FP_unit/U44/B cpu/alu/FP_unit/U44/ZN cpu/alu/FP_unit/U130/B1 cpu/alu/FP_unit/U130/ZN cpu/alu/FP_unit/U98/A2 cpu/alu/FP_unit/U98/ZN 
+Warning: Disabling timing arc between pins 'A2' and 'ZN' on cell 'cpu/alu/FP_unit/U45'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A2' and 'ZN' on cell 'cpu/alu/FP_unit/U45'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A2' and 'ZN' on cell 'cpu/alu/FP_unit/U45'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A3' and 'ZN' on cell 'cpu/alu/FP_unit/U94'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A3' and 'ZN' on cell 'cpu/alu/FP_unit/U94'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A3' and 'ZN' on cell 'cpu/alu/FP_unit/U94'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B2' and 'ZN' on cell 'cpu/alu/FP_unit/U130'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B2' and 'ZN' on cell 'cpu/alu/FP_unit/U130'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B2' and 'ZN' on cell 'cpu/alu/FP_unit/U130'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A1' and 'ZN' on cell 'cpu/alu/FP_unit/U103'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A1' and 'ZN' on cell 'cpu/alu/FP_unit/U101'
+         to break a timing loop. (OPT-314)
+
+  Beginning Implementation Selection
+  ----------------------------------
+  Processing 'CPU_DW01_add_0'
+  Processing 'CPU_DW01_add_1'
+  Processing 'CPU_DW01_add_2'
+  Processing 'CSR_Unit_DW01_sub_0'
+  Processing 'CSR_Unit_DW01_sub_1'
+  Processing 'CSR_Unit_DW01_inc_0'
+  Processing 'CSR_Unit_DW01_inc_1'
+  Processing 'ALU_DW01_add_0'
+  Mapping 'DW_rightsh'
+Information: Added key list 'DesignWare' to design 'ALU'. (DDB-72)
+  Mapping 'DW_rightsh'
+  Mapping 'DW_leftsh'
+  Processing 'ALU_DW01_sub_0'
+  Processing 'ALU_DW01_cmp6_0'
+  Processing 'ALU_DW01_cmp2_0'
+  Processing 'ALU_DW01_add_1'
+  Processing 'FP_calculator_DW01_inc_0'
+  Processing 'FP_calculator_DW01_inc_1'
+  Processing 'FP_calculator_DW01_sub_0'
+  Processing 'FP_calculator_DW01_sub_1'
+  Processing 'FP_calculator_DW01_sub_2'
+  Processing 'FP_calculator_DW01_sub_3'
+  Processing 'FP_calculator_DW01_dec_0'
+  Processing 'FP_calculator_DW01_add_0'
+  Mapping 'FP_calculator_DW_cmp_0'
+  Mapping 'FP_calculator_DW_cmp_1'
+  Processing 'FP_calculator_DW01_inc_2'
+  Processing 'FP_calculator_DW01_sub_4'
+  Processing 'FP_calculator_DW01_sub_5'
+  Processing 'FP_calculator_DW01_add_1'
+  Mapping 'FP_calculator_DW_cmp_2'
+  Mapping 'DW_rightsh'
+Information: Added key list 'DesignWare' to design 'FP_calculator'. (DDB-72)
+  Processing 'FP_calculator_DW01_sub_6'
+  Mapping 'DW_rightsh'
+  Processing 'FP_calculator_DW01_sub_7'
+  Processing 'FP_calculator_DW01_cmp6_0'
+  Processing 'JB_target_gen_DW01_add_0'
+  Mapping 'MUL_DW_mult_tc_0'
+
+  Beginning Mapping Optimizations  (High effort)
+  -------------------------------
+Loading db file '/usr/cad/CBDK/Executable_Package/Collaterals/IP/stdcell/N16ADFP_StdCell/NLDM/N16ADFP_StdCellff0p88v125c.db'
+  Mapping Optimization (Phase 1)
+  Mapping Optimization (Phase 2)
+  Mapping Optimization (Phase 3)
+  Mapping Optimization (Phase 4)
+  Mapping Optimization (Phase 5)
+
+                                  TOTAL                                                  
+   ELAPSED            WORST NEG   SETUP    DESIGN                              MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT             COST    
+  --------- --------- --------- --------- --------- ------------------------- -----------
+    0:00:42   20711.2      0.58     178.5       6.5                                0.00  
+    0:00:42   20711.2      0.58     178.5       6.5                                0.00  
+    0:00:42   20933.8      0.51     158.9       6.5                                0.00  
+    0:00:44   22289.3      0.40     127.6       0.0                                0.00  
+    0:00:55   22928.9      0.23      73.3       0.0                                0.00  
+    0:00:56   22949.5      0.23      73.9       0.0                                0.00  
+    0:00:56   22949.5      0.23      73.9       0.0                                0.00  
+    0:00:56   22948.8      0.23      73.9       0.0                                0.00  
+    0:00:56   22948.8      0.23      73.9       0.0                                0.00  
+    0:01:02   17756.2      0.42     129.0       0.0                                0.00  
+    0:01:05   17757.6      0.39     121.3       0.0                                0.00  
+    0:01:07   17754.3      0.41     128.8       0.0                                0.00  
+    0:01:07   17755.0      0.39     122.1       0.0                                0.00  
+    0:01:08   17754.2      0.37     114.8       0.0                                0.00  
+    0:01:08   17755.2      0.36     113.5       0.0                                0.00  
+    0:01:09   17756.6      0.35     108.1       0.0                                0.00  
+    0:01:09   17755.5      0.34     107.7       0.0                                0.00  
+    0:01:09   17757.0      0.34     106.0       0.0                                0.00  
+    0:01:10   17756.4      0.34     106.4       0.0                                0.00  
+    0:01:10   17757.0      0.34     105.3       0.0                                0.00  
+    0:01:10   17757.6      0.34     105.1       0.0                                0.00  
+    0:01:10   17757.6      0.33     103.7       0.0                                0.00  
+    0:01:11   17758.6      0.33     103.7       0.0                                0.00  
+    0:01:11   17758.6      0.33     103.7       0.0                                0.00  
+    0:01:11   17758.6      0.33     103.7       0.0                                0.00  
+    0:01:11   17758.6      0.33     103.7       0.0                                0.00  
+    0:01:11   17758.6      0.33     103.7       0.0                                0.00  
+    0:01:11   17758.6      0.33     103.7       0.0                                0.00  
+    0:01:11   17758.6      0.33     103.7       0.0                                0.00  
+    0:01:12   17769.8      0.31      97.1       0.0 cpu/Reg_IF_ID/stored_inst_reg_8_/D      0.00  
+    0:01:13   17779.1      0.28      89.8       0.0 cpu/Reg_IF_ID/stored_inst_reg_8_/D      0.00  
+    0:01:14   17785.8      0.27      85.8       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:01:15   17794.3      0.26      83.9       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:01:15   17800.1      0.25      81.9       0.0 cpu/Reg_IF_ID/ID_pc_reg_8_/D      0.00  
+    0:01:16   17801.5      0.25      79.7       0.0 cpu/Reg_IF_ID/ID_pc_reg_8_/D      0.00  
+    0:01:17   17807.7      0.24      78.1       0.0 cpu/Reg_IF_ID/ID_pc_reg_8_/D      0.00  
+    0:01:18   17825.2      0.24      75.5       0.0 cpu/Reg_EX_MEM/MEM_cal_out_reg_16_/D      0.00  
+    0:01:22   17866.6      0.22      69.2       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:01:24   17895.3      0.20      64.3       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:01:24   17898.6      0.20      63.4       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D      0.00  
+    0:01:25   17901.5      0.20      63.1       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D      0.00  
+    0:01:26   17908.9      0.19      62.2       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:01:27   17916.6      0.19      61.6       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:01:27   17918.7      0.19      61.3       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:01:28   17921.2      0.19      60.6       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D      0.00  
+    0:01:29   17925.3      0.19      59.8       0.0                                0.00  
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                                  
+   ELAPSED            WORST NEG   SETUP    DESIGN                              MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT             COST    
+  --------- --------- --------- --------- --------- ------------------------- -----------
+    0:01:29   17925.3      0.19      59.8       0.0                                0.00  
+    0:01:29   17925.2      0.19      59.8       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D      0.00  
+    0:01:29   17928.6      0.19      59.7       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D      0.00  
+    0:01:30   17929.8      0.18      58.9       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:01:31   17932.8      0.18      58.3       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:01:31   17943.5      0.18      58.0       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:01:32   17945.6      0.18      57.9       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:01:32   17947.7      0.18      57.5       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:01:33   17953.7      0.18      57.0       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D      0.00  
+    0:01:33   17956.0      0.17      56.2       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:01:33   17961.1      0.17      55.3       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D      0.00  
+    0:01:34   17963.1      0.17      54.9       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D      0.00  
+    0:01:35   17965.0      0.17      54.7       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:01:35   17968.0      0.17      54.5       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D      0.00  
+    0:01:36   17972.8      0.17      54.2       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:01:37   17977.0      0.17      53.9       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:01:38   17981.4      0.17      53.4       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D      0.00  
+    0:01:38   17987.1      0.17      53.3       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D      0.00  
+    0:01:39   17988.2      0.17      53.1       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D      0.00  
+    0:01:39   17988.1      0.17      53.0       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:01:39   17988.8      0.17      52.9       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D      0.00  
+    0:01:40   17992.3      0.17      52.8       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D      0.00  
+    0:01:40   17992.5      0.17      52.7       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_25_/D      0.00  
+    0:01:40   17992.8      0.17      52.7       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D      0.00  
+    0:01:41   17993.7      0.16      52.6       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:01:41   17995.2      0.16      52.4       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:01:41   17995.5      0.16      52.4       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:01:42   17998.2      0.16      52.2       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:01:42   17999.7      0.16      52.1       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:01:42   18000.0      0.16      52.1       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D      0.00  
+    0:01:43   18004.2      0.16      51.8       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D      0.00  
+    0:01:43   18006.3      0.16      51.5       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D      0.00  
+    0:01:44   18007.4      0.16      51.2       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D      0.00  
+    0:01:45   18012.9      0.16      50.5       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D      0.00  
+    0:01:45   18013.1      0.16      50.5       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:01:46   18019.4      0.16      50.2       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:01:46   18021.2      0.16      50.1       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D      0.00  
+    0:01:46   18023.0      0.16      50.0       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D      0.00  
+    0:01:47   18024.6      0.16      49.8       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D      0.00  
+    0:01:47   18026.5      0.16      49.7       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D      0.00  
+    0:01:47   18029.8      0.16      49.4       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D      0.00  
+    0:01:48   18033.2      0.15      49.1       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:01:48   18033.8      0.15      48.9       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D      0.00  
+    0:01:49   18034.2      0.15      48.6       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D      0.00  
+    0:01:49   18034.0      0.15      48.4       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D      0.00  
+    0:01:50   18035.8      0.15      48.2       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D      0.00  
+    0:01:50   18036.0      0.15      48.2       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D      0.00  
+    0:01:51   18036.6      0.15      48.1       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D      0.00  
+    0:01:51   18039.9      0.15      48.0       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D      0.00  
+    0:01:52   18041.4      0.15      47.9       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D      0.00  
+    0:01:52   18042.2      0.15      47.7       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D      0.00  
+    0:01:52   18043.0      0.15      47.7       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D      0.00  
+    0:01:53   18045.2      0.15      47.7       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D      0.00  
+    0:01:54   18051.5      0.15      47.5       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D      0.00  
+    0:01:55   18055.4      0.15      47.2       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D      0.00  
+    0:01:55   18061.0      0.15      46.9       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D      0.00  
+    0:01:56   18062.6      0.15      46.8       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D      0.00  
+    0:01:56   18065.4      0.15      46.6       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D      0.00  
+    0:01:57   18066.9      0.15      46.5       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D      0.00  
+    0:01:57   18067.5      0.15      46.4       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D      0.00  
+    0:01:57   18069.2      0.15      46.4       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D      0.00  
+    0:01:57   18069.0      0.15      46.4       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D      0.00  
+    0:01:58   18069.2      0.15      46.3       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:01:59   18072.8      0.15      46.1       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:01:59   18074.8      0.14      46.0       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:00   18078.6      0.14      45.8       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:00   18078.9      0.14      45.7       0.0 cpu/PC/current_pc_reg_15_/D      0.00  
+    0:02:00   18078.9      0.14      45.7       0.0 cpu/PC/current_pc_reg_23_/D      0.00  
+    0:02:00   18078.9      0.14      45.7       0.0 cpu/PC/current_pc_reg_30_/D      0.00  
+    0:02:00   18078.9      0.14      45.7       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:01   18079.5      0.14      45.7       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:01   18080.5      0.14      45.6       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:01   18084.0      0.14      45.5       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:02   18085.4      0.14      45.5       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:02   18088.9      0.14      45.4       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:03   18090.0      0.14      45.4       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:03   18090.2      0.14      45.4       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D      0.00  
+    0:02:04   18090.8      0.14      45.2       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:05   18093.2      0.14      45.1       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:06   18095.5      0.14      44.9       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:06   18096.6      0.14      44.9       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:06   18097.7      0.14      44.8       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:06   18097.5      0.14      44.8       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:07   18099.9      0.14      44.7       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:07   18101.3      0.14      44.6       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:08   18102.7      0.14      44.5       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:08   18103.0      0.14      44.5       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:08   18105.1      0.14      44.5       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:09   18106.7      0.14      44.4       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:09   18107.2      0.14      44.4       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D      0.00  
+    0:02:10   18110.3      0.14      44.2       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D      0.00  
+    0:02:10   18110.6      0.14      44.1       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:11   18115.2      0.14      43.9       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D      0.00  
+    0:02:11   18116.5      0.14      43.9       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:11   18118.5      0.14      43.8       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:12   18119.8      0.14      43.8       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D      0.00  
+    0:02:12   18120.7      0.14      43.7       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D      0.00  
+    0:02:12   18121.8      0.14      43.7       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:12   18123.0      0.14      43.7       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:13   18124.5      0.14      43.6       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D      0.00  
+    0:02:13   18126.2      0.14      43.6       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D      0.00  
+    0:02:13   18125.9      0.14      43.6       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D      0.00  
+    0:02:14   18130.6      0.14      42.7       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D      0.00  
+    0:02:14   18130.7      0.14      43.3       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D      0.00  
+    0:02:15   18133.3      0.14      42.8       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D      0.00  
+    0:02:15   18134.3      0.14      42.8       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D      0.00  
+    0:02:15   18137.0      0.13      42.6       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D      0.00  
+    0:02:16   18138.1      0.13      42.6       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D      0.00  
+    0:02:16   18140.4      0.13      42.5       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D      0.00  
+    0:02:16   18141.4      0.13      42.5       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D      0.00  
+    0:02:17   18142.5      0.13      42.5       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D      0.00  
+    0:02:17   18143.2      0.13      42.4       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D      0.00  
+    0:02:18   18143.3      0.13      42.4       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D      0.00  
+    0:02:18   18143.8      0.13      42.4       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D      0.00  
+    0:02:18   18143.7      0.13      42.4       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:18   18144.2      0.13      42.3       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D      0.00  
+    0:02:19   18146.6      0.13      42.2       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D      0.00  
+    0:02:19   18147.1      0.13      42.2       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:19   18147.2      0.13      42.2       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D      0.00  
+    0:02:20   18148.3      0.13      42.2       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D      0.00  
+    0:02:20   18151.7      0.13      41.8       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D      0.00  
+    0:02:20   18151.8      0.13      41.8       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D      0.00  
+    0:02:21   18152.2      0.13      41.8       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D      0.00  
+    0:02:21   18151.9      0.13      41.7       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D      0.00  
+    0:02:22   18154.9      0.13      41.5       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D      0.00  
+    0:02:22   18156.9      0.13      41.4       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D      0.00  
+    0:02:22   18158.7      0.13      41.3       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D      0.00  
+    0:02:22   18159.6      0.13      41.3       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D      0.00  
+    0:02:23   18160.9      0.13      41.3       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D      0.00  
+    0:02:23   18163.5      0.13      41.2       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D      0.00  
+    0:02:23   18164.7      0.13      41.2       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D      0.00  
+    0:02:24   18167.5      0.13      41.1       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:24   18169.0      0.13      41.1       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:24   18169.2      0.13      41.0       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:24   18170.8      0.13      41.0       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_16_/D      0.00  
+    0:02:25   18172.5      0.13      40.9       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:25   18172.2      0.13      40.9       0.0 cpu/PC/current_pc_reg_31_/D      0.00  
+    0:02:25   18173.3      0.13      40.8       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:25   18175.7      0.13      40.7       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:26   18177.1      0.13      40.7       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:26   18178.0      0.13      40.6       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:26   18179.0      0.13      40.6       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_16_/D      0.00  
+    0:02:26   18179.6      0.13      40.6       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:27   18180.4      0.13      40.5       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:27   18181.4      0.13      40.4       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:27   18182.4      0.13      40.4       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:27   18183.2      0.13      40.4       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:28   18183.7      0.13      40.3       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:28   18184.2      0.13      40.3       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:28   18184.4      0.13      40.3       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:29   18183.7      0.13      40.2       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:29   18185.5      0.13      40.2       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:29   18185.6      0.13      40.1       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:29   18187.3      0.13      40.2       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:30   18189.0      0.13      40.1       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:30   18189.8      0.13      40.1       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:30   18190.7      0.13      40.1       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:30   18190.2      0.13      40.0       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:31   18189.5      0.13      40.0       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:31   18190.7      0.13      39.9       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:31   18195.3      0.13      39.8       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:32   18196.3      0.12      39.7       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_17_/D      0.00  
+    0:02:32   18197.0      0.12      39.7       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:32   18198.6      0.12      39.6       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:32   18201.0      0.12      39.6       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:33   18201.1      0.12      39.5       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:33   18203.1      0.12      39.5       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:33   18204.8      0.12      39.4       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:33   18205.3      0.12      39.4       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:34   18206.5      0.12      39.4       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:34   18207.9      0.12      39.3       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:34   18208.8      0.12      39.2       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_17_/D      0.00  
+    0:02:34   18209.1      0.12      39.2       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_17_/D      0.00  
+    0:02:34   18209.4      0.12      39.1       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:35   18210.1      0.12      39.1       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:35   18211.5      0.12      39.0       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:35   18211.6      0.12      39.0       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:35   18212.1      0.12      39.0       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:35   18211.8      0.12      38.9       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_17_/D      0.00  
+    0:02:36   18211.8      0.12      38.9       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_20_/D      0.00  
+    0:02:36   18213.5      0.12      38.9       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:36   18213.6      0.12      38.9       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:36   18215.1      0.12      38.8       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_13_/D      0.00  
+    0:02:36   18216.6      0.12      38.8       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:36   18217.3      0.12      38.8       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:37   18218.2      0.12      38.7       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_17_/D      0.00  
+    0:02:37   18219.1      0.12      38.7       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:37   18220.0      0.12      38.7       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:37   18222.6      0.12      38.6       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_17_/D      0.00  
+    0:02:38   18222.5      0.12      38.6       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_17_/D      0.00  
+    0:02:38   18223.3      0.12      38.5       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:38   18225.4      0.12      38.5       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_17_/D      0.00  
+    0:02:39   18227.4      0.12      38.5       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:39   18228.0      0.12      38.5       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:39   18228.2      0.12      38.4       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_17_/D      0.00  
+    0:02:39   18231.4      0.12      38.4       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:39   18232.4      0.12      38.4       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:40   18233.3      0.12      38.3       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_17_/D      0.00  
+    0:02:40   18234.1      0.12      38.3       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:40   18235.1      0.12      38.2       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_17_/D      0.00  
+    0:02:40   18235.9      0.12      38.1       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:40   18237.2      0.12      38.1       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:41   18238.6      0.12      38.0       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:41   18239.8      0.12      38.0       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:41   18241.2      0.12      37.9       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:41   18243.4      0.12      37.8       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:41   18243.6      0.12      37.7       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:42   18244.6      0.12      37.7       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:42   18245.0      0.12      37.7       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:42   18245.7      0.12      37.6       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:42   18246.7      0.12      37.6       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:43   18247.9      0.12      37.5       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:43   18249.1      0.12      37.5       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:43   18250.2      0.12      37.5       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:43   18253.2      0.12      37.4       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_17_/D      0.00  
+    0:02:44   18255.0      0.12      37.3       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:44   18256.1      0.12      37.2       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_17_/D      0.00  
+    0:02:44   18256.8      0.12      37.2       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:44   18258.2      0.12      37.1       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:44   18259.4      0.12      37.1       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:45   18260.2      0.12      37.1       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:45   18260.7      0.12      37.0       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:45   18261.4      0.12      37.0       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:45   18261.9      0.12      37.0       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:46   18262.3      0.12      36.9       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:46   18262.5      0.12      36.9       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:46   18263.1      0.12      36.9       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:46   18265.0      0.12      36.8       0.0 cpu/Reg_EX_MEM/MEM_cal_out_reg_23_/D      0.00  
+    0:02:46   18264.9      0.12      36.8       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:46   18265.6      0.12      36.8       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:47   18265.6      0.12      36.7       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_17_/D      0.00  
+    0:02:47   18266.7      0.12      36.7       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:47   18267.6      0.12      36.7       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:47   18269.4      0.12      36.5       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:48   18269.5      0.11      36.5       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:48   18270.4      0.11      36.5       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:48   18271.2      0.11      36.5       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:48   18272.1      0.11      36.4       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_17_/D      0.00  
+    0:02:49   18273.4      0.11      36.4       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:49   18273.8      0.11      36.4       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:49   18273.7      0.11      36.3       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:49   18275.2      0.11      36.3       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:49   18276.4      0.11      36.3       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:50   18276.8      0.11      36.2       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:50   18276.9      0.11      36.2       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_17_/D      0.00  
+    0:02:50   18277.9      0.11      36.2       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:50   18278.2      0.11      36.2       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:51   18278.5      0.11      36.1       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:51   18279.2      0.11      36.1       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_17_/D      0.00  
+    0:02:51   18280.5      0.11      36.1       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:51   18280.5      0.11      36.1       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:52   18280.4      0.11      36.0       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_17_/D      0.00  
+    0:02:52   18283.0      0.11      36.0       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:52   18283.8      0.11      36.0       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:52   18283.9      0.11      36.0       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:52   18284.1      0.11      35.9       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:53   18284.4      0.11      35.9       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_17_/D      0.00  
+    0:02:53   18285.7      0.11      35.8       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:53   18286.3      0.11      35.8       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:53   18287.3      0.11      35.8       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:54   18288.8      0.11      35.8       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:54   18289.2      0.11      35.8       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:54   18289.0      0.11      35.7       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:54   18288.3      0.11      35.7       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:54   18289.2      0.11      35.7       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:55   18289.9      0.11      35.7       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:55   18289.8      0.11      35.7       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:55   18290.1      0.11      35.7       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:55   18291.2      0.11      35.6       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:55   18292.6      0.11      35.6       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:56   18293.0      0.11      35.6       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:56   18293.0      0.11      35.5       0.0 cpu/PC/current_pc_reg_10_/D      0.00  
+    0:02:56   18293.0      0.11      35.5       0.0 cpu/PC/current_pc_reg_22_/D      0.00  
+    0:02:56   18293.2      0.11      35.5       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:56   18294.3      0.11      35.5       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:56   18292.0      0.11      34.9       0.0 cpu/Reg_ID_EX/EX_rs2_reg_1_/D      0.00  
+    0:02:57   18292.0      0.11      35.0       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_17_/D      0.00  
+    0:02:57   18292.6      0.11      35.0       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_17_/D      0.00  
+    0:02:57   18292.7      0.11      35.0       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_17_/D      0.00  
+    0:02:57   18292.5      0.11      35.0       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_17_/D      0.00  
+    0:02:58   18292.9      0.11      35.0       0.0 cpu/PC/current_pc_reg_2_/D      0.00  
+    0:02:58   18293.1      0.11      35.0       0.0 cpu/PC/current_pc_reg_2_/D      0.00  
+    0:02:58   18293.4      0.11      35.0       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_17_/D      0.00  
+    0:02:58   18294.4      0.11      34.9       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_20_/D      0.00  
+    0:02:58   18294.4      0.11      34.9       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:58   18294.7      0.11      34.9       0.0 cpu/Reg_EX_MEM/MEM_cal_out_reg_23_/D      0.00  
+    0:02:59   18295.5      0.11      34.8       0.0 cpu/Reg_EX_MEM/MEM_cal_out_reg_23_/D      0.00  
+    0:02:59   18295.9      0.11      34.8       0.0 cpu/Reg_EX_MEM/MEM_cal_out_reg_23_/D      0.00  
+    0:02:59   18296.3      0.11      34.8       0.0 cpu/Reg_EX_MEM/MEM_cal_out_reg_23_/D      0.00  
+    0:02:59   18298.2      0.11      34.8       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:02:59   18298.2      0.11      34.8       0.0 cpu/Reg_EX_MEM/MEM_cal_out_reg_23_/D      0.00  
+    0:03:00   18298.2      0.11      34.7       0.0 cpu/Reg_EX_MEM/MEM_cal_out_reg_23_/D      0.00  
+    0:03:00   18298.8      0.11      34.7       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:00   18299.1      0.11      34.7       0.0 cpu/Reg_EX_MEM/MEM_cal_out_reg_23_/D      0.00  
+    0:03:00   18299.1      0.11      34.7       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:00   18299.2      0.11      34.7       0.0 cpu/Reg_EX_MEM/MEM_cal_out_reg_23_/D      0.00  
+    0:03:01   18298.6      0.11      34.7       0.0 cpu/Reg_EX_MEM/MEM_cal_out_reg_23_/D      0.00  
+    0:03:01   18298.5      0.11      34.6       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:01   18300.0      0.11      34.6       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:01   18299.9      0.11      34.6       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:01   18300.1      0.11      34.6       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:01   18301.4      0.11      34.6       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:02   18302.1      0.11      34.6       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:02   18302.1      0.11      34.5       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:02   18302.3      0.11      34.5       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:02   18302.3      0.11      34.5       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:02   18302.9      0.11      34.5       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:03   18302.6      0.11      34.5       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:03   18302.3      0.11      34.5       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:03   18303.0      0.11      34.5       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:03   18303.2      0.11      34.5       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:04   18303.8      0.11      34.4       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:04   18304.6      0.11      34.4       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:04   18305.4      0.11      34.4       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:04   18305.8      0.11      34.4       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:04   18306.4      0.11      34.4       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:05   18306.3      0.11      34.4       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:05   18308.0      0.11      34.3       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:05   18308.0      0.11      34.3       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:05   18308.2      0.11      34.3       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:05   18308.9      0.11      34.3       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:06   18308.8      0.11      34.3       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:06   18309.4      0.11      34.3       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:06   18310.1      0.11      34.3       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:06   18310.2      0.11      34.3       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:07   18310.0      0.11      34.2       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:07   18310.5      0.11      34.2       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:07   18310.7      0.11      34.1       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:07   18310.8      0.11      34.1       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:08   18311.9      0.11      34.1       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:08   18313.2      0.11      34.0       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:08   18314.2      0.11      34.0       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:08   18314.1      0.11      34.0       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:09   18316.5      0.11      34.0       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:09   18317.2      0.11      33.9       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:09   18318.5      0.11      33.8       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:09   18319.0      0.11      33.8       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:09   18319.4      0.11      33.8       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:10   18322.6      0.11      33.8       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:10   18322.3      0.11      33.7       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:10   18322.7      0.11      33.7       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:10   18323.1      0.11      33.6       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:10   18322.1      0.11      33.6       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:11   18322.7      0.11      33.6       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:11   18323.3      0.10      33.6       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:11   18323.5      0.10      33.6       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:11   18324.1      0.10      33.5       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:11   18324.3      0.10      33.5       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:12   18325.9      0.10      33.5       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:12   18327.7      0.10      33.4       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_20_/D      0.00  
+    0:03:12   18328.3      0.10      33.4       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:12   18328.7      0.10      33.4       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:12   18329.2      0.10      33.4       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:13   18329.6      0.10      33.4       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:13   18329.5      0.10      33.4       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:13   18332.2      0.10      33.3       0.0 cpu/Reg_EX_MEM/MEM_cal_out_reg_13_/D      0.00  
+    0:03:13   18333.2      0.10      33.3       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:13   18333.7      0.10      33.3       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:14   18334.5      0.10      33.2       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:14   18334.8      0.10      33.2       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:14   18334.8      0.10      33.2       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:15   18335.4      0.10      33.2       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:15   18337.3      0.10      33.1       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:15   18337.6      0.10      33.1       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:15   18337.6      0.10      33.1       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:15   18337.3      0.10      33.1       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:16   18336.8      0.10      33.1       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:16   18336.8      0.10      33.1       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:16   18337.1      0.10      33.1       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:16   18337.1      0.10      33.1       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:17   18336.9      0.10      33.1       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:17   18337.1      0.10      33.1       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:17   18336.9      0.10      33.1       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:18   18337.9      0.10      33.0       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:18   18338.3      0.10      33.0       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:18   18338.5      0.10      33.0       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:18   18339.6      0.10      33.0       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:18   18340.5      0.10      33.0       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:19   18340.4      0.10      33.0       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:19   18340.6      0.10      33.0       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:19   18341.5      0.10      33.0       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:20   18341.6      0.10      33.0       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:20   18342.3      0.10      32.9       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:20   18343.1      0.10      32.9       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:20   18343.3      0.10      32.9       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:20   18343.9      0.10      32.9       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:20   18343.6      0.10      32.8       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:21   18342.9      0.10      32.8       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:21   18344.5      0.10      32.8       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:21   18345.2      0.10      32.8       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:21   18345.5      0.10      32.7       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:21   18347.3      0.10      32.7       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:22   18347.1      0.10      32.7       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:22   18347.1      0.10      32.7       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:22   18347.3      0.10      32.7       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:22   18348.0      0.10      32.7       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:23   18348.3      0.10      32.7       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:23   18349.0      0.10      32.7       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:23   18349.3      0.10      32.7       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:24   18349.3      0.10      32.6       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:24   18349.0      0.10      32.7       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:25   18349.0      0.10      32.7       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:25   18349.3      0.10      32.7       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:25   18349.4      0.10      32.6       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:25   18349.5      0.10      32.6       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:25   18349.6      0.10      32.6       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:26   18350.0      0.10      32.6       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:26   18350.3      0.10      32.6       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:26   18350.4      0.10      32.6       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:26   18350.9      0.10      32.6       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:27   18350.9      0.10      32.6       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:27   18351.7      0.10      32.6       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:27   18352.8      0.10      32.6       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:27   18352.4      0.10      32.6       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:27   18352.9      0.10      32.6       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:27   18354.0      0.10      32.6       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:28   18354.7      0.10      32.6       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:28   18355.3      0.10      32.5       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:28   18355.1      0.10      32.5       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:28   18355.0      0.10      32.5       0.0 cpu/PC/current_pc_reg_8_/D      0.00  
+    0:03:50   18355.0      0.10      32.5       0.0                                0.00  
+    0:03:52   18355.0      0.10      32.5       0.0                                0.00  
+    0:03:54   18355.3      0.10      32.5       0.0 cpu/PC/current_pc_reg_19_/D      0.00  
+    0:03:55   18355.7      0.10      32.5       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_1_/D      0.00  
+    0:03:56   18357.6      0.10      32.4       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_1_/D      0.00  
+    0:03:57   18358.1      0.10      32.4       0.0 cpu/PC/current_pc_reg_16_/D      0.00  
+    0:03:58   18359.0      0.10      32.3       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_1_/D      0.00  
+    0:03:59   18355.2      0.10      32.2       0.0 cpu/PC/current_pc_reg_15_/D      0.00  
+    0:04:00   18355.4      0.10      32.0       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_1_/D      0.00  
+    0:04:01   18355.1      0.10      32.0       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:01   18354.1      0.10      32.0       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:01   18354.1      0.10      32.0       0.0 cpu/PC/current_pc_reg_16_/D      0.00  
+    0:04:01   18354.7      0.10      32.0       0.0 cpu/PC/current_pc_reg_16_/D      0.00  
+    0:04:02   18354.5      0.10      32.0       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:03   18355.0      0.10      31.9       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:03   18355.2      0.10      31.9       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:03   18355.3      0.10      31.9       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:03   18355.1      0.10      31.9       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:05   18355.2      0.10      31.9       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:05   18355.4      0.10      31.9       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:05   18355.8      0.10      31.9       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:05   18355.9      0.10      31.8       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:05   18356.6      0.10      31.8       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:06   18356.1      0.10      31.8       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:06   18356.8      0.10      31.8       0.0 cpu/PC/current_pc_reg_16_/D      0.00  
+    0:04:06   18357.0      0.10      31.8       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:06   18357.4      0.10      31.8       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:07   18359.8      0.10      31.7       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:07   18360.1      0.10      31.7       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:08   18360.1      0.10      31.7       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:08   18360.4      0.10      31.7       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:08   18360.5      0.10      31.7       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:08   18360.9      0.10      31.7       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:09   18363.1      0.10      31.7       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:09   18363.3      0.10      31.6       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:09   18364.9      0.10      31.6       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:09   18364.7      0.10      31.6       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:09   18365.2      0.10      31.6       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:10   18365.9      0.10      31.6       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:11   18365.7      0.10      31.6       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:12   18366.1      0.10      31.6       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:12   18366.2      0.10      31.6       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:13   18366.2      0.10      31.6       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:13   18366.9      0.10      31.6       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:13   18367.1      0.10      31.6       0.0 cpu/PC/current_pc_reg_16_/D      0.00  
+    0:04:13   18367.2      0.10      31.5       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:14   18367.6      0.10      31.5       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:14   18368.1      0.10      31.5       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:14   18367.8      0.10      31.5       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:14   18367.6      0.10      31.5       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:16   18367.9      0.10      31.5       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:16   18368.6      0.10      31.5       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:16   18368.6      0.10      31.5       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:16   18369.1      0.10      31.5       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:17   18369.3      0.10      31.4       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:17   18369.6      0.10      31.4       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:17   18369.4      0.10      31.4       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:19   18369.7      0.10      31.4       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:19   18369.0      0.10      31.4       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:19   18368.8      0.10      31.4       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:19   18369.0      0.10      31.4       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:20   18369.3      0.10      31.4       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:21   18369.9      0.10      31.4       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:22   18370.0      0.10      31.4       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:23   18371.5      0.10      31.4       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:23   18371.5      0.10      31.4       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:24   18371.2      0.10      31.4       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:25   18371.4      0.10      31.4       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:25   18371.0      0.10      31.4       0.0 cpu/PC/current_pc_reg_16_/D      0.00  
+    0:04:27   18371.4      0.10      31.4       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:27   18371.2      0.10      31.4       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:27   18371.2      0.10      31.4       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:27   18371.5      0.10      31.4       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:27   18371.6      0.10      31.4       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:28   18371.4      0.10      31.4       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:29   18371.6      0.10      31.4       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:29   18371.8      0.10      31.3       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:29   18371.6      0.10      31.3       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:29   18371.1      0.10      31.3       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:29   18371.9      0.10      31.3       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:30   18371.8      0.10      31.3       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:30   18372.8      0.10      31.3       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:31   18373.0      0.10      31.3       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:31   18373.7      0.10      31.3       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:31   18373.8      0.10      31.3       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:32   18374.2      0.10      31.3       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:32   18374.4      0.10      31.3       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:34   18374.5      0.10      31.3       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:35   18374.1      0.10      31.3       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:37   18374.3      0.10      31.3       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:37   18374.8      0.10      31.3       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:37   18375.3      0.10      31.3       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:37   18375.5      0.10      31.3       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:37   18376.1      0.10      31.2       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:37   18376.3      0.10      31.2       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:38   18376.5      0.10      31.2       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:39   18376.9      0.10      31.2       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:39   18377.4      0.10      31.2       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:39   18377.4      0.10      31.2       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:39   18377.7      0.10      31.2       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:39   18377.5      0.10      31.2       0.0 cpu/PC/current_pc_reg_16_/D      0.00  
+    0:04:39   18377.6      0.10      31.2       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:41   18377.8      0.10      31.2       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:41   18377.7      0.10      31.1       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:41   18377.6      0.10      31.1       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:41   18377.6      0.10      31.1       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:41   18377.6      0.10      31.1       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:41   18377.4      0.10      31.1       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:42   18377.6      0.10      31.1       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:43   18377.9      0.10      31.1       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:43   18377.9      0.10      31.1       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:44   18378.2      0.10      31.1       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:45   18378.0      0.10      31.1       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:45   18377.9      0.10      31.1       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:45   18378.1      0.10      31.1       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:45   18378.5      0.10      31.1       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:46   18379.0      0.10      31.1       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:46   18379.2      0.10      31.1       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:46   18377.8      0.10      31.1       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:47   18378.8      0.10      31.0       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:47   18379.2      0.10      31.0       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:48   18379.3      0.10      31.0       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:48   18379.8      0.10      31.0       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:50   18380.4      0.10      30.9       0.0 cpu/PC/current_pc_reg_12_/D      0.00  
+    0:04:50   18380.4      0.10      30.9       0.0 cpu/PC/current_pc_reg_11_/D      0.00  
+    0:04:50   18380.4      0.10      30.9       0.0 cpu/PC/current_pc_reg_1_/D      0.00  
+    0:04:52   18380.8      0.10      30.9       0.0 cpu/PC/current_pc_reg_2_/D      0.00  
+    0:04:52   18380.8      0.10      30.9       0.0                                0.00  
+    0:04:53   18380.6      0.10      31.1       0.0                                0.00  
+
+
+  Beginning Design Rule Fixing  (min_path)  (min_capacitance)  (max_capacitance)
+  ----------------------------
+
+                                  TOTAL                                                  
+   ELAPSED            WORST NEG   SETUP    DESIGN                              MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT             COST    
+  --------- --------- --------- --------- --------- ------------------------- -----------
+    0:04:53   18380.6      0.10      31.1       0.0                               -8.14  
+    0:04:54   18380.9      0.10      31.1       0.0 cpu/PC/current_pc_reg_3_/D     -8.14  
+    0:04:54   18380.7      0.10      31.1       0.0 cpu/PC/current_pc_reg_3_/D     -8.14  
+    0:04:55   18382.8      0.10      31.0       0.0 cpu/PC/current_pc_reg_3_/D     -8.14  
+    0:04:55   18383.7      0.10      31.0       0.0 cpu/PC/current_pc_reg_3_/D     -8.14  
+    0:04:55   18384.0      0.10      31.0       0.0 cpu/PC/current_pc_reg_3_/D     -8.14  
+    0:04:56   18384.8      0.10      31.0       0.0 cpu/PC/current_pc_reg_3_/D     -8.14  
+    0:04:56   18385.7      0.10      30.9       0.0 cpu/PC/current_pc_reg_3_/D     -8.14  
+    0:04:56   18387.0      0.10      30.9       0.0 cpu/PC/current_pc_reg_3_/D     -8.14  
+    0:04:57   18387.3      0.10      30.9       0.0 cpu/PC/current_pc_reg_3_/D     -8.14  
+    0:04:57   18387.2      0.10      30.9       0.0 cpu/PC/current_pc_reg_3_/D     -8.14  
+    0:04:57   18387.3      0.10      30.9       0.0 cpu/PC/current_pc_reg_3_/D     -8.14  
+    0:04:57   18388.3      0.10      30.8       0.0 cpu/PC/current_pc_reg_3_/D     -8.14  
+    0:04:58   18388.9      0.10      30.8       0.0 cpu/PC/current_pc_reg_3_/D     -8.14  
+    0:04:58   18388.8      0.10      30.8       0.0 cpu/PC/current_pc_reg_3_/D     -8.14  
+    0:04:58   18390.1      0.10      30.8       0.0 cpu/PC/current_pc_reg_3_/D     -8.14  
+    0:04:58   18391.1      0.10      30.7       0.0 cpu/PC/current_pc_reg_3_/D     -8.14  
+    0:04:59   18391.0      0.10      30.7       0.0 cpu/PC/current_pc_reg_3_/D     -8.14  
+    0:04:59   18391.6      0.10      30.7       0.0 cpu/PC/current_pc_reg_3_/D     -8.14  
+    0:05:00   18391.7      0.10      30.5       0.0 cpu/PC/current_pc_reg_3_/D     -8.14  
+    0:05:00   18391.3      0.10      30.5       0.0 cpu/PC/current_pc_reg_3_/D     -8.14  
+    0:05:00   18392.1      0.10      30.5       0.0 cpu/PC/current_pc_reg_3_/D     -8.14  
+    0:05:00   18393.0      0.10      30.5       0.0 cpu/PC/current_pc_reg_3_/D     -8.14  
+    0:05:00   18393.8      0.10      30.5       0.0 cpu/PC/current_pc_reg_3_/D     -8.14  
+    0:05:01   18394.9      0.10      30.4       0.0 cpu/PC/current_pc_reg_3_/D     -8.14  
+    0:05:01   18394.9      0.10      30.4       0.0 cpu/PC/current_pc_reg_3_/D     -8.14  
+    0:05:02   18396.1      0.10      30.5       0.0 cpu/PC/current_pc_reg_3_/D     -8.14  
+    0:05:02   18398.8      0.10      30.5       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_1_/D     -8.14  
+    0:05:02   18398.4      0.10      30.5       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_1_/D     -8.14  
+    0:05:03   18397.8      0.10      30.5       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_1_/D     -8.14  
+    0:05:03   18399.4      0.10      30.5       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_1_/D     -8.14  
+    0:05:03   18401.8      0.09      30.4       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_1_/D     -8.14  
+    0:05:04   18403.4      0.09      30.3       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_1_/D     -8.14  
+    0:05:04   18402.6      0.09      30.3       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_20_/D     -8.14  
+    0:05:05   18402.8      0.09      30.3       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_1_/D     -8.14  
+    0:05:06   18406.4      0.09      30.3       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_1_/D     -8.14  
+    0:05:06   18408.0      0.09      30.3       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_4_/D     -8.19  
+    0:05:07   18407.4      0.09      30.2       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_1_/D     -8.27  
+    0:05:07   18407.9      0.09      30.2       0.0 cpu/PC/current_pc_reg_3_/D     -8.27  
+    0:05:07   18408.4      0.09      30.2       0.0 cpu/PC/current_pc_reg_4_/D     -8.27  
+    0:05:07   18409.3      0.09      30.2       0.0 cpu/PC/current_pc_reg_4_/D     -8.27  
+    0:05:08   18410.3      0.09      30.1       0.0 cpu/PC/current_pc_reg_4_/D     -8.27  
+    0:05:08   18411.3      0.09      30.1       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_20_/D     -8.27  
+    0:05:09   18412.6      0.09      30.1       0.0 cpu/PC/current_pc_reg_4_/D     -8.27  
+    0:05:09   18413.7      0.09      30.0       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_20_/D     -8.27  
+    0:05:10   18415.1      0.09      30.0       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_20_/D     -8.27  
+    0:05:12   18415.1      0.09      30.0       0.0                               -8.27  
+    0:05:13   18415.7      0.09      30.0       0.0                               -8.27  
+    0:05:13   18415.8      0.09      30.0       0.0                               -8.27  
+    0:05:14   18415.9      0.09      29.9       0.0                               -8.35  
+    0:05:15   18416.6      0.09      29.8       0.0                               -8.35  
+    0:05:16   18416.5      0.09      29.8       0.0                               -8.35  
+    0:05:16   18417.0      0.09      29.8       0.0                               -8.35  
+    0:05:17   18417.5      0.09      29.8       0.0                               -8.35  
+    0:05:17   18417.2      0.09      29.8       0.0                               -8.35  
+    0:05:18   18417.9      0.09      29.7       0.0                               -8.35  
+    0:05:18   18417.5      0.09      29.7       0.0                               -8.35  
+    0:05:19   18417.5      0.09      29.7       0.0                               -8.35  
+    0:05:19   18418.2      0.09      29.7       0.0                               -8.35  
+    0:05:20   18419.9      0.09      29.6       0.0                               -8.35  
+    0:05:21   18420.9      0.09      29.6       0.0                               -8.35  
+    0:05:21   18420.9      0.09      29.6       0.0                               -8.34  
+    0:05:21   18421.0      0.09      29.6       0.0                               -8.34  
+    0:05:21   18421.3      0.09      29.6       0.0                               -8.34  
+    0:05:22   18422.3      0.09      29.6       0.0                               -8.34  
+    0:05:22   18423.6      0.09      29.6       0.0                               -8.33  
+    0:05:22   18423.5      0.09      29.6       0.0                               -8.33  
+    0:05:23   18422.1      0.09      29.6       0.0                               -8.33  
+    0:05:23   18422.6      0.09      29.4       0.0                               -8.33  
+    0:05:24   18423.0      0.09      29.3       0.0                               -8.33  
+    0:05:25   18423.6      0.09      29.3       0.0                               -8.33  
+    0:05:25   18423.7      0.09      29.3       0.0                               -8.35  
+    0:05:25   18424.4      0.09      29.3       0.0                               -8.35  
+    0:05:25   18426.5      0.09      29.2       0.0                               -8.35  
+    0:05:25   18427.3      0.09      29.1       0.0                               -8.35  
+    0:05:26   18427.3      0.09      29.0       0.0                               -8.35  
+    0:05:26   18427.8      0.09      28.9       0.0                               -8.35  
+    0:05:26   18429.9      0.09      28.9       0.0                               -8.35  
+    0:05:28   18430.6      0.09      29.2       0.0                               -8.35  
+    0:05:28   18431.0      0.09      29.1       0.0                               -8.35  
+    0:05:28   18431.8      0.09      29.1       0.0                               -8.35  
+    0:05:28   18432.1      0.09      29.1       0.0                               -8.35  
+    0:05:29   18434.0      0.09      29.1       0.0                               -8.33  
+    0:05:29   18434.0      0.09      29.1       0.0                               -8.33  
+    0:05:29   18435.6      0.09      29.0       0.0                               -8.32  
+    0:05:29   18437.2      0.09      29.0       0.0                               -8.32  
+    0:05:30   18440.0      0.09      29.0       0.0                               -8.32  
+    0:05:30   18440.0      0.09      29.0       0.0                               -8.30  
+    0:05:30   18441.6      0.09      29.0       0.0                               -8.28  
+    0:05:31   18441.3      0.09      28.9       0.0                               -8.28  
+    0:05:31   18440.7      0.09      28.9       0.0                               -8.28  
+    0:05:31   18441.2      0.09      28.9       0.0                               -8.28  
+    0:05:32   18441.1      0.09      28.9       0.0                               -8.28  
+    0:05:32   18440.5      0.09      28.9       0.0                               -8.28  
+    0:05:32   18440.1      0.09      28.9       0.0                               -8.28  
+
+
+  Beginning Area-Recovery Phase  (max_area 0)
+  -----------------------------
+
+                                  TOTAL                                                  
+   ELAPSED            WORST NEG   SETUP    DESIGN                              MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT             COST    
+  --------- --------- --------- --------- --------- ------------------------- -----------
+    0:05:32   18440.1      0.09      28.9       0.0                               -8.28  
+    0:05:33   18440.1      0.09      28.9       0.0                               -8.28  
+    0:05:35   18389.9      0.10      30.0       0.0                               -8.28  
+    0:05:36   18377.7      0.10      29.6       0.0                               -8.28  
+    0:05:36   18370.7      0.10      30.8       0.0                               -8.28  
+    0:05:36   18367.3      0.10      30.8       0.0                               -8.28  
+    0:05:37   18365.7      0.10      30.9       0.0                               -8.28  
+    0:05:37   18365.7      0.10      30.9       0.0                               -8.28  
+    0:05:38   18367.7      0.09      30.4       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D     -8.28  
+    0:05:38   18370.1      0.09      30.3       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D     -8.28  
+    0:05:39   18371.3      0.09      29.9       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D     -8.28  
+    0:05:40   18371.6      0.09      29.9       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D     -8.28  
+    0:05:40   18372.8      0.09      29.9       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D     -8.28  
+    0:05:41   18373.2      0.09      29.8       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D     -8.28  
+    0:05:42   18377.0      0.09      29.8       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D     -8.28  
+    0:05:42   18376.9      0.09      29.6       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D     -8.28  
+    0:05:43   18377.2      0.09      29.6       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D     -8.28  
+    0:05:43   18378.5      0.09      29.6       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D     -8.28  
+    0:05:43   18380.5      0.09      29.6       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D     -8.28  
+    0:05:44   18380.6      0.09      29.6       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D     -8.28  
+    0:05:44   18381.7      0.09      29.6       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D     -8.28  
+    0:05:44   18382.2      0.09      29.6       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D     -8.28  
+    0:05:45   18382.7      0.09      29.6       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D     -8.28  
+    0:05:45   18382.7      0.09      29.6       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D     -8.28  
+    0:05:45   18382.9      0.09      29.6       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D     -8.28  
+    0:05:45   18383.3      0.09      29.5       0.0 cpu/PC/current_pc_reg_3_/D     -8.28  
+    0:05:46   18383.7      0.09      29.5       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D     -8.28  
+    0:05:46   18383.8      0.09      29.5       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D     -8.28  
+    0:05:46   18383.7      0.09      29.5       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D     -8.28  
+    0:05:46   18383.7      0.09      29.5       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D     -8.28  
+    0:05:47   18383.8      0.09      29.5       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D     -8.28  
+    0:05:47   18385.0      0.09      29.5       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D     -8.28  
+    0:05:47   18384.3      0.09      29.3       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D     -8.28  
+    0:05:48   18384.5      0.09      29.3       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D     -8.28  
+    0:05:48   18384.8      0.09      29.2       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D     -8.28  
+    0:05:48   18385.0      0.09      29.2       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D     -8.28  
+    0:05:49   18385.4      0.09      29.1       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D     -8.28  
+    0:05:49   18388.9      0.09      29.1       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D     -8.28  
+    0:05:50   18388.9      0.09      29.0       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D     -8.28  
+    0:05:50   18390.1      0.09      29.0       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D     -8.28  
+    0:05:51   18390.4      0.09      28.9       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D     -8.28  
+    0:05:52   18391.4      0.09      28.9       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D     -8.28  
+    0:05:52   18391.6      0.09      28.9       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D     -8.28  
+    0:05:52   18392.1      0.09      28.9       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D     -8.28  
+    0:05:53   18392.5      0.09      28.9       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D     -8.28  
+    0:05:54   18392.4      0.09      28.9       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_29_/D     -8.28  
+    0:05:54   18392.2      0.09      29.0       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D     -8.28  
+    0:05:55   18392.2      0.09      29.0       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D     -8.28  
+    0:05:55   18393.0      0.09      29.0       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D     -8.28  
+    0:05:55   18393.1      0.09      29.0       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D     -8.28  
+    0:05:55   18393.7      0.09      28.9       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D     -8.28  
+    0:05:56   18394.3      0.09      28.9       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D     -8.28  
+    0:05:56   18396.1      0.09      28.9       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D     -8.28  
+    0:05:56   18397.4      0.09      28.9       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D     -8.28  
+    0:05:57   18397.9      0.09      28.9       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D     -8.28  
+    0:05:57   18398.1      0.09      28.9       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D     -8.28  
+    0:05:57   18398.9      0.09      28.8       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D     -8.28  
+    0:05:58   18398.9      0.09      28.8       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D     -8.28  
+    0:05:58   18399.4      0.09      28.8       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D     -8.28  
+    0:05:59   18400.0      0.09      28.8       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D     -8.28  
+    0:05:59   18400.1      0.09      28.8       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D     -8.28  
+    0:05:59   18400.1      0.09      28.8       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D     -8.28  
+    0:06:00   18401.1      0.09      28.8       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D     -8.28  
+    0:06:00   18401.6      0.09      28.8       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D     -8.28  
+    0:06:00   18401.6      0.09      28.8       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D     -8.28  
+    0:06:01   18401.6      0.09      28.8       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D     -8.28  
+    0:06:01   18402.0      0.09      28.8       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D     -8.28  
+    0:06:02   18402.3      0.09      28.8       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D     -8.28  
+    0:06:02   18402.3      0.09      28.8       0.0 cpu/PC/current_pc_reg_16_/D     -8.28  
+    0:06:03   18403.9      0.09      28.8       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D     -8.28  
+    0:06:03   18404.4      0.09      28.7       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D     -8.28  
+    0:06:04   18405.0      0.09      28.7       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D     -8.28  
+    0:06:04   18405.2      0.09      28.7       0.0 cpu/PC/current_pc_reg_16_/D     -8.28  
+    0:06:04   18405.2      0.09      28.7       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D     -8.28  
+    0:06:04   18405.3      0.09      28.6       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_20_/D     -8.28  
+    0:06:05   18405.3      0.09      28.6       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_20_/D     -8.28  
+    0:06:05   18405.6      0.09      28.5       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_20_/D     -8.28  
+    0:06:05   18407.2      0.09      28.5       0.0 cpu/PC/current_pc_reg_9_/D     -8.28  
+    0:06:06   18407.5      0.09      28.4       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_20_/D     -8.28  
+    0:06:06   18407.8      0.09      28.4       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_20_/D     -8.28  
+    0:06:06   18408.0      0.09      28.4       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_20_/D     -8.28  
+    0:06:06   18407.4      0.09      28.4       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_20_/D     -8.28  
+    0:06:07   18407.7      0.09      28.4       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_20_/D     -8.28  
+    0:06:07   18408.3      0.09      28.4       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_20_/D     -8.28  
+    0:06:07   18408.9      0.09      28.4       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_20_/D     -8.28  
+    0:06:08   18409.8      0.09      28.4       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_20_/D     -8.28  
+    0:06:08   18410.8      0.09      28.3       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_20_/D     -8.28  
+    0:06:08   18411.8      0.09      28.3       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_20_/D     -8.28  
+    0:06:09   18413.3      0.09      28.3       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_20_/D     -8.28  
+    0:06:09   18413.3      0.09      28.3       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_20_/D     -8.28  
+    0:06:09   18414.5      0.09      28.3       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_20_/D     -8.28  
+    0:06:09   18414.3      0.09      28.3       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_20_/D     -8.28  
+    0:06:09   18414.1      0.09      28.3       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_20_/D     -8.28  
+    0:06:10   18414.4      0.09      28.2       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_20_/D     -8.28  
+    0:06:10   18414.9      0.09      28.2       0.0                               -8.28  
+    0:06:10   18355.7      0.12      38.5       0.0                               -8.28  
+    0:06:11   18334.4      0.12      38.4       0.0                               -8.28  
+    0:06:11   18327.9      0.12      38.4       0.0                               -8.28  
+    0:06:11   18327.3      0.12      38.4       0.0                               -8.28  
+    0:06:11   18327.3      0.12      38.4       0.0                               -8.28  
+    0:06:11   18327.3      0.12      38.4       0.0                               -8.28  
+    0:06:11   18327.3      0.12      38.4       0.0                               -8.28  
+    0:06:11   18327.3      0.12      38.4       0.0                               -8.28  
+    0:06:12   18337.9      0.10      31.6       0.0 cpu/PC/current_pc_reg_19_/D     -8.27  
+    0:06:13   18345.2      0.09      30.3       0.0 cpu/PC/current_pc_reg_28_/D     -8.27  
+    0:06:15   18348.1      0.09      29.8       0.0 cpu/PC/current_pc_reg_19_/D     -8.27  
+    0:06:15   18348.8      0.09      29.7       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D     -8.27  
+    0:06:15   18351.4      0.09      29.6       0.0 cpu/PC/current_pc_reg_19_/D     -8.27  
+    0:06:16   18352.5      0.09      29.5       0.0 cpu/PC/current_pc_reg_19_/D     -8.27  
+    0:06:16   18353.0      0.09      29.4       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D     -8.27  
+    0:06:17   18353.6      0.09      29.4       0.0 cpu/PC/current_pc_reg_19_/D     -8.27  
+    0:06:18   18355.1      0.09      29.3       0.0 cpu/PC/current_pc_reg_28_/D     -8.27  
+    0:06:18   18355.8      0.09      29.2       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D     -8.27  
+    0:06:20   18367.9      0.09      28.8       0.0 cpu/PC/current_pc_reg_16_/D     -8.28  
+    0:06:21   18368.7      0.09      28.8       0.0 cpu/Reg_EX_MEM/MEM_cal_out_reg_16_/D     -8.28  
+    0:06:21   18371.2      0.09      28.7       0.0 cpu/PC/current_pc_reg_16_/D     -8.28  
+    0:06:22   18371.1      0.09      28.7       0.0 cpu/PC/current_pc_reg_16_/D     -8.28  
+    0:06:22   18370.8      0.09      28.6       0.0 cpu/PC/current_pc_reg_24_/D     -8.28  
+    0:06:23   18371.3      0.09      28.6       0.0 cpu/PC/current_pc_reg_16_/D     -8.28  
+    0:06:23   18371.9      0.09      28.6       0.0 cpu/PC/current_pc_reg_16_/D     -8.28  
+    0:06:23   18372.5      0.09      28.6       0.0 cpu/PC/current_pc_reg_16_/D     -8.28  
+    0:06:24   18372.9      0.09      28.5       0.0 cpu/PC/current_pc_reg_16_/D     -8.28  
+    0:06:24   18373.2      0.09      28.5       0.0 cpu/PC/current_pc_reg_24_/D     -8.28  
+    0:06:24   18374.8      0.09      28.5       0.0 cpu/PC/current_pc_reg_16_/D     -8.28  
+    0:06:25   18376.2      0.09      28.4       0.0 cpu/Reg_EX_MEM/MEM_cal_out_reg_16_/D     -8.28  
+    0:06:25   18377.0      0.09      28.4       0.0 cpu/PC/current_pc_reg_16_/D     -8.28  
+    0:06:25   18377.1      0.09      28.4       0.0 cpu/PC/current_pc_reg_24_/D     -8.28  
+    0:06:25   18377.2      0.09      28.4       0.0 cpu/PC/current_pc_reg_16_/D     -8.28  
+    0:06:26   18377.2      0.09      28.4       0.0 cpu/PC/current_pc_reg_16_/D     -8.28  
+    0:06:26   18377.6      0.09      28.4       0.0 cpu/PC/current_pc_reg_24_/D     -8.28  
+    0:06:27   18378.8      0.09      28.3       0.0 cpu/Reg_EX_MEM/MEM_cal_out_reg_22_/D     -8.28  
+    0:06:27   18379.4      0.09      28.3       0.0 cpu/PC/current_pc_reg_24_/D     -8.28  
+    0:06:27   18380.7      0.09      28.2       0.0 cpu/PC/current_pc_reg_16_/D     -8.28  
+    0:06:28   18382.1      0.09      28.2       0.0 cpu/PC/current_pc_reg_16_/D     -8.28  
+    0:06:28   18382.7      0.09      28.1       0.0 cpu/PC/current_pc_reg_16_/D     -8.28  
+    0:06:29   18382.3      0.09      28.0       0.0 cpu/PC/current_pc_reg_16_/D     -8.28  
+    0:06:29   18383.0      0.09      28.0       0.0 cpu/PC/current_pc_reg_16_/D     -8.28  
+    0:06:29   18383.7      0.09      28.0       0.0 cpu/PC/current_pc_reg_24_/D     -8.28  
+    0:06:30   18383.9      0.09      28.0       0.0 cpu/PC/current_pc_reg_16_/D     -8.28  
+    0:06:31   18384.9      0.09      28.0       0.0 cpu/PC/current_pc_reg_16_/D     -8.28  
+    0:06:31   18384.3      0.09      28.0       0.0 cpu/PC/current_pc_reg_24_/D     -8.28  
+    0:06:31   18383.7      0.09      27.9       0.0 cpu/PC/current_pc_reg_16_/D     -8.28  
+    0:06:32   18383.9      0.09      27.9       0.0 cpu/PC/current_pc_reg_16_/D     -8.28  
+    0:06:32   18384.1      0.09      27.9       0.0 cpu/PC/current_pc_reg_24_/D     -8.28  
+    0:06:32   18384.8      0.09      27.9       0.0 cpu/PC/current_pc_reg_24_/D     -8.28  
+    0:06:33   18384.9      0.09      27.9       0.0 cpu/PC/current_pc_reg_24_/D     -8.28  
+    0:06:33   18385.0      0.09      27.9       0.0 cpu/PC/current_pc_reg_16_/D     -8.28  
+    0:06:34   18385.0      0.09      27.8       0.0 cpu/PC/current_pc_reg_16_/D     -8.28  
+    0:06:34   18386.6      0.09      27.8       0.0 cpu/PC/current_pc_reg_24_/D     -8.28  
+    0:06:34   18388.0      0.09      27.8       0.0 cpu/PC/current_pc_reg_16_/D     -8.28  
+    0:06:35   18388.5      0.09      27.7       0.0 cpu/PC/current_pc_reg_24_/D     -8.28  
+    0:06:35   18389.2      0.09      27.7       0.0 cpu/PC/current_pc_reg_23_/D     -8.28  
+    0:06:35   18388.9      0.09      27.7       0.0 cpu/PC/current_pc_reg_13_/D     -8.28  
+    0:06:35   18389.8      0.09      27.7       0.0 cpu/PC/current_pc_reg_6_/D     -8.28  
+    0:06:36   18389.6      0.09      27.7       0.0 cpu/PC/current_pc_reg_7_/D     -8.28  
+    0:06:36   18390.9      0.09      27.7       0.0 cpu/PC/current_pc_reg_24_/D     -8.28  
+    0:06:36   18391.0      0.09      27.7       0.0 cpu/PC/current_pc_reg_24_/D     -8.28  
+    0:06:37   18391.3      0.09      27.7       0.0 cpu/PC/current_pc_reg_7_/D     -8.28  
+    0:06:37   18391.6      0.09      27.7       0.0 cpu/PC/current_pc_reg_7_/D     -8.28  
+    0:06:37   18391.8      0.09      27.7       0.0 cpu/Reg_EX_MEM/MEM_cal_out_reg_16_/D     -8.28  
+    0:06:38   18392.1      0.09      27.6       0.0 cpu/PC/current_pc_reg_7_/D     -8.28  
+    0:06:38   18392.1      0.09      27.6       0.0 cpu/PC/current_pc_reg_24_/D     -8.28  
+    0:06:38   18391.5      0.09      27.6       0.0 cpu/PC/current_pc_reg_24_/D     -8.28  
+    0:06:39   18392.5      0.09      27.6       0.0 cpu/Reg_EX_MEM/MEM_cal_out_reg_16_/D     -8.28  
+    0:06:39   18394.7      0.09      27.6       0.0 cpu/PC/current_pc_reg_24_/D     -8.28  
+    0:06:39   18394.6      0.09      27.6       0.0 cpu/PC/current_pc_reg_24_/D     -8.28  
+    0:06:40   18394.9      0.09      27.6       0.0 cpu/Reg_EX_MEM/MEM_cal_out_reg_16_/D     -8.28  
+    0:06:40   18394.9      0.09      27.6       0.0 cpu/PC/current_pc_reg_0_/D     -8.28  
+    0:06:41   18395.4      0.09      27.5       0.0 cpu/PC/current_pc_reg_0_/D     -8.28  
+    0:06:41   18395.0      0.09      27.5       0.0 cpu/PC/current_pc_reg_0_/D     -8.28  
+    0:06:42   18395.0      0.09      27.5       0.0 cpu/PC/current_pc_reg_26_/D     -8.28  
+    0:06:42   18394.9      0.09      27.5       0.0 cpu/PC/current_pc_reg_0_/D     -8.28  
+    0:06:42   18395.9      0.09      27.5       0.0 cpu/PC/current_pc_reg_0_/D     -8.28  
+    0:06:43   18397.1      0.09      27.5       0.0 cpu/PC/current_pc_reg_0_/D     -8.28  
+    0:06:43   18397.4      0.09      27.5       0.0 cpu/PC/current_pc_reg_7_/D     -8.28  
+    0:06:44   18397.4      0.09      27.5       0.0 cpu/PC/current_pc_reg_5_/D     -8.28  
+    0:06:44   18396.4      0.09      27.4       0.0                               -8.28  
+    0:06:44   18396.0      0.09      27.4       0.0                               -8.28  
+    0:06:45   18392.6      0.09      27.4       0.0                               -8.28  
+    0:06:45   18389.3      0.09      27.4       0.0                               -8.28  
+    0:06:45   18388.6      0.09      27.4       0.0                               -8.28  
+    0:06:45   18387.6      0.09      27.4       0.0                               -8.28  
+    0:06:45   18384.5      0.09      27.4       0.0                               -8.28  
+    0:06:46   18381.1      0.09      27.4       0.0                               -8.28  
+    0:06:46   18378.2      0.09      27.4       0.0                               -8.28  
+    0:06:46   18374.8      0.09      27.4       0.0                               -8.28  
+    0:06:46   18370.6      0.09      27.4       0.0                               -8.28  
+    0:06:46   18366.9      0.09      27.4       0.0                               -8.28  
+    0:06:47   18363.7      0.09      27.4       0.0                               -8.28  
+    0:06:47   18362.4      0.09      27.4       0.0                               -8.28  
+    0:06:47   18360.0      0.09      27.4       0.0                               -8.28  
+    0:06:47   18356.5      0.09      27.4       0.0                               -8.28  
+    0:06:47   18352.1      0.09      27.4       0.0                               -8.28  
+    0:06:48   18348.1      0.09      27.4       0.0                               -8.28  
+    0:06:48   18343.4      0.09      27.3       0.0                               -8.28  
+    0:06:48   18338.6      0.09      27.3       0.0                               -8.28  
+    0:06:48   18333.9      0.09      27.3       0.0                               -8.28  
+    0:06:49   18327.9      0.09      27.3       0.0                               -8.28  
+    0:06:49   18323.9      0.09      27.3       0.0                               -8.28  
+    0:06:49   18319.5      0.09      27.3       0.0                               -8.28  
+    0:06:49   18316.9      0.09      27.3       0.0                               -8.28  
+    0:06:50   18313.0      0.09      27.3       0.0                               -8.28  
+    0:06:50   18287.0      0.09      27.3       0.0                               -8.28  
+    0:06:52   18244.3      0.09      27.3       0.0                               -8.28  
+    0:06:54   18200.3      0.09      27.3       0.0                               -8.28  
+    0:06:54   18186.0      0.09      27.3       0.0                               -8.28  
+    0:06:55   18156.8      0.09      27.3       0.0                               -8.28  
+    0:06:56   18121.0      0.09      27.3       0.0                               -8.28  
+    0:06:57   18103.7      0.09      27.3       0.0                               -8.28  
+    0:06:57   18096.0      0.09      27.3       0.0                               -8.28  
+    0:06:57   18095.3      0.09      27.3       0.0                               -8.28  
+    0:06:58   18093.8      0.09      27.3       0.0                               -8.28  
+    0:06:58   18092.4      0.09      27.3       0.0                               -8.28  
+    0:06:59   18090.4      0.09      27.3       0.0                               -8.28  
+    0:07:00   18082.4      0.09      27.3       0.0                               -8.28  
+    0:07:01   18079.0      0.09      27.3       0.0                               -8.28  
+    0:07:01   18074.8      0.09      27.3       0.0                               -8.28  
+    0:07:01   18072.9      0.09      27.3       0.0                               -8.28  
+    0:07:02   18072.7      0.09      27.3       0.0                               -8.28  
+    0:07:02   18039.1      0.09      29.9       0.0                               -8.28  
+    0:07:03   18029.8      0.10      31.1       0.0                               -8.28  
+    0:07:03   18027.7      0.10      31.1       0.0                               -8.28  
+    0:07:03   18027.7      0.10      31.1       0.0                               -8.28  
+    0:07:03   18027.7      0.10      31.1       0.0                               -8.28  
+    0:07:03   18027.7      0.10      31.1       0.0                               -8.28  
+    0:07:03   18027.7      0.10      31.1       0.0                               -8.28  
+    0:07:03   18027.7      0.10      31.1       0.0                               -8.28  
+    0:07:04   18032.0      0.09      28.5       0.0 cpu/PC/current_pc_reg_7_/D     -8.28  
+    0:07:05   18032.6      0.09      28.3       0.0 cpu/PC/current_pc_reg_7_/D     -8.28  
+    0:07:05   18033.2      0.09      28.2       0.0 cpu/PC/current_pc_reg_7_/D     -8.28  
+    0:07:07   18035.5      0.09      28.0       0.0 cpu/PC/current_pc_reg_7_/D     -8.28  
+    0:07:07   18037.0      0.09      27.7       0.0 cpu/Reg_ID_EX/EX_rs2_reg_3_/D     -8.28  
+    0:07:08   18038.5      0.09      27.7       0.0 cpu/PC/current_pc_reg_7_/D     -8.28  
+    0:07:09   18038.4      0.09      27.6       0.0 cpu/Reg_ID_EX/EX_rs2_reg_3_/D     -8.28  
+    0:07:09   18040.5      0.09      27.3       0.0 cpu/PC/current_pc_reg_7_/D     -8.28  
+    0:07:10   18041.0      0.09      27.3       0.0 cpu/PC/current_pc_reg_7_/D     -8.28  
+    0:07:10   18037.6      0.09      27.2       0.0 cpu/PC/current_pc_reg_7_/D     -8.28  
+    0:07:10   18038.2      0.08      27.2       0.0 cpu/PC/current_pc_reg_7_/D     -8.28  
+    0:07:11   18039.1      0.08      27.2       0.0 cpu/PC/current_pc_reg_16_/D     -8.28  
+    0:07:11   18038.7      0.08      27.2       0.0 cpu/PC/current_pc_reg_7_/D     -8.28  
+    0:07:11   18038.9      0.08      27.2       0.0 cpu/PC/current_pc_reg_16_/D     -8.28  
+    0:07:13   18039.5      0.08      27.2       0.0 cpu/PC/current_pc_reg_16_/D     -8.28  
+    0:07:13   18040.8      0.08      27.2       0.0 cpu/PC/current_pc_reg_7_/D     -8.28  
+    0:07:13   18040.8      0.08      27.1       0.0 cpu/PC/current_pc_reg_7_/D     -8.28  
+    0:07:14   18041.2      0.08      27.1       0.0 cpu/PC/current_pc_reg_7_/D     -8.28  
+    0:07:14   18042.2      0.08      27.1       0.0 cpu/PC/current_pc_reg_7_/D     -8.28  
+    0:07:15   18042.6      0.08      27.0       0.0 cpu/PC/current_pc_reg_7_/D     -8.28  
+    0:07:16   18044.5      0.08      27.0       0.0 cpu/PC/current_pc_reg_7_/D     -8.28  
+    0:07:16   18044.2      0.08      27.0       0.0 cpu/PC/current_pc_reg_7_/D     -8.28  
+    0:07:16   18044.7      0.08      27.0       0.0 cpu/PC/current_pc_reg_7_/D     -8.28  
+    0:07:17   18044.8      0.08      26.9       0.0 cpu/PC/current_pc_reg_7_/D     -8.28  
+    0:07:17   18044.8      0.08      26.9       0.0 cpu/PC/current_pc_reg_7_/D     -8.28  
+    0:07:18   18045.1      0.08      26.9       0.0 cpu/PC/current_pc_reg_7_/D     -8.28  
+    0:07:19   18045.1      0.08      26.9       0.0 cpu/PC/current_pc_reg_7_/D     -8.28  
+    0:07:20   18045.2      0.08      26.9       0.0                               -8.28  
+    0:07:20   18044.8      0.08      26.9       0.0                               -8.28  
+    0:07:20   18044.3      0.08      26.9       0.0                               -8.28  
+    0:07:20   18043.4      0.08      26.9       0.0                               -8.28  
+    0:07:20   18042.2      0.08      26.9       0.0                               -8.28  
+    0:07:20   18041.6      0.08      26.9       0.0                               -8.28  
+    0:07:21   18040.5      0.08      26.8       0.0                               -8.28  
+    0:07:21   18039.7      0.08      26.8       0.0                               -8.28  
+    0:07:21   18038.5      0.08      26.8       0.0                               -8.28  
+    0:07:21   18038.3      0.08      26.8       0.0                               -8.28  
+    0:07:21   18037.5      0.08      26.8       0.0                               -8.28  
+    0:07:21   18036.3      0.08      26.8       0.0                               -8.28  
+    0:07:22   18034.7      0.08      26.8       0.0                               -8.28  
+    0:07:22   18033.8      0.08      26.8       0.0                               -8.28  
+    0:07:22   18033.3      0.08      26.8       0.0                               -8.28  
+    0:07:22   18032.3      0.08      26.8       0.0                               -8.28  
+    0:07:22   18031.7      0.08      26.8       0.0                               -8.28  
+    0:07:23   18030.5      0.08      26.8       0.0                               -8.28  
+    0:07:23   18030.1      0.08      26.8       0.0                               -8.28  
+    0:07:23   18030.0      0.08      26.8       0.0                               -8.28  
+    0:07:23   18029.9      0.08      26.8       0.0                               -8.28  
+    0:07:34   18020.7      0.09      26.9       0.0                               -8.28  
+    0:07:39   18015.4      0.10      30.6       0.0                               -8.28  
+    0:07:44   18009.3      0.10      29.7       0.0                               -8.28  
+    0:07:48   18004.8      0.10      30.0       0.0                               -8.28  
+    0:07:51   18000.2      0.10      30.0       0.0                               -8.28  
+    0:07:53   17995.4      0.10      30.3       0.0                               -8.28  
+    0:07:55   17991.8      0.10      30.2       0.0                               -8.28  
+    0:07:56   17988.8      0.12      30.6       0.0                               -8.28  
+    0:07:58   17986.1      0.12      30.8       0.0                               -8.28  
+    0:07:59   17983.5      0.12      30.8       0.0                               -8.28  
+    0:08:01   17982.8      0.12      30.9       0.0                               -8.28  
+    0:08:02   17980.7      0.12      30.9       0.0                               -8.28  
+    0:08:03   17979.0      0.12      31.2       0.0                               -8.28  
+    0:08:03   17977.1      0.12      31.2       0.0                               -8.28  
+    0:08:04   17975.9      0.12      31.2       0.0                               -8.28  
+    0:08:04   17975.9      0.12      31.2       0.0                               -8.28  
+    0:08:04   17975.9      0.12      31.2       0.0                               -8.28  
+    0:08:04   17951.4      0.12      33.2       0.0                               -8.28  
+    0:08:04   17944.9      0.12      33.3       0.0                               -8.28  
+    0:08:04   17944.0      0.12      33.3       0.0                               -8.28  
+    0:08:04   17944.0      0.12      33.3       0.0                               -8.28  
+    0:08:04   17944.0      0.12      33.3       0.0                               -8.28  
+    0:08:04   17944.0      0.12      33.3       0.0                               -8.28  
+    0:08:04   17944.0      0.12      33.3       0.0                               -8.28  
+    0:08:04   17944.0      0.12      33.3       0.0                               -8.28  
+    0:08:05   17945.5      0.10      32.3       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_24_/D     -8.28  
+    0:08:06   17947.3      0.10      31.3       0.0 cpu/PC/current_pc_reg_30_/D     -8.28  
+    0:08:07   17950.2      0.10      31.0       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_2_/D     -8.28  
+    0:08:07   17953.7      0.10      30.7       0.0 cpu/PC/current_pc_reg_30_/D     -8.28  
+    0:08:08   17954.5      0.10      30.9       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_2_/D     -8.28  
+    0:08:09   17957.9      0.10      30.7       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_2_/D     -8.28  
+    0:08:09   17957.6      0.10      30.7       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_2_/D     -8.28  
+    0:08:10   17959.6      0.10      30.3       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_2_/D     -8.28  
+    0:08:10   17962.2      0.10      30.1       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_2_/D     -8.28  
+    0:08:11   17963.1      0.09      30.0       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_2_/D     -8.28  
+    0:08:11   17965.4      0.09      29.6       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_20_/D     -8.28  
+    0:08:12   17966.0      0.09      29.5       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_2_/D     -8.28  
+    0:08:12   17966.8      0.09      29.5       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_2_/D     -8.28  
+    0:08:13   17968.1      0.09      29.5       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_2_/D     -8.28  
+    0:08:13   17968.9      0.09      29.3       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_2_/D     -8.28  
+    0:08:14   17969.6      0.09      29.2       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_2_/D     -8.28  
+    0:08:14   17970.0      0.09      29.2       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_2_/D     -8.28  
+    0:08:14   17970.6      0.09      29.2       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_2_/D     -8.28  
+    0:08:14   17971.1      0.09      29.2       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_2_/D     -8.28  
+    0:08:15   17970.5      0.09      29.2       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_2_/D     -8.28  
+    0:08:15   17970.5      0.09      29.2       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_2_/D     -8.28  
+    0:08:15   17971.8      0.09      28.7       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_2_/D     -8.28  
+    0:08:16   17972.9      0.09      28.7       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_2_/D     -8.28  
+    0:08:16   17974.0      0.09      28.6       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_2_/D     -8.28  
+    0:08:17   17974.9      0.09      28.7       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_2_/D     -8.28  
+    0:08:17   17975.1      0.09      28.6       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_2_/D     -8.28  
+    0:08:18   17975.4      0.09      28.6       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_4_/D     -8.28  
+    0:08:18   17975.9      0.09      28.6       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_4_/D     -8.28  
+    0:08:18   17976.8      0.09      28.6       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_20_/D     -8.28  
+    0:08:19   17977.1      0.09      28.6       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_15_/D     -8.28  
+    0:08:20   17977.2      0.09      28.6       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_15_/D     -8.28  
+    0:08:20   17977.1      0.09      28.6       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_15_/D     -8.28  
+    0:08:21   17977.5      0.09      28.6       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_15_/D     -8.28  
+    0:08:21   17977.7      0.09      28.6       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_15_/D     -8.28  
+    0:08:22   17977.7      0.09      28.6       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_20_/D     -8.28  
+    0:08:23   17979.1      0.09      28.6       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_15_/D     -8.28  
+    0:08:23   17979.7      0.09      28.6       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_15_/D     -8.28  
+    0:08:23   17980.1      0.09      28.6       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_15_/D     -8.28  
+    0:08:24   17981.6      0.09      28.5       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_15_/D     -8.28  
+    0:08:24   17981.9      0.09      28.5       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_20_/D     -8.28  
+    0:08:25   17982.1      0.09      28.5       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_12_/D     -8.28  
+    0:08:26   17982.4      0.09      28.5       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_15_/D     -8.28  
+    0:08:26   17982.6      0.09      28.5       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_20_/D     -8.28  
+    0:08:26   17983.6      0.09      28.5       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_15_/D     -8.28  
+    0:08:27   17983.7      0.09      28.5       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_15_/D     -8.28  
+    0:08:28   17983.4      0.09      28.5       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_15_/D     -8.28  
+    0:08:28   17983.6      0.09      28.3       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_15_/D     -8.28  
+    0:08:28   17983.8      0.09      28.2       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_15_/D     -8.28  
+    0:08:29   17983.7      0.09      28.2       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_14_/D     -8.28  
+    0:08:29   17983.6      0.09      28.2       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_15_/D     -8.28  
+    0:08:30   17983.4      0.09      28.2       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_20_/D     -8.28  
+    0:08:31   17983.4      0.09      28.2       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_13_/D     -8.28  
+    0:08:32   17983.6      0.09      28.2       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_12_/D     -8.28  
+    0:08:32   17983.3      0.09      28.2       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_15_/D     -8.28  
+    0:08:32   17983.6      0.09      28.2       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_15_/D     -8.28  
+    0:08:33   17983.7      0.09      28.2       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_15_/D     -8.28  
+    0:08:34   17983.9      0.09      28.2       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_14_/D     -8.28  
+    0:08:35   17983.8      0.09      28.2       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_15_/D     -8.28  
+    0:08:36   17983.8      0.09      28.2       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_15_/D     -8.28  
+    0:08:36   17985.0      0.09      28.2       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_15_/D     -8.28  
+    0:08:36   17985.4      0.09      28.2       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_15_/D     -8.28  
+    0:08:36   17985.6      0.09      28.2       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_15_/D     -8.28  
+    0:08:37   17985.8      0.09      28.2       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_15_/D     -8.28  
+    0:08:37   17986.0      0.09      28.1       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_15_/D     -8.28  
+    0:08:38   17987.8      0.09      28.1       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_14_/D     -8.28  
+    0:08:38   17988.2      0.09      28.1       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_13_/D     -8.28  
+    0:08:39   17988.4      0.09      28.1       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_15_/D     -8.28  
+    0:08:39   17989.2      0.09      28.1       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_15_/D     -8.28  
+    0:08:39   17989.1      0.09      28.1       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_15_/D     -8.28  
+    0:08:39   17989.1      0.09      28.1       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_15_/D     -8.28  
+    0:08:40   17989.3      0.09      28.1       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_15_/D     -8.28  
+    0:08:40   17989.3      0.09      28.1       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_15_/D     -8.28  
+    0:08:40   17989.7      0.09      28.1       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_15_/D     -8.28  
+    0:08:40   17990.5      0.09      28.0       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_15_/D     -8.28  
+    0:08:41   17989.7      0.09      28.0       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_15_/D     -8.28  
+    0:08:46   18031.7      0.09      28.0       0.0 DM1/i_SRAM/BWEB[0]            -2.69  
+    0:08:47   18035.5      0.09      28.0       0.0 DM1/i_SRAM/BWEB[9]            -2.04  
+    0:08:48   18038.4      0.09      28.0       0.0 DM1/i_SRAM/BWEB[24]           -1.30  
+    0:08:50   18053.0      0.09      28.0       0.0                                0.00  
+    0:08:51   18052.9      0.09      28.0       0.0                                0.00  
+    0:08:51   18053.1      0.09      28.0       0.0                                0.00  
+    0:08:52   18053.2      0.09      28.0       0.0                                0.00  
+    0:08:52   18053.5      0.09      27.9       0.0                                0.00  
+    0:08:53   18053.6      0.09      27.8       0.0                                0.00  
+    0:08:53   18053.8      0.09      27.8       0.0                                0.00  
+    0:08:54   18053.9      0.09      27.8       0.0                                0.00  
+    0:08:55   18054.2      0.09      27.7       0.0                                0.00  
+    0:08:55   18054.3      0.09      27.7       0.0                                0.00  
+    0:08:56   18054.7      0.09      27.7       0.0                                0.00  
+    0:08:56   18054.8      0.09      27.7       0.0                                0.00  
+    0:08:56   18054.9      0.09      27.7       0.0                                0.00  
+    0:08:56   18054.3      0.09      27.7       0.0                                0.00  
+    0:08:57   18054.1      0.09      27.6       0.0                                0.00  
+    0:08:57   18054.3      0.09      27.6       0.0                                0.00  
+    0:08:57   18054.3      0.09      27.6       0.0                                0.00  
+    0:08:57   18054.5      0.09      27.3       0.0                                0.00  
+    0:08:57   18054.8      0.09      27.3       0.0                                0.00  
+    0:08:57   18054.8      0.09      27.3       0.0                                0.00  
+    0:08:57   18054.8      0.09      27.3       0.0                                0.00  
+    0:08:58   18054.8      0.09      27.3       0.0                                0.00  
+    0:08:58   18054.8      0.09      27.2       0.0                                0.00  
+    0:08:58   18055.4      0.09      27.1       0.0                                0.00  
+    0:08:58   18055.6      0.09      27.1       0.0                                0.00  
+    0:08:58   18055.6      0.09      27.1       0.0                                0.00  
+    0:08:59   18055.6      0.09      27.1       0.0                                0.00  
+    0:08:59   18055.6      0.09      27.1       0.0                                0.00  
+    0:08:59   18055.6      0.09      27.1       0.0                                0.00  
+    0:08:59   18055.7      0.09      27.1       0.0                                0.00  
+    0:08:59   18055.7      0.09      27.0       0.0                                0.00  
+    0:08:59   18055.7      0.09      27.0       0.0                                0.00  
+    0:08:59   18055.7      0.09      27.0       0.0                                0.00  
+    0:08:59   18055.7      0.09      27.0       0.0                                0.00  
+    0:09:00   18055.7      0.09      27.0       0.0                                0.00  
+    0:09:00   18055.7      0.09      27.0       0.0                                0.00  
+    0:09:00   18055.7      0.09      27.0       0.0                                0.00  
+    0:09:00   18056.3      0.09      27.0       0.0                                0.00  
+    0:09:00   18055.8      0.09      26.9       0.0                                0.00  
+    0:09:01   18057.0      0.09      26.8       0.0                                0.00  
+    0:09:01   18057.0      0.09      26.8       0.0                                0.00  
+    0:09:01   18057.0      0.09      26.8       0.0                                0.00  
+    0:09:01   18058.3      0.09      26.8       0.0                                0.00  
+    0:09:01   18058.9      0.09      26.8       0.0                                0.00  
+    0:09:01   18058.9      0.09      26.8       0.0                                0.00  
+    0:09:02   18058.8      0.09      26.8       0.0                                0.00  
+    0:09:02   18058.8      0.09      26.8       0.0                                0.00  
+    0:09:02   18061.7      0.09      26.7       0.0                                0.00  
+    0:09:03   18062.7      0.09      26.7       0.0                                0.00  
+    0:09:03   18063.7      0.09      26.7       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_15_/D      0.00  
+    0:09:03   18064.3      0.09      26.7       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_15_/D      0.00  
+    0:09:03   18064.1      0.09      26.7       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_15_/D      0.00  
+    0:09:04   18064.0      0.09      26.8       0.0 cpu/PC/current_pc_reg_7_/D      0.00  
+    0:09:04   18064.0      0.09      26.8       0.0 cpu/PC/current_pc_reg_7_/D      0.00  
+    0:09:05   18064.2      0.09      26.8       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_15_/D      0.00  
+    0:09:05   18064.2      0.09      26.8       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_15_/D      0.00  
+    0:09:05   18064.2      0.09      26.8       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_15_/D      0.00  
+    0:09:06   18064.5      0.09      26.8       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_15_/D      0.00  
+    0:09:07   18065.1      0.09      26.8       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_15_/D      0.00  
+    0:09:07   18065.2      0.09      26.7       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_15_/D      0.00  
+    0:09:07   18067.6      0.09      26.7       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_15_/D      0.00  
+    0:09:08   18067.8      0.09      26.7       0.0 cpu/Reg_EX_MEM/MEM_rs2_data_reg_15_/D      0.00  
+    0:09:11   18068.4      0.09      26.7       0.0                                0.00  
+Loading db file '/usr/cad/CBDK/Executable_Package/Collaterals/IP/stdcell/N16ADFP_StdCell/NLDM/N16ADFP_StdCellss0p72vm40c.db'
+Loading db file '/usr/cad/CBDK/Executable_Package/Collaterals/IP/stdio/N16ADFP_StdIO/NLDM/N16ADFP_StdIOss0p72v1p62v125c.db'
+Loading db file '/usr/cad/CBDK/Executable_Package/Collaterals/IP/stdio/N16ADFP_StdIO/NLDM/N16ADFP_StdIOff0p88v1p98vm40c.db'
+Loading db file '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/sim/SRAM/SRAM_ss0p72v0p72vm40c_100a.db'
+Loading db file '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/sim/SRAM/SRAM_ff0p88v0p88v125c_100a.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Warning: Design 'top' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+     Net 'DM1/CLK': 2526 load(s), 1 driver(s)
+1
+#   Create Report
+#timing report(setup time)
+report_timing -path full -delay max -nworst 1 -max_paths 1 -significant_digits 4 -sort_by group > ../syn/timing_max_rpt.txt
+#timing report(hold time)
+report_timing -path full -delay min -nworst 1 -max_paths 1 -significant_digits 4 -sort_by group > ../syn/timing_min_rpt.txt
+#area report
+report_area -nosplit > ../syn/area_rpt.txt
+#report power
+report_power -analysis_effort low > ../syn/power_rpt.txt
+#   Save syntheized file
+write -hierarchy -format verilog -output {../syn/top_syn.v}
+Writing verilog file '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/syn/top_syn.v'.
+Warning: Verilog 'assign' or 'tran' statements are written out. (VO-4)
+Warning: Verilog writer has added 1 nets to module JB_target_gen using SYNOPSYS_UNCONNECTED_ as prefix.  Please use the change_names command to make the correct changes before invoking the verilog writer.  (VO-11)
+Warning: Verilog writer has added 2 nets to module FP_calculator using SYNOPSYS_UNCONNECTED_ as prefix.  Please use the change_names command to make the correct changes before invoking the verilog writer.  (VO-11)
+Warning: Verilog writer has added 2 nets to module MUL using SYNOPSYS_UNCONNECTED_ as prefix.  Please use the change_names command to make the correct changes before invoking the verilog writer.  (VO-11)
+Warning: Verilog writer has added 1 nets to module CPU using SYNOPSYS_UNCONNECTED_ as prefix.  Please use the change_names command to make the correct changes before invoking the verilog writer.  (VO-11)
+1
+write_sdf -version 3.0 -context verilog {../syn/top_syn.sdf}
+Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
+Information: Writing timing information to file '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/syn/top_syn.sdf'. (WT-3)
+1
+1
+dc_shell> exit
+
+Thank you...

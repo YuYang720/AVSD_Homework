@@ -3,13 +3,13 @@
 Report : area
 Design : top
 Version: P-2019.03-SP1-1
-Date   : Thu Sep 25 15:02:02 2025
+Date   : Fri Sep 26 14:20:04 2025
 ****************************************
 
 Library(s) Used:
 
     N16ADFP_StdCellss0p72vm40c (File: /usr/cad/CBDK/Executable_Package/Collaterals/IP/stdcell/N16ADFP_StdCell/NLDM/N16ADFP_StdCellss0p72vm40c.db)
-    SRAM_ss0p72v0p72vm40c_100a (File: /home/user1/avsd25/avsd2541/N26132047/sim/SRAM/SRAM_ss0p72v0p72vm40c_100a.db)
+    SRAM_ss0p72v0p72vm40c_100a (File: /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/sim/SRAM/SRAM_ss0p72v0p72vm40c_100a.db)
 
 Number of ports:                         5692
 Number of nets:                         24985

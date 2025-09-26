@@ -13,7 +13,6 @@ module Mux4to1 (
             2'b01: mux_out = in_1; 
             2'b10: mux_out = in_2; 
             2'b11: mux_out = in_3; 
-            default: mux_out = in_3;
         endcase
     end
     
