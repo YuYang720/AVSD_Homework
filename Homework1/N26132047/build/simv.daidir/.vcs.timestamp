@@ -52,13 +52,12 @@
 0 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./src/./SRAM/TS1N16ADFPCLLLVTA512X45M4SWSHOD.sv
 0 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./src/AXI/./SRAM/TS1N16ADFPCLLLVTA512X45M4SWSHOD.sv
 0 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./include/./SRAM/TS1N16ADFPCLLLVTA512X45M4SWSHOD.sv
-36
-+define+prog0
+35
++define+prog3
 +incdir+/home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./src+/home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./src/AXI+/home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./include+/home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./sim
 +itf+/usr/cad/synopsys/vcs/cur/linux64/lib/vcsdp_lite.tab
 +notimingcheck
-+prog_path=/home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./sim/prog0
-+rdcycle=1
++prog_path=/home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./sim/prog6
 +vcsd1
 +vpi
 -Mamsrun=
@@ -171,9 +170,9 @@ CALIBRE_HOME=/usr/cad/mentor/calibre/aoi_cal_2019.2_26.18/
 27
 1758716491 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./sim/./SRAM/TS1N16ADFPCLLLVTA512X45M4SWSHOD.sv
 1758716491 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./src/SRAM_wrapper.sv
-1759226993 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./src/Branch_History_Buffer.sv
+1759238958 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./src/Branch_History_Buffer.sv
 1758777486 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./src/MEM_WB_reg.sv
-1759237087 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./src/EX_MEM_reg.sv
+1759237628 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./src/EX_MEM_reg.sv
 1758773868 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./src/ID_EX_reg.sv
 1759234361 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./src/IF_ID_reg.sv
 1758719219 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./src/FP_calculator.sv
@@ -189,9 +188,9 @@ CALIBRE_HOME=/usr/cad/mentor/calibre/aoi_cal_2019.2_26.18/
 1758772583 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./src/Imm_Extension.sv
 1758771943 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./src/Decoder.sv
 1758776086 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./src/CSR_Unit.sv
-1759227301 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./src/Controller.sv
+1759237625 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./src/Controller.sv
 1758772547 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./src/instruction_pkg.sv
-1759226995 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./src/CPU.sv
+1759237622 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./src/CPU.sv
 1758719616 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./src/top.sv
 1758783614 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./sim/top_tb.sv
 1693225683 /usr/cad/synopsys/verdi/cur/share/PLI/VCS/LINUX64/verdi.tab
@@ -201,5 +200,5 @@ CALIBRE_HOME=/usr/cad/mentor/calibre/aoi_cal_2019.2_26.18/
 1701103518 /usr/cad/synopsys/vcs/cur/linux64/lib/liberrorinf.so
 1701103440 /usr/cad/synopsys/vcs/cur/linux64/lib/libsnpsmalloc.so
 1701103511 /usr/cad/synopsys/vcs/cur/linux64/lib/libvfs.so
-1759237093 simv.daidir
+1759238993 simv.daidir
 -1 partitionlib
