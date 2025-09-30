@@ -58,7 +58,7 @@ module IF_ID_reg (
     // Output instruction logic
     always_comb begin
         if (rst) begin
-            ID_inst = 32'b0;
+            ID_inst = `NOP;
         end else if(prev_flush || !rst_released) begin 
             ID_inst = `NOP;
         end else if(prev_stall) begin

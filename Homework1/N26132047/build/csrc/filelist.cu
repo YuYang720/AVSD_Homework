@@ -4,16 +4,16 @@ ifeq ($(LDVERSION), 0)
 endif
 
 ARCHIVE_OBJS=
-ARCHIVE_OBJS += _76456_archive_1.so
-_76456_archive_1.so : archive.17/_76456_archive_1.a
+ARCHIVE_OBJS += _129254_archive_1.so
+_129254_archive_1.so : archive.126/_129254_archive_1.a
 	@$(AR) -s $<
-	@$(PIC_LD) -shared  -Bsymbolic $(LD_NORELAX_FLAG)  -o .//../simv.daidir//_76456_archive_1.so --whole-archive $< --no-whole-archive
+	@$(PIC_LD) -shared  -Bsymbolic $(LD_NORELAX_FLAG)  -o .//../simv.daidir//_129254_archive_1.so --whole-archive $< --no-whole-archive
 	@rm -f $@
-	@ln -sf .//../simv.daidir//_76456_archive_1.so $@
+	@ln -sf .//../simv.daidir//_129254_archive_1.so $@
 
 
 ARCHIVE_OBJS += _prev_archive_1.so
-_prev_archive_1.so : archive.17/_prev_archive_1.a
+_prev_archive_1.so : archive.126/_prev_archive_1.a
 	@$(AR) -s $<
 	@$(PIC_LD) -shared  -Bsymbolic $(LD_NORELAX_FLAG)  -o .//../simv.daidir//_prev_archive_1.so --whole-archive $< --no-whole-archive
 	@rm -f $@
@@ -35,14 +35,14 @@ $(O0_OBJS) : %.o: %.c
 	$(CC_CG) $(CFLAGS_CG) -c -o $@ $<
 
 CU_UDP_OBJS = \
-objs/udps/m6zeg.o objs/udps/HWVx0.o objs/udps/JvR1L.o objs/udps/df3ii.o 
+
 
 CU_UDP_OBJS += 
 CU_LVL_OBJS = \
 SIM_l.o 
 
 MAIN_OBJS = \
-objs/a/amcQw_d.o 
+objs/amcQw_d.o 
 
 CU_OBJS = $(MAIN_OBJS) $(ARCHIVE_OBJS) $(CU_UDP_OBJS) $(CU_LVL_OBJS)
 

@@ -170,6 +170,7 @@ module CPU (
     Branch_History_Buffer BHB (
         .clk           (clk),
         .rst           (rst),
+        .EX_op         (EX_op),
         .actual_taken  (EX_actual_taken),
         .history_reg_1 (history_reg_1)
     );

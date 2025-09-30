@@ -60,24 +60,26 @@ module Controller(
 
     logic EX_mispredict;
     logic bp_predict_taken;
+    logic id_is_branch;
+    logic ex_is_branch;
 
-    // The prediction is based on the most significant bit.
-    // If the state is 10 or 11, we predict the branch is taken.
+    assign id_is_branch = ID_op == `B_type;
+    assign ex_is_branch = EX_op == `B_type;
     assign bp_predict_taken = history_reg_1;
 
     always_comb begin
         ID_predict_taken = bp_predict_taken && (ID_op == `B_type);
-        EX_actual_taken = (EX_op == `B_type) & EX_alu_out_0;
-        EX_mispredict = (EX_op == `B_type) & (EX_predict_taken != EX_actual_taken);
+        EX_actual_taken = (EX_op == `B_type) && EX_alu_out_0;
+        EX_mispredict = (EX_op == `B_type) && (EX_predict_taken != EX_actual_taken);
     end
 
-    assign IF_flush = ID_predict_taken || EX_mispredict || EX_op == `JAL || EX_op == `JALR || EX_actual_taken;
-    assign ID_flush = EX_mispredict || EX_op == `JAL || EX_op == `JALR || EX_actual_taken;
+    assign IF_flush = ID_predict_taken || EX_mispredict || EX_op == `JAL || EX_op == `JALR;
+    assign ID_flush = EX_mispredict || EX_op == `JAL || EX_op == `JALR;
     
     always_comb begin
-        if (EX_mispredict && !EX_actual_taken) begin
-            next_pc_sel = 2'b00; 
-        end else if (EX_op == `JAL || EX_op == `JALR || EX_actual_taken) begin 
+        if (EX_mispredict) begin
+            next_pc_sel = (EX_actual_taken) ? 2'b01 : 2'b00; 
+        end else if (EX_op == `JAL || EX_op == `JALR) begin 
             next_pc_sel = 2'b01;
         end else if (ID_predict_taken) begin
             next_pc_sel = 2'b10;

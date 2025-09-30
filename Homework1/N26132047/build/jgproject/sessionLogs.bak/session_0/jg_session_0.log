@@ -5,10 +5,10 @@
 # version   : 2018.03p001 64 bits
 # build date: 2018.04.24 18:13:05 PDT
 #----------------------------------------
-# started Fri Sep 26 13:58:48 CST 2025
+# started Fri Sep 26 14:04:23 CST 2025
 # hostname  : superdome2
-# pid       : 67236
-# arguments : '-label' 'session_0' '-console' 'superdome2:42285' '-style' 'windows' '-data' 'AQAAADx/////AAAAAAAAA3oBAAAAEABMAE0AUgBFAE0ATwBWAEU=' '-proj' '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/build/jgproject/sessionLogs/session_0' '-init' '-hidden' '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/build/jgproject/.tmp/.initCmds.tcl' '../script/superlint.tcl'
+# pid       : 94892
+# arguments : '-label' 'session_0' '-console' 'superdome2:42460' '-style' 'windows' '-data' 'AQAAADx/////AAAAAAAAA3oBAAAAEABMAE0AUgBFAE0ATwBWAEU=' '-proj' '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/build/jgproject/sessionLogs/session_0' '-init' '-hidden' '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/build/jgproject/.tmp/.initCmds.tcl' '../script/superlint.tcl'
 
 Any disclosure about the Cadence Design Systems software or its use
 model to any third party violates the written Non-Disclosure Agreement
@@ -116,7 +116,6 @@ INFO (ISW003): Top module name is "top".
 [WARN (VERI-1209)] ../src/FP_calculator.sv(118): expression size 32 truncated to fit in target size 8
 [WARN (VERI-1209)] ../src/FP_calculator.sv(127): expression size 32 truncated to fit in target size 8
 [WARN (VERI-1209)] ../src/FP_calculator.sv(154): expression size 32 truncated to fit in target size 8
-[WARN (VERI-1899)] ../src/ALU.sv(59): 'condition' inside always_comb block does not represent combinational logic
 [INFO (VERI-1018)] ../src/MUL.sv(1): compiling module 'MUL'
 [INFO (VERI-1018)] ../src/EX_MEM_reg.sv(1): compiling module 'EX_MEM_reg'
 [INFO (VERI-1018)] ../src/MEM_WB_reg.sv(1): compiling module 'MEM_WB_reg'
@@ -151,9 +150,8 @@ INFO (ISL014): Started extracting properties for BUS_IS_CONT checks
 INFO (ISL015): Extracted 0 properties of BUS_IS_CONT
 INFO (ISL018): Started extraction of structural checks
 INFO (ISL016): Extracted 32 STRUCTURAL checks.
-INFO (ISL016): Extracted 3 SYNTH checks.
 INFO (ISL016): Extracted 15 BASIC LINT checks.
-51
+48
 [<embedded>] % 
 [<embedded>] % # Prove
 [<embedded>] % set_superlint_prove_parallel_tasks on

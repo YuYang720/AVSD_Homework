@@ -1,6 +1,7 @@
 module Branch_History_Buffer (
     input logic clk,
     input logic rst,
+    input logic [6:0] EX_op,
     input logic actual_taken,      // The true outcome of the branch from the ALU
     output logic history_reg_1
 );
@@ -12,8 +13,13 @@ module Branch_History_Buffer (
     always_ff @(posedge clk or posedge rst) begin
         if (rst) begin
             history_reg <= 2'b00;
-        end else begin // 若此時加入判斷是否為B-type才更新->則prog1 3 4 會錯誤
-            history_reg <= {history_reg[0], actual_taken};
+        end else if (EX_op == `B_type) begin // 若此時加入判斷是否為B-type才更新->則prog1 2 3 4 會錯誤
+            if (actual_taken) begin
+                history_reg <= (history_reg == 2'b11) ? history_reg : history_reg + 2'b1;
+            end else begin
+                history_reg <= (history_reg == 2'b00) ? history_reg : history_reg - 2'b1;
+            end
+            // history_reg <= {history_reg[0], actual_taken};
         end
     end
 endmodule
