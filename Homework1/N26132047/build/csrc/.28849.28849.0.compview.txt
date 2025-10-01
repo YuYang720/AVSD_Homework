@@ -1,0 +1,9 @@
+{"vcs1":{"timestamp_begin":1759290180.068452370, "rt":0.85, "ut":0.35, "st":0.15}}
+{"vcselab":{"timestamp_begin":1759290180.989684433, "rt":0.54, "ut":0.17, "st":0.07}}
+{"link":{"timestamp_begin":1759290181.586676609, "rt":0.21, "ut":0.08, "st":0.07}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1759290179.700798754}
+{"VCS_COMP_START_TIME": 1759290179.700798754}
+{"VCS_COMP_END_TIME": 1759290182.545168142}
+{"VCS_USER_OPTIONS": "-R -sverilog /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./sim/top_tb.sv -debug_access+all -full64 +incdir+/home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./src+/home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./src/AXI+/home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./include+/home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./sim +define+prog0 +prog_path=/home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./sim/prog0 +rdcycle=1 +notimingcheck"}
+{"vcs1": {"peak_mem": 370832}}
+{"vcselab": {"peak_mem": 229972}}

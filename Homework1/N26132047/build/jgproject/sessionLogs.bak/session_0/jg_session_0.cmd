@@ -5,10 +5,10 @@
 # version   : 2018.03p001 64 bits
 # build date: 2018.04.24 18:13:05 PDT
 #----------------------------------------
-# started Fri Sep 26 14:04:23 CST 2025
+# started Tue Sep 30 19:55:41 CST 2025
 # hostname  : superdome2
-# pid       : 94892
-# arguments : '-label' 'session_0' '-console' 'superdome2:42460' '-style' 'windows' '-data' 'AQAAADx/////AAAAAAAAA3oBAAAAEABMAE0AUgBFAE0ATwBWAEU=' '-proj' '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/build/jgproject/sessionLogs/session_0' '-init' '-hidden' '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/build/jgproject/.tmp/.initCmds.tcl' '../script/superlint.tcl'
+# pid       : 10021
+# arguments : '-label' 'session_0' '-console' 'superdome2:37313' '-style' 'windows' '-data' 'AQAAADx/////AAAAAAAAA3oBAAAAEABMAE0AUgBFAE0ATwBWAEU=' '-proj' '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/build/jgproject/sessionLogs/session_0' '-init' '-hidden' '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/build/jgproject/.tmp/.initCmds.tcl' '../script/superlint.tcl'
 check_superlint -init
 clear -all
 

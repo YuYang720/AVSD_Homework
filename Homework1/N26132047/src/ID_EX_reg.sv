@@ -13,7 +13,6 @@ module ID_EX_reg (
     input logic [31:0] ID_rs1_data,
     input logic [31:0] ID_rs2_data,
     input logic [31:0] ID_imm_ext,
-
     input logic        ID_predict_taken,
     
     output logic [31:0] EX_pc,
@@ -26,7 +25,6 @@ module ID_EX_reg (
     output logic [31:0] EX_rs1_data,
     output logic [31:0] EX_rs2_data,
     output logic [31:0] EX_imm_ext,
-
     output logic        EX_predict_taken
 );
 

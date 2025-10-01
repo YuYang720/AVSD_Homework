@@ -14,21 +14,13 @@ module Branch_History_Buffer (
     always_ff @(posedge clk or posedge rst) begin
         if (rst) begin
             history_reg <= 2'b00;  // Weakly not taken
-        end else if (EX_op == `B_type) begin
+        end else if (EX_op == `B_type && !stall) begin
             // 2-bit saturating counter implementation
             case (history_reg)
-                2'b00: begin  // Strongly not taken
-                    history_reg <= actual_taken ? 2'b01 : 2'b00;
-                end
-                2'b01: begin  // Weakly not taken
-                    history_reg <= actual_taken ? 2'b10 : 2'b00;
-                end
-                2'b10: begin  // Weakly taken
-                    history_reg <= actual_taken ? 2'b11 : 2'b01;
-                end
-                2'b11: begin  // Strongly taken
-                    history_reg <= actual_taken ? 2'b11 : 2'b10;
-                end
+                2'b00: history_reg <= actual_taken ? 2'b01 : 2'b00;
+                2'b01: history_reg <= actual_taken ? 2'b10 : 2'b00;
+                2'b10: history_reg <= actual_taken ? 2'b11 : 2'b01;
+                2'b11: history_reg <= actual_taken ? 2'b11 : 2'b10;
             endcase
         end
     end

@@ -50,8 +50,7 @@ module CPU (
     logic [31:0] EX_rs1_data, EX_rs2_data;
     logic [31:0] EX_imm_ext;
     logic [31:0] EX_reg_src1_data, EX_reg_src2_data;
-    logic [31:0] alu_src1_data, alu_src2_data, alu_out;
-    logic [31:0] mul_out;
+    logic [31:0] alu_src1_data, alu_src2_data, alu_out, mul_out;
     logic [31:0] EXE_cal_out;
     logic [31:0] MEM_cal_out;
     logic [31:0] MEM_rs2_data;
@@ -65,19 +64,16 @@ module CPU (
 
     logic [1:0] next_pc_sel;
     logic       stall;
-    logic [1:0] ID_rs1_data_sel;
-    logic [1:0] ID_rs2_data_sel;
-    logic [1:0] EX_reg_src1_data_sel;
-    logic [1:0] EX_reg_src2_data_sel;
-    logic       alu_src1_sel;
-    logic       alu_src2_sel;
+    logic       IF_flush, ID_flush;
+    logic [1:0] ID_rs1_data_sel, ID_rs2_data_sel;
+
+    logic [1:0] EX_reg_src1_data_sel, EX_reg_src2_data_sel;
+    logic       alu_src1_sel, alu_src2_sel;
     logic       EX_cal_out_sel;
-    logic [6:0] EX_op;
-    logic [4:0] EX_rs1;
-    logic [4:0] EX_rs2;
-    logic [4:0] EX_rd;
+    logic [6:0] EX_op, EX_func7;
+    logic [4:0] EX_rs1, EX_rs2, EX_rd;
     logic [2:0] EX_func3;
-    logic [6:0] EX_func7;
+
     logic [6:0] MEM_op;
     logic [4:0] MEM_rd;
     logic [2:0] MEM_func3;
@@ -94,15 +90,12 @@ module CPU (
     logic [31:0] ID_br_jal_target;
     logic        EX_predict_taken;
     logic        EX_actual_taken;
-    logic        IF_flush, ID_flush;
-
+    
 
     Controller controller (
         .clk          (clk),
       	.rst          (rst),
       	.ID_op        (ID_op),
-      	.ID_func3     (ID_func3),
-      	.ID_func7     (ID_func7),
       	.ID_rd        (ID_rd_index),
       	.ID_rs1       (ID_rs1_index),
       	.ID_rs2       (ID_rs2_index),
@@ -110,7 +103,6 @@ module CPU (
         .EX_rd        (EX_rd),
       	.EX_rs1       (EX_rs1),
       	.EX_rs2       (EX_rs2),
-      	.EX_func3     (EX_func3),
       	.EX_func7     (EX_func7),
       	.EX_alu_out_0 (alu_out[0]),
         .MEM_op       (MEM_op),
@@ -119,17 +111,16 @@ module CPU (
         .MEM_cal_out  (MEM_cal_out),
         .WB_op        (WB_op),
         .WB_rd        (WB_rd),
-      	.WB_func3     (WB_func3),
 
-        .history_reg_1      (history_reg_1),
+        .bp_predict_taken   (history_reg_1),
         .EX_predict_taken   (EX_predict_taken),
-        .IF_flush           (IF_flush),
-        .ID_flush           (ID_flush),
         .ID_predict_taken   (ID_predict_taken),
         .EX_actual_taken    (EX_actual_taken),
 
       	.next_pc_sel          (next_pc_sel),
       	.stall                (stall),
+        .IF_flush             (IF_flush),
+        .ID_flush             (ID_flush),
       	.ID_rs1_data_sel      (ID_rs1_data_sel),
       	.ID_rs2_data_sel      (ID_rs2_data_sel),
       	.EX_reg_src1_data_sel (EX_reg_src1_data_sel),
@@ -400,8 +391,6 @@ module CPU (
 
         .ld_f_data(ld_f_data)
     );
-
-    
 
     Mux3to1  wb(
         .in_0(WB_cal_out),

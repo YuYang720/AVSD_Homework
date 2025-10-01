@@ -12,6 +12,6 @@ module JB_target_gen (
     // Branch : EX_pc + EX_imm_ext
     assign temp = (EX_op == `JALR) ? EX_reg_src1_data : EX_pc;
 
-    assign jb_target  = (temp + EX_imm_ext) & 32'hFFFFFFFE;
+    assign jb_target = (temp + EX_imm_ext) & 32'hFFFFFFFE;
 
 endmodule
