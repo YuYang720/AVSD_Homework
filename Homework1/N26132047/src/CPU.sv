@@ -91,60 +91,60 @@ module CPU (
 
     logic        history_reg_1; 
     logic        ID_predict_taken;
-    logic [31:0] ID_branch_target;
+    logic [31:0] ID_br_jal_target;
     logic        EX_predict_taken;
     logic        EX_actual_taken;
     logic        IF_flush, ID_flush;
 
 
     Controller controller (
-        .clk(clk),
-      	.rst(rst),
-      	.ID_op(ID_op),
-      	.ID_func3(ID_func3),
-      	.ID_func7(ID_func7),
-      	.ID_rd(ID_rd_index),
-      	.ID_rs1(ID_rs1_index),
-      	.ID_rs2(ID_rs2_index),
-        .EX_op(EX_op),
-        .EX_rd     (EX_rd),
-      	.EX_rs1    (EX_rs1),
-      	.EX_rs2    (EX_rs2),
-      	.EX_func3(EX_func3),
-      	.EX_func7(EX_func7),
-      	.EX_alu_out_0(alu_out[0]),
-        .MEM_op(MEM_op),
-        .MEM_rd(MEM_rd),
-        .MEM_func3(MEM_func3),
-        .MEM_cal_out(MEM_cal_out),
-        .WB_op(WB_op),
-        .WB_rd(WB_rd),
-      	.WB_func3(WB_func3),
+        .clk          (clk),
+      	.rst          (rst),
+      	.ID_op        (ID_op),
+      	.ID_func3     (ID_func3),
+      	.ID_func7     (ID_func7),
+      	.ID_rd        (ID_rd_index),
+      	.ID_rs1       (ID_rs1_index),
+      	.ID_rs2       (ID_rs2_index),
+        .EX_op        (EX_op),
+        .EX_rd        (EX_rd),
+      	.EX_rs1       (EX_rs1),
+      	.EX_rs2       (EX_rs2),
+      	.EX_func3     (EX_func3),
+      	.EX_func7     (EX_func7),
+      	.EX_alu_out_0 (alu_out[0]),
+        .MEM_op       (MEM_op),
+        .MEM_rd       (MEM_rd),
+        .MEM_func3    (MEM_func3),
+        .MEM_cal_out  (MEM_cal_out),
+        .WB_op        (WB_op),
+        .WB_rd        (WB_rd),
+      	.WB_func3     (WB_func3),
 
-        .history_reg_1(history_reg_1),
-        .EX_predict_taken(EX_predict_taken),
-        .IF_flush(IF_flush),
-        .ID_flush(ID_flush),
-        .ID_predict_taken(ID_predict_taken),
-        .EX_actual_taken(EX_actual_taken),
+        .history_reg_1      (history_reg_1),
+        .EX_predict_taken   (EX_predict_taken),
+        .IF_flush           (IF_flush),
+        .ID_flush           (ID_flush),
+        .ID_predict_taken   (ID_predict_taken),
+        .EX_actual_taken    (EX_actual_taken),
 
-      	.next_pc_sel(next_pc_sel),
-      	.stall(stall),
-      	.ID_rs1_data_sel(ID_rs1_data_sel),
-      	.ID_rs2_data_sel(ID_rs2_data_sel),
-      	.EX_reg_src1_data_sel(EX_reg_src1_data_sel),
-      	.EX_reg_src2_data_sel(EX_reg_src2_data_sel),
-        .EX_cal_out_sel(EX_cal_out_sel),
-      	.alu_src1_sel(alu_src1_sel),
-      	.alu_src2_sel(alu_src2_sel),
+      	.next_pc_sel          (next_pc_sel),
+      	.stall                (stall),
+      	.ID_rs1_data_sel      (ID_rs1_data_sel),
+      	.ID_rs2_data_sel      (ID_rs2_data_sel),
+      	.EX_reg_src1_data_sel (EX_reg_src1_data_sel),
+      	.EX_reg_src2_data_sel (EX_reg_src2_data_sel),
+        .EX_cal_out_sel       (EX_cal_out_sel),
+      	.alu_src1_sel         (alu_src1_sel),
+      	.alu_src2_sel         (alu_src2_sel),
 
-      	.MEM_dm_w_en(MEM_dm_w_en),
-        .MEM_ceb(dm_ceb),
-        .MEM_bweb(dm_bweb),
+      	.MEM_dm_w_en    (MEM_dm_w_en),
+        .MEM_ceb        (dm_ceb),
+        .MEM_bweb       (dm_bweb),
       	
-        .WB_wb_en(WB_wb_en),
-        .WB_fwb_en(WB_fwb_en),
-        .WB_wb_data_sel(WB_wb_data_sel)
+        .WB_wb_en       (WB_wb_en),
+        .WB_fwb_en      (WB_fwb_en),
+        .WB_wb_data_sel (WB_wb_data_sel)
     );
 
     assign im_addr = IF_pc[15:2];  // Word aligned
@@ -156,12 +156,12 @@ module CPU (
     assign dm_addr = MEM_cal_out[15:2];
     assign dm_din  = MEM_rs2_data;
 
-    assign ID_branch_target = ID_pc + imm_ext_out;
+    assign ID_br_jal_target = ID_pc + imm_ext_out;
 
     Mux4to1 next_pc_m (
         .in_0     (EX_pc_plus_4),
         .in_1     (jb_target),
-        .in_2     (ID_branch_target),
+        .in_2     (ID_br_jal_target),
         .in_3     (IF_pc_plus_4),
         .sel      (next_pc_sel),
         .mux_out  (next_pc)
@@ -170,6 +170,7 @@ module CPU (
     Branch_History_Buffer BHB (
         .clk           (clk),
         .rst           (rst),
+        .stall         (stall),
         .EX_op         (EX_op),
         .actual_taken  (EX_actual_taken),
         .history_reg_1 (history_reg_1)

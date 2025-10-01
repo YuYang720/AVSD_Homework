@@ -878,3 +878,4 @@ wvSelectSignal -win $_nWave1 {( "G1" 13 )}
 wvSetCursor -win $_nWave1 40193.048873 -snap {("G1" 13)}
 wvSetCursor -win $_nWave1 6609363.871599 -snap {("G1" 13)}
 wvSetCursor -win $_nWave1 6612533.945642 -snap {("G1" 13)}
+wvExit

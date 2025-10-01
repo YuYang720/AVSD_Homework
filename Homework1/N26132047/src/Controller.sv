@@ -73,20 +73,22 @@ module Controller(
         EX_mispredict = (EX_op == `B_type) && (EX_predict_taken != EX_actual_taken);
     end
 
-    assign IF_flush = ID_predict_taken || EX_mispredict || EX_op == `JAL || EX_op == `JALR;
-    assign ID_flush = EX_mispredict || EX_op == `JAL || EX_op == `JALR;
-    
+    assign IF_flush = ID_predict_taken || EX_mispredict || ID_op == `JAL || EX_op == `JALR;
+    assign ID_flush = EX_mispredict || EX_op == `JALR;
+
     always_comb begin
         if (EX_mispredict) begin
             next_pc_sel = (EX_actual_taken) ? 2'b01 : 2'b00; 
-        end else if (EX_op == `JAL || EX_op == `JALR) begin 
+        end else if (EX_op == `JALR) begin 
             next_pc_sel = 2'b01;
-        end else if (ID_predict_taken) begin
+        end else if (ID_predict_taken || ID_op == `JAL) begin
             next_pc_sel = 2'b10;
         end else begin
             next_pc_sel = 2'b11;
         end
     end
+
+    
 
     assign MEM_ceb = ~(MEM_op == `S_type || MEM_op == `I_load || MEM_op == `F_FSW || MEM_op == `F_FLW);
     assign MEM_dm_w_en = (MEM_op == `I_load || MEM_op == `F_FLW); // read: active high, write: active low

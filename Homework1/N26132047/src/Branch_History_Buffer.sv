@@ -1,6 +1,7 @@
 module Branch_History_Buffer (
     input logic clk,
     input logic rst,
+    input logic stall,
     input logic [6:0] EX_op,
     input logic actual_taken,      // The true outcome of the branch from the ALU
     output logic history_reg_1

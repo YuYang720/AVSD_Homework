@@ -7,6 +7,9 @@ module JB_target_gen (
 );
     logic [31:0] temp;
 
+    // JAL 提前到 ID stage 處理
+    // JALR 在 EX stage : Ex_reg_src1 _data + EX_imm_ext 再 mask
+    // Branch : EX_pc + EX_imm_ext
     assign temp = (EX_op == `JALR) ? EX_reg_src1_data : EX_pc;
 
     assign jb_target  = (temp + EX_imm_ext) & 32'hFFFFFFFE;
