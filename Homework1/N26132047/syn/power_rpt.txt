@@ -10,7 +10,7 @@ Report : power
         -analysis_effort low
 Design : top
 Version: P-2019.03-SP1-1
-Date   : Wed Oct  1 12:14:52 2025
+Date   : Thu Oct  2 16:19:56 2025
 ****************************************
 
 
@@ -30,7 +30,8 @@ CPU                    ZeroWireload      N16ADFP_StdCellss0p72vm40c
 SRAM_wrapper_1         ZeroWireload      N16ADFP_StdCellss0p72vm40c
 Controller             ZeroWireload      N16ADFP_StdCellss0p72vm40c
 Mux4to1                ZeroWireload      N16ADFP_StdCellss0p72vm40c
-Branch_History_Buffer  ZeroWireload      N16ADFP_StdCellss0p72vm40c
+BTB                    ZeroWireload      N16ADFP_StdCellss0p72vm40c
+BHR_PHT                ZeroWireload      N16ADFP_StdCellss0p72vm40c
 Program_Counter_reg    ZeroWireload      N16ADFP_StdCellss0p72vm40c
 IF_ID_reg              ZeroWireload      N16ADFP_StdCellss0p72vm40c
 Decoder                ZeroWireload      N16ADFP_StdCellss0p72vm40c
@@ -55,39 +56,38 @@ Mux3to1_2              ZeroWireload      N16ADFP_StdCellss0p72vm40c
 Mux3to1_3              ZeroWireload      N16ADFP_StdCellss0p72vm40c
 Register_File_0        ZeroWireload      N16ADFP_StdCellss0p72vm40c
 SRAM_wrapper_0         ZeroWireload      N16ADFP_StdCellss0p72vm40c
+CPU_DW01_add_0         ZeroWireload      N16ADFP_StdCellss0p72vm40c
 CPU_DW01_add_1         ZeroWireload      N16ADFP_StdCellss0p72vm40c
-CPU_DW01_add_2         ZeroWireload      N16ADFP_StdCellss0p72vm40c
 CSR_Unit_DW01_inc_0    ZeroWireload      N16ADFP_StdCellss0p72vm40c
 CSR_Unit_DW01_inc_1    ZeroWireload      N16ADFP_StdCellss0p72vm40c
 FP_calculator_DW01_inc_1
                        ZeroWireload      N16ADFP_StdCellss0p72vm40c
-FP_calculator_DW01_add_J2_0
-                       ZeroWireload      N16ADFP_StdCellss0p72vm40c
 CSR_Unit_DW01_sub_2    ZeroWireload      N16ADFP_StdCellss0p72vm40c
 CSR_Unit_DW01_sub_J8_0 ZeroWireload      N16ADFP_StdCellss0p72vm40c
 MUL_DW_mult_tc_1       ZeroWireload      N16ADFP_StdCellss0p72vm40c
-FP_calculator_DW01_inc_J9_0
-                       ZeroWireload      N16ADFP_StdCellss0p72vm40c
 FP_calculator_DW01_sub_J11_0
                        ZeroWireload      N16ADFP_StdCellss0p72vm40c
 FP_calculator_DW01_sub_J12_0
                        ZeroWireload      N16ADFP_StdCellss0p72vm40c
-CPU_DW01_add_3         ZeroWireload      N16ADFP_StdCellss0p72vm40c
-ALU_DW01_sub_J16_0     ZeroWireload      N16ADFP_StdCellss0p72vm40c
-ALU_DW01_add_J17_0     ZeroWireload      N16ADFP_StdCellss0p72vm40c
+ALU_DW01_add_J16_0     ZeroWireload      N16ADFP_StdCellss0p72vm40c
+ALU_DW01_sub_J17_0     ZeroWireload      N16ADFP_StdCellss0p72vm40c
 ALU_DW01_cmp6_J18_0    ZeroWireload      N16ADFP_StdCellss0p72vm40c
 ALU_DW01_add_J19_0     ZeroWireload      N16ADFP_StdCellss0p72vm40c
-JB_target_gen_DW01_add_1
-                       ZeroWireload      N16ADFP_StdCellss0p72vm40c
-FP_calculator_DW01_add_J34_0
+JB_target_gen_DW01_add_J21_0
                        ZeroWireload      N16ADFP_StdCellss0p72vm40c
 FP_calculator_DW01_inc_3
                        ZeroWireload      N16ADFP_StdCellss0p72vm40c
-FP_calculator_DW_cmp_J60_0
+FP_calculator_DW01_sub_J23_0
                        ZeroWireload      N16ADFP_StdCellss0p72vm40c
-FP_calculator_DW01_sub_J59_1
+FP_calculator_DW01_add_J24_0
                        ZeroWireload      N16ADFP_StdCellss0p72vm40c
-FP_calculator_DW01_sub_J58_0
+FP_calculator_DW01_sub_J32_0
+                       ZeroWireload      N16ADFP_StdCellss0p72vm40c
+FP_calculator_DW01_add_J45_0
+                       ZeroWireload      N16ADFP_StdCellss0p72vm40c
+FP_calculator_DW01_inc_4
+                       ZeroWireload      N16ADFP_StdCellss0p72vm40c
+FP_calculator_DW_cmp_J62_0
                        ZeroWireload      N16ADFP_StdCellss0p72vm40c
 
 
@@ -100,24 +100,24 @@ Power-specific unit information :
     Leakage Power Units = 1nW
 
 
-  Cell Internal Power  =   9.2098 mW   (98%)
-  Net Switching Power  = 229.5582 uW    (2%)
+  Cell Internal Power  =  10.3257 mW   (98%)
+  Net Switching Power  = 259.9408 uW    (2%)
                          ---------
-Total Dynamic Power    =   9.4393 mW  (100%)
+Total Dynamic Power    =  10.5857 mW  (100%)
 
-Cell Leakage Power     =   6.2568 uW
+Cell Leakage Power     =   6.6580 uW
 
 
                  Internal         Switching           Leakage            Total
 Power Group      Power            Power               Power              Power   (   %    )  Attrs
 --------------------------------------------------------------------------------------------------
 io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
-memory             3.1742        1.2830e-03          772.3020            3.1763  (  33.63%)
+memory             3.1802        1.2987e-03          772.3020            3.1823  (  30.04%)
 black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
 clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
-register           5.9182        1.0608e-02        1.5321e+03            5.9303  (  62.78%)
+register           7.0340        1.0319e-02        1.8377e+03            7.0461  (  66.52%)
 sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
-combinational      0.1173            0.2177        3.9524e+03            0.3389  (   3.59%)
+combinational      0.1115            0.2483        4.0479e+03            0.3638  (   3.43%)
 --------------------------------------------------------------------------------------------------
-Total              9.2097 mW         0.2296 mW     6.2568e+03 nW         9.4455 mW
+Total             10.3256 mW         0.2599 mW     6.6579e+03 nW        10.5922 mW
 1

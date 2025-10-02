@@ -6,6 +6,13 @@ module IF_ID_reg (
     input logic [31:0] IF_pc,
     input logic [31:0] IF_inst,
 
+    input logic       IF_btb_hit,
+    input logic       IF_gbc_predict_taken,
+    input logic [3:0] IF_bhr,
+    output logic       ID_btb_hit,
+    output logic       ID_gbc_predict_taken,
+    output logic [3:0] ID_bhr,
+
     output logic [31:0] ID_pc,
     output logic [31:0] ID_inst
 );
@@ -68,4 +75,20 @@ module IF_ID_reg (
         end
     end
     
+    always_ff @(posedge clk or posedge rst) begin
+        if (rst) begin
+            ID_btb_hit <= 1'b0;
+            ID_gbc_predict_taken <= 1'b0;
+            ID_bhr <= 4'b0;
+        end else if (stall) begin
+            ID_btb_hit <= ID_btb_hit;
+            ID_gbc_predict_taken <= ID_gbc_predict_taken;
+            ID_bhr <= ID_bhr;
+        end else begin
+            ID_btb_hit <= IF_btb_hit;
+            ID_gbc_predict_taken <= IF_gbc_predict_taken;
+            ID_bhr <= IF_bhr;
+        end
+    end
+
 endmodule

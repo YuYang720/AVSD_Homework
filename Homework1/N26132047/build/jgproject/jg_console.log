@@ -1,50 +1,50 @@
-2025-10-01 12:03:52.589505 (44028) main____ INFO    ----------------------------------------
-2025-10-01 12:03:52.589576 (44028) main____ INFO    JasperGold version info
-2025-10-01 12:03:52.589582 (44028) main____ INFO      tool      : JasperGold 2018.03
-2025-10-01 12:03:52.589588 (44028) main____ INFO      version   : 2018.03p001 64 bits
-2025-10-01 12:03:52.589592 (44028) main____ INFO      build date: 2018.04.24 18:13:05 PDT
-2025-10-01 12:03:52.589595 (44028) main____ INFO    ----------------------------------------
-2025-10-01 12:03:52.589598 (44028) main____ INFO    Runtime info:
-2025-10-01 12:03:52.589601 (44028) main____ INFO      platform  : Linux 3.10.0-1160.el7.x86_64 x86_64
-2025-10-01 12:03:52.589606 (44028) main____ INFO      hostname  : superdome2
-2025-10-01 12:03:52.589609 (44028) main____ INFO      pid       : 44028
-2025-10-01 12:03:52.589612 (44028) main____ INFO      arguments : '-style' 'windows' '-superlint' '../script/superlint.tcl'
-2025-10-01 12:03:52.589615 (44028) main____ INFO    ----------------------------------------
-2025-10-01 12:03:52.589618 (44028) main____ INFO    System resource limits info:
-2025-10-01 12:03:52.589621 (44028) main____ INFO      virtual memory: unlimited
-2025-10-01 12:03:52.589624 (44028) main____ INFO      cpu time      : unlimited
-2025-10-01 12:03:52.589631 (44028) main____ INFO      stack size    : 8388608 B
-2025-10-01 12:03:52.589637 (44028) main____ INFO      core file size: 0 B
-2025-10-01 12:03:52.589643 (44028) main____ INFO      open files    : 1024
-2025-10-01 12:03:52.589647 (44028) main____ INFO      file size     : unlimited
-2025-10-01 12:03:52.589649 (44028) main____ INFO    ----------------------------------------
-2025-10-01 12:03:52.589652 (44028) main____ INFO    Memory statistics:
-2025-10-01 12:03:52.589655 (44028) main____ INFO      total physical memory  : 1056384260 kB
-2025-10-01 12:03:52.589657 (44028) main____ INFO      free physical memory   : 993929032 kB
-2025-10-01 12:03:52.589660 (44028) main____ INFO      committed address space: 24012464 kB
-2025-10-01 12:03:52.589662 (44028) main____ INFO    ----------------------------------------
-2025-10-01 12:03:52.589681 (44028) main____ INFO    Important environment variables:
-2025-10-01 12:03:52.589687 (44028) main____ INFO      DISPLAY        : 'localhost:22.0'
-2025-10-01 12:03:52.589693 (44028) main____ INFO      LM_LICENSE_FILE: '5280@vlsicad8:1717@lstn:1717@lstc:1717@lshc:5280@lstn:5280@lstc:5280@lshc:26585@lstn:26585@lstc:26585@lshc:'
-2025-10-01 12:03:52.589696 (44028) main____ INFO    ----------------------------------------
-2025-10-01 12:03:52.590950 (44028) lic_core INFO    Initializing license system ...
-2025-10-01 12:03:52.592264 (44028) lic_core INFO    ... license system initialized.
-2025-10-01 12:03:52.593233 (44028) lic__man INFO    Claim 'main' for <ui>.
-2025-10-01 12:03:52.593274 (44028) lic_core INFO    (1) checking out 'jasper_interactive' ...
-2025-10-01 12:03:52.687517 (44028) lic_core INFO    ... (1) checkout succeeded
-2025-10-01 12:03:52.687570 (44028) lic__man INFO    Claim 'superlint' for <ui>.
-2025-10-01 12:03:52.687585 (44028) lic_core INFO    (2) checking out 'jasper_afl' ...
-2025-10-01 12:03:52.836738 (44028) lic_core INFO    ... (2) checkout failed (error: -5) ("FLEXnet ERROR(-5, 0, 0): No such feature exists.")
-2025-10-01 12:03:52.836789 (44028) lic_core INFO    (3) checking out 'jasper_dao' ...
-2025-10-01 12:03:53.065459 (44028) lic_core INFO    ... (3) checkout succeeded
-2025-10-01 12:03:53.612893 (44028) lic__man INFO    Claim 'superlint' for <ui>.
-2025-10-01 12:03:53.808632 (44028) lic__man INFO    Unclaim 'superlint' for <ui>.
-2025-10-01 12:03:53.808662 (44028) lic__man INFO    Claim 'superlint' for <ui>.
-2025-10-01 12:03:53.815972 (44028) session_ INFO    Starting analysis session with session id 'session_0' ...
-2025-10-01 12:03:53.817733 (44028) session_ INFO    Analysis session with session id 'session_0' started (pid: 44046)
-2025-10-01 12:03:55.807469 (44028) session_ INFO    Analysis session 'session_0' connected to the console (host: 192.168.200.12:51868)
-2025-10-01 12:03:56.317203 (44028) lic__man INFO    Unclaim everything for 'session_0'.
-2025-10-01 12:03:56.689934 (44028) lic__man INFO    Unclaim everything for 'session_0'.
-2025-10-01 12:03:56.789290 (44028) lic__man INFO    Claim 'superlint' for 'session_0'.
-2025-10-01 12:04:20.231991 (44028) main____ INFO    About to exit: requested from GUI
-2025-10-01 12:04:20.361005 (44028) main____ INFO    Exiting with status 0.
+2025-10-02 15:43:06.637909 (100119) main____ INFO    ----------------------------------------
+2025-10-02 15:43:06.637979 (100119) main____ INFO    JasperGold version info
+2025-10-02 15:43:06.637985 (100119) main____ INFO      tool      : JasperGold 2018.03
+2025-10-02 15:43:06.637991 (100119) main____ INFO      version   : 2018.03p001 64 bits
+2025-10-02 15:43:06.637995 (100119) main____ INFO      build date: 2018.04.24 18:13:05 PDT
+2025-10-02 15:43:06.637998 (100119) main____ INFO    ----------------------------------------
+2025-10-02 15:43:06.638001 (100119) main____ INFO    Runtime info:
+2025-10-02 15:43:06.638004 (100119) main____ INFO      platform  : Linux 3.10.0-1160.el7.x86_64 x86_64
+2025-10-02 15:43:06.638009 (100119) main____ INFO      hostname  : superdome2
+2025-10-02 15:43:06.638012 (100119) main____ INFO      pid       : 100119
+2025-10-02 15:43:06.638015 (100119) main____ INFO      arguments : '-style' 'windows' '-superlint' '../script/superlint.tcl'
+2025-10-02 15:43:06.638018 (100119) main____ INFO    ----------------------------------------
+2025-10-02 15:43:06.638020 (100119) main____ INFO    System resource limits info:
+2025-10-02 15:43:06.638023 (100119) main____ INFO      virtual memory: unlimited
+2025-10-02 15:43:06.638026 (100119) main____ INFO      cpu time      : unlimited
+2025-10-02 15:43:06.638034 (100119) main____ INFO      stack size    : 8388608 B
+2025-10-02 15:43:06.638040 (100119) main____ INFO      core file size: 0 B
+2025-10-02 15:43:06.638045 (100119) main____ INFO      open files    : 1024
+2025-10-02 15:43:06.638049 (100119) main____ INFO      file size     : unlimited
+2025-10-02 15:43:06.638051 (100119) main____ INFO    ----------------------------------------
+2025-10-02 15:43:06.638054 (100119) main____ INFO    Memory statistics:
+2025-10-02 15:43:06.638056 (100119) main____ INFO      total physical memory  : 1056384260 kB
+2025-10-02 15:43:06.638059 (100119) main____ INFO      free physical memory   : 983327448 kB
+2025-10-02 15:43:06.638062 (100119) main____ INFO      committed address space: 41008788 kB
+2025-10-02 15:43:06.638064 (100119) main____ INFO    ----------------------------------------
+2025-10-02 15:43:06.638084 (100119) main____ INFO    Important environment variables:
+2025-10-02 15:43:06.638089 (100119) main____ INFO      DISPLAY        : 'localhost:18.0'
+2025-10-02 15:43:06.638095 (100119) main____ INFO      LM_LICENSE_FILE: '5280@vlsicad8:1717@lstn:1717@lstc:1717@lshc:5280@lstn:5280@lstc:5280@lshc:26585@lstn:26585@lstc:26585@lshc:'
+2025-10-02 15:43:06.638098 (100119) main____ INFO    ----------------------------------------
+2025-10-02 15:43:06.639081 (100119) lic_core INFO    Initializing license system ...
+2025-10-02 15:43:06.639986 (100119) lic_core INFO    ... license system initialized.
+2025-10-02 15:43:06.640843 (100119) lic__man INFO    Claim 'main' for <ui>.
+2025-10-02 15:43:06.640872 (100119) lic_core INFO    (1) checking out 'jasper_interactive' ...
+2025-10-02 15:43:06.738389 (100119) lic_core INFO    ... (1) checkout succeeded
+2025-10-02 15:43:06.738434 (100119) lic__man INFO    Claim 'superlint' for <ui>.
+2025-10-02 15:43:06.738449 (100119) lic_core INFO    (2) checking out 'jasper_afl' ...
+2025-10-02 15:43:06.899463 (100119) lic_core INFO    ... (2) checkout failed (error: -5) ("FLEXnet ERROR(-5, 0, 0): No such feature exists.")
+2025-10-02 15:43:06.899481 (100119) lic_core INFO    (3) checking out 'jasper_dao' ...
+2025-10-02 15:43:06.990623 (100119) lic_core INFO    ... (3) checkout succeeded
+2025-10-02 15:43:07.553607 (100119) lic__man INFO    Claim 'superlint' for <ui>.
+2025-10-02 15:43:07.751252 (100119) lic__man INFO    Unclaim 'superlint' for <ui>.
+2025-10-02 15:43:07.751287 (100119) lic__man INFO    Claim 'superlint' for <ui>.
+2025-10-02 15:43:07.758131 (100119) session_ INFO    Starting analysis session with session id 'session_0' ...
+2025-10-02 15:43:07.759646 (100119) session_ INFO    Analysis session with session id 'session_0' started (pid: 100137)
+2025-10-02 15:43:09.715205 (100119) session_ INFO    Analysis session 'session_0' connected to the console (host: 192.168.200.12:32780)
+2025-10-02 15:43:10.237768 (100119) lic__man INFO    Unclaim everything for 'session_0'.
+2025-10-02 15:43:10.629096 (100119) lic__man INFO    Unclaim everything for 'session_0'.
+2025-10-02 15:43:10.734889 (100119) lic__man INFO    Claim 'superlint' for 'session_0'.
+2025-10-02 15:43:37.901158 (100119) main____ INFO    About to exit: requested from GUI
+2025-10-02 15:43:38.182520 (100119) main____ INFO    Exiting with status 0.

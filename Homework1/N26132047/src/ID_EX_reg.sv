@@ -13,7 +13,14 @@ module ID_EX_reg (
     input logic [31:0] ID_rs1_data,
     input logic [31:0] ID_rs2_data,
     input logic [31:0] ID_imm_ext,
-    input logic        ID_predict_taken,
+
+    input logic       ID_btb_hit,
+    input logic       ID_gbc_predict_taken,
+    input logic [3:0] ID_bhr,
+
+    output logic       EX_btb_hit,
+    output logic       EX_gbc_predict_taken,
+    output logic [3:0] EX_bhr,
     
     output logic [31:0] EX_pc,
     output logic [ 6:0] EX_op,
@@ -24,8 +31,7 @@ module ID_EX_reg (
     output logic [ 4:0] EX_rs2,
     output logic [31:0] EX_rs1_data,
     output logic [31:0] EX_rs2_data,
-    output logic [31:0] EX_imm_ext,
-    output logic        EX_predict_taken
+    output logic [31:0] EX_imm_ext
 );
 
     always_ff @(posedge clk or posedge rst) begin
@@ -40,7 +46,6 @@ module ID_EX_reg (
             EX_rs1_data <= 32'b0;
             EX_rs2_data <= 32'b0;
             EX_imm_ext  <= 32'b0;
-            EX_predict_taken <= 1'b0;
         end else if (stall || flush) begin
 			EX_pc       <= 32'b0;
             EX_op       <= 7'b0010011;
@@ -52,7 +57,6 @@ module ID_EX_reg (
             EX_rs1_data <= 32'b0;
             EX_rs2_data <= 32'b0;
             EX_imm_ext  <= 32'b0;
-            EX_predict_taken <= 1'b0;
 		end else begin
             EX_pc       <= ID_pc;
             EX_op       <= ID_op;
@@ -64,7 +68,23 @@ module ID_EX_reg (
             EX_rs1_data <= ID_rs1_data;
             EX_rs2_data <= ID_rs2_data;
             EX_imm_ext  <= ID_imm_ext;
-            EX_predict_taken <= ID_predict_taken;
         end
     end
+
+    always_ff @(posedge clk or posedge rst) begin
+        if (rst) begin
+            EX_btb_hit <= 1'b0;
+            EX_gbc_predict_taken <= 1'b0;
+            EX_bhr <= 4'b0;
+        end else if (stall || flush) begin
+            EX_btb_hit <= 1'b0;
+            EX_gbc_predict_taken <= 1'b0;
+            EX_bhr <= 4'b0;
+        end else begin
+            EX_btb_hit <= ID_btb_hit;
+            EX_gbc_predict_taken <= ID_gbc_predict_taken;
+            EX_bhr <= ID_bhr;
+        end      
+    end
+
 endmodule

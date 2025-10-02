@@ -25,12 +25,13 @@ module Controller(
     input logic [6:0] WB_op,
     input logic [4:0] WB_rd,
 
-    // Branch and flush signal
-    input logic bp_predict_taken,
-    input logic EX_predict_taken,
-    
-    output logic ID_predict_taken,
-    output logic EX_actual_taken,
+    // Branch  signal
+    input logic IF_gbc_predict_taken,
+    input logic EX_gbc_predict_taken,
+    input logic IF_btb_hit,                   
+    input logic EX_btb_hit,  
+
+    output logic EX_actual_taken,        
 
     // Control outputs
     output logic [ 1:0] next_pc_sel,
@@ -84,23 +85,26 @@ module Controller(
 
     // branch control
     logic EX_mispredict;
+    logic EX_is_branch;
+    assign EX_is_branch = (EX_op == `B_type);
     always_comb begin
-        ID_predict_taken = bp_predict_taken && (ID_op == `B_type) && !stall; // 加入 !stall 判斷當前是否為 load branch
+        // ID_predict_taken = bp_predict_taken && (ID_op == `B_type) && !stall; // 加入 !stall 判斷當前是否為 load branch
+        
         EX_actual_taken = (EX_op == `B_type) && EX_alu_out_0;
-        EX_mispredict = (EX_op == `B_type) && (EX_predict_taken != EX_actual_taken);
+        EX_mispredict = (EX_op == `B_type) && ((EX_gbc_predict_taken && EX_btb_hit) != EX_actual_taken);
     end
 
     // flush control
-    assign IF_flush = ID_predict_taken || EX_mispredict || ID_op == `JAL || EX_op == `JALR;
-    assign ID_flush = EX_mispredict || EX_op == `JALR;
+    assign IF_flush = EX_mispredict || EX_op == `JAL || EX_op == `JALR;
+    assign ID_flush = EX_mispredict || EX_op == `JALR || EX_op == `JAL;
 
     // next pc control
     always_comb begin
         if (EX_mispredict) begin
             next_pc_sel = (EX_actual_taken) ? 2'b01 : 2'b00; 
-        end else if (EX_op == `JALR) begin 
+        end else if (EX_op == `JALR || EX_op == `JAL) begin 
             next_pc_sel = 2'b01;
-        end else if (ID_predict_taken || ID_op == `JAL) begin
+        end else if (IF_btb_hit && IF_gbc_predict_taken) begin
             next_pc_sel = 2'b10;
         end else begin
             next_pc_sel = 2'b11;

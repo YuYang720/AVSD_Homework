@@ -319,7 +319,7 @@ PaperSize = A4 - 210x297 (mm)
 ColorPrint = FALSE
 [QtDialog]
 QwUserAskDlg = 660,409,324,134
-qWaveSignalDialog = 357,244,1011,579
+qWaveSignalDialog = 311,214,1011,579
 [Session Cache]
 1 = string (session file name)
 2 = string (session file name)
@@ -597,7 +597,7 @@ AutoApplySeverityColor = TRUE
 scope_to_save_with_macro
 open_file_dir
 open_rc_file_dir
-getSignalForm = 357 244 1011 579 309 481 456 114
+getSignalForm = 311 214 1011 579 309 481 456 114
 viewPort = 8 37 1618 933 233 65
 legendBackground = -c ID_BLACK
 valueBackground = -c ID_BLACK

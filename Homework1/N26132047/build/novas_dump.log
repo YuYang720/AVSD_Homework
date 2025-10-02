@@ -88,48 +88,46 @@ ANF: vhdi_enc_ist_get_module_id('simv: undefined symbol: vhdi_enc_ist_get_module
 ANF: vhdi_enc_def_get_handle_by_module_id('simv: undefined symbol: vhdi_enc_def_get_handle_by_module_id')
 VCS compile option:
  option[0]: simv
- option[1]: +define+prog0+FSDB_ALL
- option[2]: +prog_path=/home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./sim/prog0
- option[3]: +rdcycle=1
- option[4]: +notimingcheck
- option[5]: /usr/cad/synopsys/vcs/cur/linux64/bin/vcs1
- option[6]: -Mcc=gcc
- option[7]: -Mcplusplus=g++
- option[8]: -Masflags=
- option[9]: -Mcfl= -pipe -fPIC -O -I/usr/cad/synopsys/vcs/cur/include 
- option[10]: -Mxllcflags=
- option[11]: -Mxcflags= -pipe -fPIC -I/usr/cad/synopsys/vcs/cur/include
- option[12]: -Mldflags= -rdynamic 
- option[13]: -Mout=simv
- option[14]: -Mamsrun=
- option[15]: -Mvcsaceobjs=
- option[16]: -Mobjects= /usr/cad/synopsys/vcs/cur/linux64/lib/libvirsim.so /usr/cad/synopsys/vcs/cur/linux64/lib/liberrorinf.so /usr/cad/synopsys/vcs/cur/linux64/lib/libsnpsmalloc.so /usr/cad/synopsys/vcs/cur/linux64/lib/libvfs.so 
- option[17]: -Mexternalobj=
- option[18]: -Msaverestoreobj=/usr/cad/synopsys/vcs/cur/linux64/lib/vcs_save_restore_new.o
- option[19]: -Mcrt0=
- option[20]: -Mcrtn=
- option[21]: -Mcsrc=
- option[22]: -Msyslibs=/usr/cad/synopsys/verdi/cur/share/PLI/VCS/LINUX64/pli.a -ldl 
- option[23]: -Xvcs_run_simv=1
- option[24]: -debug_access+all
- option[25]: +vpi
- option[26]: +vcsd1
- option[27]: +itf+/usr/cad/synopsys/vcs/cur/linux64/lib/vcsdp_lite.tab
- option[28]: -full64
- option[29]: +define+prog0+FSDB_ALL
- option[30]: +prog_path=/home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./sim/prog0
- option[31]: +rdcycle=1
- option[32]: +notimingcheck
- option[33]: -picarchive
- option[34]: -P
- option[35]: /usr/cad/synopsys/verdi/cur/share/PLI/VCS/LINUX64/verdi.tab
- option[36]: -fsdb
- option[37]: -sverilog
- option[38]: -gen_obj
- option[39]: /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./sim/top_tb.sv
- option[40]: +incdir+/home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./src+/home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./src/AXI+/home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./include+/home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./sim
- option[41]: -load
- option[42]: /usr/cad/synopsys/verdi/cur/share/PLI/VCS/LINUX64/libnovas.so:FSDBDumpCmd
+ option[1]: +define+prog1+FSDB_ALL
+ option[2]: +prog_path=/home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./sim/prog1
+ option[3]: +notimingcheck
+ option[4]: /usr/cad/synopsys/vcs/cur/linux64/bin/vcs1
+ option[5]: -Mcc=gcc
+ option[6]: -Mcplusplus=g++
+ option[7]: -Masflags=
+ option[8]: -Mcfl= -pipe -fPIC -O -I/usr/cad/synopsys/vcs/cur/include 
+ option[9]: -Mxllcflags=
+ option[10]: -Mxcflags= -pipe -fPIC -I/usr/cad/synopsys/vcs/cur/include
+ option[11]: -Mldflags= -rdynamic 
+ option[12]: -Mout=simv
+ option[13]: -Mamsrun=
+ option[14]: -Mvcsaceobjs=
+ option[15]: -Mobjects= /usr/cad/synopsys/vcs/cur/linux64/lib/libvirsim.so /usr/cad/synopsys/vcs/cur/linux64/lib/liberrorinf.so /usr/cad/synopsys/vcs/cur/linux64/lib/libsnpsmalloc.so /usr/cad/synopsys/vcs/cur/linux64/lib/libvfs.so 
+ option[16]: -Mexternalobj=
+ option[17]: -Msaverestoreobj=/usr/cad/synopsys/vcs/cur/linux64/lib/vcs_save_restore_new.o
+ option[18]: -Mcrt0=
+ option[19]: -Mcrtn=
+ option[20]: -Mcsrc=
+ option[21]: -Msyslibs=/usr/cad/synopsys/verdi/cur/share/PLI/VCS/LINUX64/pli.a -ldl 
+ option[22]: -Xvcs_run_simv=1
+ option[23]: -debug_access+all
+ option[24]: +vpi
+ option[25]: +vcsd1
+ option[26]: +itf+/usr/cad/synopsys/vcs/cur/linux64/lib/vcsdp_lite.tab
+ option[27]: -full64
+ option[28]: +define+prog1+FSDB_ALL
+ option[29]: +prog_path=/home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./sim/prog1
+ option[30]: +notimingcheck
+ option[31]: -picarchive
+ option[32]: -P
+ option[33]: /usr/cad/synopsys/verdi/cur/share/PLI/VCS/LINUX64/verdi.tab
+ option[34]: -fsdb
+ option[35]: -sverilog
+ option[36]: -gen_obj
+ option[37]: /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./sim/top_tb.sv
+ option[38]: +incdir+/home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./src+/home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./src/AXI+/home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./include+/home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./sim
+ option[39]: -load
+ option[40]: /usr/cad/synopsys/verdi/cur/share/PLI/VCS/LINUX64/libnovas.so:FSDBDumpCmd
 Chronologic Simulation VCS Release V-2023.12_Full64
 Linux 3.10.0-1160.el7.x86_64 #1 SMP Tue Aug 18 14:50:17 EDT 2020 x86_64
 CPU cores: 192
@@ -138,7 +136,7 @@ Limit information:
 cputime		unlimited
 filesize		unlimited
 datasize		unlimited
-stacksize		unlimited
+stacksize		8192 kbytes
 coredumpsize		0 kbytes
 memoryuse		unlimited
 vmemoryuse		unlimited
@@ -154,7 +152,7 @@ MANPATH=/usr/cad/synopsys/lc/2021.06-sp1//doc/lc/man:/usr/cad/synopsys/synthesis
 SYNOPSYS_LC_ROOT=/usr/cad/synopsys/lc/cur/bin
 SNPS_VCS_INTERNAL_MAKE_OPT=
 TMIARCH=RH_64
-XDG_SESSION_ID=1986
+XDG_SESSION_ID=3746
 HOSTNAME=superdome2
 XLOCALEDIR=/usr/cad/synopsys/icc2/2020.09-sp3/etc/locale
 UNAME=/bin/uname
@@ -166,7 +164,7 @@ SHELL=/bin/tcsh
 TERM=xterm
 HOST=superdome2
 MAKEFLAGS=FSDB=2
-SSH_CLIENT=140.116.49.120 50304 22
+SSH_CLIENT=140.116.49.120 50032 22
 SELINUX_USE_CURRENT_RANGE=
 CDS_LOAD_ENV=CSF
 VCS_PYTHON3=/usr/cad/synopsys/vcs/cur/linux64/bin/Python-3.6.1/bin/python3
@@ -174,9 +172,9 @@ MGC_LOCATION_MAP=NO_MAP
 HSP_GCC_VERSION=7.3.0
 QTDIR=/usr/lib64/qt-3.3
 QTINC=/usr/lib64/qt-3.3/include
-SSH_TTY=/dev/pts/15
+SSH_TTY=/dev/pts/13
 LC_ALL=C
-SNPS_VCS_INTERNAL_ROOT_PID=186649
+SNPS_VCS_INTERNAL_ROOT_PID=138723
 QT_GRAPHICSSYSTEM_CHECKED=1
 SPAPI_AHDL_INCLUDE=/usr/cad/synopsys/hspice/2020.03-sp2-2/hspice/include
 MAKEOVERRIDES=${-*-command-variables-*-}
@@ -200,7 +198,7 @@ SYNOPSYS_NCX_ROOT=/usr/cad/synopsys/star-rcxt/2023.12-sp2/
 VC_STATIC_HOME=/usr/cad/synopsys/vc_formal/cur/
 PATH=.:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/RISCV/bin:/usr/cad/mentor/calibre/aoi_cal_2019.2_26.18//bin:/usr/cad/cadence/JASPER/jasper_2018.03p001/bin:/usr/cad/cadence/SPECTRE/SPECTRE_23.10.477/tools/bin/64bit:/usr/cad/cadence/SPECTRE/SPECTRE_23.10.477/tools/dfII/bin/64bit:/usr/cad/cadence/SPECTRE/SPECTRE_23.10.477/tools/bin:/usr/cad/cadence/SPECTRE/SPECTRE_23.10.477/tools/dfII/bin:/usr/cad/cadence/IC/IC51.41.151/tools/bin:/usr/cad/cadence/IC/IC51.41.151/tools/dracula/bin:/usr/cad/cadence/IC/IC51.41.151/tools/dfII/bin:/usr/cad/cadence/IC/IC51.41.151/tools/bin/64bit:/usr/cad/cadence/IC/IC51.41.151/tools/dracula/bin/64bit:/usr/cad/cadence/IC/IC51.41.151/tools/dfII/bin/64bit:/usr/cad/cadence/XCELIUM/XCELIUM_20.09.007//tools/bin/64bit:/usr/cad/cadence/XCELIUM/XCELIUM_20.09.007//tools/bin:/usr/cad/cadence/INNOVUS/INNOVUS_21.19.000/tools/bin/64bit:/usr/cad/cadence/INNOVUS/INNOVUS_21.19.000/tools/bin:/usr/cad/cadence/SSV/SSV_21.12.000//tools/bin/64bit:/usr/cad/cadence/SSV/SSV_21.12.000//tools/bin:/usr/cad/synopsys/vcs/cur/bin:/usr/cad/synopsys/vcs/cur/amd64/bin:/usr/cad/synopsys/vcs/cur/amd64/util:/usr/cad/synopsys/vcs/cur/amd64/flexlm:/usr/cad/synopsys/spyglass/2023.03//SPYGLASS_HOME/bin:/usr/cad/synopsys/verdi/cur/bin:/usr/cad/synopsys/verdi/cur/nLint/bin:/usr/cad/synopsys/primetime/2019.03-sp5-1//amd64/syn/bin:/usr/cad/synopsys/icvalidator/2021.06-sp2/bin/LINUX64_L31el:/usr/cad/synopsys/icvalidator/2021.06-sp2/bin:/usr/cad/synopsys/star-rcxt/2023.12-sp2//bin:/usr/cad/synopsys/laker/2024.12//bin:/usr/cad/synopsys/customexplorer/cur/bin:/usr/cad/synopsys/hspice/2020.03-sp2-2/hspice/bin:/usr/cad/synopsys/hspice/2020.03-sp2-2/hspice/GNU/linux64/gcc/bin:/usr/cad/synopsys/hspice/2020.03-sp2-2/hspice/linux64:/usr/bin:/usr/ucb/bin:/usr/cad/synopsys/hspice/2020.03-sp2-2//hspice/bin:/usr/cad/synopsys/customcompiler/2020.12-sp1-2//bin:/usr/cad/synopsys/customcompiler/2020.12-sp1-2//primewave/bin:/usr/bin/X11:/usr/cad/synopsys/coreConsultant/cur/bin:/usr/cad/synopsys/synthesis/cur/amd64/syn/bin:/usr/cad/synopsys/lc/cur/bin:/usr/cad/synopsys/lc/2021.06-sp1//bin:/usr/cad/synopsys/vc_formal/cur/bin:/usr/cad/synopsys/euclide/2023.03-sp2//bin:/usr/cad/synopsys/icc2/2020.09-sp3/bin:/usr/cad/synopsys/icc/2022.12-sp6//amd64/syn/bin:/usr/cad/synopsys/milkyway/2022.12-sp6//bin/linux64:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin
 MAIL=/var/spool/mail/avsd2541
-SNPS_VCS_INTERNAL_CURR_PID=186649
+SNPS_VCS_INTERNAL_CURR_PID=138723
 CALIBRE_HOME=/usr/cad/mentor/calibre/aoi_cal_2019.2_26.18/
 VERDI_HOME=/usr/cad/synopsys/verdi/cur
 PWD=/home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/build
@@ -218,7 +216,7 @@ LM_LICENSE_FILE=5280@vlsicad8:1717@lstn:1717@lstc:1717@lshc:5280@lstn:5280@lstc:
 SYNOPSYS=/usr/cad/synopsys/synthesis/cur/
 CDS_Netlisting_Mode=Analog
 VCS_ARG_ADDED_FOR_TMP=1
-SNPS_VCS_TMPDIR=/tmp/vcs_20251001013700_186649
+SNPS_VCS_TMPDIR=/tmp/vcs_20251002075642_138723
 HOME=/home/user1/avsd25/avsd2541
 SHLVL=3
 HSP_GCC=/usr/cad/synopsys/hspice/2020.03-sp2-2/hspice/GNU/linux64/gcc/bin/gcc -m64 
@@ -239,15 +237,15 @@ MACHTYPE=x86_64
 LOGNAME=avsd2541
 SNPS_VCS_INTERNAL_MAKE=make
 QTLIB=/usr/lib64/qt-3.3/lib
-SNPS_VCS_INTERNAL_ROOT_START_TIME=1759282620.261568707
-SSH_CONNECTION=140.116.49.120 50304 192.168.200.12 22
+SNPS_VCS_INTERNAL_ROOT_START_TIME=1759391802.230631333
+SSH_CONNECTION=140.116.49.120 50032 192.168.200.12 22
 mraarch=linux_64
 LESSOPEN=||/usr/bin/lesspipe.sh %s
 SHLIB_PATH=/usr/cad/synopsys/verdi/cur/etc/lib/libstdc++/LINUX64/:
 sysc_uni_pwd=/home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/build
 CDPL_HOME=/usr/cad/synopsys/hspice/2020.03-sp2-2/hspice/cdpl
 XDG_RUNTIME_DIR=/run/user/4864
-DISPLAY=localhost:22.0
+DISPLAY=localhost:18.0
 VCS_ARCH=linux64
 QT_PLUGIN_PATH=/usr/lib64/kde4/plugins:/usr/lib/kde4/plugins
 SYN_MAN_DIR=/usr/cad/synopsys/star-rcxt/2023.12-sp2//starrc/man
@@ -261,98 +259,97 @@ SPECMAN_OUTPUT_TO_TTY=1
 FLEXLM_BORROWFILE=/home/user1/avsd25/avsd2541/.superdome2-borrow.txt
 Runtime command line arguments:
 argv[0]=simv
-argv[1]=+define+prog0+FSDB_ALL
-argv[2]=+prog_path=/home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./sim/prog0
-argv[3]=+rdcycle=1
-argv[4]=+notimingcheck
-267 profile - 100
-          CPU/Mem usage: 0.030 sys,  0.160 user,  288.59M mem
-268 Elapsed time:    0:00:00    Wed Oct  1 09:37:02 2025
-269 User CPU time used: 0 seconds
-270 System CPU time used: 0 seconds
-271 pliAppInit
-272 [SC]Init: MemoryConsumed=0.00MB ElapsedTime=0hour 0min. 0sec.
-273 FSDB_GATE is set.
-274 FSDB_RTL is set.
-275 FSDB_ALIAS_ARRAY_ELEM is set to 4294967295.
-276 Enable Parallel Dumping.
-277 pliAppMiscSet: New Sim Round
-278 pliEntryInit
-279 LIBSSCORE=found /usr/cad/synopsys/verdi/cur/share/PLI/lib/LINUXAMD64/libsscore_vcs202303.so through $NOVAS_HOME setting.
-280 FSDB Dumper for VCS, Release Verdi_U-2023.03-SP2, Linux x86_64/64bit, 08/28/2023
-281 (C) 1996 - 2023 by Synopsys, Inc.
-282 ***********************************************************************
-283 *  ERROR -                                                            *
-284 *  The simulator version is newer than the FSDB dumper version which  *
-285 *  may cause abnormal behavior, please contact Synopsys support for   *
-286 *  assistance.                                                        *
-287 ***********************************************************************
-288 sps_call_fsdbDumpfile_main at 0 : /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./sim/top_tb.sv(119)
-289 argv[0]: (top.fsdb)
-290 *Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
-291 *Verdi* : Create FSDB file 'top.fsdb'
-292 [spi_vcs_vd_ppi_create_root]: no upf option
-293 compile option from '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/build/simv.daidir/vcs_rebuild'.
-294   "vcs '-R' '-sverilog' '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./sim/top_tb.sv' '-debug_access+all' '-full64' '+incdir+/home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./src+/home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./src/AXI+/home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./include+/home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./sim' '+define+prog0+FSDB_ALL' '+prog_path=/home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./sim/prog0' '+rdcycle=1' '+notimingcheck' 2>&1"
-295 DVDI_is_vir_unload_enabled is enable
-296 FSDB_VCS_ENABLE_NATIVE_VC is enable
-297 sps_call_fsdbDumpvars_vd_main at 0 : /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./sim/top_tb.sv(120)
-298 argv[0]: (+struct)
-299 argv[1]: (+mda)
-300 argv[2]: (handle) top_tb.TOP
-301 *Verdi* : Begin traversing the scope (top_tb.TOP), layer (0).
-302 *Verdi* : Enable +struct and +mda dumping.
-303 *Verdi* : End of traversing.
-304 pliAppHDL_DumpVarComplete traverse var: profile - 
-          CPU/Mem usage: 0.060 sys,  0.170 user,  389.30M mem
-                   incr: 0.000 sys,  0.000 user,  7.35M mem
-                   accu: 0.000 sys,  0.000 user,  7.35M mem
-              accu incr: 0.000 sys,  0.000 user,  7.35M mem
+argv[1]=+define+prog1+FSDB_ALL
+argv[2]=+prog_path=/home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./sim/prog1
+argv[3]=+notimingcheck
+264 profile - 100
+          CPU/Mem usage: 0.040 sys,  0.170 user,  288.61M mem
+265 Elapsed time:    0:00:01    Thu Oct  2 15:56:45 2025
+266 User CPU time used: 0 seconds
+267 System CPU time used: 0 seconds
+268 pliAppInit
+269 [SC]Init: MemoryConsumed=0.00MB ElapsedTime=0hour 0min. 0sec.
+270 FSDB_GATE is set.
+271 FSDB_RTL is set.
+272 FSDB_ALIAS_ARRAY_ELEM is set to 4294967295.
+273 Enable Parallel Dumping.
+274 pliAppMiscSet: New Sim Round
+275 pliEntryInit
+276 LIBSSCORE=found /usr/cad/synopsys/verdi/cur/share/PLI/lib/LINUXAMD64/libsscore_vcs202303.so through $NOVAS_HOME setting.
+277 FSDB Dumper for VCS, Release Verdi_U-2023.03-SP2, Linux x86_64/64bit, 08/28/2023
+278 (C) 1996 - 2023 by Synopsys, Inc.
+279 ***********************************************************************
+280 *  ERROR -                                                            *
+281 *  The simulator version is newer than the FSDB dumper version which  *
+282 *  may cause abnormal behavior, please contact Synopsys support for   *
+283 *  assistance.                                                        *
+284 ***********************************************************************
+285 sps_call_fsdbDumpfile_main at 0 : /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./sim/top_tb.sv(119)
+286 argv[0]: (top.fsdb)
+287 *Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+288 *Verdi* : Create FSDB file 'top.fsdb'
+289 [spi_vcs_vd_ppi_create_root]: no upf option
+290 compile option from '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/build/simv.daidir/vcs_rebuild'.
+291   "vcs '-R' '-sverilog' '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./sim/top_tb.sv' '-debug_access+all' '-full64' '+incdir+/home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./src+/home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./src/AXI+/home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./include+/home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./sim' '+define+prog1+FSDB_ALL' '+prog_path=/home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./sim/prog1' '+notimingcheck' 2>&1"
+292 DVDI_is_vir_unload_enabled is enable
+293 FSDB_VCS_ENABLE_NATIVE_VC is enable
+294 sps_call_fsdbDumpvars_vd_main at 0 : /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./sim/top_tb.sv(120)
+295 argv[0]: (+struct)
+296 argv[1]: (+mda)
+297 argv[2]: (handle) top_tb.TOP
+298 *Verdi* : Begin traversing the scope (top_tb.TOP), layer (0).
+299 *Verdi* : Enable +struct and +mda dumping.
+300 *Verdi* : End of traversing.
+301 pliAppHDL_DumpVarComplete traverse var: profile - 
+          CPU/Mem usage: 0.070 sys,  0.180 user,  389.36M mem
+                   incr: 0.000 sys,  0.010 user,  7.38M mem
+                   accu: 0.000 sys,  0.010 user,  7.38M mem
+              accu incr: 0.000 sys,  0.010 user,  7.38M mem
 
-          Count usage: 436 var,  432 idcode,  63 callback
-                 incr: 436 var,  432 idcode,  63 callback
-                 accu: 436 var,  432 idcode,  63 callback
-            accu incr: 436 var,  432 idcode,  63 callback
-305 Elapsed time:    0:00:00    Wed Oct  1 09:37:02 2025
-306 User CPU time used: 0 seconds
-307 System CPU time used: 0 seconds
-308 pliAppHDL_DumpVarComplete: profile - 
-          CPU/Mem usage: 0.060 sys,  0.170 user,  390.35M mem
+          Count usage: 543 var,  539 idcode,  82 callback
+                 incr: 543 var,  539 idcode,  82 callback
+                 accu: 543 var,  539 idcode,  82 callback
+            accu incr: 543 var,  539 idcode,  82 callback
+302 Elapsed time:    0:00:01    Thu Oct  2 15:56:45 2025
+303 User CPU time used: 0 seconds
+304 System CPU time used: 0 seconds
+305 pliAppHDL_DumpVarComplete: profile - 
+          CPU/Mem usage: 0.070 sys,  0.180 user,  390.41M mem
                    incr: 0.000 sys,  0.000 user,  1.05M mem
-                   accu: 0.000 sys,  0.000 user,  8.40M mem
+                   accu: 0.000 sys,  0.010 user,  8.43M mem
               accu incr: 0.000 sys,  0.000 user,  1.05M mem
 
-          Count usage: 436 var,  432 idcode,  63 callback
+          Count usage: 543 var,  539 idcode,  82 callback
                  incr: 0 var,  0 idcode,  0 callback
-                 accu: 436 var,  432 idcode,  63 callback
+                 accu: 543 var,  539 idcode,  82 callback
             accu incr: 0 var,  0 idcode,  0 callback
-309 Elapsed time:    0:00:00    Wed Oct  1 09:37:02 2025
-310 User CPU time used: 0 seconds
-311 System CPU time used: 0 seconds
-312 End of simulation at 7411500
-313 Memory usage: 469.021 M
-314 Maximum resident set size: 166 MB
-315 Hard page faults: 2
-316 Soft page faults: 28708
-317 Elapsed time:    0:00:00    Wed Oct  1 09:37:02 2025
-318 User CPU time used: 0 seconds
-319 System CPU time used: 0 seconds
-320 Begin FSDB profile info:
-321 FSDB Writer : bc1(19673) bcn(240764) mtf/stf(0/0)
-FSDB Writer elapsed time : flush(0.025701) io wait(0.000000) theadpool wait(0.000000)
+306 Elapsed time:    0:00:01    Thu Oct  2 15:56:45 2025
+307 User CPU time used: 0 seconds
+308 System CPU time used: 0 seconds
+309 End of simulation at 19111500
+310 Memory usage: 475.394 M
+311 Maximum resident set size: 173 MB
+312 Hard page faults: 2
+313 Soft page faults: 30405
+314 Elapsed time:    0:00:01    Thu Oct  2 15:56:45 2025
+315 User CPU time used: 0 seconds
+316 System CPU time used: 0 seconds
+317 Begin FSDB profile info:
+318 FSDB Writer : bc1(74121) bcn(764108) mtf/stf(0/0)
+FSDB Writer elapsed time : flush(0.075372) io wait(0.000000) theadpool wait(0.000000)
 FSDB Writer cpu time : MT Compression : 0
-322 End FSDB profile info
-323 FSDB closed. Name: top.fsdb Size: 87708
-324 Parallel profile     - ProducerThread:1 ConsumerThread:1 Buffer:64MB
-325                      - BlockUsed:4 Acquire:0 BufferUsed:5053812
-326                      - Flush:3 Expand:0 ProducerWait:0 ConsumerWait:2
-327                      - MainProducerTime:0.401695854 TotalConsumerTime:0.016735328
-328                      - ElapsedTime:0.241148000
-329 Producer   0 profile - BlockUsed:4 Acquire:0 BufferUsed:5053812
-330 Consumer   0 profile - Affinity:-1 CPUTime:0.016735328 LifeTime:0.083775222 (0.20%)
-331                      - BlockUsed:4 Acquire:0 BufferUsed:5053812
-332 SimExit
-333 Elapsed time:    0:00:01    Wed Oct  1 09:37:03 2025
-334 User CPU time used: 0 seconds
-335 System CPU time used: 0 seconds
-336 Sim process exit
+319 End FSDB profile info
+320 FSDB closed. Name: top.fsdb Size: 185703
+321 Parallel profile     - ProducerThread:1 ConsumerThread:1 Buffer:64MB
+322                      - BlockUsed:9 Acquire:0 BufferUsed:15854641
+323                      - Flush:3 Expand:0 ProducerWait:0 ConsumerWait:7
+324                      - MainProducerTime:0.663363901 TotalConsumerTime:0.053124928
+325                      - ElapsedTime:0.490103000
+326 Producer   0 profile - BlockUsed:9 Acquire:0 BufferUsed:15854641
+327 Consumer   0 profile - Affinity:-1 CPUTime:0.053124928 LifeTime:0.287261755 (0.18%)
+328                      - BlockUsed:9 Acquire:0 BufferUsed:15854641
+329 SimExit
+330 Elapsed time:    0:00:01    Thu Oct  2 15:56:45 2025
+331 User CPU time used: 0 seconds
+332 System CPU time used: 0 seconds
+333 Sim process exit

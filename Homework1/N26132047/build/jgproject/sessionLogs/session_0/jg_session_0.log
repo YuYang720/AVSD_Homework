@@ -5,10 +5,10 @@
 # version   : 2018.03p001 64 bits
 # build date: 2018.04.24 18:13:05 PDT
 #----------------------------------------
-# started Wed Oct 01 12:03:54 CST 2025
+# started Thu Oct 02 15:43:08 CST 2025
 # hostname  : superdome2
-# pid       : 44046
-# arguments : '-label' 'session_0' '-console' 'superdome2:40878' '-style' 'windows' '-data' 'AQAAADx/////AAAAAAAAA3oBAAAAEABMAE0AUgBFAE0ATwBWAEU=' '-proj' '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/build/jgproject/sessionLogs/session_0' '-init' '-hidden' '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/build/jgproject/.tmp/.initCmds.tcl' '../script/superlint.tcl'
+# pid       : 100137
+# arguments : '-label' 'session_0' '-console' 'superdome2:40845' '-style' 'windows' '-data' 'AQAAADx/////AAAAAAAAA3oBAAAAEABMAE0AUgBFAE0ATwBWAEU=' '-proj' '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/build/jgproject/sessionLogs/session_0' '-init' '-hidden' '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/build/jgproject/.tmp/.initCmds.tcl' '../script/superlint.tcl'
 
 Any disclosure about the Cadence Design Systems software or its use
 model to any third party violates the written Non-Disclosure Agreement
@@ -89,15 +89,23 @@ INFO (IPF121): Cleared environment completely for new design analysis.
 [INFO (VERI-1328)] ../src/CPU.sv(17): analyzing included file '../src/EX_MEM_reg.sv'
 [INFO (VERI-1328)] ../src/CPU.sv(18): analyzing included file '../src/MEM_WB_reg.sv'
 [INFO (VERI-1328)] ../src/CPU.sv(19): analyzing included file '../src/Branch_History_Buffer.sv'
+[INFO (VERI-1328)] ../src/CPU.sv(20): analyzing included file '../src/BTB.sv'
+[INFO (VERI-1328)] ../src/CPU.sv(21): analyzing included file '../src/BHR_PHT.sv'
 [INFO (VERI-1328)] ../src/top.sv(21): analyzing included file '../src/SRAM_wrapper.sv'
 % 
 % elaborate -bbox true -top top
 INFO (ISW003): Top module name is "top".
 [INFO (VERI-1018)] ../src/top.sv(23): compiling module 'top'
-[INFO (VERI-1018)] ../src/CPU.sv(21): compiling module 'CPU'
+[INFO (VERI-1018)] ../src/CPU.sv(23): compiling module 'CPU'
 [INFO (VERI-1018)] ../src/Controller.sv(1): compiling module 'Controller'
 [INFO (VERI-1018)] ../src/Mux4to1.sv(1): compiling module 'Mux4to1'
 [INFO (VERI-1018)] ../src/Branch_History_Buffer.sv(1): compiling module 'Branch_History_Buffer'
+[INFO (VERI-1018)] ../src/BTB.sv(2): compiling module 'BTB'
+[WARN (VERI-1209)] ../src/BTB.sv(41): expression size 26 truncated to fit in target size 10
+[WARN (VERI-1209)] ../src/BTB.sv(53): expression size 32 truncated to fit in target size 16
+[INFO (VERI-1018)] ../src/BHR_PHT.sv(2): compiling module 'BHR_PHT'
+[WARN (VERI-1209)] ../src/BHR_PHT.sv(35): expression size 32 truncated to fit in target size 2
+[WARN (VERI-1209)] ../src/BHR_PHT.sv(37): expression size 32 truncated to fit in target size 2
 [INFO (VERI-1018)] ../src/Program_Counter_reg.sv(1): compiling module 'Program_Counter_reg'
 [INFO (VERI-1018)] ../src/IF_ID_reg.sv(1): compiling module 'IF_ID_reg'
 [INFO (VERI-1018)] ../src/Decoder.sv(1): compiling module 'Decoder'
@@ -150,8 +158,8 @@ INFO (ISL014): Started extracting properties for BUS_IS_CONT checks
 INFO (ISL015): Extracted 0 properties of BUS_IS_CONT
 INFO (ISL018): Started extraction of structural checks
 INFO (ISL016): Extracted 32 STRUCTURAL checks.
-INFO (ISL016): Extracted 15 BASIC LINT checks.
-48
+INFO (ISL016): Extracted 19 BASIC LINT checks.
+52
 [<embedded>] % 
 [<embedded>] % # Prove
 [<embedded>] % set_superlint_prove_parallel_tasks on

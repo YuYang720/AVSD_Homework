@@ -16,7 +16,8 @@
 `include "ID_EX_reg.sv"
 `include "EX_MEM_reg.sv"
 `include "MEM_WB_reg.sv"
-`include "Branch_History_Buffer.sv"
+`include "BTB.sv"
+`include "BHR_PHT.sv"
 
 module CPU (
     input  logic        clk,
@@ -85,12 +86,21 @@ module CPU (
     logic [2:0] WB_func3;
     logic [1:0] WB_wb_data_sel;
 
-    logic        history_reg_1; 
-    logic        ID_predict_taken;
-    logic [31:0] ID_br_jal_target;
-    logic        EX_predict_taken;
-    logic        EX_actual_taken;
+
+    logic [31:0] ID_jal_target;
+
     
+    logic        IF_btb_hit;
+    logic [31:0] IF_btb_target_pc;
+    logic        IF_gbc_predict_taken;
+    logic [ 3:0] IF_bhr_out;
+    logic        ID_btb_hit;
+    logic        ID_gbc_predict_taken;
+    logic [ 3:0] ID_bhr;
+    logic        EX_btb_hit;
+    logic        EX_gbc_predict_taken;
+    logic [ 3:0] EX_bhr;
+    logic        EX_actual_taken;
 
     Controller controller (
         .clk          (clk),
@@ -112,10 +122,12 @@ module CPU (
         .WB_op        (WB_op),
         .WB_rd        (WB_rd),
 
-        .bp_predict_taken   (history_reg_1),
-        .EX_predict_taken   (EX_predict_taken),
-        .ID_predict_taken   (ID_predict_taken),
-        .EX_actual_taken    (EX_actual_taken),
+        .IF_gbc_predict_taken (IF_gbc_predict_taken),
+        .EX_gbc_predict_taken (EX_gbc_predict_taken),
+        .IF_btb_hit           (IF_btb_hit),
+        .EX_btb_hit           (EX_btb_hit),
+
+        .EX_actual_taken      (EX_actual_taken),
 
       	.next_pc_sel          (next_pc_sel),
       	.stall                (stall),
@@ -147,24 +159,38 @@ module CPU (
     assign dm_addr = MEM_cal_out[15:2];
     assign dm_din  = MEM_rs2_data;
 
-    assign ID_br_jal_target = ID_pc + imm_ext_out;
+    assign ID_jal_target = ID_pc + imm_ext_out;
 
     Mux4to1 next_pc_m (
         .in_0     (EX_pc_plus_4),
         .in_1     (jb_target),
-        .in_2     (ID_br_jal_target),
+        .in_2     (IF_btb_target_pc),
         .in_3     (IF_pc_plus_4),
         .sel      (next_pc_sel),
         .mux_out  (next_pc)
     );
 
-    Branch_History_Buffer BHB (
+    BTB btb_unit (
         .clk           (clk),
         .rst           (rst),
-        .stall         (stall),
+        .IF_pc         (IF_pc),
         .EX_op         (EX_op),
-        .actual_taken  (EX_actual_taken),
-        .history_reg_1 (history_reg_1)
+        .EX_pc         (EX_pc),
+        .EX_target_pc_in (jb_target),
+
+        .IF_btb_hit    (IF_btb_hit),
+        .IF_btb_target_pc(IF_btb_target_pc)
+    );
+
+    BHR_PHT bhr_pht_unit (
+        .clk           (clk),
+        .rst           (rst),
+        .EX_op         (EX_op),
+        .EX_actual_taken  (EX_actual_taken),
+        .EX_bhr        (EX_bhr),
+
+        .IF_gbc_predict_taken (IF_gbc_predict_taken),
+        .IF_bhr_out    (IF_bhr_out)
     );
 
     Program_Counter_reg PC(
@@ -182,6 +208,13 @@ module CPU (
         .flush   (IF_flush),
         .IF_pc   (IF_pc),
         .IF_inst (IF_inst),
+
+        .IF_btb_hit           (IF_btb_hit),
+        .IF_gbc_predict_taken (IF_gbc_predict_taken),
+        .IF_bhr               (IF_bhr_out),
+        .ID_btb_hit           (ID_btb_hit),
+        .ID_gbc_predict_taken (ID_gbc_predict_taken),
+        .ID_bhr               (ID_bhr),
 
         .ID_pc   (ID_pc),
         .ID_inst (ID_inst)
@@ -249,6 +282,7 @@ module CPU (
         .clk         (clk),
         .rst         (rst),
         .stall       (stall),
+
         .flush       (ID_flush),
         .ID_pc       (ID_pc),
         .ID_op       (ID_op),
@@ -260,7 +294,13 @@ module CPU (
         .ID_rs1_data (ID_rs1_data),
         .ID_rs2_data (ID_rs2_data),
         .ID_imm_ext  (imm_ext_out),
-        .ID_predict_taken (ID_predict_taken),
+
+        .ID_btb_hit           (ID_btb_hit),
+        .ID_gbc_predict_taken (ID_gbc_predict_taken),
+        .ID_bhr               (ID_bhr),
+        .EX_btb_hit           (EX_btb_hit),
+        .EX_gbc_predict_taken (EX_gbc_predict_taken),
+        .EX_bhr               (EX_bhr),
         
         .EX_pc       (EX_pc),
         .EX_op       (EX_op),
@@ -271,8 +311,7 @@ module CPU (
       	.EX_rs2      (EX_rs2),
         .EX_rs1_data (EX_rs1_data),
         .EX_rs2_data (EX_rs2_data),
-        .EX_imm_ext  (EX_imm_ext),
-        .EX_predict_taken (EX_predict_taken)
+        .EX_imm_ext  (EX_imm_ext)
     );
 
     Mux3to1  EX_reg_src1_m (

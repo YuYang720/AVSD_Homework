@@ -2,28 +2,28 @@ Warning: The trip points for the library named SRAM_ss0p72v0p72vm40c_100a differ
 Information: Updating design information... (UID-85)
 Warning: Design 'top' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
 Information: Timing loop detected. (OPT-150)
-	cpu/alu/FP_unit/U911/A1 cpu/alu/FP_unit/U911/Z cpu/alu/FP_unit/U45/A2 cpu/alu/FP_unit/U45/ZN cpu/alu/FP_unit/U180/B cpu/alu/FP_unit/U180/ZN cpu/alu/FP_unit/U130/B1 cpu/alu/FP_unit/U130/ZN cpu/alu/FP_unit/U1248/A1 cpu/alu/FP_unit/U1248/ZN 
+	cpu/alu/FP_unit/U1070/A2 cpu/alu/FP_unit/U1070/Z cpu/alu/FP_unit/U45/A2 cpu/alu/FP_unit/U45/ZN cpu/alu/FP_unit/U830/B cpu/alu/FP_unit/U830/ZN cpu/alu/FP_unit/U130/B1 cpu/alu/FP_unit/U130/ZN cpu/alu/FP_unit/U920/A1 cpu/alu/FP_unit/U920/ZN 
 Information: Timing loop detected. (OPT-150)
-	cpu/alu/FP_unit/U45/B1 cpu/alu/FP_unit/U45/ZN cpu/alu/FP_unit/U180/B cpu/alu/FP_unit/U180/ZN cpu/alu/FP_unit/U130/B1 cpu/alu/FP_unit/U130/ZN cpu/alu/FP_unit/U1248/A1 cpu/alu/FP_unit/U1248/ZN cpu/alu/FP_unit/U843/A2 cpu/alu/FP_unit/U843/ZN cpu/alu/FP_unit/U1786/A2 cpu/alu/FP_unit/U1786/ZN cpu/alu/FP_unit/U103/A1 cpu/alu/FP_unit/U103/ZN cpu/alu/FP_unit/U1457/A1 cpu/alu/FP_unit/U1457/ZN cpu/alu/FP_unit/U1780/B1 cpu/alu/FP_unit/U1780/ZN cpu/alu/FP_unit/U94/A3 cpu/alu/FP_unit/U94/ZN 
+	cpu/alu/FP_unit/U1624/B1 cpu/alu/FP_unit/U1624/ZN cpu/alu/FP_unit/U94/A3 cpu/alu/FP_unit/U94/ZN cpu/alu/FP_unit/U45/B1 cpu/alu/FP_unit/U45/ZN cpu/alu/FP_unit/U830/B cpu/alu/FP_unit/U830/ZN cpu/alu/FP_unit/U130/B1 cpu/alu/FP_unit/U130/ZN cpu/alu/FP_unit/U920/A1 cpu/alu/FP_unit/U920/ZN cpu/alu/FP_unit/U1511/I cpu/alu/FP_unit/U1511/ZN cpu/alu/FP_unit/U1397/A1 cpu/alu/FP_unit/U1397/ZN cpu/alu/FP_unit/U103/A1 cpu/alu/FP_unit/U103/ZN cpu/alu/FP_unit/U1215/A1 cpu/alu/FP_unit/U1215/ZN 
 Warning: Disabling timing arc between pins 'A2' and 'ZN' on cell 'cpu/alu/FP_unit/U45'
          to break a timing loop. (OPT-314)
 Warning: Disabling timing arc between pins 'A2' and 'ZN' on cell 'cpu/alu/FP_unit/U45'
          to break a timing loop. (OPT-314)
 Warning: Disabling timing arc between pins 'A2' and 'ZN' on cell 'cpu/alu/FP_unit/U45'
-         to break a timing loop. (OPT-314)
-Warning: Disabling timing arc between pins 'A3' and 'ZN' on cell 'cpu/alu/FP_unit/U94'
-         to break a timing loop. (OPT-314)
-Warning: Disabling timing arc between pins 'A3' and 'ZN' on cell 'cpu/alu/FP_unit/U94'
-         to break a timing loop. (OPT-314)
-Warning: Disabling timing arc between pins 'A3' and 'ZN' on cell 'cpu/alu/FP_unit/U94'
-         to break a timing loop. (OPT-314)
-Warning: Disabling timing arc between pins 'B2' and 'ZN' on cell 'cpu/alu/FP_unit/U130'
-         to break a timing loop. (OPT-314)
-Warning: Disabling timing arc between pins 'B2' and 'ZN' on cell 'cpu/alu/FP_unit/U130'
-         to break a timing loop. (OPT-314)
-Warning: Disabling timing arc between pins 'B2' and 'ZN' on cell 'cpu/alu/FP_unit/U130'
          to break a timing loop. (OPT-314)
 Warning: Disabling timing arc between pins 'A1' and 'ZN' on cell 'cpu/alu/FP_unit/U103'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A3' and 'ZN' on cell 'cpu/alu/FP_unit/U94'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A3' and 'ZN' on cell 'cpu/alu/FP_unit/U94'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A3' and 'ZN' on cell 'cpu/alu/FP_unit/U94'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B2' and 'ZN' on cell 'cpu/alu/FP_unit/U130'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B2' and 'ZN' on cell 'cpu/alu/FP_unit/U130'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B2' and 'ZN' on cell 'cpu/alu/FP_unit/U130'
          to break a timing loop. (OPT-314)
 Warning: Disabling timing arc between pins 'A1' and 'ZN' on cell 'cpu/alu/FP_unit/U101'
          to break a timing loop. (OPT-314)
@@ -36,7 +36,7 @@ Report : timing
         -sort_by group
 Design : top
 Version: P-2019.03-SP1-1
-Date   : Wed Oct  1 12:14:47 2025
+Date   : Thu Oct  2 16:19:51 2025
 ****************************************
 
  # A fanout number of 1000 was used for high fanout net computations.
@@ -45,7 +45,7 @@ Operating Conditions: ss0p72vm40c   Library: N16ADFP_StdCellss0p72vm40c
 Wire Load Model Mode: segmented
 
   Startpoint: DM1/i_SRAM (rising edge-triggered flip-flop clocked by clk)
-  Endpoint: cpu/PC/current_pc_reg_30_
+  Endpoint: cpu/PC/current_pc_reg_22_
             (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: max
@@ -62,8 +62,8 @@ Wire Load Model Mode: segmented
   IF_ID_reg          ZeroWireload          N16ADFP_StdCellss0p72vm40c
   Program_Counter_reg
                      ZeroWireload          N16ADFP_StdCellss0p72vm40c
-  Branch_History_Buffer
-                     ZeroWireload          N16ADFP_StdCellss0p72vm40c
+  BHR_PHT            ZeroWireload          N16ADFP_StdCellss0p72vm40c
+  BTB                ZeroWireload          N16ADFP_StdCellss0p72vm40c
   Controller         ZeroWireload          N16ADFP_StdCellss0p72vm40c
   SRAM_wrapper_1     ZeroWireload          N16ADFP_StdCellss0p72vm40c
   top                ZeroWireload          N16ADFP_StdCellss0p72vm40c
@@ -74,18 +74,16 @@ Wire Load Model Mode: segmented
   Mux3to1_2          ZeroWireload          N16ADFP_StdCellss0p72vm40c
   Mux2to1_2          ZeroWireload          N16ADFP_StdCellss0p72vm40c
   ALU                ZeroWireload          N16ADFP_StdCellss0p72vm40c
-  FP_calculator_DW01_sub_J12_0
-                     ZeroWireload          N16ADFP_StdCellss0p72vm40c
   FP_calculator      ZeroWireload          N16ADFP_StdCellss0p72vm40c
   FP_calculator_DW01_sub_J11_0
                      ZeroWireload          N16ADFP_StdCellss0p72vm40c
-  FP_calculator_DW01_sub_J59_1
+  FP_calculator_DW01_add_J24_0
                      ZeroWireload          N16ADFP_StdCellss0p72vm40c
-  FP_calculator_DW_cmp_J60_0
+  FP_calculator_DW_cmp_J62_0
                      ZeroWireload          N16ADFP_StdCellss0p72vm40c
-  FP_calculator_DW01_sub_J58_0
+  FP_calculator_DW01_sub_J23_0
                      ZeroWireload          N16ADFP_StdCellss0p72vm40c
-  FP_calculator_DW01_add_J34_0
+  FP_calculator_DW01_sub_J32_0
                      ZeroWireload          N16ADFP_StdCellss0p72vm40c
   Mux4to1            ZeroWireload          N16ADFP_StdCellss0p72vm40c
 
@@ -94,113 +92,114 @@ Wire Load Model Mode: segmented
   clock clk (rise edge)                                 0.0000     0.0000
   clock network delay (ideal)                           0.2000     0.2000
   DM1/i_SRAM/CLK (TS1N16ADFPCLLLVTA512X45M4SWSHOD)      0.0000 #   0.2000 r
-  DM1/i_SRAM/Q[23] (TS1N16ADFPCLLLVTA512X45M4SWSHOD)    0.4654     0.6654 r
-  DM1/DO[23] (SRAM_wrapper_0)                           0.0000     0.6654 r
-  cpu/dm_dout[23] (CPU)                                 0.0000     0.6654 r
-  cpu/Reg_MEM_WB/MEM_ld_data[23] (MEM_WB_reg)           0.0000     0.6654 r
-  cpu/Reg_MEM_WB/U4/Z (BUFFD4BWP16P90LVT)               0.0115     0.6769 r
-  cpu/Reg_MEM_WB/WB_ld_data[23] (MEM_WB_reg)            0.0000     0.6769 r
-  cpu/LDF/ld_data[23] (LD_Filter)                       0.0000     0.6769 r
-  cpu/LDF/U21/ZN (CKND2BWP16P90LVT)                     0.0038     0.6807 f
-  cpu/LDF/U22/ZN (OAI33D2BWP16P90LVT)                   0.0157     0.6965 r
-  cpu/LDF/U35/ZN (CKND2BWP16P90LVT)                     0.0073     0.7037 f
-  cpu/LDF/U34/Z (AN2D2BWP16P90LVT)                      0.0148     0.7185 f
-  cpu/LDF/U32/ZN (ND2D1BWP16P90LVT)                     0.0068     0.7253 r
-  cpu/LDF/ld_f_data[26] (LD_Filter)                     0.0000     0.7253 r
-  cpu/wb/in_1[26] (Mux3to1_0)                           0.0000     0.7253 r
-  cpu/wb/U42/ZN (NR2D2BWP16P90LVT)                      0.0047     0.7300 f
-  cpu/wb/U41/ZN (NR2D2BWP16P90LVT)                      0.0068     0.7368 r
-  cpu/wb/mux_out[26] (Mux3to1_0)                        0.0000     0.7368 r
-  cpu/EX_reg_src1_m/in_0[26] (Mux3to1_2)                0.0000     0.7368 r
-  cpu/EX_reg_src1_m/U34/Z (AO21D1BWP16P90LVT)           0.0135     0.7503 r
-  cpu/EX_reg_src1_m/mux_out[26] (Mux3to1_2)             0.0000     0.7503 r
-  cpu/alu_src1_m/in_0[26] (Mux2to1_2)                   0.0000     0.7503 r
-  cpu/alu_src1_m/U20/ZN (ND2D2BWP16P90LVT)              0.0064     0.7567 f
-  cpu/alu_src1_m/U12/ZN (ND2D2BWP16P90LVT)              0.0066     0.7633 r
-  cpu/alu_src1_m/mux_out[26] (Mux2to1_2)                0.0000     0.7633 r
-  cpu/alu/operand1[26] (ALU)                            0.0000     0.7633 r
-  cpu/alu/U9/Z (BUFFD8BWP16P90LVT)                      0.0140     0.7773 r
-  cpu/alu/FP_unit/operand1[26] (FP_calculator)          0.0000     0.7773 r
-  cpu/alu/FP_unit/sub_50/B[3] (FP_calculator_DW01_sub_J11_0)
-                                                        0.0000     0.7773 r
-  cpu/alu/FP_unit/sub_50/U72/ZN (INVD4BWP16P90LVT)      0.0036     0.7809 f
-  cpu/alu/FP_unit/sub_50/U80/ZN (NR2D2BWP16P90LVT)      0.0054     0.7863 r
-  cpu/alu/FP_unit/sub_50/U82/ZN (OAI21D2BWP16P90LVT)    0.0087     0.7951 f
-  cpu/alu/FP_unit/sub_50/U118/ZN (AOI21D4BWP16P90LVT)   0.0096     0.8047 r
-  cpu/alu/FP_unit/sub_50/U117/Z (OR2D1BWP16P90LVT)      0.0117     0.8163 r
-  cpu/alu/FP_unit/sub_50/U114/ZN (ND2D2BWP16P90LVT)     0.0067     0.8231 f
-  cpu/alu/FP_unit/sub_50/U125/ZN (ND2D1BWP16P90LVT)     0.0088     0.8319 r
-  cpu/alu/FP_unit/sub_50/U131/ZN (ND2D4BWP16P90LVT)     0.0080     0.8399 f
-  cpu/alu/FP_unit/sub_50/DIFF[7] (FP_calculator_DW01_sub_J11_0)
-                                                        0.0000     0.8399 f
-  cpu/alu/FP_unit/U929/ZN (CKND2BWP16P90LVT)            0.0050     0.8449 r
-  cpu/alu/FP_unit/U338/Z (AN2D4BWP16P90LVT)             0.0134     0.8584 r
-  cpu/alu/FP_unit/U924/ZN (IND2D2BWP16P90LVT)           0.0071     0.8655 f
-  cpu/alu/FP_unit/U1314/ZN (INVD4BWP16P90LVT)           0.0064     0.8718 r
-  cpu/alu/FP_unit/U1212/ZN (IND2D4BWP16P90LVT)          0.0064     0.8782 f
-  cpu/alu/FP_unit/U1205/ZN (OAI32D2BWP16P90LVT)         0.0145     0.8927 r
-  cpu/alu/FP_unit/U1206/Z (BUFFD4BWP16P90LVT)           0.0146     0.9073 r
-  cpu/alu/FP_unit/r438/B[25] (FP_calculator_DW01_sub_J59_1)
-                                                        0.0000     0.9073 r
-  cpu/alu/FP_unit/r438/U725/ZN (INVD1BWP16P90LVT)       0.0072     0.9145 f
-  cpu/alu/FP_unit/r438/U788/ZN (ND2D1BWP16P90LVT)       0.0063     0.9208 r
-  cpu/alu/FP_unit/r438/U1124/Z (OR2D1BWP16P90LVT)       0.0118     0.9327 r
-  cpu/alu/FP_unit/r438/U755/ZN (ND2D2BWP16P90LVT)       0.0059     0.9385 f
-  cpu/alu/FP_unit/r438/U745/ZN (AOI21D2BWP16P90LVT)     0.0076     0.9461 r
-  cpu/alu/FP_unit/r438/U1134/ZN (OAI21D2BWP16P90LVT)    0.0081     0.9542 f
-  cpu/alu/FP_unit/r438/U1121/ZN (AOI21D2BWP16P90LVT)    0.0101     0.9643 r
-  cpu/alu/FP_unit/r438/U1120/ZN (OAI21D4BWP16P90LVT)    0.0093     0.9736 f
-  cpu/alu/FP_unit/r438/U1127/ZN (AOI21D1BWP16P90LVT)    0.0106     0.9842 r
-  cpu/alu/FP_unit/r438/U1110/Z (XOR2D2BWP16P90LVT)      0.0204     1.0046 f
-  cpu/alu/FP_unit/r438/DIFF[47] (FP_calculator_DW01_sub_J59_1)
-                                                        0.0000     1.0046 f
-  cpu/alu/FP_unit/U957/ZN (ND2D2BWP16P90LVT)            0.0063     1.0108 r
-  cpu/alu/FP_unit/U958/ZN (OAI211D2BWP16P90LVT)         0.0095     1.0203 f
-  cpu/alu/FP_unit/U985/ZN (CKND2BWP16P90LVT)            0.0076     1.0280 r
-  cpu/alu/FP_unit/U872/ZN (CKND2D4BWP16P90LVT)          0.0079     1.0358 f
-  cpu/alu/FP_unit/U984/ZN (NR3D2BWP16P90LVT)            0.0115     1.0473 r
-  cpu/alu/FP_unit/U990/ZN (CKND2D4BWP16P90LVT)          0.0086     1.0559 f
-  cpu/alu/FP_unit/U934/ZN (OAI22D1BWP16P90LVT)          0.0118     1.0677 r
-  cpu/alu/FP_unit/U64/ZN (IND2D4BWP16P90LVT)            0.0148     1.0824 r
-  cpu/alu/FP_unit/U933/ZN (IND2D4BWP16P90LVT)           0.0081     1.0905 f
-  cpu/alu/FP_unit/U94/ZN (OAI32D4BWP16P90LVT)           0.0161     1.1066 r
-  cpu/alu/FP_unit/U45/ZN (AOI22D2BWP16P90LVT)           0.0138     1.1204 f
-  cpu/alu/FP_unit/U180/ZN (IOA21D2BWP16P90LVT)          0.0068     1.1272 r
-  cpu/alu/FP_unit/U130/ZN (AOI22D2BWP16P90LVT)          0.0123     1.1395 f
-  cpu/alu/FP_unit/U1015/ZN (CKND2BWP16P90LVT)           0.0057     1.1452 r
-  cpu/alu/FP_unit/U1008/ZN (OAI31D1BWP16P90LVT)         0.0084     1.1536 f
-  cpu/alu/FP_unit/U1002/ZN (AOI211D2BWP16P90LVT)        0.0117     1.1653 r
-  cpu/alu/FP_unit/fp_result[0] (FP_calculator)          0.0000     1.1653 r
-  cpu/alu/U105/ZN (CKND2BWP16P90LVT)                    0.0071     1.1724 f
-  cpu/alu/U104/ZN (OAI21D4BWP16P90LVT)                  0.0091     1.1815 r
-  cpu/alu/alu_out[0] (ALU)                              0.0000     1.1815 r
-  cpu/controller/EX_alu_out_0 (Controller)              0.0000     1.1815 r
-  cpu/controller/U58/ZN (ND2D1BWP16P90LVT)              0.0109     1.1924 f
-  cpu/controller/U78/ZN (IND2D2BWP16P90LVT)             0.0073     1.1997 r
-  cpu/controller/U83/ZN (INR2D4BWP16P90LVT)             0.0062     1.2059 f
-  cpu/controller/next_pc_sel[1] (Controller)            0.0000     1.2059 f
-  cpu/next_pc_m/sel[1] (Mux4to1)                        0.0000     1.2059 f
-  cpu/next_pc_m/U8/ZN (INVD4BWP16P90LVT)                0.0058     1.2117 r
-  cpu/next_pc_m/U15/Z (AN2D4BWP16P90LVT)                0.0175     1.2292 r
-  cpu/next_pc_m/U110/ZN (AOI22D1BWP16P90LVT)            0.0098     1.2390 f
-  cpu/next_pc_m/U112/ZN (ND2D1BWP16P90LVT)              0.0073     1.2464 r
-  cpu/next_pc_m/mux_out[30] (Mux4to1)                   0.0000     1.2464 r
-  cpu/PC/next_pc[30] (Program_Counter_reg)              0.0000     1.2464 r
-  cpu/PC/U6/Z (MUX2D1BWP16P90LVT)                       0.0137     1.2601 r
-  cpu/PC/current_pc_reg_30_/D (DFCNQD2BWP16P90LVT)      0.0000     1.2601 r
-  data arrival time                                                1.2601
+  DM1/i_SRAM/Q[23] (TS1N16ADFPCLLLVTA512X45M4SWSHOD)    0.4654     0.6654 f
+  DM1/DO[23] (SRAM_wrapper_0)                           0.0000     0.6654 f
+  cpu/dm_dout[23] (CPU)                                 0.0000     0.6654 f
+  cpu/Reg_MEM_WB/MEM_ld_data[23] (MEM_WB_reg)           0.0000     0.6654 f
+  cpu/Reg_MEM_WB/U17/Z (BUFFD4BWP16P90LVT)              0.0124     0.6778 f
+  cpu/Reg_MEM_WB/WB_ld_data[23] (MEM_WB_reg)            0.0000     0.6778 f
+  cpu/LDF/ld_data[23] (LD_Filter)                       0.0000     0.6778 f
+  cpu/LDF/U47/ZN (INVD4BWP16P90LVT)                     0.0044     0.6822 r
+  cpu/LDF/U45/ZN (OAI221D4BWP16P90LVT)                  0.0132     0.6953 f
+  cpu/LDF/U42/ZN (ND2D2BWP16P90LVT)                     0.0074     0.7028 r
+  cpu/LDF/U44/ZN (ND3D1BWP16P90LVT)                     0.0082     0.7109 f
+  cpu/LDF/ld_f_data[24] (LD_Filter)                     0.0000     0.7109 f
+  cpu/wb/in_1[24] (Mux3to1_0)                           0.0000     0.7109 f
+  cpu/wb/U48/Z (AO21D1BWP16P90LVT)                      0.0143     0.7252 f
+  cpu/wb/mux_out[24] (Mux3to1_0)                        0.0000     0.7252 f
+  cpu/EX_reg_src1_m/in_0[24] (Mux3to1_2)                0.0000     0.7252 f
+  cpu/EX_reg_src1_m/U32/Z (AO21D1BWP16P90LVT)           0.0142     0.7394 f
+  cpu/EX_reg_src1_m/mux_out[24] (Mux3to1_2)             0.0000     0.7394 f
+  cpu/alu_src1_m/in_0[24] (Mux2to1_2)                   0.0000     0.7394 f
+  cpu/alu_src1_m/U16/ZN (ND2D2BWP16P90LVT)              0.0063     0.7458 r
+  cpu/alu_src1_m/U17/ZN (CKND2D4BWP16P90LVT)            0.0074     0.7531 f
+  cpu/alu_src1_m/mux_out[24] (Mux2to1_2)                0.0000     0.7531 f
+  cpu/alu/operand1[24] (ALU)                            0.0000     0.7531 f
+  cpu/alu/FP_unit/operand1[24] (FP_calculator)          0.0000     0.7531 f
+  cpu/alu/FP_unit/U1182/Z (BUFFD4BWP16P90LVT)           0.0112     0.7644 f
+  cpu/alu/FP_unit/sub_50/B[1] (FP_calculator_DW01_sub_J11_0)
+                                                        0.0000     0.7644 f
+  cpu/alu/FP_unit/sub_50/U115/ZN (CKND2BWP16P90LVT)     0.0041     0.7685 r
+  cpu/alu/FP_unit/sub_50/U114/ZN (NR2D2BWP16P90LVT)     0.0062     0.7747 f
+  cpu/alu/FP_unit/sub_50/U74/ZN (CKND2BWP16P90LVT)      0.0048     0.7794 r
+  cpu/alu/FP_unit/sub_50/U106/ZN (ND2D2BWP16P90LVT)     0.0067     0.7862 f
+  cpu/alu/FP_unit/sub_50/U129/ZN (ND2D4BWP16P90LVT)     0.0076     0.7938 r
+  cpu/alu/FP_unit/sub_50/U122/ZN (ND2D12BWP16P90LVT)    0.0108     0.8046 f
+  cpu/alu/FP_unit/sub_50/DIFF[1] (FP_calculator_DW01_sub_J11_0)
+                                                        0.0000     0.8046 f
+  cpu/alu/FP_unit/U1231/ZN (ND2D4BWP16P90LVT)           0.0063     0.8109 r
+  cpu/alu/FP_unit/U612/ZN (INVD1BWP16P90LVT)            0.0093     0.8202 f
+  cpu/alu/FP_unit/U763/ZN (AOI22D2BWP16P90LVT)          0.0117     0.8319 r
+  cpu/alu/FP_unit/U1280/ZN (OAI221D2BWP16P90LVT)        0.0133     0.8452 f
+  cpu/alu/FP_unit/U937/ZN (CKND2BWP16P90LVT)            0.0078     0.8530 r
+  cpu/alu/FP_unit/U936/ZN (OAI22D2BWP16P90LVT)          0.0137     0.8667 f
+  cpu/alu/FP_unit/U674/ZN (OAI32D2BWP16P90LVT)          0.0166     0.8833 r
+  cpu/alu/FP_unit/U673/Z (BUFFD4BWP16P90LVT)            0.0151     0.8984 r
+  cpu/alu/FP_unit/r435/A[25] (FP_calculator_DW_cmp_J62_0)
+                                                        0.0000     0.8984 r
+  cpu/alu/FP_unit/r435/U305/ZN (INVD4BWP16P90LVT)       0.0040     0.9024 f
+  cpu/alu/FP_unit/r435/U423/Z (OR2D1BWP16P90LVT)        0.0116     0.9140 f
+  cpu/alu/FP_unit/r435/U422/ZN (AOI21D2BWP16P90LVT)     0.0077     0.9217 r
+  cpu/alu/FP_unit/r435/U442/ZN (OAI21D2BWP16P90LVT)     0.0061     0.9278 f
+  cpu/alu/FP_unit/r435/U439/ZN (AOI21D2BWP16P90LVT)     0.0057     0.9335 r
+  cpu/alu/FP_unit/r435/U343/ZN (OAI21D1BWP16P90LVT)     0.0075     0.9410 f
+  cpu/alu/FP_unit/r435/U373/ZN (AOI21D1BWP16P90LVT)     0.0099     0.9509 r
+  cpu/alu/FP_unit/r435/U468/ZN (OAI21D2BWP16P90LVT)     0.0090     0.9599 f
+  cpu/alu/FP_unit/r435/U454/ZN (AOI21D4BWP16P90LVT)     0.0114     0.9712 r
+  cpu/alu/FP_unit/r435/GE_LT_GT_LE (FP_calculator_DW_cmp_J62_0)
+                                                        0.0000     0.9712 r
+  cpu/alu/FP_unit/U892/ZN (INVD4BWP16P90LVT)            0.0066     0.9778 f
+  cpu/alu/FP_unit/U889/ZN (IND2D4BWP16P90LVT)           0.0074     0.9852 r
+  cpu/alu/FP_unit/U891/ZN (CKND8BWP16P90LVT)            0.0069     0.9921 f
+  cpu/alu/FP_unit/U173/ZN (ND2D2BWP16P90LVT)            0.0057     0.9979 r
+  cpu/alu/FP_unit/U888/Z (AN3D4BWP16P90LVT)             0.0172     1.0151 r
+  cpu/alu/FP_unit/U127/ZN (CKND2D2BWP16P90LVT)          0.0058     1.0208 f
+  cpu/alu/FP_unit/U883/ZN (CKND2BWP16P90LVT)            0.0060     1.0269 r
+  cpu/alu/FP_unit/U279/ZN (CKND2D4BWP16P90LVT)          0.0061     1.0330 f
+  cpu/alu/FP_unit/U180/ZN (OAI33D1BWP16P90LVT)          0.0193     1.0523 r
+  cpu/alu/FP_unit/U869/ZN (CKND2BWP16P90LVT)            0.0082     1.0605 f
+  cpu/alu/FP_unit/U868/ZN (ND2D2BWP16P90LVT)            0.0075     1.0680 r
+  cpu/alu/FP_unit/U71/ZN (CKND2D2BWP16P90LVT)           0.0076     1.0755 f
+  cpu/alu/FP_unit/U94/ZN (OAI32D4BWP16P90LVT)           0.0160     1.0916 r
+  cpu/alu/FP_unit/U45/ZN (AOI22D2BWP16P90LVT)           0.0139     1.1055 f
+  cpu/alu/FP_unit/U830/ZN (IOA21D2BWP16P90LVT)          0.0068     1.1122 r
+  cpu/alu/FP_unit/U130/ZN (AOI22D2BWP16P90LVT)          0.0124     1.1246 f
+  cpu/alu/FP_unit/U930/ZN (CKND2BWP16P90LVT)            0.0068     1.1314 r
+  cpu/alu/FP_unit/U901/ZN (OAI211D2BWP16P90LVT)         0.0112     1.1426 f
+  cpu/alu/FP_unit/U898/ZN (ND2D2BWP16P90LVT)            0.0068     1.1493 r
+  cpu/alu/FP_unit/U900/ZN (CKND2BWP16P90LVT)            0.0035     1.1528 f
+  cpu/alu/FP_unit/U899/ZN (AOI22D1BWP16P90LVT)          0.0089     1.1618 r
+  cpu/alu/FP_unit/fp_result[0] (FP_calculator)          0.0000     1.1618 r
+  cpu/alu/U99/ZN (ND2D2BWP16P90LVT)                     0.0089     1.1707 f
+  cpu/alu/U98/ZN (ND2D4BWP16P90LVT)                     0.0085     1.1791 r
+  cpu/alu/alu_out[0] (ALU)                              0.0000     1.1791 r
+  cpu/controller/EX_alu_out_0 (Controller)              0.0000     1.1791 r
+  cpu/controller/U79/ZN (CKND2BWP16P90LVT)              0.0047     1.1838 f
+  cpu/controller/U82/ZN (AOI221D2BWP16P90LVT)           0.0177     1.2015 r
+  cpu/controller/next_pc_sel[1] (Controller)            0.0000     1.2015 r
+  cpu/next_pc_m/sel[1] (Mux4to1)                        0.0000     1.2015 r
+  cpu/next_pc_m/U1/ZN (ND2D2BWP16P90LVT)                0.0140     1.2155 f
+  cpu/next_pc_m/U23/ZN (CKND2BWP16P90LVT)               0.0143     1.2299 r
+  cpu/next_pc_m/U83/ZN (AOI22D1BWP16P90LVT)             0.0092     1.2390 f
+  cpu/next_pc_m/U84/ZN (ND2D1BWP16P90LVT)               0.0061     1.2451 r
+  cpu/next_pc_m/mux_out[22] (Mux4to1)                   0.0000     1.2451 r
+  cpu/PC/next_pc[22] (Program_Counter_reg)              0.0000     1.2451 r
+  cpu/PC/U68/ZN (ND2D1BWP16P90LVT)                      0.0058     1.2509 f
+  cpu/PC/U114/ZN (ND2D1BWP16P90LVT)                     0.0068     1.2577 r
+  cpu/PC/current_pc_reg_22_/D (DFCNQD2BWP16P90LVT)      0.0000     1.2577 r
+  data arrival time                                                1.2577
 
   clock clk (rise edge)                                 0.9900     0.9900
   clock network delay (ideal)                           0.2000     1.1900
   clock uncertainty                                    -0.0200     1.1700
-  cpu/PC/current_pc_reg_30_/CP (DFCNQD2BWP16P90LVT)     0.0000     1.1700 r
-  library setup time                                   -0.0044     1.1656
-  data required time                                               1.1656
+  cpu/PC/current_pc_reg_22_/CP (DFCNQD2BWP16P90LVT)     0.0000     1.1700 r
+  library setup time                                   -0.0043     1.1657
+  data required time                                               1.1657
   --------------------------------------------------------------------------
-  data required time                                               1.1656
-  data arrival time                                               -1.2601
+  data required time                                               1.1657
+  data arrival time                                               -1.2577
   --------------------------------------------------------------------------
-  slack (VIOLATED)                                                -0.0945
+  slack (VIOLATED)                                                -0.0921
 
 
 1
