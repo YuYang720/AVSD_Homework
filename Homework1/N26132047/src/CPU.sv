@@ -8,7 +8,7 @@
 `include "MUL.sv"
 `include "Mux2to1.sv"
 `include "Mux3to1.sv"
-`include "Mux4to1.sv"
+`include "Mux8to1.sv"
 `include "Program_Counter_reg.sv"
 `include "Register_File.sv"
 `include "ALU.sv"
@@ -63,7 +63,7 @@ module CPU (
     logic [31:0] CSR_dout;
 
 
-    logic [1:0] next_pc_sel;
+    logic [2:0] next_pc_sel;
     logic       stall;
     logic       IF_flush, ID_flush;
     logic [1:0] ID_rs1_data_sel, ID_rs2_data_sel;
@@ -161,11 +161,12 @@ module CPU (
 
     assign ID_jal_target = ID_pc + imm_ext_out;
 
-    Mux4to1 next_pc_m (
+    Mux8to1 next_pc_m (
         .in_0     (EX_pc_plus_4),
         .in_1     (jb_target),
         .in_2     (IF_btb_target_pc),
-        .in_3     (IF_pc_plus_4),
+        .in_3     (ID_jal_target),
+        .in_4     (IF_pc_plus_4),
         .sel      (next_pc_sel),
         .mux_out  (next_pc)
     );

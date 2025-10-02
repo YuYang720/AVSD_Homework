@@ -34,7 +34,7 @@ module Controller(
     output logic EX_actual_taken,        
 
     // Control outputs
-    output logic [ 1:0] next_pc_sel,
+    output logic [ 2:0] next_pc_sel,
     output logic        stall,
     output logic        IF_flush,
     output logic        ID_flush,
@@ -95,19 +95,21 @@ module Controller(
     end
 
     // flush control
-    assign IF_flush = EX_mispredict || EX_op == `JAL || EX_op == `JALR;
-    assign ID_flush = EX_mispredict || EX_op == `JALR || EX_op == `JAL;
+    assign IF_flush = EX_mispredict || ID_op == `JAL || EX_op == `JALR;
+    assign ID_flush = EX_mispredict || EX_op == `JALR;
 
     // next pc control
     always_comb begin
         if (EX_mispredict) begin
-            next_pc_sel = (EX_actual_taken) ? 2'b01 : 2'b00; 
-        end else if (EX_op == `JALR || EX_op == `JAL) begin 
-            next_pc_sel = 2'b01;
+            next_pc_sel = (EX_actual_taken) ? 3'd1 : 3'd0; 
+        end else if (EX_op == `JALR) begin 
+            next_pc_sel = 3'd1;
+        end else if (ID_op == `JAL) begin 
+            next_pc_sel = 3'd3;
         end else if (IF_btb_hit && IF_gbc_predict_taken) begin
-            next_pc_sel = 2'b10;
+            next_pc_sel = 3'd2;
         end else begin
-            next_pc_sel = 2'b11;
+            next_pc_sel = 3'd4;
         end
     end
 

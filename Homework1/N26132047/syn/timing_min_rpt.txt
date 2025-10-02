@@ -7,7 +7,7 @@ Report : timing
         -sort_by group
 Design : top
 Version: P-2019.03-SP1-1
-Date   : Thu Oct  2 16:19:51 2025
+Date   : Thu Oct  2 19:12:03 2025
 ****************************************
 
  # A fanout number of 1000 was used for high fanout net computations.
@@ -49,12 +49,12 @@ Wire Load Model Mode: segmented
   cpu/Reg_EX_MEM/MEM_op_reg_5_/Q (DFCNQD2BWP16P90LVT)   0.0586     0.2586 r
   cpu/Reg_EX_MEM/MEM_op[5] (EX_MEM_reg)                 0.0000     0.2586 r
   cpu/controller/MEM_op[5] (Controller)                 0.0000     0.2586 r
-  cpu/controller/U216/ZN (ND2D1BWP16P90LVT)             0.0088     0.2674 f
-  cpu/controller/U172/ZN (IND2D1BWP16P90LVT)            0.0150     0.2824 f
-  cpu/controller/U6/Z (CKBD1BWP16P90LVT)                0.0104     0.2928 f
-  cpu/controller/U3/Z (AN2D2BWP20P90)                   0.0163     0.3090 f
-  cpu/controller/U4/ZN (INVD1BWP16P90LVT)               0.0048     0.3138 r
-  cpu/controller/U5/ZN (INVD1BWP16P90LVT)               0.0064     0.3202 f
+  cpu/controller/U244/ZN (ND2D1BWP16P90LVT)             0.0088     0.2674 f
+  cpu/controller/U200/ZN (IND2D1BWP16P90LVT)            0.0150     0.2824 f
+  cpu/controller/U7/Z (CKBD1BWP16P90LVT)                0.0104     0.2928 f
+  cpu/controller/U4/Z (AN2D2BWP20P90)                   0.0163     0.3090 f
+  cpu/controller/U5/ZN (INVD1BWP16P90LVT)               0.0048     0.3138 r
+  cpu/controller/U6/ZN (INVD1BWP16P90LVT)               0.0064     0.3202 f
   cpu/controller/MEM_ceb (Controller)                   0.0000     0.3202 f
   cpu/dm_ceb (CPU)                                      0.0000     0.3202 f
   DM1/CEB (SRAM_wrapper_0)                              0.0000     0.3202 f

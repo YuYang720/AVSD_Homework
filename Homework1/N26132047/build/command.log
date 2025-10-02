@@ -1,6 +1,6 @@
 #@ # 
 #@ # Running dc_shell Version P-2019.03-SP1-1 for linux64 -- May 06, 2019
-#@ # Date:   Thu Oct  2 16:11:35 2025
+#@ # Date:   Thu Oct  2 19:01:55 2025
 #@ # Run by: avsd2541@superdome2
 #@ 
 
@@ -6716,7 +6716,7 @@ source -echo -verbose /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132
 #@ # Setting Clock freq & some parameter
 #@ #=====================================================================
 #@ 
-#@ set clk_period 0.99
+#@ set clk_period 1.08
 #@ set input_max   [expr {double(round(1000*$clk_period * 0.6))/1000}]
 #@ set input_min   [expr {double(round(1000*$clk_period * 0.0))/1000}]
 #@ set output_max  [expr {double(round(1000*$clk_period * 0.1))/1000}]

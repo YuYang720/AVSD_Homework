@@ -38,7 +38,7 @@ module BTB (
     
     // --- 更新邏輯 ---
     assign update_index = EX_pc[5:2];
-    assign update_tag   = EX_pc[31:6];
+    assign update_tag   = EX_pc[15:6];
     
     always_ff @(posedge clk or posedge rst) begin
         if (rst) begin

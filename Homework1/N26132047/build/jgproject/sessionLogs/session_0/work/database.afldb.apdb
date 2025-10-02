@@ -2,7 +2,7 @@
 1.06
 #SIGNALTUPLE#
 1
-1934
+1932
 cpu.controller.MEM_func3
 2
 0
@@ -18,7 +18,7 @@ u
 
 #SIGNALTUPLE#
 2
-1922
+1920
 cpu.controller.MEM_op
 6
 0
@@ -50,7 +50,7 @@ u
 
 #SIGNALTUPLE#
 4
-9587
+9543
 cpu.Reg_IF_ID.ID_inst[0]
 31
 0
@@ -66,7 +66,7 @@ u
 
 #SIGNALTUPLE#
 5
-9587
+9543
 cpu.Reg_IF_ID.ID_inst[1]
 31
 0
@@ -82,7 +82,7 @@ u
 
 #SIGNALTUPLE#
 6
-9587
+9543
 cpu.Reg_IF_ID.ID_inst[2]
 31
 0
@@ -98,7 +98,7 @@ u
 
 #SIGNALTUPLE#
 7
-9587
+9543
 cpu.Reg_IF_ID.ID_inst[3]
 31
 0
@@ -114,7 +114,7 @@ u
 
 #SIGNALTUPLE#
 8
-9587
+9543
 cpu.Reg_IF_ID.ID_inst[4]
 31
 0
@@ -130,7 +130,7 @@ u
 
 #SIGNALTUPLE#
 9
-9587
+9543
 cpu.Reg_IF_ID.ID_inst[5]
 31
 0
@@ -146,7 +146,7 @@ u
 
 #SIGNALTUPLE#
 10
-9587
+9543
 cpu.Reg_IF_ID.ID_inst[6]
 31
 0
@@ -162,7 +162,7 @@ u
 
 #SIGNALTUPLE#
 11
-9587
+9543
 cpu.Reg_IF_ID.ID_inst[7]
 31
 0
@@ -178,7 +178,7 @@ u
 
 #SIGNALTUPLE#
 12
-9587
+9543
 cpu.Reg_IF_ID.ID_inst[8]
 31
 0
@@ -194,7 +194,7 @@ u
 
 #SIGNALTUPLE#
 13
-9587
+9543
 cpu.Reg_IF_ID.ID_inst[9]
 31
 0
@@ -210,7 +210,7 @@ u
 
 #SIGNALTUPLE#
 14
-9587
+9543
 cpu.Reg_IF_ID.ID_inst[10]
 31
 0
@@ -226,7 +226,7 @@ u
 
 #SIGNALTUPLE#
 15
-9587
+9543
 cpu.Reg_IF_ID.ID_inst[11]
 31
 0
@@ -242,7 +242,7 @@ u
 
 #SIGNALTUPLE#
 16
-9587
+9543
 cpu.Reg_IF_ID.ID_inst[12]
 31
 0
@@ -258,7 +258,7 @@ u
 
 #SIGNALTUPLE#
 17
-9587
+9543
 cpu.Reg_IF_ID.ID_inst[13]
 31
 0
@@ -274,7 +274,7 @@ u
 
 #SIGNALTUPLE#
 18
-9587
+9543
 cpu.Reg_IF_ID.ID_inst[14]
 31
 0
@@ -290,7 +290,7 @@ u
 
 #SIGNALTUPLE#
 19
-9587
+9543
 cpu.Reg_IF_ID.ID_inst[15]
 31
 0
@@ -306,7 +306,7 @@ u
 
 #SIGNALTUPLE#
 20
-9587
+9543
 cpu.Reg_IF_ID.ID_inst[16]
 31
 0
@@ -322,7 +322,7 @@ u
 
 #SIGNALTUPLE#
 21
-9587
+9543
 cpu.Reg_IF_ID.ID_inst[17]
 31
 0
@@ -338,7 +338,7 @@ u
 
 #SIGNALTUPLE#
 22
-9587
+9543
 cpu.Reg_IF_ID.ID_inst[18]
 31
 0
@@ -354,7 +354,7 @@ u
 
 #SIGNALTUPLE#
 23
-9587
+9543
 cpu.Reg_IF_ID.ID_inst[19]
 31
 0
@@ -370,7 +370,7 @@ u
 
 #SIGNALTUPLE#
 24
-9587
+9543
 cpu.Reg_IF_ID.ID_inst[20]
 31
 0
@@ -386,7 +386,7 @@ u
 
 #SIGNALTUPLE#
 25
-9587
+9543
 cpu.Reg_IF_ID.ID_inst[21]
 31
 0
@@ -402,7 +402,7 @@ u
 
 #SIGNALTUPLE#
 26
-9587
+9543
 cpu.Reg_IF_ID.ID_inst[22]
 31
 0
@@ -418,7 +418,7 @@ u
 
 #SIGNALTUPLE#
 27
-9587
+9543
 cpu.Reg_IF_ID.ID_inst[23]
 31
 0
@@ -434,7 +434,7 @@ u
 
 #SIGNALTUPLE#
 28
-9587
+9543
 cpu.Reg_IF_ID.ID_inst[24]
 31
 0
@@ -450,7 +450,7 @@ u
 
 #SIGNALTUPLE#
 29
-9587
+9543
 cpu.Reg_IF_ID.ID_inst[25]
 31
 0
@@ -466,7 +466,7 @@ u
 
 #SIGNALTUPLE#
 30
-9587
+9543
 cpu.Reg_IF_ID.ID_inst[26]
 31
 0
@@ -482,7 +482,7 @@ u
 
 #SIGNALTUPLE#
 31
-9587
+9543
 cpu.Reg_IF_ID.ID_inst[27]
 31
 0
@@ -498,7 +498,7 @@ u
 
 #SIGNALTUPLE#
 32
-9587
+9543
 cpu.Reg_IF_ID.ID_inst[28]
 31
 0
@@ -514,7 +514,7 @@ u
 
 #SIGNALTUPLE#
 33
-9587
+9543
 cpu.Reg_IF_ID.ID_inst[29]
 31
 0
@@ -530,7 +530,7 @@ u
 
 #SIGNALTUPLE#
 34
-9587
+9543
 cpu.Reg_IF_ID.ID_inst[30]
 31
 0
@@ -546,7 +546,7 @@ u
 
 #SIGNALTUPLE#
 35
-9587
+9543
 cpu.Reg_IF_ID.ID_inst[31]
 31
 0
@@ -603,8 +603,8 @@ cpu.controller._automatic_unique_case_0_precond
 cpu.controller
 13
 20
-125
-148
+122
+145
 #POITUPLE#
 2
 11
@@ -613,7 +613,7 @@ cpu.controller
 0
 0
 0
-9
+8
 <user-defined>
 0
 <obsolete>
@@ -638,48 +638,6 @@ cpu.btb_unit
 0
 1
 2
-0
-0
-0
-../src/BTB.sv
-cpu.btb_unit
-27
-38
-41
-41
-#POITUPLE#
-3
-11
-2
-1
-0
-0
-0
-9
-<user-defined>
-0
-<obsolete>
-0
-<userdefined-clocks>
-0
-0
-<clocks>
-1
-clock
-:global_clock
-1
-clock
-1
-0
-19
-1
-cpu.btb_unit
-<signalCorrelation-vector>
-0
-0
-0
-1
-3
 0
 0
 0
@@ -690,6 +648,48 @@ cpu.btb_unit
 53
 53
 #POITUPLE#
+3
+11
+2
+1
+0
+0
+0
+9
+<user-defined>
+0
+<obsolete>
+0
+<userdefined-clocks>
+0
+0
+<clocks>
+1
+clock
+:global_clock
+1
+clock
+1
+0
+19
+1
+cpu.bhr_pht_unit
+<signalCorrelation-vector>
+0
+0
+0
+1
+3
+0
+0
+0
+../src/BHR_PHT.sv
+cpu.bhr_pht_unit
+71
+88
+35
+35
+#POITUPLE#
 4
 11
 2
@@ -697,7 +697,7 @@ cpu.btb_unit
 0
 0
 0
-10
+9
 <user-defined>
 0
 <obsolete>
@@ -729,8 +729,8 @@ cpu.bhr_pht_unit
 cpu.bhr_pht_unit
 71
 88
-35
-35
+37
+37
 #POITUPLE#
 5
 11
@@ -739,49 +739,7 @@ cpu.bhr_pht_unit
 0
 0
 0
-10
-<user-defined>
-0
-<obsolete>
-0
-<userdefined-clocks>
-0
-0
-<clocks>
-1
-clock
-:global_clock
-1
-clock
-1
-0
-19
-1
-cpu.bhr_pht_unit
-<signalCorrelation-vector>
-0
-0
-0
-1
-5
-0
-0
-0
-../src/BHR_PHT.sv
-cpu.bhr_pht_unit
-71
-88
-37
-37
-#POITUPLE#
-6
-11
-2
-1
-0
-0
-0
-33
+32
 <user-defined>
 0
 <obsolete>
@@ -805,7 +763,7 @@ cpu.alu.FP_unit
 0
 0
 1
-6
+5
 0
 0
 0
@@ -816,14 +774,14 @@ cpu.alu.FP_unit
 104
 104
 #POITUPLE#
-7
+6
 11
 2
 1
 0
 0
 0
-33
+32
 <user-defined>
 0
 <obsolete>
@@ -847,7 +805,7 @@ cpu.alu.FP_unit
 0
 0
 1
-7
+6
 0
 0
 0
@@ -858,14 +816,14 @@ cpu.alu.FP_unit
 105
 105
 #POITUPLE#
-8
+7
 11
 2
 1
 0
 0
 0
-33
+32
 <user-defined>
 0
 <obsolete>
@@ -889,7 +847,7 @@ cpu.alu.FP_unit
 0
 0
 1
-8
+7
 0
 0
 0
@@ -900,14 +858,14 @@ cpu.alu.FP_unit
 107
 107
 #POITUPLE#
-9
+8
 11
 2
 1
 0
 0
 0
-33
+32
 <user-defined>
 0
 <obsolete>
@@ -931,7 +889,7 @@ cpu.alu.FP_unit
 0
 0
 1
-9
+8
 0
 0
 0
@@ -942,14 +900,14 @@ cpu.alu.FP_unit
 108
 108
 #POITUPLE#
-10
+9
 11
 2
 1
 0
 0
 0
-33
+32
 <user-defined>
 0
 <obsolete>
@@ -973,7 +931,7 @@ cpu.alu.FP_unit
 0
 0
 1
-10
+9
 0
 0
 0
@@ -984,14 +942,14 @@ cpu.alu.FP_unit
 110
 110
 #POITUPLE#
-11
+10
 11
 2
 1
 0
 0
 0
-33
+32
 <user-defined>
 0
 <obsolete>
@@ -1015,7 +973,7 @@ cpu.alu.FP_unit
 0
 0
 1
-11
+10
 0
 0
 0
@@ -1026,14 +984,14 @@ cpu.alu.FP_unit
 111
 111
 #POITUPLE#
-12
+11
 11
 2
 1
 0
 0
 0
-33
+32
 <user-defined>
 0
 <obsolete>
@@ -1057,7 +1015,7 @@ cpu.alu.FP_unit
 0
 0
 1
-12
+11
 0
 0
 0
@@ -1068,14 +1026,14 @@ cpu.alu.FP_unit
 113
 113
 #POITUPLE#
-13
+12
 11
 2
 1
 0
 0
 0
-33
+32
 <user-defined>
 0
 <obsolete>
@@ -1099,7 +1057,7 @@ cpu.alu.FP_unit
 0
 0
 1
-13
+12
 0
 0
 0
@@ -1110,14 +1068,14 @@ cpu.alu.FP_unit
 114
 114
 #POITUPLE#
-14
+13
 11
 2
 1
 0
 0
 0
-33
+32
 <user-defined>
 0
 <obsolete>
@@ -1141,7 +1099,7 @@ cpu.alu.FP_unit
 0
 0
 1
-14
+13
 0
 0
 0
@@ -1152,14 +1110,14 @@ cpu.alu.FP_unit
 117
 117
 #POITUPLE#
-15
+14
 11
 2
 1
 0
 0
 0
-33
+32
 <user-defined>
 0
 <obsolete>
@@ -1183,7 +1141,7 @@ cpu.alu.FP_unit
 0
 0
 1
-15
+14
 0
 0
 0
@@ -1194,14 +1152,14 @@ cpu.alu.FP_unit
 118
 118
 #POITUPLE#
-16
+15
 11
 2
 1
 0
 0
 0
-33
+32
 <user-defined>
 0
 <obsolete>
@@ -1225,7 +1183,7 @@ cpu.alu.FP_unit
 0
 0
 1
-16
+15
 0
 0
 0
@@ -1236,14 +1194,14 @@ cpu.alu.FP_unit
 127
 127
 #POITUPLE#
-17
+16
 11
 2
 1
 0
 0
 0
-33
+32
 <user-defined>
 0
 <obsolete>
@@ -1267,7 +1225,7 @@ cpu.alu.FP_unit
 0
 0
 1
-17
+16
 0
 0
 0
@@ -1278,14 +1236,14 @@ cpu.alu.FP_unit
 137
 137
 #POITUPLE#
-18
+17
 11
 2
 1
 0
 0
 0
-33
+32
 <user-defined>
 0
 <obsolete>
@@ -1309,7 +1267,7 @@ cpu.alu.FP_unit
 0
 0
 1
-18
+17
 0
 0
 0
@@ -1320,14 +1278,14 @@ cpu.alu.FP_unit
 140
 140
 #POITUPLE#
-19
+18
 11
 2
 1
 0
 0
 0
-33
+32
 <user-defined>
 0
 <obsolete>
@@ -1351,7 +1309,7 @@ cpu.alu.FP_unit
 0
 0
 1
-19
+18
 0
 0
 0
@@ -1362,14 +1320,14 @@ cpu.alu.FP_unit
 143
 143
 #POITUPLE#
-20
+19
 11
 2
 1
 0
 0
 0
-33
+32
 <user-defined>
 0
 <obsolete>
@@ -1393,7 +1351,7 @@ cpu.alu.FP_unit
 0
 0
 1
-20
+19
 0
 0
 0
@@ -1404,7 +1362,7 @@ cpu.alu.FP_unit
 154
 154
 #POITUPLE#
-21
+20
 11
 2
 1
@@ -1436,18 +1394,18 @@ clock
 0
 0
 1
-21
+20
 0
 0
 0
 ../src/top.sv
-cpu.BHB
+cpu.btb_unit
 11
 14
 25
 25
 #POITUPLE#
-22
+21
 11
 2
 1
@@ -1479,18 +1437,18 @@ clock
 0
 0
 1
-22
+21
 0
 0
 0
 ../src/top.sv
-cpu.BHB
+cpu.btb_unit
 11
 14
 25
 25
 #POITUPLE#
-23
+22
 11
 2
 1
@@ -1522,18 +1480,18 @@ clock
 0
 0
 1
-23
+22
 0
 0
 0
 ../src/top.sv
-cpu.BHB
+cpu.btb_unit
 11
 14
 25
 25
 #POITUPLE#
-24
+23
 11
 2
 1
@@ -1565,18 +1523,18 @@ clock
 0
 0
 1
-24
+23
 0
 0
 0
 ../src/top.sv
-cpu.BHB
+cpu.btb_unit
 11
 14
 25
 25
 #POITUPLE#
-25
+24
 11
 2
 1
@@ -1608,18 +1566,18 @@ clock
 0
 0
 1
-25
+24
 0
 0
 0
 ../src/top.sv
-cpu.BHB
+cpu.btb_unit
 11
 14
 25
 25
 #POITUPLE#
-26
+25
 11
 2
 1
@@ -1651,18 +1609,18 @@ clock
 0
 0
 1
-26
+25
 0
 0
 0
 ../src/top.sv
-cpu.BHB
+cpu.btb_unit
 11
 14
 25
 25
 #POITUPLE#
-27
+26
 11
 2
 1
@@ -1694,18 +1652,18 @@ clock
 0
 0
 1
-27
+26
 0
 0
 0
 ../src/top.sv
-cpu.BHB
+cpu.btb_unit
 11
 14
 25
 25
 #POITUPLE#
-28
+27
 11
 2
 1
@@ -1737,18 +1695,18 @@ clock
 0
 0
 1
-28
+27
 0
 0
 0
 ../src/top.sv
-cpu.BHB
+cpu.btb_unit
 11
 14
 25
 25
 #POITUPLE#
-29
+28
 11
 2
 1
@@ -1780,18 +1738,18 @@ clock
 0
 0
 1
-29
+28
 0
 0
 0
 ../src/top.sv
-cpu.BHB
+cpu.btb_unit
 11
 14
 25
 25
 #POITUPLE#
-30
+29
 11
 2
 1
@@ -1823,18 +1781,18 @@ clock
 0
 0
 1
-30
+29
 0
 0
 0
 ../src/top.sv
-cpu.BHB
+cpu.btb_unit
 11
 14
 25
 25
 #POITUPLE#
-31
+30
 11
 2
 1
@@ -1866,18 +1824,18 @@ clock
 0
 0
 1
-31
+30
 0
 0
 0
 ../src/top.sv
-cpu.BHB
+cpu.btb_unit
 11
 14
 25
 25
 #POITUPLE#
-32
+31
 11
 2
 1
@@ -1909,18 +1867,18 @@ clock
 0
 0
 1
-32
+31
 0
 0
 0
 ../src/top.sv
-cpu.BHB
+cpu.btb_unit
 11
 14
 25
 25
 #POITUPLE#
-33
+32
 11
 2
 1
@@ -1952,18 +1910,18 @@ clock
 0
 0
 1
-33
+32
 0
 0
 0
 ../src/top.sv
-cpu.BHB
+cpu.btb_unit
 11
 14
 25
 25
 #POITUPLE#
-34
+33
 11
 2
 1
@@ -1995,18 +1953,18 @@ clock
 0
 0
 1
-34
+33
 0
 0
 0
 ../src/top.sv
-cpu.BHB
+cpu.btb_unit
 11
 14
 25
 25
 #POITUPLE#
-35
+34
 11
 2
 1
@@ -2038,18 +1996,18 @@ clock
 0
 0
 1
-35
+34
 0
 0
 0
 ../src/top.sv
-cpu.BHB
+cpu.btb_unit
 11
 14
 25
 25
 #POITUPLE#
-36
+35
 11
 2
 1
@@ -2081,18 +2039,18 @@ clock
 0
 0
 1
-36
+35
 0
 0
 0
 ../src/top.sv
-cpu.BHB
+cpu.btb_unit
 11
 14
 25
 25
 #POITUPLE#
-37
+36
 11
 2
 1
@@ -2124,18 +2082,18 @@ clock
 0
 0
 1
-37
+36
 0
 0
 0
 ../src/top.sv
-cpu.BHB
+cpu.btb_unit
 11
 14
 25
 25
 #POITUPLE#
-38
+37
 11
 2
 1
@@ -2167,18 +2125,18 @@ clock
 0
 0
 1
-38
+37
 0
 0
 0
 ../src/top.sv
-cpu.BHB
+cpu.btb_unit
 11
 14
 25
 25
 #POITUPLE#
-39
+38
 11
 2
 1
@@ -2210,18 +2168,18 @@ clock
 0
 0
 1
-39
+38
 0
 0
 0
 ../src/top.sv
-cpu.BHB
+cpu.btb_unit
 11
 14
 25
 25
 #POITUPLE#
-40
+39
 11
 2
 1
@@ -2253,18 +2211,18 @@ clock
 0
 0
 1
-40
+39
 0
 0
 0
 ../src/top.sv
-cpu.BHB
+cpu.btb_unit
 11
 14
 25
 25
 #POITUPLE#
-41
+40
 11
 2
 1
@@ -2296,18 +2254,18 @@ clock
 0
 0
 1
-41
+40
 0
 0
 0
 ../src/top.sv
-cpu.BHB
+cpu.btb_unit
 11
 14
 25
 25
 #POITUPLE#
-42
+41
 11
 2
 1
@@ -2339,18 +2297,18 @@ clock
 0
 0
 1
-42
+41
 0
 0
 0
 ../src/top.sv
-cpu.BHB
+cpu.btb_unit
 11
 14
 25
 25
 #POITUPLE#
-43
+42
 11
 2
 1
@@ -2382,18 +2340,18 @@ clock
 0
 0
 1
-43
+42
 0
 0
 0
 ../src/top.sv
-cpu.BHB
+cpu.btb_unit
 11
 14
 25
 25
 #POITUPLE#
-44
+43
 11
 2
 1
@@ -2425,18 +2383,18 @@ clock
 0
 0
 1
-44
+43
 0
 0
 0
 ../src/top.sv
-cpu.BHB
+cpu.btb_unit
 11
 14
 25
 25
 #POITUPLE#
-45
+44
 11
 2
 1
@@ -2468,18 +2426,18 @@ clock
 0
 0
 1
-45
+44
 0
 0
 0
 ../src/top.sv
-cpu.BHB
+cpu.btb_unit
 11
 14
 25
 25
 #POITUPLE#
-46
+45
 11
 2
 1
@@ -2511,18 +2469,18 @@ clock
 0
 0
 1
-46
+45
 0
 0
 0
 ../src/top.sv
-cpu.BHB
+cpu.btb_unit
 11
 14
 25
 25
 #POITUPLE#
-47
+46
 11
 2
 1
@@ -2554,18 +2512,18 @@ clock
 0
 0
 1
-47
+46
 0
 0
 0
 ../src/top.sv
-cpu.BHB
+cpu.btb_unit
 11
 14
 25
 25
 #POITUPLE#
-48
+47
 11
 2
 1
@@ -2597,18 +2555,18 @@ clock
 0
 0
 1
-48
+47
 0
 0
 0
 ../src/top.sv
-cpu.BHB
+cpu.btb_unit
 11
 14
 25
 25
 #POITUPLE#
-49
+48
 11
 2
 1
@@ -2640,18 +2598,18 @@ clock
 0
 0
 1
-49
+48
 0
 0
 0
 ../src/top.sv
-cpu.BHB
+cpu.btb_unit
 11
 14
 25
 25
 #POITUPLE#
-50
+49
 11
 2
 1
@@ -2683,18 +2641,18 @@ clock
 0
 0
 1
-50
+49
 0
 0
 0
 ../src/top.sv
-cpu.BHB
+cpu.btb_unit
 11
 14
 25
 25
 #POITUPLE#
-51
+50
 11
 2
 1
@@ -2726,18 +2684,18 @@ clock
 0
 0
 1
-51
+50
 0
 0
 0
 ../src/top.sv
-cpu.BHB
+cpu.btb_unit
 11
 14
 25
 25
 #POITUPLE#
-52
+51
 11
 2
 1
@@ -2769,12 +2727,12 @@ clock
 0
 0
 1
-52
+51
 0
 0
 0
 ../src/top.sv
-cpu.BHB
+cpu.btb_unit
 11
 14
 25
@@ -2831,20 +2789,6 @@ unique_case_prop_1
 2
 ASG_MS_RTRU
 Warning
-"Unequal length operands in assignment in module/design-unit 'cpu.btb_unit'. Length of RHS is greater than LHS. LHS 'update_tag' (unsigned) - 10 bit(s), RHS 'EX_pc[31:6]' (unsigned) - 26 bit(s). 16 most significant bit(s) will be lost."
-0
-<label>
-
-<waivers>
-0
-0
-1
-#MESSAGETUPLE#
-0
-3
-3
-ASG_MS_RTRU
-Warning
 "Unequal length operands in assignment in module/design-unit 'cpu.btb_unit'. Length of RHS is greater than LHS. LHS 'btb_reg[update_index].target_pc' (unsigned) - 16 bit(s), RHS 'EX_target_pc_in' (unsigned) - 32 bit(s). 16 most significant bit(s) will be lost."
 0
 <label>
@@ -2855,8 +2799,8 @@ Warning
 1
 #MESSAGETUPLE#
 0
-4
-4
+3
+3
 OPR_NR_UEOP
 Warning
 "Unequal length operand in bit/arithmetic operator addition in module/design-unit cpu.bhr_pht_unit. LHS operand 'current_entry' is 2 bits, RHS operand '1' is 32 bits"
@@ -2869,8 +2813,8 @@ Warning
 1
 #MESSAGETUPLE#
 0
-5
-5
+4
+4
 OPR_NR_UEOP
 Warning
 "Unequal length operand in bit/arithmetic operator subtraction in module/design-unit cpu.bhr_pht_unit. LHS operand 'current_entry' is 2 bits, RHS operand '1' is 32 bits"
@@ -2883,8 +2827,8 @@ Warning
 1
 #MESSAGETUPLE#
 0
-6
-6
+5
+5
 EXP_NR_OVFB
 Warning
 "Shift overflow in module/design-unit cpu.alu.FP_unit, some bits will be lost"
@@ -2897,8 +2841,8 @@ Warning
 1
 #MESSAGETUPLE#
 0
-7
-7
+6
+6
 OPR_NR_UEOP
 Warning
 "Unequal length operand in bit/arithmetic operator subtraction in module/design-unit cpu.alu.FP_unit. LHS operand 'exp_rslt' is 8 bits, RHS operand '1' is 32 bits"
@@ -2911,8 +2855,8 @@ Warning
 1
 #MESSAGETUPLE#
 0
-8
-8
+7
+7
 EXP_NR_OVFB
 Warning
 "Shift overflow in module/design-unit cpu.alu.FP_unit, some bits will be lost"
@@ -2925,8 +2869,8 @@ Warning
 1
 #MESSAGETUPLE#
 0
-9
-9
+8
+8
 OPR_NR_UEOP
 Warning
 "Unequal length operand in bit/arithmetic operator subtraction in module/design-unit cpu.alu.FP_unit. LHS operand 'exp_rslt' is 8 bits, RHS operand '2' is 32 bits"
@@ -2939,8 +2883,8 @@ Warning
 1
 #MESSAGETUPLE#
 0
-10
-10
+9
+9
 EXP_NR_OVFB
 Warning
 "Shift overflow in module/design-unit cpu.alu.FP_unit, some bits will be lost"
@@ -2953,8 +2897,8 @@ Warning
 1
 #MESSAGETUPLE#
 0
-11
-11
+10
+10
 OPR_NR_UEOP
 Warning
 "Unequal length operand in bit/arithmetic operator subtraction in module/design-unit cpu.alu.FP_unit. LHS operand 'exp_rslt' is 8 bits, RHS operand '3' is 32 bits"
@@ -2967,8 +2911,8 @@ Warning
 1
 #MESSAGETUPLE#
 0
-12
-12
+11
+11
 EXP_NR_OVFB
 Warning
 "Shift overflow in module/design-unit cpu.alu.FP_unit, some bits will be lost"
@@ -2981,8 +2925,8 @@ Warning
 1
 #MESSAGETUPLE#
 0
-13
-13
+12
+12
 OPR_NR_UEOP
 Warning
 "Unequal length operand in bit/arithmetic operator subtraction in module/design-unit cpu.alu.FP_unit. LHS operand 'exp_rslt' is 8 bits, RHS operand '4' is 32 bits"
@@ -2995,8 +2939,8 @@ Warning
 1
 #MESSAGETUPLE#
 0
-14
-14
+13
+13
 EXP_NR_OVFB
 Warning
 "Shift overflow in module/design-unit cpu.alu.FP_unit, some bits will be lost"
@@ -3009,8 +2953,8 @@ Warning
 1
 #MESSAGETUPLE#
 0
-15
-15
+14
+14
 OPR_NR_UEOP
 Warning
 "Unequal length operand in bit/arithmetic operator subtraction in module/design-unit cpu.alu.FP_unit. LHS operand 'exp_rslt' is 8 bits, RHS operand '5' is 32 bits"
@@ -3023,8 +2967,8 @@ Warning
 1
 #MESSAGETUPLE#
 0
-16
-16
+15
+15
 OPR_NR_UEOP
 Warning
 "Unequal length operand in bit/arithmetic operator addition in module/design-unit cpu.alu.FP_unit. LHS operand 'exp_rslt' is 8 bits, RHS operand '1' is 32 bits"
@@ -3037,8 +2981,8 @@ Warning
 1
 #MESSAGETUPLE#
 0
-17
-17
+16
+16
 OPR_NR_UEOP
 Warning
 "Unequal length operand in bit/arithmetic operator addition in module/design-unit cpu.alu.FP_unit. LHS operand 'normalized_frac[50:24]' is 27 bits, RHS operand '1'b1' is 1 bits"
@@ -3051,6 +2995,20 @@ Warning
 1
 #MESSAGETUPLE#
 0
+17
+17
+OPR_NR_UEOP
+Warning
+"Unequal length operand in bit/arithmetic operator addition in module/design-unit cpu.alu.FP_unit. LHS operand 'normalized_frac[50:24]' is 27 bits, RHS operand '2'b10' is 2 bits"
+0
+<label>
+
+<waivers>
+0
+0
+1
+#MESSAGETUPLE#
+0
 18
 18
 OPR_NR_UEOP
@@ -3067,20 +3025,6 @@ Warning
 0
 19
 19
-OPR_NR_UEOP
-Warning
-"Unequal length operand in bit/arithmetic operator addition in module/design-unit cpu.alu.FP_unit. LHS operand 'normalized_frac[50:24]' is 27 bits, RHS operand '2'b10' is 2 bits"
-0
-<label>
-
-<waivers>
-0
-0
-1
-#MESSAGETUPLE#
-0
-20
-20
 OPR_NR_UEOP
 Warning
 "Unequal length operand in bit/arithmetic operator addition in module/design-unit cpu.alu.FP_unit. LHS operand 'normalized_exp' is 8 bits, RHS operand '1' is 32 bits"
@@ -3093,8 +3037,8 @@ Warning
 1
 #MESSAGETUPLE#
 0
-21
-21
+20
+20
 RST_XC_LDTH
 Warning
 "The set/reset 'rst' drives a combinational logic. Depth '0' exceeded at 'cpu.Reg_IF_ID.ID_inst[0]'"
@@ -3107,8 +3051,8 @@ Warning
 1
 #MESSAGETUPLE#
 0
-22
-22
+21
+21
 RST_XC_LDTH
 Warning
 "The set/reset 'rst' drives a combinational logic. Depth '0' exceeded at 'cpu.Reg_IF_ID.ID_inst[1]'"
@@ -3121,8 +3065,8 @@ Warning
 1
 #MESSAGETUPLE#
 0
-23
-23
+22
+22
 RST_XC_LDTH
 Warning
 "The set/reset 'rst' drives a combinational logic. Depth '0' exceeded at 'cpu.Reg_IF_ID.ID_inst[2]'"
@@ -3135,8 +3079,8 @@ Warning
 1
 #MESSAGETUPLE#
 0
-24
-24
+23
+23
 RST_XC_LDTH
 Warning
 "The set/reset 'rst' drives a combinational logic. Depth '0' exceeded at 'cpu.Reg_IF_ID.ID_inst[3]'"
@@ -3149,8 +3093,8 @@ Warning
 1
 #MESSAGETUPLE#
 0
-25
-25
+24
+24
 RST_XC_LDTH
 Warning
 "The set/reset 'rst' drives a combinational logic. Depth '0' exceeded at 'cpu.Reg_IF_ID.ID_inst[4]'"
@@ -3163,8 +3107,8 @@ Warning
 1
 #MESSAGETUPLE#
 0
-26
-26
+25
+25
 RST_XC_LDTH
 Warning
 "The set/reset 'rst' drives a combinational logic. Depth '0' exceeded at 'cpu.Reg_IF_ID.ID_inst[5]'"
@@ -3177,8 +3121,8 @@ Warning
 1
 #MESSAGETUPLE#
 0
-27
-27
+26
+26
 RST_XC_LDTH
 Warning
 "The set/reset 'rst' drives a combinational logic. Depth '0' exceeded at 'cpu.Reg_IF_ID.ID_inst[6]'"
@@ -3191,8 +3135,8 @@ Warning
 1
 #MESSAGETUPLE#
 0
-28
-28
+27
+27
 RST_XC_LDTH
 Warning
 "The set/reset 'rst' drives a combinational logic. Depth '0' exceeded at 'cpu.Reg_IF_ID.ID_inst[7]'"
@@ -3205,8 +3149,8 @@ Warning
 1
 #MESSAGETUPLE#
 0
-29
-29
+28
+28
 RST_XC_LDTH
 Warning
 "The set/reset 'rst' drives a combinational logic. Depth '0' exceeded at 'cpu.Reg_IF_ID.ID_inst[8]'"
@@ -3219,8 +3163,8 @@ Warning
 1
 #MESSAGETUPLE#
 0
-30
-30
+29
+29
 RST_XC_LDTH
 Warning
 "The set/reset 'rst' drives a combinational logic. Depth '0' exceeded at 'cpu.Reg_IF_ID.ID_inst[9]'"
@@ -3233,8 +3177,8 @@ Warning
 1
 #MESSAGETUPLE#
 0
-31
-31
+30
+30
 RST_XC_LDTH
 Warning
 "The set/reset 'rst' drives a combinational logic. Depth '0' exceeded at 'cpu.Reg_IF_ID.ID_inst[10]'"
@@ -3247,8 +3191,8 @@ Warning
 1
 #MESSAGETUPLE#
 0
-32
-32
+31
+31
 RST_XC_LDTH
 Warning
 "The set/reset 'rst' drives a combinational logic. Depth '0' exceeded at 'cpu.Reg_IF_ID.ID_inst[11]'"
@@ -3261,8 +3205,8 @@ Warning
 1
 #MESSAGETUPLE#
 0
-33
-33
+32
+32
 RST_XC_LDTH
 Warning
 "The set/reset 'rst' drives a combinational logic. Depth '0' exceeded at 'cpu.Reg_IF_ID.ID_inst[12]'"
@@ -3275,8 +3219,8 @@ Warning
 1
 #MESSAGETUPLE#
 0
-34
-34
+33
+33
 RST_XC_LDTH
 Warning
 "The set/reset 'rst' drives a combinational logic. Depth '0' exceeded at 'cpu.Reg_IF_ID.ID_inst[13]'"
@@ -3289,8 +3233,8 @@ Warning
 1
 #MESSAGETUPLE#
 0
-35
-35
+34
+34
 RST_XC_LDTH
 Warning
 "The set/reset 'rst' drives a combinational logic. Depth '0' exceeded at 'cpu.Reg_IF_ID.ID_inst[14]'"
@@ -3303,8 +3247,8 @@ Warning
 1
 #MESSAGETUPLE#
 0
-36
-36
+35
+35
 RST_XC_LDTH
 Warning
 "The set/reset 'rst' drives a combinational logic. Depth '0' exceeded at 'cpu.Reg_IF_ID.ID_inst[15]'"
@@ -3317,8 +3261,8 @@ Warning
 1
 #MESSAGETUPLE#
 0
-37
-37
+36
+36
 RST_XC_LDTH
 Warning
 "The set/reset 'rst' drives a combinational logic. Depth '0' exceeded at 'cpu.Reg_IF_ID.ID_inst[16]'"
@@ -3331,8 +3275,8 @@ Warning
 1
 #MESSAGETUPLE#
 0
-38
-38
+37
+37
 RST_XC_LDTH
 Warning
 "The set/reset 'rst' drives a combinational logic. Depth '0' exceeded at 'cpu.Reg_IF_ID.ID_inst[17]'"
@@ -3345,8 +3289,8 @@ Warning
 1
 #MESSAGETUPLE#
 0
-39
-39
+38
+38
 RST_XC_LDTH
 Warning
 "The set/reset 'rst' drives a combinational logic. Depth '0' exceeded at 'cpu.Reg_IF_ID.ID_inst[18]'"
@@ -3359,8 +3303,8 @@ Warning
 1
 #MESSAGETUPLE#
 0
-40
-40
+39
+39
 RST_XC_LDTH
 Warning
 "The set/reset 'rst' drives a combinational logic. Depth '0' exceeded at 'cpu.Reg_IF_ID.ID_inst[19]'"
@@ -3373,8 +3317,8 @@ Warning
 1
 #MESSAGETUPLE#
 0
-41
-41
+40
+40
 RST_XC_LDTH
 Warning
 "The set/reset 'rst' drives a combinational logic. Depth '0' exceeded at 'cpu.Reg_IF_ID.ID_inst[20]'"
@@ -3387,8 +3331,8 @@ Warning
 1
 #MESSAGETUPLE#
 0
-42
-42
+41
+41
 RST_XC_LDTH
 Warning
 "The set/reset 'rst' drives a combinational logic. Depth '0' exceeded at 'cpu.Reg_IF_ID.ID_inst[21]'"
@@ -3401,8 +3345,8 @@ Warning
 1
 #MESSAGETUPLE#
 0
-43
-43
+42
+42
 RST_XC_LDTH
 Warning
 "The set/reset 'rst' drives a combinational logic. Depth '0' exceeded at 'cpu.Reg_IF_ID.ID_inst[22]'"
@@ -3415,8 +3359,8 @@ Warning
 1
 #MESSAGETUPLE#
 0
-44
-44
+43
+43
 RST_XC_LDTH
 Warning
 "The set/reset 'rst' drives a combinational logic. Depth '0' exceeded at 'cpu.Reg_IF_ID.ID_inst[23]'"
@@ -3429,8 +3373,8 @@ Warning
 1
 #MESSAGETUPLE#
 0
-45
-45
+44
+44
 RST_XC_LDTH
 Warning
 "The set/reset 'rst' drives a combinational logic. Depth '0' exceeded at 'cpu.Reg_IF_ID.ID_inst[24]'"
@@ -3443,8 +3387,8 @@ Warning
 1
 #MESSAGETUPLE#
 0
-46
-46
+45
+45
 RST_XC_LDTH
 Warning
 "The set/reset 'rst' drives a combinational logic. Depth '0' exceeded at 'cpu.Reg_IF_ID.ID_inst[25]'"
@@ -3457,8 +3401,8 @@ Warning
 1
 #MESSAGETUPLE#
 0
-47
-47
+46
+46
 RST_XC_LDTH
 Warning
 "The set/reset 'rst' drives a combinational logic. Depth '0' exceeded at 'cpu.Reg_IF_ID.ID_inst[26]'"
@@ -3471,8 +3415,8 @@ Warning
 1
 #MESSAGETUPLE#
 0
-48
-48
+47
+47
 RST_XC_LDTH
 Warning
 "The set/reset 'rst' drives a combinational logic. Depth '0' exceeded at 'cpu.Reg_IF_ID.ID_inst[27]'"
@@ -3485,8 +3429,8 @@ Warning
 1
 #MESSAGETUPLE#
 0
-49
-49
+48
+48
 RST_XC_LDTH
 Warning
 "The set/reset 'rst' drives a combinational logic. Depth '0' exceeded at 'cpu.Reg_IF_ID.ID_inst[28]'"
@@ -3499,8 +3443,8 @@ Warning
 1
 #MESSAGETUPLE#
 0
-50
-50
+49
+49
 RST_XC_LDTH
 Warning
 "The set/reset 'rst' drives a combinational logic. Depth '0' exceeded at 'cpu.Reg_IF_ID.ID_inst[29]'"
@@ -3513,8 +3457,8 @@ Warning
 1
 #MESSAGETUPLE#
 0
-51
-51
+50
+50
 RST_XC_LDTH
 Warning
 "The set/reset 'rst' drives a combinational logic. Depth '0' exceeded at 'cpu.Reg_IF_ID.ID_inst[30]'"
@@ -3527,8 +3471,8 @@ Warning
 1
 #MESSAGETUPLE#
 0
-52
-52
+51
+51
 RST_XC_LDTH
 Warning
 "The set/reset 'rst' drives a combinational logic. Depth '0' exceeded at 'cpu.Reg_IF_ID.ID_inst[31]'"
@@ -3563,111 +3507,106 @@ Controller
 6
 #MODULETUPLE#
 5
-Mux4to1
+Mux8to1
 1
 7
 #MODULETUPLE#
 6
-Branch_History_Buffer
+BTB
 1
 8
 #MODULETUPLE#
 7
-BTB
+BHR_PHT
 1
 9
 #MODULETUPLE#
 8
-BHR_PHT
+Program_Counter_reg
 1
 10
 #MODULETUPLE#
 9
-Program_Counter_reg
+IF_ID_reg
 1
 11
 #MODULETUPLE#
 10
-IF_ID_reg
+Decoder
 1
 12
 #MODULETUPLE#
 11
-Decoder
+Imm_Extension
 1
 13
 #MODULETUPLE#
 12
-Imm_Extension
-1
-14
-#MODULETUPLE#
-13
 Register_File
 2
-15
-16
-#MODULETUPLE#
 14
+15
+#MODULETUPLE#
+13
 Mux3to1
 5
+16
 17
-18
+19
 20
-21
-32
+31
 #MODULETUPLE#
-15
+14
 ID_EX_reg
 1
-19
+18
 #MODULETUPLE#
-16
+15
 Mux2to1
 3
-22
-24
-27
+21
+23
+26
 #MODULETUPLE#
-17
+16
 JB_target_gen
 1
-23
+22
+#MODULETUPLE#
+17
+ALU
+1
+24
 #MODULETUPLE#
 18
-ALU
+MUL
 1
 25
 #MODULETUPLE#
 19
-MUL
+EX_MEM_reg
 1
-26
+27
 #MODULETUPLE#
 20
-EX_MEM_reg
+MEM_WB_reg
 1
 28
 #MODULETUPLE#
 21
-MEM_WB_reg
+CSR_Unit
 1
 29
 #MODULETUPLE#
 22
-CSR_Unit
+LD_Filter
 1
 30
 #MODULETUPLE#
 23
-LD_Filter
-1
-31
-#MODULETUPLE#
-24
 FP_calculator
 1
-33
+32
 #INSTANCETUPLE#
 1
 cpu
@@ -3698,108 +3637,104 @@ cpu.next_pc_m
 5
 #INSTANCETUPLE#
 8
-cpu.BHB
+cpu.btb_unit
 6
 #INSTANCETUPLE#
 9
-cpu.btb_unit
+cpu.bhr_pht_unit
 7
 #INSTANCETUPLE#
 10
-cpu.bhr_pht_unit
+cpu.PC
 8
 #INSTANCETUPLE#
 11
-cpu.PC
+cpu.Reg_IF_ID
 9
 #INSTANCETUPLE#
 12
-cpu.Reg_IF_ID
+cpu.DEC
 10
 #INSTANCETUPLE#
 13
-cpu.DEC
+cpu.IMM_EXT
 11
 #INSTANCETUPLE#
 14
-cpu.IMM_EXT
+cpu.GPR
 12
 #INSTANCETUPLE#
 15
-cpu.GPR
-13
+cpu.FPR
+12
 #INSTANCETUPLE#
 16
-cpu.FPR
+cpu.ID_rs1_data_m
 13
 #INSTANCETUPLE#
 17
-cpu.ID_rs1_data_m
-14
+cpu.ID_rs2_data_m
+13
 #INSTANCETUPLE#
 18
-cpu.ID_rs2_data_m
+cpu.Reg_ID_EX
 14
 #INSTANCETUPLE#
 19
-cpu.Reg_ID_EX
-15
+cpu.EX_reg_src1_m
+13
 #INSTANCETUPLE#
 20
-cpu.EX_reg_src1_m
-14
+cpu.EX_reg_src2_m
+13
 #INSTANCETUPLE#
 21
-cpu.EX_reg_src2_m
-14
+cpu.alu_src1_m
+15
 #INSTANCETUPLE#
 22
-cpu.alu_src1_m
+cpu.JB
 16
 #INSTANCETUPLE#
 23
-cpu.JB
-17
+cpu.alu_src2_m
+15
 #INSTANCETUPLE#
 24
-cpu.alu_src2_m
-16
+cpu.alu
+17
 #INSTANCETUPLE#
 25
-cpu.alu
+cpu.mul
 18
 #INSTANCETUPLE#
 26
-cpu.mul
-19
+cpu.mul_alu_m
+15
 #INSTANCETUPLE#
 27
-cpu.mul_alu_m
-16
+cpu.Reg_EX_MEM
+19
 #INSTANCETUPLE#
 28
-cpu.Reg_EX_MEM
+cpu.Reg_MEM_WB
 20
 #INSTANCETUPLE#
 29
-cpu.Reg_MEM_WB
+cpu.csr
 21
 #INSTANCETUPLE#
 30
-cpu.csr
+cpu.LDF
 22
 #INSTANCETUPLE#
 31
-cpu.LDF
-23
+cpu.wb
+13
 #INSTANCETUPLE#
 32
-cpu.wb
-14
-#INSTANCETUPLE#
-33
 cpu.alu.FP_unit
-24
+23
 #SCANHISTORYTUPLE#
 0
 0
@@ -4434,20 +4369,20 @@ AUTO_FORMAL_CASE
 <hal-category-is-enabled>
 0
 <candidate-merged-group>
-42
-$prop$../src/Controller.sv125148
+40
+$prop$../src/Controller.sv122145
 ../src/Controller.sv
-125
-148
+122
+145
 
 
 2
 1
 1
-$prop$CAS_NO_UNIQ../src/Controller.sv125148
+$prop$CAS_NO_UNIQ../src/Controller.sv122145
 ../src/Controller.sv
-125
-148
+122
+145
 CAS_NO_UNIQ
 
 0
@@ -4461,7 +4396,7 @@ Warning$msg$../src/BHR_PHT.sv3535
 Warning
 3
 1
-4
+3
 Warning$msg$../src/BHR_PHT.sv3737
 ../src/BHR_PHT.sv
 37
@@ -4470,16 +4405,7 @@ Warning$msg$../src/BHR_PHT.sv3737
 Warning
 3
 1
-5
-Warning$msg$../src/BTB.sv4141
-../src/BTB.sv
-41
-41
-
-Warning
-3
-1
-2
+4
 Warning$msg$../src/BTB.sv5353
 ../src/BTB.sv
 53
@@ -4488,7 +4414,7 @@ Warning$msg$../src/BTB.sv5353
 Warning
 3
 1
-3
+2
 Warning$msg$../src/FP_calculator.sv104104
 ../src/FP_calculator.sv
 104
@@ -4497,7 +4423,7 @@ Warning$msg$../src/FP_calculator.sv104104
 Warning
 3
 1
-6
+5
 Warning$msg$../src/FP_calculator.sv105105
 ../src/FP_calculator.sv
 105
@@ -4506,7 +4432,7 @@ Warning$msg$../src/FP_calculator.sv105105
 Warning
 3
 1
-7
+6
 Warning$msg$../src/FP_calculator.sv107107
 ../src/FP_calculator.sv
 107
@@ -4515,7 +4441,7 @@ Warning$msg$../src/FP_calculator.sv107107
 Warning
 3
 1
-8
+7
 Warning$msg$../src/FP_calculator.sv108108
 ../src/FP_calculator.sv
 108
@@ -4524,7 +4450,7 @@ Warning$msg$../src/FP_calculator.sv108108
 Warning
 3
 1
-9
+8
 Warning$msg$../src/FP_calculator.sv110110
 ../src/FP_calculator.sv
 110
@@ -4533,7 +4459,7 @@ Warning$msg$../src/FP_calculator.sv110110
 Warning
 3
 1
-10
+9
 Warning$msg$../src/FP_calculator.sv111111
 ../src/FP_calculator.sv
 111
@@ -4542,7 +4468,7 @@ Warning$msg$../src/FP_calculator.sv111111
 Warning
 3
 1
-11
+10
 Warning$msg$../src/FP_calculator.sv113113
 ../src/FP_calculator.sv
 113
@@ -4551,7 +4477,7 @@ Warning$msg$../src/FP_calculator.sv113113
 Warning
 3
 1
-12
+11
 Warning$msg$../src/FP_calculator.sv114114
 ../src/FP_calculator.sv
 114
@@ -4560,7 +4486,7 @@ Warning$msg$../src/FP_calculator.sv114114
 Warning
 3
 1
-13
+12
 Warning$msg$../src/FP_calculator.sv117117
 ../src/FP_calculator.sv
 117
@@ -4569,7 +4495,7 @@ Warning$msg$../src/FP_calculator.sv117117
 Warning
 3
 1
-14
+13
 Warning$msg$../src/FP_calculator.sv118118
 ../src/FP_calculator.sv
 118
@@ -4578,7 +4504,7 @@ Warning$msg$../src/FP_calculator.sv118118
 Warning
 3
 1
-15
+14
 Warning$msg$../src/FP_calculator.sv127127
 ../src/FP_calculator.sv
 127
@@ -4587,7 +4513,7 @@ Warning$msg$../src/FP_calculator.sv127127
 Warning
 3
 1
-16
+15
 Warning$msg$../src/FP_calculator.sv137137
 ../src/FP_calculator.sv
 137
@@ -4596,7 +4522,7 @@ Warning$msg$../src/FP_calculator.sv137137
 Warning
 3
 1
-17
+16
 Warning$msg$../src/FP_calculator.sv140140
 ../src/FP_calculator.sv
 140
@@ -4605,7 +4531,7 @@ Warning$msg$../src/FP_calculator.sv140140
 Warning
 3
 1
-18
+17
 Warning$msg$../src/FP_calculator.sv143143
 ../src/FP_calculator.sv
 143
@@ -4614,7 +4540,7 @@ Warning$msg$../src/FP_calculator.sv143143
 Warning
 3
 1
-19
+18
 Warning$msg$../src/FP_calculator.sv154154
 ../src/FP_calculator.sv
 154
@@ -4623,7 +4549,7 @@ Warning$msg$../src/FP_calculator.sv154154
 Warning
 3
 1
-20
+19
 Warning$msg$../src/top.sv2525
 ../src/top.sv
 25
@@ -4632,6 +4558,7 @@ Warning$msg$../src/top.sv2525
 Warning
 3
 32
+20
 21
 22
 23
@@ -4663,16 +4590,6 @@ Warning
 49
 50
 51
-52
-Warning$msg$ASG_MS_RTRU../src/BTB.sv4141
-../src/BTB.sv
-41
-41
-ASG_MS_RTRU
-Warning
-1
-1
-2
 Warning$msg$ASG_MS_RTRU../src/BTB.sv5353
 ../src/BTB.sv
 53
@@ -4681,7 +4598,7 @@ ASG_MS_RTRU
 Warning
 1
 1
-3
+2
 Warning$msg$EXP_NR_OVFB../src/FP_calculator.sv104104
 ../src/FP_calculator.sv
 104
@@ -4690,7 +4607,7 @@ EXP_NR_OVFB
 Warning
 1
 1
-6
+5
 Warning$msg$EXP_NR_OVFB../src/FP_calculator.sv107107
 ../src/FP_calculator.sv
 107
@@ -4699,7 +4616,7 @@ EXP_NR_OVFB
 Warning
 1
 1
-8
+7
 Warning$msg$EXP_NR_OVFB../src/FP_calculator.sv110110
 ../src/FP_calculator.sv
 110
@@ -4708,7 +4625,7 @@ EXP_NR_OVFB
 Warning
 1
 1
-10
+9
 Warning$msg$EXP_NR_OVFB../src/FP_calculator.sv113113
 ../src/FP_calculator.sv
 113
@@ -4717,7 +4634,7 @@ EXP_NR_OVFB
 Warning
 1
 1
-12
+11
 Warning$msg$EXP_NR_OVFB../src/FP_calculator.sv117117
 ../src/FP_calculator.sv
 117
@@ -4726,7 +4643,7 @@ EXP_NR_OVFB
 Warning
 1
 1
-14
+13
 Warning$msg$OPR_NR_UEOP../src/BHR_PHT.sv3535
 ../src/BHR_PHT.sv
 35
@@ -4735,7 +4652,7 @@ OPR_NR_UEOP
 Warning
 1
 1
-4
+3
 Warning$msg$OPR_NR_UEOP../src/BHR_PHT.sv3737
 ../src/BHR_PHT.sv
 37
@@ -4744,7 +4661,7 @@ OPR_NR_UEOP
 Warning
 1
 1
-5
+4
 Warning$msg$OPR_NR_UEOP../src/FP_calculator.sv105105
 ../src/FP_calculator.sv
 105
@@ -4753,7 +4670,7 @@ OPR_NR_UEOP
 Warning
 1
 1
-7
+6
 Warning$msg$OPR_NR_UEOP../src/FP_calculator.sv108108
 ../src/FP_calculator.sv
 108
@@ -4762,7 +4679,7 @@ OPR_NR_UEOP
 Warning
 1
 1
-9
+8
 Warning$msg$OPR_NR_UEOP../src/FP_calculator.sv111111
 ../src/FP_calculator.sv
 111
@@ -4771,7 +4688,7 @@ OPR_NR_UEOP
 Warning
 1
 1
-11
+10
 Warning$msg$OPR_NR_UEOP../src/FP_calculator.sv114114
 ../src/FP_calculator.sv
 114
@@ -4780,7 +4697,7 @@ OPR_NR_UEOP
 Warning
 1
 1
-13
+12
 Warning$msg$OPR_NR_UEOP../src/FP_calculator.sv118118
 ../src/FP_calculator.sv
 118
@@ -4789,7 +4706,7 @@ OPR_NR_UEOP
 Warning
 1
 1
-15
+14
 Warning$msg$OPR_NR_UEOP../src/FP_calculator.sv127127
 ../src/FP_calculator.sv
 127
@@ -4798,7 +4715,7 @@ OPR_NR_UEOP
 Warning
 1
 1
-16
+15
 Warning$msg$OPR_NR_UEOP../src/FP_calculator.sv137137
 ../src/FP_calculator.sv
 137
@@ -4807,7 +4724,7 @@ OPR_NR_UEOP
 Warning
 1
 1
-17
+16
 Warning$msg$OPR_NR_UEOP../src/FP_calculator.sv140140
 ../src/FP_calculator.sv
 140
@@ -4816,7 +4733,7 @@ OPR_NR_UEOP
 Warning
 1
 1
-18
+17
 Warning$msg$OPR_NR_UEOP../src/FP_calculator.sv143143
 ../src/FP_calculator.sv
 143
@@ -4825,7 +4742,7 @@ OPR_NR_UEOP
 Warning
 1
 1
-19
+18
 Warning$msg$OPR_NR_UEOP../src/FP_calculator.sv154154
 ../src/FP_calculator.sv
 154
@@ -4834,7 +4751,7 @@ OPR_NR_UEOP
 Warning
 1
 1
-20
+19
 Warning$msg$RST_XC_LDTH../src/top.sv2525
 ../src/top.sv
 25
@@ -4843,6 +4760,7 @@ RST_XC_LDTH
 Warning
 1
 32
+20
 21
 22
 23
@@ -4874,46 +4792,27 @@ Warning
 49
 50
 51
-52
 <id-to-merged-signature>
-104
+102
 1
 0
-$prop$CAS_NO_UNIQ../src/Controller.sv125148
+$prop$CAS_NO_UNIQ../src/Controller.sv122145
 ../src/Controller.sv
-125
-148
+122
+145
 CAS_NO_UNIQ
 
 0
 1
 2
-$prop$../src/Controller.sv125148
+$prop$../src/Controller.sv122145
 ../src/Controller.sv
-125
-148
+122
+145
 
 
 2
 2
-1
-Warning$msg$ASG_MS_RTRU../src/BTB.sv4141
-../src/BTB.sv
-41
-41
-ASG_MS_RTRU
-Warning
-1
-2
-3
-Warning$msg$../src/BTB.sv4141
-../src/BTB.sv
-41
-41
-
-Warning
-3
-3
 1
 Warning$msg$ASG_MS_RTRU../src/BTB.sv5353
 ../src/BTB.sv
@@ -4922,7 +4821,7 @@ Warning$msg$ASG_MS_RTRU../src/BTB.sv5353
 ASG_MS_RTRU
 Warning
 1
-3
+2
 3
 Warning$msg$../src/BTB.sv5353
 ../src/BTB.sv
@@ -4931,7 +4830,7 @@ Warning$msg$../src/BTB.sv5353
 
 Warning
 3
-4
+3
 1
 Warning$msg$OPR_NR_UEOP../src/BHR_PHT.sv3535
 ../src/BHR_PHT.sv
@@ -4940,7 +4839,7 @@ Warning$msg$OPR_NR_UEOP../src/BHR_PHT.sv3535
 OPR_NR_UEOP
 Warning
 1
-4
+3
 3
 Warning$msg$../src/BHR_PHT.sv3535
 ../src/BHR_PHT.sv
@@ -4949,7 +4848,7 @@ Warning$msg$../src/BHR_PHT.sv3535
 
 Warning
 3
-5
+4
 1
 Warning$msg$OPR_NR_UEOP../src/BHR_PHT.sv3737
 ../src/BHR_PHT.sv
@@ -4958,7 +4857,7 @@ Warning$msg$OPR_NR_UEOP../src/BHR_PHT.sv3737
 OPR_NR_UEOP
 Warning
 1
-5
+4
 3
 Warning$msg$../src/BHR_PHT.sv3737
 ../src/BHR_PHT.sv
@@ -4967,7 +4866,7 @@ Warning$msg$../src/BHR_PHT.sv3737
 
 Warning
 3
-6
+5
 1
 Warning$msg$EXP_NR_OVFB../src/FP_calculator.sv104104
 ../src/FP_calculator.sv
@@ -4976,7 +4875,7 @@ Warning$msg$EXP_NR_OVFB../src/FP_calculator.sv104104
 EXP_NR_OVFB
 Warning
 1
-6
+5
 3
 Warning$msg$../src/FP_calculator.sv104104
 ../src/FP_calculator.sv
@@ -4985,7 +4884,7 @@ Warning$msg$../src/FP_calculator.sv104104
 
 Warning
 3
-7
+6
 1
 Warning$msg$OPR_NR_UEOP../src/FP_calculator.sv105105
 ../src/FP_calculator.sv
@@ -4994,7 +4893,7 @@ Warning$msg$OPR_NR_UEOP../src/FP_calculator.sv105105
 OPR_NR_UEOP
 Warning
 1
-7
+6
 3
 Warning$msg$../src/FP_calculator.sv105105
 ../src/FP_calculator.sv
@@ -5003,7 +4902,7 @@ Warning$msg$../src/FP_calculator.sv105105
 
 Warning
 3
-8
+7
 1
 Warning$msg$EXP_NR_OVFB../src/FP_calculator.sv107107
 ../src/FP_calculator.sv
@@ -5012,7 +4911,7 @@ Warning$msg$EXP_NR_OVFB../src/FP_calculator.sv107107
 EXP_NR_OVFB
 Warning
 1
-8
+7
 3
 Warning$msg$../src/FP_calculator.sv107107
 ../src/FP_calculator.sv
@@ -5021,7 +4920,7 @@ Warning$msg$../src/FP_calculator.sv107107
 
 Warning
 3
-9
+8
 1
 Warning$msg$OPR_NR_UEOP../src/FP_calculator.sv108108
 ../src/FP_calculator.sv
@@ -5030,7 +4929,7 @@ Warning$msg$OPR_NR_UEOP../src/FP_calculator.sv108108
 OPR_NR_UEOP
 Warning
 1
-9
+8
 3
 Warning$msg$../src/FP_calculator.sv108108
 ../src/FP_calculator.sv
@@ -5039,7 +4938,7 @@ Warning$msg$../src/FP_calculator.sv108108
 
 Warning
 3
-10
+9
 1
 Warning$msg$EXP_NR_OVFB../src/FP_calculator.sv110110
 ../src/FP_calculator.sv
@@ -5048,7 +4947,7 @@ Warning$msg$EXP_NR_OVFB../src/FP_calculator.sv110110
 EXP_NR_OVFB
 Warning
 1
-10
+9
 3
 Warning$msg$../src/FP_calculator.sv110110
 ../src/FP_calculator.sv
@@ -5057,7 +4956,7 @@ Warning$msg$../src/FP_calculator.sv110110
 
 Warning
 3
-11
+10
 1
 Warning$msg$OPR_NR_UEOP../src/FP_calculator.sv111111
 ../src/FP_calculator.sv
@@ -5066,7 +4965,7 @@ Warning$msg$OPR_NR_UEOP../src/FP_calculator.sv111111
 OPR_NR_UEOP
 Warning
 1
-11
+10
 3
 Warning$msg$../src/FP_calculator.sv111111
 ../src/FP_calculator.sv
@@ -5075,7 +4974,7 @@ Warning$msg$../src/FP_calculator.sv111111
 
 Warning
 3
-12
+11
 1
 Warning$msg$EXP_NR_OVFB../src/FP_calculator.sv113113
 ../src/FP_calculator.sv
@@ -5084,7 +4983,7 @@ Warning$msg$EXP_NR_OVFB../src/FP_calculator.sv113113
 EXP_NR_OVFB
 Warning
 1
-12
+11
 3
 Warning$msg$../src/FP_calculator.sv113113
 ../src/FP_calculator.sv
@@ -5093,7 +4992,7 @@ Warning$msg$../src/FP_calculator.sv113113
 
 Warning
 3
-13
+12
 1
 Warning$msg$OPR_NR_UEOP../src/FP_calculator.sv114114
 ../src/FP_calculator.sv
@@ -5102,7 +5001,7 @@ Warning$msg$OPR_NR_UEOP../src/FP_calculator.sv114114
 OPR_NR_UEOP
 Warning
 1
-13
+12
 3
 Warning$msg$../src/FP_calculator.sv114114
 ../src/FP_calculator.sv
@@ -5111,7 +5010,7 @@ Warning$msg$../src/FP_calculator.sv114114
 
 Warning
 3
-14
+13
 1
 Warning$msg$EXP_NR_OVFB../src/FP_calculator.sv117117
 ../src/FP_calculator.sv
@@ -5120,7 +5019,7 @@ Warning$msg$EXP_NR_OVFB../src/FP_calculator.sv117117
 EXP_NR_OVFB
 Warning
 1
-14
+13
 3
 Warning$msg$../src/FP_calculator.sv117117
 ../src/FP_calculator.sv
@@ -5129,7 +5028,7 @@ Warning$msg$../src/FP_calculator.sv117117
 
 Warning
 3
-15
+14
 1
 Warning$msg$OPR_NR_UEOP../src/FP_calculator.sv118118
 ../src/FP_calculator.sv
@@ -5138,7 +5037,7 @@ Warning$msg$OPR_NR_UEOP../src/FP_calculator.sv118118
 OPR_NR_UEOP
 Warning
 1
-15
+14
 3
 Warning$msg$../src/FP_calculator.sv118118
 ../src/FP_calculator.sv
@@ -5147,7 +5046,7 @@ Warning$msg$../src/FP_calculator.sv118118
 
 Warning
 3
-16
+15
 1
 Warning$msg$OPR_NR_UEOP../src/FP_calculator.sv127127
 ../src/FP_calculator.sv
@@ -5156,7 +5055,7 @@ Warning$msg$OPR_NR_UEOP../src/FP_calculator.sv127127
 OPR_NR_UEOP
 Warning
 1
-16
+15
 3
 Warning$msg$../src/FP_calculator.sv127127
 ../src/FP_calculator.sv
@@ -5165,7 +5064,7 @@ Warning$msg$../src/FP_calculator.sv127127
 
 Warning
 3
-17
+16
 1
 Warning$msg$OPR_NR_UEOP../src/FP_calculator.sv137137
 ../src/FP_calculator.sv
@@ -5174,7 +5073,7 @@ Warning$msg$OPR_NR_UEOP../src/FP_calculator.sv137137
 OPR_NR_UEOP
 Warning
 1
-17
+16
 3
 Warning$msg$../src/FP_calculator.sv137137
 ../src/FP_calculator.sv
@@ -5183,7 +5082,7 @@ Warning$msg$../src/FP_calculator.sv137137
 
 Warning
 3
-18
+17
 1
 Warning$msg$OPR_NR_UEOP../src/FP_calculator.sv140140
 ../src/FP_calculator.sv
@@ -5192,7 +5091,7 @@ Warning$msg$OPR_NR_UEOP../src/FP_calculator.sv140140
 OPR_NR_UEOP
 Warning
 1
-18
+17
 3
 Warning$msg$../src/FP_calculator.sv140140
 ../src/FP_calculator.sv
@@ -5201,7 +5100,7 @@ Warning$msg$../src/FP_calculator.sv140140
 
 Warning
 3
-19
+18
 1
 Warning$msg$OPR_NR_UEOP../src/FP_calculator.sv143143
 ../src/FP_calculator.sv
@@ -5210,7 +5109,7 @@ Warning$msg$OPR_NR_UEOP../src/FP_calculator.sv143143
 OPR_NR_UEOP
 Warning
 1
-19
+18
 3
 Warning$msg$../src/FP_calculator.sv143143
 ../src/FP_calculator.sv
@@ -5219,7 +5118,7 @@ Warning$msg$../src/FP_calculator.sv143143
 
 Warning
 3
-20
+19
 1
 Warning$msg$OPR_NR_UEOP../src/FP_calculator.sv154154
 ../src/FP_calculator.sv
@@ -5228,7 +5127,7 @@ Warning$msg$OPR_NR_UEOP../src/FP_calculator.sv154154
 OPR_NR_UEOP
 Warning
 1
-20
+19
 3
 Warning$msg$../src/FP_calculator.sv154154
 ../src/FP_calculator.sv
@@ -5237,6 +5136,24 @@ Warning$msg$../src/FP_calculator.sv154154
 
 Warning
 3
+20
+1
+Warning$msg$RST_XC_LDTH../src/top.sv2525
+../src/top.sv
+25
+25
+RST_XC_LDTH
+Warning
+1
+20
+3
+Warning$msg$../src/top.sv2525
+../src/top.sv
+25
+25
+
+Warning
+3
 21
 1
 Warning$msg$RST_XC_LDTH../src/top.sv2525
@@ -5787,24 +5704,6 @@ RST_XC_LDTH
 Warning
 1
 51
-3
-Warning$msg$../src/top.sv2525
-../src/top.sv
-25
-25
-
-Warning
-3
-52
-1
-Warning$msg$RST_XC_LDTH../src/top.sv2525
-../src/top.sv
-25
-25
-RST_XC_LDTH
-Warning
-1
-52
 3
 Warning$msg$../src/top.sv2525
 ../src/top.sv
