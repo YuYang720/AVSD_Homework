@@ -763,3 +763,278 @@ wvSelectSignal -win $_nWave1 {( "G1" 18 )}
 wvSelectSignal -win $_nWave1 {( "G1" 17 )} 
 wvSelectSignal -win $_nWave1 {( "G1" 9 )} 
 wvSelectSignal -win $_nWave1 {( "G1" 10 )} 
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvSelectGroup -win $_nWave1 {G3}
+wvSelectSignal -win $_nWave1 {( "G2" 9 )} 
+wvSelectGroup -win $_nWave1 {G3}
+wvSelectSignal -win $_nWave1 {( "G2" 9 )} 
+wvSelectGroup -win $_nWave1 {G3}
+wvSetPosition -win $_nWave1 {("G3" 0)}
+wvMoveSelected -win $_nWave1
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/cpu"
+wvSetPosition -win $_nWave1 {("G3" 6)}
+wvSetPosition -win $_nWave1 {("G3" 6)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/top_tb/TOP/clk} \
+{/top_tb/TOP/im_addr\[13:0\]} \
+{/top_tb/TOP/im_dout\[31:0\]} \
+{/BLANK} \
+{/top_tb/TOP/cpu/stall} \
+{/top_tb/TOP/cpu/next_pc_sel\[1:0\]} \
+{/BLANK} \
+{/top_tb/TOP/cpu/IF_flush} \
+{/top_tb/TOP/cpu/IF_pc\[31:0\]} \
+{/top_tb/TOP/cpu/IF_inst\[31:0\]} \
+{/top_tb/TOP/cpu/IF_bhr_out\[3:0\]} \
+{/top_tb/TOP/cpu/IF_gbc_predict_taken} \
+{/BLANK} \
+{/top_tb/TOP/cpu/ID_flush} \
+{/top_tb/TOP/cpu/ID_pc\[31:0\]} \
+{/top_tb/TOP/cpu/ID_inst\[31:0\]} \
+{/top_tb/TOP/cpu/ID_gbc_predict_taken} \
+{/BLANK} \
+{/top_tb/TOP/cpu/EX_pc\[31:0\]} \
+{/top_tb/TOP/cpu/controller/EX_is_branch} \
+{/top_tb/TOP/cpu/EX_actual_taken} \
+{/top_tb/TOP/cpu/EX_bhr\[3:0\]} \
+{/top_tb/TOP/cpu/EX_gbc_predict_taken} \
+{/top_tb/TOP/cpu/EX_imm_ext\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+{/top_tb/TOP/cpu/bhr_pht_unit/EX_bhr\[3:0\]} \
+{/top_tb/TOP/cpu/bhr_pht_unit/EX_op\[6:0\]} \
+{/top_tb/TOP/cpu/bhr_pht_unit/IF_bhr_out\[3:0\]} \
+{/top_tb/TOP/cpu/bhr_pht_unit/IF_gbc_predict_taken} \
+{/top_tb/TOP/cpu/bhr_pht_unit/bhr_reg\[3:0\]} \
+{/top_tb/TOP/cpu/bhr_pht_unit/current_entry\[1:0\]} \
+{/top_tb/TOP/cpu/bhr_pht_unit/pht_reg\[0:15\]} \
+{/BLANK} \
+{/top_tb/TOP/cpu/controller/EX_mispredict} \
+}
+wvAddSignal -win $_nWave1 -group {"G3" \
+{/top_tb/TOP/cpu/EX_btb_b_hit} \
+{/top_tb/TOP/cpu/EX_btb_j_hit} \
+{/top_tb/TOP/cpu/IF_btb_b_hit} \
+{/top_tb/TOP/cpu/IF_btb_j_hit} \
+{/top_tb/TOP/cpu/IF_btb_target\[31:0\]} \
+{/top_tb/TOP/cpu/IF_jal_target\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G4" \
+}
+wvSelectSignal -win $_nWave1 {( "G3" 1 2 3 4 5 6 )} 
+wvSetPosition -win $_nWave1 {("G3" 6)}
+wvSetPosition -win $_nWave1 {("G3" 6)}
+wvSetPosition -win $_nWave1 {("G3" 6)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/top_tb/TOP/clk} \
+{/top_tb/TOP/im_addr\[13:0\]} \
+{/top_tb/TOP/im_dout\[31:0\]} \
+{/BLANK} \
+{/top_tb/TOP/cpu/stall} \
+{/top_tb/TOP/cpu/next_pc_sel\[1:0\]} \
+{/BLANK} \
+{/top_tb/TOP/cpu/IF_flush} \
+{/top_tb/TOP/cpu/IF_pc\[31:0\]} \
+{/top_tb/TOP/cpu/IF_inst\[31:0\]} \
+{/top_tb/TOP/cpu/IF_bhr_out\[3:0\]} \
+{/top_tb/TOP/cpu/IF_gbc_predict_taken} \
+{/BLANK} \
+{/top_tb/TOP/cpu/ID_flush} \
+{/top_tb/TOP/cpu/ID_pc\[31:0\]} \
+{/top_tb/TOP/cpu/ID_inst\[31:0\]} \
+{/top_tb/TOP/cpu/ID_gbc_predict_taken} \
+{/BLANK} \
+{/top_tb/TOP/cpu/EX_pc\[31:0\]} \
+{/top_tb/TOP/cpu/controller/EX_is_branch} \
+{/top_tb/TOP/cpu/EX_actual_taken} \
+{/top_tb/TOP/cpu/EX_bhr\[3:0\]} \
+{/top_tb/TOP/cpu/EX_gbc_predict_taken} \
+{/top_tb/TOP/cpu/EX_imm_ext\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+{/top_tb/TOP/cpu/bhr_pht_unit/EX_bhr\[3:0\]} \
+{/top_tb/TOP/cpu/bhr_pht_unit/EX_op\[6:0\]} \
+{/top_tb/TOP/cpu/bhr_pht_unit/IF_bhr_out\[3:0\]} \
+{/top_tb/TOP/cpu/bhr_pht_unit/IF_gbc_predict_taken} \
+{/top_tb/TOP/cpu/bhr_pht_unit/bhr_reg\[3:0\]} \
+{/top_tb/TOP/cpu/bhr_pht_unit/current_entry\[1:0\]} \
+{/top_tb/TOP/cpu/bhr_pht_unit/pht_reg\[0:15\]} \
+{/BLANK} \
+{/top_tb/TOP/cpu/controller/EX_mispredict} \
+}
+wvAddSignal -win $_nWave1 -group {"G3" \
+{/top_tb/TOP/cpu/EX_btb_b_hit} \
+{/top_tb/TOP/cpu/EX_btb_j_hit} \
+{/top_tb/TOP/cpu/IF_btb_b_hit} \
+{/top_tb/TOP/cpu/IF_btb_j_hit} \
+{/top_tb/TOP/cpu/IF_btb_target\[31:0\]} \
+{/top_tb/TOP/cpu/IF_jal_target\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G4" \
+}
+wvSelectSignal -win $_nWave1 {( "G3" 1 2 3 4 5 6 )} 
+wvSetPosition -win $_nWave1 {("G3" 6)}
+wvGetSignalClose -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G3" 5 )} 
+wvSelectSignal -win $_nWave1 {( "G3" 2 )} 
+wvSelectSignal -win $_nWave1 {( "G3" 3 )} 
+wvSelectSignal -win $_nWave1 {( "G3" 2 )} 
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvSetCursor -win $_nWave1 33566916.709837 -snap {("G3" 2)}
+wvSelectSignal -win $_nWave1 {( "G3" 1 )} 
+wvZoomOut -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G3" 2 )} 
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomIn -win $_nWave1
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvGetSignalOpen -win $_nWave1
+wvSetPosition -win $_nWave1 {("G3" 7)}
+wvSetPosition -win $_nWave1 {("G3" 7)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/top_tb/TOP/clk} \
+{/top_tb/TOP/im_addr\[13:0\]} \
+{/top_tb/TOP/im_dout\[31:0\]} \
+{/BLANK} \
+{/top_tb/TOP/cpu/stall} \
+{/top_tb/TOP/cpu/next_pc_sel\[1:0\]} \
+{/BLANK} \
+{/top_tb/TOP/cpu/IF_flush} \
+{/top_tb/TOP/cpu/IF_pc\[31:0\]} \
+{/top_tb/TOP/cpu/IF_inst\[31:0\]} \
+{/top_tb/TOP/cpu/IF_bhr_out\[3:0\]} \
+{/top_tb/TOP/cpu/IF_gbc_predict_taken} \
+{/BLANK} \
+{/top_tb/TOP/cpu/ID_flush} \
+{/top_tb/TOP/cpu/ID_pc\[31:0\]} \
+{/top_tb/TOP/cpu/ID_inst\[31:0\]} \
+{/top_tb/TOP/cpu/ID_gbc_predict_taken} \
+{/BLANK} \
+{/top_tb/TOP/cpu/EX_pc\[31:0\]} \
+{/top_tb/TOP/cpu/controller/EX_is_branch} \
+{/top_tb/TOP/cpu/EX_actual_taken} \
+{/top_tb/TOP/cpu/EX_bhr\[3:0\]} \
+{/top_tb/TOP/cpu/EX_gbc_predict_taken} \
+{/top_tb/TOP/cpu/EX_imm_ext\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+{/top_tb/TOP/cpu/bhr_pht_unit/EX_bhr\[3:0\]} \
+{/top_tb/TOP/cpu/bhr_pht_unit/EX_op\[6:0\]} \
+{/top_tb/TOP/cpu/bhr_pht_unit/IF_bhr_out\[3:0\]} \
+{/top_tb/TOP/cpu/bhr_pht_unit/IF_gbc_predict_taken} \
+{/top_tb/TOP/cpu/bhr_pht_unit/bhr_reg\[3:0\]} \
+{/top_tb/TOP/cpu/bhr_pht_unit/current_entry\[1:0\]} \
+{/top_tb/TOP/cpu/bhr_pht_unit/pht_reg\[0:15\]} \
+{/BLANK} \
+{/top_tb/TOP/cpu/controller/EX_mispredict} \
+}
+wvAddSignal -win $_nWave1 -group {"G3" \
+{/top_tb/TOP/cpu/EX_btb_b_hit} \
+{/top_tb/TOP/cpu/EX_btb_j_hit} \
+{/top_tb/TOP/cpu/IF_btb_b_hit} \
+{/top_tb/TOP/cpu/IF_btb_j_hit} \
+{/top_tb/TOP/cpu/IF_btb_target\[31:0\]} \
+{/top_tb/TOP/cpu/IF_jal_target\[31:0\]} \
+{/top_tb/TOP/cpu/controller/EX_is_jal} \
+}
+wvAddSignal -win $_nWave1 -group {"G4" \
+}
+wvSelectSignal -win $_nWave1 {( "G3" 7 )} 
+wvSetPosition -win $_nWave1 {("G3" 7)}
+wvSetPosition -win $_nWave1 {("G3" 7)}
+wvSetPosition -win $_nWave1 {("G3" 7)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/top_tb/TOP/clk} \
+{/top_tb/TOP/im_addr\[13:0\]} \
+{/top_tb/TOP/im_dout\[31:0\]} \
+{/BLANK} \
+{/top_tb/TOP/cpu/stall} \
+{/top_tb/TOP/cpu/next_pc_sel\[1:0\]} \
+{/BLANK} \
+{/top_tb/TOP/cpu/IF_flush} \
+{/top_tb/TOP/cpu/IF_pc\[31:0\]} \
+{/top_tb/TOP/cpu/IF_inst\[31:0\]} \
+{/top_tb/TOP/cpu/IF_bhr_out\[3:0\]} \
+{/top_tb/TOP/cpu/IF_gbc_predict_taken} \
+{/BLANK} \
+{/top_tb/TOP/cpu/ID_flush} \
+{/top_tb/TOP/cpu/ID_pc\[31:0\]} \
+{/top_tb/TOP/cpu/ID_inst\[31:0\]} \
+{/top_tb/TOP/cpu/ID_gbc_predict_taken} \
+{/BLANK} \
+{/top_tb/TOP/cpu/EX_pc\[31:0\]} \
+{/top_tb/TOP/cpu/controller/EX_is_branch} \
+{/top_tb/TOP/cpu/EX_actual_taken} \
+{/top_tb/TOP/cpu/EX_bhr\[3:0\]} \
+{/top_tb/TOP/cpu/EX_gbc_predict_taken} \
+{/top_tb/TOP/cpu/EX_imm_ext\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+{/top_tb/TOP/cpu/bhr_pht_unit/EX_bhr\[3:0\]} \
+{/top_tb/TOP/cpu/bhr_pht_unit/EX_op\[6:0\]} \
+{/top_tb/TOP/cpu/bhr_pht_unit/IF_bhr_out\[3:0\]} \
+{/top_tb/TOP/cpu/bhr_pht_unit/IF_gbc_predict_taken} \
+{/top_tb/TOP/cpu/bhr_pht_unit/bhr_reg\[3:0\]} \
+{/top_tb/TOP/cpu/bhr_pht_unit/current_entry\[1:0\]} \
+{/top_tb/TOP/cpu/bhr_pht_unit/pht_reg\[0:15\]} \
+{/BLANK} \
+{/top_tb/TOP/cpu/controller/EX_mispredict} \
+}
+wvAddSignal -win $_nWave1 -group {"G3" \
+{/top_tb/TOP/cpu/EX_btb_b_hit} \
+{/top_tb/TOP/cpu/EX_btb_j_hit} \
+{/top_tb/TOP/cpu/IF_btb_b_hit} \
+{/top_tb/TOP/cpu/IF_btb_j_hit} \
+{/top_tb/TOP/cpu/IF_btb_target\[31:0\]} \
+{/top_tb/TOP/cpu/IF_jal_target\[31:0\]} \
+{/top_tb/TOP/cpu/controller/EX_is_jal} \
+}
+wvAddSignal -win $_nWave1 -group {"G4" \
+}
+wvSelectSignal -win $_nWave1 {( "G3" 7 )} 
+wvSetPosition -win $_nWave1 {("G3" 7)}
+wvGetSignalClose -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G3" 2 )} 
+wvSelectSignal -win $_nWave1 {( "G3" 2 )} 
+wvSelectSignal -win $_nWave1 {( "G3" 4 )} 
+wvSelectSignal -win $_nWave1 {( "G3" 5 )} 
+wvCut -win $_nWave1
+wvSetPosition -win $_nWave1 {("G4" 0)}
+wvSetPosition -win $_nWave1 {("G3" 6)}
+wvSelectSignal -win $_nWave1 {( "G3" 5 )} 
+wvCut -win $_nWave1
+wvSetPosition -win $_nWave1 {("G4" 0)}
+wvSetPosition -win $_nWave1 {("G3" 5)}
+wvSelectSignal -win $_nWave1 {( "G3" 1 )} 
+wvSelectSignal -win $_nWave1 {( "G3" 1 2 3 )} 
+wvCut -win $_nWave1
+wvSetPosition -win $_nWave1 {("G3" 2)}
+wvSelectSignal -win $_nWave1 {( "G3" 1 )} 
+wvSelectSignal -win $_nWave1 {( "G3" 2 )} 
+wvSelectSignal -win $_nWave1 {( "G3" 1 )} 
+wvSelectSignal -win $_nWave1 {( "G3" 2 )} 
+wvSelectSignal -win $_nWave1 {( "G3" 1 )} 
+wvSelectSignal -win $_nWave1 {( "G3" 2 )} 
+wvSetCursor -win $_nWave1 81325.811684 -snap {("G3" 2)}
+wvSetCursor -win $_nWave1 85688.995879 -snap {("G3" 1)}
+wvSetCursor -win $_nWave1 88174.353964 -snap {("G3" 2)}
+wvSetCursor -win $_nWave1 90328.330971 -snap {("G3" 1)}

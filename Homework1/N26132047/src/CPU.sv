@@ -8,7 +8,7 @@
 `include "MUL.sv"
 `include "Mux2to1.sv"
 `include "Mux3to1.sv"
-`include "Mux8to1.sv"
+`include "Mux4to1.sv"
 `include "Program_Counter_reg.sv"
 `include "Register_File.sv"
 `include "ALU.sv"
@@ -34,7 +34,6 @@ module CPU (
     input  logic [31:0] dm_dout
 );
     
-
     logic [31:0] next_pc, IF_pc_plus_4;
     logic [31:0] IF_pc, IF_inst;
     logic [31:0] jb_target;
@@ -63,7 +62,7 @@ module CPU (
     logic [31:0] CSR_dout;
 
 
-    logic [2:0] next_pc_sel;
+    logic [1:0] next_pc_sel;
     logic       stall;
     logic       IF_flush, ID_flush;
     logic [1:0] ID_rs1_data_sel, ID_rs2_data_sel;
@@ -88,16 +87,19 @@ module CPU (
 
 
     logic [31:0] ID_jal_target;
-
+    logic [31:0] IF_jal_target;
     
-    logic        IF_btb_hit;
-    logic [31:0] IF_btb_target_pc;
+    logic        IF_btb_b_hit;
+    logic        IF_btb_j_hit;
+    logic [31:0] IF_btb_target;
     logic        IF_gbc_predict_taken;
     logic [ 3:0] IF_bhr_out;
-    logic        ID_btb_hit;
+    logic        ID_btb_b_hit;
+    logic        ID_btb_j_hit;
     logic        ID_gbc_predict_taken;
     logic [ 3:0] ID_bhr;
-    logic        EX_btb_hit;
+    logic        EX_btb_b_hit;
+    logic        EX_btb_j_hit;
     logic        EX_gbc_predict_taken;
     logic [ 3:0] EX_bhr;
     logic        EX_actual_taken;
@@ -124,8 +126,10 @@ module CPU (
 
         .IF_gbc_predict_taken (IF_gbc_predict_taken),
         .EX_gbc_predict_taken (EX_gbc_predict_taken),
-        .IF_btb_hit           (IF_btb_hit),
-        .EX_btb_hit           (EX_btb_hit),
+        .IF_btb_b_hit           (IF_btb_b_hit),
+        .IF_btb_j_hit           (IF_btb_j_hit), 
+        .EX_btb_b_hit           (EX_btb_b_hit),
+        .EX_btb_j_hit           (EX_btb_j_hit),
 
         .EX_actual_taken      (EX_actual_taken),
 
@@ -161,12 +165,21 @@ module CPU (
 
     assign ID_jal_target = ID_pc + imm_ext_out;
 
-    Mux8to1 next_pc_m (
+    /*Mux8to1 next_pc_m (
         .in_0     (EX_pc_plus_4),
         .in_1     (jb_target),
-        .in_2     (IF_btb_target_pc),
+        .in_2     (IF_btb_target),
         .in_3     (ID_jal_target),
         .in_4     (IF_pc_plus_4),
+        .sel      (next_pc_sel),
+        .mux_out  (next_pc)
+    );*/
+
+    Mux4to1 next_pc_m (
+        .in_0     (EX_pc_plus_4),
+        .in_1     (jb_target),
+        .in_2     (IF_btb_target),
+        .in_3     (IF_pc_plus_4),
         .sel      (next_pc_sel),
         .mux_out  (next_pc)
     );
@@ -177,10 +190,11 @@ module CPU (
         .IF_pc         (IF_pc),
         .EX_op         (EX_op),
         .EX_pc         (EX_pc),
-        .EX_target_pc_in (jb_target),
+        .EX_target     (jb_target),
 
-        .IF_btb_hit    (IF_btb_hit),
-        .IF_btb_target_pc(IF_btb_target_pc)
+        .IF_btb_b_hit   (IF_btb_b_hit),
+        .IF_btb_j_hit   (IF_btb_j_hit),
+        .IF_btb_target (IF_btb_target)
     );
 
     BHR_PHT bhr_pht_unit (
@@ -210,10 +224,12 @@ module CPU (
         .IF_pc   (IF_pc),
         .IF_inst (IF_inst),
 
-        .IF_btb_hit           (IF_btb_hit),
+        .IF_btb_b_hit         (IF_btb_b_hit),
+        .IF_btb_j_hit         (IF_btb_j_hit),
         .IF_gbc_predict_taken (IF_gbc_predict_taken),
         .IF_bhr               (IF_bhr_out),
-        .ID_btb_hit           (ID_btb_hit),
+        .ID_btb_b_hit           (ID_btb_b_hit),
+        .ID_btb_j_hit         (ID_btb_j_hit),
         .ID_gbc_predict_taken (ID_gbc_predict_taken),
         .ID_bhr               (ID_bhr),
 
@@ -296,10 +312,12 @@ module CPU (
         .ID_rs2_data (ID_rs2_data),
         .ID_imm_ext  (imm_ext_out),
 
-        .ID_btb_hit           (ID_btb_hit),
+        .ID_btb_b_hit           (ID_btb_b_hit),
+        .ID_btb_j_hit         (ID_btb_j_hit),
         .ID_gbc_predict_taken (ID_gbc_predict_taken),
         .ID_bhr               (ID_bhr),
-        .EX_btb_hit           (EX_btb_hit),
+        .EX_btb_b_hit           (EX_btb_b_hit),
+        .EX_btb_j_hit         (EX_btb_j_hit),
         .EX_gbc_predict_taken (EX_gbc_predict_taken),
         .EX_bhr               (EX_bhr),
         

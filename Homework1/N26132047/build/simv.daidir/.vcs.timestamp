@@ -1,21 +1,65 @@
-10       
-0 top_syn.v
-0 /usr/cad/synopsys/vcs/cur/etc/systemverilog/top_syn.v
+55       
+0 top.sv
+0 /usr/cad/synopsys/vcs/cur/etc/systemverilog/top.sv
+0 CPU.sv
+0 /usr/cad/synopsys/vcs/cur/etc/systemverilog/CPU.sv
+0 instruction_pkg.sv
+0 /usr/cad/synopsys/vcs/cur/etc/systemverilog/instruction_pkg.sv
+0 Controller.sv
+0 /usr/cad/synopsys/vcs/cur/etc/systemverilog/Controller.sv
+0 CSR_Unit.sv
+0 /usr/cad/synopsys/vcs/cur/etc/systemverilog/CSR_Unit.sv
+0 Decoder.sv
+0 /usr/cad/synopsys/vcs/cur/etc/systemverilog/Decoder.sv
+0 Imm_Extension.sv
+0 /usr/cad/synopsys/vcs/cur/etc/systemverilog/Imm_Extension.sv
+0 JB_target_gen.sv
+0 /usr/cad/synopsys/vcs/cur/etc/systemverilog/JB_target_gen.sv
+0 LD_Filter.sv
+0 /usr/cad/synopsys/vcs/cur/etc/systemverilog/LD_Filter.sv
+0 MUL.sv
+0 /usr/cad/synopsys/vcs/cur/etc/systemverilog/MUL.sv
+0 Mux2to1.sv
+0 /usr/cad/synopsys/vcs/cur/etc/systemverilog/Mux2to1.sv
+0 Mux3to1.sv
+0 /usr/cad/synopsys/vcs/cur/etc/systemverilog/Mux3to1.sv
+0 Mux4to1.sv
+0 /usr/cad/synopsys/vcs/cur/etc/systemverilog/Mux4to1.sv
+0 Program_Counter_reg.sv
+0 /usr/cad/synopsys/vcs/cur/etc/systemverilog/Program_Counter_reg.sv
+0 Register_File.sv
+0 /usr/cad/synopsys/vcs/cur/etc/systemverilog/Register_File.sv
+0 ALU.sv
+0 /usr/cad/synopsys/vcs/cur/etc/systemverilog/ALU.sv
+0 FP_calculator.sv
+0 /usr/cad/synopsys/vcs/cur/etc/systemverilog/FP_calculator.sv
+0 IF_ID_reg.sv
+0 /usr/cad/synopsys/vcs/cur/etc/systemverilog/IF_ID_reg.sv
+0 ID_EX_reg.sv
+0 /usr/cad/synopsys/vcs/cur/etc/systemverilog/ID_EX_reg.sv
+0 EX_MEM_reg.sv
+0 /usr/cad/synopsys/vcs/cur/etc/systemverilog/EX_MEM_reg.sv
+0 MEM_WB_reg.sv
+0 /usr/cad/synopsys/vcs/cur/etc/systemverilog/MEM_WB_reg.sv
+0 BTB.sv
+0 /usr/cad/synopsys/vcs/cur/etc/systemverilog/BTB.sv
+0 BHR_PHT.sv
+0 /usr/cad/synopsys/vcs/cur/etc/systemverilog/BHR_PHT.sv
+0 SRAM_wrapper.sv
+0 /usr/cad/synopsys/vcs/cur/etc/systemverilog/SRAM_wrapper.sv
 0 /SRAM/TS1N16ADFPCLLLVTA512X45M4SWSHOD.sv
 0 /SRAM/TS1N16ADFPCLLLVTA512X45M4SWSHOD.sv.e
 0 ./SRAM/TS1N16ADFPCLLLVTA512X45M4SWSHOD.sv
 0 /usr/cad/synopsys/vcs/cur/etc/systemverilog/./SRAM/TS1N16ADFPCLLLVTA512X45M4SWSHOD.sv
-0 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./syn/./SRAM/TS1N16ADFPCLLLVTA512X45M4SWSHOD.sv
 0 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./src/./SRAM/TS1N16ADFPCLLLVTA512X45M4SWSHOD.sv
+0 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./src/AXI/./SRAM/TS1N16ADFPCLLLVTA512X45M4SWSHOD.sv
 0 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./include/./SRAM/TS1N16ADFPCLLLVTA512X45M4SWSHOD.sv
-0 ../syn/top_syn.sdf_c
-40
-+define+SYN+prog0
-+incdir+/home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./syn+/home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./src+/home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./include+/home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./sim
+35
++define+prog1
++incdir+/home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./src+/home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./src/AXI+/home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./include+/home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./sim
 +itf+/usr/cad/synopsys/vcs/cur/linux64/lib/vcsdp_lite.tab
-+neg_tchk
-+prog_path=/home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./sim/prog0
-+rdcycle=1
++notimingcheck
++prog_path=/home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./sim/prog1
 +vcsd1
 +vpi
 -Mamsrun=
@@ -38,17 +82,13 @@
 -P
 -Xvcs_run_simv=1
 -debug_access+all
--diag=sdf:verbose
 -fsdb
 -full64
 -gen_obj
--negdelay
 -picarchive
 -sverilog
--v
 /usr/cad/synopsys/vcs/cur/linux64/bin/vcs1
 /usr/cad/synopsys/verdi/cur/share/PLI/VCS/LINUX64/verdi.tab
-/usr/cad/CBDK/Executable_Package/Collaterals/IP/stdcell/N16ADFP_StdCell/VERILOG/N16ADFP_StdCell.v
 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./sim/top_tb.sv
 76
 mraarch=linux_64
@@ -129,12 +169,33 @@ CDPL_HOME=/usr/cad/synopsys/hspice/2020.03-sp2-2/hspice/cdpl
 CALIBRE_HOME=/usr/cad/mentor/calibre/aoi_cal_2019.2_26.18/
 0
 0
-7
-1759404294 ../syn/top_syn.sdf
+28
 1758716491 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./sim/./SRAM/TS1N16ADFPCLLLVTA512X45M4SWSHOD.sv
-1759404293 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./syn/top_syn.v
+1758716491 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./src/SRAM_wrapper.sv
+1759407475 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./src/BHR_PHT.sv
+1759409909 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./src/BTB.sv
+1758777486 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./src/MEM_WB_reg.sv
+1759237628 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./src/EX_MEM_reg.sv
+1759407956 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./src/ID_EX_reg.sv
+1759412369 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./src/IF_ID_reg.sv
+1758719219 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./src/FP_calculator.sv
+1758867415 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./src/ALU.sv
+1758773050 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./src/Register_File.sv
+1758770848 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./src/Program_Counter_reg.sv
+1759409934 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./src/Mux4to1.sv
+1758777556 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./src/Mux3to1.sv
+1758773183 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./src/Mux2to1.sv
+1758777536 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./src/MUL.sv
+1758866942 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./src/LD_Filter.sv
+1759388417 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./src/JB_target_gen.sv
+1759407443 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./src/Imm_Extension.sv
+1758771943 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./src/Decoder.sv
+1758776086 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./src/CSR_Unit.sv
+1759409909 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./src/Controller.sv
+1758772547 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./src/instruction_pkg.sv
+1759409937 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./src/CPU.sv
+1758719616 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./src/top.sv
 1759403605 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework1/N26132047/./sim/top_tb.sv
-1646876085 /usr/cad/CBDK/Executable_Package/Collaterals/IP/stdcell/N16ADFP_StdCell/VERILOG/N16ADFP_StdCell.v
 1693225683 /usr/cad/synopsys/verdi/cur/share/PLI/VCS/LINUX64/verdi.tab
 1701102734 /usr/cad/synopsys/vcs/cur/linux64/lib/vcsdp_lite.tab
 4
@@ -142,5 +203,5 @@ CALIBRE_HOME=/usr/cad/mentor/calibre/aoi_cal_2019.2_26.18/
 1701103518 /usr/cad/synopsys/vcs/cur/linux64/lib/liberrorinf.so
 1701103440 /usr/cad/synopsys/vcs/cur/linux64/lib/libsnpsmalloc.so
 1701103511 /usr/cad/synopsys/vcs/cur/linux64/lib/libvfs.so
-1759405451 simv.daidir
+1759412384 simv.daidir
 -1 partitionlib

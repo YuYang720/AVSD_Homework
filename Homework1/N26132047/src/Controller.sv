@@ -28,13 +28,15 @@ module Controller(
     // Branch  signal
     input logic IF_gbc_predict_taken,
     input logic EX_gbc_predict_taken,
-    input logic IF_btb_hit,                   
-    input logic EX_btb_hit,  
+    input logic IF_btb_b_hit,  
+    input logic IF_btb_j_hit,                 
+    input logic EX_btb_b_hit,
+    input logic EX_btb_j_hit,  
 
     output logic EX_actual_taken,        
 
     // Control outputs
-    output logic [ 2:0] next_pc_sel,
+    output logic [ 1:0] next_pc_sel,
     output logic        stall,
     output logic        IF_flush,
     output logic        ID_flush,
@@ -86,30 +88,32 @@ module Controller(
     // branch control
     logic EX_mispredict;
     logic EX_is_branch;
+    logic EX_is_jal;
+    assign EX_is_jal = (EX_op == `JAL);
     assign EX_is_branch = (EX_op == `B_type);
     always_comb begin
         // ID_predict_taken = bp_predict_taken && (ID_op == `B_type) && !stall; // 加入 !stall 判斷當前是否為 load branch
         
         EX_actual_taken = (EX_op == `B_type) && EX_alu_out_0;
-        EX_mispredict = (EX_op == `B_type) && ((EX_gbc_predict_taken && EX_btb_hit) != EX_actual_taken);
+        EX_mispredict = (EX_op == `B_type) && ((EX_gbc_predict_taken && EX_btb_b_hit) != EX_actual_taken);
     end
 
     // flush control
-    assign IF_flush = EX_mispredict || ID_op == `JAL || EX_op == `JALR;
-    assign ID_flush = EX_mispredict || EX_op == `JALR;
+    assign IF_flush = EX_mispredict || (EX_op == `JAL && !EX_btb_j_hit) || EX_op == `JALR;
+    assign ID_flush = EX_mispredict || EX_op == `JALR || (EX_op == `JAL && !EX_btb_j_hit);
 
     // next pc control
     always_comb begin
         if (EX_mispredict) begin
-            next_pc_sel = (EX_actual_taken) ? 3'd1 : 3'd0; 
-        end else if (EX_op == `JALR) begin 
-            next_pc_sel = 3'd1;
-        end else if (ID_op == `JAL) begin 
-            next_pc_sel = 3'd3;
-        end else if (IF_btb_hit && IF_gbc_predict_taken) begin
-            next_pc_sel = 3'd2;
+            next_pc_sel = (EX_actual_taken) ? 2'd1 : 2'd0; 
+        end else if (EX_op == `JALR || (EX_op == `JAL && !EX_btb_j_hit)) begin 
+            next_pc_sel = 2'd1;
+        end else if (IF_btb_j_hit) begin
+            next_pc_sel = 2'd2;
+        end else if (IF_btb_b_hit && IF_gbc_predict_taken) begin
+            next_pc_sel = 2'd2;
         end else begin
-            next_pc_sel = 3'd4;
+            next_pc_sel = 2'd3;
         end
     end
 
