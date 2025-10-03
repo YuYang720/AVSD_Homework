@@ -10,7 +10,7 @@ Report : power
         -analysis_effort low
 Design : top
 Version: P-2019.03-SP1-1
-Date   : Thu Oct  2 20:56:04 2025
+Date   : Fri Oct  3 12:57:33 2025
 ****************************************
 
 
@@ -62,6 +62,8 @@ CSR_Unit_DW01_inc_0    ZeroWireload      N16ADFP_StdCellss0p72vm40c
 CSR_Unit_DW01_inc_1    ZeroWireload      N16ADFP_StdCellss0p72vm40c
 FP_calculator_DW01_inc_1
                        ZeroWireload      N16ADFP_StdCellss0p72vm40c
+FP_calculator_DW01_add_J2_0
+                       ZeroWireload      N16ADFP_StdCellss0p72vm40c
 CSR_Unit_DW01_sub_2    ZeroWireload      N16ADFP_StdCellss0p72vm40c
 CSR_Unit_DW01_sub_J8_0 ZeroWireload      N16ADFP_StdCellss0p72vm40c
 MUL_DW_mult_tc_1       ZeroWireload      N16ADFP_StdCellss0p72vm40c
@@ -79,15 +81,13 @@ FP_calculator_DW01_inc_J27_0
                        ZeroWireload      N16ADFP_StdCellss0p72vm40c
 FP_calculator_DW01_sub_J30_0
                        ZeroWireload      N16ADFP_StdCellss0p72vm40c
-FP_calculator_DW01_add_J32_0
+FP_calculator_DW01_sub_J58_0
                        ZeroWireload      N16ADFP_StdCellss0p72vm40c
-FP_calculator_DW01_inc_J39_0
+FP_calculator_DW_cmp_J60_0
                        ZeroWireload      N16ADFP_StdCellss0p72vm40c
-FP_calculator_DW01_add_J45_0
+FP_calculator_DW01_inc_J61_0
                        ZeroWireload      N16ADFP_StdCellss0p72vm40c
-FP_calculator_DW_cmp_J58_0
-                       ZeroWireload      N16ADFP_StdCellss0p72vm40c
-FP_calculator_DW01_sub_J62_0
+FP_calculator_DW01_add_J62_0
                        ZeroWireload      N16ADFP_StdCellss0p72vm40c
 
 
@@ -100,24 +100,24 @@ Power-specific unit information :
     Leakage Power Units = 1nW
 
 
-  Cell Internal Power  =   9.4913 mW   (98%)
-  Net Switching Power  = 240.2658 uW    (2%)
+  Cell Internal Power  =  10.2644 mW   (98%)
+  Net Switching Power  = 257.3664 uW    (2%)
                          ---------
-Total Dynamic Power    =   9.7315 mW  (100%)
+Total Dynamic Power    =  10.5217 mW  (100%)
 
-Cell Leakage Power     =   6.5956 uW
+Cell Leakage Power     =   6.6989 uW
 
 
                  Internal         Switching           Leakage            Total
 Power Group      Power            Power               Power              Power   (   %    )  Attrs
 --------------------------------------------------------------------------------------------------
 io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
-memory             2.9152        1.2166e-03          772.3020            2.9172  (  29.96%)
+memory             3.1484        1.2685e-03          772.3020            3.1505  (  29.92%)
 black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
 clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
-register           6.4743        9.9885e-03        1.7996e+03            6.4861  (  66.61%)
+register           7.0072        1.0534e-02        1.8513e+03            7.0195  (  66.67%)
 sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
-combinational      0.1017            0.2291        4.0236e+03            0.3348  (   3.44%)
+combinational      0.1089            0.2456        4.0752e+03            0.3585  (   3.41%)
 --------------------------------------------------------------------------------------------------
-Total              9.4912 mW         0.2403 mW     6.5955e+03 nW         9.7381 mW
+Total             10.2645 mW         0.2574 mW     6.6989e+03 nW        10.5285 mW
 1

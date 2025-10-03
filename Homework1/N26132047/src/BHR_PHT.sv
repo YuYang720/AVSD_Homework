@@ -3,6 +3,7 @@ module BHR_PHT (
     input logic clk,
     input logic rst,
 
+    //input logic [3:0] EX_pc_for_hash,
     input logic [6:0] EX_op,
     input logic       EX_actual_taken, // EX stage 得到的 branch 實際結果
     input logic [3:0] EX_bhr, // 當初在 IF stage 做預測時的 BHR 值
@@ -10,16 +11,15 @@ module BHR_PHT (
     output logic       IF_gbc_predict_taken,
     output logic [3:0] IF_bhr_out
 );
-    // 1. Branch History Register
+
     logic [3:0] bhr_reg;
-    assign IF_bhr_out = bhr_reg;
-
-    // 2. Pattern History Table  共有 2^4 個 entry，每個 entry 都是 2-bit counter
+    
     logic [1:0] pht_reg [0:15];
-
     logic [1:0] current_entry;
-    assign current_entry = pht_reg[EX_bhr];
+    
 
+    assign current_entry = pht_reg[EX_bhr];
+    assign IF_bhr_out = bhr_reg;
     assign IF_gbc_predict_taken = pht_reg[bhr_reg][1];
 
     always_ff @(posedge clk or posedge rst) begin

@@ -7,7 +7,7 @@ Report : timing
         -sort_by group
 Design : top
 Version: P-2019.03-SP1-1
-Date   : Thu Oct  2 20:55:58 2025
+Date   : Fri Oct  3 12:57:28 2025
 ****************************************
 
  # A fanout number of 1000 was used for high fanout net computations.
@@ -49,15 +49,15 @@ Wire Load Model Mode: segmented
   cpu/Reg_EX_MEM/MEM_op_reg_6_/Q (DFCNQD2BWP16P90LVT)   0.0578     0.2578 r
   cpu/Reg_EX_MEM/MEM_op[6] (EX_MEM_reg)                 0.0000     0.2578 r
   cpu/controller/MEM_op[6] (Controller)                 0.0000     0.2578 r
-  cpu/controller/U105/ZN (INVD1BWP16P90LVT)             0.0072     0.2650 f
-  cpu/controller/U7/ZN (IND2D2BWP16P90LVT)              0.0059     0.2709 r
-  cpu/controller/U6/Z (DEL025D1BWP20P90)                0.0353     0.3062 r
-  cpu/controller/U210/Z (AN2D1BWP16P90LVT)              0.0141     0.3203 r
-  cpu/controller/MEM_ceb (Controller)                   0.0000     0.3203 r
-  cpu/dm_ceb (CPU)                                      0.0000     0.3203 r
-  DM1/CEB (SRAM_wrapper_0)                              0.0000     0.3203 r
-  DM1/i_SRAM/CEB (TS1N16ADFPCLLLVTA512X45M4SWSHOD)      0.0000     0.3203 r
-  data arrival time                                                0.3203
+  cpu/controller/U123/ZN (INVD1BWP16P90LVT)             0.0072     0.2650 f
+  cpu/controller/U4/ZN (IND2D2BWP16P90LVT)              0.0060     0.2709 r
+  cpu/controller/U3/Z (DEL025D1BWP20P90)                0.0354     0.3063 r
+  cpu/controller/U226/Z (AN2D1BWP16P90LVT)              0.0141     0.3204 r
+  cpu/controller/MEM_ceb (Controller)                   0.0000     0.3204 r
+  cpu/dm_ceb (CPU)                                      0.0000     0.3204 r
+  DM1/CEB (SRAM_wrapper_0)                              0.0000     0.3204 r
+  DM1/i_SRAM/CEB (TS1N16ADFPCLLLVTA512X45M4SWSHOD)      0.0000     0.3204 r
+  data arrival time                                                0.3204
 
   clock clk (rise edge)                                 0.0000     0.0000
   clock network delay (ideal)                           0.2000     0.2000
@@ -67,9 +67,9 @@ Wire Load Model Mode: segmented
   data required time                                               0.3199
   --------------------------------------------------------------------------
   data required time                                               0.3199
-  data arrival time                                               -0.3203
+  data arrival time                                               -0.3204
   --------------------------------------------------------------------------
-  slack (MET)                                                      0.0004
+  slack (MET)                                                      0.0006
 
 
 1

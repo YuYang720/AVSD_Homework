@@ -13,17 +13,15 @@ module ID_EX_reg (
     input logic [31:0] ID_rs1_data,
     input logic [31:0] ID_rs2_data,
     input logic [31:0] ID_imm_ext,
+    input logic        ID_btb_b_hit,
+    input logic        ID_btb_j_hit,
+    input logic        ID_gbc_predict_taken,
+    input logic [ 3:0] ID_bhr,
 
-    input logic       ID_btb_b_hit,
-    input logic       ID_btb_j_hit,
-    input logic       ID_gbc_predict_taken,
-    input logic [3:0] ID_bhr,
-
-    output logic       EX_btb_b_hit,
-    output logic       EX_btb_j_hit,
-    output logic       EX_gbc_predict_taken,
-    output logic [3:0] EX_bhr,
-    
+    output logic        EX_btb_b_hit,
+    output logic        EX_btb_j_hit,
+    output logic        EX_gbc_predict_taken,
+    output logic [ 3:0] EX_bhr,
     output logic [31:0] EX_pc,
     output logic [ 6:0] EX_op,
     output logic [ 2:0] EX_func3,
@@ -75,20 +73,20 @@ module ID_EX_reg (
 
     always_ff @(posedge clk or posedge rst) begin
         if (rst) begin
-            EX_btb_b_hit <= 1'b0;
-            EX_btb_j_hit <= 1'b0;
+            EX_btb_b_hit         <= 1'b0;
+            EX_btb_j_hit         <= 1'b0;
             EX_gbc_predict_taken <= 1'b0;
-            EX_bhr <= 4'b0;
+            EX_bhr               <= 4'b0;
         end else if (stall || flush) begin
-            EX_btb_b_hit <= 1'b0;
-            EX_btb_j_hit <= 1'b0;
+            EX_btb_b_hit         <= 1'b0;
+            EX_btb_j_hit         <= 1'b0;
             EX_gbc_predict_taken <= 1'b0;
-            EX_bhr <= 4'b0;
+            EX_bhr               <= 4'b0;
         end else begin
-            EX_btb_b_hit <= ID_btb_b_hit;
-            EX_btb_j_hit <= ID_btb_j_hit;
+            EX_btb_b_hit         <= ID_btb_b_hit;
+            EX_btb_j_hit         <= ID_btb_j_hit;
             EX_gbc_predict_taken <= ID_gbc_predict_taken;
-            EX_bhr <= ID_bhr;
+            EX_bhr               <= ID_bhr;
         end      
     end
 

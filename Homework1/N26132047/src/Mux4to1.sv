@@ -14,6 +14,7 @@ module Mux4to1 (
             2'd1: mux_out = in_1; 
             2'd2: mux_out = in_2; 
             2'd3: mux_out = in_3; 
+            // 3'd4: mux_out = in_4;
             default: mux_out = in_3;
         endcase
     end

@@ -87,7 +87,6 @@ module CPU (
 
 
     logic [31:0] ID_jal_target;
-    logic [31:0] IF_jal_target;
     
     logic        IF_btb_b_hit;
     logic        IF_btb_j_hit;
@@ -127,10 +126,10 @@ module CPU (
         .IF_gbc_predict_taken (IF_gbc_predict_taken),
         .EX_gbc_predict_taken (EX_gbc_predict_taken),
         .IF_btb_b_hit           (IF_btb_b_hit),
-        .IF_btb_j_hit           (IF_btb_j_hit), 
+        .IF_btb_j_hit           (IF_btb_j_hit),
+        .ID_btb_j_hit           (ID_btb_j_hit), 
         .EX_btb_b_hit           (EX_btb_b_hit),
         .EX_btb_j_hit           (EX_btb_j_hit),
-
         .EX_actual_taken      (EX_actual_taken),
 
       	.next_pc_sel          (next_pc_sel),
@@ -164,8 +163,8 @@ module CPU (
     assign dm_din  = MEM_rs2_data;
 
     assign ID_jal_target = ID_pc + imm_ext_out;
-
-    /*Mux8to1 next_pc_m (
+    /*
+    Mux5to1 next_pc_m (
         .in_0     (EX_pc_plus_4),
         .in_1     (jb_target),
         .in_2     (IF_btb_target),
@@ -174,7 +173,7 @@ module CPU (
         .sel      (next_pc_sel),
         .mux_out  (next_pc)
     );*/
-
+    
     Mux4to1 next_pc_m (
         .in_0     (EX_pc_plus_4),
         .in_1     (jb_target),
@@ -192,14 +191,15 @@ module CPU (
         .EX_pc         (EX_pc),
         .EX_target     (jb_target),
 
-        .IF_btb_b_hit   (IF_btb_b_hit),
-        .IF_btb_j_hit   (IF_btb_j_hit),
+        .IF_btb_b_hit  (IF_btb_b_hit),
+        .IF_btb_j_hit  (IF_btb_j_hit),
         .IF_btb_target (IF_btb_target)
     );
 
     BHR_PHT bhr_pht_unit (
         .clk           (clk),
         .rst           (rst),
+        //.EX_pc_for_hash (EX_pc[5:2]),
         .EX_op         (EX_op),
         .EX_actual_taken  (EX_actual_taken),
         .EX_bhr        (EX_bhr),
@@ -217,24 +217,23 @@ module CPU (
     );
 
     IF_ID_reg Reg_IF_ID (
-        .clk     (clk),
-        .rst     (rst),
-        .stall   (stall),
-        .flush   (IF_flush),
-        .IF_pc   (IF_pc),
-        .IF_inst (IF_inst),
-
+        .clk                  (clk),
+        .rst                  (rst),
+        .stall                (stall),
+        .flush                (IF_flush),
+        .IF_pc                (IF_pc),
+        .IF_inst              (IF_inst),
         .IF_btb_b_hit         (IF_btb_b_hit),
         .IF_btb_j_hit         (IF_btb_j_hit),
         .IF_gbc_predict_taken (IF_gbc_predict_taken),
         .IF_bhr               (IF_bhr_out),
-        .ID_btb_b_hit           (ID_btb_b_hit),
+
+        .ID_btb_b_hit         (ID_btb_b_hit),
         .ID_btb_j_hit         (ID_btb_j_hit),
         .ID_gbc_predict_taken (ID_gbc_predict_taken),
         .ID_bhr               (ID_bhr),
-
-        .ID_pc   (ID_pc),
-        .ID_inst (ID_inst)
+        .ID_pc                (ID_pc),
+        .ID_inst              (ID_inst)
     );
 
     Decoder DEC (
@@ -296,41 +295,39 @@ module CPU (
     ); 
 
     ID_EX_reg Reg_ID_EX (
-        .clk         (clk),
-        .rst         (rst),
-        .stall       (stall),
+        .clk                  (clk),
+        .rst                  (rst),
+        .stall                (stall),
+        .flush                (ID_flush),
+        .ID_pc                (ID_pc),
+        .ID_op                (ID_op),
+      	.ID_func3             (ID_func3),
+      	.ID_func7             (ID_func7),
+      	.ID_rd                (ID_rd_index),
+      	.ID_rs1               (ID_rs1_index),
+      	.ID_rs2               (ID_rs2_index),
+        .ID_rs1_data          (ID_rs1_data),
+        .ID_rs2_data          (ID_rs2_data),
+        .ID_imm_ext           (imm_ext_out),
 
-        .flush       (ID_flush),
-        .ID_pc       (ID_pc),
-        .ID_op       (ID_op),
-      	.ID_func3    (ID_func3),
-      	.ID_func7    (ID_func7),
-      	.ID_rd       (ID_rd_index),
-      	.ID_rs1      (ID_rs1_index),
-      	.ID_rs2      (ID_rs2_index),
-        .ID_rs1_data (ID_rs1_data),
-        .ID_rs2_data (ID_rs2_data),
-        .ID_imm_ext  (imm_ext_out),
-
-        .ID_btb_b_hit           (ID_btb_b_hit),
+        .ID_btb_b_hit         (ID_btb_b_hit),
         .ID_btb_j_hit         (ID_btb_j_hit),
         .ID_gbc_predict_taken (ID_gbc_predict_taken),
         .ID_bhr               (ID_bhr),
-        .EX_btb_b_hit           (EX_btb_b_hit),
+        .EX_btb_b_hit         (EX_btb_b_hit),
         .EX_btb_j_hit         (EX_btb_j_hit),
         .EX_gbc_predict_taken (EX_gbc_predict_taken),
         .EX_bhr               (EX_bhr),
-        
-        .EX_pc       (EX_pc),
-        .EX_op       (EX_op),
-      	.EX_func3    (EX_func3),
-      	.EX_func7    (EX_func7),
-      	.EX_rd       (EX_rd),
-      	.EX_rs1      (EX_rs1),
-      	.EX_rs2      (EX_rs2),
-        .EX_rs1_data (EX_rs1_data),
-        .EX_rs2_data (EX_rs2_data),
-        .EX_imm_ext  (EX_imm_ext)
+        .EX_pc                (EX_pc),
+        .EX_op                (EX_op),
+      	.EX_func3             (EX_func3),
+      	.EX_func7             (EX_func7),
+      	.EX_rd                (EX_rd),
+      	.EX_rs1               (EX_rs1),
+      	.EX_rs2               (EX_rs2),
+        .EX_rs1_data          (EX_rs1_data),
+        .EX_rs2_data          (EX_rs2_data),
+        .EX_imm_ext           (EX_imm_ext)
     );
 
     Mux3to1  EX_reg_src1_m (
