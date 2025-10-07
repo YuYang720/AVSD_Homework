@@ -2,8 +2,6 @@
 module BHR_PHT (
     input logic clk,
     input logic rst,
-
-    //input logic [3:0] EX_pc_for_hash,
     input logic [6:0] EX_op,
     input logic       EX_actual_taken, // EX stage 得到的 branch 實際結果
     input logic [3:0] EX_bhr, // 當初在 IF stage 做預測時的 BHR 值
@@ -13,10 +11,8 @@ module BHR_PHT (
 );
 
     logic [3:0] bhr_reg;
-    
     logic [1:0] pht_reg [0:15];
     logic [1:0] current_entry;
-    
 
     assign current_entry = pht_reg[EX_bhr];
     assign IF_bhr_out = bhr_reg;
@@ -38,6 +34,5 @@ module BHR_PHT (
             end
         end
     end
-
 
 endmodule

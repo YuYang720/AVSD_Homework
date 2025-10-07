@@ -29,8 +29,7 @@ module Controller(
     input logic IF_gbc_predict_taken,
     input logic EX_gbc_predict_taken,
     input logic IF_btb_b_hit,  
-    input logic IF_btb_j_hit, 
-    input logic ID_btb_j_hit,                
+    input logic IF_btb_j_hit,              
     input logic EX_btb_b_hit,
     input logic EX_btb_j_hit,  
 
@@ -88,13 +87,11 @@ module Controller(
 
     // branch control
     logic EX_mispredict;
-    always_comb begin
-        EX_actual_taken = (EX_op == `B_type) && EX_alu_out_0;
-        EX_mispredict = (EX_op == `B_type) && ((EX_gbc_predict_taken && EX_btb_b_hit) != EX_actual_taken);
-    end
+    assign EX_actual_taken = (EX_op == `B_type) && EX_alu_out_0;
+    assign EX_mispredict   = (EX_op == `B_type) && ((EX_gbc_predict_taken && EX_btb_b_hit) != EX_actual_taken);
+    
 
     // flush control
-    // assign IF_flush = EX_mispredict || (EX_op == `JAL && !EX_btb_j_hit) || EX_op == `JALR;
     assign IF_flush = EX_mispredict || (EX_op == `JAL && !EX_btb_j_hit) || EX_op == `JALR;
     assign ID_flush = EX_mispredict || (EX_op == `JAL && !EX_btb_j_hit) || EX_op == `JALR;
 
@@ -112,9 +109,6 @@ module Controller(
             next_pc_sel = 2'd3;
         end
     end
-    //  else if (ID_op == `JAL && !ID_btb_j_hit) begin 
-    //      next_pc_sel = 3'd3;
-    //  end
 
     // memory operation control
     assign MEM_ceb = ~(MEM_op == `S_type || MEM_op == `I_load || MEM_op == `F_FSW || MEM_op == `F_FLW);
@@ -179,11 +173,4 @@ module Controller(
     assign WB_fwb_en = WB_inst_with_frd;
 
     assign WB_wb_data_sel = (WB_op == `I_load || WB_op == `F_FLW) ? 2'd1 : ((WB_op == `CSR) ? 2'd2 : 2'd0);
-
-
 endmodule
-         
-
-
-
-

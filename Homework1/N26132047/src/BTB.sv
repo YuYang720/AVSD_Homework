@@ -2,7 +2,6 @@
 module BTB (
     input  logic clk,
     input  logic rst,
-
     input  logic [31:0] IF_pc,
     input  logic [ 6:0] EX_op,
     input  logic [31:0] EX_pc,

@@ -84,9 +84,6 @@ module CPU (
     logic [4:0] WB_rd;
     logic [2:0] WB_func3;
     logic [1:0] WB_wb_data_sel;
-
-
-    logic [31:0] ID_jal_target;
     
     logic        IF_btb_b_hit;
     logic        IF_btb_j_hit;
@@ -125,11 +122,10 @@ module CPU (
 
         .IF_gbc_predict_taken (IF_gbc_predict_taken),
         .EX_gbc_predict_taken (EX_gbc_predict_taken),
-        .IF_btb_b_hit           (IF_btb_b_hit),
-        .IF_btb_j_hit           (IF_btb_j_hit),
-        .ID_btb_j_hit           (ID_btb_j_hit), 
-        .EX_btb_b_hit           (EX_btb_b_hit),
-        .EX_btb_j_hit           (EX_btb_j_hit),
+        .IF_btb_b_hit         (IF_btb_b_hit),
+        .IF_btb_j_hit         (IF_btb_j_hit),
+        .EX_btb_b_hit         (EX_btb_b_hit),
+        .EX_btb_j_hit         (EX_btb_j_hit),
         .EX_actual_taken      (EX_actual_taken),
 
       	.next_pc_sel          (next_pc_sel),
@@ -162,18 +158,6 @@ module CPU (
     assign dm_addr = MEM_cal_out[15:2];
     assign dm_din  = MEM_rs2_data;
 
-    assign ID_jal_target = ID_pc + imm_ext_out;
-    /*
-    Mux5to1 next_pc_m (
-        .in_0     (EX_pc_plus_4),
-        .in_1     (jb_target),
-        .in_2     (IF_btb_target),
-        .in_3     (ID_jal_target),
-        .in_4     (IF_pc_plus_4),
-        .sel      (next_pc_sel),
-        .mux_out  (next_pc)
-    );*/
-    
     Mux4to1 next_pc_m (
         .in_0     (EX_pc_plus_4),
         .in_1     (jb_target),
@@ -197,15 +181,14 @@ module CPU (
     );
 
     BHR_PHT bhr_pht_unit (
-        .clk           (clk),
-        .rst           (rst),
-        //.EX_pc_for_hash (EX_pc[5:2]),
-        .EX_op         (EX_op),
-        .EX_actual_taken  (EX_actual_taken),
-        .EX_bhr        (EX_bhr),
+        .clk                  (clk),
+        .rst                  (rst),
 
+        .EX_op                (EX_op),
+        .EX_actual_taken      (EX_actual_taken),
+        .EX_bhr               (EX_bhr),
         .IF_gbc_predict_taken (IF_gbc_predict_taken),
-        .IF_bhr_out    (IF_bhr_out)
+        .IF_bhr_out           (IF_bhr_out)
     );
 
     Program_Counter_reg PC(
@@ -392,69 +375,65 @@ module CPU (
     );
 
     EX_MEM_reg Reg_EX_MEM (
-        .clk(clk),
-        .rst(rst),
-
-        .EX_op(EX_op),
-        .EX_rd(EX_rd),
-        .EX_func3(EX_func3),
-        .EX_cal_out(EXE_cal_out),
-        .EX_rs2_data(EX_reg_src2_data),
-        .EX_imm_ext(EX_imm_ext),        
+        .clk          (clk),
+        .rst          (rst),
+        .EX_op        (EX_op),
+        .EX_rd        (EX_rd),
+        .EX_func3     (EX_func3),
+        .EX_cal_out   (EXE_cal_out),
+        .EX_rs2_data  (EX_reg_src2_data),
+        .EX_imm_ext   (EX_imm_ext),        
         
-        .MEM_op(MEM_op),
-        .MEM_rd(MEM_rd),
-        .MEM_func3(MEM_func3),
-        .MEM_cal_out(MEM_cal_out),
-        .MEM_rs2_data(MEM_rs2_data),
-        .MEM_CSR_imm(MEM_CSR_imm)
+        .MEM_op       (MEM_op),
+        .MEM_rd       (MEM_rd),
+        .MEM_func3    (MEM_func3),
+        .MEM_cal_out  (MEM_cal_out),
+        .MEM_rs2_data (MEM_rs2_data),
+        .MEM_CSR_imm  (MEM_CSR_imm)
     );
 
     MEM_WB_reg Reg_MEM_WB (
-        .clk(clk),
-        .rst(rst),
+        .clk         (clk),
+        .rst         (rst),
+        .MEM_op      (MEM_op),
+        .MEM_rd      (MEM_rd),
+        .MEM_func3   (MEM_func3),
+        .MEM_cal_out (MEM_cal_out),
+        .MEM_ld_data (dm_dout),
+        .MEM_CSR_imm (MEM_CSR_imm),
 
-        .MEM_op(MEM_op),
-        .MEM_rd(MEM_rd),
-        .MEM_func3(MEM_func3),
-        .MEM_cal_out(MEM_cal_out),
-        .MEM_ld_data(dm_dout),
-        .MEM_CSR_imm(MEM_CSR_imm),
-
-        .WB_op(WB_op),
-        .WB_rd(WB_rd),
-      	.WB_func3(WB_func3),
-        .WB_cal_out(WB_cal_out),
-        .WB_ld_data(WB_ld_data),
-        .WB_CSR_imm(WB_CSR_imm)
+        .WB_op       (WB_op),
+        .WB_rd       (WB_rd),
+      	.WB_func3    (WB_func3),
+        .WB_cal_out  (WB_cal_out),
+        .WB_ld_data  (WB_ld_data),
+        .WB_CSR_imm  (WB_CSR_imm)
     );
 
-    CSR_Unit csr(
-        .clk(clk),
-        .rst(rst),
-        .WB_op(WB_op),
-        .WB_rd(WB_rd),
-        .WB_CSR_imm(WB_CSR_imm),
+    CSR_Unit csr (
+        .clk        (clk),
+        .rst        (rst),
+        .WB_op      (WB_op),
+        .WB_rd      (WB_rd),
+        .WB_CSR_imm (WB_CSR_imm),
 
-        .CSR_dout(CSR_dout)
+        .CSR_dout   (CSR_dout)
     );
 
-    LD_Filter LDF(
-        .func3(WB_func3),
-        .cal_out(WB_cal_out),
-        .ld_data(WB_ld_data),
+    LD_Filter LDF (
+        .func3     (WB_func3),
+        .cal_out   (WB_cal_out),
+        .ld_data   (WB_ld_data),
 
-        .ld_f_data(ld_f_data)
+        .ld_f_data (ld_f_data)
     );
 
     Mux3to1  wb(
-        .in_0(WB_cal_out),
-        .in_1(ld_f_data),
-        .in_2(CSR_dout),
-        .sel(WB_wb_data_sel),
-        .mux_out(wb_data)
+        .in_0    (WB_cal_out),
+        .in_1    (ld_f_data),
+        .in_2    (CSR_dout),
+        .sel     (WB_wb_data_sel),
+        .mux_out (wb_data)
     );
-
-
 
 endmodule

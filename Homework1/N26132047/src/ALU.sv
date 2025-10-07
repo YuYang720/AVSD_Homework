@@ -17,7 +17,6 @@ module ALU (
     );
 
     always_comb begin
-
         case(op)
         // for R_type func7 define add/sub, I_type always add
         `R_type, `I_arth: begin
@@ -33,7 +32,6 @@ module ALU (
             endcase
         end  
         `B_type: begin
-            
             case(func3)
                 `BEQ:     alu_out = {{31{1'b0}}, (operand1 == operand2)};
                 `BNE:     alu_out = {{31{1'b0}}, (operand1 != operand2)};
@@ -48,12 +46,9 @@ module ALU (
         `F_arth:          alu_out = fp_result;
         `JAL, `JALR:      alu_out = operand1 + 32'd4;
         `AUIPC, `I_load, `S_type, `F_FLW, `F_FSW: alu_out = operand1 + operand2;
-        default: begin
-            alu_out = 32'b0;
-        end  
+        default:          alu_out = 32'b0;
         endcase
     end
-
 endmodule
         
             

@@ -1,7 +1,6 @@
 module EX_MEM_reg (
     input logic        clk,
     input logic        rst,
-    
     input logic [6:0]  EX_op,
     input logic [4:0]  EX_rd,
     input logic [ 2:0] EX_func3,

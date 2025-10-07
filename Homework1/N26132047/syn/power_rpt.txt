@@ -10,7 +10,7 @@ Report : power
         -analysis_effort low
 Design : top
 Version: P-2019.03-SP1-1
-Date   : Fri Oct  3 12:57:33 2025
+Date   : Tue Oct  7 15:59:02 2025
 ****************************************
 
 
@@ -87,7 +87,7 @@ FP_calculator_DW_cmp_J60_0
                        ZeroWireload      N16ADFP_StdCellss0p72vm40c
 FP_calculator_DW01_inc_J61_0
                        ZeroWireload      N16ADFP_StdCellss0p72vm40c
-FP_calculator_DW01_add_J62_0
+FP_calculator_DW01_add_J59_0
                        ZeroWireload      N16ADFP_StdCellss0p72vm40c
 
 
