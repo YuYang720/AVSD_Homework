@@ -5,10 +5,10 @@
 # version   : 2018.03p001 64 bits
 # build date: 2018.04.24 18:13:05 PDT
 #----------------------------------------
-# started Sat Oct 11 19:18:01 CST 2025
+# started Sat Oct 11 21:09:48 CST 2025
 # hostname  : superdome2
-# pid       : 96923
-# arguments : '-label' 'session_0' '-console' 'superdome2:41052' '-style' 'windows' '-data' 'AQAAADx/////AAAAAAAAA3oBAAAAEABMAE0AUgBFAE0ATwBWAEU=' '-proj' '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/build/jgproject/sessionLogs/session_0' '-init' '-hidden' '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/build/jgproject/.tmp/.initCmds.tcl' '../script/jg_bridge.tcl'
+# pid       : 188797
+# arguments : '-label' 'session_0' '-console' 'superdome2:34716' '-style' 'windows' '-data' 'AQAAADx/////AAAAAAAAA3oBAAAAEABMAE0AUgBFAE0ATwBWAEU=' '-proj' '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/build/jgproject/sessionLogs/session_0' '-init' '-hidden' '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/build/jgproject/.tmp/.initCmds.tcl' '../script/jg_bridge.tcl'
 #DO NOT MODIFY THIS FILE
 set ABVIP_INST_DIR /usr/cad/cadence/VIPCAT/cur/tools/abvip
 set vip_dir $::env(vip_dir)
@@ -107,3 +107,4 @@ assume {axi_master_1.awburst!=2}
 
 prove -all
 
+visualize -violation -property <embedded>::top.axi_slave_0.genStableChks.genStableChksRDInf.master_ar_arvalid_stable -new_window

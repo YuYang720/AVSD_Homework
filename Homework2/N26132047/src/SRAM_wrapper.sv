@@ -20,6 +20,7 @@
 module SRAM_wrapper(
     input                              ACLK,		
     input                              ARESETn,	
+    input        [31:0]                BASE_ADDR,
 
     // AXI Slave Write Address Channel
     input        [`AXI_IDS_BITS -1:0]  AWID_S,		
@@ -61,6 +62,60 @@ module SRAM_wrapper(
     input                              RREADY_S   
 );
 
-    
+    // --------------------------------------------
+    //              Signal Declaration             
+    // --------------------------------------------
+
+    // slave FSM
+    typedef enum logic [2:0] {
+        IDLE, READ, WRITE, WAIT_WVALID, REAPONSE
+    } STATE_t;
+
+    // request structure
+    typedef struct packed {
+        logic [`AXI_IDS_BITS -1:0] id;
+        logic [`AXI_ADDR_BITS-1:0] addr;
+        logic [`AXI_LEN_BITS -1:0] len;
+        logic [`AXI_SIZE_BITS-1:0] size;
+    } REQUEST_t;
+
+    STATE_t    state_c,   state_n;
+    REQUEST_t  request_c, request_n;
+    logic [ 3:0] burst_counter_c, burst_counter_n;
+    logic        CEB, WEB, WRITE_REQ, READ_REQ;
+    logic [13:0] A;
+    logic [31:0] DI, BWEB, DO, ADDRESS, real_addr;
+
+    // --------------------------------------------
+    //                 SRAM Module                 
+    // --------------------------------------------
+    assign real_addr = ADDRESS - BASE_ADDR;
+    assign A         = real_addr[15:2];
+    assign CEB       = ~(WRITE_REQ | READ_REQ);
+    assign WEB       = ~WRITE_REQ;
+    assign BWEB      = {{8{~WSTRB_S[3]}}, {8{~WSTRB_S[2]}}, {8{~WSTRB_S[1]}}, {8{~WSTRB_S[0]}}};
+
+    TS1N16ADFPCLLLVTA512X45M4SWSHOD i_SRAM (
+        .SLP     ( 1'b0  ),
+        .DSLP    ( 1'b0  ),
+        .SD      ( 1'b0  ),
+        .PUDELAY (       ),
+        .CLK     ( clk   ),
+        .CEB     ( CEB   ),
+        .WEB     ( WEB   ),
+        .A       ( A     ),
+        .D       ( DI    ),
+        .BWEB    ( BWEB  ),
+        .RTSEL   ( 2'b01 ),
+        .WTSEL   ( 2'b01 ),
+        .Q       ( DO    )
+    );
+
+    // --------------------------------------------
+    //                  AXI Slave                  
+    // --------------------------------------------
+
+    always_ff @(posedge)
+
 
 endmodule

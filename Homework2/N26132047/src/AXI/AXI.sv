@@ -323,16 +323,41 @@ module AXI (
     //------------------------------------------------
     always_comb begin
         // default master output to CPU
-        {ARREADY_M0, RID_M0, RDATA_M0, RRESP_M0, RLAST_M0, RVALID_M0} = '0; // M0: AR, R 
-        {ARREADY_M1, RID_M1, RDATA_M1, RRESP_M1, RLAST_M1, RVALID_M1} = '0; // M1: AR, R
-        {AWREADY_M1, WREADY_M1, BID_M1, BRESP_M1, BVALID_M1}          = '0; // M1: AW, W, B
+        ARREADY_M0 = 1'b0;
+        RRESP_M0   = `AXI_RESP_OKAY;
+        {RID_M0, RDATA_M0, RLAST_M0, RVALID_M0} = '0;
+
+        ARREADY_M1 = 1'b0;
+        RRESP_M1   = `AXI_RESP_OKAY;
+        {RID_M1, RDATA_M1, RLAST_M1, RVALID_M1} = '0;
+
+        BRESP_M1   = `AXI_RESP_OKAY;
+        {AWREADY_M1, WREADY_M1, BID_M1, BVALID_M1} = '0; 
+
         // default slave output to Memory
-        {ARID_S0, ARADDR_S0, ARLEN_S0, ARSIZE_S0, ARBURST_S0, ARVALID_S0, RREADY_S0} = '0; // S0: AR, R
-        {AWID_S0, AWADDR_S0, AWLEN_S0, AWSIZE_S0, AWBURST_S0, AWVALID_S0}            = '0; // S0: AW
-        {WDATA_S0, WSTRB_S0, WLAST_S0, WVALID_S0, BREADY_S0}                         = '0; // S0: W, B
-        {ARID_S1, ARADDR_S1, ARLEN_S1, ARSIZE_S1, ARBURST_S1, ARVALID_S1, RREADY_S1} = '0; // S1: AR, R
-        {AWID_S1, AWADDR_S1, AWLEN_S1, AWSIZE_S1, AWBURST_S1, AWVALID_S1}            = '0; // S1: AW
-        {WDATA_S1, WSTRB_S1, WLAST_S1, WVALID_S1, BREADY_S1}                         = '0; // S1: W, B
+        ARLEN_S0   = `AXI_LEN_ONE;
+        ARSIZE_S0  = `AXI_SIZE_WORD;
+        ARBURST_S0 = `AXI_BURST_INC;
+        {ARID_S0, ARADDR_S0, ARVALID_S0, RREADY_S0} = '0;
+
+        AWLEN_S0   = `AXI_LEN_ONE;
+        AWSIZE_S0  = `AXI_SIZE_WORD;
+        AWBURST_S0 = `AXI_BURST_INC;
+        {AWID_S0, AWADDR_S0, AWVALID_S0} = '0;
+        WSTRB_S0   = `AXI_STRB_WORD;
+        {WDATA_S0, WLAST_S0, WVALID_S0, BREADY_S0} = '0; 
+
+        ARLEN_S1   = `AXI_LEN_ONE;
+        ARSIZE_S1  = `AXI_SIZE_WORD;
+        ARBURST_S1 = `AXI_BURST_INC;
+        {ARID_S1, ARADDR_S1, ARVALID_S1, RREADY_S1} = '0; 
+
+        AWLEN_S1   = `AXI_LEN_ONE;
+        AWSIZE_S1  = `AXI_SIZE_WORD;
+        AWBURST_S1 = `AXI_BURST_INC;
+        {AWID_S1, AWADDR_S1, AWVALID_S1} = '0; 
+        WSTRB_S1  = `AXI_STRB_WORD;
+        {WDATA_S1, WLAST_S1, WVALID_S1, BREADY_S1} = '0; // S1: W, B
 
         if (slave_status_c_s0.busy) begin
             case (slave_status_c_s0.transaction_type)

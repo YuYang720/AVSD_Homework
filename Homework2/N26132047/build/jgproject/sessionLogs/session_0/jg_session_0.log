@@ -5,10 +5,10 @@
 # version   : 2018.03p001 64 bits
 # build date: 2018.04.24 18:13:05 PDT
 #----------------------------------------
-# started Sat Oct 11 19:18:01 CST 2025
+# started Sat Oct 11 21:09:48 CST 2025
 # hostname  : superdome2
-# pid       : 96923
-# arguments : '-label' 'session_0' '-console' 'superdome2:41052' '-style' 'windows' '-data' 'AQAAADx/////AAAAAAAAA3oBAAAAEABMAE0AUgBFAE0ATwBWAEU=' '-proj' '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/build/jgproject/sessionLogs/session_0' '-init' '-hidden' '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/build/jgproject/.tmp/.initCmds.tcl' '../script/jg_bridge.tcl'
+# pid       : 188797
+# arguments : '-label' 'session_0' '-console' 'superdome2:34716' '-style' 'windows' '-data' 'AQAAADx/////AAAAAAAAA3oBAAAAEABMAE0AUgBFAE0ATwBWAEU=' '-proj' '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/build/jgproject/sessionLogs/session_0' '-init' '-hidden' '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/build/jgproject/.tmp/.initCmds.tcl' '../script/jg_bridge.tcl'
 
 Any disclosure about the Cadence Design Systems software or its use
 model to any third party violates the written Non-Disclosure Agreement
@@ -542,15 +542,15 @@ INFO (IPF057): 0.0.PRE: The property "top.axi_master_1.genPropChksWRInf.slave_b_
 0: Found proofs for 38 properties in preprocessing
 0: Using multistage preprocessing
 0: Starting reduce
-0: Finished reduce in 0.018s
+0: Finished reduce in 0.02s
 0.0.PRE: Performing Proof Simplification...
 0.0.N: clocks: 3, declared: 1, disabling: 0, posedge: 3, negedge: 0, noedge: 0, bothedge: 0
 0.0.N: Proof Simplification Iteration 1	[0.00 s]
 0.0.N: Proof Simplification Iteration 2	[0.01 s]
 0.0.N: Proof Simplification Iteration 3	[0.01 s]
-0.0.N: Proof Simplification Iteration 4	[0.01 s]
+0.0.N: Proof Simplification Iteration 4	[0.02 s]
 0.0.N: Proof Simplification Iteration 5	[0.02 s]
-0.0.N: Proof Simplification Iteration 6	[0.02 s]
+0.0.N: Proof Simplification Iteration 6	[0.03 s]
 0.0.N: Proof Simplification Iteration 7	[0.03 s]
 0.0.N: Proof Simplification Iteration 8	[0.03 s]
 0.0.N: Proof Simplification Iteration 9	[0.04 s]
@@ -572,14 +572,14 @@ INFO (IPF057): 0.0.PRE: The property "top.axi_master_0.genRstChksRDInf.slave_rst
 INFO (IPF057): 0.0.PRE: The property "top.axi_master_1.genRstChksRDInf.slave_rst_rvalid_low_reset_released" was proven in 0.00 s.
 0.0.PRE: A proof was found: No trace exists. [0.00 s]
 INFO (IPF057): 0.0.PRE: The property "top.axi_master_1.genRstChksWDInf.slave_rst_bvalid_low_reset_released" was proven in 0.00 s.
-0.0.PRE: Proof Simplification completed in 0.09 s
-0.0.N: Identified and disabled 157 duplicated targets.
+0.0.PRE: Proof Simplification completed in 0.10 s
+0.0.N: Identified and disabled 156 duplicated targets.
 0: About to start centralized ProofGrid in its own thread with a limit of 10000 pending notifications and a limit of 10 traces.
 0: =============================== ProofGrid start ===============================
-0: ProofGrid usable level: 188
+0: ProofGrid usable level: 189
 0: ProofGrid is starting event handling
-0.0.N: Proofgrid shell started at 97198@superdome2(local) jg_96923_superdome2_1
-0.0.Hp: Proofgrid shell started at 97199@superdome2(local) jg_96923_superdome2_1
+0.0.N: Proofgrid shell started at 189776@superdome2(local) jg_188797_superdome2_1
+0.0.Hp: Proofgrid shell started at 189777@superdome2(local) jg_188797_superdome2_1
 0.0.N: clocks: 1, declared: 1, disabling: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
 0.0.Hp: clocks: 1, declared: 1, disabling: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
 0.0.N: A trace with 1 cycles was found. [0.01 s]
@@ -611,21 +611,18 @@ INFO (IPF047): 0.0.N: The cover property "top.axi_master_1.genPropChksWRInf.genN
 0.0.N: Starting proof for property "top.axi_slave_0.genStableChks.genStableChksRDInf.master_ar_arvalid_stable"	[0.00 s].
 0.0.N: Trace Attempt  1	[0.00 s]
 0.0.N: Trace Attempt  2	[0.01 s]
-0.0.Ht: Proofgrid shell started at 97217@superdome2(local) jg_96923_superdome2_1
-0.0.B: Proofgrid shell started at 97218@superdome2(local) jg_96923_superdome2_1
+0.0.N: Trace Attempt  3	[0.01 s]
+0.0.B: Proofgrid shell started at 189795@superdome2(local) jg_188797_superdome2_1
+0.0.Ht: Proofgrid shell started at 189794@superdome2(local) jg_188797_superdome2_1
 0.0.B: clocks: 1, declared: 1, disabling: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
 0.0.Ht: clocks: 1, declared: 1, disabling: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
-0.0.N: Trace Attempt  2	[0.01 s]
 0.0.B: Next scan (0) will use per property time limit: 1s * 10 ^ 0 = 1s
 0.0.B: Starting proof for property "top.axi_slave_0.genStableChks.genStableChksRDInf.master_ar_arvalid_stable"	[0.00 s].
-0.0.N: Trace Attempt  3	[0.01 s]
 0.0.B: Trace Attempt  1	[0.00 s]
-0.0.B: Trace Attempt  2	[0.01 s]
 0.0.N: Trace Attempt  3	[0.02 s]
+0.0.B: Trace Attempt  2	[0.01 s]
 0.0.Ht: Trace Attempt  1	[0.01 s]
 0.0.Ht: Trace Attempt  2	[0.02 s]
-0.0.Hp: A proof was found: No trace exists. [0.04 s]
-INFO (IPF057): 0.0.Hp: The property "top.axi_slave_0.genPropChksRDInf.genAXI4Full.master_ar_arlen_less_than_TRANS_COUNT" was proven in 0.06 s.
 0.0.Ht: A trace with 2 cycles was found. [0.02 s]
 INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_0.genStableChks.genStableChksRDInf.master_ar_arvalid_stable:precondition1" was covered in 2 cycles in 0.01 s.
 INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_0.genPropChksRDInf.genAXI4Full.master_ar_arlen_less_than_TRANS_COUNT:precondition1" was covered in 2 cycles in 0.01 s.
@@ -637,6 +634,7 @@ INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_1.genPropChksRDInf.genA
 INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_1.genPropChksRDInf.genLiveSlaveChksArready.slave_ar_arready_eventually:precondition1" was covered in 2 cycles in 0.01 s.
 INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_0.genStableChks.genStableChksRDInf.master_ar_arvalid_stable:precondition1" was covered in 2 cycles in 0.01 s.
 INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_0.genPropChksRDInf.genAXI4Full.master_ar_arlen_less_than_TRANS_COUNT:precondition1" was covered in 2 cycles in 0.01 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_0.genPropChksRDInf.genLiveSlaveChksArready.slave_ar_arready_eventually:precondition1" was covered in 2 cycles in 0.01 s.
 INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_0.genStableChks.genStableChksRDInf.master_ar_araddr_stable:precondition1" was covered in 2 cycles in 0.01 s.
 INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_0.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_arid_stable:precondition1" was covered in 2 cycles in 0.01 s.
 INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_0.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_arlen_stable:precondition1" was covered in 2 cycles in 0.01 s.
@@ -665,63 +663,77 @@ INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_0.genStableChks.genSta
 INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_0.genPropChksRDInf.genAXI4Full.gen4KaraddrChk.master_ar_araddr_never_cross_4K_boundary:precondition1" was covered in 2 cycles in 0.01 s.
 INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_0.genPropChksRDInf.genAXI4Full.master_ar_arburst_no_reserved:precondition1" was covered in 2 cycles in 0.01 s.
 INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_0.genPropChksRDInf.genAXI4Full.master_ar_arsize_lte_datawidth:precondition1" was covered in 2 cycles in 0.01 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_0.genPropChksRDInf.genLiveSlaveChksArready.slave_ar_arready_eventually:precondition1" was covered in 2 cycles in 0.01 s.
+0.0.N: A trace with 3 cycles was found. [0.03 s]
+INFO (IPF055): 0.0.N: A counterexample (cex) with 3 cycles was found for the property "top.axi_slave_0.genStableChks.genStableChksRDInf.master_ar_arvalid_stable" in 0.02 s.
+INFO (IPF055): 0.0.N: A counterexample (cex) with 3 cycles was found for the property "top.axi_slave_0.genStableChks.genStableChksRDInf.master_ar_araddr_stable" in 0.02 s by the incidental trace "top.axi_slave_0.genStableChks.genStableChksRDInf.master_ar_arvalid_stable".
+INFO (IPF055): 0.0.N: A counterexample (cex) with 3 cycles was found for the property "top.axi_slave_0.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_arid_stable" in 0.02 s by the incidental trace "top.axi_slave_0.genStableChks.genStableChksRDInf.master_ar_arvalid_stable".
+INFO (IPF055): 0.0.N: A counterexample (cex) with 3 cycles was found for the property "top.axi_slave_0.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_arlen_stable" in 0.02 s by the incidental trace "top.axi_slave_0.genStableChks.genStableChksRDInf.master_ar_arvalid_stable".
+INFO (IPF055): 0.0.N: A counterexample (cex) with 3 cycles was found for the property "top.axi_slave_0.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_arsize_stable" in 0.02 s by the incidental trace "top.axi_slave_0.genStableChks.genStableChksRDInf.master_ar_arvalid_stable".
+INFO (IPF047): 0.0.N: The cover property "top.axi_slave_1.genPropChksRDInf.genAXI4Full.slave_r_ar_rid_match:precondition1" was covered in 3 cycles in 0.02 s by the incidental trace "top.axi_slave_0.genStableChks.genStableChksRDInf.master_ar_arvalid_stable".
+INFO (IPF047): 0.0.N: The cover property "top.axi_slave_1.genPropChksRDInf.slave_r_ar_rvalid_eventually:precondition1" was covered in 3 cycles in 0.02 s by the incidental trace "top.axi_slave_0.genStableChks.genStableChksRDInf.master_ar_arvalid_stable".
+INFO (IPF047): 0.0.N: The cover property "top.axi_slave_1.genPropChksRDInf.genNoRdTblOverflow.master_ar_rd_tbl_no_overflow:precondition1" was covered in 3 cycles in 0.02 s by the incidental trace "top.axi_slave_0.genStableChks.genStableChksRDInf.master_ar_arvalid_stable".
+INFO (IPF047): 0.0.N: The cover property "top.axi_slave_1.genPropChksRDInf.assert_ar_rd_tbl_no_overflow:precondition1" was covered in 3 cycles in 0.02 s by the incidental trace "top.axi_slave_0.genStableChks.genStableChksRDInf.master_ar_arvalid_stable".
+INFO (IPF047): 0.0.N: The cover property "top.axi_master_0.genPropChksRDInf.genAXI4Full.slave_r_ar_rid_match:precondition1" was covered in 3 cycles in 0.02 s by the incidental trace "top.axi_slave_0.genStableChks.genStableChksRDInf.master_ar_arvalid_stable".
+INFO (IPF047): 0.0.N: The cover property "top.axi_master_0.genPropChksRDInf.slave_r_ar_rvalid_eventually:precondition1" was covered in 3 cycles in 0.02 s by the incidental trace "top.axi_slave_0.genStableChks.genStableChksRDInf.master_ar_arvalid_stable".
+INFO (IPF047): 0.0.N: The cover property "top.axi_master_0.genPropChksRDInf.genNoRdTblOverflow.master_ar_rd_tbl_no_overflow:precondition1" was covered in 3 cycles in 0.02 s by the incidental trace "top.axi_slave_0.genStableChks.genStableChksRDInf.master_ar_arvalid_stable".
+INFO (IPF047): 0.0.N: The cover property "top.axi_master_0.genPropChksRDInf.assert_ar_rd_tbl_no_overflow:precondition1" was covered in 3 cycles in 0.02 s by the incidental trace "top.axi_slave_0.genStableChks.genStableChksRDInf.master_ar_arvalid_stable".
+INFO (IPF047): 0.0.N: The cover property "top.axi_slave_1.genPropChksRDInf.genAXI4Full.slave_r_ar_rlast_exact_len:precondition1" was covered in 3 cycles in 0.02 s by the incidental trace "top.axi_slave_0.genStableChks.genStableChksRDInf.master_ar_arvalid_stable".
+INFO (IPF047): 0.0.N: The cover property "top.axi_slave_1.genPropChksRDInf.genAXI4Full.slave_r_excl_rresp_no_exokay:precondition1" was covered in 3 cycles in 0.02 s by the incidental trace "top.axi_slave_0.genStableChks.genStableChksRDInf.master_ar_arvalid_stable".
+INFO (IPF047): 0.0.N: The cover property "top.axi_slave_1.genPropChksRDInf.genLiveMasterChksRReady.master_r_rready_eventually:precondition1" was covered in 3 cycles in 0.02 s by the incidental trace "top.axi_slave_0.genStableChks.genStableChksRDInf.master_ar_arvalid_stable".
+INFO (IPF047): 0.0.N: The cover property "top.axi_slave_1.genPropChksRDInf.genNoRdTblOverflow.genSlv.slave_ar_rd_tbl_no_overflow:precondition1" was covered in 3 cycles in 0.02 s by the incidental trace "top.axi_slave_0.genStableChks.genStableChksRDInf.master_ar_arvalid_stable".
+INFO (IPF047): 0.0.N: The cover property "top.axi_master_0.genPropChksRDInf.genAXI4Full.slave_r_ar_rlast_exact_len:precondition1" was covered in 3 cycles in 0.02 s by the incidental trace "top.axi_slave_0.genStableChks.genStableChksRDInf.master_ar_arvalid_stable".
+INFO (IPF047): 0.0.N: The cover property "top.axi_master_0.genPropChksRDInf.genAXI4Full.slave_r_excl_rresp_no_exokay:precondition1" was covered in 3 cycles in 0.02 s by the incidental trace "top.axi_slave_0.genStableChks.genStableChksRDInf.master_ar_arvalid_stable".
+INFO (IPF047): 0.0.N: The cover property "top.axi_master_0.genPropChksRDInf.genLiveMasterChksRReady.master_r_rready_eventually:precondition1" was covered in 3 cycles in 0.02 s by the incidental trace "top.axi_slave_0.genStableChks.genStableChksRDInf.master_ar_arvalid_stable".
+INFO (IPF047): 0.0.N: The cover property "top.axi_master_0.genPropChksRDInf.genNoRdTblOverflow.genSlv.slave_ar_rd_tbl_no_overflow:precondition1" was covered in 3 cycles in 0.02 s by the incidental trace "top.axi_slave_0.genStableChks.genStableChksRDInf.master_ar_arvalid_stable".
+0.0.N: Stopped processing property "top.axi_slave_0.genStableChks.genStableChksRDInf.master_ar_arvalid_stable"	[0.02 s].
+INFO (IPF054): 0.0.Ht: A min_length bound of 3 was found for the property "top.axi_slave_0.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_arid_stable" in 0.02 s.
+INFO (IPF054): 0.0.Ht: A min_length bound of 3 was found for the property "top.axi_slave_0.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_arlen_stable" in 0.02 s.
+INFO (IPF054): 0.0.Ht: A min_length bound of 3 was found for the property "top.axi_slave_0.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_arsize_stable" in 0.02 s.
+INFO (IPF054): 0.0.Ht: A min_length bound of 3 was found for the property "top.axi_slave_1.genPropChksRDInf.genAXI4Full.slave_r_ar_rid_match:precondition1" in 0.03 s.
+INFO (IPF054): 0.0.Ht: A min_length bound of 3 was found for the property "top.axi_slave_1.genPropChksRDInf.genAXI4Full.slave_r_ar_rlast_exact_len:precondition1" in 0.03 s.
+INFO (IPF054): 0.0.Ht: A min_length bound of 3 was found for the property "top.axi_slave_1.genPropChksRDInf.genAXI4Full.slave_r_excl_rresp_no_exokay:precondition1" in 0.03 s.
+INFO (IPF054): 0.0.Ht: A min_length bound of 3 was found for the property "top.axi_slave_1.genPropChksRDInf.genLiveMasterChksRReady.master_r_rready_eventually:precondition1" in 0.03 s.
+INFO (IPF054): 0.0.Ht: A min_length bound of 3 was found for the property "top.axi_slave_1.genPropChksRDInf.slave_r_ar_rvalid_eventually:precondition1" in 0.03 s.
+INFO (IPF054): 0.0.Ht: A min_length bound of 3 was found for the property "top.axi_slave_1.genPropChksRDInf.assert_ar_rd_tbl_no_overflow:precondition1" in 0.03 s.
+0.0.N: Starting proof for property "top.axi_slave_0.genStableChks.genStableChksRDInf.slave_r_rvalid_stable:precondition1"	[0.00 s].
+0.0.N: Starting proof for property "top.axi_slave_0.genStableChks.genStableChksRDInf.slave_r_rdata_stable:precondition1"	[0.00 s].
+0.0.N: Starting proof for property "top.axi_slave_0.genStableChks.genStableChksRDInf.slave_r_rresp_stable:precondition1"	[0.00 s].
+0.0.N: Starting proof for property "top.axi_slave_0.genStableChks.genStableChksRDInf.genAXI4Full.slave_r_rlast_stable:precondition1"	[0.00 s].
+0.0.N: Starting proof for property "top.axi_slave_0.genStableChks.genStableChksRDInf.genAXI4Full.slave_r_rid_stable:precondition1"	[0.00 s].
+0.0.N: Starting proof for property "top.axi_slave_0.genStableChks.genStableChksRDInf.genAXI4Full.slave_r_ruser_stable:precondition1"	[0.00 s].
+0.0.Ht: A trace with 2 cycles was found. [0.02 s]
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_0.genPropChksRDInf.genAXI4Full.master_ar_arcache_no_ra_wa_for_uncacheable:precondition1" was covered in 2 cycles in 0.03 s.
+INFO (IPF054): 0.0.Ht: A min_length bound of 3 was found for the property "top.axi_master_0.genPropChksRDInf.genAXI4Full.slave_r_ar_rid_match:precondition1" in 0.03 s.
+INFO (IPF054): 0.0.Ht: A min_length bound of 3 was found for the property "top.axi_master_0.genPropChksRDInf.genAXI4Full.slave_r_ar_rlast_exact_len:precondition1" in 0.03 s.
+INFO (IPF054): 0.0.Ht: A min_length bound of 3 was found for the property "top.axi_master_0.genPropChksRDInf.genAXI4Full.slave_r_excl_rresp_no_exokay:precondition1" in 0.03 s.
+INFO (IPF054): 0.0.Ht: A min_length bound of 3 was found for the property "top.axi_master_0.genPropChksRDInf.genLiveMasterChksRReady.master_r_rready_eventually:precondition1" in 0.03 s.
+INFO (IPF054): 0.0.Ht: A min_length bound of 3 was found for the property "top.axi_master_0.genPropChksRDInf.slave_r_ar_rvalid_eventually:precondition1" in 0.03 s.
+INFO (IPF054): 0.0.Ht: A min_length bound of 3 was found for the property "top.axi_master_0.genPropChksRDInf.assert_ar_rd_tbl_no_overflow:precondition1" in 0.03 s.
 0.0.B: Trace Attempt  3	[0.02 s]
 0.0.Hp: A proof was found: No trace exists. [0.04 s]
-INFO (IPF057): 0.0.Hp: The property "top.axi_slave_0.genPropChksRDInf.genAXI4Full.gen4KaraddrChk.master_ar_araddr_never_cross_4K_boundary" was proven in 0.07 s.
-0.0.Hp: A proof was found: No trace exists. [0.04 s]
-INFO (IPF057): 0.0.Hp: The property "top.axi_slave_0.genPropChksRDInf.genAXI4Full.master_ar_arburst_no_reserved" was proven in 0.07 s.
-0.0.Hp: A proof was found: No trace exists. [0.04 s]
-INFO (IPF057): 0.0.Hp: The property "top.axi_slave_0.genPropChksRDInf.genAXI4Full.master_ar_arsize_lte_datawidth" was proven in 0.07 s.
-0.0.Hp: A proof was found: No trace exists. [0.04 s]
-INFO (IPF057): 0.0.Hp: The property "top.axi_slave_0.genPropChksRDInf.assert_ar_rd_tbl_no_overflow" was proven in 0.07 s.
-0.0.Hp: A proof was found: No trace exists. [0.04 s]
-INFO (IPF057): 0.0.Hp: The property "top.axi_slave_0.genPropChksWRInf.genAXI4Full.master_aw_awlen_less_than_maxlen" was proven in 0.07 s.
+INFO (IPF057): 0.0.Hp: The property "top.axi_slave_0.genPropChksRDInf.genAXI4Full.master_ar_arlen_less_than_TRANS_COUNT" was proven in 0.09 s.
 0.0.Ht: A trace with 2 cycles was found. [0.02 s]
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_0.genPropChksRDInf.genAXI4Full.master_ar_arcache_no_ra_wa_for_uncacheable:precondition1" was covered in 2 cycles in 0.02 s.
-0.0.Ht: A trace with 2 cycles was found. [0.03 s]
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genStableChks.genStableChksRDInf.master_ar_arvalid_stable:precondition1" was covered in 2 cycles in 0.03 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genPropChksRDInf.genAXI4Full.master_ar_arlen_less_than_TRANS_COUNT:precondition1" was covered in 2 cycles in 0.03 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genPropChksRDInf.genLiveSlaveChksArready.slave_ar_arready_eventually:precondition1" was covered in 2 cycles in 0.03 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genStableChks.genStableChksRDInf.master_ar_araddr_stable:precondition1" was covered in 2 cycles in 0.03 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genStableChks.genStableChksRDInf.master_ar_arprot_stable:precondition1" was covered in 2 cycles in 0.03 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_arid_stable:precondition1" was covered in 2 cycles in 0.03 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_arlen_stable:precondition1" was covered in 2 cycles in 0.03 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_arsize_stable:precondition1" was covered in 2 cycles in 0.03 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_arburst_stable:precondition1" was covered in 2 cycles in 0.03 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_arlock_stable:precondition1" was covered in 2 cycles in 0.03 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_arcache_stable:precondition1" was covered in 2 cycles in 0.03 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_arqos_stable:precondition1" was covered in 2 cycles in 0.03 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_arregion_stable:precondition1" was covered in 2 cycles in 0.03 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_aruser_stable:precondition1" was covered in 2 cycles in 0.03 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genPropChksRDInf.genAXI4Full.gen4KaraddrChk.master_ar_araddr_never_cross_4K_boundary:precondition1" was covered in 2 cycles in 0.03 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genPropChksRDInf.genAXI4Full.master_ar_arburst_no_reserved:precondition1" was covered in 2 cycles in 0.03 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genPropChksRDInf.genAXI4Full.master_ar_arsize_lte_datawidth:precondition1" was covered in 2 cycles in 0.03 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genNoExChks.master_ar_arlock_no_excl_access_throttle_cnstr:precondition1" was covered in 2 cycles in 0.03 s.
-0.0.N: A trace with 3 cycles was found. [0.04 s]
-INFO (IPF055): 0.0.N: A counterexample (cex) with 3 cycles was found for the property "top.axi_slave_0.genStableChks.genStableChksRDInf.master_ar_arvalid_stable" in 0.03 s.
-INFO (IPF055): 0.0.N: A counterexample (cex) with 3 cycles was found for the property "top.axi_slave_0.genStableChks.genStableChksRDInf.master_ar_araddr_stable" in 0.03 s by the incidental trace "top.axi_slave_0.genStableChks.genStableChksRDInf.master_ar_arvalid_stable".
-INFO (IPF055): 0.0.N: A counterexample (cex) with 3 cycles was found for the property "top.axi_slave_0.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_arid_stable" in 0.03 s by the incidental trace "top.axi_slave_0.genStableChks.genStableChksRDInf.master_ar_arvalid_stable".
-INFO (IPF055): 0.0.N: A counterexample (cex) with 3 cycles was found for the property "top.axi_slave_0.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_arburst_stable" in 0.03 s by the incidental trace "top.axi_slave_0.genStableChks.genStableChksRDInf.master_ar_arvalid_stable".
-INFO (IPF047): 0.0.N: The cover property "top.axi_slave_1.genPropChksRDInf.slave_r_ar_rvalid_eventually:precondition1" was covered in 3 cycles in 0.03 s by the incidental trace "top.axi_slave_0.genStableChks.genStableChksRDInf.master_ar_arvalid_stable".
-INFO (IPF047): 0.0.N: The cover property "top.axi_slave_1.genPropChksRDInf.genNoRdTblOverflow.master_ar_rd_tbl_no_overflow:precondition1" was covered in 3 cycles in 0.03 s by the incidental trace "top.axi_slave_0.genStableChks.genStableChksRDInf.master_ar_arvalid_stable".
-INFO (IPF047): 0.0.N: The cover property "top.axi_slave_1.genPropChksRDInf.assert_ar_rd_tbl_no_overflow:precondition1" was covered in 3 cycles in 0.03 s by the incidental trace "top.axi_slave_0.genStableChks.genStableChksRDInf.master_ar_arvalid_stable".
-INFO (IPF047): 0.0.N: The cover property "top.axi_master_0.genPropChksRDInf.slave_r_ar_rvalid_eventually:precondition1" was covered in 3 cycles in 0.03 s by the incidental trace "top.axi_slave_0.genStableChks.genStableChksRDInf.master_ar_arvalid_stable".
-INFO (IPF047): 0.0.N: The cover property "top.axi_master_0.genPropChksRDInf.genNoRdTblOverflow.master_ar_rd_tbl_no_overflow:precondition1" was covered in 3 cycles in 0.03 s by the incidental trace "top.axi_slave_0.genStableChks.genStableChksRDInf.master_ar_arvalid_stable".
-INFO (IPF047): 0.0.N: The cover property "top.axi_master_0.genPropChksRDInf.assert_ar_rd_tbl_no_overflow:precondition1" was covered in 3 cycles in 0.03 s by the incidental trace "top.axi_slave_0.genStableChks.genStableChksRDInf.master_ar_arvalid_stable".
-INFO (IPF047): 0.0.N: The cover property "top.axi_slave_1.genPropChksRDInf.genNoRdTblOverflow.genSlv.slave_ar_rd_tbl_no_overflow:precondition1" was covered in 3 cycles in 0.03 s by the incidental trace "top.axi_slave_0.genStableChks.genStableChksRDInf.master_ar_arvalid_stable".
-INFO (IPF047): 0.0.N: The cover property "top.axi_master_0.genPropChksRDInf.genNoRdTblOverflow.genSlv.slave_ar_rd_tbl_no_overflow:precondition1" was covered in 3 cycles in 0.03 s by the incidental trace "top.axi_slave_0.genStableChks.genStableChksRDInf.master_ar_arvalid_stable".
-0.0.Hp: A proof was found: No trace exists. [0.04 s]
-INFO (IPF057): 0.0.Hp: The property "top.axi_slave_0.genPropChksWRInf.genAXI4Full.gen4KawaddrChk.master_aw_awaddr_never_cross_4K_boundary" was proven in 0.09 s.
-0.0.Hp: A proof was found: No trace exists. [0.04 s]
-INFO (IPF057): 0.0.Hp: The property "top.axi_slave_0.genPropChksWRInf.genAXI4Full.master_aw_awburst_no_reserved" was proven in 0.09 s.
-0.0.Hp: A proof was found: No trace exists. [0.04 s]
-INFO (IPF057): 0.0.Hp: The property "top.axi_slave_0.genPropChksWRInf.genAXI4Full.master_aw_awsize_lte_datawidth" was proven in 0.09 s.
-0.0.Hp: A proof was found: No trace exists. [0.04 s]
-INFO (IPF057): 0.0.Hp: The property "top.axi_slave_0.genPropChksWRInf.assert_aw_wr_tbl_no_overflow" was proven in 0.09 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genStableChks.genStableChksRDInf.master_ar_arvalid_stable:precondition1" was covered in 2 cycles in 0.04 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genPropChksRDInf.genAXI4Full.master_ar_arlen_less_than_TRANS_COUNT:precondition1" was covered in 2 cycles in 0.04 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genPropChksRDInf.genLiveSlaveChksArready.slave_ar_arready_eventually:precondition1" was covered in 2 cycles in 0.04 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genStableChks.genStableChksRDInf.master_ar_araddr_stable:precondition1" was covered in 2 cycles in 0.04 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genStableChks.genStableChksRDInf.master_ar_arprot_stable:precondition1" was covered in 2 cycles in 0.04 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_arid_stable:precondition1" was covered in 2 cycles in 0.04 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_arlen_stable:precondition1" was covered in 2 cycles in 0.04 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_arsize_stable:precondition1" was covered in 2 cycles in 0.04 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_arburst_stable:precondition1" was covered in 2 cycles in 0.04 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_arlock_stable:precondition1" was covered in 2 cycles in 0.04 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_arcache_stable:precondition1" was covered in 2 cycles in 0.04 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_arqos_stable:precondition1" was covered in 2 cycles in 0.04 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_arregion_stable:precondition1" was covered in 2 cycles in 0.04 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_aruser_stable:precondition1" was covered in 2 cycles in 0.04 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genPropChksRDInf.genAXI4Full.gen4KaraddrChk.master_ar_araddr_never_cross_4K_boundary:precondition1" was covered in 2 cycles in 0.04 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genPropChksRDInf.genAXI4Full.master_ar_arburst_no_reserved:precondition1" was covered in 2 cycles in 0.04 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genPropChksRDInf.genAXI4Full.master_ar_arsize_lte_datawidth:precondition1" was covered in 2 cycles in 0.04 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genNoExChks.master_ar_arlock_no_excl_access_throttle_cnstr:precondition1" was covered in 2 cycles in 0.04 s.
 0: ProofGrid is temporarily paused because there are too many pending traces.
 0: ProofGrid is resuming to work after pausing for 0s. The amount of pending traces decreased.
-0.0.Ht: A trace with 2 cycles was found. [0.03 s]
+0.0.Ht: A trace with 2 cycles was found. [0.02 s]
 INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genStableChks.genStableChksWRInf.master_aw_awvalid_stable:precondition1" was covered in 2 cycles in 0.04 s.
 INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genPropChksWRInf.genAXI4Full.master_aw_awlen_less_than_maxlen:precondition1" was covered in 2 cycles in 0.04 s.
 INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genPropChksWRInf.master_w_wvalid_eventually:precondition1" was covered in 2 cycles in 0.04 s.
@@ -741,7 +753,7 @@ INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genPropChksWRInf.gen
 INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genPropChksWRInf.genAXI4Full.master_aw_awsize_lte_datawidth:precondition1" was covered in 2 cycles in 0.04 s.
 INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genPropChksWRInf.genLiveSlaveChksReady.slave_aw_awready_eventually:precondition1" was covered in 2 cycles in 0.04 s.
 INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genNoExChks.master_aw_awlock_no_excl_access_throttle_cnstr:precondition1" was covered in 2 cycles in 0.04 s.
-0.0.B: Stopped processing property "top.axi_slave_0.genStableChks.genStableChksRDInf.master_ar_arvalid_stable"	[0.04 s].
+0.0.B: Stopped processing property "top.axi_slave_0.genStableChks.genStableChksRDInf.master_ar_arvalid_stable"	[0.05 s].
 0.0.B: Starting proof for property "top.axi_slave_0.genStableChks.genStableChksRDInf.slave_r_rvalid_stable:precondition1"	[0.00 s].
 0.0.B: Starting proof for property "top.axi_slave_0.genStableChks.genStableChksRDInf.slave_r_rdata_stable:precondition1"	[0.00 s].
 0.0.B: Starting proof for property "top.axi_slave_0.genStableChks.genStableChksRDInf.slave_r_rresp_stable:precondition1"	[0.00 s].
@@ -750,188 +762,197 @@ INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genNoExChks.master_a
 0.0.B: Starting proof for property "top.axi_slave_0.genStableChks.genStableChksRDInf.genAXI4Full.slave_r_ruser_stable:precondition1"	[0.00 s].
 0.0.B: Trace Attempt  1	[0.00 s]
 0.0.B: Trace Attempt  2	[0.01 s]
-0.0.N: Stopped processing property "top.axi_slave_0.genStableChks.genStableChksRDInf.master_ar_arvalid_stable"	[0.05 s].
-0.0.N: Starting proof for property "top.axi_slave_0.genStableChks.genStableChksRDInf.slave_r_rvalid_stable:precondition1"	[0.00 s].
-0.0.N: Starting proof for property "top.axi_slave_0.genStableChks.genStableChksRDInf.slave_r_rdata_stable:precondition1"	[0.00 s].
-0.0.N: Starting proof for property "top.axi_slave_0.genStableChks.genStableChksRDInf.slave_r_rresp_stable:precondition1"	[0.00 s].
-0.0.N: Starting proof for property "top.axi_slave_0.genStableChks.genStableChksRDInf.genAXI4Full.slave_r_rlast_stable:precondition1"	[0.00 s].
-0.0.N: Starting proof for property "top.axi_slave_0.genStableChks.genStableChksRDInf.genAXI4Full.slave_r_rid_stable:precondition1"	[0.00 s].
-0.0.N: Starting proof for property "top.axi_slave_0.genStableChks.genStableChksRDInf.genAXI4Full.slave_r_ruser_stable:precondition1"	[0.00 s].
+0.0.B: Trace Attempt  3	[0.01 s]
 0.0.N: Trace Attempt  1	[0.00 s]
-0.0.N: Trace Attempt  2	[0.00 s]
 0.0.N: Trace Attempt  2	[0.01 s]
-0.0.N: Trace Attempt  3	[0.01 s]
+0.0.N: Trace Attempt  2	[0.01 s]
 0.0.N: Trace Attempt  3	[0.02 s]
-0.0.Hp: A proof was found: No trace exists. [0.04 s]
-INFO (IPF057): 0.0.Hp: The property "top.axi_slave_0.genPropChksWRInf.assert_w_wr_tbl_no_overflow" was proven in 0.10 s.
-0.0.Hp: A proof was found: No trace exists. [0.05 s]
-INFO (IPF057): 0.0.Hp: The property "top.axi_slave_1.genPropChksRDInf.genAXI4Full.master_ar_arlen_less_than_TRANS_COUNT" was proven in 0.10 s.
-0.0.Hp: A proof was found: No trace exists. [0.06 s]
-INFO (IPF057): 0.0.Hp: The property "top.axi_slave_1.genPropChksRDInf.genAXI4Full.gen4KaraddrChk.master_ar_araddr_never_cross_4K_boundary" was proven in 0.10 s.
-0.0.Hp: A proof was found: No trace exists. [0.06 s]
-INFO (IPF057): 0.0.Hp: The property "top.axi_slave_1.genPropChksRDInf.genAXI4Full.master_ar_arburst_no_reserved" was proven in 0.10 s.
-0.0.Hp: A proof was found: No trace exists. [0.06 s]
-INFO (IPF057): 0.0.Hp: The property "top.axi_slave_1.genPropChksRDInf.genAXI4Full.master_ar_arsize_lte_datawidth" was proven in 0.10 s.
-0.0.Hp: A proof was found: No trace exists. [0.06 s]
-INFO (IPF057): 0.0.Hp: The property "top.axi_slave_1.genPropChksRDInf.assert_ar_rd_tbl_no_overflow" was proven in 0.10 s.
-0.0.Hp: A proof was found: No trace exists. [0.06 s]
-INFO (IPF057): 0.0.Hp: The property "top.axi_slave_1.genPropChksWRInf.genAXI4Full.master_aw_awlen_less_than_maxlen" was proven in 0.10 s.
-0.0.Hp: A proof was found: No trace exists. [0.06 s]
-INFO (IPF057): 0.0.Hp: The property "top.axi_slave_1.genPropChksWRInf.genAXI4Full.gen4KawaddrChk.master_aw_awaddr_never_cross_4K_boundary" was proven in 0.10 s.
-0.0.Hp: A proof was found: No trace exists. [0.06 s]
-INFO (IPF057): 0.0.Hp: The property "top.axi_slave_1.genPropChksWRInf.genAXI4Full.master_aw_awburst_no_reserved" was proven in 0.10 s.
-0.0.Hp: A proof was found: No trace exists. [0.06 s]
-INFO (IPF057): 0.0.Hp: The property "top.axi_slave_1.genPropChksWRInf.genAXI4Full.master_aw_awsize_lte_datawidth" was proven in 0.10 s.
-0.0.Hp: A proof was found: No trace exists. [0.06 s]
-INFO (IPF057): 0.0.Hp: The property "top.axi_slave_1.genPropChksWRInf.assert_aw_wr_tbl_no_overflow" was proven in 0.10 s.
-0.0.Hp: A proof was found: No trace exists. [0.06 s]
-INFO (IPF057): 0.0.Hp: The property "top.axi_slave_1.genPropChksWRInf.assert_w_wr_tbl_no_overflow" was proven in 0.10 s.
-0.0.Hp: A proof was found: No trace exists. [0.06 s]
-INFO (IPF057): 0.0.Hp: The property "top.axi_master_0.genPropChksRDInf.genAXI4Full.slave_r_excl_rresp_no_exokay" was proven in 0.10 s.
-0.0.Hp: A proof was found: No trace exists. [0.06 s]
-INFO (IPF057): 0.0.Hp: The property "top.axi_master_0.genPropChksRDInf.assert_ar_rd_tbl_no_overflow" was proven in 0.10 s.
-0.0.Hp: A proof was found: No trace exists. [0.07 s]
-INFO (IPF057): 0.0.Hp: The property "top.axi_master_1.genPropChksRDInf.genAXI4Full.slave_r_excl_rresp_no_exokay" was proven in 0.10 s.
+0.0.N: Trace Attempt  3	[0.02 s]
 0: ProofGrid is temporarily paused because there are too many pending traces.
 0: ProofGrid is resuming to work after pausing for 0s. The amount of pending traces decreased.
-0.0.Ht: A trace with 2 cycles was found. [0.03 s]
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genPropChksRDInf.genAXI4Full.master_ar_arcache_no_ra_wa_for_uncacheable:precondition1" was covered in 2 cycles in 0.05 s.
-0: ProofGrid is temporarily paused because there are too many pending traces.
-0: ProofGrid is resuming to work after pausing for 0s. The amount of pending traces decreased.
-0.0.Ht: A trace with 2 cycles was found. [0.03 s]
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genPropChksWRInf.genAXI4Full.master_aw_awcache_no_ra_wa_non_modifiable:precondition1" was covered in 2 cycles in 0.05 s.
-0.0.Ht: Trace Attempt  3	[0.04 s]
-0.0.Ht: A trace with 3 cycles was found. [0.04 s]
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_0.genStableChks.genStableChksRDInf.slave_r_rvalid_stable:precondition1" was covered in 3 cycles in 0.06 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_0.genPropChksRDInf.genAXI4Full.slave_r_ar_rid_match:precondition1" was covered in 3 cycles in 0.06 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_0.genPropChksRDInf.slave_r_ar_rvalid_eventually:precondition1" was covered in 3 cycles in 0.06 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_0.genPropChksRDInf.genNoRdTblOverflow.master_ar_rd_tbl_no_overflow:precondition1" was covered in 3 cycles in 0.06 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_0.genPropChksRDInf.assert_ar_rd_tbl_no_overflow:precondition1" was covered in 3 cycles in 0.06 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_0.genStableChks.genStableChksRDInf.slave_r_rdata_stable:precondition1" was covered in 3 cycles in 0.06 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_0.genStableChks.genStableChksRDInf.slave_r_rresp_stable:precondition1" was covered in 3 cycles in 0.06 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_0.genStableChks.genStableChksRDInf.genAXI4Full.slave_r_rlast_stable:precondition1" was covered in 3 cycles in 0.06 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_0.genStableChks.genStableChksRDInf.genAXI4Full.slave_r_rid_stable:precondition1" was covered in 3 cycles in 0.06 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_0.genStableChks.genStableChksRDInf.genAXI4Full.slave_r_ruser_stable:precondition1" was covered in 3 cycles in 0.06 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_0.genPropChksRDInf.genAXI4Full.slave_r_ar_rlast_exact_len:precondition1" was covered in 3 cycles in 0.06 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_0.genPropChksRDInf.genAXI4Full.slave_r_excl_rresp_no_exokay:precondition1" was covered in 3 cycles in 0.06 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_0.genPropChksRDInf.genLiveMasterChksRReady.master_r_rready_eventually:precondition1" was covered in 3 cycles in 0.06 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_0.genPropChksRDInf.genNoRdTblOverflow.genSlv.slave_ar_rd_tbl_no_overflow:precondition1" was covered in 3 cycles in 0.06 s.
-0: ProofGrid is temporarily paused because there are too many pending traces.
-0: ProofGrid is resuming to work after pausing for 0s. The amount of pending traces decreased.
-0.0.Ht: A trace with 3 cycles was found. [0.04 s]
-INFO (IPF055): 0.0.Ht: A counterexample (cex) with 3 cycles was found for the property "top.axi_slave_0.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_arlen_stable" in 0.06 s.
-INFO (IPF055): 0.0.Ht: A counterexample (cex) with 3 cycles was found for the property "top.axi_slave_0.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_arsize_stable" in 0.06 s.
-0: ProofGrid is temporarily paused because there are too many pending traces.
-0: ProofGrid is resuming to work after pausing for 0s. The amount of pending traces decreased.
-0.0.Ht: A trace with 3 cycles was found. [0.05 s]
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_0.genStableChks.genStableChksWRInf.master_aw_awvalid_stable:precondition1" was covered in 3 cycles in 0.07 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_0.genPropChksWRInf.genAXI4Full.master_aw_awlen_less_than_maxlen:precondition1" was covered in 3 cycles in 0.07 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_0.genPropChksWRInf.genAXI4Full.gen4KawaddrChk.master_aw_awaddr_never_cross_4K_boundary:precondition1" was covered in 3 cycles in 0.07 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_0.genPropChksWRInf.genLiveSlaveChksReady.slave_aw_awready_eventually:precondition1" was covered in 3 cycles in 0.07 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_0.genPropChksWRInf.master_w_wvalid_eventually:precondition1" was covered in 3 cycles in 0.07 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_0.genStableChks.genStableChksWRInf.master_aw_awaddr_stable:precondition1" was covered in 3 cycles in 0.07 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_0.genStableChks.genStableChksWRInf.genAXI4Full.master_aw_awid_stable:precondition1" was covered in 3 cycles in 0.07 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_0.genStableChks.genStableChksWRInf.genAXI4Full.master_aw_awlen_stable:precondition1" was covered in 3 cycles in 0.07 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_0.genStableChks.genStableChksWRInf.genAXI4Full.master_aw_awsize_stable:precondition1" was covered in 3 cycles in 0.07 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_0.genStableChks.genStableChksWRInf.genAXI4Full.master_aw_awburst_stable:precondition1" was covered in 3 cycles in 0.07 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_0.genPropChksWRInf.genAXI4Full.master_aw_awburst_no_reserved:precondition1" was covered in 3 cycles in 0.07 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_0.genPropChksWRInf.genAXI4Full.master_aw_awsize_lte_datawidth:precondition1" was covered in 3 cycles in 0.07 s.
-0.0.B: Trace Attempt  3	[0.01 s]
-0.0.B: A trace with 3 cycles was found. [0.03 s]
-INFO (IPF047): 0.0.B: The cover property "top.axi_master_0.genStableChks.genStableChksRDInf.slave_r_rvalid_stable:precondition1" was covered in 3 cycles in 0.03 s by the incidental trace "".
-INFO (IPF047): 0.0.B: The cover property "top.axi_master_0.genPropChksRDInf.genAXI4Full.slave_r_ar_rid_match:precondition1" was covered in 3 cycles in 0.03 s by the incidental trace "".
-INFO (IPF047): 0.0.B: The cover property "top.axi_master_0.genStableChks.genStableChksRDInf.slave_r_rdata_stable:precondition1" was covered in 3 cycles in 0.03 s by the incidental trace "".
-INFO (IPF047): 0.0.B: The cover property "top.axi_master_0.genStableChks.genStableChksRDInf.slave_r_rresp_stable:precondition1" was covered in 3 cycles in 0.03 s by the incidental trace "".
-INFO (IPF047): 0.0.B: The cover property "top.axi_master_0.genStableChks.genStableChksRDInf.genAXI4Full.slave_r_rlast_stable:precondition1" was covered in 3 cycles in 0.03 s by the incidental trace "".
-INFO (IPF047): 0.0.B: The cover property "top.axi_master_0.genStableChks.genStableChksRDInf.genAXI4Full.slave_r_rid_stable:precondition1" was covered in 3 cycles in 0.03 s by the incidental trace "".
-INFO (IPF047): 0.0.B: The cover property "top.axi_master_0.genPropChksRDInf.genAXI4Full.slave_r_ar_rlast_exact_len:precondition1" was covered in 3 cycles in 0.03 s by the incidental trace "".
-INFO (IPF047): 0.0.B: The cover property "top.axi_master_0.genPropChksRDInf.genAXI4Full.slave_r_excl_rresp_no_exokay:precondition1" was covered in 3 cycles in 0.03 s by the incidental trace "".
-INFO (IPF047): 0.0.B: The cover property "top.axi_master_0.genPropChksRDInf.genLiveMasterChksRReady.master_r_rready_eventually:precondition1" was covered in 3 cycles in 0.03 s by the incidental trace "".
-0.0.B: Stopped processing property "top.axi_slave_0.genStableChks.genStableChksRDInf.slave_r_rvalid_stable:precondition1"	[0.03 s].
-0.0.B: Stopped processing property "top.axi_slave_0.genStableChks.genStableChksRDInf.slave_r_rdata_stable:precondition1"	[0.03 s].
-0.0.B: Stopped processing property "top.axi_slave_0.genStableChks.genStableChksRDInf.slave_r_rresp_stable:precondition1"	[0.03 s].
-0.0.B: Stopped processing property "top.axi_slave_0.genStableChks.genStableChksRDInf.genAXI4Full.slave_r_rlast_stable:precondition1"	[0.03 s].
-0.0.B: Stopped processing property "top.axi_slave_0.genStableChks.genStableChksRDInf.genAXI4Full.slave_r_rid_stable:precondition1"	[0.03 s].
-0.0.B: Stopped processing property "top.axi_slave_0.genStableChks.genStableChksRDInf.genAXI4Full.slave_r_ruser_stable:precondition1"	[0.03 s].
-0.0.B: Starting proof for property "top.axi_slave_0.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_arlen_stable"	[0.00 s].
-0.0.B: Trace Attempt  1	[0.00 s]
-0.0.B: Stopped processing property "top.axi_slave_0.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_arlen_stable"	[0.00 s].
-0.0.B: Starting proof for property "top.axi_slave_0.genStableChks.genStableChksWRInf.master_aw_awvalid_stable"	[0.00 s].
-0.0.B: Trace Attempt  1	[0.00 s]
-0.0.B: Trace Attempt  2	[0.01 s]
-0.0.B: Trace Attempt  3	[0.01 s]
+0.0.N: A trace with 3 cycles was found. [0.03 s]
+INFO (IPF047): 0.0.N: The cover property "top.axi_slave_0.genStableChks.genStableChksRDInf.slave_r_rvalid_stable:precondition1" was covered in 3 cycles in 0.02 s.
+INFO (IPF047): 0.0.N: The cover property "top.axi_slave_0.genPropChksRDInf.genAXI4Full.slave_r_ar_rid_match:precondition1" was covered in 3 cycles in 0.02 s by the incidental trace "top.axi_slave_0.genStableChks.genStableChksRDInf.slave_r_rvalid_stable:precondition1".
+INFO (IPF047): 0.0.N: The cover property "top.axi_slave_0.genPropChksRDInf.slave_r_ar_rvalid_eventually:precondition1" was covered in 3 cycles in 0.02 s by the incidental trace "top.axi_slave_0.genStableChks.genStableChksRDInf.slave_r_rvalid_stable:precondition1".
+INFO (IPF047): 0.0.N: The cover property "top.axi_slave_0.genPropChksRDInf.genNoRdTblOverflow.master_ar_rd_tbl_no_overflow:precondition1" was covered in 3 cycles in 0.02 s by the incidental trace "top.axi_slave_0.genStableChks.genStableChksRDInf.slave_r_rvalid_stable:precondition1".
+INFO (IPF047): 0.0.N: The cover property "top.axi_slave_0.genPropChksRDInf.assert_ar_rd_tbl_no_overflow:precondition1" was covered in 3 cycles in 0.02 s by the incidental trace "top.axi_slave_0.genStableChks.genStableChksRDInf.slave_r_rvalid_stable:precondition1".
+INFO (IPF047): 0.0.N: The cover property "top.axi_slave_0.genStableChks.genStableChksRDInf.slave_r_rdata_stable:precondition1" was covered in 3 cycles in 0.02 s.
+INFO (IPF047): 0.0.N: The cover property "top.axi_slave_0.genStableChks.genStableChksRDInf.slave_r_rresp_stable:precondition1" was covered in 3 cycles in 0.02 s.
+INFO (IPF047): 0.0.N: The cover property "top.axi_slave_0.genStableChks.genStableChksRDInf.genAXI4Full.slave_r_rlast_stable:precondition1" was covered in 3 cycles in 0.02 s.
+INFO (IPF047): 0.0.N: The cover property "top.axi_slave_0.genStableChks.genStableChksRDInf.genAXI4Full.slave_r_rid_stable:precondition1" was covered in 3 cycles in 0.02 s.
+INFO (IPF047): 0.0.N: The cover property "top.axi_slave_0.genStableChks.genStableChksRDInf.genAXI4Full.slave_r_ruser_stable:precondition1" was covered in 3 cycles in 0.02 s.
+INFO (IPF047): 0.0.N: The cover property "top.axi_slave_0.genPropChksRDInf.genAXI4Full.slave_r_ar_rlast_exact_len:precondition1" was covered in 3 cycles in 0.02 s by the incidental trace "top.axi_slave_0.genStableChks.genStableChksRDInf.slave_r_rvalid_stable:precondition1".
+INFO (IPF047): 0.0.N: The cover property "top.axi_slave_0.genPropChksRDInf.genAXI4Full.slave_r_excl_rresp_no_exokay:precondition1" was covered in 3 cycles in 0.02 s by the incidental trace "top.axi_slave_0.genStableChks.genStableChksRDInf.slave_r_rvalid_stable:precondition1".
+INFO (IPF047): 0.0.N: The cover property "top.axi_slave_0.genPropChksRDInf.genLiveMasterChksRReady.master_r_rready_eventually:precondition1" was covered in 3 cycles in 0.02 s by the incidental trace "top.axi_slave_0.genStableChks.genStableChksRDInf.slave_r_rvalid_stable:precondition1".
+INFO (IPF047): 0.0.N: The cover property "top.axi_slave_0.genPropChksRDInf.genNoRdTblOverflow.genSlv.slave_ar_rd_tbl_no_overflow:precondition1" was covered in 3 cycles in 0.02 s by the incidental trace "top.axi_slave_0.genStableChks.genStableChksRDInf.slave_r_rvalid_stable:precondition1".
 0.0.N: Stopped processing property "top.axi_slave_0.genStableChks.genStableChksRDInf.slave_r_rvalid_stable:precondition1"	[0.03 s].
 0.0.N: Stopped processing property "top.axi_slave_0.genStableChks.genStableChksRDInf.slave_r_rdata_stable:precondition1"	[0.03 s].
 0.0.N: Stopped processing property "top.axi_slave_0.genStableChks.genStableChksRDInf.slave_r_rresp_stable:precondition1"	[0.03 s].
 0.0.N: Stopped processing property "top.axi_slave_0.genStableChks.genStableChksRDInf.genAXI4Full.slave_r_rlast_stable:precondition1"	[0.03 s].
 0.0.N: Stopped processing property "top.axi_slave_0.genStableChks.genStableChksRDInf.genAXI4Full.slave_r_rid_stable:precondition1"	[0.03 s].
 0.0.N: Stopped processing property "top.axi_slave_0.genStableChks.genStableChksRDInf.genAXI4Full.slave_r_ruser_stable:precondition1"	[0.03 s].
-0.0.N: Starting proof for property "top.axi_slave_0.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_arlen_stable"	[0.00 s].
-0.0.N: Stopped processing property "top.axi_slave_0.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_arlen_stable"	[0.00 s].
-0.0.N: Starting proof for property "top.axi_slave_0.genStableChks.genStableChksWRInf.master_aw_awvalid_stable"	[0.00 s].
-0.0.N: Trace Attempt  1	[0.00 s]
-0.0.N: Trace Attempt  2	[0.00 s]
-0.0.N: Trace Attempt  3	[0.00 s]
-0.0.N: Trace Attempt  3	[0.01 s]
-0.0.N: Trace Attempt  4	[0.02 s]
+0.0.Hp: A proof was found: No trace exists. [0.04 s]
+INFO (IPF057): 0.0.Hp: The property "top.axi_slave_0.genPropChksRDInf.genAXI4Full.gen4KaraddrChk.master_ar_araddr_never_cross_4K_boundary" was proven in 0.11 s.
+0.0.Hp: A proof was found: No trace exists. [0.04 s]
+INFO (IPF057): 0.0.Hp: The property "top.axi_slave_0.genPropChksRDInf.genAXI4Full.master_ar_arburst_no_reserved" was proven in 0.12 s.
+0.0.Hp: A proof was found: No trace exists. [0.04 s]
+INFO (IPF057): 0.0.Hp: The property "top.axi_slave_0.genPropChksRDInf.genAXI4Full.master_ar_arsize_lte_datawidth" was proven in 0.12 s.
+0.0.Hp: A proof was found: No trace exists. [0.04 s]
+INFO (IPF057): 0.0.Hp: The property "top.axi_slave_0.genPropChksRDInf.assert_ar_rd_tbl_no_overflow" was proven in 0.12 s.
+0.0.Hp: A proof was found: No trace exists. [0.04 s]
+INFO (IPF057): 0.0.Hp: The property "top.axi_slave_0.genPropChksWRInf.genAXI4Full.master_aw_awlen_less_than_maxlen" was proven in 0.12 s.
+0.0.Hp: A proof was found: No trace exists. [0.04 s]
+INFO (IPF057): 0.0.Hp: The property "top.axi_slave_0.genPropChksWRInf.genAXI4Full.gen4KawaddrChk.master_aw_awaddr_never_cross_4K_boundary" was proven in 0.12 s.
+0.0.Hp: A proof was found: No trace exists. [0.04 s]
+INFO (IPF057): 0.0.Hp: The property "top.axi_slave_0.genPropChksWRInf.genAXI4Full.master_aw_awburst_no_reserved" was proven in 0.12 s.
+0.0.Hp: A proof was found: No trace exists. [0.04 s]
+INFO (IPF057): 0.0.Hp: The property "top.axi_slave_0.genPropChksWRInf.genAXI4Full.master_aw_awsize_lte_datawidth" was proven in 0.12 s.
+0.0.Hp: A proof was found: No trace exists. [0.04 s]
+INFO (IPF057): 0.0.Hp: The property "top.axi_slave_0.genPropChksWRInf.assert_aw_wr_tbl_no_overflow" was proven in 0.12 s.
+0.0.Hp: A proof was found: No trace exists. [0.04 s]
+INFO (IPF057): 0.0.Hp: The property "top.axi_slave_0.genPropChksWRInf.assert_w_wr_tbl_no_overflow" was proven in 0.12 s.
+0.0.Hp: A proof was found: No trace exists. [0.05 s]
+INFO (IPF057): 0.0.Hp: The property "top.axi_slave_1.genPropChksRDInf.genAXI4Full.master_ar_arlen_less_than_TRANS_COUNT" was proven in 0.12 s.
+0.0.Hp: A proof was found: No trace exists. [0.05 s]
+INFO (IPF057): 0.0.Hp: The property "top.axi_slave_1.genPropChksRDInf.genAXI4Full.gen4KaraddrChk.master_ar_araddr_never_cross_4K_boundary" was proven in 0.12 s.
+0.0.Hp: A proof was found: No trace exists. [0.05 s]
+INFO (IPF057): 0.0.Hp: The property "top.axi_slave_1.genPropChksRDInf.genAXI4Full.master_ar_arburst_no_reserved" was proven in 0.12 s.
+0.0.Hp: A proof was found: No trace exists. [0.05 s]
+INFO (IPF057): 0.0.Hp: The property "top.axi_slave_1.genPropChksRDInf.genAXI4Full.master_ar_arsize_lte_datawidth" was proven in 0.12 s.
+0.0.Hp: A proof was found: No trace exists. [0.06 s]
+INFO (IPF057): 0.0.Hp: The property "top.axi_slave_1.genPropChksRDInf.assert_ar_rd_tbl_no_overflow" was proven in 0.12 s.
+0.0.Hp: A proof was found: No trace exists. [0.06 s]
+INFO (IPF057): 0.0.Hp: The property "top.axi_slave_1.genPropChksWRInf.genAXI4Full.master_aw_awlen_less_than_maxlen" was proven in 0.12 s.
+0.0.Hp: A proof was found: No trace exists. [0.06 s]
+INFO (IPF057): 0.0.Hp: The property "top.axi_slave_1.genPropChksWRInf.genAXI4Full.gen4KawaddrChk.master_aw_awaddr_never_cross_4K_boundary" was proven in 0.12 s.
+0.0.Hp: A proof was found: No trace exists. [0.06 s]
+INFO (IPF057): 0.0.Hp: The property "top.axi_slave_1.genPropChksWRInf.genAXI4Full.master_aw_awburst_no_reserved" was proven in 0.12 s.
+0.0.Hp: A proof was found: No trace exists. [0.06 s]
+INFO (IPF057): 0.0.Hp: The property "top.axi_slave_1.genPropChksWRInf.genAXI4Full.master_aw_awsize_lte_datawidth" was proven in 0.12 s.
+0.0.Hp: A proof was found: No trace exists. [0.06 s]
+INFO (IPF057): 0.0.Hp: The property "top.axi_slave_1.genPropChksWRInf.assert_aw_wr_tbl_no_overflow" was proven in 0.12 s.
+0.0.Hp: A proof was found: No trace exists. [0.06 s]
+INFO (IPF057): 0.0.Hp: The property "top.axi_slave_1.genPropChksWRInf.assert_w_wr_tbl_no_overflow" was proven in 0.12 s.
+0.0.Hp: A proof was found: No trace exists. [0.06 s]
+INFO (IPF057): 0.0.Hp: The property "top.axi_master_0.genPropChksRDInf.genAXI4Full.slave_r_excl_rresp_no_exokay" was proven in 0.12 s.
+0.0.Hp: A proof was found: No trace exists. [0.06 s]
+INFO (IPF057): 0.0.Hp: The property "top.axi_master_0.genPropChksRDInf.assert_ar_rd_tbl_no_overflow" was proven in 0.12 s.
+0.0.Hp: A proof was found: No trace exists. [0.06 s]
+INFO (IPF057): 0.0.Hp: The property "top.axi_master_1.genPropChksRDInf.genAXI4Full.slave_r_excl_rresp_no_exokay" was proven in 0.12 s.
+0.0.Hp: A proof was found: No trace exists. [0.06 s]
+INFO (IPF057): 0.0.Hp: The property "top.axi_master_1.genPropChksRDInf.assert_ar_rd_tbl_no_overflow" was proven in 0.12 s.
 0.0.Hp: A proof was found: No trace exists. [0.07 s]
-INFO (IPF057): 0.0.Hp: The property "top.axi_master_1.genPropChksRDInf.assert_ar_rd_tbl_no_overflow" was proven in 0.13 s.
+INFO (IPF057): 0.0.Hp: The property "top.axi_master_1.genPropChksWRInf.assert_aw_wr_tbl_no_overflow" was proven in 0.12 s.
 0.0.Hp: A proof was found: No trace exists. [0.07 s]
-INFO (IPF057): 0.0.Hp: The property "top.axi_master_1.genPropChksWRInf.assert_aw_wr_tbl_no_overflow" was proven in 0.13 s.
+INFO (IPF057): 0.0.Hp: The property "top.axi_master_1.genPropChksWRInf.genNoDbcWChks.assert_w_aw_no_dbc" was proven in 0.12 s.
 0.0.Hp: A proof was found: No trace exists. [0.07 s]
-INFO (IPF057): 0.0.Hp: The property "top.axi_master_1.genPropChksWRInf.genNoDbcWChks.assert_w_aw_no_dbc" was proven in 0.13 s.
+INFO (IPF057): 0.0.Hp: The property "top.axi_master_1.genPropChksWRInf.assert_w_wr_tbl_no_overflow" was proven in 0.12 s.
 0.0.Hp: A proof was found: No trace exists. [0.07 s]
-INFO (IPF057): 0.0.Hp: The property "top.axi_master_1.genPropChksWRInf.assert_w_wr_tbl_no_overflow" was proven in 0.13 s.
-0.0.Hp: A proof was found: No trace exists. [0.07 s]
-INFO (IPF057): 0.0.Hp: The property "top.axi_master_1.genPropChksWRInf.slave_b_excl_bresp_no_exokay_supported" was proven in 0.13 s.
+INFO (IPF057): 0.0.Hp: The property "top.axi_master_1.genPropChksWRInf.slave_b_excl_bresp_no_exokay_supported" was proven in 0.12 s.
 0.0.Hp: Trace Attempt  1	[0.07 s]
-0.0.Ht: A trace with 3 cycles was found. [0.05 s]
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_0.genStableChks.genStableChksWRInf.master_w_wvalid_stable:precondition1" was covered in 3 cycles in 0.08 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_0.genPropChksWRInf.master_w_aw_wlast_exact_len:precondition1" was covered in 3 cycles in 0.08 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_0.genPropChksWRInf.master_w_aw_wlast_exact_len:precondition3" was covered in 3 cycles in 0.08 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_0.genPropChksWRInf.genLiveSlaveChksReady.slave_w_wready_eventually:precondition1" was covered in 3 cycles in 0.08 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genStableChks.genStableChksWRInf.master_w_wvalid_stable:precondition1" was covered in 3 cycles in 0.08 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genPropChksWRInf.master_w_aw_wlast_exact_len:precondition1" was covered in 3 cycles in 0.08 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genPropChksWRInf.master_w_aw_wlast_exact_len:precondition3" was covered in 3 cycles in 0.08 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genPropChksWRInf.genLiveSlaveChksReady.slave_w_wready_eventually:precondition1" was covered in 3 cycles in 0.08 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_0.genStableChks.genStableChksWRInf.master_w_wdata_stable:precondition1" was covered in 3 cycles in 0.08 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_0.genStableChks.genStableChksWRInf.master_w_wstrb_stable:precondition1" was covered in 3 cycles in 0.08 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_0.genStableChks.genStableChksWRInf.genAXI4Full.master_w_wlast_stable:precondition1" was covered in 3 cycles in 0.08 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genStableChks.genStableChksWRInf.master_w_wdata_stable:precondition1" was covered in 3 cycles in 0.08 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genStableChks.genStableChksWRInf.master_w_wstrb_stable:precondition1" was covered in 3 cycles in 0.08 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genStableChks.genStableChksWRInf.genAXI4Full.master_w_wuser_stable:precondition1" was covered in 3 cycles in 0.08 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genStableChks.genStableChksWRInf.genAXI4Full.master_w_wlast_stable:precondition1" was covered in 3 cycles in 0.08 s.
+0: ProofGrid is temporarily paused because there are too many pending traces.
+0: ProofGrid is resuming to work after pausing for 0s. The amount of pending traces decreased.
+0.0.Ht: A trace with 2 cycles was found. [0.02 s]
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genPropChksRDInf.genAXI4Full.master_ar_arcache_no_ra_wa_for_uncacheable:precondition1" was covered in 2 cycles in 0.06 s.
+0: ProofGrid is temporarily paused because there are too many pending traces.
+0: ProofGrid is resuming to work after pausing for 0s. The amount of pending traces decreased.
+0.0.Ht: A trace with 2 cycles was found. [0.02 s]
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genPropChksWRInf.genAXI4Full.master_aw_awcache_no_ra_wa_non_modifiable:precondition1" was covered in 2 cycles in 0.07 s.
+0.0.Ht: Trace Attempt  3	[0.03 s]
+0.0.Ht: A trace with 3 cycles was found. [0.03 s]
+INFO (IPF055): 0.0.Ht: A counterexample (cex) with 3 cycles was found for the property "top.axi_slave_0.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_arburst_stable" in 0.08 s.
 0: ProofGrid is temporarily paused because there are too many pending traces.
 0: ProofGrid is resuming to work after pausing for 0s. The amount of pending traces decreased.
 0.0.Ht: A trace with 3 cycles was found. [0.06 s]
-INFO (IPF055): 0.0.Ht: A counterexample (cex) with 3 cycles was found for the property "top.axi_slave_0.genPropChksRDInf.genNoRdTblOverflow.master_ar_rd_tbl_no_overflow" in 0.09 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_0.genStableChks.genStableChksWRInf.master_aw_awvalid_stable:precondition1" was covered in 3 cycles in 0.08 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_0.genPropChksWRInf.genAXI4Full.master_aw_awlen_less_than_maxlen:precondition1" was covered in 3 cycles in 0.08 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_0.genPropChksWRInf.genAXI4Full.gen4KawaddrChk.master_aw_awaddr_never_cross_4K_boundary:precondition1" was covered in 3 cycles in 0.08 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_0.genPropChksWRInf.genLiveSlaveChksReady.slave_aw_awready_eventually:precondition1" was covered in 3 cycles in 0.08 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_0.genPropChksWRInf.master_w_wvalid_eventually:precondition1" was covered in 3 cycles in 0.08 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_0.genStableChks.genStableChksWRInf.master_aw_awaddr_stable:precondition1" was covered in 3 cycles in 0.08 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_0.genStableChks.genStableChksWRInf.genAXI4Full.master_aw_awid_stable:precondition1" was covered in 3 cycles in 0.08 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_0.genStableChks.genStableChksWRInf.genAXI4Full.master_aw_awlen_stable:precondition1" was covered in 3 cycles in 0.08 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_0.genStableChks.genStableChksWRInf.genAXI4Full.master_aw_awsize_stable:precondition1" was covered in 3 cycles in 0.08 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_0.genStableChks.genStableChksWRInf.genAXI4Full.master_aw_awburst_stable:precondition1" was covered in 3 cycles in 0.08 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_0.genPropChksWRInf.genAXI4Full.master_aw_awburst_no_reserved:precondition1" was covered in 3 cycles in 0.08 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_0.genPropChksWRInf.genAXI4Full.master_aw_awsize_lte_datawidth:precondition1" was covered in 3 cycles in 0.08 s.
+0: ProofGrid is temporarily paused because there are too many pending traces.
+0: ProofGrid is resuming to work after pausing for 0s. The amount of pending traces decreased.
 0.0.Ht: A trace with 3 cycles was found. [0.06 s]
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_1.genStableChks.genStableChksRDInf.slave_r_rvalid_stable:precondition1" was covered in 3 cycles in 0.09 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_1.genPropChksRDInf.genAXI4Full.slave_r_ar_rid_match:precondition1" was covered in 3 cycles in 0.09 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_1.genStableChks.genStableChksRDInf.slave_r_rdata_stable:precondition1" was covered in 3 cycles in 0.09 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_1.genStableChks.genStableChksRDInf.slave_r_rresp_stable:precondition1" was covered in 3 cycles in 0.09 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_1.genStableChks.genStableChksRDInf.genAXI4Full.slave_r_rlast_stable:precondition1" was covered in 3 cycles in 0.09 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_1.genStableChks.genStableChksRDInf.genAXI4Full.slave_r_rid_stable:precondition1" was covered in 3 cycles in 0.09 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_1.genStableChks.genStableChksRDInf.genAXI4Full.slave_r_ruser_stable:precondition1" was covered in 3 cycles in 0.09 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_1.genPropChksRDInf.genAXI4Full.slave_r_ar_rlast_exact_len:precondition1" was covered in 3 cycles in 0.09 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_1.genPropChksRDInf.genAXI4Full.slave_r_excl_rresp_no_exokay:precondition1" was covered in 3 cycles in 0.09 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_1.genPropChksRDInf.genLiveMasterChksRReady.master_r_rready_eventually:precondition1" was covered in 3 cycles in 0.09 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_0.genStableChks.genStableChksWRInf.master_w_wvalid_stable:precondition1" was covered in 3 cycles in 0.09 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_0.genPropChksWRInf.master_w_aw_wlast_exact_len:precondition1" was covered in 3 cycles in 0.09 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_0.genPropChksWRInf.master_w_aw_wlast_exact_len:precondition3" was covered in 3 cycles in 0.09 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_0.genPropChksWRInf.genLiveSlaveChksReady.slave_w_wready_eventually:precondition1" was covered in 3 cycles in 0.09 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genStableChks.genStableChksWRInf.master_w_wvalid_stable:precondition1" was covered in 3 cycles in 0.09 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genPropChksWRInf.master_w_aw_wlast_exact_len:precondition1" was covered in 3 cycles in 0.09 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genPropChksWRInf.master_w_aw_wlast_exact_len:precondition3" was covered in 3 cycles in 0.09 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genPropChksWRInf.genLiveSlaveChksReady.slave_w_wready_eventually:precondition1" was covered in 3 cycles in 0.09 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_0.genStableChks.genStableChksWRInf.master_w_wdata_stable:precondition1" was covered in 3 cycles in 0.09 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_0.genStableChks.genStableChksWRInf.master_w_wstrb_stable:precondition1" was covered in 3 cycles in 0.09 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_0.genStableChks.genStableChksWRInf.genAXI4Full.master_w_wlast_stable:precondition1" was covered in 3 cycles in 0.09 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genStableChks.genStableChksWRInf.master_w_wdata_stable:precondition1" was covered in 3 cycles in 0.09 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genStableChks.genStableChksWRInf.master_w_wstrb_stable:precondition1" was covered in 3 cycles in 0.09 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genStableChks.genStableChksWRInf.genAXI4Full.master_w_wuser_stable:precondition1" was covered in 3 cycles in 0.09 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genStableChks.genStableChksWRInf.genAXI4Full.master_w_wlast_stable:precondition1" was covered in 3 cycles in 0.09 s.
+0.0.B: Stopped processing property "top.axi_slave_0.genStableChks.genStableChksRDInf.slave_r_rvalid_stable:precondition1"	[0.04 s].
+0.0.B: Stopped processing property "top.axi_slave_0.genStableChks.genStableChksRDInf.slave_r_rdata_stable:precondition1"	[0.04 s].
+0.0.B: Stopped processing property "top.axi_slave_0.genStableChks.genStableChksRDInf.slave_r_rresp_stable:precondition1"	[0.04 s].
+0.0.B: Stopped processing property "top.axi_slave_0.genStableChks.genStableChksRDInf.genAXI4Full.slave_r_rlast_stable:precondition1"	[0.04 s].
+0.0.B: Stopped processing property "top.axi_slave_0.genStableChks.genStableChksRDInf.genAXI4Full.slave_r_rid_stable:precondition1"	[0.04 s].
+0.0.B: Stopped processing property "top.axi_slave_0.genStableChks.genStableChksRDInf.genAXI4Full.slave_r_ruser_stable:precondition1"	[0.04 s].
+0.0.B: Starting proof for property "top.axi_slave_0.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_arburst_stable"	[0.00 s].
+0.0.B: Trace Attempt  1	[0.00 s]
+0.0.B: Trace Attempt  2	[0.01 s]
+0.0.B: Trace Attempt  3	[0.01 s]
+0.0.B: Stopped processing property "top.axi_slave_0.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_arburst_stable"	[0.00 s].
+0.0.B: Starting proof for property "top.axi_slave_0.genStableChks.genStableChksWRInf.master_aw_awvalid_stable"	[0.00 s].
+0.0.B: Trace Attempt  1	[0.00 s]
+0.0.B: Trace Attempt  2	[0.01 s]
+0.0.B: Trace Attempt  3	[0.01 s]
+0.0.N: Starting proof for property "top.axi_slave_0.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_arburst_stable"	[0.00 s].
+0.0.N: Trace Attempt  1	[0.00 s]
+0.0.N: Trace Attempt  2	[0.01 s]
+0.0.N: Trace Attempt  3	[0.01 s]
+0.0.N: Trace Attempt  3	[0.01 s]
+0.0.N: Stopped processing property "top.axi_slave_0.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_arburst_stable"	[0.00 s].
+0.0.N: Starting proof for property "top.axi_slave_0.genStableChks.genStableChksWRInf.master_aw_awvalid_stable"	[0.00 s].
+0.0.N: Trace Attempt  1	[0.00 s]
+0.0.N: Trace Attempt  2	[0.01 s]
+0.0.N: Trace Attempt  3	[0.01 s]
+0.0.N: Trace Attempt  3	[0.01 s]
+0.0.N: Trace Attempt  4	[0.02 s]
+0.0.Ht: A trace with 3 cycles was found. [0.06 s]
+INFO (IPF055): 0.0.Ht: A counterexample (cex) with 3 cycles was found for the property "top.axi_slave_0.genPropChksRDInf.genNoRdTblOverflow.master_ar_rd_tbl_no_overflow" in 0.10 s.
 0: ProofGrid is temporarily paused because there are too many pending traces.
 0: ProofGrid is resuming to work after pausing for 0s. The amount of pending traces decreased.
 0.0.Ht: A trace with 3 cycles was found. [0.07 s]
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_1.genStableChks.genStableChksWRInf.master_aw_awvalid_stable:precondition1" was covered in 3 cycles in 0.10 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_1.genPropChksWRInf.genAXI4Full.master_aw_awlen_less_than_maxlen:precondition1" was covered in 3 cycles in 0.10 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_1.genPropChksWRInf.genAXI4Full.gen4KawaddrChk.master_aw_awaddr_never_cross_4K_boundary:precondition1" was covered in 3 cycles in 0.10 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_1.genPropChksWRInf.genLiveSlaveChksReady.slave_aw_awready_eventually:precondition1" was covered in 3 cycles in 0.10 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_1.genPropChksWRInf.master_w_wvalid_eventually:precondition1" was covered in 3 cycles in 0.10 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_1.genStableChks.genStableChksWRInf.master_aw_awaddr_stable:precondition1" was covered in 3 cycles in 0.10 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_1.genStableChks.genStableChksWRInf.genAXI4Full.master_aw_awid_stable:precondition1" was covered in 3 cycles in 0.10 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_1.genStableChks.genStableChksWRInf.genAXI4Full.master_aw_awlen_stable:precondition1" was covered in 3 cycles in 0.10 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_1.genStableChks.genStableChksWRInf.genAXI4Full.master_aw_awsize_stable:precondition1" was covered in 3 cycles in 0.10 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_1.genStableChks.genStableChksWRInf.genAXI4Full.master_aw_awburst_stable:precondition1" was covered in 3 cycles in 0.10 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_1.genPropChksWRInf.genAXI4Full.master_aw_awburst_no_reserved:precondition1" was covered in 3 cycles in 0.10 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_1.genPropChksWRInf.genAXI4Full.master_aw_awsize_lte_datawidth:precondition1" was covered in 3 cycles in 0.10 s.
-0.0.Ht: A trace with 3 cycles was found. [0.10 s]
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_1.genStableChks.genStableChksRDInf.slave_r_rvalid_stable:precondition1" was covered in 3 cycles in 0.10 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_0.genStableChks.genStableChksRDInf.slave_r_rvalid_stable:precondition1" was covered in 3 cycles in 0.10 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_1.genStableChks.genStableChksRDInf.slave_r_rdata_stable:precondition1" was covered in 3 cycles in 0.10 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_1.genStableChks.genStableChksRDInf.slave_r_rresp_stable:precondition1" was covered in 3 cycles in 0.10 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_1.genStableChks.genStableChksRDInf.genAXI4Full.slave_r_rlast_stable:precondition1" was covered in 3 cycles in 0.10 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_1.genStableChks.genStableChksRDInf.genAXI4Full.slave_r_rid_stable:precondition1" was covered in 3 cycles in 0.10 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_1.genStableChks.genStableChksRDInf.genAXI4Full.slave_r_ruser_stable:precondition1" was covered in 3 cycles in 0.10 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_0.genStableChks.genStableChksRDInf.slave_r_rdata_stable:precondition1" was covered in 3 cycles in 0.10 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_0.genStableChks.genStableChksRDInf.slave_r_rresp_stable:precondition1" was covered in 3 cycles in 0.10 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_0.genStableChks.genStableChksRDInf.genAXI4Full.slave_r_rlast_stable:precondition1" was covered in 3 cycles in 0.10 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_0.genStableChks.genStableChksRDInf.genAXI4Full.slave_r_rid_stable:precondition1" was covered in 3 cycles in 0.10 s.
+0.0.Ht: A trace with 3 cycles was found. [0.07 s]
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_1.genStableChks.genStableChksWRInf.master_aw_awvalid_stable:precondition1" was covered in 3 cycles in 0.11 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_1.genPropChksWRInf.genAXI4Full.master_aw_awlen_less_than_maxlen:precondition1" was covered in 3 cycles in 0.11 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_1.genPropChksWRInf.genAXI4Full.gen4KawaddrChk.master_aw_awaddr_never_cross_4K_boundary:precondition1" was covered in 3 cycles in 0.11 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_1.genPropChksWRInf.genLiveSlaveChksReady.slave_aw_awready_eventually:precondition1" was covered in 3 cycles in 0.11 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_1.genPropChksWRInf.master_w_wvalid_eventually:precondition1" was covered in 3 cycles in 0.11 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_1.genStableChks.genStableChksWRInf.master_aw_awaddr_stable:precondition1" was covered in 3 cycles in 0.11 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_1.genStableChks.genStableChksWRInf.genAXI4Full.master_aw_awid_stable:precondition1" was covered in 3 cycles in 0.11 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_1.genStableChks.genStableChksWRInf.genAXI4Full.master_aw_awlen_stable:precondition1" was covered in 3 cycles in 0.11 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_1.genStableChks.genStableChksWRInf.genAXI4Full.master_aw_awsize_stable:precondition1" was covered in 3 cycles in 0.11 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_1.genStableChks.genStableChksWRInf.genAXI4Full.master_aw_awburst_stable:precondition1" was covered in 3 cycles in 0.11 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_1.genPropChksWRInf.genAXI4Full.master_aw_awburst_no_reserved:precondition1" was covered in 3 cycles in 0.11 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_1.genPropChksWRInf.genAXI4Full.master_aw_awsize_lte_datawidth:precondition1" was covered in 3 cycles in 0.11 s.
+0: ProofGrid is temporarily paused because there are too many pending traces.
+0: ProofGrid is resuming to work after pausing for 0s. The amount of pending traces decreased.
+0.0.Ht: A trace with 3 cycles was found. [0.07 s]
 INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_1.genStableChks.genStableChksWRInf.master_w_wvalid_stable:precondition1" was covered in 3 cycles in 0.11 s.
 INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_1.genPropChksWRInf.master_w_aw_wlast_exact_len:precondition1" was covered in 3 cycles in 0.11 s.
 INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_1.genPropChksWRInf.master_w_aw_wlast_exact_len:precondition3" was covered in 3 cycles in 0.11 s.
@@ -940,44 +961,32 @@ INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_1.genStableChks.genStab
 INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_1.genStableChks.genStableChksWRInf.master_w_wstrb_stable:precondition1" was covered in 3 cycles in 0.11 s.
 INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_1.genStableChks.genStableChksWRInf.genAXI4Full.master_w_wlast_stable:precondition1" was covered in 3 cycles in 0.11 s.
 0.0.B: Trace Attempt  4	[0.03 s]
+0.0.B: A trace with 4 cycles was found. [0.05 s]
+INFO (IPF055): 0.0.B: A counterexample (cex) with 4 cycles was found for the property "top.axi_slave_0.genStableChks.genStableChksWRInf.master_aw_awvalid_stable" in 0.03 s.
+INFO (IPF055): 0.0.B: A counterexample (cex) with 4 cycles was found for the property "top.axi_slave_0.genStableChks.genStableChksWRInf.master_aw_awaddr_stable" in 0.03 s by the incidental trace "top.axi_slave_0.genStableChks.genStableChksWRInf.master_aw_awvalid_stable".
+INFO (IPF055): 0.0.B: A counterexample (cex) with 4 cycles was found for the property "top.axi_slave_0.genStableChks.genStableChksWRInf.genAXI4Full.master_aw_awlen_stable" in 0.03 s by the incidental trace "top.axi_slave_0.genStableChks.genStableChksWRInf.master_aw_awvalid_stable".
+INFO (IPF055): 0.0.B: A counterexample (cex) with 4 cycles was found for the property "top.axi_slave_0.genStableChks.genStableChksWRInf.genAXI4Full.master_aw_awsize_stable" in 0.03 s by the incidental trace "top.axi_slave_0.genStableChks.genStableChksWRInf.master_aw_awvalid_stable".
+0.0.B: Stopped processing property "top.axi_slave_0.genStableChks.genStableChksWRInf.master_aw_awvalid_stable"	[0.03 s].
 0.0.N: Trace Attempt  4	[0.03 s]
-0.0.N: A trace with 4 cycles was found. [0.04 s]
-INFO (IPF055): 0.0.N: A counterexample (cex) with 4 cycles was found for the property "top.axi_slave_0.genStableChks.genStableChksWRInf.master_aw_awvalid_stable" in 0.04 s.
-INFO (IPF055): 0.0.N: A counterexample (cex) with 4 cycles was found for the property "top.axi_slave_0.genStableChks.genStableChksWRInf.master_aw_awaddr_stable" in 0.04 s by the incidental trace "top.axi_slave_0.genStableChks.genStableChksWRInf.master_aw_awvalid_stable".
-INFO (IPF055): 0.0.N: A counterexample (cex) with 4 cycles was found for the property "top.axi_slave_0.genStableChks.genStableChksWRInf.genAXI4Full.master_aw_awlen_stable" in 0.04 s by the incidental trace "top.axi_slave_0.genStableChks.genStableChksWRInf.master_aw_awvalid_stable".
-INFO (IPF055): 0.0.N: A counterexample (cex) with 4 cycles was found for the property "top.axi_slave_0.genStableChks.genStableChksWRInf.genAXI4Full.master_aw_awsize_stable" in 0.04 s by the incidental trace "top.axi_slave_0.genStableChks.genStableChksWRInf.master_aw_awvalid_stable".
-INFO (IPF055): 0.0.N: A counterexample (cex) with 4 cycles was found for the property "top.axi_slave_0.genStableChks.genStableChksWRInf.genAXI4Full.master_aw_awburst_stable" in 0.04 s by the incidental trace "top.axi_slave_0.genStableChks.genStableChksWRInf.master_aw_awvalid_stable".
-0.0.N: Stopped processing property "top.axi_slave_0.genStableChks.genStableChksWRInf.master_aw_awvalid_stable"	[0.04 s].
+0.0.N: Stopped processing property "top.axi_slave_0.genStableChks.genStableChksWRInf.master_aw_awvalid_stable"	[0.03 s].
+0.0.Ht: A trace with 3 cycles was found. [0.12 s]
+INFO (IPF055): 0.0.Ht: A counterexample (cex) with 3 cycles was found for the property "top.axi_master_0.genPropChksRDInf.genNoRdTblOverflow.genSlv.slave_ar_rd_tbl_no_overflow" in 0.13 s.
+0.0.Ht: Trace Attempt  4	[0.13 s]
 0: ProofGrid is temporarily paused because there are too many pending traces.
 0: ProofGrid is resuming to work after pausing for 0s. The amount of pending traces decreased.
-0.0.Ht: A trace with 3 cycles was found. [0.11 s]
-INFO (IPF055): 0.0.Ht: A counterexample (cex) with 3 cycles was found for the property "top.axi_master_0.genPropChksRDInf.genNoRdTblOverflow.genSlv.slave_ar_rd_tbl_no_overflow" in 0.12 s.
-0.0.Ht: Trace Attempt  4	[0.12 s]
-0.0.Ht: A trace with 4 cycles was found. [0.12 s]
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genPropChksRDInf.slave_r_ar_rvalid_eventually:precondition1" was covered in 4 cycles in 0.12 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genPropChksRDInf.genNoRdTblOverflow.master_ar_rd_tbl_no_overflow:precondition1" was covered in 4 cycles in 0.12 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genPropChksRDInf.genNoRdTblOverflow.genSlv.slave_ar_rd_tbl_no_overflow:precondition1" was covered in 4 cycles in 0.12 s.
-0: ProofGrid is temporarily paused because there are too many pending traces.
-0: ProofGrid is resuming to work after pausing for 0s. The amount of pending traces decreased.
-0.0.Ht: A trace with 4 cycles was found. [0.12 s]
+0.0.Ht: A trace with 4 cycles was found. [0.13 s]
 INFO (IPF055): 0.0.Ht: A counterexample (cex) with 4 cycles was found for the property "top.axi_slave_0.genStableChks.genStableChksWRInf.genAXI4Full.master_aw_awid_stable" in 0.13 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genPropChksRDInf.assert_ar_rd_tbl_no_overflow:precondition1" was covered in 4 cycles in 0.13 s.
-0.0.B: Stopped processing property "top.axi_slave_0.genStableChks.genStableChksWRInf.master_aw_awvalid_stable"	[0.06 s].
 0.0.B: Starting proof for property "top.axi_slave_0.genStableChks.genStableChksWRInf.master_w_wvalid_stable"	[0.00 s].
 0.0.B: Trace Attempt  1	[0.00 s]
 0.0.B: Trace Attempt  2	[0.01 s]
-0.0.B: Trace Attempt  3	[0.01 s]
 0.0.N: Starting proof for property "top.axi_slave_0.genStableChks.genStableChksWRInf.master_w_wvalid_stable"	[0.00 s].
 0.0.N: Trace Attempt  1	[0.00 s]
 0.0.N: Trace Attempt  2	[0.01 s]
 0.0.N: Trace Attempt  3	[0.01 s]
 0.0.N: Trace Attempt  3	[0.01 s]
-0.0.N: Trace Attempt  4	[0.02 s]
-0.0.Ht: A trace with 4 cycles was found. [0.13 s]
+0.0.Ht: A trace with 4 cycles was found. [0.15 s]
 INFO (IPF055): 0.0.Ht: A counterexample (cex) with 4 cycles was found for the property "top.axi_slave_0.genStableChks.genStableChksWRInf.master_w_wvalid_stable" in 0.14 s.
 INFO (IPF055): 0.0.Ht: A counterexample (cex) with 4 cycles was found for the property "top.axi_slave_0.genStableChks.genStableChksWRInf.master_w_wdata_stable" in 0.14 s.
-INFO (IPF055): 0.0.Ht: A counterexample (cex) with 4 cycles was found for the property "top.axi_slave_0.genStableChks.genStableChksWRInf.master_w_wstrb_stable" in 0.14 s.
-INFO (IPF055): 0.0.Ht: A counterexample (cex) with 4 cycles was found for the property "top.axi_slave_0.genStableChks.genStableChksWRInf.genAXI4Full.master_w_wlast_stable" in 0.14 s.
 INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_0.genPropChksWRInf.genNoWrTblOverflow.master_aw_wr_tbl_no_overflow:precondition1" was covered in 4 cycles in 0.14 s.
 INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_0.genPropChksWRInf.assert_aw_wr_tbl_no_overflow:precondition1" was covered in 4 cycles in 0.14 s.
 INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genPropChksWRInf.genNoWrTblOverflow.master_aw_wr_tbl_no_overflow:precondition1" was covered in 4 cycles in 0.14 s.
@@ -987,284 +996,298 @@ INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_0.genPropChksWRInf.genN
 INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genPropChksWRInf.genNoWrTblOverflow.genSlv.slave_aw_wr_tbl_no_overflow:precondition1" was covered in 4 cycles in 0.14 s.
 0: ProofGrid is temporarily paused because there are too many pending traces.
 0: ProofGrid is resuming to work after pausing for 0s. The amount of pending traces decreased.
-0.0.Ht: A trace with 4 cycles was found. [0.13 s]
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_0.genStableChks.genStableChksWRInf.slave_b_bvalid_stable:precondition1" was covered in 4 cycles in 0.14 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_0.genPropChksWRInf.genNoWrDatTblOverflow.master_w_wr_tbl_no_overflow:precondition1" was covered in 4 cycles in 0.14 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_0.genPropChksWRInf.assert_w_wr_tbl_no_overflow:precondition1" was covered in 4 cycles in 0.14 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_0.genPropChksWRInf.genAXI4FullWrResp.slave_b_aw_bid_match:precondition1" was covered in 4 cycles in 0.14 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_0.genPropChksWRInf.slave_b_excl_bresp_no_exokay_supported:precondition1" was covered in 4 cycles in 0.14 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_0.genPropChksWRInf.slave_b_bvalid_eventually:precondition1" was covered in 4 cycles in 0.14 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genPropChksWRInf.genNoWrDatTblOverflow.master_w_wr_tbl_no_overflow:precondition1" was covered in 4 cycles in 0.14 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genPropChksWRInf.assert_w_wr_tbl_no_overflow:precondition1" was covered in 4 cycles in 0.14 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genPropChksWRInf.slave_b_bvalid_eventually:precondition1" was covered in 4 cycles in 0.14 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_0.genStableChks.genStableChksWRInf.slave_b_bresp_stable:precondition1" was covered in 4 cycles in 0.14 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_0.genStableChks.genStableChksWRInf.genAXI4Full.slave_b_bid_stable:precondition1" was covered in 4 cycles in 0.14 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_0.genStableChks.genStableChksWRInf.genAXI4Full.slave_b_buser_stable:precondition1" was covered in 4 cycles in 0.14 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_0.genPropChksWRInf.genNoWrDatTblOverflow.genSlv.slave_w_wr_tbl_no_overflow:precondition1" was covered in 4 cycles in 0.14 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_0.genPropChksWRInf.genAXI4FullWrResp.slave_b_aw_bid_order_within_id:precondition1" was covered in 4 cycles in 0.14 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_0.genPropChksWRInf.genLiveMasterChksBReady.master_b_bready_eventually:precondition1" was covered in 4 cycles in 0.14 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genPropChksWRInf.genNoWrDatTblOverflow.genSlv.slave_w_wr_tbl_no_overflow:precondition1" was covered in 4 cycles in 0.14 s.
-0.0.Ht: A trace with 4 cycles was found. [0.14 s]
-INFO (IPF055): 0.0.Ht: A counterexample (cex) with 4 cycles was found for the property "top.axi_slave_0.genPropChksWRInf.genNoDbcWChks.assert_w_aw_no_dbc" in 0.15 s.
-0.0.B: Trace Attempt  4	[0.03 s]
-0.0.N: Trace Attempt  4	[0.03 s]
+0.0.Ht: A trace with 4 cycles was found. [0.15 s]
+INFO (IPF055): 0.0.Ht: A counterexample (cex) with 4 cycles was found for the property "top.axi_slave_0.genStableChks.genStableChksWRInf.master_w_wstrb_stable" in 0.14 s.
+0.0.Ht: A trace with 4 cycles was found. [0.15 s]
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_0.genStableChks.genStableChksWRInf.slave_b_bvalid_stable:precondition1" was covered in 4 cycles in 0.15 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_0.genPropChksWRInf.genNoWrDatTblOverflow.master_w_wr_tbl_no_overflow:precondition1" was covered in 4 cycles in 0.15 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_0.genPropChksWRInf.assert_w_wr_tbl_no_overflow:precondition1" was covered in 4 cycles in 0.15 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_0.genPropChksWRInf.genAXI4FullWrResp.slave_b_aw_bid_match:precondition1" was covered in 4 cycles in 0.15 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_0.genPropChksWRInf.slave_b_excl_bresp_no_exokay_supported:precondition1" was covered in 4 cycles in 0.15 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_0.genPropChksWRInf.slave_b_bvalid_eventually:precondition1" was covered in 4 cycles in 0.15 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genPropChksWRInf.genNoWrDatTblOverflow.master_w_wr_tbl_no_overflow:precondition1" was covered in 4 cycles in 0.15 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genPropChksWRInf.assert_w_wr_tbl_no_overflow:precondition1" was covered in 4 cycles in 0.15 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genPropChksWRInf.slave_b_bvalid_eventually:precondition1" was covered in 4 cycles in 0.15 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_0.genStableChks.genStableChksWRInf.slave_b_bresp_stable:precondition1" was covered in 4 cycles in 0.15 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_0.genStableChks.genStableChksWRInf.genAXI4Full.slave_b_bid_stable:precondition1" was covered in 4 cycles in 0.15 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_0.genStableChks.genStableChksWRInf.genAXI4Full.slave_b_buser_stable:precondition1" was covered in 4 cycles in 0.15 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_0.genPropChksWRInf.genNoWrDatTblOverflow.genSlv.slave_w_wr_tbl_no_overflow:precondition1" was covered in 4 cycles in 0.15 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_0.genPropChksWRInf.genAXI4FullWrResp.slave_b_aw_bid_order_within_id:precondition1" was covered in 4 cycles in 0.15 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_0.genPropChksWRInf.genLiveMasterChksBReady.master_b_bready_eventually:precondition1" was covered in 4 cycles in 0.15 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genPropChksWRInf.genNoWrDatTblOverflow.genSlv.slave_w_wr_tbl_no_overflow:precondition1" was covered in 4 cycles in 0.15 s.
+0.0.B: Trace Attempt  3	[0.01 s]
+0.0.B: Stopped processing property "top.axi_slave_0.genStableChks.genStableChksWRInf.master_w_wvalid_stable"	[0.02 s].
+0.0.B: Starting proof for property "top.axi_slave_0.genStableChks.genStableChksWRInf.slave_b_bvalid_stable:precondition1"	[0.00 s].
+0.0.B: Starting proof for property "top.axi_slave_0.genStableChks.genStableChksWRInf.slave_b_bresp_stable:precondition1"	[0.00 s].
+0.0.B: Starting proof for property "top.axi_slave_0.genStableChks.genStableChksWRInf.genAXI4Full.slave_b_bid_stable:precondition1"	[0.00 s].
+0.0.B: Starting proof for property "top.axi_slave_0.genStableChks.genStableChksWRInf.genAXI4Full.slave_b_buser_stable:precondition1"	[0.00 s].
+0.0.N: Trace Attempt  4	[0.02 s]
 0.0.N: Stopped processing property "top.axi_slave_0.genStableChks.genStableChksWRInf.master_w_wvalid_stable"	[0.02 s].
-0.0.N: Starting proof for property "top.axi_slave_0.genPropChksWRInf.genNoWrTblOverflow.master_aw_wr_tbl_no_overflow"	[0.00 s].
+0.0.N: Starting proof for property "top.axi_slave_0.genStableChks.genStableChksWRInf.slave_b_bvalid_stable:precondition1"	[0.00 s].
+0.0.N: Starting proof for property "top.axi_slave_0.genStableChks.genStableChksWRInf.slave_b_bresp_stable:precondition1"	[0.00 s].
+0.0.N: Starting proof for property "top.axi_slave_0.genStableChks.genStableChksWRInf.genAXI4Full.slave_b_bid_stable:precondition1"	[0.00 s].
+0.0.N: Starting proof for property "top.axi_slave_0.genStableChks.genStableChksWRInf.genAXI4Full.slave_b_buser_stable:precondition1"	[0.00 s].
 0.0.N: Trace Attempt  1	[0.00 s]
-0.0.N: Trace Attempt  2	[0.00 s]
-0.0.N: Trace Attempt  3	[0.00 s]
-0.0.Ht: A trace with 4 cycles was found. [0.16 s]
-INFO (IPF055): 0.0.Ht: A counterexample (cex) with 4 cycles was found for the property "top.axi_slave_1.genStableChks.genStableChksRDInf.master_ar_arvalid_stable" in 0.15 s.
-INFO (IPF055): 0.0.Ht: A counterexample (cex) with 4 cycles was found for the property "top.axi_slave_1.genStableChks.genStableChksRDInf.master_ar_araddr_stable" in 0.15 s.
-INFO (IPF055): 0.0.Ht: A counterexample (cex) with 4 cycles was found for the property "top.axi_slave_1.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_arsize_stable" in 0.15 s.
-INFO (IPF055): 0.0.Ht: A counterexample (cex) with 4 cycles was found for the property "top.axi_slave_1.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_arburst_stable" in 0.15 s.
-0: ProofGrid is temporarily paused because there are too many pending traces.
-0: ProofGrid is resuming to work after pausing for 0s. The amount of pending traces decreased.
-0.0.Ht: A trace with 4 cycles was found. [0.16 s]
-INFO (IPF055): 0.0.Ht: A counterexample (cex) with 4 cycles was found for the property "top.axi_slave_1.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_arid_stable" in 0.16 s.
-0.0.Ht: A trace with 4 cycles was found. [0.16 s]
-INFO (IPF055): 0.0.Ht: A counterexample (cex) with 4 cycles was found for the property "top.axi_slave_1.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_arlen_stable" in 0.16 s.
+0.0.N: Trace Attempt  2	[0.01 s]
+0.0.N: Trace Attempt  3	[0.01 s]
 0: ProofGrid is temporarily paused because there are too many pending traces.
 0: ProofGrid is resuming to work after pausing for 0s. The amount of pending traces decreased.
 0.0.Ht: A trace with 4 cycles was found. [0.17 s]
-INFO (IPF055): 0.0.Ht: A counterexample (cex) with 4 cycles was found for the property "top.axi_slave_1.genStableChks.genStableChksWRInf.master_aw_awvalid_stable" in 0.17 s.
-INFO (IPF055): 0.0.Ht: A counterexample (cex) with 4 cycles was found for the property "top.axi_slave_1.genStableChks.genStableChksWRInf.master_aw_awaddr_stable" in 0.17 s.
-INFO (IPF055): 0.0.Ht: A counterexample (cex) with 4 cycles was found for the property "top.axi_slave_1.genStableChks.genStableChksWRInf.genAXI4Full.master_aw_awlen_stable" in 0.17 s.
-INFO (IPF055): 0.0.Ht: A counterexample (cex) with 4 cycles was found for the property "top.axi_slave_1.genStableChks.genStableChksWRInf.genAXI4Full.master_aw_awburst_stable" in 0.17 s.
-0.0.B: Stopped processing property "top.axi_slave_0.genStableChks.genStableChksWRInf.master_w_wvalid_stable"	[0.04 s].
+INFO (IPF055): 0.0.Ht: A counterexample (cex) with 4 cycles was found for the property "top.axi_slave_0.genStableChks.genStableChksWRInf.genAXI4Full.master_w_wlast_stable" in 0.16 s.
+0.0.Ht: A trace with 4 cycles was found. [0.17 s]
+INFO (IPF055): 0.0.Ht: A counterexample (cex) with 4 cycles was found for the property "top.axi_slave_0.genPropChksWRInf.genNoDbcWChks.assert_w_aw_no_dbc" in 0.16 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_1.genPropChksWRInf.genNoWrTblOverflow.master_aw_wr_tbl_no_overflow:precondition1" was covered in 4 cycles in 0.16 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_1.genPropChksWRInf.assert_aw_wr_tbl_no_overflow:precondition1" was covered in 4 cycles in 0.16 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_1.genPropChksWRInf.master_w_aw_wlast_exact_len:precondition2" was covered in 4 cycles in 0.16 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_1.genPropChksWRInf.genNoWrTblOverflow.genSlv.slave_aw_wr_tbl_no_overflow:precondition1" was covered in 4 cycles in 0.16 s.
+0: ProofGrid is temporarily paused because there are too many pending traces.
+0: ProofGrid is resuming to work after pausing for 0s. The amount of pending traces decreased.
+0.0.Ht: A trace with 4 cycles was found. [0.17 s]
+INFO (IPF055): 0.0.Ht: A counterexample (cex) with 4 cycles was found for the property "top.axi_slave_1.genStableChks.genStableChksRDInf.master_ar_arvalid_stable" in 0.17 s.
+INFO (IPF055): 0.0.Ht: A counterexample (cex) with 4 cycles was found for the property "top.axi_slave_1.genStableChks.genStableChksRDInf.master_ar_araddr_stable" in 0.17 s.
+0.0.B: Trace Attempt  1	[0.00 s]
+0.0.B: Stopped processing property "top.axi_slave_0.genStableChks.genStableChksWRInf.slave_b_bvalid_stable:precondition1"	[0.02 s].
+0.0.B: Stopped processing property "top.axi_slave_0.genStableChks.genStableChksWRInf.slave_b_bresp_stable:precondition1"	[0.02 s].
+0.0.B: Stopped processing property "top.axi_slave_0.genStableChks.genStableChksWRInf.genAXI4Full.slave_b_bid_stable:precondition1"	[0.02 s].
+0.0.B: Stopped processing property "top.axi_slave_0.genStableChks.genStableChksWRInf.genAXI4Full.slave_b_buser_stable:precondition1"	[0.02 s].
+0.0.B: Starting proof for property "top.axi_slave_0.genStableChks.genStableChksWRInf.genAXI4Full.master_aw_awburst_stable"	[0.00 s].
+0.0.B: Trace Attempt  1	[0.00 s]
+0.0.B: Trace Attempt  2	[0.01 s]
+0.0.B: Trace Attempt  3	[0.01 s]
+0.0.N: Stopped processing property "top.axi_slave_0.genStableChks.genStableChksWRInf.slave_b_bvalid_stable:precondition1"	[0.02 s].
+0.0.N: Stopped processing property "top.axi_slave_0.genStableChks.genStableChksWRInf.slave_b_bresp_stable:precondition1"	[0.02 s].
+0.0.N: Stopped processing property "top.axi_slave_0.genStableChks.genStableChksWRInf.genAXI4Full.slave_b_bid_stable:precondition1"	[0.02 s].
+0.0.N: Stopped processing property "top.axi_slave_0.genStableChks.genStableChksWRInf.genAXI4Full.slave_b_buser_stable:precondition1"	[0.02 s].
+0.0.N: Starting proof for property "top.axi_slave_0.genStableChks.genStableChksWRInf.genAXI4Full.master_aw_awburst_stable"	[0.00 s].
+0.0.N: Trace Attempt  1	[0.00 s]
+0.0.N: Trace Attempt  2	[0.01 s]
+0.0.N: Trace Attempt  3	[0.01 s]
+0.0.N: Trace Attempt  3	[0.01 s]
+0.0.N: Trace Attempt  4	[0.02 s]
+0.0.Ht: A trace with 4 cycles was found. [0.18 s]
+INFO (IPF055): 0.0.Ht: A counterexample (cex) with 4 cycles was found for the property "top.axi_slave_1.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_arid_stable" in 0.17 s.
+0.0.Ht: A trace with 4 cycles was found. [0.18 s]
+INFO (IPF055): 0.0.Ht: A counterexample (cex) with 4 cycles was found for the property "top.axi_slave_1.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_arlen_stable" in 0.18 s.
+0: ProofGrid is temporarily paused because there are too many pending traces.
+0: ProofGrid is resuming to work after pausing for 0s. The amount of pending traces decreased.
+0.0.Ht: A trace with 4 cycles was found. [0.18 s]
+INFO (IPF055): 0.0.Ht: A counterexample (cex) with 4 cycles was found for the property "top.axi_slave_1.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_arsize_stable" in 0.18 s.
+0.0.Ht: A trace with 4 cycles was found. [0.20 s]
+INFO (IPF055): 0.0.Ht: A counterexample (cex) with 4 cycles was found for the property "top.axi_slave_1.genStableChks.genStableChksWRInf.master_aw_awvalid_stable" in 0.19 s.
+INFO (IPF055): 0.0.Ht: A counterexample (cex) with 4 cycles was found for the property "top.axi_slave_1.genStableChks.genStableChksWRInf.master_aw_awaddr_stable" in 0.19 s.
+INFO (IPF055): 0.0.Ht: A counterexample (cex) with 4 cycles was found for the property "top.axi_slave_1.genStableChks.genStableChksWRInf.genAXI4Full.master_aw_awlen_stable" in 0.19 s.
+0.0.B: Trace Attempt  4	[0.03 s]
+0.0.N: Trace Attempt  4	[0.03 s]
+0.0.N: Trace Attempt  5	[0.04 s]
+0: ProofGrid is temporarily paused because there are too many pending traces.
+0: ProofGrid is resuming to work after pausing for 0s. The amount of pending traces decreased.
+0.0.Ht: A trace with 4 cycles was found. [0.21 s]
+INFO (IPF055): 0.0.Ht: A counterexample (cex) with 4 cycles was found for the property "top.axi_slave_1.genStableChks.genStableChksWRInf.master_w_wvalid_stable" in 0.19 s.
+INFO (IPF055): 0.0.Ht: A counterexample (cex) with 4 cycles was found for the property "top.axi_slave_1.genStableChks.genStableChksWRInf.master_w_wdata_stable" in 0.19 s.
+INFO (IPF055): 0.0.Ht: A counterexample (cex) with 4 cycles was found for the property "top.axi_slave_1.genStableChks.genStableChksWRInf.master_w_wstrb_stable" in 0.19 s.
+INFO (IPF055): 0.0.Ht: A counterexample (cex) with 4 cycles was found for the property "top.axi_slave_1.genStableChks.genStableChksWRInf.genAXI4Full.master_w_wlast_stable" in 0.19 s.
+0.0.Ht: A trace with 4 cycles was found. [0.21 s]
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_1.genStableChks.genStableChksWRInf.slave_b_bvalid_stable:precondition1" was covered in 4 cycles in 0.20 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_1.genPropChksWRInf.genNoWrDatTblOverflow.master_w_wr_tbl_no_overflow:precondition1" was covered in 4 cycles in 0.20 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_1.genPropChksWRInf.assert_w_wr_tbl_no_overflow:precondition1" was covered in 4 cycles in 0.20 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_1.genPropChksWRInf.genAXI4FullWrResp.slave_b_aw_bid_match:precondition1" was covered in 4 cycles in 0.20 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_1.genPropChksWRInf.slave_b_excl_bresp_no_exokay_supported:precondition1" was covered in 4 cycles in 0.20 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_1.genPropChksWRInf.slave_b_bvalid_eventually:precondition1" was covered in 4 cycles in 0.20 s.
+INFO (IPF055): 0.0.Ht: A counterexample (cex) with 4 cycles was found for the property "top.axi_master_1.genPropChksWRInf.genNoWrDatTblOverflow.genSlv.slave_w_wr_tbl_no_overflow" in 0.20 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_1.genStableChks.genStableChksWRInf.slave_b_bresp_stable:precondition1" was covered in 4 cycles in 0.20 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_1.genStableChks.genStableChksWRInf.genAXI4Full.slave_b_bid_stable:precondition1" was covered in 4 cycles in 0.20 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_1.genStableChks.genStableChksWRInf.genAXI4Full.slave_b_buser_stable:precondition1" was covered in 4 cycles in 0.20 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_1.genPropChksWRInf.genNoWrDatTblOverflow.genSlv.slave_w_wr_tbl_no_overflow:precondition1" was covered in 4 cycles in 0.20 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_1.genPropChksWRInf.genAXI4FullWrResp.slave_b_aw_bid_order_within_id:precondition1" was covered in 4 cycles in 0.20 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_1.genPropChksWRInf.genLiveMasterChksBReady.master_b_bready_eventually:precondition1" was covered in 4 cycles in 0.20 s.
+0.0.Ht: A trace with 4 cycles was found. [0.21 s]
+INFO (IPF055): 0.0.Ht: A counterexample (cex) with 4 cycles was found for the property "top.axi_slave_1.genStableChks.genStableChksWRInf.genAXI4Full.master_aw_awid_stable" in 0.20 s.
+0.0.N: Trace Attempt  5	[0.05 s]
+0: ProofGrid is temporarily paused because there are too many pending traces.
+0: ProofGrid is resuming to work after pausing for 0s. The amount of pending traces decreased.
+0.0.Ht: A trace with 4 cycles was found. [0.22 s]
+INFO (IPF055): 0.0.Ht: A counterexample (cex) with 4 cycles was found for the property "top.axi_slave_1.genStableChks.genStableChksWRInf.genAXI4Full.master_aw_awsize_stable" in 0.21 s.
+0.0.Ht: A trace with 4 cycles was found. [0.22 s]
+INFO (IPF055): 0.0.Ht: A counterexample (cex) with 4 cycles was found for the property "top.axi_master_0.genStableChks.genStableChksRDInf.slave_r_rvalid_stable" in 0.21 s.
+INFO (IPF055): 0.0.Ht: A counterexample (cex) with 4 cycles was found for the property "top.axi_master_0.genStableChks.genStableChksRDInf.genAXI4Full.slave_r_rlast_stable" in 0.21 s.
+INFO (IPF055): 0.0.Ht: A counterexample (cex) with 4 cycles was found for the property "top.axi_master_0.genStableChks.genStableChksRDInf.genAXI4Full.slave_r_rid_stable" in 0.21 s.
+0.0.Ht: A trace with 4 cycles was found. [0.23 s]
+INFO (IPF055): 0.0.Ht: A counterexample (cex) with 4 cycles was found for the property "top.axi_master_0.genStableChks.genStableChksRDInf.slave_r_rdata_stable" in 0.22 s.
+0.0.B: Trace Attempt  5	[0.05 s]
+0: ProofGrid is temporarily paused because there are too many pending traces.
+0: ProofGrid is resuming to work after pausing for 0s. The amount of pending traces decreased.
+0.0.Ht: A trace with 4 cycles was found. [0.23 s]
+INFO (IPF055): 0.0.Ht: A counterexample (cex) with 4 cycles was found for the property "top.axi_master_0.genStableChks.genStableChksRDInf.slave_r_rresp_stable" in 0.22 s.
+0.0.Ht: A trace with 4 cycles was found. [0.24 s]
+INFO (IPF055): 0.0.Ht: A counterexample (cex) with 4 cycles was found for the property "top.axi_master_0.genPropChksRDInf.genAXI4Full.slave_r_ar_rid_match" in 0.23 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genPropChksRDInf.slave_r_ar_rvalid_eventually:precondition1" was covered in 4 cycles in 0.23 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genPropChksRDInf.genNoRdTblOverflow.master_ar_rd_tbl_no_overflow:precondition1" was covered in 4 cycles in 0.23 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genPropChksRDInf.assert_ar_rd_tbl_no_overflow:precondition1" was covered in 4 cycles in 0.23 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genPropChksRDInf.genNoRdTblOverflow.genSlv.slave_ar_rd_tbl_no_overflow:precondition1" was covered in 4 cycles in 0.23 s.
+0.0.Ht: A trace with 4 cycles was found. [0.24 s]
+INFO (IPF055): 0.0.Ht: A counterexample (cex) with 4 cycles was found for the property "top.axi_master_0.genPropChksRDInf.genAXI4Full.slave_r_ar_rlast_exact_len" in 0.23 s.
+0: ProofGrid is temporarily paused because there are too many pending traces.
+0: ProofGrid is resuming to work after pausing for 0s. The amount of pending traces decreased.
+0.0.B: A trace with 5 cycles was found. [0.07 s]
+INFO (IPF055): 0.0.B: A counterexample (cex) with 5 cycles was found for the property "top.axi_slave_0.genStableChks.genStableChksWRInf.genAXI4Full.master_aw_awburst_stable" in 0.07 s.
+0.0.B: Stopped processing property "top.axi_slave_0.genStableChks.genStableChksWRInf.genAXI4Full.master_aw_awburst_stable"	[0.07 s].
+0.0.N: Stopped processing property "top.axi_slave_0.genStableChks.genStableChksWRInf.genAXI4Full.master_aw_awburst_stable"	[0.07 s].
+0.0.Ht: A trace with 4 cycles was found. [0.25 s]
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genStableChks.genStableChksRDInf.slave_r_rvalid_stable:precondition1" was covered in 4 cycles in 0.25 s.
+INFO (IPF055): 0.0.Ht: A counterexample (cex) with 4 cycles was found for the property "top.axi_master_1.genPropChksRDInf.genAXI4Full.slave_r_ar_rid_match" in 0.25 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genPropChksRDInf.genAXI4Full.slave_r_ar_rid_match:precondition1" was covered in 4 cycles in 0.25 s.
+INFO (IPF055): 0.0.Ht: A counterexample (cex) with 4 cycles was found for the property "top.axi_master_1.genPropChksRDInf.genAXI4Full.slave_r_ar_rlast_exact_len" in 0.25 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genStableChks.genStableChksRDInf.slave_r_rdata_stable:precondition1" was covered in 4 cycles in 0.25 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genStableChks.genStableChksRDInf.slave_r_rresp_stable:precondition1" was covered in 4 cycles in 0.25 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genStableChks.genStableChksRDInf.genAXI4Full.slave_r_rlast_stable:precondition1" was covered in 4 cycles in 0.25 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genStableChks.genStableChksRDInf.genAXI4Full.slave_r_rid_stable:precondition1" was covered in 4 cycles in 0.25 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genPropChksRDInf.genAXI4Full.slave_r_ar_rlast_exact_len:precondition1" was covered in 4 cycles in 0.25 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genPropChksRDInf.genAXI4Full.slave_r_excl_rresp_no_exokay:precondition1" was covered in 4 cycles in 0.25 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genPropChksRDInf.genLiveMasterChksRReady.master_r_rready_eventually:precondition1" was covered in 4 cycles in 0.25 s.
+0.0.Ht: A trace with 4 cycles was found. [0.25 s]
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genStableChks.genStableChksWRInf.slave_b_bvalid_stable:precondition1" was covered in 4 cycles in 0.25 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genPropChksWRInf.genAXI4FullWrResp.slave_b_aw_bid_match:precondition1" was covered in 4 cycles in 0.25 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genPropChksWRInf.slave_b_excl_bresp_no_exokay_supported:precondition1" was covered in 4 cycles in 0.25 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genStableChks.genStableChksWRInf.slave_b_bresp_stable:precondition1" was covered in 4 cycles in 0.25 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genStableChks.genStableChksWRInf.genAXI4Full.slave_b_bid_stable:precondition1" was covered in 4 cycles in 0.25 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genPropChksWRInf.genAXI4FullWrResp.slave_b_aw_bid_order_within_id:precondition1" was covered in 4 cycles in 0.25 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genPropChksWRInf.genLiveMasterChksBReady.master_b_bready_eventually:precondition1" was covered in 4 cycles in 0.25 s.
+0: ProofGrid is temporarily paused because there are too many pending traces.
+0: ProofGrid is resuming to work after pausing for 0s. The amount of pending traces decreased.
+0.0.Ht: A trace with 4 cycles was found. [0.26 s]
+INFO (IPF055): 0.0.Ht: A counterexample (cex) with 4 cycles was found for the property "top.axi_master_1.genPropChksRDInf.genNoRdTblOverflow.genSlv.slave_ar_rd_tbl_no_overflow" in 0.26 s.
 0.0.B: Starting proof for property "top.axi_slave_0.genPropChksWRInf.genNoWrTblOverflow.master_aw_wr_tbl_no_overflow"	[0.00 s].
 0.0.B: Trace Attempt  1	[0.00 s]
 0.0.B: Trace Attempt  2	[0.01 s]
-0.0.B: Trace Attempt  3	[0.01 s]
-0.0.N: Trace Attempt  3	[0.01 s]
-0.0.N: Trace Attempt  4	[0.01 s]
-0.0.N: Trace Attempt  4	[0.02 s]
-0.0.N: Trace Attempt  5	[0.03 s]
-0.0.Ht: A trace with 4 cycles was found. [0.18 s]
-INFO (IPF055): 0.0.Ht: A counterexample (cex) with 4 cycles was found for the property "top.axi_slave_1.genStableChks.genStableChksWRInf.master_w_wvalid_stable" in 0.17 s.
-INFO (IPF055): 0.0.Ht: A counterexample (cex) with 4 cycles was found for the property "top.axi_slave_1.genStableChks.genStableChksWRInf.master_w_wdata_stable" in 0.17 s.
-INFO (IPF055): 0.0.Ht: A counterexample (cex) with 4 cycles was found for the property "top.axi_slave_1.genStableChks.genStableChksWRInf.master_w_wstrb_stable" in 0.17 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_1.genPropChksWRInf.genNoWrTblOverflow.master_aw_wr_tbl_no_overflow:precondition1" was covered in 4 cycles in 0.17 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_1.genPropChksWRInf.assert_aw_wr_tbl_no_overflow:precondition1" was covered in 4 cycles in 0.17 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_1.genPropChksWRInf.genNoWrTblOverflow.genSlv.slave_aw_wr_tbl_no_overflow:precondition1" was covered in 4 cycles in 0.17 s.
-0.0.Ht: A trace with 4 cycles was found. [0.18 s]
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_1.genStableChks.genStableChksWRInf.slave_b_bvalid_stable:precondition1" was covered in 4 cycles in 0.18 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_1.genPropChksWRInf.genNoWrDatTblOverflow.master_w_wr_tbl_no_overflow:precondition1" was covered in 4 cycles in 0.18 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_1.genPropChksWRInf.assert_w_wr_tbl_no_overflow:precondition1" was covered in 4 cycles in 0.18 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_1.genPropChksWRInf.genAXI4FullWrResp.slave_b_aw_bid_match:precondition1" was covered in 4 cycles in 0.18 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_1.genPropChksWRInf.slave_b_excl_bresp_no_exokay_supported:precondition1" was covered in 4 cycles in 0.18 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_1.genPropChksWRInf.slave_b_bvalid_eventually:precondition1" was covered in 4 cycles in 0.18 s.
-INFO (IPF055): 0.0.Ht: A counterexample (cex) with 4 cycles was found for the property "top.axi_master_1.genPropChksWRInf.genNoWrDatTblOverflow.genSlv.slave_w_wr_tbl_no_overflow" in 0.18 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_1.genStableChks.genStableChksWRInf.slave_b_bresp_stable:precondition1" was covered in 4 cycles in 0.18 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_1.genStableChks.genStableChksWRInf.genAXI4Full.slave_b_bid_stable:precondition1" was covered in 4 cycles in 0.18 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_1.genStableChks.genStableChksWRInf.genAXI4Full.slave_b_buser_stable:precondition1" was covered in 4 cycles in 0.18 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_1.genPropChksWRInf.genNoWrDatTblOverflow.genSlv.slave_w_wr_tbl_no_overflow:precondition1" was covered in 4 cycles in 0.18 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_1.genPropChksWRInf.genAXI4FullWrResp.slave_b_aw_bid_order_within_id:precondition1" was covered in 4 cycles in 0.18 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_1.genPropChksWRInf.genLiveMasterChksBReady.master_b_bready_eventually:precondition1" was covered in 4 cycles in 0.18 s.
-0: ProofGrid is temporarily paused because there are too many pending traces.
-0: ProofGrid is resuming to work after pausing for 0s. The amount of pending traces decreased.
-0.0.Ht: A trace with 4 cycles was found. [0.18 s]
-INFO (IPF055): 0.0.Ht: A counterexample (cex) with 4 cycles was found for the property "top.axi_slave_1.genStableChks.genStableChksWRInf.genAXI4Full.master_aw_awid_stable" in 0.18 s.
-0.0.Ht: A trace with 4 cycles was found. [0.20 s]
-INFO (IPF055): 0.0.Ht: A counterexample (cex) with 4 cycles was found for the property "top.axi_slave_1.genStableChks.genStableChksWRInf.genAXI4Full.master_aw_awsize_stable" in 0.19 s.
-0.0.B: Trace Attempt  4	[0.03 s]
-0.0.N: Trace Attempt  5	[0.04 s]
-0.0.Ht: A trace with 4 cycles was found. [0.20 s]
-INFO (IPF055): 0.0.Ht: A counterexample (cex) with 4 cycles was found for the property "top.axi_slave_1.genStableChks.genStableChksWRInf.genAXI4Full.master_w_wlast_stable" in 0.19 s.
-0: ProofGrid is temporarily paused because there are too many pending traces.
-0: ProofGrid is resuming to work after pausing for 0s. The amount of pending traces decreased.
-0.0.Ht: A trace with 4 cycles was found. [0.21 s]
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_1.genPropChksWRInf.master_w_aw_wlast_exact_len:precondition2" was covered in 4 cycles in 0.20 s.
-INFO (IPF055): 0.0.Ht: A counterexample (cex) with 4 cycles was found for the property "top.axi_master_0.genStableChks.genStableChksRDInf.slave_r_rvalid_stable" in 0.20 s.
-INFO (IPF055): 0.0.Ht: A counterexample (cex) with 4 cycles was found for the property "top.axi_master_0.genStableChks.genStableChksRDInf.slave_r_rdata_stable" in 0.20 s.
-INFO (IPF055): 0.0.Ht: A counterexample (cex) with 4 cycles was found for the property "top.axi_master_0.genStableChks.genStableChksRDInf.genAXI4Full.slave_r_rlast_stable" in 0.20 s.
-INFO (IPF055): 0.0.Ht: A counterexample (cex) with 4 cycles was found for the property "top.axi_master_0.genStableChks.genStableChksRDInf.genAXI4Full.slave_r_rid_stable" in 0.20 s.
-0.0.Ht: A trace with 4 cycles was found. [0.21 s]
-INFO (IPF055): 0.0.Ht: A counterexample (cex) with 4 cycles was found for the property "top.axi_master_0.genStableChks.genStableChksRDInf.slave_r_rresp_stable" in 0.20 s.
-0.0.N: A trace with 5 cycles was found. [0.06 s]
-INFO (IPF055): 0.0.N: A counterexample (cex) with 5 cycles was found for the property "top.axi_slave_0.genPropChksWRInf.genNoWrTblOverflow.master_aw_wr_tbl_no_overflow" in 0.06 s.
-0.0.N: Stopped processing property "top.axi_slave_0.genPropChksWRInf.genNoWrTblOverflow.master_aw_wr_tbl_no_overflow"	[0.06 s].
-0: ProofGrid is temporarily paused because there are too many pending traces.
-0: ProofGrid is resuming to work after pausing for 0s. The amount of pending traces decreased.
-0.0.Ht: A trace with 4 cycles was found. [0.22 s]
-INFO (IPF055): 0.0.Ht: A counterexample (cex) with 4 cycles was found for the property "top.axi_master_0.genPropChksRDInf.genAXI4Full.slave_r_ar_rid_match" in 0.21 s.
-INFO (IPF055): 0.0.Ht: A counterexample (cex) with 4 cycles was found for the property "top.axi_master_0.genPropChksRDInf.genAXI4Full.slave_r_ar_rlast_exact_len" in 0.21 s.
-0.0.Ht: A trace with 4 cycles was found. [0.22 s]
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genStableChks.genStableChksRDInf.slave_r_rvalid_stable:precondition1" was covered in 4 cycles in 0.22 s.
-INFO (IPF055): 0.0.Ht: A counterexample (cex) with 4 cycles was found for the property "top.axi_master_1.genPropChksRDInf.genAXI4Full.slave_r_ar_rid_match" in 0.22 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genPropChksRDInf.genAXI4Full.slave_r_ar_rid_match:precondition1" was covered in 4 cycles in 0.22 s.
-INFO (IPF055): 0.0.Ht: A counterexample (cex) with 4 cycles was found for the property "top.axi_master_1.genPropChksRDInf.genAXI4Full.slave_r_ar_rlast_exact_len" in 0.22 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genStableChks.genStableChksRDInf.slave_r_rdata_stable:precondition1" was covered in 4 cycles in 0.22 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genStableChks.genStableChksRDInf.slave_r_rresp_stable:precondition1" was covered in 4 cycles in 0.22 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genStableChks.genStableChksRDInf.genAXI4Full.slave_r_rlast_stable:precondition1" was covered in 4 cycles in 0.22 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genStableChks.genStableChksRDInf.genAXI4Full.slave_r_rid_stable:precondition1" was covered in 4 cycles in 0.22 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genPropChksRDInf.genAXI4Full.slave_r_ar_rlast_exact_len:precondition1" was covered in 4 cycles in 0.22 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genPropChksRDInf.genAXI4Full.slave_r_excl_rresp_no_exokay:precondition1" was covered in 4 cycles in 0.22 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genPropChksRDInf.genLiveMasterChksRReady.master_r_rready_eventually:precondition1" was covered in 4 cycles in 0.22 s.
-0.0.Ht: A trace with 4 cycles was found. [0.23 s]
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genStableChks.genStableChksWRInf.slave_b_bvalid_stable:precondition1" was covered in 4 cycles in 0.22 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genPropChksWRInf.genAXI4FullWrResp.slave_b_aw_bid_match:precondition1" was covered in 4 cycles in 0.22 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genPropChksWRInf.slave_b_excl_bresp_no_exokay_supported:precondition1" was covered in 4 cycles in 0.22 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genStableChks.genStableChksWRInf.slave_b_bresp_stable:precondition1" was covered in 4 cycles in 0.22 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genStableChks.genStableChksWRInf.genAXI4Full.slave_b_bid_stable:precondition1" was covered in 4 cycles in 0.22 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genPropChksWRInf.genAXI4FullWrResp.slave_b_aw_bid_order_within_id:precondition1" was covered in 4 cycles in 0.22 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_master_1.genPropChksWRInf.genLiveMasterChksBReady.master_b_bready_eventually:precondition1" was covered in 4 cycles in 0.22 s.
-0: ProofGrid is temporarily paused because there are too many pending traces.
-0: ProofGrid is resuming to work after pausing for 0s. The amount of pending traces decreased.
-0.0.Ht: A trace with 4 cycles was found. [0.23 s]
-INFO (IPF055): 0.0.Ht: A counterexample (cex) with 4 cycles was found for the property "top.axi_master_1.genPropChksRDInf.genNoRdTblOverflow.genSlv.slave_ar_rd_tbl_no_overflow" in 0.23 s.
-0.0.B: Trace Attempt  5	[0.05 s]
-0.0.B: Stopped processing property "top.axi_slave_0.genPropChksWRInf.genNoWrTblOverflow.master_aw_wr_tbl_no_overflow"	[0.06 s].
-0.0.B: Starting proof for property "top.axi_slave_0.genPropChksWRInf.master_w_aw_wlast_exact_len"	[0.00 s].
-0.0.B: Trace Attempt  1	[0.00 s]
-0.0.B: Trace Attempt  2	[0.01 s]
-0.0.N: Starting proof for property "top.axi_slave_0.genPropChksWRInf.master_w_aw_wlast_exact_len"	[0.00 s].
-0.0.N: Trace Attempt  1	[0.00 s]
-0.0.N: Trace Attempt  2	[0.00 s]
-0.0.N: Trace Attempt  3	[0.00 s]
-0.0.N: Trace Attempt  3	[0.01 s]
-0.0.N: Trace Attempt  4	[0.02 s]
-0.0.Ht: A trace with 4 cycles was found. [0.24 s]
-INFO (IPF055): 0.0.Ht: A counterexample (cex) with 4 cycles was found for the property "top.axi_master_1.genPropChksWRInf.genNoWrTblOverflow.genSlv.slave_aw_wr_tbl_no_overflow" in 0.23 s.
-0.0.Ht: Trace Attempt  5	[0.25 s]
-0.0.Ht: A trace with 5 cycles was found. [0.25 s]
-INFO (IPF055): 0.0.Ht: A counterexample (cex) with 5 cycles was found for the property "top.axi_slave_0.genPropChksWRInf.master_w_aw_wlast_exact_len" in 0.24 s.
-0: ProofGrid is temporarily paused because there are too many pending traces.
-0: ProofGrid is resuming to work after pausing for 0s. The amount of pending traces decreased.
-0.0.Ht: A trace with 5 cycles was found. [0.25 s]
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_0.genPropChksWRInf.master_w_aw_wlast_exact_len:precondition2" was covered in 5 cycles in 0.24 s.
-0.0.B: Trace Attempt  3	[0.01 s]
-0.0.N: Stopped processing property "top.axi_slave_0.genPropChksWRInf.master_w_aw_wlast_exact_len"	[0.01 s].
-0.0.N: Starting proof for property "top.axi_slave_0.genPropChksWRInf.genNoWrDatTblOverflow.master_w_wr_tbl_no_overflow"	[0.00 s].
-0.0.N: Trace Attempt  1	[0.00 s]
-0.0.N: Trace Attempt  2	[0.00 s]
-0.0.N: Trace Attempt  3	[0.00 s]
-0.0.Ht: A trace with 5 cycles was found. [0.26 s]
-INFO (IPF055): 0.0.Ht: A counterexample (cex) with 5 cycles was found for the property "top.axi_slave_0.genPropChksWRInf.genNoWrDatTblOverflow.master_w_wr_tbl_no_overflow" in 0.25 s.
-0.0.Ht: A trace with 5 cycles was found. [0.27 s]
-INFO (IPF055): 0.0.Ht: A counterexample (cex) with 5 cycles was found for the property "top.axi_slave_1.genPropChksWRInf.genNoDbcWChks.assert_w_aw_no_dbc" in 0.25 s.
-0: ProofGrid is temporarily paused because there are too many pending traces.
-0: ProofGrid is resuming to work after pausing for 0s. The amount of pending traces decreased.
-0.0.Ht: A trace with 5 cycles was found. [0.27 s]
-INFO (IPF055): 0.0.Ht: A counterexample (cex) with 5 cycles was found for the property "top.axi_master_1.genStableChks.genStableChksRDInf.slave_r_rvalid_stable" in 0.26 s.
-INFO (IPF055): 0.0.Ht: A counterexample (cex) with 5 cycles was found for the property "top.axi_master_1.genStableChks.genStableChksRDInf.slave_r_rdata_stable" in 0.26 s.
-INFO (IPF055): 0.0.Ht: A counterexample (cex) with 5 cycles was found for the property "top.axi_master_1.genStableChks.genStableChksRDInf.slave_r_rresp_stable" in 0.26 s.
-INFO (IPF055): 0.0.Ht: A counterexample (cex) with 5 cycles was found for the property "top.axi_master_1.genStableChks.genStableChksRDInf.genAXI4Full.slave_r_rlast_stable" in 0.26 s.
-0.0.Ht: A trace with 5 cycles was found. [0.28 s]
-INFO (IPF055): 0.0.Ht: A counterexample (cex) with 5 cycles was found for the property "top.axi_master_1.genStableChks.genStableChksRDInf.genAXI4Full.slave_r_rid_stable" in 0.26 s.
-0.0.B: Stopped processing property "top.axi_slave_0.genPropChksWRInf.master_w_aw_wlast_exact_len"	[0.03 s].
-0.0.B: Starting proof for property "top.axi_slave_0.genPropChksWRInf.genNoWrDatTblOverflow.master_w_wr_tbl_no_overflow"	[0.00 s].
-0.0.B: Trace Attempt  1	[0.00 s]
-0.0.B: Stopped processing property "top.axi_slave_0.genPropChksWRInf.genNoWrDatTblOverflow.master_w_wr_tbl_no_overflow"	[0.00 s].
-0.0.B: Starting proof for property "top.axi_slave_1.genPropChksRDInf.genNoRdTblOverflow.master_ar_rd_tbl_no_overflow"	[0.00 s].
-0.0.B: Trace Attempt  1	[0.00 s]
-0.0.B: Trace Attempt  2	[0.01 s]
-0.0.N: Trace Attempt  3	[0.01 s]
-0.0.N: Trace Attempt  4	[0.01 s]
-0.0.N: Stopped processing property "top.axi_slave_0.genPropChksWRInf.genNoWrDatTblOverflow.master_w_wr_tbl_no_overflow"	[0.02 s].
-0.0.N: Starting proof for property "top.axi_slave_1.genPropChksRDInf.genNoRdTblOverflow.master_ar_rd_tbl_no_overflow"	[0.00 s].
+0.0.B: Trace Attempt  3	[0.02 s]
+0.0.N: Starting proof for property "top.axi_slave_0.genPropChksWRInf.genNoWrTblOverflow.master_aw_wr_tbl_no_overflow"	[0.00 s].
 0.0.N: Trace Attempt  1	[0.00 s]
 0.0.N: Trace Attempt  2	[0.01 s]
-0.0.N: Trace Attempt  2	[0.01 s]
+0.0.N: Trace Attempt  3	[0.01 s]
+0.0.N: Trace Attempt  3	[0.01 s]
+0.0.N: Trace Attempt  4	[0.02 s]
+0.0.Ht: A trace with 4 cycles was found. [0.27 s]
+INFO (IPF055): 0.0.Ht: A counterexample (cex) with 4 cycles was found for the property "top.axi_master_1.genPropChksWRInf.genNoWrTblOverflow.genSlv.slave_aw_wr_tbl_no_overflow" in 0.26 s.
+0.0.Ht: Trace Attempt  5	[0.28 s]
 0.0.Ht: A trace with 5 cycles was found. [0.28 s]
-INFO (IPF055): 0.0.Ht: A counterexample (cex) with 5 cycles was found for the property "top.axi_master_1.genStableChks.genStableChksWRInf.slave_b_bvalid_stable" in 0.27 s.
+INFO (IPF055): 0.0.Ht: A counterexample (cex) with 5 cycles was found for the property "top.axi_slave_0.genPropChksWRInf.genNoWrTblOverflow.master_aw_wr_tbl_no_overflow" in 0.27 s.
+0: ProofGrid is temporarily paused because there are too many pending traces.
+0: ProofGrid is resuming to work after pausing for 0s. The amount of pending traces decreased.
 0.0.Ht: A trace with 5 cycles was found. [0.28 s]
-INFO (IPF055): 0.0.Ht: A counterexample (cex) with 5 cycles was found for the property "top.axi_master_1.genStableChks.genStableChksWRInf.slave_b_bresp_stable" in 0.27 s.
+INFO (IPF055): 0.0.Ht: A counterexample (cex) with 5 cycles was found for the property "top.axi_slave_0.genPropChksWRInf.master_w_aw_wlast_exact_len" in 0.28 s.
+INFO (IPF047): 0.0.Ht: The cover property "top.axi_slave_0.genPropChksWRInf.master_w_aw_wlast_exact_len:precondition2" was covered in 5 cycles in 0.28 s.
 0: ProofGrid is temporarily paused because there are too many pending traces.
 0: ProofGrid is resuming to work after pausing for 0s. The amount of pending traces decreased.
 0.0.Ht: A trace with 5 cycles was found. [0.29 s]
-INFO (IPF055): 0.0.Ht: A counterexample (cex) with 5 cycles was found for the property "top.axi_master_1.genStableChks.genStableChksWRInf.genAXI4Full.slave_b_bid_stable" in 0.28 s.
-0.0.B: Trace Attempt  3	[0.01 s]
-0.0.N: Trace Attempt  3	[0.01 s]
-0.0.N: Trace Attempt  3	[0.02 s]
-0.0.N: Trace Attempt  4	[0.03 s]
-0.0.Ht: A trace with 5 cycles was found. [0.30 s]
-INFO (IPF055): 0.0.Ht: A counterexample (cex) with 5 cycles was found for the property "top.axi_master_1.genPropChksWRInf.genAXI4FullWrResp.slave_b_aw_bid_match" in 0.28 s.
-INFO (IPF055): 0.0.Ht: A counterexample (cex) with 5 cycles was found for the property "top.axi_master_1.genPropChksWRInf.genAXI4FullWrResp.slave_b_aw_bid_order_within_id" in 0.28 s.
-0.0.Ht: Trace Attempt  6	[0.30 s]
-0.0.Ht: A trace with 6 cycles was found. [0.31 s]
-INFO (IPF055): 0.0.Ht: A counterexample (cex) with 6 cycles was found for the property "top.axi_slave_1.genPropChksRDInf.genNoRdTblOverflow.master_ar_rd_tbl_no_overflow" in 0.29 s.
-0.0.N: Stopped processing property "top.axi_slave_1.genPropChksRDInf.genNoRdTblOverflow.master_ar_rd_tbl_no_overflow"	[0.02 s].
-0.0.N: Starting proof for property "top.axi_slave_1.genPropChksWRInf.genNoWrTblOverflow.master_aw_wr_tbl_no_overflow"	[0.00 s].
-0.0.Ht: Trace Attempt  7	[0.32 s]
+INFO (IPF055): 0.0.Ht: A counterexample (cex) with 5 cycles was found for the property "top.axi_slave_0.genPropChksWRInf.genNoWrDatTblOverflow.master_w_wr_tbl_no_overflow" in 0.28 s.
 0.0.B: Trace Attempt  4	[0.03 s]
-0.0.N: Trace Attempt  1	[0.00 s]
-0.0.N: Trace Attempt  2	[0.00 s]
-0.0.N: Trace Attempt  3	[0.00 s]
-0.0.Ht: A trace with 7 cycles was found. [0.32 s]
-INFO (IPF055): 0.0.Ht: A counterexample (cex) with 7 cycles was found for the property "top.axi_slave_1.genPropChksWRInf.genNoWrTblOverflow.master_aw_wr_tbl_no_overflow" in 0.29 s.
-0.0.N: Trace Attempt  3	[0.01 s]
-0.0.N: Trace Attempt  4	[0.01 s]
-0.0.N: Stopped processing property "top.axi_slave_1.genPropChksWRInf.genNoWrTblOverflow.master_aw_wr_tbl_no_overflow"	[0.00 s].
-0.0.N: Starting proof for property "top.axi_slave_1.genPropChksWRInf.master_w_aw_wlast_exact_len"	[0.00 s].
-0.0.B: Stopped processing property "top.axi_slave_1.genPropChksRDInf.genNoRdTblOverflow.master_ar_rd_tbl_no_overflow"	[0.03 s].
-0.0.B: Starting proof for property "top.axi_slave_1.genPropChksWRInf.master_w_aw_wlast_exact_len"	[0.00 s].
-0.0.N: Trace Attempt  1	[0.00 s]
-0.0.N: Trace Attempt  2	[0.00 s]
-0.0.N: Trace Attempt  3	[0.00 s]
+0.0.B: Stopped processing property "top.axi_slave_0.genPropChksWRInf.genNoWrTblOverflow.master_aw_wr_tbl_no_overflow"	[0.02 s].
+0.0.B: Starting proof for property "top.axi_slave_1.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_arburst_stable"	[0.00 s].
 0.0.B: Trace Attempt  1	[0.00 s]
+0.0.N: Trace Attempt  4	[0.03 s]
+0.0.N: Trace Attempt  5	[0.04 s]
+0.0.N: Stopped processing property "top.axi_slave_0.genPropChksWRInf.genNoWrTblOverflow.master_aw_wr_tbl_no_overflow"	[0.02 s].
+0.0.N: Starting proof for property "top.axi_slave_0.genPropChksWRInf.genNoWrDatTblOverflow.master_w_wr_tbl_no_overflow"	[0.00 s].
+0.0.N: Trace Attempt  1	[0.00 s]
+0.0.N: Trace Attempt  2	[0.01 s]
+0.0.N: Trace Attempt  3	[0.01 s]
+0.0.N: Stopped processing property "top.axi_slave_0.genPropChksWRInf.genNoWrDatTblOverflow.master_w_wr_tbl_no_overflow"	[0.00 s].
+0.0.N: Starting proof for property "top.axi_slave_1.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_arburst_stable"	[0.00 s].
+0.0.N: Trace Attempt  1	[0.00 s]
+0.0.N: Trace Attempt  2	[0.01 s]
+0.0.N: Trace Attempt  3	[0.01 s]
+0.0.Ht: A trace with 5 cycles was found. [0.30 s]
+INFO (IPF055): 0.0.Ht: A counterexample (cex) with 5 cycles was found for the property "top.axi_slave_1.genPropChksWRInf.genNoDbcWChks.assert_w_aw_no_dbc" in 0.29 s.
+0.0.Ht: A trace with 5 cycles was found. [0.30 s]
+INFO (IPF055): 0.0.Ht: A counterexample (cex) with 5 cycles was found for the property "top.axi_master_1.genStableChks.genStableChksRDInf.slave_r_rvalid_stable" in 0.29 s.
+INFO (IPF055): 0.0.Ht: A counterexample (cex) with 5 cycles was found for the property "top.axi_master_1.genStableChks.genStableChksRDInf.slave_r_rdata_stable" in 0.29 s.
+INFO (IPF055): 0.0.Ht: A counterexample (cex) with 5 cycles was found for the property "top.axi_master_1.genStableChks.genStableChksRDInf.genAXI4Full.slave_r_rlast_stable" in 0.29 s.
+0.0.Ht: A trace with 5 cycles was found. [0.31 s]
+INFO (IPF055): 0.0.Ht: A counterexample (cex) with 5 cycles was found for the property "top.axi_master_1.genStableChks.genStableChksRDInf.slave_r_rresp_stable" in 0.30 s.
 0.0.B: Trace Attempt  2	[0.01 s]
 0.0.N: Trace Attempt  3	[0.01 s]
+0: ProofGrid is temporarily paused because there are too many pending traces.
+0: ProofGrid is resuming to work after pausing for 0s. The amount of pending traces decreased.
+0.0.Ht: A trace with 5 cycles was found. [0.32 s]
+INFO (IPF055): 0.0.Ht: A counterexample (cex) with 5 cycles was found for the property "top.axi_master_1.genStableChks.genStableChksRDInf.genAXI4Full.slave_r_rid_stable" in 0.30 s.
+0.0.Ht: A trace with 5 cycles was found. [0.33 s]
+INFO (IPF055): 0.0.Ht: A counterexample (cex) with 5 cycles was found for the property "top.axi_master_1.genStableChks.genStableChksWRInf.slave_b_bvalid_stable" in 0.31 s.
+INFO (IPF055): 0.0.Ht: A counterexample (cex) with 5 cycles was found for the property "top.axi_master_1.genStableChks.genStableChksWRInf.slave_b_bresp_stable" in 0.31 s.
+INFO (IPF055): 0.0.Ht: A counterexample (cex) with 5 cycles was found for the property "top.axi_master_1.genStableChks.genStableChksWRInf.genAXI4Full.slave_b_bid_stable" in 0.31 s.
 0.0.B: Trace Attempt  3	[0.01 s]
 0.0.N: Trace Attempt  4	[0.02 s]
+0: ProofGrid is temporarily paused because there are too many pending traces.
+0: ProofGrid is resuming to work after pausing for 0s. The amount of pending traces decreased.
+0.0.Ht: A trace with 5 cycles was found. [0.33 s]
+INFO (IPF055): 0.0.Ht: A counterexample (cex) with 5 cycles was found for the property "top.axi_master_1.genPropChksWRInf.genAXI4FullWrResp.slave_b_aw_bid_match" in 0.31 s.
+INFO (IPF055): 0.0.Ht: A counterexample (cex) with 5 cycles was found for the property "top.axi_master_1.genPropChksWRInf.genAXI4FullWrResp.slave_b_aw_bid_order_within_id" in 0.31 s.
+0.0.B: Trace Attempt  4	[0.03 s]
+0.0.N: Trace Attempt  4	[0.03 s]
+0.0.Ht: Trace Attempt  6	[0.34 s]
+0.0.Ht: A trace with 6 cycles was found. [0.34 s]
+INFO (IPF055): 0.0.Ht: A counterexample (cex) with 6 cycles was found for the property "top.axi_slave_1.genPropChksRDInf.genNoRdTblOverflow.master_ar_rd_tbl_no_overflow" in 0.32 s.
+0.0.Ht: Trace Attempt  7	[0.35 s]
+0.0.N: Trace Attempt  5	[0.04 s]
+0.0.Ht: A trace with 7 cycles was found. [0.36 s]
+INFO (IPF055): 0.0.Ht: A counterexample (cex) with 7 cycles was found for the property "top.axi_slave_1.genPropChksWRInf.genNoWrTblOverflow.master_aw_wr_tbl_no_overflow" in 0.32 s.
+0.0.B: Trace Attempt  5	[0.05 s]
+0.0.N: Trace Attempt  5	[0.06 s]
+0.0.Ht: Trace Attempt  9	[0.41 s]
+0.0.Ht: A trace with 9 cycles was found. [0.46 s]
+INFO (IPF055): 0.0.Ht: A counterexample (cex) with 9 cycles was found for the property "top.axi_slave_1.genPropChksWRInf.genNoWrDatTblOverflow.master_w_wr_tbl_no_overflow" in 0.41 s.
+0.0.Hp: A proof was found: No trace exists. [0.47 s]
+INFO (IPF057): 0.0.Hp: The property "top.axi_slave_1.genStableChks.genStableChksWRInf.genAXI4Full.master_aw_awburst_stable" was proven in 0.47 s.
+0.0.Ht: Trace Attempt 10	[0.46 s]
+0.0.B: Trace Attempt 12	[0.23 s]
+0.0.B: A trace with 12 cycles was found. [0.28 s]
+INFO (IPF055): 0.0.B: A counterexample (cex) with 12 cycles was found for the property "top.axi_slave_1.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_arburst_stable" in 0.26 s.
+0.0.B: Stopped processing property "top.axi_slave_1.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_arburst_stable"	[0.26 s].
+0.0.B: Starting proof for property "top.axi_slave_1.genPropChksWRInf.master_w_aw_wlast_exact_len"	[0.00 s].
+0.0.N: Stopped processing property "top.axi_slave_1.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_arburst_stable"	[0.26 s].
+0.0.N: Starting proof for property "top.axi_slave_1.genPropChksWRInf.master_w_aw_wlast_exact_len"	[0.00 s].
+0.0.B: Trace Attempt  1	[0.00 s]
+0.0.N: Trace Attempt  1	[0.00 s]
+0.0.B: Trace Attempt  2	[0.01 s]
+0.0.N: Trace Attempt  2	[0.01 s]
+0.0.N: Trace Attempt  3	[0.01 s]
+0.0.B: Trace Attempt  3	[0.02 s]
+0.0.N: Trace Attempt  3	[0.01 s]
 0.0.N: Trace Attempt  4	[0.03 s]
 0.0.B: Trace Attempt  4	[0.03 s]
-0.0.N: Trace Attempt  5	[0.05 s]
-0.0.B: Trace Attempt  5	[0.05 s]
+0.0.N: Trace Attempt  4	[0.04 s]
+0.0.B: Trace Attempt  5	[0.06 s]
+0.0.N: Trace Attempt  5	[0.06 s]
 0.0.N: Trace Attempt  5	[0.07 s]
-0.0.Ht: Trace Attempt  9	[0.37 s]
-0.0.Ht: A trace with 9 cycles was found. [0.41 s]
-INFO (IPF055): 0.0.Ht: A counterexample (cex) with 9 cycles was found for the property "top.axi_slave_1.genPropChksWRInf.genNoWrDatTblOverflow.master_w_wr_tbl_no_overflow" in 0.37 s.
-0.0.Ht: Trace Attempt 10	[0.42 s]
 0: ProofGrid usable level: 1
-0.0.N: Trace Attempt  1	[0.64 s]
-0.0.N: Trace Attempt  2	[0.64 s]
-0.0.N: Trace Attempt  3	[0.65 s]
-0.0.N: Trace Attempt  4	[0.65 s]
-0.0.N: Trace Attempt  5	[0.67 s]
-0.0.N: Trace Attempt  8	[0.91 s]
-0.0.N: Per property time limit expired (1.00 s) [1.00 s]
-0.0.N: Stopped processing property "top.axi_slave_1.genPropChksWRInf.master_w_aw_wlast_exact_len"	[0.99 s].
-0.0.N: Last scan. Per property time limit: 0s
-0.0.N: Starting proof for property "top.axi_slave_1.genPropChksWRInf.master_w_aw_wlast_exact_len"	[0.00 s].
-0.0.B: Stopped processing property "top.axi_slave_1.genPropChksWRInf.master_w_aw_wlast_exact_len"	[1.01 s].
-0.0.B: Last scan. Per property time limit: 0s
-0.0.B: Starting proof for property "top.axi_slave_1.genPropChksWRInf.master_w_aw_wlast_exact_len"	[0.00 s].
-0.0.B: Trace Attempt  1	[0.00 s]
-0.0.N: Trace Attempt  9	[0.02 s]
-0.0.B: Trace Attempt  2	[0.01 s]
-0.0.B: Trace Attempt  3	[0.01 s]
-0.0.B: Trace Attempt  4	[0.03 s]
-0.0.B: Trace Attempt  5	[0.05 s]
-0.0.N: Trace Attempt  1	[0.45 s]
-0.0.N: Trace Attempt  2	[0.45 s]
-0.0.N: Trace Attempt  3	[0.46 s]
-0.0.N: Trace Attempt  4	[0.46 s]
-0.0.N: Trace Attempt  5	[0.48 s]
+0.0.N: Trace Attempt  1	[0.51 s]
+0.0.N: Trace Attempt  2	[0.51 s]
+0.0.N: Trace Attempt  3	[0.52 s]
+0.0.N: Trace Attempt  4	[0.52 s]
+0.0.N: Trace Attempt  5	[0.55 s]
 0.0.N: Validation of fixpoint was successful. Time = 0.00
 0.0.N: Requesting engine job to stop
 0.0.B: Requesting engine job to stop
 0.0.Hp: Requesting engine job to terminate
 0.0.Ht: Requesting engine job to terminate
-INFO (IPF144): 0: Initiating shutdown of proof [2.69]
-0.0.N: Trace Attempt 12	[1.31 s]
-0.0.N: A proof was found: No trace exists. [1.34 s]
-INFO (IPF057): 0.0.N: The property "top.axi_slave_1.genPropChksWRInf.master_w_aw_wlast_exact_len" was proven in 1.34 s.
-0.0.N: Stopped processing property "top.axi_slave_1.genPropChksWRInf.master_w_aw_wlast_exact_len"	[1.34 s].
+INFO (IPF144): 0: Initiating shutdown of proof [1.54]
+0.0.N: Trace Attempt  9	[0.81 s]
+0.0.N: A proof was found: No trace exists. [0.93 s]
+INFO (IPF057): 0.0.N: The property "top.axi_slave_1.genPropChksWRInf.master_w_aw_wlast_exact_len" was proven in 0.93 s.
+0.0.N: Stopped processing property "top.axi_slave_1.genPropChksWRInf.master_w_aw_wlast_exact_len"	[0.93 s].
 0.0.Ht: Interrupted (multi)
-0.0.N: All properties either determined or skipped. [2.68 s]
-0.0.Ht: Trace Attempt 20	[2.63 s]
-0.0.Ht: Interrupted. [2.54 s]
-0.0.N: Exited with Success (@ 2.69 s)
+0.0.N: All properties either determined or skipped. [1.54 s]
+0.0.Ht: Trace Attempt 18	[1.50 s]
+0.0.Ht: Interrupted. [1.36 s]
+0.0.N: Exited with Success (@ 1.55 s)
 0: ProofGrid usable level: 0
-0.0.Ht: Exited with Success (@ 2.69 s)
+0.0.Ht: Exited with Success (@ 1.55 s)
+0.0.B: Stopped processing property "top.axi_slave_1.genPropChksWRInf.master_w_aw_wlast_exact_len"	[0.96 s].
+0.0.B: Trace Attempt 19	[0.92 s]
+0.0.B: All properties either determined or skipped. [1.56 s]
+0.0.B: Exited with Success (@ 1.59 s)
 0.0.Hp: Interrupted (multi)
-0.0.Hp: Interrupted. [2.70 s]
-0.0.B: Stopped processing property "top.axi_slave_1.genPropChksWRInf.master_w_aw_wlast_exact_len"	[1.34 s].
-0.0.Hp: Exited with Success (@ 2.71 s)
-0.0.B: Trace Attempt 20	[1.17 s]
-0.0.B: All properties either determined or skipped. [2.69 s]
-0.0.B: Exited with Success (@ 2.71 s)
+0.0.Hp: Interrupted. [1.59 s]
+0.0.Hp: Exited with Success (@ 1.59 s)
 0: --------------------------------------------------------------
 ProofGrid Summary
 --------------------------------------------------------------
@@ -1275,14 +1298,14 @@ ProofGrid Summary
     ------------------------------------------------------
     Engine  Pending     Running        Dead    Utilization
     ------------------------------------------------------
-      N        0.03        2.69        0.00       98.87 %
-     Hp        0.02        2.68        0.00       99.31 %
-     Ht        0.02        2.67        0.00       99.39 %
-      B        0.02        2.67        0.00       99.41 %
-    all        0.02        2.68        0.00       99.24 %
+      N        0.03        1.55        0.00       98.11 %
+     Hp        0.02        1.54        0.00       98.77 %
+     Ht        0.02        1.53        0.00       99.01 %
+      B        0.01        1.53        0.00       99.07 %
+    all        0.02        1.54        0.00       98.74 %
 
-    Data read    : 1.15 MiB
-    Data written : 16.21 kiB
+    Data read    : 1.29 MiB
+    Data written : 16.28 kiB
 
 0: ProofGrid usable level: 0
 0: All pending notifications were processed.
@@ -1293,11 +1316,11 @@ SUMMARY
 ==============================================================
            Properties Considered              : 505
                  assertions                   : 193 (51 disabled)
-                  - proven                    : 78 (40.4145%)
+                  - proven                    : 79 (40.9326%)
                   - bounded_proven (user)     : 0 (0%)
                   - bounded_proven (auto)     : 0 (0%)
                   - marked_proven             : 0 (0%)
-                  - cex                       : 64 (33.1606%)
+                  - cex                       : 63 (32.6425%)
                   - ar_cex                    : 0 (0%)
                   - undetermined              : 0 (0%)
                   - unknown                   : 51 (51 disabled)                                 (26.4249%)
@@ -1312,6 +1335,10 @@ SUMMARY
                   - error                     : 0 (0%)
 determined
 [<embedded>] % 
+[<embedded>] % visualize -violation -property <embedded>::top.axi_slave_0.genStableChks.genStableChksRDInf.master_ar_arvalid_stable -new_window
+INFO (IVS015): Setting Visualize task to "<embedded>".
+INFO (IVS008): Expanding analysis region to enable visualization of "<embedded>::top.axi_slave_0.genStableChks.genStableChksRDInf.master_ar_arvalid_stable".
+cex
 INFO (IPL005): Received request to exit from the console.
 INFO: Waiting for proof threads to stop...
 INFO: Proof threads stopped.
