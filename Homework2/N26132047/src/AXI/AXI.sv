@@ -162,25 +162,25 @@ module AXI (
 
     typedef enum logic {
         READ, WRITE
-    } TYPE;
+    } TYPE_t;
 
     typedef struct packed {
         logic     busy;              // if the slave is busy
-        TYPE      transaction_type;  // when slave busy : reading or writing
+        TYPE_t    transaction_type;  // when slave busy : reading or writing
         MASTER_ID current_master;    // who use the slave
-    } SLAVE_STATUS;
+    } SLAVE_STATUS_t;
 
     SLAVE_ID decoded_AR_M0, decoded_AR_M1, decoded_AW_M1;  // slave target by master (S0 S1 DEFAULT_SLAVE)
 
     logic          request_valid_s0   , request_valid_s1   ; // If any master want to use slave
-    TYPE           request_type_s0    , request_type_s1    ; // Request is read or write
+    TYPE_t         request_type_s0    , request_type_s1    ; // Request is read or write
     MASTER_ID      request_master_s0  , request_master_s1  ; // Which master want to use slave
     logic          transaction_done_s0, transaction_done_s1; // 
 
     MASTER_ID      master_priority_c, master_priority_n;
 
-    SLAVE_STATUS   slave_status_c_s0, slave_status_c_s1;
-    SLAVE_STATUS   slave_status_n_s0, slave_status_n_s1;
+    SLAVE_STATUS_t slave_status_c_s0, slave_status_c_s1;
+    SLAVE_STATUS_t slave_status_n_s0, slave_status_n_s1;
 
     // --------------------------------------------
     //                Address Decode               
@@ -217,8 +217,8 @@ module AXI (
     always_ff @(posedge ACLK or negedge ARESETn) begin
         if (!ARESETn) begin
             master_priority_c <= M0;
-            slave_status_c_s0 <= SLAVE_STATUS'(0);
-            slave_status_c_s1 <= SLAVE_STATUS'(0);
+            slave_status_c_s0 <= SLAVE_STATUS_t'(0);
+            slave_status_c_s1 <= SLAVE_STATUS_t'(0);
         end else begin
             master_priority_c <= master_priority_n;
             slave_status_c_s0 <= slave_status_n_s0;
@@ -298,12 +298,11 @@ module AXI (
                 request_type_s0 == slave_status_c_s0.transaction_type) begin
                 slave_status_c_s0.busy = 1'b1;        
             end
-
         end
+        
         if (slave_status_c_s1.busy & transaction_done_s1) begin
             slave_status_c_s1.busy = 1'b0;
             // remain busy if next request is still the same master and same type
-
         end
 
         // Next state logic for Slave
@@ -343,7 +342,7 @@ module AXI (
                             // AR channel
                             ARVALID_S0 = ARVALID_M0;
                             ARREADY_M0 = ARREADY_S0; 
-                            ARID_S0    = ARID_M0   ;
+                            ARID_S0    = {4'b0, ARID_M0};
                             ARADDR_S0  = ARADDR_M0 ;
                             ARLEN_S0   = ARLEN_M0  ;
                             ARSIZE_S0  = ARSIZE_M0 ;
@@ -351,7 +350,7 @@ module AXI (
                             // R channel
                             RVALID_M0  = RVALID_S0;
                             RREADY_S0  = RREADY_M0;
-                            RID_M0     = RID_S0   ;
+                            RID_M0     = RID_S0[`AXI_ID_BITS-1:0];
                             RDATA_M0   = RDATA_S0 ;
                             RRESP_M0   = RRESP_S0 ;
                             RLAST_M0   = RLAST_S0 ;
@@ -360,7 +359,7 @@ module AXI (
                             // AR channel
                             ARVALID_S0 = ARVALID_M1;
                             ARREADY_M1 = ARREADY_S0; 
-                            ARID_S0    = ARID_M1   ;
+                            ARID_S0    = {4'b0, ARID_M1};
                             ARADDR_S0  = ARADDR_M1 ;
                             ARLEN_S0   = ARLEN_M1  ;
                             ARSIZE_S0  = ARSIZE_M1 ;
@@ -368,7 +367,7 @@ module AXI (
                             // R channel
                             RVALID_M1  = RVALID_S0;
                             RREADY_S0  = RREADY_M1;
-                            RID_M1     = RID_S0   ;
+                            RID_M1     = RID_S0[`AXI_ID_BITS-1:0];
                             RDATA_M1   = RDATA_S0 ;
                             RRESP_M1   = RRESP_S0 ;
                             RLAST_M1   = RLAST_S0 ;
@@ -380,7 +379,7 @@ module AXI (
                         // AW channel
                         AWVALID_S0 = AWVALID_M1;
                         AWREADY_M1 = AWREADY_S0;
-                        AWID_S0    = AWID_M1   ;
+                        AWID_S0    = {4'b0, AWID_M1};
                         AWADDR_S0  = AWADDR_M1 ;
                         AWLEN_S0   = AWLEN_M1  ;
                         AWSIZE_S0  = AWSIZE_M1 ;
@@ -394,7 +393,7 @@ module AXI (
                         // B channel
                         BVALID_M1  = BVALID_S0;
                         BREADY_S0  = BREADY_M1;
-                        BID_M1     = BID_S0   ;
+                        BID_M1     = BID_S0[`AXI_ID_BITS-1:0];
                         BRESP_M1   = BRESP_S0 ;
                     end
                 end 
@@ -409,7 +408,7 @@ module AXI (
                             // AR channel
                             ARVALID_S1 = ARVALID_M0;
                             ARREADY_M0 = ARREADY_S1; 
-                            ARID_S1    = ARID_M0   ;
+                            ARID_S1    = {4'b0, ARID_M0};
                             ARADDR_S1  = ARADDR_M0 ;
                             ARLEN_S1   = ARLEN_M0  ;
                             ARSIZE_S1  = ARSIZE_M0 ;
@@ -417,7 +416,7 @@ module AXI (
                             // R channel
                             RVALID_M0  = RVALID_S1;
                             RREADY_S1  = RREADY_M0;
-                            RID_M0     = RID_S1   ;
+                            RID_M0     = RID_S1[`AXI_ID_BITS-1:0];
                             RDATA_M0   = RDATA_S1 ;
                             RRESP_M0   = RRESP_S1 ;
                             RLAST_M0   = RLAST_S1 ;
@@ -426,7 +425,7 @@ module AXI (
                             // AR channel
                             ARVALID_S1 = ARVALID_M1;
                             ARREADY_M1 = ARREADY_S1; 
-                            ARID_S1    = ARID_M1   ;
+                            ARID_S1    = {4'b0, ARID_M1};
                             ARADDR_S1  = ARADDR_M1 ;
                             ARLEN_S1   = ARLEN_M1  ;
                             ARSIZE_S1  = ARSIZE_M1 ;
@@ -434,7 +433,7 @@ module AXI (
                             // R channel
                             RVALID_M1  = RVALID_S1;
                             RREADY_S1  = RREADY_M1;
-                            RID_M1     = RID_S1   ;
+                            RID_M1     = RID_S1[`AXI_ID_BITS-1:0];
                             RDATA_M1   = RDATA_S1 ;
                             RRESP_M1   = RRESP_S1 ;
                             RLAST_M1   = RLAST_S1 ;
@@ -446,7 +445,7 @@ module AXI (
                         // AW channel
                         AWVALID_S1 = AWVALID_M1;
                         AWREADY_M1 = AWREADY_S1;
-                        AWID_S1    = AWID_M1   ;
+                        AWID_S1    = {4'b0, AWID_M1};
                         AWADDR_S1  = AWADDR_M1 ;
                         AWLEN_S1   = AWLEN_M1  ;
                         AWSIZE_S1  = AWSIZE_M1 ;
@@ -460,7 +459,7 @@ module AXI (
                         // B channel
                         BVALID_M1  = BVALID_S1;
                         BREADY_S1  = BREADY_M1;
-                        BID_M1     = BID_S1   ;
+                        BID_M1     = BID_S1[`AXI_ID_BITS-1:0];
                         BRESP_M1   = BRESP_S1 ;
                     end
                 end 

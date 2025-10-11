@@ -5,10 +5,10 @@
 # version   : 2018.03p001 64 bits
 # build date: 2018.04.24 18:13:05 PDT
 #----------------------------------------
-# started Sat Oct 11 16:10:16 CST 2025
+# started Sat Oct 11 19:18:01 CST 2025
 # hostname  : superdome2
-# pid       : 126990
-# arguments : '-label' 'session_0' '-console' 'superdome2:39780' '-style' 'windows' '-data' 'AQAAADx/////AAAAAAAAA3oBAAAAEABMAE0AUgBFAE0ATwBWAEU=' '-proj' '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/build/jgproject/sessionLogs/session_0' '-init' '-hidden' '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/build/jgproject/.tmp/.initCmds.tcl' '../script/jg_bridge.tcl'
+# pid       : 96923
+# arguments : '-label' 'session_0' '-console' 'superdome2:41052' '-style' 'windows' '-data' 'AQAAADx/////AAAAAAAAA3oBAAAAEABMAE0AUgBFAE0ATwBWAEU=' '-proj' '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/build/jgproject/sessionLogs/session_0' '-init' '-hidden' '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/build/jgproject/.tmp/.initCmds.tcl' '../script/jg_bridge.tcl'
 #DO NOT MODIFY THIS FILE
 set ABVIP_INST_DIR /usr/cad/cadence/VIPCAT/cur/tools/abvip
 set vip_dir $::env(vip_dir)
@@ -107,18 +107,3 @@ assume {axi_master_1.awburst!=2}
 
 prove -all
 
-visualize -violation -property <embedded>::top.axi_slave_0.genStableChks.genStableChksRDInf.master_ar_arvalid_stable -new_window
-visualize -violation -property <embedded>::top.axi_slave_0.genStableChks.genStableChksRDInf.master_ar_araddr_stable -new_window
-visualize -violation -property <embedded>::top.axi_slave_0.genStableChks.genStableChksRDInf.master_ar_arvalid_stable -new_window
-visualize -violation -property <embedded>::top.axi_master_0.genStableChks.genStableChksRDInf.slave_r_rvalid_stable -new_window
-visualize -violation -property <embedded>::top.axi_master_0.genStableChks.genStableChksRDInf.slave_r_rvalid_stable -new_window
-visualize -violation -property <embedded>::top.axi_master_0.genStableChks.genStableChksRDInf.slave_r_rdata_stable -new_window
-visualize -violation -property <embedded>::top.axi_master_1.genStableChks.genStableChksRDInf.slave_r_rvalid_stable -new_window
-visualize -violation -property <embedded>::top.axi_master_0.genStableChks.genStableChksRDInf.slave_r_rvalid_stable -new_window
-visualize -violation -property <embedded>::top.axi_master_0.genStableChks.genStableChksRDInf.slave_r_rvalid_stable -new_window
-visualize -violation -property <embedded>::top.axi_master_0.genPropChksRDInf.genAXI4Full.slave_r_ar_rlast_exact_len -new_window
-visualize -violation -property <embedded>::top.axi_master_0.genPropChksRDInf.genAXI4Full.slave_r_ar_rid_match -new_window
-visualize -violation -property <embedded>::top.axi_master_0.genPropChksRDInf.genAXI4Full.slave_r_ar_rlast_exact_len -new_window
-visualize -violation -property <embedded>::top.axi_master_0.genPropChksRDInf.genNoRdTblOverflow.genSlv.slave_ar_rd_tbl_no_overflow -new_window
-visualize -violation -property <embedded>::top.axi_master_0.genStableChks.genStableChksRDInf.slave_r_rvalid_stable -new_window
-visualize -violation -property <embedded>::top.axi_slave_0.genPropChksRDInf.genNoRdTblOverflow.master_ar_rd_tbl_no_overflow -new_window

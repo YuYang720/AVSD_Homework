@@ -29,9 +29,9 @@ typedef enum logic [1:0] {
 } SLAVE_ID;
 
 `define S0_start_addr   32'h0000_0000
-`define S1_start_addr   32'h0001_0000
-
 `define S0_end_addr     32'h0000_FFFF
+
+`define S1_start_addr   32'h0001_0000
 `define S1_end_addr     32'h0001_FFFF
 
 `endif
