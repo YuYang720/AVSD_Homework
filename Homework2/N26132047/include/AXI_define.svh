@@ -20,4 +20,18 @@
 `define AXI_RESP_SLVERR 2'h2
 `define AXI_RESP_DECERR 2'h3
 
+typedef enum logic {
+    M0, M1
+} MASTER_ID;
+
+typedef enum logic [1:0] {
+    S0, S1, DEFAULT_SLAVE
+} SLAVE_ID;
+
+`define S0_start_addr   32'h0000_0000
+`define S1_start_addr   32'h0001_0000
+
+`define S0_end_addr     32'h0000_FFFF
+`define S1_end_addr     32'h0001_FFFF
+
 `endif
