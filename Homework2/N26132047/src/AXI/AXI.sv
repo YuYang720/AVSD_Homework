@@ -39,7 +39,7 @@ module AXI (
     input                              WVALID_M1,
     output logic                       WREADY_M1,
                            
-//  B channel: WRITE RESPONSE 1
+//  B channel: WRITE RESPOND 1
     output logic [`AXI_ID_BITS-1:0]    BID_M1,
     output logic [1:0]                 BRESP_M1,
     output logic                       BVALID_M1,
@@ -96,7 +96,7 @@ module AXI (
     output logic                       WVALID_S0,
     input                              WREADY_S0,
     
-// B channel: WRITE RESPONSE 0
+// B channel: WRITE RESPOND 0
     input        [`AXI_IDS_BITS-1:0]   BID_S0,
     input        [1:0]                 BRESP_S0,
     input                              BVALID_S0,
@@ -118,7 +118,7 @@ module AXI (
     output logic                       WVALID_S1,
     input                              WREADY_S1,
     
-// B channel: WRITE RESPONSE 1
+// B channel: WRITE RESPOND 1
     input        [`AXI_IDS_BITS-1:0]   BID_S1,
     input        [1:0]                 BRESP_S1,
     input                              BVALID_S1,
@@ -205,7 +205,7 @@ module AXI (
             else if (AWADDR_M1 >= `S1_start_addr && AWADDR_M1 <= `S1_end_addr) decoded_AW_M1 = S1;
         end
     end
-    
+
     // --------------------------------------------
     //               Arbitration Logic             
     // --------------------------------------------

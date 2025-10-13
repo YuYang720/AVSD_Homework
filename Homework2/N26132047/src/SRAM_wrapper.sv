@@ -38,7 +38,7 @@ module SRAM_wrapper(
     input                              WVALID_S,   
     output logic                       WREADY_S,
 
-    // AXI Slave Write Response Channel 
+    // AXI Slave Write RESPOND Channel 
     output logic [`AXI_IDS_BITS-1:0]   BID_S,		
     output logic [1:0]                 BRESP_S,    
     output logic                       BVALID_S,   
@@ -68,7 +68,7 @@ module SRAM_wrapper(
 
     // slave FSM
     typedef enum logic [2:0] {
-        IDLE, READ, WRITE, WAIT_WVALID, RESPONSE
+        IDLE, READ, WRITING, WAIT_W_HS, RESPOND
     } STATE_t;
 
     // request structure
@@ -168,7 +168,7 @@ module SRAM_wrapper(
                     burst_counter_n = 4'd1;
 
                 end else if (AWVALID_S) begin
-                    state_n = WAIT_WVALID;
+                    state_n = WAIT_W_HS;
                     request_n = {AWID_S, AWADDR_S, AWLEN_S, AWSIZE_S};
 
                     WREADY_S = 1'b1;
@@ -176,7 +176,7 @@ module SRAM_wrapper(
                         WRITE_REQ = 1'b1;
                         ADDRESS  = AWADDR_S;
                         burst_counter_n = 4'd1;
-                        state_n = (WLAST_S) ? RESPONSE : WRITE;
+                        state_n = (WLAST_S) ? RESPOND : WRITING;
                     end
                 end
             end 
@@ -185,7 +185,7 @@ module SRAM_wrapper(
                 READ_REQ = 1'b1;
                 ADDRESS  = request_c.addr;
 
-                // R channel response
+                // R channel RESPOND
                 RVALID_S  = 1'b1;
                 RID_S     = request_c.id;
                 RDATA_S   = DO;
@@ -202,7 +202,7 @@ module SRAM_wrapper(
                     ADDRESS         = request_n.addr;
                 end
             end
-            WAIT_WVALID: begin
+            WAIT_W_HS: begin
                 WREADY_S = 1'b1;
 
                 if (WVALID_S) begin
@@ -210,10 +210,10 @@ module SRAM_wrapper(
                     ADDRESS  = request_c.addr;
                     burst_counter_n = 4'd1;
                     
-                    state_n = (WLAST_S) ? RESPONSE : WRITE;
+                    state_n = (WLAST_S) ? RESPOND : WRITING;
                 end
             end
-            WRITE: begin
+            WRITING: begin
                 WREADY_S = 1'b1;
                 
                 if (WVALID_S) begin
@@ -222,10 +222,10 @@ module SRAM_wrapper(
                     request_n.addr  = request_c.addr + (32'd1 << request_c.size);
                     ADDRESS         = request_n.addr;
                     
-                    state_n = (WLAST_S) ? RESPONSE : WRITE;
+                    state_n = (WLAST_S) ? RESPOND : WRITING;
                 end
             end
-            RESPONSE: begin
+            RESPOND: begin
                 BVALID_S = 1'b1;
                 BID_S    = request_c.id; 
                 if (BREADY_S) begin
