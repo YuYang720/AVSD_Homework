@@ -68,7 +68,7 @@ module SRAM_wrapper(
 
     // slave FSM
     typedef enum logic [2:0] {
-        INIT, IDLE, READ, WRITE, WAIT_WVALID, RESPONSE
+        IDLE, READ, WRITE, WAIT_WVALID, RESPONSE
     } STATE_t;
 
     // request structure
@@ -89,8 +89,6 @@ module SRAM_wrapper(
     // --------------------------------------------
     //                 SRAM Module                 
     // --------------------------------------------
-
-    // address need to be handle
     assign A         = ADDRESS[15:2];
     assign CEB       = ~(WRITE_REQ | READ_REQ);
     assign WEB       = ~WRITE_REQ;
@@ -118,7 +116,7 @@ module SRAM_wrapper(
 
     always_ff @(posedge ACLK or negedge ARESETn) begin
         if (!ARESETn) begin
-            state_c         <= INIT;
+            state_c         <= IDLE;
             request_c       <= REQUEST_t'(0); 
             burst_counter_c <= 4'd0;
         end else begin
@@ -188,10 +186,11 @@ module SRAM_wrapper(
                 ADDRESS  = request_c.addr;
 
                 // R channel response
-                ARREADY_S = 1'b1;
+                RVALID_S  = 1'b1;
                 RID_S     = request_c.id;
                 RDATA_S   = DO;
                 RLAST_S   = (request_c.len + 4'd1 == burst_counter_c);
+                // why + 1 ?
 
                 // R channel handshake
                 if (RREADY_S) begin
