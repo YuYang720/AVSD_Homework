@@ -16,11 +16,11 @@
 // 	Date:			2024/11/3								   		//
 // 	Version:		1.0	    								   		//
 //////////////////////////////////////////////////////////////////////
+`include "AXI_define.svh"
 
 module SRAM_wrapper(
     input                              ACLK,		
     input                              ARESETn,	
-    input        [31:0]                BASE_ADDR,
 
     // AXI Slave Write Address Channel
     input        [`AXI_IDS_BITS -1:0]  AWID_S,		
@@ -68,7 +68,7 @@ module SRAM_wrapper(
 
     // slave FSM
     typedef enum logic [2:0] {
-        IDLE, READ, WRITE, WAIT_WVALID, REAPONSE
+        IDLE, READ, WRITE, WAIT_WVALID, RESPONSE
     } STATE_t;
 
     // request structure
@@ -79,18 +79,19 @@ module SRAM_wrapper(
         logic [`AXI_SIZE_BITS-1:0] size;
     } REQUEST_t;
 
-    STATE_t    state_c,   state_n;
-    REQUEST_t  request_c, request_n;
+    STATE_t      state_c,   state_n;
+    REQUEST_t    request_c, request_n;
     logic [ 3:0] burst_counter_c, burst_counter_n;
     logic        CEB, WEB, WRITE_REQ, READ_REQ;
     logic [13:0] A;
-    logic [31:0] DI, BWEB, DO, ADDRESS, real_addr;
+    logic [31:0] DI, BWEB, DO, ADDRESS;
 
     // --------------------------------------------
     //                 SRAM Module                 
     // --------------------------------------------
-    assign real_addr = ADDRESS - BASE_ADDR;
-    assign A         = real_addr[15:2];
+
+    // address need to be handle
+    assign A         = ADDRESS[15:2];
     assign CEB       = ~(WRITE_REQ | READ_REQ);
     assign WEB       = ~WRITE_REQ;
     assign BWEB      = {{8{~WSTRB_S[3]}}, {8{~WSTRB_S[2]}}, {8{~WSTRB_S[1]}}, {8{~WSTRB_S[0]}}};
@@ -115,7 +116,123 @@ module SRAM_wrapper(
     //                  AXI Slave                  
     // --------------------------------------------
 
-    always_ff @(posedge)
+    always_ff @(posedge ACLK or negedge ARESETn) begin
+        if (!ARESETn) begin
+            state_c         <= IDLE;
+            request_c       <= REQUEST_t'(0); 
+            burst_counter_c <= 4'd0;
+        end else begin
+            state_c         <= state_n;
+            request_c       <= request_n;
+            burst_counter_c <= burst_counter_n;
+        end
+    end
+
+    always_comb begin
+
+        state_n         = state_c;
+        request_n       = request_c;
+        burst_counter_n = burst_counter_c;
+
+        ADDRESS   = ARADDR_S;
+        DI        = WDATA_S;
+        WRITE_REQ = '0;
+        READ_REQ  = '0;
+
+        AWREADY_S = '0;
+        WREADY_S  = '0;
+        BID_S     =  request_c.id;
+        BRESP_S   = `AXI_RESP_OKAY;
+        BVALID_S  = '0;
+        ARREADY_S = '0;
+        RID_S     =  request_c.id;
+        RDATA_S   =  DO;
+        RRESP_S   = `AXI_RESP_OKAY;
+        RLAST_S   = '0;
+        RVALID_S  = '0;
+
+        case (state_c)
+            IDLE: begin
+                // assert AR/SW ready to receive load/store request
+                AWREADY_S = 1'b1;
+                ARREADY_S = 1'b1;
+
+                if (ARVALID_S) begin
+                    state_n   = READ;
+                    request_n = {ARID_S, ARADDR_S, ARLEN_S, ARSIZE_S};
+
+                    READ_REQ = 1'b1; // 先去讀 下一 clock 即可回傳
+                    ADDRESS  = ARADDR_S;
+                    burst_counter_n = 4'd1;
+
+                end else if (AWVALID_S) begin
+                    state_n = WAIT_WVALID;
+                    request_n = {AWID_S, AWADDR_S, AWLEN_S, AWSIZE_S};
+
+                    WREADY_S = 1'b1;
+                    if (WVALID_S) begin
+                        WRITE_REQ = 1'b1;
+                        ADDRESS  = AWADDR_S;
+                        burst_counter_n = 4'd1;
+                        state_n = (WLAST_S) ? RESPONSE : WRITE;
+                    end
+                end
+            end 
+            READ: begin
+                // keep reading the same address
+                READ_REQ = 1'b1;
+                ADDRESS  = request_c.addr;
+
+                // R channel response
+                ARREADY_S = 1'b1;
+                RID_S     = request_c.id;
+                RDATA_S   = DO;
+                RLAST_S   = (request_c.len == burst_counter_c);
+
+                // R channel handshake
+                if (RREADY_S) begin
+                    state_n = (RLAST_S) ? IDLE : READ;
+
+                    RRESP_S         = `AXI_RESP_OKAY;
+                    burst_counter_n = burst_counter_c + 4'd1;
+                    request_n.addr  = request_c.addr + (32'd1 << request_c.size);
+                    ADDRESS         = request_n.addr;
+                end
+            end
+            WAIT_WVALID: begin
+                WREADY_S = 1'b1;
+
+                if (WVALID_S) begin
+                    WRITE_REQ = 1'b1;
+                    ADDRESS  = request_c.addr;
+                    burst_counter_n = 4'd1;
+                    
+                    state_n = (WLAST_S) ? RESPONSE : WRITE;
+                end
+            end
+            WRITE: begin
+                WREADY_S = 1'b1;
+                
+                if (WVALID_S) begin
+                    WRITE_REQ = 1'b1;
+                    burst_counter_n = burst_counter_c + 4'd1;
+                    request_n.addr  = request_c.addr + (32'd1 << request_c.size);
+                    ADDRESS         = request_n.addr;
+                    
+                    state_n = (WLAST_S) ? RESPONSE : WRITE;
+                end
+            end
+            RESPONSE: begin
+                BVALID_S = 1'b1;
+                BID_S    = request_c.id; 
+                if (BREADY_S) begin
+                    state_n = IDLE;
+                    BRESP_S = `AXI_RESP_OKAY;
+                end
+            end
+            default: state_n = IDLE;
+        endcase
+    end
 
 
 endmodule
