@@ -186,19 +186,16 @@ module AXI (
     //                Address Decode               
     // --------------------------------------------
 
-    // decoder for master 0 (read only)
+    // decoder for master 0 (read only), master 1 (read & write)
     always_comb begin
         decoded_AR_M0 = DEFAULT_SLAVE;
+        decoded_AR_M1 = DEFAULT_SLAVE;
+        decoded_AW_M1 = DEFAULT_SLAVE;
+
         if (ARVALID_M0) begin
             if      (ARADDR_M0 >= `S0_start_addr && ARADDR_M0 <= `S0_end_addr) decoded_AR_M0 = S0;
             else if (ARADDR_M0 >= `S1_start_addr && ARADDR_M0 <= `S1_end_addr) decoded_AR_M0 = S1;
         end
-    end
-
-    // decoder for master 1 (read & write)
-    always_comb begin
-        decoded_AR_M1 = DEFAULT_SLAVE;
-        decoded_AW_M1 = DEFAULT_SLAVE;
         if (ARVALID_M1) begin
             if      (ARADDR_M1 >= `S0_start_addr && ARADDR_M1 <= `S0_end_addr) decoded_AR_M1 = S0;
             else if (ARADDR_M1 >= `S1_start_addr && ARADDR_M1 <= `S1_end_addr) decoded_AR_M1 = S1;
@@ -208,7 +205,7 @@ module AXI (
             else if (AWADDR_M1 >= `S1_start_addr && AWADDR_M1 <= `S1_end_addr) decoded_AW_M1 = S1;
         end
     end
-
+    
     // --------------------------------------------
     //               Arbitration Logic             
     // --------------------------------------------
@@ -282,7 +279,7 @@ module AXI (
     // Slave status
     always_comb begin
         // default
-        slave_status_n_s0 = slave_status_c_s1;
+        slave_status_n_s0 = slave_status_c_s0;
         slave_status_n_s1 = slave_status_c_s1;
 
         // finish transaction when slave R handshake or B handshake
@@ -291,17 +288,17 @@ module AXI (
 
         // reset busy to idle if finish transcation
         if (slave_status_c_s0.busy & transaction_done_s0) begin
-            slave_status_c_s0.busy = 1'b0;
+            slave_status_n_s0.busy = 1'b0;
             // remain busy if next request is still the same master and same type
-            if (request_valid_s0 & 
+            /*if (request_valid_s0 & 
                 request_master_s0 == slave_status_c_s0.current_master &
                 request_type_s0 == slave_status_c_s0.transaction_type) begin
-                slave_status_c_s0.busy = 1'b1;        
-            end
+                slave_status_n_s0.busy = 1'b1;        
+            end*/
         end
         
         if (slave_status_c_s1.busy & transaction_done_s1) begin
-            slave_status_c_s1.busy = 1'b0;
+            slave_status_n_s1.busy = 1'b0;
             // remain busy if next request is still the same master and same type
         end
 

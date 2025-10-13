@@ -68,7 +68,7 @@ module SRAM_wrapper(
 
     // slave FSM
     typedef enum logic [2:0] {
-        IDLE, READ, WRITE, WAIT_WVALID, RESPONSE
+        INIT, IDLE, READ, WRITE, WAIT_WVALID, RESPONSE
     } STATE_t;
 
     // request structure
@@ -118,7 +118,7 @@ module SRAM_wrapper(
 
     always_ff @(posedge ACLK or negedge ARESETn) begin
         if (!ARESETn) begin
-            state_c         <= IDLE;
+            state_c         <= INIT;
             request_c       <= REQUEST_t'(0); 
             burst_counter_c <= 4'd0;
         end else begin
@@ -127,6 +127,9 @@ module SRAM_wrapper(
             burst_counter_c <= burst_counter_n;
         end
     end
+
+    //assign BRESP_S = 2'b0;
+    //assign RRESP_S = 2'b0;
 
     always_comb begin
 
@@ -148,6 +151,7 @@ module SRAM_wrapper(
         RID_S     =  request_c.id;
         RDATA_S   =  DO;
         RRESP_S   = `AXI_RESP_OKAY;
+
         RLAST_S   = '0;
         RVALID_S  = '0;
 
@@ -187,7 +191,7 @@ module SRAM_wrapper(
                 ARREADY_S = 1'b1;
                 RID_S     = request_c.id;
                 RDATA_S   = DO;
-                RLAST_S   = (request_c.len == burst_counter_c);
+                RLAST_S   = (request_c.len + 4'd1 == burst_counter_c);
 
                 // R channel handshake
                 if (RREADY_S) begin
