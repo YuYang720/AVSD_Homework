@@ -25,9 +25,6 @@ module Controller(
     input logic [6:0] WB_op,
     input logic [4:0] WB_rd,
 
-    // wait
-    input logic mem_wait,
-
     // Branch  signal
     input logic IF_gbc_predict_taken,
     input logic EX_gbc_predict_taken,
@@ -35,6 +32,8 @@ module Controller(
     input logic IF_btb_j_hit,              
     input logic EX_btb_b_hit,
     input logic EX_btb_j_hit,  
+
+    input logic        mem_wait,
 
     output logic EX_actual_taken,        
 
@@ -47,12 +46,12 @@ module Controller(
     output logic [ 1:0] ID_rs2_data_sel,
     output logic [ 1:0] EX_reg_src1_data_sel,
     output logic [ 1:0] EX_reg_src2_data_sel,
-    output logic        EX_cal_out_sel, 
+    output logic        EX_cal_out_sel,  
     output logic        alu_src1_sel,
     output logic        alu_src2_sel,
     output logic        MEM_dm_w_en,
     output logic        MEM_ceb,
-    output logic [31:0] MEM_bweb,
+    output logic [ 3:0] MEM_bweb,
     output logic        WB_wb_en,
     output logic        WB_fwb_en,
     output logic [ 1:0] WB_wb_data_sel
@@ -115,37 +114,37 @@ module Controller(
     end
 
     // memory operation control
-    assign MEM_ceb = (MEM_op == `S_type || MEM_op == `I_load || MEM_op == `F_FSW || MEM_op == `F_FLW);
+    assign MEM_ceb = (MEM_op == `S_type || MEM_op == `I_load || MEM_op == `F_FSW || MEM_op == `F_FLW) && !stall;
     assign MEM_dm_w_en = (MEM_op == `I_load || MEM_op == `F_FLW); // read: active high, write: active low
 
     always_comb begin
         if(MEM_op == `S_type || MEM_op == `F_FSW) begin
             unique case(MEM_func3)
                 3'b010: begin    // SW
-                    MEM_bweb = 32'h00000000;  // 全部 byte 都寫入
+                    MEM_bweb = 4'b0000;  // 全部 byte 都寫入
                 end
                 3'b000: begin    // SB
                     case(MEM_cal_out[1:0])
-                        2'b00: MEM_bweb = 32'hFFFFFF00;  // 寫入 byte 0
-                        2'b01: MEM_bweb = 32'hFFFF00FF;  // 寫入 byte 1
-                        2'b10: MEM_bweb = 32'hFF00FFFF;  // 寫入 byte 2
-                        2'b11: MEM_bweb = 32'h00FFFFFF;  // 寫入 byte 3
+                        2'b00: MEM_bweb = 4'b1110;  // 寫入 byte 0
+                        2'b01: MEM_bweb = 4'b1101;  // 寫入 byte 1
+                        2'b10: MEM_bweb = 4'b1011;  // 寫入 byte 2
+                        2'b11: MEM_bweb = 4'b0111;  // 寫入 byte 3
                     endcase
                 end
                 3'b001: begin    // SH
                     case(MEM_cal_out[1:0])
-                        2'b00: MEM_bweb = 32'hFFFF0000;  
-                        2'b01: MEM_bweb = 32'hFF0000FF;
-                        2'b10: MEM_bweb = 32'h0000FFFF;  
-                        default: MEM_bweb = 32'hFFFFFFFF;
+                        2'b00: MEM_bweb = 4'b1100;  
+                        2'b01: MEM_bweb = 4'b1001;
+                        2'b10: MEM_bweb = 4'b0011;  
+                        default: MEM_bweb = 4'b1111;
                     endcase
                 end
                 default: begin
-                    MEM_bweb = 32'hFFFFFFFF;  // 不寫入任何 byte
+                    MEM_bweb = 4'b1111;  // 不寫入任何 byte
                 end
             endcase
         end else begin
-            MEM_bweb = 32'hFFFFFFFF;  // 不寫入任何 byte
+            MEM_bweb = 4'b1111;  // 不寫入任何 byte
         end
     end
     

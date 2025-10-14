@@ -185,19 +185,19 @@ CALIBRE_HOME=/usr/cad/mentor/calibre/aoi_cal_2019.2_26.18/
 0
 0
 31
-1758357636 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/./sim/./SRAM/SRAM_rtl.sv
+1760423503 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/./sim/./SRAM/SRAM_rtl.sv
 1760365979 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/./src/AXI/AXI.sv
 1760410845 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/./src/SRAM_wrapper.sv
 1760174118 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/./src/BHR_PHT.sv
 1760174118 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/./src/BTB.sv
-1760174118 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/./src/MEM_WB_reg.sv
-1760174118 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/./src/EX_MEM_reg.sv
-1760174118 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/./src/ID_EX_reg.sv
-1760174118 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/./src/IF_ID_reg.sv
+1760452860 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/./src/MEM_WB_reg.sv
+1760452860 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/./src/EX_MEM_reg.sv
+1760443558 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/./src/ID_EX_reg.sv
+1760446297 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/./src/IF_ID_reg.sv
 1760174118 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/./src/FP_calculator.sv
 1760364774 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/./src/ALU.sv
-1760174118 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/./src/Register_File.sv
-1760174118 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/./src/Program_Counter_reg.sv
+1760426521 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/./src/Register_File.sv
+1760429085 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/./src/Program_Counter_reg.sv
 1760174118 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/./src/Mux4to1.sv
 1760174118 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/./src/Mux3to1.sv
 1760174118 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/./src/Mux2to1.sv
@@ -207,11 +207,11 @@ CALIBRE_HOME=/usr/cad/mentor/calibre/aoi_cal_2019.2_26.18/
 1760174118 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/./src/Imm_Extension.sv
 1760174118 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/./src/Decoder.sv
 1760174118 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/./src/CSR_Unit.sv
-1760365982 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/./src/Controller.sv
+1760449031 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/./src/Controller.sv
 1760174118 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/./src/instruction_pkg.sv
-1760410796 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/./src/CPU.sv
+1760452857 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/./src/CPU.sv
 1760365979 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/./include/AXI_define.svh
-1760417474 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/./src/CPU_wrapper.sv
+1760448366 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/./src/CPU_wrapper.sv
 1760410716 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/./src/top.sv
 1727673525 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/./sim/top_tb.sv
 1693225683 /usr/cad/synopsys/verdi/cur/share/PLI/VCS/LINUX64/verdi.tab
@@ -221,5 +221,5 @@ CALIBRE_HOME=/usr/cad/mentor/calibre/aoi_cal_2019.2_26.18/
 1701103518 /usr/cad/synopsys/vcs/cur/linux64/lib/liberrorinf.so
 1701103440 /usr/cad/synopsys/vcs/cur/linux64/lib/libsnpsmalloc.so
 1701103511 /usr/cad/synopsys/vcs/cur/linux64/lib/libvfs.so
-1760417513 simv.daidir
+1760452872 simv.daidir
 -1 partitionlib

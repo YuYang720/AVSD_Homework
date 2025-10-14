@@ -1,6 +1,7 @@
 module IF_ID_reg (
     input logic        clk,
     input logic        rst,
+    input logic        mem_wait,
     input logic        stall,
     input logic        flush,
     input logic [31:0] IF_pc,
@@ -53,7 +54,7 @@ module IF_ID_reg (
     always_ff @(posedge clk or posedge rst) begin
         if (rst) begin
             stored_inst <= 32'b0;
-        end else if (prev_stall) begin
+        end else if (prev_stall & !mem_wait) begin // 當load-use
             stored_inst <= stored_inst;
         end else if (flush) begin
             stored_inst <= `NOP;
@@ -68,7 +69,7 @@ module IF_ID_reg (
             ID_inst = `NOP;
         end else if(prev_flush || !rst_released) begin 
             ID_inst = `NOP;
-        end else if(prev_stall) begin
+        end else if(prev_stall & !mem_wait) begin
             ID_inst = stored_inst;
         end else begin
             ID_inst = IF_inst;

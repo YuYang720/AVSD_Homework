@@ -43,7 +43,7 @@ module CPU (
     // output logic [31:0] dm_bweb,
 );
     
-    logic [31:0] dm_bweb;
+    logic [ 3:0] dm_bweb;
 
     logic [31:0] next_pc, IF_pc_plus_4;
     logic [31:0] IF_pc, IF_inst;
@@ -131,17 +131,15 @@ module CPU (
         .WB_op        (WB_op),
         .WB_rd        (WB_rd),
 
-        .mem_wait             (im_wait_i | dm_wait_i),
-
         .IF_gbc_predict_taken (IF_gbc_predict_taken),
         .EX_gbc_predict_taken (EX_gbc_predict_taken),
         .IF_btb_b_hit         (IF_btb_b_hit),
         .IF_btb_j_hit         (IF_btb_j_hit),
         .EX_btb_b_hit         (EX_btb_b_hit),
         .EX_btb_j_hit         (EX_btb_j_hit),
-        .EX_actual_taken      (EX_actual_taken),
+        .mem_wait             (im_wait_i | dm_wait_i),
 
-        
+        .EX_actual_taken      (EX_actual_taken),
       	.next_pc_sel          (next_pc_sel),
       	.stall                (stall),
         .IF_flush             (IF_flush),
@@ -174,7 +172,7 @@ module CPU (
     assign dm_addr_o = MEM_cal_out;
     assign dm_din_o  = MEM_rs2_data;
     assign MEM_ld_data = dm_dout_i;
-    assign dm_bit_write_o = dm_bweb;
+    assign dm_bit_write_o = ~dm_bweb;
 
 
     Mux4to1 next_pc_m (
@@ -221,8 +219,11 @@ module CPU (
     IF_ID_reg Reg_IF_ID (
         .clk                  (clk),
         .rst                  (rst),
+        .mem_wait             (im_wait_i | dm_wait_i),
         .stall                (stall),
         .flush                (IF_flush),
+        
+
         .IF_pc                (IF_pc),
         .IF_inst              (IF_inst),
         .IF_btb_b_hit         (IF_btb_b_hit),
@@ -396,6 +397,8 @@ module CPU (
     EX_MEM_reg Reg_EX_MEM (
         .clk          (clk),
         .rst          (rst),
+        .mem_wait        (im_wait_i | dm_wait_i),
+
         .EX_op        (EX_op),
         .EX_rd        (EX_rd),
         .EX_func3     (EX_func3),
@@ -414,6 +417,8 @@ module CPU (
     MEM_WB_reg Reg_MEM_WB (
         .clk         (clk),
         .rst         (rst),
+        .mem_wait       (im_wait_i | dm_wait_i),
+
         .MEM_op      (MEM_op),
         .MEM_rd      (MEM_rd),
         .MEM_func3   (MEM_func3),

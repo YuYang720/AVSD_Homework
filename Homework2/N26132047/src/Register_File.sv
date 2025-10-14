@@ -20,15 +20,16 @@ module Register_File (
     // Write
     always_ff @(posedge clk or posedge rst) begin
         if (rst) begin
-            for (int i = 0; i < 32; i++) begin
-                register[i] <= 32'b0;
+            register[0] <= 32'b0;
+            for (int i = 1; i < 32; i++) begin
+                register[i] <= 32'bx;
             end
         end else if (w_en && rd_index != 5'd0) begin
             register[rd_index] <= w_data;
         end
     end
 
-    /*
+    
     logic [31:0] x0, ra, sp, gp, tp, t0, t1, t2, s0, s1, a0, a1, a2, a3, a4, a5, a6, a7;
     logic [31:0] s2, s3, s4, s5, s6, s7, s8, s9, s10, s11, t3, t4, t5, t6;
 
@@ -64,6 +65,6 @@ module Register_File (
     assign t4 = register[29];
     assign t5 = register[30];
     assign t6 = register[31];
-    */
+    
     
 endmodule
