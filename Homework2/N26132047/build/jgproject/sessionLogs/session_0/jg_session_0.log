@@ -5,10 +5,10 @@
 # version   : 2018.03p001 64 bits
 # build date: 2018.04.24 18:13:05 PDT
 #----------------------------------------
-# started Mon Oct 13 14:48:19 CST 2025
+# started Tue Oct 14 10:41:04 CST 2025
 # hostname  : superdome2
-# pid       : 182781
-# arguments : '-label' 'session_0' '-console' 'superdome2:40107' '-style' 'windows' '-data' 'AQAAADx/////AAAAAAAAA3oBAAAAEABMAE0AUgBFAE0ATwBWAEU=' '-proj' '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/build/jgproject/sessionLogs/session_0' '-init' '-hidden' '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/build/jgproject/.tmp/.initCmds.tcl' '../script/jg_slave.tcl'
+# pid       : 136725
+# arguments : '-label' 'session_0' '-console' 'superdome2:40250' '-style' 'windows' '-data' 'AQAAADx/////AAAAAAAAA3oBAAAAEABMAE0AUgBFAE0ATwBWAEU=' '-proj' '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/build/jgproject/sessionLogs/session_0' '-init' '-hidden' '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/build/jgproject/.tmp/.initCmds.tcl' '../script/jg_master.tcl'
 
 Any disclosure about the Cadence Design Systems software or its use
 model to any third party violates the written Non-Disclosure Agreement
@@ -55,98 +55,263 @@ INFO: reading configuration file "/home/user1/avsd25/avsd2541/.config/jasper/jas
 % 
 % abvip -set_location $ABVIP_INST_DIR
 % set_visualize_auto_load_debugging_tables on
-% analyze -f $vip_dir/slave_duv/jg.f -sv09
+% analyze -f $vip_dir/master_duv/jg.f -sv09
 [-- (VERI-1482)] Analyzing Verilog file '/usr/cad/cadence/JASPER/jasper_2018.03p001/lib/verilog/packages/std/std.sv' into library 'std'
-[-- (VERI-1482)] Analyzing Verilog file '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/SRAM_wrapper.sv'
-[INFO (VERI-1328)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/SRAM_wrapper.sv(19): analyzing included file '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../include/AXI_define.svh'
-[-- (VERI-1482)] Analyzing Verilog file '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../sim/SRAM/SRAM_rtl.sv'
-[-- (VERI-1482)] Analyzing Verilog file '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/slave_duv/top.v'
-[WARN (VERI-9025)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/slave_duv/top.v(21): Empty Port in Module Declaration
-[-- (VERI-1482)] Analyzing Verilog file '/usr/cad/cadence/VIPCAT/cur/tools/abvip/axi4/rtl/axi4_master.sv'
-[INFO (VERI-1328)] /usr/cad/cadence/VIPCAT/cur/tools/abvip/axi4/rtl/axi4_master.sv(35): analyzing included file '/usr/cad/cadence/VIPCAT/cur/tools/abvip/axi4/rtl/cdn_abvip_axi4_master.svp'
-[INFO (VERI-1328)] /usr/cad/cadence/VIPCAT/cur/tools/abvip/axi4/rtl/cdn_abvip_axi4_master.svp(30): analyzing included file '/usr/cad/cadence/VIPCAT/cur/tools/abvip/axi4/rtl/amba4_defines.svh'
-[INFO (VERI-1328)] /usr/cad/cadence/VIPCAT/cur/tools/abvip/axi4/rtl/cdn_abvip_axi4_master.svp(1796): analyzing included file '/usr/cad/cadence/VIPCAT/cur/tools/abvip/axi4/rtl/abviplib.v'
-[-- (VERI-1489)]       Resolving module 'axi4_master'
+[-- (VERI-1482)] Analyzing Verilog file '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/CPU_wrapper.sv'
+[INFO (VERI-1328)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/CPU_wrapper.sv(19): analyzing included file '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../include/AXI_define.svh'
+[INFO (VERI-1328)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/CPU_wrapper.sv(20): analyzing included file '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/CPU.sv'
+[INFO (VERI-1328)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/CPU.sv(1): analyzing included file '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/instruction_pkg.sv'
+[INFO (VERI-1328)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/CPU.sv(2): analyzing included file '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/Controller.sv'
+[INFO (VERI-1328)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/CPU.sv(3): analyzing included file '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/CSR_Unit.sv'
+[INFO (VERI-1328)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/CPU.sv(4): analyzing included file '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/Decoder.sv'
+[INFO (VERI-1328)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/CPU.sv(5): analyzing included file '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/Imm_Extension.sv'
+[INFO (VERI-1328)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/CPU.sv(6): analyzing included file '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/JB_target_gen.sv'
+[INFO (VERI-1328)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/CPU.sv(7): analyzing included file '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/LD_Filter.sv'
+[INFO (VERI-1328)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/CPU.sv(8): analyzing included file '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/MUL.sv'
+[INFO (VERI-1328)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/CPU.sv(9): analyzing included file '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/Mux2to1.sv'
+[INFO (VERI-1328)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/CPU.sv(10): analyzing included file '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/Mux3to1.sv'
+[INFO (VERI-1328)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/CPU.sv(11): analyzing included file '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/Mux4to1.sv'
+[INFO (VERI-1328)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/CPU.sv(12): analyzing included file '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/Program_Counter_reg.sv'
+[INFO (VERI-1328)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/CPU.sv(13): analyzing included file '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/Register_File.sv'
+[INFO (VERI-1328)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/CPU.sv(14): analyzing included file '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/ALU.sv'
+[INFO (VERI-1328)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/ALU.sv(1): analyzing included file '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/FP_calculator.sv'
+[INFO (VERI-1328)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/CPU.sv(15): analyzing included file '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/IF_ID_reg.sv'
+[INFO (VERI-1328)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/CPU.sv(16): analyzing included file '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/ID_EX_reg.sv'
+[INFO (VERI-1328)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/CPU.sv(17): analyzing included file '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/EX_MEM_reg.sv'
+[INFO (VERI-1328)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/CPU.sv(18): analyzing included file '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/MEM_WB_reg.sv'
+[INFO (VERI-1328)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/CPU.sv(19): analyzing included file '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/BTB.sv'
+[INFO (VERI-1328)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/CPU.sv(20): analyzing included file '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/BHR_PHT.sv'
+[WARN (VERI-1214)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/CPU.sv(176): assignment to input 'dm_dout_i'
+[-- (VERI-1482)] Analyzing Verilog file '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/CPU.sv'
+[INFO (VERI-1328)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/CPU.sv(1): analyzing included file '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/instruction_pkg.sv'
+[INFO (VERI-1328)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/CPU.sv(2): analyzing included file '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/Controller.sv'
+[WARN (VERI-1206)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/Controller.sv(180): overwriting previous definition of module 'Controller'
+[INFO (VERI-2142)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/Controller.sv(180): previous definition of design element 'Controller' is here
+[INFO (VERI-1328)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/CPU.sv(3): analyzing included file '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/CSR_Unit.sv'
+[WARN (VERI-1206)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/CSR_Unit.sv(40): overwriting previous definition of module 'CSR_Unit'
+[INFO (VERI-2142)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/CSR_Unit.sv(40): previous definition of design element 'CSR_Unit' is here
+[INFO (VERI-1328)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/CPU.sv(4): analyzing included file '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/Decoder.sv'
+[WARN (VERI-1206)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/Decoder.sv(18): overwriting previous definition of module 'Decoder'
+[INFO (VERI-2142)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/Decoder.sv(18): previous definition of design element 'Decoder' is here
+[INFO (VERI-1328)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/CPU.sv(5): analyzing included file '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/Imm_Extension.sv'
+[WARN (VERI-1206)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/Imm_Extension.sv(24): overwriting previous definition of module 'Imm_Extension'
+[INFO (VERI-2142)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/Imm_Extension.sv(24): previous definition of design element 'Imm_Extension' is here
+[INFO (VERI-1328)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/CPU.sv(6): analyzing included file '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/JB_target_gen.sv'
+[WARN (VERI-1206)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/JB_target_gen.sv(17): overwriting previous definition of module 'JB_target_gen'
+[INFO (VERI-2142)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/JB_target_gen.sv(17): previous definition of design element 'JB_target_gen' is here
+[INFO (VERI-1328)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/CPU.sv(7): analyzing included file '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/LD_Filter.sv'
+[WARN (VERI-1206)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/LD_Filter.sv(40): overwriting previous definition of module 'LD_Filter'
+[INFO (VERI-2142)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/LD_Filter.sv(40): previous definition of design element 'LD_Filter' is here
+[INFO (VERI-1328)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/CPU.sv(8): analyzing included file '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/MUL.sv'
+[WARN (VERI-1206)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/MUL.sv(47): overwriting previous definition of module 'MUL'
+[INFO (VERI-2142)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/MUL.sv(47): previous definition of design element 'MUL' is here
+[INFO (VERI-1328)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/CPU.sv(9): analyzing included file '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/Mux2to1.sv'
+[WARN (VERI-1206)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/Mux2to1.sv(16): overwriting previous definition of module 'Mux2to1'
+[INFO (VERI-2142)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/Mux2to1.sv(16): previous definition of design element 'Mux2to1' is here
+[INFO (VERI-1328)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/CPU.sv(10): analyzing included file '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/Mux3to1.sv'
+[WARN (VERI-1206)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/Mux3to1.sv(17): overwriting previous definition of module 'Mux3to1'
+[INFO (VERI-2142)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/Mux3to1.sv(17): previous definition of design element 'Mux3to1' is here
+[INFO (VERI-1328)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/CPU.sv(11): analyzing included file '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/Mux4to1.sv'
+[WARN (VERI-1206)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/Mux4to1.sv(22): overwriting previous definition of module 'Mux4to1'
+[INFO (VERI-2142)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/Mux4to1.sv(22): previous definition of design element 'Mux4to1' is here
+[INFO (VERI-1328)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/CPU.sv(12): analyzing included file '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/Program_Counter_reg.sv'
+[WARN (VERI-1206)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/Program_Counter_reg.sv(17): overwriting previous definition of module 'Program_Counter_reg'
+[INFO (VERI-2142)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/Program_Counter_reg.sv(17): previous definition of design element 'Program_Counter_reg' is here
+[INFO (VERI-1328)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/CPU.sv(13): analyzing included file '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/Register_File.sv'
+[WARN (VERI-1206)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/Register_File.sv(69): overwriting previous definition of module 'Register_File'
+[INFO (VERI-2142)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/Register_File.sv(69): previous definition of design element 'Register_File' is here
+[INFO (VERI-1328)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/CPU.sv(14): analyzing included file '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/ALU.sv'
+[INFO (VERI-1328)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/ALU.sv(1): analyzing included file '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/FP_calculator.sv'
+[WARN (VERI-1206)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/FP_calculator.sv(186): overwriting previous definition of module 'FP_calculator'
+[INFO (VERI-2142)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/FP_calculator.sv(186): previous definition of design element 'FP_calculator' is here
+[WARN (VERI-1206)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/ALU.sv(52): overwriting previous definition of module 'ALU'
+[INFO (VERI-2142)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/ALU.sv(52): previous definition of design element 'ALU' is here
+[INFO (VERI-1328)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/CPU.sv(15): analyzing included file '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/IF_ID_reg.sv'
+[WARN (VERI-1206)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/IF_ID_reg.sv(97): overwriting previous definition of module 'IF_ID_reg'
+[INFO (VERI-2142)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/IF_ID_reg.sv(97): previous definition of design element 'IF_ID_reg' is here
+[INFO (VERI-1328)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/CPU.sv(16): analyzing included file '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/ID_EX_reg.sv'
+[WARN (VERI-1206)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/ID_EX_reg.sv(93): overwriting previous definition of module 'ID_EX_reg'
+[INFO (VERI-2142)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/ID_EX_reg.sv(93): previous definition of design element 'ID_EX_reg' is here
+[INFO (VERI-1328)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/CPU.sv(17): analyzing included file '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/EX_MEM_reg.sv'
+[WARN (VERI-1206)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/EX_MEM_reg.sv(50): overwriting previous definition of module 'EX_MEM_reg'
+[INFO (VERI-2142)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/EX_MEM_reg.sv(50): previous definition of design element 'EX_MEM_reg' is here
+[INFO (VERI-1328)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/CPU.sv(18): analyzing included file '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/MEM_WB_reg.sv'
+[WARN (VERI-1206)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/MEM_WB_reg.sv(37): overwriting previous definition of module 'MEM_WB_reg'
+[INFO (VERI-2142)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/MEM_WB_reg.sv(37): previous definition of design element 'MEM_WB_reg' is here
+[INFO (VERI-1328)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/CPU.sv(19): analyzing included file '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/BTB.sv'
+[WARN (VERI-1206)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/BTB.sv(64): overwriting previous definition of module 'BTB'
+[INFO (VERI-2142)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/BTB.sv(64): previous definition of design element 'BTB' is here
+[INFO (VERI-1328)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/CPU.sv(20): analyzing included file '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/BHR_PHT.sv'
+[WARN (VERI-1206)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/BHR_PHT.sv(38): overwriting previous definition of module 'BHR_PHT'
+[INFO (VERI-2142)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/BHR_PHT.sv(38): previous definition of design element 'BHR_PHT' is here
+[WARN (VERI-1206)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/CPU.sv(458): overwriting previous definition of module 'CPU'
+[INFO (VERI-2142)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/CPU.sv(458): previous definition of design element 'CPU' is here
+[-- (VERI-1482)] Analyzing Verilog file '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/master_duv/top.v'
+[WARN (VERI-9025)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/master_duv/top.v(20): Empty Port in Module Declaration
+[-- (VERI-1482)] Analyzing Verilog file '/usr/cad/cadence/VIPCAT/cur/tools/abvip/axi4/rtl/axi4_slave.sv'
+[INFO (VERI-1328)] /usr/cad/cadence/VIPCAT/cur/tools/abvip/axi4/rtl/axi4_slave.sv(35): analyzing included file '/usr/cad/cadence/VIPCAT/cur/tools/abvip/axi4/rtl/cdn_abvip_axi4_slave.svp'
+[INFO (VERI-1328)] /usr/cad/cadence/VIPCAT/cur/tools/abvip/axi4/rtl/cdn_abvip_axi4_slave.svp(30): analyzing included file '/usr/cad/cadence/VIPCAT/cur/tools/abvip/axi4/rtl/amba4_defines.svh'
+[INFO (VERI-1328)] /usr/cad/cadence/VIPCAT/cur/tools/abvip/axi4/rtl/cdn_abvip_axi4_slave.svp(1796): analyzing included file '/usr/cad/cadence/VIPCAT/cur/tools/abvip/axi4/rtl/abviplib.v'
+[-- (VERI-1489)]       Resolving module 'axi4_slave'
 [INFO (VERI-1508)] The default veri library search path is now "/usr/cad/cadence/JASPER/jasper_2018.03p001/lib/Linux64/verilog/jasper_package/jasper_csr_extended_checker"
 [-- (VERI-1503)] Restoring Verilog parse-tree 'work.jasper_csr_extended_checker' from '/usr/cad/cadence/JASPER/jasper_2018.03p001/lib/Linux64/verilog/jasper_package/jasper_csr_extended_checker/work/jasper_csr_extended_checker.sdb'
-% elaborate -top top -param axi_monitor.MAX_PENDING 1
+% elaborate -top top -param top.axi_monitor_0.READONLY_INTERFACE 1\
+-param top.axi_monitor_0.MAX_PENDING 1 -param top.axi_monitor_1.MAX_PENDING 1 
 INFO (ISW003): Top module name is "top".
-[INFO (VERI-1018)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/slave_duv/top.v(21): compiling module 'top'
-[INFO (VERI-1018)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/SRAM_wrapper.sv(21): compiling module 'SRAM_wrapper'
-[INFO (VERI-1018)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../sim/SRAM/SRAM_rtl.sv(21): compiling module 'TS1N16ADFPCLLLVTA512X45M4SWSHOD'
-[WARN (VERI-9033)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../sim/SRAM/SRAM_rtl.sv(63): array MEMORY (size 524288) automatically BLACK-BOXED. Use the "elaborate -bbox_a" command to prevent automatic black-boxing.
-[WARN (VERI-1330)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/slave_duv/top.v(118): actual bit length 4 differs from formal bit length 8 for port 'AWID_S'
-[WARN (VERI-1330)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/slave_duv/top.v(119): actual bit length 16 differs from formal bit length 32 for port 'AWADDR_S'
-[WARN (VERI-1330)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/slave_duv/top.v(130): actual bit length 4 differs from formal bit length 8 for port 'BID_S'
-[WARN (VERI-1330)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/slave_duv/top.v(134): actual bit length 4 differs from formal bit length 8 for port 'ARID_S'
-[WARN (VERI-1330)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/slave_duv/top.v(135): actual bit length 16 differs from formal bit length 32 for port 'ARADDR_S'
-[WARN (VERI-1330)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/slave_duv/top.v(141): actual bit length 4 differs from formal bit length 8 for port 'RID_S'
-[INFO (VERI-1018)] /usr/cad/cadence/VIPCAT/cur/tools/abvip/axi4/rtl/cdn_abvip_axi4_master.svp(162): compiling module 'axi4_master:(ID_WIDTH=8,ADDR_WIDTH=16,DATA_WIDTH=32,LEN_WIDTH=4,COVERAGE_ON=1'b0,DATA_BEFORE_CONTROL_ON=1'b0,MAX_PENDING=1,MAXLEN=4,READ_INTERLEAVE_ON=1'b0)'
+[INFO (VERI-1018)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/master_duv/top.v(20): compiling module 'top'
+[INFO (VERI-1018)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/CPU_wrapper.sv(22): compiling module 'CPU_wrapper'
+[INFO (VERI-1018)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/CPU.sv(22): compiling module 'CPU'
+[INFO (VERI-1018)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/Controller.sv(1): compiling module 'Controller'
+[WARN (VERI-1209)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/CPU.sv(177): expression size 32 truncated to fit in target size 4
+[INFO (VERI-1018)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/Mux4to1.sv(1): compiling module 'Mux4to1'
+[INFO (VERI-1018)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/BTB.sv(2): compiling module 'BTB'
+[WARN (VERI-1209)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/BTB.sv(55): expression size 32 truncated to fit in target size 16
+[WARN (VERI-1209)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/BTB.sv(60): expression size 32 truncated to fit in target size 16
+[INFO (VERI-1018)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/BHR_PHT.sv(2): compiling module 'BHR_PHT'
+[WARN (VERI-1209)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/BHR_PHT.sv(31): expression size 32 truncated to fit in target size 2
+[WARN (VERI-1209)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/BHR_PHT.sv(33): expression size 32 truncated to fit in target size 2
+[INFO (VERI-1018)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/Program_Counter_reg.sv(1): compiling module 'Program_Counter_reg'
+[INFO (VERI-1018)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/IF_ID_reg.sv(1): compiling module 'IF_ID_reg'
+[INFO (VERI-1018)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/Decoder.sv(1): compiling module 'Decoder'
+[INFO (VERI-1018)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/Imm_Extension.sv(1): compiling module 'Imm_Extension'
+[INFO (VERI-1018)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/Register_File.sv(1): compiling module 'Register_File'
+[INFO (VERI-1018)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/Mux3to1.sv(1): compiling module 'Mux3to1'
+[INFO (VERI-1018)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/ID_EX_reg.sv(1): compiling module 'ID_EX_reg'
+[INFO (VERI-1018)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/Mux2to1.sv(1): compiling module 'Mux2to1'
+[INFO (VERI-1018)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/JB_target_gen.sv(1): compiling module 'JB_target_gen'
+[INFO (VERI-1018)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/ALU.sv(2): compiling module 'ALU'
+[INFO (VERI-1018)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/FP_calculator.sv(1): compiling module 'FP_calculator'
+[WARN (VERI-1209)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/FP_calculator.sv(105): expression size 32 truncated to fit in target size 8
+[WARN (VERI-1209)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/FP_calculator.sv(108): expression size 32 truncated to fit in target size 8
+[WARN (VERI-1209)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/FP_calculator.sv(111): expression size 32 truncated to fit in target size 8
+[WARN (VERI-1209)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/FP_calculator.sv(114): expression size 32 truncated to fit in target size 8
+[WARN (VERI-1209)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/FP_calculator.sv(118): expression size 32 truncated to fit in target size 8
+[WARN (VERI-1209)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/FP_calculator.sv(127): expression size 32 truncated to fit in target size 8
+[WARN (VERI-1209)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/FP_calculator.sv(154): expression size 32 truncated to fit in target size 8
+[INFO (VERI-1018)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/MUL.sv(1): compiling module 'MUL'
+[INFO (VERI-1018)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/EX_MEM_reg.sv(1): compiling module 'EX_MEM_reg'
+[INFO (VERI-1018)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/MEM_WB_reg.sv(1): compiling module 'MEM_WB_reg'
+[INFO (VERI-1018)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/CSR_Unit.sv(1): compiling module 'CSR_Unit'
+[INFO (VERI-1018)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/LD_Filter.sv(1): compiling module 'LD_Filter'
+[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/CPU.sv(68): net 'MEM_ld_data[31]' does not have a driver
+[WARN (VERI-1899)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/CPU_wrapper.sv(330): 'ARVALID_M0' inside always_comb block does not represent combinational logic
+[INFO (VERI-1018)] /usr/cad/cadence/VIPCAT/cur/tools/abvip/axi4/rtl/cdn_abvip_axi4_slave.svp(162): compiling module 'axi4_slave:(ID_WIDTH=4,ADDR_WIDTH=32,DATA_WIDTH=32,LEN_WIDTH=4,COVERAGE_ON=1'b0,DATA_BEFORE_CONTROL_ON=1'b0,MAX_PENDING=1,MAXLEN=1,READ_INTERLEAVE_ON=1'b0,READONLY_INTERFACE=1'b1)'
 [WARN (VERI-1060)] /usr/cad/cadence/VIPCAT/cur/tools/abvip/axi4/rtl/version.v(3): 'initial' construct ignored
-[WARN (VERI-1060)] /usr/cad/cadence/VIPCAT/cur/tools/abvip/axi4/rtl/cdn_abvip_axi4_master.svp(2401): 'initial' construct ignored
-[WARN (VERI-1209)] /usr/cad/cadence/VIPCAT/cur/tools/abvip/axi4/rtl/cdn_abvip_axi4_master.svp(2698): expression size 32 truncated to fit in target size 16
-[WARN (VERI-1209)] /usr/cad/cadence/VIPCAT/cur/tools/abvip/axi4/rtl/cdn_abvip_axi4_master.svp(2701): expression size 32 truncated to fit in target size 4
-[WARN (VERI-1209)] /usr/cad/cadence/VIPCAT/cur/tools/abvip/axi4/rtl/cdn_abvip_axi4_master.svp(2704): expression size 32 truncated to fit in target size 3
-[WARN (VERI-1209)] /usr/cad/cadence/VIPCAT/cur/tools/abvip/axi4/rtl/cdn_abvip_axi4_master.svp(2707): expression size 32 truncated to fit in target size 2
-[WARN (VERI-1330)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/slave_duv/top.v(154): actual bit length 4 differs from formal bit length 8 for port 'awid'
-[WARN (VERI-1330)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/slave_duv/top.v(180): actual bit length 4 differs from formal bit length 8 for port 'bid'
-[WARN (VERI-1330)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/slave_duv/top.v(185): actual bit length 4 differs from formal bit length 8 for port 'arid'
-[WARN (VERI-1330)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/slave_duv/top.v(196): actual bit length 4 differs from formal bit length 8 for port 'rid'
-[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/slave_duv/top.v(50): net 'aclk' does not have a driver
-[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/slave_duv/top.v(51): net 'aresetn' does not have a driver
-[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/slave_duv/top.v(54): net 'awid[3]' does not have a driver
-[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/slave_duv/top.v(55): net 'awaddr[15]' does not have a driver
-[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/slave_duv/top.v(56): net 'awlen[3]' does not have a driver
-[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/slave_duv/top.v(57): net 'awsize[2]' does not have a driver
-[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/slave_duv/top.v(58): net 'awburst[1]' does not have a driver
-[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/slave_duv/top.v(59): net 'awlock' does not have a driver
-[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/slave_duv/top.v(60): net 'awprot[2]' does not have a driver
-[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/slave_duv/top.v(61): net 'awcache[3]' does not have a driver
-[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/slave_duv/top.v(62): net 'awvalid' does not have a driver
-[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/slave_duv/top.v(64): net 'awqos[3]' does not have a driver
-[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/slave_duv/top.v(65): net 'awregion[3]' does not have a driver
-[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/slave_duv/top.v(66): net 'awuser[31]' does not have a driver
-[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/slave_duv/top.v(69): net 'wdata[31]' does not have a driver
-[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/slave_duv/top.v(70): net 'wstrb[3]' does not have a driver
-[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/slave_duv/top.v(71): net 'wlast' does not have a driver
-[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/slave_duv/top.v(72): net 'wvalid' does not have a driver
-[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/slave_duv/top.v(74): net 'wuser[31]' does not have a driver
-[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/slave_duv/top.v(79): net 'bready' does not have a driver
-[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/slave_duv/top.v(80): net 'buser[31]' does not have a driver
-[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/slave_duv/top.v(82): net 'arid[3]' does not have a driver
-[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/slave_duv/top.v(83): net 'araddr[15]' does not have a driver
-[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/slave_duv/top.v(84): net 'arlen[3]' does not have a driver
-[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/slave_duv/top.v(85): net 'arsize[2]' does not have a driver
-[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/slave_duv/top.v(86): net 'arburst[1]' does not have a driver
-[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/slave_duv/top.v(87): net 'arlock' does not have a driver
-[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/slave_duv/top.v(88): net 'arprot[2]' does not have a driver
-[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/slave_duv/top.v(89): net 'arcache[3]' does not have a driver
-[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/slave_duv/top.v(90): net 'arvalid' does not have a driver
-[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/slave_duv/top.v(92): net 'arqos[3]' does not have a driver
-[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/slave_duv/top.v(93): net 'arregion[3]' does not have a driver
-[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/slave_duv/top.v(94): net 'aruser[31]' does not have a driver
-[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/slave_duv/top.v(101): net 'rready' does not have a driver
-[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/slave_duv/top.v(103): net 'ruser[31]' does not have a driver
-[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/slave_duv/top.v(108): net 'csysreq' does not have a driver
-[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/slave_duv/top.v(109): net 'csysack' does not have a driver
-[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/slave_duv/top.v(110): net 'cactive' does not have a driver
-[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/SRAM_wrapper.sv(102): net 'clk' does not have a driver
-[WARN (VDB-1002)] /usr/cad/cadence/VIPCAT/cur/tools/abvip/axi4/rtl/cdn_abvip_axi4_master.svp(761): net 'rd_arid_nondvm_match_bm[0]' does not have a driver
-[WARN (VDB-1002)] /usr/cad/cadence/VIPCAT/cur/tools/abvip/axi4/rtl/cdn_abvip_axi4_master.svp(763): net 'rd_wr_addr_overlap_bm[0]' does not have a driver
-[WARN (VDB-1002)] /usr/cad/cadence/VIPCAT/cur/tools/abvip/axi4/rtl/cdn_abvip_axi4_master.svp(944): net 'rndmAWADDR[15]' does not have a driver
-[WARN (VDB-1002)] /usr/cad/cadence/VIPCAT/cur/tools/abvip/axi4/rtl/cdn_abvip_axi4_master.svp(945): net 'rndmAWBURST[1]' does not have a driver
-[WARN (VDB-1002)] /usr/cad/cadence/VIPCAT/cur/tools/abvip/axi4/rtl/cdn_abvip_axi4_master.svp(946): net 'rndmAWSIZE[2]' does not have a driver
-[WARN (VDB-1002)] /usr/cad/cadence/VIPCAT/cur/tools/abvip/axi4/rtl/cdn_abvip_axi4_master.svp(947): net 'rndmAWLEN[3]' does not have a driver
-[WARN (VDB-1002)] /usr/cad/cadence/VIPCAT/cur/tools/abvip/axi4/rtl/cdn_abvip_axi4_master.svp(969): net 'wr_rd_addr_overlap_bm[0]' does not have a driver
-[WARN (VDB-1002)] /usr/cad/cadence/VIPCAT/cur/tools/abvip/axi4/rtl/cdn_abvip_axi4_master.svp(970): net 'wr_wr_addr_overlap_bm[0]' does not have a driver
-WARNING (WOBS002): /usr/cad/cadence/VIPCAT/cur/tools/abvip/axi4/rtl/cdn_abvip_axi4_master.svp(7378): Weakly embedded unbounded sequence in a ASSERT directive..
-WARNING (WOBS002): /usr/cad/cadence/VIPCAT/cur/tools/abvip/axi4/rtl/cdn_abvip_axi4_master.svp(7387): Weakly embedded unbounded sequence in a ASSERT directive..
-WARNING (WOBS002): /usr/cad/cadence/VIPCAT/cur/tools/abvip/axi4/rtl/cdn_abvip_axi4_master.svp(7416): Weakly embedded unbounded sequence in a ASSUME directive..
-WARNING (WOBS002): /usr/cad/cadence/VIPCAT/cur/tools/abvip/axi4/rtl/cdn_abvip_axi4_master.svp(9578): Weakly embedded unbounded sequence in a ASSERT directive..
-WARNING (WOBS002): /usr/cad/cadence/VIPCAT/cur/tools/abvip/axi4/rtl/cdn_abvip_axi4_master.svp(9585): Weakly embedded unbounded sequence in a ASSERT directive..
-WARNING (WOBS002): /usr/cad/cadence/VIPCAT/cur/tools/abvip/axi4/rtl/cdn_abvip_axi4_master.svp(9594): Weakly embedded unbounded sequence in a ASSUME directive..
-WARNING (WOBS002): /usr/cad/cadence/VIPCAT/cur/tools/abvip/axi4/rtl/cdn_abvip_axi4_master.svp(9602): Weakly embedded unbounded sequence in a ASSERT directive..
-WARNING (WOBS002): /usr/cad/cadence/VIPCAT/cur/tools/abvip/axi4/rtl/cdn_abvip_axi4_master.svp(9631): Weakly embedded unbounded sequence in a ASSUME directive..
+[WARN (VERI-1060)] /usr/cad/cadence/VIPCAT/cur/tools/abvip/axi4/rtl/cdn_abvip_axi4_slave.svp(2401): 'initial' construct ignored
+[WARN (VERI-1209)] /usr/cad/cadence/VIPCAT/cur/tools/abvip/axi4/rtl/cdn_abvip_axi4_slave.svp(2701): expression size 32 truncated to fit in target size 4
+[WARN (VERI-1209)] /usr/cad/cadence/VIPCAT/cur/tools/abvip/axi4/rtl/cdn_abvip_axi4_slave.svp(2704): expression size 32 truncated to fit in target size 3
+[WARN (VERI-1209)] /usr/cad/cadence/VIPCAT/cur/tools/abvip/axi4/rtl/cdn_abvip_axi4_slave.svp(2707): expression size 32 truncated to fit in target size 2
+[WARN (VERI-1330)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/master_duv/top.v(192): actual bit length 1 differs from formal bit length 4 for port 'awid'
+[WARN (VERI-1330)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/master_duv/top.v(193): actual bit length 1 differs from formal bit length 32 for port 'awaddr'
+[WARN (VERI-1330)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/master_duv/top.v(194): actual bit length 1 differs from formal bit length 4 for port 'awlen'
+[WARN (VERI-1330)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/master_duv/top.v(195): actual bit length 1 differs from formal bit length 3 for port 'awsize'
+[WARN (VERI-1330)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/master_duv/top.v(196): actual bit length 1 differs from formal bit length 2 for port 'awburst'
+[WARN (VERI-1330)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/master_duv/top.v(198): actual bit length 1 differs from formal bit length 4 for port 'awcache'
+[WARN (VERI-1330)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/master_duv/top.v(199): actual bit length 1 differs from formal bit length 3 for port 'awprot'
+[WARN (VERI-1330)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/master_duv/top.v(200): actual bit length 32 differs from formal bit length 1 for port 'awvalid'
+[WARN (VERI-1330)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/master_duv/top.v(202): actual bit length 1 differs from formal bit length 4 for port 'awqos'
+[WARN (VERI-1330)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/master_duv/top.v(203): actual bit length 1 differs from formal bit length 4 for port 'awregion'
+[WARN (VERI-1330)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/master_duv/top.v(204): actual bit length 1 differs from formal bit length 32 for port 'awuser'
+[WARN (VERI-1330)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/master_duv/top.v(209): actual bit length 1 differs from formal bit length 32 for port 'buser'
+[WARN (VERI-1330)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/master_duv/top.v(210): actual bit length 1 differs from formal bit length 32 for port 'wuser'
+[WARN (VERI-1330)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/master_duv/top.v(212): actual bit length 1 differs from formal bit length 32 for port 'wdata'
+[WARN (VERI-1330)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/master_duv/top.v(213): actual bit length 1 differs from formal bit length 4 for port 'wstrb'
+[WARN (VERI-1330)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/master_duv/top.v(215): actual bit length 32 differs from formal bit length 1 for port 'wvalid'
+[WARN (VERI-1330)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/master_duv/top.v(218): actual bit length 1 differs from formal bit length 4 for port 'bid'
+[WARN (VERI-1330)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/master_duv/top.v(219): actual bit length 1 differs from formal bit length 2 for port 'bresp'
+[INFO (VERI-1018)] /usr/cad/cadence/VIPCAT/cur/tools/abvip/axi4/rtl/cdn_abvip_axi4_slave.svp(162): compiling module 'axi4_slave:(ID_WIDTH=4,ADDR_WIDTH=32,DATA_WIDTH=32,LEN_WIDTH=4,COVERAGE_ON=1'b0,DATA_BEFORE_CONTROL_ON=1'b0,MAX_PENDING=1,MAXLEN=1,READ_INTERLEAVE_ON=1'b0)'
+[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/master_duv/top.v(46): net 'aclk' does not have a driver
+[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/master_duv/top.v(47): net 'aresetn' does not have a driver
+[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/master_duv/top.v(61): net 'arlock_m0' does not have a driver
+[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/master_duv/top.v(62): net 'arprot_m0[2]' does not have a driver
+[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/master_duv/top.v(63): net 'arcache_m0[3]' does not have a driver
+[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/master_duv/top.v(65): net 'arready_m0' does not have a driver
+[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/master_duv/top.v(66): net 'arqos_m0[3]' does not have a driver
+[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/master_duv/top.v(67): net 'arregion_m0[3]' does not have a driver
+[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/master_duv/top.v(68): net 'aruser_m0[31]' does not have a driver
+[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/master_duv/top.v(71): net 'rid_m0[3]' does not have a driver
+[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/master_duv/top.v(72): net 'rdata_m0[31]' does not have a driver
+[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/master_duv/top.v(73): net 'rlast_m0' does not have a driver
+[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/master_duv/top.v(74): net 'rvalid_m0' does not have a driver
+[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/master_duv/top.v(76): net 'rresp_m0[1]' does not have a driver
+[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/master_duv/top.v(77): net 'ruser_m0[31]' does not have a driver
+[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/master_duv/top.v(86): net 'awlock_m1' does not have a driver
+[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/master_duv/top.v(87): net 'awprot_m1[2]' does not have a driver
+[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/master_duv/top.v(88): net 'awcache_m1[3]' does not have a driver
+[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/master_duv/top.v(90): net 'awready_m1' does not have a driver
+[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/master_duv/top.v(91): net 'awqos_m1[3]' does not have a driver
+[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/master_duv/top.v(92): net 'awregion_m1[3]' does not have a driver
+[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/master_duv/top.v(93): net 'awuser_m1[31]' does not have a driver
+[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/master_duv/top.v(100): net 'wready_m1' does not have a driver
+[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/master_duv/top.v(101): net 'wuser_m1[31]' does not have a driver
+[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/master_duv/top.v(103): net 'bid_m1[3]' does not have a driver
+[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/master_duv/top.v(104): net 'bresp_m1[1]' does not have a driver
+[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/master_duv/top.v(105): net 'bvalid_m1' does not have a driver
+[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/master_duv/top.v(107): net 'buser_m1[31]' does not have a driver
+[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/master_duv/top.v(114): net 'arlock_m1' does not have a driver
+[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/master_duv/top.v(115): net 'arprot_m1[2]' does not have a driver
+[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/master_duv/top.v(116): net 'arcache_m1[3]' does not have a driver
+[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/master_duv/top.v(118): net 'arready_m1' does not have a driver
+[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/master_duv/top.v(119): net 'arqos_m1[3]' does not have a driver
+[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/master_duv/top.v(120): net 'arregion_m1[3]' does not have a driver
+[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/master_duv/top.v(121): net 'aruser_m1[31]' does not have a driver
+[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/master_duv/top.v(124): net 'rid_m1[3]' does not have a driver
+[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/master_duv/top.v(125): net 'rdata_m1[31]' does not have a driver
+[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/master_duv/top.v(126): net 'rlast_m1' does not have a driver
+[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/master_duv/top.v(127): net 'rvalid_m1' does not have a driver
+[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/master_duv/top.v(129): net 'rresp_m1[1]' does not have a driver
+[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/master_duv/top.v(130): net 'ruser_m1[31]' does not have a driver
+[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/master_duv/top.v(133): net 'csysreq' does not have a driver
+[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/master_duv/top.v(134): net 'csysack' does not have a driver
+[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/master_duv/top.v(135): net 'cactive' does not have a driver
+[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/master_duv/top.v(192): net 'awid_m0' does not have a driver
+[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/master_duv/top.v(193): net 'awaddr_m0' does not have a driver
+[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/master_duv/top.v(194): net 'awlen_m0' does not have a driver
+[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/master_duv/top.v(195): net 'awsize_m0' does not have a driver
+[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/master_duv/top.v(196): net 'awburst_m0' does not have a driver
+[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/master_duv/top.v(197): net 'awlock_m0' does not have a driver
+[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/master_duv/top.v(198): net 'awcache_m0' does not have a driver
+[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/master_duv/top.v(199): net 'awprot_m0' does not have a driver
+[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/master_duv/top.v(201): net 'awready_m0' does not have a driver
+[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/master_duv/top.v(202): net 'awqos_m0' does not have a driver
+[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/master_duv/top.v(203): net 'awregion_m0' does not have a driver
+[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/master_duv/top.v(204): net 'awuser_m0' does not have a driver
+[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/master_duv/top.v(209): net 'buser_m0' does not have a driver
+[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/master_duv/top.v(210): net 'wuser_m0' does not have a driver
+[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/master_duv/top.v(212): net 'wdata_m0' does not have a driver
+[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/master_duv/top.v(213): net 'wstrb_m0' does not have a driver
+[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/master_duv/top.v(214): net 'wlast_m0' does not have a driver
+[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/master_duv/top.v(216): net 'wready_m0' does not have a driver
+[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/master_duv/top.v(218): net 'bid_m0' does not have a driver
+[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/master_duv/top.v(219): net 'bresp_m0' does not have a driver
+[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/master_duv/top.v(220): net 'bvalid_m0' does not have a driver
+[WARN (VDB-1002)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/master_duv/top.v(221): net 'bready_m0' does not have a driver
+[WARN (VDB-1000)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/CPU_wrapper.sv(209): net 'ARADDR_M0[31]' is constantly driven from multiple places
+[WARN (VDB-1001)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/CPU_wrapper.sv(330): another driver from here
+[WARN (VDB-1002)] /usr/cad/cadence/VIPCAT/cur/tools/abvip/axi4/rtl/cdn_abvip_axi4_slave.svp(761): net 'rd_arid_nondvm_match_bm[0]' does not have a driver
+[WARN (VDB-1002)] /usr/cad/cadence/VIPCAT/cur/tools/abvip/axi4/rtl/cdn_abvip_axi4_slave.svp(763): net 'rd_wr_addr_overlap_bm[0]' does not have a driver
+[WARN (VDB-1002)] /usr/cad/cadence/VIPCAT/cur/tools/abvip/axi4/rtl/cdn_abvip_axi4_slave.svp(944): net 'rndmAWADDR[31]' does not have a driver
+[WARN (VDB-1002)] /usr/cad/cadence/VIPCAT/cur/tools/abvip/axi4/rtl/cdn_abvip_axi4_slave.svp(945): net 'rndmAWBURST[1]' does not have a driver
+[WARN (VDB-1002)] /usr/cad/cadence/VIPCAT/cur/tools/abvip/axi4/rtl/cdn_abvip_axi4_slave.svp(946): net 'rndmAWSIZE[2]' does not have a driver
+[WARN (VDB-1002)] /usr/cad/cadence/VIPCAT/cur/tools/abvip/axi4/rtl/cdn_abvip_axi4_slave.svp(947): net 'rndmAWLEN[3]' does not have a driver
+[WARN (VDB-1002)] /usr/cad/cadence/VIPCAT/cur/tools/abvip/axi4/rtl/cdn_abvip_axi4_slave.svp(969): net 'wr_rd_addr_overlap_bm[0]' does not have a driver
+[WARN (VDB-1002)] /usr/cad/cadence/VIPCAT/cur/tools/abvip/axi4/rtl/cdn_abvip_axi4_slave.svp(970): net 'wr_wr_addr_overlap_bm[0]' does not have a driver
+[WARN (VDB-1002)] /usr/cad/cadence/VIPCAT/cur/tools/abvip/axi4/rtl/cdn_abvip_axi4_slave.svp(1098): net 'wr_burst_beat_select_nd[4]' does not have a driver
+[WARN (VDB-1002)] /usr/cad/cadence/VIPCAT/cur/tools/abvip/axi4/rtl/cdn_abvip_axi4_slave.svp(1099): net 'wr_burst_select_nd[0]' does not have a driver
+WARNING (WNL018): /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/MUL.sv(37): multiply mult_33s_33s (size 66) automatically black boxed.
+    Use the "elaborate -bbox_mul" command to prevent automatic black-boxing.
+WARNING (WOBS002): /usr/cad/cadence/VIPCAT/cur/tools/abvip/axi4/rtl/cdn_abvip_axi4_slave.svp(7378): Weakly embedded unbounded sequence in a ASSUME directive..
+WARNING (WOBS002): /usr/cad/cadence/VIPCAT/cur/tools/abvip/axi4/rtl/cdn_abvip_axi4_slave.svp(7387): Weakly embedded unbounded sequence in a ASSUME directive..
+WARNING (WOBS002): /usr/cad/cadence/VIPCAT/cur/tools/abvip/axi4/rtl/cdn_abvip_axi4_slave.svp(7416): Weakly embedded unbounded sequence in a ASSERT directive..
+WARNING (WOBS002): /usr/cad/cadence/VIPCAT/cur/tools/abvip/axi4/rtl/cdn_abvip_axi4_slave.svp(7378): Weakly embedded unbounded sequence in a ASSUME directive..
+WARNING (WOBS002): /usr/cad/cadence/VIPCAT/cur/tools/abvip/axi4/rtl/cdn_abvip_axi4_slave.svp(7387): Weakly embedded unbounded sequence in a ASSUME directive..
+WARNING (WOBS002): /usr/cad/cadence/VIPCAT/cur/tools/abvip/axi4/rtl/cdn_abvip_axi4_slave.svp(7416): Weakly embedded unbounded sequence in a ASSERT directive..
+WARNING (WOBS002): /usr/cad/cadence/VIPCAT/cur/tools/abvip/axi4/rtl/cdn_abvip_axi4_slave.svp(9578): Weakly embedded unbounded sequence in a ASSUME directive..
+WARNING (WOBS002): /usr/cad/cadence/VIPCAT/cur/tools/abvip/axi4/rtl/cdn_abvip_axi4_slave.svp(9585): Weakly embedded unbounded sequence in a ASSUME directive..
+WARNING (WOBS002): /usr/cad/cadence/VIPCAT/cur/tools/abvip/axi4/rtl/cdn_abvip_axi4_slave.svp(9594): Weakly embedded unbounded sequence in a ASSERT directive..
+WARNING (WOBS002): /usr/cad/cadence/VIPCAT/cur/tools/abvip/axi4/rtl/cdn_abvip_axi4_slave.svp(9602): Weakly embedded unbounded sequence in a ASSUME directive..
+WARNING (WOBS002): /usr/cad/cadence/VIPCAT/cur/tools/abvip/axi4/rtl/cdn_abvip_axi4_slave.svp(9631): Weakly embedded unbounded sequence in a ASSERT directive..
+WARNING (WNL010): Input port "dm_dout_i" of module "CPU" is also being driven at /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/CPU.sv(176).
 top
 [<embedded>] % 
 [<embedded>] % clock aclk
@@ -154,478 +319,157 @@ top
 INFO (IPM031): Clearing proof results of all properties.
 INFO (IRS006): Current reset condition is "aresetn".
 [<embedded>] % 
-[<embedded>] % ##Removing Slave Table no overflow checks as slave example design is not self capable to prevent table overflow
-[<embedded>] % assert -disable top.axi_monitor.*slave_aw_wr_tbl_no_overflow
-<embedded>::top.axi_monitor.genPropChksWRInf.genNoWrTblOverflow.genSlv.slave_aw_wr_tbl_no_overflow
-[<embedded>] % assert -disable top.axi_monitor.*slave_ar_rd_tbl_no_overflow
-<embedded>::top.axi_monitor.genPropChksRDInf.genNoRdTblOverflow.genSlv.slave_ar_rd_tbl_no_overflow
-[<embedded>] % assert -disable top.axi_monitor.*slave_w_wr_tbl_no_overflow
-<embedded>::top.axi_monitor.genPropChksWRInf.genNoWrDatTblOverflow.genSlv.slave_w_wr_tbl_no_overflow
-[<embedded>] % ##################################################################################
-[<embedded>] % assert -disable top.axi_monitor.genStableChks.genStableChksWRInf.genAXI4Full.slave_b_buser_stable
-<embedded>::top.axi_monitor.genStableChks.genStableChksWRInf.genAXI4Full.slave_b_buser_stable
-[<embedded>] % assert -disable top.axi_monitor.genStableChks.genStableChksRDInf.genAXI4Full.slave_r_ruser_stable
-<embedded>::top.axi_monitor.genStableChks.genStableChksRDInf.genAXI4Full.slave_r_ruser_stable
-[<embedded>] % assert -disable top.axi_monitor.genPropChksRDInf.genAXI4Full.genRdIlOff.slave_r_ar_rid_no_interleave
-<embedded>::top.axi_monitor.genPropChksRDInf.genAXI4Full.genRdIlOff.slave_r_ar_rid_no_interleave
-[<embedded>] % assume -disable top.axi_monitor.genPropChksRDInf.genAXI4Full.master_ar_araddr_wrap_aligned
-<embedded>::top.axi_monitor.genPropChksRDInf.genAXI4Full.master_ar_araddr_wrap_aligned <embedded>::top.axi_monitor.genPropChksRDInf.genAXI4Full.master_ar_araddr_wrap_aligned:precondition1
-[<embedded>] % assume -disable top.axi_monitor.genPropChksRDInf.genAXI4Full.master_ar_araddr_wrap_arlen
-<embedded>::top.axi_monitor.genPropChksRDInf.genAXI4Full.master_ar_araddr_wrap_arlen <embedded>::top.axi_monitor.genPropChksRDInf.genAXI4Full.master_ar_araddr_wrap_arlen:precondition1
-[<embedded>] % assume -disable top.axi_monitor.genPropChksRDInf.genAXI4Full.master_ar_araddr_fixed_arlen
-<embedded>::top.axi_monitor.genPropChksRDInf.genAXI4Full.master_ar_araddr_fixed_arlen <embedded>::top.axi_monitor.genPropChksRDInf.genAXI4Full.master_ar_araddr_fixed_arlen:precondition1
-[<embedded>] % assume -disable top.axi_monitor.genPropChksWRInf.genAXI4Full.master_aw_awaddr_wrap_aligned
-<embedded>::top.axi_monitor.genPropChksWRInf.genAXI4Full.master_aw_awaddr_wrap_aligned <embedded>::top.axi_monitor.genPropChksWRInf.genAXI4Full.master_aw_awaddr_wrap_aligned:precondition1
-[<embedded>] % assume -disable top.axi_monitor.genPropChksWRInf.genAXI4Full.master_aw_awaddr_wrap_awlen
-<embedded>::top.axi_monitor.genPropChksWRInf.genAXI4Full.master_aw_awaddr_wrap_awlen <embedded>::top.axi_monitor.genPropChksWRInf.genAXI4Full.master_aw_awaddr_wrap_awlen:precondition1
-[<embedded>] % assume -disable top.axi_monitor.genPropChksWRInf.genAXI4Full.master_aw_awaddr_fixed_awlen
-<embedded>::top.axi_monitor.genPropChksWRInf.genAXI4Full.master_aw_awaddr_fixed_awlen <embedded>::top.axi_monitor.genPropChksWRInf.genAXI4Full.master_aw_awaddr_fixed_awlen:precondition1
+[<embedded>] % assert -disable top.axi_monitor_0.genStableChks.genStableChksRDInf.master_ar_arprot_stable
+<embedded>::top.axi_monitor_0.genStableChks.genStableChksRDInf.master_ar_arprot_stable
+[<embedded>] % assert -disable top.axi_monitor_0.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_arlock_stable
+<embedded>::top.axi_monitor_0.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_arlock_stable
+[<embedded>] % assert -disable top.axi_monitor_0.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_arcache_stable
+<embedded>::top.axi_monitor_0.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_arcache_stable
+[<embedded>] % assert -disable top.axi_monitor_0.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_arqos_stable
+<embedded>::top.axi_monitor_0.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_arqos_stable
+[<embedded>] % assert -disable top.axi_monitor_0.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_arregion_stable
+<embedded>::top.axi_monitor_0.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_arregion_stable
+[<embedded>] % assert -disable top.axi_monitor_0.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_aruser_stable
+<embedded>::top.axi_monitor_0.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_aruser_stable
+[<embedded>] % assert -disable top.axi_monitor_0.genPropChksRDInf.genAXI4Full.master_ar_arcache_no_ra_wa_for_uncacheable
+<embedded>::top.axi_monitor_0.genPropChksRDInf.genAXI4Full.master_ar_arcache_no_ra_wa_for_uncacheable
+[<embedded>] % assert -disable top.axi_monitor_0.genPropChksRDInf.genAXI4Full.master_ar_araddr_wrap_aligned
+<embedded>::top.axi_monitor_0.genPropChksRDInf.genAXI4Full.master_ar_araddr_wrap_aligned
+[<embedded>] % assert -disable top.axi_monitor_0.genPropChksRDInf.genAXI4Full.master_ar_araddr_wrap_arlen
+<embedded>::top.axi_monitor_0.genPropChksRDInf.genAXI4Full.master_ar_araddr_wrap_arlen
+[<embedded>] % assert -disable top.axi_monitor_0.genPropChksRDInf.genAXI4Full.master_ar_araddr_fixed_arlen
+<embedded>::top.axi_monitor_0.genPropChksRDInf.genAXI4Full.master_ar_araddr_fixed_arlen
+[<embedded>] % assume -disable top.axi_monitor_0.genPropChksRDInf.genAXI4Full.genRdIlOff.slave_r_ar_rid_no_interleave
+<embedded>::top.axi_monitor_0.genPropChksRDInf.genAXI4Full.genRdIlOff.slave_r_ar_rid_no_interleave <embedded>::top.axi_monitor_0.genPropChksRDInf.genAXI4Full.genRdIlOff.slave_r_ar_rid_no_interleave:precondition1
+[<embedded>] % assume -disable top.axi_monitor_0.genStableChks.genStableChksRDInf.genAXI4Full.slave_r_ruser_stable
+<embedded>::top.axi_monitor_0.genStableChks.genStableChksRDInf.genAXI4Full.slave_r_ruser_stable <embedded>::top.axi_monitor_0.genStableChks.genStableChksRDInf.genAXI4Full.slave_r_ruser_stable:precondition1
 [<embedded>] % 
-[<embedded>] % #data integrity
-[<embedded>] % assume {(axi_duv_slave.A == $past(axi_duv_slave.A) && (axi_duv_slave.WEB == 1'b1)) |=> $stable(axi_duv_slave.DO)}
-INFO (IPM005): The name "<embedded>::assume:0" is assigned to assumption "(axi_duv_slave.A == $past(axi_duv_slave.A) && (axi_duv_slave.WEB == 1'b1)) |=> $stable(axi_duv_slave.DO)".
+[<embedded>] % assert -disable top.axi_monitor_1.genStableChks.genStableChksRDInf.master_ar_arprot_stable
+<embedded>::top.axi_monitor_1.genStableChks.genStableChksRDInf.master_ar_arprot_stable
+[<embedded>] % assert -disable top.axi_monitor_1.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_arlock_stable
+<embedded>::top.axi_monitor_1.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_arlock_stable
+[<embedded>] % assert -disable top.axi_monitor_1.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_arcache_stable
+<embedded>::top.axi_monitor_1.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_arcache_stable
+[<embedded>] % assert -disable top.axi_monitor_1.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_arqos_stable
+<embedded>::top.axi_monitor_1.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_arqos_stable
+[<embedded>] % assert -disable top.axi_monitor_1.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_arregion_stable
+<embedded>::top.axi_monitor_1.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_arregion_stable
+[<embedded>] % assert -disable top.axi_monitor_1.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_aruser_stable
+<embedded>::top.axi_monitor_1.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_aruser_stable
+[<embedded>] % assert -disable top.axi_monitor_1.genPropChksRDInf.genAXI4Full.master_ar_arcache_no_ra_wa_for_uncacheable
+<embedded>::top.axi_monitor_1.genPropChksRDInf.genAXI4Full.master_ar_arcache_no_ra_wa_for_uncacheable
+[<embedded>] % assert -disable top.axi_monitor_1.genPropChksRDInf.genAXI4Full.master_ar_araddr_wrap_aligned
+<embedded>::top.axi_monitor_1.genPropChksRDInf.genAXI4Full.master_ar_araddr_wrap_aligned
+[<embedded>] % assert -disable top.axi_monitor_1.genPropChksRDInf.genAXI4Full.master_ar_araddr_wrap_arlen
+<embedded>::top.axi_monitor_1.genPropChksRDInf.genAXI4Full.master_ar_araddr_wrap_arlen
+[<embedded>] % assert -disable top.axi_monitor_1.genPropChksRDInf.genAXI4Full.master_ar_araddr_fixed_arlen
+<embedded>::top.axi_monitor_1.genPropChksRDInf.genAXI4Full.master_ar_araddr_fixed_arlen
+[<embedded>] % assert -disable top.axi_monitor_1.genStableChks.genStableChksWRInf.master_aw_awprot_stable
+<embedded>::top.axi_monitor_1.genStableChks.genStableChksWRInf.master_aw_awprot_stable
+[<embedded>] % assert -disable top.axi_monitor_1.genStableChks.genStableChksWRInf.genAXI4Full.master_aw_awlock_stable
+<embedded>::top.axi_monitor_1.genStableChks.genStableChksWRInf.genAXI4Full.master_aw_awlock_stable
+[<embedded>] % assert -disable top.axi_monitor_1.genStableChks.genStableChksWRInf.genAXI4Full.master_aw_awcache_stable
+<embedded>::top.axi_monitor_1.genStableChks.genStableChksWRInf.genAXI4Full.master_aw_awcache_stable
+[<embedded>] % assert -disable top.axi_monitor_1.genStableChks.genStableChksWRInf.genAXI4Full.master_aw_awqos_stable
+<embedded>::top.axi_monitor_1.genStableChks.genStableChksWRInf.genAXI4Full.master_aw_awqos_stable
+[<embedded>] % assert -disable top.axi_monitor_1.genStableChks.genStableChksWRInf.genAXI4Full.master_aw_awregion_stable
+<embedded>::top.axi_monitor_1.genStableChks.genStableChksWRInf.genAXI4Full.master_aw_awregion_stable
+[<embedded>] % assert -disable top.axi_monitor_1.genStableChks.genStableChksWRInf.genAXI4Full.master_aw_awuser_stable
+<embedded>::top.axi_monitor_1.genStableChks.genStableChksWRInf.genAXI4Full.master_aw_awuser_stable
+[<embedded>] % assert -disable top.axi_monitor_1.genStableChks.genStableChksWRInf.genAXI4Full.master_w_wuser_stable
+<embedded>::top.axi_monitor_1.genStableChks.genStableChksWRInf.genAXI4Full.master_w_wuser_stable
+[<embedded>] % assert -disable top.axi_monitor_1.genPropChksWRInf.genAXI4Full.master_aw_awcache_no_ra_wa_non_modifiable
+<embedded>::top.axi_monitor_1.genPropChksWRInf.genAXI4Full.master_aw_awcache_no_ra_wa_non_modifiable
+[<embedded>] % assert -disable top.axi_monitor_1.genNoExChks.master_ar_arlock_no_excl_access_throttle_cnstr
+<embedded>::top.axi_monitor_1.genNoExChks.master_ar_arlock_no_excl_access_throttle_cnstr
+[<embedded>] % assert -disable top.axi_monitor_1.genNoExChks.master_aw_awlock_no_excl_access_throttle_cnstr
+<embedded>::top.axi_monitor_1.genNoExChks.master_aw_awlock_no_excl_access_throttle_cnstr
+[<embedded>] % assert -disable top.axi_monitor_1.genPropChksWRInf.genAXI4Full.master_aw_awaddr_wrap_aligned
+<embedded>::top.axi_monitor_1.genPropChksWRInf.genAXI4Full.master_aw_awaddr_wrap_aligned
+[<embedded>] % assert -disable top.axi_monitor_1.genPropChksWRInf.genAXI4Full.master_aw_awaddr_wrap_awlen
+<embedded>::top.axi_monitor_1.genPropChksWRInf.genAXI4Full.master_aw_awaddr_wrap_awlen
+[<embedded>] % assert -disable top.axi_monitor_1.genPropChksWRInf.genAXI4Full.master_aw_awaddr_fixed_awlen
+<embedded>::top.axi_monitor_1.genPropChksWRInf.genAXI4Full.master_aw_awaddr_fixed_awlen
+[<embedded>] % assert -disable top.axi_monitor_1.genPropChksWRInf.master_w_aw_wlast_exact_len
+<embedded>::top.axi_monitor_1.genPropChksWRInf.master_w_aw_wlast_exact_len
+[<embedded>] % assume -disable top.axi_monitor_1.genPropChksRDInf.genAXI4Full.genRdIlOff.slave_r_ar_rid_no_interleave
+<embedded>::top.axi_monitor_1.genPropChksRDInf.genAXI4Full.genRdIlOff.slave_r_ar_rid_no_interleave <embedded>::top.axi_monitor_1.genPropChksRDInf.genAXI4Full.genRdIlOff.slave_r_ar_rid_no_interleave:precondition1
+[<embedded>] % assume -disable top.axi_monitor_1.genStableChks.genStableChksRDInf.genAXI4Full.slave_r_ruser_stable
+<embedded>::top.axi_monitor_1.genStableChks.genStableChksRDInf.genAXI4Full.slave_r_ruser_stable <embedded>::top.axi_monitor_1.genStableChks.genStableChksRDInf.genAXI4Full.slave_r_ruser_stable:precondition1
+[<embedded>] % assume -disable top.axi_monitor_1.genStableChks.genStableChksWRInf.genAXI4Full.slave_b_buser_stable
+<embedded>::top.axi_monitor_1.genStableChks.genStableChksWRInf.genAXI4Full.slave_b_buser_stable <embedded>::top.axi_monitor_1.genStableChks.genStableChksWRInf.genAXI4Full.slave_b_buser_stable:precondition1
+[<embedded>] % # Disable CPU always ready condition
+[<embedded>] % assume -disable top.axi_monitor_0.genStableChks.genStableChksRDInf.slave_r_rvalid_stable
+<embedded>::top.axi_monitor_0.genStableChks.genStableChksRDInf.slave_r_rvalid_stable <embedded>::top.axi_monitor_0.genStableChks.genStableChksRDInf.slave_r_rvalid_stable:precondition1
+[<embedded>] % assume -disable top.axi_monitor_0.genStableChks.genStableChksRDInf.slave_r_rdata_stable
+<embedded>::top.axi_monitor_0.genStableChks.genStableChksRDInf.slave_r_rdata_stable <embedded>::top.axi_monitor_0.genStableChks.genStableChksRDInf.slave_r_rdata_stable:precondition1
+[<embedded>] % assume -disable top.axi_monitor_0.genStableChks.genStableChksRDInf.slave_r_rresp_stable
+<embedded>::top.axi_monitor_0.genStableChks.genStableChksRDInf.slave_r_rresp_stable <embedded>::top.axi_monitor_0.genStableChks.genStableChksRDInf.slave_r_rresp_stable:precondition1
+[<embedded>] % assume -disable top.axi_monitor_0.genStableChks.genStableChksRDInf.genAXI4Full.slave_r_rlast_stable
+<embedded>::top.axi_monitor_0.genStableChks.genStableChksRDInf.genAXI4Full.slave_r_rlast_stable <embedded>::top.axi_monitor_0.genStableChks.genStableChksRDInf.genAXI4Full.slave_r_rlast_stable:precondition1
+[<embedded>] % assume -disable top.axi_monitor_0.genStableChks.genStableChksRDInf.genAXI4Full.slave_r_rid_stable
+<embedded>::top.axi_monitor_0.genStableChks.genStableChksRDInf.genAXI4Full.slave_r_rid_stable <embedded>::top.axi_monitor_0.genStableChks.genStableChksRDInf.genAXI4Full.slave_r_rid_stable:precondition1
+[<embedded>] % assume -disable top.axi_monitor_1.genStableChks.genStableChksRDInf.slave_r_rvalid_stable
+<embedded>::top.axi_monitor_1.genStableChks.genStableChksRDInf.slave_r_rvalid_stable <embedded>::top.axi_monitor_1.genStableChks.genStableChksRDInf.slave_r_rvalid_stable:precondition1
+[<embedded>] % assume -disable top.axi_monitor_1.genStableChks.genStableChksRDInf.slave_r_rdata_stable
+<embedded>::top.axi_monitor_1.genStableChks.genStableChksRDInf.slave_r_rdata_stable <embedded>::top.axi_monitor_1.genStableChks.genStableChksRDInf.slave_r_rdata_stable:precondition1
+[<embedded>] % assume -disable top.axi_monitor_1.genStableChks.genStableChksRDInf.slave_r_rresp_stable   
+<embedded>::top.axi_monitor_1.genStableChks.genStableChksRDInf.slave_r_rresp_stable <embedded>::top.axi_monitor_1.genStableChks.genStableChksRDInf.slave_r_rresp_stable:precondition1
+[<embedded>] % assume -disable top.axi_monitor_1.genStableChks.genStableChksRDInf.genAXI4Full.slave_r_rlast_stable
+<embedded>::top.axi_monitor_1.genStableChks.genStableChksRDInf.genAXI4Full.slave_r_rlast_stable <embedded>::top.axi_monitor_1.genStableChks.genStableChksRDInf.genAXI4Full.slave_r_rlast_stable:precondition1
+[<embedded>] % assume -disable top.axi_monitor_1.genStableChks.genStableChksRDInf.genAXI4Full.slave_r_rid_stable
+<embedded>::top.axi_monitor_1.genStableChks.genStableChksRDInf.genAXI4Full.slave_r_rid_stable <embedded>::top.axi_monitor_1.genStableChks.genStableChksRDInf.genAXI4Full.slave_r_rid_stable:precondition1
+[<embedded>] % assume -disable top.axi_monitor_1.genStableChks.genStableChksWRInf.slave_b_bvalid_stable
+<embedded>::top.axi_monitor_1.genStableChks.genStableChksWRInf.slave_b_bvalid_stable <embedded>::top.axi_monitor_1.genStableChks.genStableChksWRInf.slave_b_bvalid_stable:precondition1
+[<embedded>] % assume -disable top.axi_monitor_1.genStableChks.genStableChksWRInf.slave_b_bresp_stable
+<embedded>::top.axi_monitor_1.genStableChks.genStableChksWRInf.slave_b_bresp_stable <embedded>::top.axi_monitor_1.genStableChks.genStableChksWRInf.slave_b_bresp_stable:precondition1
+[<embedded>] % assume -disable top.axi_monitor_1.genStableChks.genStableChksWRInf.genAXI4Full.slave_b_bid_stable
+<embedded>::top.axi_monitor_1.genStableChks.genStableChksWRInf.genAXI4Full.slave_b_bid_stable <embedded>::top.axi_monitor_1.genStableChks.genStableChksWRInf.genAXI4Full.slave_b_bid_stable:precondition1
+[<embedded>] % #test load and store
+[<embedded>] % assume {(rdata_m0[14:12] == 3'b010 || rdata_m0[14:12] == 3'b000) && (rdata_m0[6:0] == 7'b0000011 || rdata_m0[6:0] == 7'b0100011)}
+INFO (IPM005): The name "<embedded>::assume:0" is assigned to assumption "(rdata_m0[14:12] == 3'b010 || rdata_m0[14:12] == 3'b000) && (rdata_m0[6:0] == 7'b0000011 || rdata_m0[6:0] == 7'b0100011)".
 assume:0
 [<embedded>] % 
-[<embedded>] % # Disable FIXED & WRAP Burst
-[<embedded>] % assume {axi_monitor.arburst!=0}
-INFO (IPM005): The name "<embedded>::assume:1" is assigned to assumption "axi_monitor.arburst!=0".
-assume:1
-[<embedded>] % assume {axi_monitor.arburst!=2}
-INFO (IPM005): The name "<embedded>::assume:2" is assigned to assumption "axi_monitor.arburst!=2".
-assume:2
-[<embedded>] % assume {axi_monitor.awburst!=0}
-INFO (IPM005): The name "<embedded>::assume:3" is assigned to assumption "axi_monitor.awburst!=0".
-assume:3
-[<embedded>] % assume {axi_monitor.awburst!=2}
-INFO (IPM005): The name "<embedded>::assume:4" is assigned to assumption "axi_monitor.awburst!=2".
-assume:4
-[<embedded>] % 
 [<embedded>] % prove -all
-INFO (IPF036): Starting proof on task: "<embedded>", 110 properties to prove with 0 already proven/unreachable
+INFO (IPF036): Starting proof on task: "<embedded>", 142 properties to prove with 0 already proven/unreachable
 INFO (IRS029): Starting reset analysis: phase 1 of 4.
 INFO (IRS030): Running reset analysis: phase 2 of 4.
 INFO (IRS031): Running reset analysis: phase 3 of 4.
 INFO (IRS020): Starting the reset analysis simulation with a limit of 100 iterations (phase 4 of 4).
 INFO (IRS024): Reset iterations 0 to 4 analyzed.
-INFO (IRS018): Reset analysis simulation executed for 3 iterations. Assigned values for 457 of 489 design flops, 0 of 0 design latches, 488 of 829 internal elements.
-INFO (IPF031): Settings used for proof thread 0:
-    orchestration                 = on (auto)
-    time_limit                    = 86400s
-    per_property_time_limit       = 1s * 10 ^ scan
-    engine_mode                   = auto
-    proofgrid_per_engine_max_jobs = 1
-    max engine jobs               = auto
-    proofgrid_mode                = local
-    proofgrid_restarts            = 10
-0.0.PRE: A proof was found: No trace exists. [0.00 s]
-INFO (IPF057): 0.0.PRE: The property "top.axi_monitor.genParamChk.genAXI4.assert_param_DATA_WIDTH_legal" was proven in 0.00 s.
-0.0.PRE: A proof was found: No trace exists. [0.00 s]
-INFO (IPF057): 0.0.PRE: The property "top.axi_monitor.genParamChk.assert_param_ALL_STROBES_HIGH_ON_limitation" was proven in 0.00 s.
-0.0.PRE: A proof was found: No trace exists. [0.00 s]
-INFO (IPF057): 0.0.PRE: The property "top.axi_monitor.genParamChk.assert_param_MAX_WAIT_CYCLES_ON_legal" was proven in 0.00 s.
-0.0.PRE: A proof was found: No trace exists. [0.00 s]
-INFO (IPF057): 0.0.PRE: The property "top.axi_monitor.genParamChk.assert_param_READONLY_INTERFACE_WRITEONLY_INTERFACE_limitation" was proven in 0.00 s.
-0.0.PRE: A proof was found: No trace exists. [0.00 s]
-INFO (IPF057): 0.0.PRE: The property "top.axi_monitor.genParamChk.assert_param_EXCL_ACCESS_ON_limitation" was proven in 0.00 s.
-0.0.PRE: A proof was found: No trace exists. [0.00 s]
-INFO (IPF057): 0.0.PRE: The property "top.axi_monitor.genParamChk.assert_param_EXCL_ACCESS_ON_with_AXI4_LITE_limitation" was proven in 0.00 s.
-0.0.PRE: A proof was found: No trace exists. [0.00 s]
-INFO (IPF057): 0.0.PRE: The property "top.axi_monitor.genPropChksRDInf.genAXI4Full.slave_r_excl_rresp_no_exokay" was proven in 0.00 s.
-0.0.PRE: A proof was found: No trace exists. [0.00 s]
-INFO (IPF057): 0.0.PRE: The property "top.axi_monitor.genPropChksRDInf.genLiveSlaveChksArready.slave_ar_arready_eventually" was proven in 0.00 s.
-0.0.PRE: A proof was found: No trace exists. [0.00 s]
-INFO (IPF057): 0.0.PRE: The property "top.axi_monitor.genPropChksRDInf.slave_r_ar_rvalid_eventually" was proven in 0.00 s.
-0.0.PRE: A proof was found: No trace exists. [0.00 s]
-INFO (IPF057): 0.0.PRE: The property "top.axi_monitor.genPropChksWRInf.slave_b_excl_bresp_no_exokay_supported" was proven in 0.00 s.
-0.0.PRE: A proof was found: No trace exists. [0.00 s]
-INFO (IPF057): 0.0.PRE: The property "top.axi_monitor.genPropChksWRInf.genLiveSlaveChksReady.slave_aw_awready_eventually" was proven in 0.00 s.
-0.0.PRE: A proof was found: No trace exists. [0.00 s]
-INFO (IPF057): 0.0.PRE: The property "top.axi_monitor.genPropChksWRInf.genLiveSlaveChksReady.slave_w_wready_eventually" was proven in 0.00 s.
-0.0.PRE: A proof was found: No trace exists. [0.00 s]
-INFO (IPF057): 0.0.PRE: The property "top.axi_monitor.genPropChksWRInf.slave_b_bvalid_eventually" was proven in 0.00 s.
-0: Found proofs for 13 properties in preprocessing
-0: Using multistage preprocessing
-0: Starting reduce
-0: Finished reduce in 0.005s
-0.0.PRE: A proof was found: No trace exists. [0.00 s]
-INFO (IPF057): 0.0.PRE: The property "top.axi_monitor.genStableChks.genStableChksRDInf.slave_r_rresp_stable" was proven in 0.00 s.
-0.0.PRE: A proof was found: No trace exists. [0.00 s]
-INFO (IPF057): 0.0.PRE: The property "top.axi_monitor.genStableChks.genStableChksWRInf.slave_b_bresp_stable" was proven in 0.00 s.
-0: Found proofs for 2 properties in preprocessing
-0.0.PRE: Performing Proof Simplification...
-0.0.N: clocks: 2, declared: 1, disabling: 0, posedge: 2, negedge: 0, noedge: 0, bothedge: 0
-0.0.N: Proof Simplification Iteration 1	[0.00 s]
-0.0.N: Proof Simplification Iteration 2	[0.00 s]
-0.0.N: Proof Simplification Iteration 3	[0.00 s]
-0.0.N: Proof Simplification Iteration 4	[0.00 s]
-0.0.N: Proof Simplification Iteration 5	[0.01 s]
-0.0.N: Proof Simplification Iteration 6	[0.01 s]
-0.0.N: Proof Simplification Iteration 7	[0.01 s]
-0.0.N: Proof Simplification Iteration 8	[0.01 s]
-0.0.N: Proof Simplification Iteration 9	[0.01 s]
-0.0.PRE: A proof was found: No trace exists. [0.00 s]
-INFO (IPF057): 0.0.PRE: The property "top.axi_monitor.genRstChksRDInf.slave_rst_rvalid_low_reset_released" was proven in 0.00 s.
-0.0.PRE: A proof was found: No trace exists. [0.00 s]
-INFO (IPF057): 0.0.PRE: The property "top.axi_monitor.genRstChksWDInf.slave_rst_bvalid_low_reset_released" was proven in 0.00 s.
-0.0.PRE: Proof Simplification completed in 0.03 s
-0.0.N: Identified and disabled 51 duplicated targets.
-0: About to start centralized ProofGrid in its own thread with a limit of 10000 pending notifications and a limit of 10 traces.
-0: =============================== ProofGrid start ===============================
-0: ProofGrid usable level: 42
-0: ProofGrid is starting event handling
-0.0.N: Proofgrid shell started at 183076@superdome2(local) jg_182781_superdome2_1
-0.0.Hp: Proofgrid shell started at 183077@superdome2(local) jg_182781_superdome2_1
-0.0.N: clocks: 1, declared: 1, disabling: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
-0.0.Hp: clocks: 1, declared: 1, disabling: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
-0.0.N: Next scan (0) will use per property time limit: 1s * 10 ^ 0 = 1s
-0.0.N: Starting proof for property "top.axi_monitor.genStableChks.genStableChksRDInf.master_ar_arvalid_stable:precondition1"	[0.00 s].
-0.0.N: Starting proof for property "top.axi_monitor.genStableChks.genStableChksRDInf.master_ar_araddr_stable:precondition1"	[0.00 s].
-0.0.N: Starting proof for property "top.axi_monitor.genStableChks.genStableChksRDInf.master_ar_arprot_stable:precondition1"	[0.00 s].
-0.0.N: Starting proof for property "top.axi_monitor.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_arid_stable:precondition1"	[0.00 s].
-0.0.N: Starting proof for property "top.axi_monitor.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_arlen_stable:precondition1"	[0.00 s].
-0.0.N: Starting proof for property "top.axi_monitor.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_arsize_stable:precondition1"	[0.00 s].
-0.0.N: Starting proof for property "top.axi_monitor.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_arburst_stable:precondition1"	[0.00 s].
-0.0.N: Starting proof for property "top.axi_monitor.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_arlock_stable:precondition1"	[0.00 s].
-0.0.N: Starting proof for property "top.axi_monitor.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_arcache_stable:precondition1"	[0.00 s].
-0.0.N: Starting proof for property "top.axi_monitor.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_arqos_stable:precondition1"	[0.00 s].
-0.0.N: Starting proof for property "top.axi_monitor.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_arregion_stable:precondition1"	[0.00 s].
-0.0.N: Starting proof for property "top.axi_monitor.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_aruser_stable:precondition1"	[0.00 s].
-0.0.N: Trace Attempt  1	[0.00 s]
-0.0.N: Trace Attempt  2	[0.00 s]
-0.0.N: Trace Attempt  2	[0.00 s]
-0.0.N: Trace Attempt  3	[0.01 s]
-0.0.Hp: A proof was found: No trace exists. [0.01 s]
-INFO (IPF057): 0.0.Hp: The property "top.axi_monitor.genPropChksRDInf.assert_ar_rd_tbl_no_overflow" was proven in 0.01 s.
-0.0.N: Trace Attempt  3	[0.01 s]
-0.0.Hp: A proof was found: No trace exists. [0.01 s]
-INFO (IPF057): 0.0.Hp: The property "top.axi_monitor.genPropChksWRInf.assert_aw_wr_tbl_no_overflow" was proven in 0.01 s.
-0.0.Hp: A proof was found: No trace exists. [0.01 s]
-INFO (IPF057): 0.0.Hp: The property "top.axi_monitor.genPropChksWRInf.genNoDbcWChks.assert_w_aw_no_dbc" was proven in 0.01 s.
-0.0.Hp: A proof was found: No trace exists. [0.01 s]
-INFO (IPF057): 0.0.Hp: The property "top.axi_monitor.genPropChksWRInf.assert_w_wr_tbl_no_overflow" was proven in 0.01 s.
-0.0.Hp: Trace Attempt  1	[0.01 s]
-0.0.Hp: A trace with 1 cycles was found. [0.01 s]
-INFO (IPF047): 0.0.Hp: The cover property "top.axi_monitor.genRstChksRDInf.master_rst_arvalid_low_reset_released:precondition1" was covered in 1 cycles in 0.02 s.
-INFO (IPF047): 0.0.Hp: The cover property "top.axi_monitor.genPropChksWRInf.genNoDbcWChks.master_w_aw_wvalid_no_dbc_throttle_cnstr:precondition1" was covered in 1 cycles in 0.02 s.
-INFO (IPF047): 0.0.Hp: The cover property "top.axi_monitor.genRstChksRDInf.slave_rst_rvalid_low_reset_released:precondition1" was covered in 1 cycles in 0.02 s.
-INFO (IPF047): 0.0.Hp: The cover property "top.axi_monitor.genRstChksWDInf.master_rst_awvalid_low_reset_released:precondition1" was covered in 1 cycles in 0.02 s.
-INFO (IPF047): 0.0.Hp: The cover property "top.axi_monitor.genRstChksWDInf.master_rst_wvalid_low_reset_released:precondition1" was covered in 1 cycles in 0.02 s.
-INFO (IPF047): 0.0.Hp: The cover property "top.axi_monitor.genRstChksWDInf.slave_rst_bvalid_low_reset_released:precondition1" was covered in 1 cycles in 0.02 s.
-INFO (IPF047): 0.0.Hp: The cover property "top.axi_monitor.genPropChksWRInf.genNoDbcWChks.assert_w_aw_no_dbc:precondition1" was covered in 1 cycles in 0.02 s.
-0.0.N: A trace with 3 cycles was found. [0.01 s]
-INFO (IPF047): 0.0.N: The cover property "top.axi_monitor.genStableChks.genStableChksRDInf.master_ar_arvalid_stable:precondition1" was covered in 3 cycles in 0.03 s.
-INFO (IPF047): 0.0.N: The cover property "top.axi_monitor.genPropChksRDInf.genAXI4Full.master_ar_arlen_less_than_TRANS_COUNT:precondition1" was covered in 3 cycles in 0.03 s by the incidental trace "top.axi_monitor.genStableChks.genStableChksRDInf.master_ar_arvalid_stable:precondition1".
-INFO (IPF047): 0.0.N: The cover property "top.axi_monitor.genPropChksRDInf.genAXI4Full.master_ar_arcache_no_ra_wa_for_uncacheable:precondition1" was covered in 3 cycles in 0.03 s by the incidental trace "top.axi_monitor.genStableChks.genStableChksRDInf.master_ar_arvalid_stable:precondition1".
-INFO (IPF047): 0.0.N: The cover property "top.axi_monitor.genPropChksRDInf.genLiveSlaveChksArready.slave_ar_arready_eventually:precondition1" was covered in 3 cycles in 0.03 s by the incidental trace "top.axi_monitor.genStableChks.genStableChksRDInf.master_ar_arvalid_stable:precondition1".
-INFO (IPF047): 0.0.N: The cover property "top.axi_monitor.genPropChksWRInf.genAXI4Full.master_aw_awlen_less_than_maxlen:precondition1" was covered in 2 cycles in 0.03 s by the incidental trace "top.axi_monitor.genStableChks.genStableChksRDInf.master_ar_arvalid_stable:precondition1".
-INFO (IPF047): 0.0.N: The cover property "top.axi_monitor.genPropChksWRInf.genAXI4Full.master_aw_awcache_no_ra_wa_non_modifiable:precondition1" was covered in 2 cycles in 0.03 s by the incidental trace "top.axi_monitor.genStableChks.genStableChksRDInf.master_ar_arvalid_stable:precondition1".
-INFO (IPF047): 0.0.N: The cover property "top.axi_monitor.genPropChksWRInf.genNoWrTblOverflow.master_aw_wr_tbl_no_overflow:precondition1" was covered in 3 cycles in 0.03 s by the incidental trace "top.axi_monitor.genStableChks.genStableChksRDInf.master_ar_arvalid_stable:precondition1".
-INFO (IPF047): 0.0.N: The cover property "top.axi_monitor.genPropChksWRInf.assert_aw_wr_tbl_no_overflow:precondition1" was covered in 3 cycles in 0.03 s by the incidental trace "top.axi_monitor.genStableChks.genStableChksRDInf.master_ar_arvalid_stable:precondition1".
-INFO (IPF047): 0.0.N: The cover property "top.axi_monitor.genPropChksWRInf.master_w_aw_wlast_exact_len:precondition1" was covered in 2 cycles in 0.03 s by the incidental trace "top.axi_monitor.genStableChks.genStableChksRDInf.master_ar_arvalid_stable:precondition1".
-INFO (IPF047): 0.0.N: The cover property "top.axi_monitor.genPropChksWRInf.master_w_aw_wlast_exact_len:precondition2" was covered in 3 cycles in 0.03 s by the incidental trace "top.axi_monitor.genStableChks.genStableChksRDInf.master_ar_arvalid_stable:precondition1".
-INFO (IPF047): 0.0.N: The cover property "top.axi_monitor.genPropChksWRInf.master_w_aw_wlast_exact_len:precondition3" was covered in 2 cycles in 0.03 s by the incidental trace "top.axi_monitor.genStableChks.genStableChksRDInf.master_ar_arvalid_stable:precondition1".
-INFO (IPF047): 0.0.N: The cover property "top.axi_monitor.genPropChksWRInf.genLiveSlaveChksReady.slave_aw_awready_eventually:precondition1" was covered in 2 cycles in 0.03 s by the incidental trace "top.axi_monitor.genStableChks.genStableChksRDInf.master_ar_arvalid_stable:precondition1".
-INFO (IPF047): 0.0.N: The cover property "top.axi_monitor.genPropChksWRInf.master_w_wvalid_eventually:precondition1" was covered in 2 cycles in 0.03 s by the incidental trace "top.axi_monitor.genStableChks.genStableChksRDInf.master_ar_arvalid_stable:precondition1".
-INFO (IPF047): 0.0.N: The cover property "top.axi_monitor.genStableChks.genStableChksRDInf.master_ar_araddr_stable:precondition1" was covered in 3 cycles in 0.03 s.
-INFO (IPF047): 0.0.N: The cover property "top.axi_monitor.genStableChks.genStableChksRDInf.master_ar_arprot_stable:precondition1" was covered in 3 cycles in 0.03 s.
-INFO (IPF047): 0.0.N: The cover property "top.axi_monitor.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_arid_stable:precondition1" was covered in 3 cycles in 0.03 s.
-INFO (IPF047): 0.0.N: The cover property "top.axi_monitor.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_arlen_stable:precondition1" was covered in 3 cycles in 0.03 s.
-INFO (IPF047): 0.0.N: The cover property "top.axi_monitor.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_arsize_stable:precondition1" was covered in 3 cycles in 0.03 s.
-INFO (IPF047): 0.0.N: The cover property "top.axi_monitor.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_arburst_stable:precondition1" was covered in 3 cycles in 0.03 s.
-INFO (IPF047): 0.0.N: The cover property "top.axi_monitor.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_arlock_stable:precondition1" was covered in 3 cycles in 0.03 s.
-INFO (IPF047): 0.0.N: The cover property "top.axi_monitor.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_arcache_stable:precondition1" was covered in 3 cycles in 0.03 s.
-INFO (IPF047): 0.0.N: The cover property "top.axi_monitor.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_arqos_stable:precondition1" was covered in 3 cycles in 0.03 s.
-INFO (IPF047): 0.0.N: The cover property "top.axi_monitor.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_arregion_stable:precondition1" was covered in 3 cycles in 0.03 s.
-INFO (IPF047): 0.0.N: The cover property "top.axi_monitor.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_aruser_stable:precondition1" was covered in 3 cycles in 0.03 s.
-INFO (IPF047): 0.0.N: The cover property "top.axi_monitor.genPropChksRDInf.genAXI4Full.gen4KaraddrChk.master_ar_araddr_never_cross_4K_boundary:precondition1" was covered in 3 cycles in 0.03 s by the incidental trace "top.axi_monitor.genStableChks.genStableChksRDInf.master_ar_arvalid_stable:precondition1".
-INFO (IPF047): 0.0.N: The cover property "top.axi_monitor.genPropChksRDInf.genAXI4Full.master_ar_arburst_no_reserved:precondition1" was covered in 3 cycles in 0.03 s by the incidental trace "top.axi_monitor.genStableChks.genStableChksRDInf.master_ar_arvalid_stable:precondition1".
-INFO (IPF047): 0.0.N: The cover property "top.axi_monitor.genPropChksRDInf.genAXI4Full.master_ar_arsize_lte_datawidth:precondition1" was covered in 3 cycles in 0.03 s by the incidental trace "top.axi_monitor.genStableChks.genStableChksRDInf.master_ar_arvalid_stable:precondition1".
-INFO (IPF047): 0.0.N: The cover property "top.axi_monitor.genNoExChks.master_ar_arlock_no_excl_access_throttle_cnstr:precondition1" was covered in 3 cycles in 0.03 s by the incidental trace "top.axi_monitor.genStableChks.genStableChksRDInf.master_ar_arvalid_stable:precondition1".
-INFO (IPF047): 0.0.N: The cover property "top.axi_monitor.genPropChksWRInf.genAXI4Full.gen4KawaddrChk.master_aw_awaddr_never_cross_4K_boundary:precondition1" was covered in 2 cycles in 0.03 s by the incidental trace "top.axi_monitor.genStableChks.genStableChksRDInf.master_ar_arvalid_stable:precondition1".
-INFO (IPF047): 0.0.N: The cover property "top.axi_monitor.genPropChksWRInf.genAXI4Full.master_aw_awburst_no_reserved:precondition1" was covered in 2 cycles in 0.03 s by the incidental trace "top.axi_monitor.genStableChks.genStableChksRDInf.master_ar_arvalid_stable:precondition1".
-INFO (IPF047): 0.0.N: The cover property "top.axi_monitor.genPropChksWRInf.genAXI4Full.master_aw_awsize_lte_datawidth:precondition1" was covered in 2 cycles in 0.03 s by the incidental trace "top.axi_monitor.genStableChks.genStableChksRDInf.master_ar_arvalid_stable:precondition1".
-INFO (IPF047): 0.0.N: The cover property "top.axi_monitor.genNoExChks.master_aw_awlock_no_excl_access_throttle_cnstr:precondition1" was covered in 2 cycles in 0.03 s by the incidental trace "top.axi_monitor.genStableChks.genStableChksRDInf.master_ar_arvalid_stable:precondition1".
-INFO (IPF047): 0.0.N: The cover property "top.axi_monitor.genPropChksWRInf.genLiveSlaveChksReady.slave_w_wready_eventually:precondition1" was covered in 2 cycles in 0.03 s by the incidental trace "top.axi_monitor.genStableChks.genStableChksRDInf.master_ar_arvalid_stable:precondition1".
-0.0.N: Stopped processing property "top.axi_monitor.genStableChks.genStableChksRDInf.master_ar_arvalid_stable:precondition1"	[0.03 s].
-0.0.N: Stopped processing property "top.axi_monitor.genStableChks.genStableChksRDInf.master_ar_araddr_stable:precondition1"	[0.03 s].
-0.0.N: Stopped processing property "top.axi_monitor.genStableChks.genStableChksRDInf.master_ar_arprot_stable:precondition1"	[0.03 s].
-0.0.N: Stopped processing property "top.axi_monitor.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_arid_stable:precondition1"	[0.03 s].
-0.0.N: Stopped processing property "top.axi_monitor.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_arlen_stable:precondition1"	[0.03 s].
-0.0.N: Stopped processing property "top.axi_monitor.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_arsize_stable:precondition1"	[0.03 s].
-0.0.N: Stopped processing property "top.axi_monitor.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_arburst_stable:precondition1"	[0.03 s].
-0.0.N: Stopped processing property "top.axi_monitor.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_arlock_stable:precondition1"	[0.03 s].
-0.0.N: Stopped processing property "top.axi_monitor.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_arcache_stable:precondition1"	[0.03 s].
-0.0.N: Stopped processing property "top.axi_monitor.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_arqos_stable:precondition1"	[0.03 s].
-0.0.N: Stopped processing property "top.axi_monitor.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_arregion_stable:precondition1"	[0.03 s].
-0.0.N: Stopped processing property "top.axi_monitor.genStableChks.genStableChksRDInf.genAXI4Full.master_ar_aruser_stable:precondition1"	[0.03 s].
-0.0.N: Starting proof for property "top.axi_monitor.genStableChks.genStableChksRDInf.slave_r_rvalid_stable"	[0.00 s].
-0.0.N: Trace Attempt  1	[0.00 s]
-0.0.Ht: Proofgrid shell started at 183096@superdome2(local) jg_182781_superdome2_1
-0.0.B: Proofgrid shell started at 183097@superdome2(local) jg_182781_superdome2_1
-0.0.N: Trace Attempt  2	[0.00 s]
-0.0.N: Trace Attempt  3	[0.00 s]
-0.0.Ht: clocks: 1, declared: 1, disabling: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
-0.0.B: clocks: 1, declared: 1, disabling: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
-0.0.B: Next scan (0) will use per property time limit: 1s * 10 ^ 0 = 1s
-0.0.B: Starting proof for property "top.axi_monitor.genStableChks.genStableChksRDInf.slave_r_rvalid_stable"	[0.00 s].
-0.0.N: Trace Attempt  3	[0.00 s]
-0.0.B: Trace Attempt  1	[0.00 s]
-0.0.N: Trace Attempt  4	[0.00 s]
-0.0.N: Trace Attempt  5	[0.00 s]
-0.0.N: Trace Attempt  1	[0.01 s]
-0.0.N: Trace Attempt  2	[0.01 s]
-0.0.Ht: Trace Attempt  1	[0.00 s]
-0.0.Ht: Trace Attempt  2	[0.00 s]
-0.0.N: Validation of fixpoint was successful. Time = 0.00
-0.0.N: A proof was found: No trace exists. [0.01 s]
-INFO (IPF057): 0.0.N: The property "top.axi_monitor.genStableChks.genStableChksRDInf.slave_r_rvalid_stable" was proven in 0.00 s.
-0.0.N: Stopped processing property "top.axi_monitor.genStableChks.genStableChksRDInf.slave_r_rvalid_stable"	[0.00 s].
-0.0.N: Starting proof for property "top.axi_monitor.genStableChks.genStableChksRDInf.slave_r_rvalid_stable:precondition1"	[0.00 s].
-0.0.N: Starting proof for property "top.axi_monitor.genStableChks.genStableChksRDInf.slave_r_rdata_stable:precondition1"	[0.00 s].
-0.0.N: Starting proof for property "top.axi_monitor.genStableChks.genStableChksRDInf.slave_r_rresp_stable:precondition1"	[0.00 s].
-0.0.N: Starting proof for property "top.axi_monitor.genStableChks.genStableChksRDInf.genAXI4Full.slave_r_rlast_stable:precondition1"	[0.00 s].
-0.0.N: Starting proof for property "top.axi_monitor.genStableChks.genStableChksRDInf.genAXI4Full.slave_r_rid_stable:precondition1"	[0.00 s].
-0.0.Ht: A trace with 2 cycles was found. [0.01 s]
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_monitor.genStableChks.genStableChksWRInf.master_w_wvalid_stable:precondition1" was covered in 2 cycles in 0.00 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_monitor.genStableChks.genStableChksWRInf.master_w_wdata_stable:precondition1" was covered in 2 cycles in 0.00 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_monitor.genStableChks.genStableChksWRInf.master_w_wstrb_stable:precondition1" was covered in 2 cycles in 0.00 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_monitor.genStableChks.genStableChksWRInf.genAXI4Full.master_w_wuser_stable:precondition1" was covered in 2 cycles in 0.00 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_monitor.genStableChks.genStableChksWRInf.genAXI4Full.master_w_wlast_stable:precondition1" was covered in 2 cycles in 0.00 s.
-0.0.B: Trace Attempt  2	[0.00 s]
-0.0.N: Trace Attempt  1	[0.00 s]
-0.0.N: Trace Attempt  2	[0.00 s]
-0.0.Ht: Trace Attempt  3	[0.01 s]
-0.0.Ht: A trace with 3 cycles was found. [0.01 s]
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_monitor.genStableChks.genStableChksRDInf.slave_r_rvalid_stable:precondition1" was covered in 3 cycles in 0.01 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_monitor.genPropChksRDInf.slave_r_ar_rvalid_eventually:precondition1" was covered in 3 cycles in 0.01 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_monitor.genPropChksRDInf.genNoRdTblOverflow.master_ar_rd_tbl_no_overflow:precondition1" was covered in 3 cycles in 0.01 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_monitor.genStableChks.genStableChksRDInf.slave_r_rdata_stable:precondition1" was covered in 3 cycles in 0.01 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_monitor.genStableChks.genStableChksRDInf.slave_r_rresp_stable:precondition1" was covered in 3 cycles in 0.01 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_monitor.genStableChks.genStableChksRDInf.genAXI4Full.slave_r_rlast_stable:precondition1" was covered in 3 cycles in 0.01 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_monitor.genStableChks.genStableChksRDInf.genAXI4Full.slave_r_rid_stable:precondition1" was covered in 3 cycles in 0.01 s.
-0.0.N: Trace Attempt  2	[0.00 s]
-0.0.Ht: A trace with 3 cycles was found. [0.01 s]
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_monitor.genStableChks.genStableChksWRInf.master_aw_awvalid_stable:precondition1" was covered in 3 cycles in 0.01 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_monitor.genPropChksRDInf.genAXI4Full.slave_r_ar_rid_match:precondition1" was covered in 3 cycles in 0.01 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_monitor.genPropChksRDInf.assert_ar_rd_tbl_no_overflow:precondition1" was covered in 3 cycles in 0.01 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_monitor.genStableChks.genStableChksWRInf.master_aw_awaddr_stable:precondition1" was covered in 3 cycles in 0.01 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_monitor.genStableChks.genStableChksWRInf.master_aw_awprot_stable:precondition1" was covered in 3 cycles in 0.01 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_monitor.genStableChks.genStableChksWRInf.genAXI4Full.master_aw_awid_stable:precondition1" was covered in 3 cycles in 0.01 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_monitor.genStableChks.genStableChksWRInf.genAXI4Full.master_aw_awlen_stable:precondition1" was covered in 3 cycles in 0.01 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_monitor.genStableChks.genStableChksWRInf.genAXI4Full.master_aw_awsize_stable:precondition1" was covered in 3 cycles in 0.01 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_monitor.genStableChks.genStableChksWRInf.genAXI4Full.master_aw_awburst_stable:precondition1" was covered in 3 cycles in 0.01 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_monitor.genStableChks.genStableChksWRInf.genAXI4Full.master_aw_awlock_stable:precondition1" was covered in 3 cycles in 0.01 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_monitor.genStableChks.genStableChksWRInf.genAXI4Full.master_aw_awcache_stable:precondition1" was covered in 3 cycles in 0.01 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_monitor.genStableChks.genStableChksWRInf.genAXI4Full.master_aw_awqos_stable:precondition1" was covered in 3 cycles in 0.01 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_monitor.genStableChks.genStableChksWRInf.genAXI4Full.master_aw_awregion_stable:precondition1" was covered in 3 cycles in 0.01 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_monitor.genStableChks.genStableChksWRInf.genAXI4Full.master_aw_awuser_stable:precondition1" was covered in 3 cycles in 0.01 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_monitor.genPropChksRDInf.genAXI4Full.slave_r_ar_rlast_exact_len:precondition1" was covered in 3 cycles in 0.01 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_monitor.genPropChksRDInf.genAXI4Full.slave_r_excl_rresp_no_exokay:precondition1" was covered in 3 cycles in 0.01 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_monitor.genPropChksRDInf.genLiveMasterChksRReady.master_r_rready_eventually:precondition1" was covered in 3 cycles in 0.01 s.
-0.0.B: Stopped processing property "top.axi_monitor.genStableChks.genStableChksRDInf.slave_r_rvalid_stable"	[0.01 s].
-0.0.B: Starting proof for property "top.axi_monitor.genStableChks.genStableChksRDInf.slave_r_rdata_stable"	[0.00 s].
-0: ProofGrid is temporarily paused because there are too many pending traces.
-0: ProofGrid is resuming to work after pausing for 0s. The amount of pending traces decreased.
-0.0.Ht: A trace with 3 cycles was found. [0.01 s]
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_monitor.genStableChks.genStableChksWRInf.slave_b_bvalid_stable:precondition1" was covered in 3 cycles in 0.01 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_monitor.genPropChksWRInf.genNoWrDatTblOverflow.master_w_wr_tbl_no_overflow:precondition1" was covered in 3 cycles in 0.01 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_monitor.genPropChksWRInf.assert_w_wr_tbl_no_overflow:precondition1" was covered in 3 cycles in 0.01 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_monitor.genPropChksWRInf.genAXI4FullWrResp.slave_b_aw_bid_match:precondition1" was covered in 3 cycles in 0.01 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_monitor.genPropChksWRInf.slave_b_excl_bresp_no_exokay_supported:precondition1" was covered in 3 cycles in 0.01 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_monitor.genPropChksWRInf.slave_b_bvalid_eventually:precondition1" was covered in 3 cycles in 0.01 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_monitor.genStableChks.genStableChksWRInf.slave_b_bresp_stable:precondition1" was covered in 3 cycles in 0.01 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_monitor.genStableChks.genStableChksWRInf.genAXI4Full.slave_b_bid_stable:precondition1" was covered in 3 cycles in 0.01 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_monitor.genPropChksWRInf.genAXI4FullWrResp.slave_b_aw_bid_order_within_id:precondition1" was covered in 3 cycles in 0.01 s.
-INFO (IPF047): 0.0.Ht: The cover property "top.axi_monitor.genPropChksWRInf.genLiveMasterChksBReady.master_b_bready_eventually:precondition1" was covered in 3 cycles in 0.01 s.
-0.0.B: Trace Attempt  1	[0.00 s]
-0.0.B: Trace Attempt  2	[0.00 s]
-0.0.B: Trace Attempt  3	[0.01 s]
-0.0.N: Trace Attempt  3	[0.00 s]
-0.0.N: Stopped processing property "top.axi_monitor.genStableChks.genStableChksRDInf.slave_r_rvalid_stable:precondition1"	[0.01 s].
-0.0.N: Stopped processing property "top.axi_monitor.genStableChks.genStableChksRDInf.slave_r_rdata_stable:precondition1"	[0.01 s].
-0.0.N: Stopped processing property "top.axi_monitor.genStableChks.genStableChksRDInf.slave_r_rresp_stable:precondition1"	[0.01 s].
-0.0.N: Stopped processing property "top.axi_monitor.genStableChks.genStableChksRDInf.genAXI4Full.slave_r_rlast_stable:precondition1"	[0.01 s].
-0.0.N: Stopped processing property "top.axi_monitor.genStableChks.genStableChksRDInf.genAXI4Full.slave_r_rid_stable:precondition1"	[0.01 s].
-0.0.N: Starting proof for property "top.axi_monitor.genStableChks.genStableChksRDInf.slave_r_rdata_stable"	[0.00 s].
-0.0.N: Trace Attempt  1	[0.00 s]
-0.0.N: Trace Attempt  2	[0.00 s]
-0.0.N: Trace Attempt  3	[0.00 s]
-0.0.N: Trace Attempt  3	[0.01 s]
-0.0.N: Trace Attempt  4	[0.01 s]
-0.0.Ht: Trace Attempt  4	[0.01 s]
-0.0.Ht: Trace Attempt  5	[0.02 s]
-0.0.N: Trace Attempt  4	[0.01 s]
-0.0.B: Trace Attempt  4	[0.02 s]
-0.0.B: Trace Attempt  5	[0.03 s]
-0.0.Hp: A proof was found: No trace exists. [0.06 s]
-INFO (IPF057): 0.0.Hp: The property "top.axi_monitor.genStableChks.genStableChksRDInf.genAXI4Full.slave_r_rlast_stable" was proven in 0.05 s.
-0.0.Hp: A proof was found: No trace exists. [0.06 s]
-INFO (IPF057): 0.0.Hp: The property "top.axi_monitor.genStableChks.genStableChksRDInf.genAXI4Full.slave_r_rid_stable" was proven in 0.05 s.
-0.0.Hp: A proof was found: No trace exists. [0.06 s]
-INFO (IPF057): 0.0.Hp: The property "top.axi_monitor.genStableChks.genStableChksWRInf.slave_b_bvalid_stable" was proven in 0.05 s.
-0.0.Hp: A proof was found: No trace exists. [0.06 s]
-INFO (IPF057): 0.0.Hp: The property "top.axi_monitor.genStableChks.genStableChksWRInf.genAXI4Full.slave_b_bid_stable" was proven in 0.05 s.
-0.0.N: Trace Attempt  5	[0.04 s]
-0.0.N: Trace Attempt  1	[0.19 s]
-0.0.N: Trace Attempt  2	[0.19 s]
-0.0.N: Trace Attempt  3	[0.20 s]
-0.0.N: Trace Attempt  4	[0.22 s]
-0.0.N: Validation of fixpoint was successful. Time = 0.01
-0.0.N: A proof was found: No trace exists. [0.29 s]
-INFO (IPF057): 0.0.N: The property "top.axi_monitor.genStableChks.genStableChksRDInf.slave_r_rdata_stable" was proven in 0.27 s.
-0.0.N: Stopped processing property "top.axi_monitor.genStableChks.genStableChksRDInf.slave_r_rdata_stable"	[0.27 s].
-0.0.N: Starting proof for property "top.axi_monitor.genPropChksRDInf.genAXI4Full.slave_r_ar_rid_match"	[0.00 s].
-0.0.N: Trace Attempt  1	[0.00 s]
-0.0.N: Trace Attempt  2	[0.00 s]
-0.0.N: Trace Attempt  2	[0.00 s]
-0.0.N: Trace Attempt  3	[0.01 s]
-0.0.B: Stopped processing property "top.axi_monitor.genStableChks.genStableChksRDInf.slave_r_rdata_stable"	[0.28 s].
-0.0.B: Starting proof for property "top.axi_monitor.genPropChksRDInf.genAXI4Full.slave_r_ar_rid_match"	[0.00 s].
-0.0.N: Trace Attempt  3	[0.01 s]
-0.0.B: Trace Attempt  1	[0.00 s]
-0.0.B: Trace Attempt  2	[0.00 s]
-0.0.N: Trace Attempt  4	[0.01 s]
-0.0.B: Trace Attempt  3	[0.01 s]
-0.0.N: Trace Attempt  4	[0.02 s]
-0.0.B: Trace Attempt  4	[0.01 s]
-0.0.N: Trace Attempt  5	[0.03 s]
-0.0.B: Trace Attempt  5	[0.02 s]
-0.0.N: Trace Attempt  1	[0.04 s]
-0.0.N: Trace Attempt  2	[0.04 s]
-0.0.N: Trace Attempt  3	[0.04 s]
-0.0.N: Validation of fixpoint was successful. Time = 0.00
-0.0.N: A proof was found: No trace exists. [0.04 s]
-INFO (IPF057): 0.0.N: The property "top.axi_monitor.genPropChksRDInf.genAXI4Full.slave_r_ar_rid_match" was proven in 0.04 s.
-0.0.N: Stopped processing property "top.axi_monitor.genPropChksRDInf.genAXI4Full.slave_r_ar_rid_match"	[0.04 s].
-0.0.N: Starting proof for property "top.axi_monitor.genPropChksRDInf.genAXI4Full.slave_r_ar_rlast_exact_len"	[0.00 s].
-0.0.N: Trace Attempt  1	[0.00 s]
-0.0.N: Trace Attempt  2	[0.00 s]
-0.0.B: Stopped processing property "top.axi_monitor.genPropChksRDInf.genAXI4Full.slave_r_ar_rid_match"	[0.04 s].
-0.0.B: Starting proof for property "top.axi_monitor.genPropChksRDInf.genAXI4Full.slave_r_ar_rlast_exact_len"	[0.00 s].
-0.0.N: Trace Attempt  2	[0.01 s]
-0.0.B: Trace Attempt  1	[0.00 s]
-0.0.N: Trace Attempt  3	[0.01 s]
-0.0.B: Trace Attempt  2	[0.00 s]
-0.0.N: Trace Attempt  3	[0.01 s]
-0.0.B: Trace Attempt  3	[0.01 s]
-0.0.N: Trace Attempt  4	[0.01 s]
-0.0.N: Trace Attempt  5	[0.02 s]
-0.0.B: Trace Attempt  4	[0.01 s]
-0.0.B: Trace Attempt  5	[0.02 s]
-0.0.N: Trace Attempt  1	[0.07 s]
-0.0.N: Trace Attempt  2	[0.07 s]
-0.0.N: Trace Attempt  3	[0.08 s]
-0.0.N: Trace Attempt  4	[0.08 s]
-0.0.N: Trace Attempt  5	[0.11 s]
-0.0.N: Validation of fixpoint was successful. Time = 0.00
-0.0.N: Trace Attempt  9	[0.17 s]
-0.0.N: A proof was found: No trace exists. [0.18 s]
-INFO (IPF057): 0.0.N: The property "top.axi_monitor.genPropChksRDInf.genAXI4Full.slave_r_ar_rlast_exact_len" was proven in 0.18 s.
-0.0.N: Stopped processing property "top.axi_monitor.genPropChksRDInf.genAXI4Full.slave_r_ar_rlast_exact_len"	[0.18 s].
-0.0.N: Starting proof for property "top.axi_monitor.genPropChksWRInf.genAXI4FullWrResp.slave_b_aw_bid_match"	[0.00 s].
-0.0.N: Trace Attempt  1	[0.00 s]
-0.0.B: Stopped processing property "top.axi_monitor.genPropChksRDInf.genAXI4Full.slave_r_ar_rlast_exact_len"	[0.18 s].
-0.0.B: Starting proof for property "top.axi_monitor.genPropChksWRInf.genAXI4FullWrResp.slave_b_aw_bid_match"	[0.00 s].
-0.0.N: Trace Attempt  2	[0.00 s]
-0.0.N: Trace Attempt  3	[0.00 s]
-0.0.B: Trace Attempt  1	[0.00 s]
-0.0.B: Trace Attempt  2	[0.00 s]
-0.0.N: Trace Attempt  3	[0.01 s]
-0.0.B: Trace Attempt  3	[0.01 s]
-0.0.N: Trace Attempt  4	[0.01 s]
-0.0.N: Trace Attempt  5	[0.01 s]
-0.0.B: Trace Attempt  4	[0.01 s]
-0.0.B: Trace Attempt  5	[0.02 s]
-0.0.N: Trace Attempt  1	[0.02 s]
-0.0.N: Trace Attempt  2	[0.02 s]
-0.0.N: Trace Attempt  3	[0.03 s]
-0.0.N: Trace Attempt  4	[0.03 s]
-0.0.N: Trace Attempt  5	[0.03 s]
-0.0.N: Validation of fixpoint was successful. Time = 0.00
-0.0.N: A proof was found: No trace exists. [0.04 s]
-INFO (IPF057): 0.0.N: The property "top.axi_monitor.genPropChksWRInf.genAXI4FullWrResp.slave_b_aw_bid_match" was proven in 0.04 s.
-0.0.N: Stopped processing property "top.axi_monitor.genPropChksWRInf.genAXI4FullWrResp.slave_b_aw_bid_match"	[0.04 s].
-0.0.N: Starting proof for property "top.axi_monitor.genPropChksWRInf.genAXI4FullWrResp.slave_b_aw_bid_order_within_id"	[0.00 s].
-0.0.N: Trace Attempt  1	[0.00 s]
-0.0.B: Stopped processing property "top.axi_monitor.genPropChksWRInf.genAXI4FullWrResp.slave_b_aw_bid_match"	[0.03 s].
-0.0.B: Starting proof for property "top.axi_monitor.genPropChksWRInf.genAXI4FullWrResp.slave_b_aw_bid_order_within_id"	[0.00 s].
-0.0.N: Trace Attempt  2	[0.00 s]
-0.0.N: Trace Attempt  3	[0.00 s]
-0.0.N: Trace Attempt  4	[0.00 s]
-0.0.N: Trace Attempt  5	[0.00 s]
-0.0.N: Requesting engine job to stop
-0.0.B: Requesting engine job to stop
-0.0.Hp: Requesting engine job to terminate
-0.0.Ht: Requesting engine job to terminate
-INFO (IPF144): 0: Initiating shutdown of proof [0.58]
-0.0.N: Trace Attempt  6	[0.00 s]
-0.0.N: A proof was found: No trace exists. [0.00 s]
-INFO (IPF057): 0.0.N: The property "top.axi_monitor.genPropChksWRInf.genAXI4FullWrResp.slave_b_aw_bid_order_within_id" was proven in 0.00 s.
-0.0.N: Stopped processing property "top.axi_monitor.genPropChksWRInf.genAXI4FullWrResp.slave_b_aw_bid_order_within_id"	[0.00 s].
-0.0.Hp: Interrupted (multi)
-0.0.Ht: Interrupted (multi)
-0.0.N: All properties either determined or skipped. [0.58 s]
-0.0.B: Trace Attempt  1	[0.00 s]
-0.0.Hp: Interrupted. [0.58 s]
-0.0.Ht: Trace Attempt 16	[0.51 s]
-0.0.Ht: Interrupted. [0.57 s]
-0.0.B: Stopped processing property "top.axi_monitor.genPropChksWRInf.genAXI4FullWrResp.slave_b_aw_bid_order_within_id"	[0.00 s].
-0.0.N: Exited with Success (@ 0.58 s)
-0: ProofGrid usable level: 0
-0.0.Hp: Exited with Success (@ 0.58 s)
-0.0.Ht: Exited with Success (@ 0.58 s)
-0.0.B: All properties either determined or skipped. [0.57 s]
-0.0.B: Exited with Success (@ 0.58 s)
-0: --------------------------------------------------------------
-ProofGrid Summary
---------------------------------------------------------------
-     engines started                         :   4
-     engine jobs started                     :   4
-
-    Average time in state (seconds)
-    ------------------------------------------------------
-    Engine  Pending     Running        Dead    Utilization
-    ------------------------------------------------------
-      N        0.02        0.58        0.00       96.25 %
-     Hp        0.02        0.58        0.00       97.23 %
-     Ht        0.01        0.57        0.00       97.78 %
-      B        0.01        0.57        0.00       97.81 %
-    all        0.02        0.57        0.00       97.26 %
-
-    Data read    : 51.01 kiB
-    Data written : 5.73 kiB
-
-0: ProofGrid usable level: 0
-0: All pending notifications were processed.
+INFO (IRS018): Reset analysis simulation executed for 3 iterations. Assigned values for 4257 of 4257 design flops, 0 of 110 design latches, 817 of 1157 internal elements.
+ERROR (ENL024): Combinational loop found within the cone of influence for "CPU_wrapper_duv.cpu.alu.FP_unit.sticky".
+    Do one of the following to learn more about the problematic combinational loops:
+    - Use "check_loop <signal>" to show loops in the COI of the specified signal.
+    - Open the Combo Loop Viewer to see all loops in the design: "check_loop -viewer".
+    - Use "help check_loop -gui" and/or the "Combo Loop Viewer" chapter in the user guide for guidance.
 INFO (IPF059): Completed proof on task: "<embedded>"
 
 ==============================================================
 SUMMARY
 ==============================================================
-           Properties Considered              : 128
-                 assertions                   : 37 (6 disabled)
-                  - proven                    : 31 (83.7838%)
+           Properties Considered              : 230
+                 assertions                   : 99 (34 disabled)
+                  - proven                    : 0 (0%)
                   - bounded_proven (user)     : 0 (0%)
                   - bounded_proven (auto)     : 0 (0%)
                   - marked_proven             : 0 (0%)
                   - cex                       : 0 (0%)
                   - ar_cex                    : 0 (0%)
                   - undetermined              : 0 (0%)
-                  - unknown                   : 6 (6 disabled)                                 (16.2162%)
+                  - unknown                   : 99 (34 disabled)                                 (100%)
                   - error                     : 0 (0%)
-                 covers                       : 91 (12 disabled)
+                 covers                       : 131 (54 disabled)
                   - unreachable               : 0 (0%)
                   - bounded_unreachable (user): 0 (0%)
-                  - covered                   : 79 (86.8132%)
+                  - covered                   : 0 (0%)
                   - ar_covered                : 0 (0%)
                   - undetermined              : 0 (0%)
-                  - unknown                   : 12 (12 disabled)                                 (13.1868%)
+                  - unknown                   : 131 (54 disabled)                                 (100%)
                   - error                     : 0 (0%)
-determined
-[<embedded>] % visualize -property <embedded>::top.axi_monitor.genStableChks.genStableChksRDInf.master_ar_araddr_stable:precondition1 -new_window
-INFO (IVS015): Setting Visualize task to "<embedded>".
-INFO (IVS008): Expanding analysis region to enable visualization of "<embedded>::top.axi_monitor.genStableChks.genStableChksRDInf.master_ar_araddr_stable:precondition1".
-covered
+failed
+ERROR: problem encountered at line 71 in file ../script/jg_master.tcl
+
 INFO (IPL005): Received request to exit from the console.
 INFO: Waiting for proof threads to stop...
 INFO: Proof threads stopped.

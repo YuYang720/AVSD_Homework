@@ -25,6 +25,9 @@ module Controller(
     input logic [6:0] WB_op,
     input logic [4:0] WB_rd,
 
+    // wait
+    input logic mem_wait,
+
     // Branch  signal
     input logic IF_gbc_predict_taken,
     input logic EX_gbc_predict_taken,
@@ -83,7 +86,8 @@ module Controller(
                  && (EX_rd != 5'b0))
                 || ((EX_op == `F_FLW) // load fp in fpreg
                  && ((ID_op == `F_arth && ID_rs1 == EX_rd) || (ID_inst_with_frs2 && (ID_rs2 == EX_rd))) 
-                 && (EX_rd != 5'b0));
+                 && (EX_rd != 5'b0))
+                || mem_wait;
 
     // branch control
     logic EX_mispredict;
@@ -111,7 +115,7 @@ module Controller(
     end
 
     // memory operation control
-    assign MEM_ceb = ~(MEM_op == `S_type || MEM_op == `I_load || MEM_op == `F_FSW || MEM_op == `F_FLW);
+    assign MEM_ceb = (MEM_op == `S_type || MEM_op == `I_load || MEM_op == `F_FSW || MEM_op == `F_FLW);
     assign MEM_dm_w_en = (MEM_op == `I_load || MEM_op == `F_FLW); // read: active high, write: active low
 
     always_comb begin

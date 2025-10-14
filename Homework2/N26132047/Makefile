@@ -252,7 +252,7 @@ syn6: | $(bld_dir)
 # Utilities
 nWave: | $(bld_dir)
 	cd $(bld_dir); \
-	nWave &
+	nWave top.fsdb&
 
 superlint: | $(bld_dir)
 	cd $(bld_dir); \

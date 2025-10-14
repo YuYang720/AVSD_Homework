@@ -22,18 +22,29 @@
 module CPU (
     input  logic        clk,
     input  logic        rst,
+
     // Instruction Memory Interface
-    output logic [13:0] im_addr,
-    input  logic [31:0] im_dout,
+    output logic        im_request_o,
+    output logic [31:0] im_pc_o,
+    input  logic        im_wait_i,
+    input  logic [31:0] im_addr_i, // input pc from wrapper
+    input  logic [31:0] im_dout_i,
+
     // Data Memory Interface
-    output logic        dm_ceb,
-    output logic        dm_w_en,
-    output logic [31:0] dm_bweb,
-    output logic [13:0] dm_addr,
-    output logic [31:0] dm_din,
-    input  logic [31:0] dm_dout
+    output logic        dm_request_o,
+    output logic [ 3:0] dm_bit_write_o,
+    input  logic        dm_wait_i,
+    output logic [31:0] dm_addr_o, 
+    output logic [31:0] dm_din_o,
+    input  logic [31:0] dm_dout_i
+
+    // output logic        dm_ceb,
+    // output logic        dm_w_en,
+    // output logic [31:0] dm_bweb,
 );
     
+    logic [31:0] dm_bweb;
+
     logic [31:0] next_pc, IF_pc_plus_4;
     logic [31:0] IF_pc, IF_inst;
     logic [31:0] jb_target;
@@ -52,15 +63,15 @@ module CPU (
     logic [31:0] EX_reg_src1_data, EX_reg_src2_data;
     logic [31:0] alu_src1_data, alu_src2_data, alu_out, mul_out;
     logic [31:0] EXE_cal_out;
-    logic [31:0] MEM_cal_out;
     logic [31:0] MEM_rs2_data;
+    logic [31:0] MEM_cal_out;
+    logic [31:0] MEM_ld_data;
     logic [11:0] MEM_CSR_imm;
     logic [31:0] WB_cal_out;
     logic [31:0] WB_ld_data;
     logic [11:0] WB_CSR_imm;
     logic [31:0] ld_f_data;
     logic [31:0] CSR_dout;
-
 
     logic [1:0] next_pc_sel;
     logic       stall;
@@ -120,6 +131,8 @@ module CPU (
         .WB_op        (WB_op),
         .WB_rd        (WB_rd),
 
+        .mem_wait             (im_wait_i | dm_wait_i),
+
         .IF_gbc_predict_taken (IF_gbc_predict_taken),
         .EX_gbc_predict_taken (EX_gbc_predict_taken),
         .IF_btb_b_hit         (IF_btb_b_hit),
@@ -128,6 +141,7 @@ module CPU (
         .EX_btb_j_hit         (EX_btb_j_hit),
         .EX_actual_taken      (EX_actual_taken),
 
+        
       	.next_pc_sel          (next_pc_sel),
       	.stall                (stall),
         .IF_flush             (IF_flush),
@@ -141,7 +155,7 @@ module CPU (
       	.alu_src2_sel         (alu_src2_sel),
 
       	.MEM_dm_w_en    (MEM_dm_w_en),
-        .MEM_ceb        (dm_ceb),
+        .MEM_ceb        (dm_request_o),
         .MEM_bweb       (dm_bweb),
       	
         .WB_wb_en       (WB_wb_en),
@@ -149,14 +163,19 @@ module CPU (
         .WB_wb_data_sel (WB_wb_data_sel)
     );
 
-    assign im_addr = IF_pc[15:2];  // Word aligned
-    assign IF_inst = im_dout;
+    assign im_request_o = 1'b1;
+    assign im_pc_o = IF_pc;  // Word aligned
+    assign IF_inst = im_dout_i;
     assign IF_pc_plus_4 = IF_pc + 32'd4;
     assign EX_pc_plus_4 = EX_pc + 32'd4;
 
-    assign dm_w_en = MEM_dm_w_en;
-    assign dm_addr = MEM_cal_out[15:2];
-    assign dm_din  = MEM_rs2_data;
+
+    // assign dm_w_en = MEM_dm_w_en;
+    assign dm_addr_o = MEM_cal_out;
+    assign dm_din_o  = MEM_rs2_data;
+    assign MEM_ld_data = dm_dout_i;
+    assign dm_bit_write_o = dm_bweb;
+
 
     Mux4to1 next_pc_m (
         .in_0     (EX_pc_plus_4),
@@ -399,7 +418,7 @@ module CPU (
         .MEM_rd      (MEM_rd),
         .MEM_func3   (MEM_func3),
         .MEM_cal_out (MEM_cal_out),
-        .MEM_ld_data (dm_dout),
+        .MEM_ld_data (MEM_ld_data),
         .MEM_CSR_imm (MEM_CSR_imm),
 
         .WB_op       (WB_op),

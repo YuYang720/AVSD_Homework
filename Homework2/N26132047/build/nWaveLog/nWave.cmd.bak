@@ -1,0 +1,312 @@
+wvSetPosition -win $_nWave1 {("G1" 0)}
+wvOpenFile -win $_nWave1 \
+           {/home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/build/top.fsdb}
+verdiSetActWin -win $_nWave1
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/top_tb"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/cpu_wrapper"
+wvSetPosition -win $_nWave1 {("G1" 12)}
+wvSetPosition -win $_nWave1 {("G1" 12)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/top_tb/TOP/cpu_wrapper/dm_addr\[31:0\]} \
+{/top_tb/TOP/cpu_wrapper/dm_bit_write\[3:0\]} \
+{/top_tb/TOP/cpu_wrapper/dm_din\[31:0\]} \
+{/top_tb/TOP/cpu_wrapper/dm_dout\[31:0\]} \
+{/top_tb/TOP/cpu_wrapper/dm_request} \
+{/top_tb/TOP/cpu_wrapper/dm_wait} \
+{/top_tb/TOP/cpu_wrapper/im_addr\[31:0\]} \
+{/top_tb/TOP/cpu_wrapper/im_dout\[31:0\]} \
+{/top_tb/TOP/cpu_wrapper/im_pc\[31:0\]} \
+{/top_tb/TOP/cpu_wrapper/im_request} \
+{/top_tb/TOP/cpu_wrapper/im_wait} \
+{/BLANK} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 1 2 3 4 5 6 7 8 9 10 11 12 )} 
+wvSetPosition -win $_nWave1 {("G1" 12)}
+wvSetPosition -win $_nWave1 {("G1" 12)}
+wvSetPosition -win $_nWave1 {("G1" 12)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/top_tb/TOP/cpu_wrapper/dm_addr\[31:0\]} \
+{/top_tb/TOP/cpu_wrapper/dm_bit_write\[3:0\]} \
+{/top_tb/TOP/cpu_wrapper/dm_din\[31:0\]} \
+{/top_tb/TOP/cpu_wrapper/dm_dout\[31:0\]} \
+{/top_tb/TOP/cpu_wrapper/dm_request} \
+{/top_tb/TOP/cpu_wrapper/dm_wait} \
+{/top_tb/TOP/cpu_wrapper/im_addr\[31:0\]} \
+{/top_tb/TOP/cpu_wrapper/im_dout\[31:0\]} \
+{/top_tb/TOP/cpu_wrapper/im_pc\[31:0\]} \
+{/top_tb/TOP/cpu_wrapper/im_request} \
+{/top_tb/TOP/cpu_wrapper/im_wait} \
+{/BLANK} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 1 2 3 4 5 6 7 8 9 10 11 12 )} 
+wvSetPosition -win $_nWave1 {("G1" 12)}
+wvGetSignalClose -win $_nWave1
+wvSetCursor -win $_nWave1 8367717.666948 -snap {("G2" 0)}
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvSetCursor -win $_nWave1 34397.255389 -snap {("G2" 0)}
+wvSetCursor -win $_nWave1 20260.163514 -snap {("G1" 7)}
+wvSetCursor -win $_nWave1 11300.668982 -snap {("G2" 0)}
+wvSelectGroup -win $_nWave1 {G2}
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/top_tb"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/cpu_wrapper"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP"
+wvSetPosition -win $_nWave1 {("G1" 14)}
+wvSetPosition -win $_nWave1 {("G1" 14)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/top_tb/TOP/cpu_wrapper/dm_addr\[31:0\]} \
+{/top_tb/TOP/cpu_wrapper/dm_bit_write\[3:0\]} \
+{/top_tb/TOP/cpu_wrapper/dm_din\[31:0\]} \
+{/top_tb/TOP/cpu_wrapper/dm_dout\[31:0\]} \
+{/top_tb/TOP/cpu_wrapper/dm_request} \
+{/top_tb/TOP/cpu_wrapper/dm_wait} \
+{/top_tb/TOP/cpu_wrapper/im_addr\[31:0\]} \
+{/top_tb/TOP/cpu_wrapper/im_dout\[31:0\]} \
+{/top_tb/TOP/cpu_wrapper/im_pc\[31:0\]} \
+{/top_tb/TOP/cpu_wrapper/im_request} \
+{/top_tb/TOP/cpu_wrapper/im_wait} \
+{/BLANK} \
+{/top_tb/TOP/clk} \
+{/top_tb/TOP/rst} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 13 14 )} 
+wvSetPosition -win $_nWave1 {("G1" 14)}
+wvSetPosition -win $_nWave1 {("G1" 14)}
+wvSetPosition -win $_nWave1 {("G1" 14)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/top_tb/TOP/cpu_wrapper/dm_addr\[31:0\]} \
+{/top_tb/TOP/cpu_wrapper/dm_bit_write\[3:0\]} \
+{/top_tb/TOP/cpu_wrapper/dm_din\[31:0\]} \
+{/top_tb/TOP/cpu_wrapper/dm_dout\[31:0\]} \
+{/top_tb/TOP/cpu_wrapper/dm_request} \
+{/top_tb/TOP/cpu_wrapper/dm_wait} \
+{/top_tb/TOP/cpu_wrapper/im_addr\[31:0\]} \
+{/top_tb/TOP/cpu_wrapper/im_dout\[31:0\]} \
+{/top_tb/TOP/cpu_wrapper/im_pc\[31:0\]} \
+{/top_tb/TOP/cpu_wrapper/im_request} \
+{/top_tb/TOP/cpu_wrapper/im_wait} \
+{/BLANK} \
+{/top_tb/TOP/clk} \
+{/top_tb/TOP/rst} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 13 14 )} 
+wvSetPosition -win $_nWave1 {("G1" 14)}
+wvGetSignalClose -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G1" 13 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 13 14 )} 
+wvSetPosition -win $_nWave1 {("G1" 13)}
+wvSetPosition -win $_nWave1 {("G1" 11)}
+wvSetPosition -win $_nWave1 {("G1" 10)}
+wvSetPosition -win $_nWave1 {("G1" 9)}
+wvSetPosition -win $_nWave1 {("G1" 8)}
+wvSetPosition -win $_nWave1 {("G1" 7)}
+wvSetPosition -win $_nWave1 {("G1" 6)}
+wvSetPosition -win $_nWave1 {("G1" 5)}
+wvSetPosition -win $_nWave1 {("G1" 4)}
+wvSetPosition -win $_nWave1 {("G1" 3)}
+wvSetPosition -win $_nWave1 {("G1" 2)}
+wvSetPosition -win $_nWave1 {("G1" 1)}
+wvSetPosition -win $_nWave1 {("G1" 0)}
+wvMoveSelected -win $_nWave1
+wvSetPosition -win $_nWave1 {("G1" 0)}
+wvSetPosition -win $_nWave1 {("G1" 2)}
+wvSelectSignal -win $_nWave1 {( "G1" 2 )} 
+wvAddSignal -win $_nWave1 "BLANK"
+wvSetPosition -win $_nWave1 {("G1" 2)}
+wvSetPosition -win $_nWave1 {("G1" 3)}
+wvSetCursor -win $_nWave1 5672.845784 -snap {("G1" 14)}
+wvSelectSignal -win $_nWave1 {( "G1" 4 )} 
+wvSetCursor -win $_nWave1 1350.677568 -snap {("G1" 14)}
+wvSetCursor -win $_nWave1 2926.468063 -snap {("G1" 14)}
+wvSelectGroup -win $_nWave1 {G2}
+wvSelectSignal -win $_nWave1 {( "G1" 15 )} 
+wvSetPosition -win $_nWave1 {("G1" 15)}
+wvSetPosition -win $_nWave1 {("G2" 0)}
+wvMoveSelected -win $_nWave1
+wvSetPosition -win $_nWave1 {("G2" 1)}
+wvSetPosition -win $_nWave1 {("G2" 1)}
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/top_tb"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/cpu_wrapper"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP"
+wvSetPosition -win $_nWave1 {("G2" 9)}
+wvSetPosition -win $_nWave1 {("G2" 9)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/top_tb/TOP/clk} \
+{/top_tb/TOP/rst} \
+{/BLANK} \
+{/top_tb/TOP/cpu_wrapper/dm_addr\[31:0\]} \
+{/top_tb/TOP/cpu_wrapper/dm_bit_write\[3:0\]} \
+{/top_tb/TOP/cpu_wrapper/dm_din\[31:0\]} \
+{/top_tb/TOP/cpu_wrapper/dm_dout\[31:0\]} \
+{/top_tb/TOP/cpu_wrapper/dm_request} \
+{/top_tb/TOP/cpu_wrapper/dm_wait} \
+{/top_tb/TOP/cpu_wrapper/im_addr\[31:0\]} \
+{/top_tb/TOP/cpu_wrapper/im_dout\[31:0\]} \
+{/top_tb/TOP/cpu_wrapper/im_pc\[31:0\]} \
+{/top_tb/TOP/cpu_wrapper/im_request} \
+{/top_tb/TOP/cpu_wrapper/im_wait} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+{/BLANK} \
+{/top_tb/TOP/ARADDR_M0\[31:0\]} \
+{/top_tb/TOP/ARBURST_M0\[1:0\]} \
+{/top_tb/TOP/ARID_M0\[3:0\]} \
+{/top_tb/TOP/ARLEN_M0\[3:0\]} \
+{/top_tb/TOP/ARREADY_M0} \
+{/top_tb/TOP/ARSIZE_M0\[2:0\]} \
+{/top_tb/TOP/ARVALID_M0} \
+{/BLANK} \
+}
+wvAddSignal -win $_nWave1 -group {"G3" \
+}
+wvSelectSignal -win $_nWave1 {( "G2" 2 3 4 5 6 7 8 9 )} 
+wvSetPosition -win $_nWave1 {("G2" 9)}
+wvSetPosition -win $_nWave1 {("G2" 15)}
+wvSetPosition -win $_nWave1 {("G2" 15)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/top_tb/TOP/clk} \
+{/top_tb/TOP/rst} \
+{/BLANK} \
+{/top_tb/TOP/cpu_wrapper/dm_addr\[31:0\]} \
+{/top_tb/TOP/cpu_wrapper/dm_bit_write\[3:0\]} \
+{/top_tb/TOP/cpu_wrapper/dm_din\[31:0\]} \
+{/top_tb/TOP/cpu_wrapper/dm_dout\[31:0\]} \
+{/top_tb/TOP/cpu_wrapper/dm_request} \
+{/top_tb/TOP/cpu_wrapper/dm_wait} \
+{/top_tb/TOP/cpu_wrapper/im_addr\[31:0\]} \
+{/top_tb/TOP/cpu_wrapper/im_dout\[31:0\]} \
+{/top_tb/TOP/cpu_wrapper/im_pc\[31:0\]} \
+{/top_tb/TOP/cpu_wrapper/im_request} \
+{/top_tb/TOP/cpu_wrapper/im_wait} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+{/BLANK} \
+{/top_tb/TOP/ARADDR_M0\[31:0\]} \
+{/top_tb/TOP/ARBURST_M0\[1:0\]} \
+{/top_tb/TOP/ARID_M0\[3:0\]} \
+{/top_tb/TOP/ARLEN_M0\[3:0\]} \
+{/top_tb/TOP/ARREADY_M0} \
+{/top_tb/TOP/ARSIZE_M0\[2:0\]} \
+{/top_tb/TOP/ARVALID_M0} \
+{/BLANK} \
+{/top_tb/TOP/RDATA_M0\[31:0\]} \
+{/top_tb/TOP/RID_M0\[3:0\]} \
+{/top_tb/TOP/RLAST_M0} \
+{/top_tb/TOP/RREADY_M0} \
+{/top_tb/TOP/RRESP_M0\[1:0\]} \
+{/top_tb/TOP/RVALID_M0} \
+}
+wvAddSignal -win $_nWave1 -group {"G3" \
+}
+wvSelectSignal -win $_nWave1 {( "G2" 10 11 12 13 14 15 )} 
+wvSetPosition -win $_nWave1 {("G2" 15)}
+wvSetPosition -win $_nWave1 {("G2" 16)}
+wvSetPosition -win $_nWave1 {("G2" 16)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/top_tb/TOP/clk} \
+{/top_tb/TOP/rst} \
+{/BLANK} \
+{/top_tb/TOP/cpu_wrapper/dm_addr\[31:0\]} \
+{/top_tb/TOP/cpu_wrapper/dm_bit_write\[3:0\]} \
+{/top_tb/TOP/cpu_wrapper/dm_din\[31:0\]} \
+{/top_tb/TOP/cpu_wrapper/dm_dout\[31:0\]} \
+{/top_tb/TOP/cpu_wrapper/dm_request} \
+{/top_tb/TOP/cpu_wrapper/dm_wait} \
+{/top_tb/TOP/cpu_wrapper/im_addr\[31:0\]} \
+{/top_tb/TOP/cpu_wrapper/im_dout\[31:0\]} \
+{/top_tb/TOP/cpu_wrapper/im_pc\[31:0\]} \
+{/top_tb/TOP/cpu_wrapper/im_request} \
+{/top_tb/TOP/cpu_wrapper/im_wait} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+{/BLANK} \
+{/top_tb/TOP/ARADDR_M0\[31:0\]} \
+{/top_tb/TOP/ARBURST_M0\[1:0\]} \
+{/top_tb/TOP/ARID_M0\[3:0\]} \
+{/top_tb/TOP/ARLEN_M0\[3:0\]} \
+{/top_tb/TOP/ARREADY_M0} \
+{/top_tb/TOP/ARSIZE_M0\[2:0\]} \
+{/top_tb/TOP/ARVALID_M0} \
+{/BLANK} \
+{/top_tb/TOP/RDATA_M0\[31:0\]} \
+{/top_tb/TOP/RID_M0\[3:0\]} \
+{/top_tb/TOP/RLAST_M0} \
+{/top_tb/TOP/RREADY_M0} \
+{/top_tb/TOP/RRESP_M0\[1:0\]} \
+{/top_tb/TOP/RVALID_M0} \
+{/BLANK} \
+}
+wvAddSignal -win $_nWave1 -group {"G3" \
+}
+wvSelectSignal -win $_nWave1 {( "G2" 16 )} 
+wvSetPosition -win $_nWave1 {("G2" 16)}
+wvSetPosition -win $_nWave1 {("G2" 16)}
+wvSetPosition -win $_nWave1 {("G2" 16)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/top_tb/TOP/clk} \
+{/top_tb/TOP/rst} \
+{/BLANK} \
+{/top_tb/TOP/cpu_wrapper/dm_addr\[31:0\]} \
+{/top_tb/TOP/cpu_wrapper/dm_bit_write\[3:0\]} \
+{/top_tb/TOP/cpu_wrapper/dm_din\[31:0\]} \
+{/top_tb/TOP/cpu_wrapper/dm_dout\[31:0\]} \
+{/top_tb/TOP/cpu_wrapper/dm_request} \
+{/top_tb/TOP/cpu_wrapper/dm_wait} \
+{/top_tb/TOP/cpu_wrapper/im_addr\[31:0\]} \
+{/top_tb/TOP/cpu_wrapper/im_dout\[31:0\]} \
+{/top_tb/TOP/cpu_wrapper/im_pc\[31:0\]} \
+{/top_tb/TOP/cpu_wrapper/im_request} \
+{/top_tb/TOP/cpu_wrapper/im_wait} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+{/BLANK} \
+{/top_tb/TOP/ARADDR_M0\[31:0\]} \
+{/top_tb/TOP/ARBURST_M0\[1:0\]} \
+{/top_tb/TOP/ARID_M0\[3:0\]} \
+{/top_tb/TOP/ARLEN_M0\[3:0\]} \
+{/top_tb/TOP/ARREADY_M0} \
+{/top_tb/TOP/ARSIZE_M0\[2:0\]} \
+{/top_tb/TOP/ARVALID_M0} \
+{/BLANK} \
+{/top_tb/TOP/RDATA_M0\[31:0\]} \
+{/top_tb/TOP/RID_M0\[3:0\]} \
+{/top_tb/TOP/RLAST_M0} \
+{/top_tb/TOP/RREADY_M0} \
+{/top_tb/TOP/RRESP_M0\[1:0\]} \
+{/top_tb/TOP/RVALID_M0} \
+{/BLANK} \
+}
+wvAddSignal -win $_nWave1 -group {"G3" \
+}
+wvSelectSignal -win $_nWave1 {( "G2" 16 )} 
+wvSetPosition -win $_nWave1 {("G2" 16)}
+wvGetSignalClose -win $_nWave1

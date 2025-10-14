@@ -90,16 +90,16 @@ module SRAM_wrapper(
     //                 SRAM Module                 
     // --------------------------------------------
     assign A         = ADDRESS[15:2];
-    assign CEB       = ~(WRITE_REQ | READ_REQ);
-    assign WEB       = ~WRITE_REQ;
-    assign BWEB      = {{8{~WSTRB_S[3]}}, {8{~WSTRB_S[2]}}, {8{~WSTRB_S[1]}}, {8{~WSTRB_S[0]}}};
+    assign CEB       = ~(WRITE_REQ | READ_REQ); // active low
+    assign WEB       = ~WRITE_REQ;              // active low
+    assign BWEB      = {{8{~WSTRB_S[3]}}, {8{~WSTRB_S[2]}}, {8{~WSTRB_S[1]}}, {8{~WSTRB_S[0]}}}; // active low
 
     TS1N16ADFPCLLLVTA512X45M4SWSHOD i_SRAM (
         .SLP     ( 1'b0  ),
         .DSLP    ( 1'b0  ),
         .SD      ( 1'b0  ),
         .PUDELAY (       ),
-        .CLK     ( clk   ),
+        .CLK     ( ACLK  ),
         .CEB     ( CEB   ),
         .WEB     ( WEB   ),
         .A       ( A     ),
@@ -125,9 +125,6 @@ module SRAM_wrapper(
             burst_counter_c <= burst_counter_n;
         end
     end
-
-    //assign BRESP_S = 2'b0;
-    //assign RRESP_S = 2'b0;
 
     always_comb begin
 
