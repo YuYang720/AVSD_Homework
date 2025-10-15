@@ -73,28 +73,29 @@ module CPU (
     logic [31:0] ld_f_data;
     logic [31:0] CSR_dout;
 
-    logic [1:0] next_pc_sel;
-    logic       stall;
-    logic       IF_flush, ID_flush;
-    logic [1:0] ID_rs1_data_sel, ID_rs2_data_sel;
+    logic [ 1:0] next_pc_sel;
+    logic        stall;
+    logic        IF_flush, ID_flush;
+    logic [ 1:0] ID_rs1_data_sel, ID_rs2_data_sel;
+ 
+    logic [ 1:0] EX_reg_src1_data_sel, EX_reg_src2_data_sel;
+    logic        alu_src1_sel, alu_src2_sel;
+    logic        EX_cal_out_sel;
+    logic [ 6:0] EX_op, EX_func7;
+    logic [ 4:0] EX_rs1, EX_rs2, EX_rd;
+    logic [ 2:0] EX_func3;
 
-    logic [1:0] EX_reg_src1_data_sel, EX_reg_src2_data_sel;
-    logic       alu_src1_sel, alu_src2_sel;
-    logic       EX_cal_out_sel;
-    logic [6:0] EX_op, EX_func7;
-    logic [4:0] EX_rs1, EX_rs2, EX_rd;
-    logic [2:0] EX_func3;
-
-    logic [6:0] MEM_op;
-    logic [4:0] MEM_rd;
-    logic [2:0] MEM_func3;
-    logic       MEM_dm_w_en;
-    logic       WB_wb_en;
-    logic       WB_fwb_en;
-    logic [6:0] WB_op;
-    logic [4:0] WB_rd;
-    logic [2:0] WB_func3;
-    logic [1:0] WB_wb_data_sel;
+    logic [31:0] MEM_pc;
+    logic [ 6:0] MEM_op;
+    logic [ 4:0] MEM_rd;
+    logic [ 2:0] MEM_func3;
+    logic        MEM_dm_w_en;
+    logic        WB_wb_en;
+    logic        WB_fwb_en;
+    logic [ 6:0] WB_op;
+    logic [ 4:0] WB_rd;
+    logic [ 2:0] WB_func3;
+    logic [ 1:0] WB_wb_data_sel;
     
     logic        IF_btb_b_hit;
     logic        IF_btb_j_hit;
@@ -301,6 +302,9 @@ module CPU (
         .clk                  (clk),
         .rst                  (rst),
         .stall                (stall),
+        .mem_wait             (im_wait_i | dm_wait_i),
+
+
         .flush                (ID_flush),
         .ID_pc                (ID_pc),
         .ID_op                (ID_op),
@@ -397,8 +401,9 @@ module CPU (
     EX_MEM_reg Reg_EX_MEM (
         .clk          (clk),
         .rst          (rst),
-        .mem_wait        (im_wait_i | dm_wait_i),
+        .mem_wait     (im_wait_i | dm_wait_i),
 
+        .EX_pc        (EX_pc),
         .EX_op        (EX_op),
         .EX_rd        (EX_rd),
         .EX_func3     (EX_func3),
@@ -406,6 +411,7 @@ module CPU (
         .EX_rs2_data  (EX_reg_src2_data),
         .EX_imm_ext   (EX_imm_ext),        
         
+        .MEM_pc       (MEM_pc),
         .MEM_op       (MEM_op),
         .MEM_rd       (MEM_rd),
         .MEM_func3    (MEM_func3),
@@ -418,6 +424,7 @@ module CPU (
         .clk         (clk),
         .rst         (rst),
         .mem_wait       (im_wait_i | dm_wait_i),
+        .dm_wait     (dm_wait_i),
 
         .MEM_op      (MEM_op),
         .MEM_rd      (MEM_rd),

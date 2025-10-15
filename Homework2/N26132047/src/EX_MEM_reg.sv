@@ -3,6 +3,7 @@ module EX_MEM_reg (
     input logic        rst,
     input logic        mem_wait,
 
+    input logic [31:0] EX_pc, 
     input logic [6:0]  EX_op,
     input logic [4:0]  EX_rd,
     input logic [ 2:0] EX_func3,
@@ -10,6 +11,7 @@ module EX_MEM_reg (
     input logic [31:0] EX_rs2_data,
     input logic [31:0] EX_imm_ext,        
 
+    output logic [31:0] MEM_pc,
     output logic [ 6:0] MEM_op,
     output logic [ 4:0] MEM_rd,
     output logic [ 2:0] MEM_func3,
@@ -20,18 +22,21 @@ module EX_MEM_reg (
 
     always_ff @(posedge clk or posedge rst) begin
         if (rst) begin    
+            MEM_pc      <= 7'b0;
             MEM_op      <= 7'b0;
             MEM_func3   <= 3'b0;
             MEM_rd      <= 5'b0;
             MEM_cal_out <= 32'b0;
             MEM_CSR_imm <= 12'b0;
         end else if (mem_wait) begin
+            MEM_pc      <= MEM_pc;
             MEM_op      <= MEM_op;
             MEM_func3   <= MEM_func3;
             MEM_rd      <= MEM_rd;
             MEM_cal_out <= MEM_cal_out;
             MEM_CSR_imm <= MEM_CSR_imm;
         end else begin
+            MEM_pc      <= EX_pc;
             MEM_op      <= EX_op;
             MEM_func3   <= EX_func3;
             MEM_rd      <= EX_rd;

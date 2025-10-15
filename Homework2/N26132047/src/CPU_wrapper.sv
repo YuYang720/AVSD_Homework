@@ -298,7 +298,7 @@ module CPU_wrapper(
                     dm_dout = RDATA_M1;
 
                     if (RLAST_M1) begin
-                        dm_wait = 1'b0;
+                        // dm_wait = 1'b0;
                         D_state_n = IDLE;
                         D_request_n.valid = 1'b0;
                         D_request_n.data  = RDATA_M1;
@@ -307,6 +307,8 @@ module CPU_wrapper(
             end
             AW_CHAN: begin
                 AWVALID_M1 = 1'b1;
+                AWADDR_M1  = D_request_c.addr;
+                
                 if (AWREADY_M1) begin
                     D_state_n = W_CHAN;
 
@@ -329,7 +331,6 @@ module CPU_wrapper(
             B_CHAN: begin
                 BREADY_M1 = 1'b1;
                 if (BVALID_M1) begin
-                    dm_wait = 1'b0;
                     D_state_n = IDLE;
                     D_request_n.valid = 1'b0;
                     dm_wait  = 1'b0;

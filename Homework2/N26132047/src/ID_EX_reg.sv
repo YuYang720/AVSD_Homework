@@ -2,7 +2,9 @@ module ID_EX_reg (
     input logic        clk,
     input logic        rst,
     input logic        stall,
+    input logic        mem_wait,
     input logic        flush,
+
     input logic [31:0] ID_pc,
     input logic [ 6:0] ID_op,
     input logic [ 2:0] ID_func3,
@@ -48,7 +50,7 @@ module ID_EX_reg (
             EX_rs1_data <= 32'b0;
             EX_rs2_data <= 32'b0;
             EX_imm_ext  <= 32'b0;
-        end/* else if (flush) begin 
+        end else if (stall & !mem_wait) begin 
 			EX_pc       <= 32'b0;
             EX_op       <= 7'b0010011;
             EX_func3    <= 3'b0;
@@ -59,7 +61,7 @@ module ID_EX_reg (
             EX_rs1_data <= 32'b0;
             EX_rs2_data <= 32'b0;
             EX_imm_ext  <= 32'b0;
-        end */else if (stall) begin
+        end else if (stall) begin
 			EX_pc       <= EX_pc;
             EX_op       <= EX_op;
             EX_func3    <= EX_func3;
