@@ -290,16 +290,21 @@ module AXI (
         if (slave_status_c_s0.busy & transaction_done_s0) begin
             slave_status_n_s0.busy = 1'b0;
             // remain busy if next request is still the same master and same type
-            /*if (request_valid_s0 & 
+            if (request_valid_s0 & 
                 request_master_s0 == slave_status_c_s0.current_master &
                 request_type_s0 == slave_status_c_s0.transaction_type) begin
                 slave_status_n_s0.busy = 1'b1;        
-            end*/
+            end
         end
         
         if (slave_status_c_s1.busy & transaction_done_s1) begin
             slave_status_n_s1.busy = 1'b0;
             // remain busy if next request is still the same master and same type
+            if (request_valid_s1 & 
+                request_master_s1 == slave_status_c_s1.current_master &
+                request_type_s1 == slave_status_c_s1.transaction_type) begin
+                slave_status_n_s1.busy = 1'b1;        
+            end
         end
 
         // Next state logic for Slave

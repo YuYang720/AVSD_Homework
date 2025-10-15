@@ -50,7 +50,7 @@ module ID_EX_reg (
             EX_rs1_data <= 32'b0;
             EX_rs2_data <= 32'b0;
             EX_imm_ext  <= 32'b0;
-        end else if (stall & !mem_wait) begin 
+        end else if (flush || (stall && !mem_wait)) begin 
 			EX_pc       <= 32'b0;
             EX_op       <= 7'b0010011;
             EX_func3    <= 3'b0;

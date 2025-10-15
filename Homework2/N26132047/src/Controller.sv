@@ -33,13 +33,14 @@ module Controller(
     input logic EX_btb_b_hit,
     input logic EX_btb_j_hit,  
 
-    input logic        mem_wait,
+    input logic mem_wait,
 
     output logic EX_actual_taken,        
 
     // Control outputs
     output logic [ 1:0] next_pc_sel,
     output logic        stall,
+    output logic        load_use_stall,
     output logic        IF_flush,
     output logic        ID_flush,
     output logic [ 1:0] ID_rs1_data_sel,
@@ -62,6 +63,8 @@ module Controller(
     logic EX_inst_with_rs1, EX_inst_with_rs2, EX_inst_with_frs2;
     logic MEM_inst_with_rd, MEM_inst_with_frd;
     logic WB_inst_with_rd, WB_inst_with_frd;
+
+
 
     always_comb begin
         ID_inst_with_rs1 = (ID_op == `R_type) || (ID_op == `I_arth) || (ID_op == `I_load) || (ID_op == `JALR) || (ID_op == `S_type) || (ID_op == `B_type) || (ID_op == `F_FLW) || (ID_op == `F_FSW);
@@ -87,6 +90,13 @@ module Controller(
                  && ((ID_op == `F_arth && ID_rs1 == EX_rd) || (ID_inst_with_frs2 && (ID_rs2 == EX_rd))) 
                  && (EX_rd != 5'b0))
                 || mem_wait;
+
+    assign load_use_stall = ((EX_op == `I_load) 
+                          && ((ID_inst_with_rs1 && (ID_rs1 == EX_rd)) || (ID_inst_with_rs2 && (ID_rs2 == EX_rd))) 
+                          && (EX_rd != 5'b0))
+                         || ((EX_op == `F_FLW) // load fp in fpreg
+                          && ((ID_op == `F_arth && ID_rs1 == EX_rd) || (ID_inst_with_frs2 && (ID_rs2 == EX_rd))) 
+                          && (EX_rd != 5'b0));
 
     // branch control
     logic EX_mispredict;
@@ -114,7 +124,7 @@ module Controller(
     end
 
     // memory operation control
-    assign MEM_ceb = (MEM_op == `S_type || MEM_op == `I_load || MEM_op == `F_FSW || MEM_op == `F_FLW) && !stall;
+    assign MEM_ceb = (MEM_op == `S_type || MEM_op == `I_load || MEM_op == `F_FSW || MEM_op == `F_FLW) && !stall && !mem_wait;
     assign MEM_dm_w_en = (MEM_op == `I_load || MEM_op == `F_FLW); // read: active high, write: active low
 
     always_comb begin

@@ -75,6 +75,9 @@ module CPU (
 
     logic [ 1:0] next_pc_sel;
     logic        stall;
+    logic        load_use_stall;
+    // load-use stall : 2 clock
+    // stall & !mem_wait : 1 clock
     logic        IF_flush, ID_flush;
     logic [ 1:0] ID_rs1_data_sel, ID_rs2_data_sel;
  
@@ -143,6 +146,7 @@ module CPU (
         .EX_actual_taken      (EX_actual_taken),
       	.next_pc_sel          (next_pc_sel),
       	.stall                (stall),
+        .load_use_stall       (load_use_stall),
         .IF_flush             (IF_flush),
         .ID_flush             (ID_flush),
       	.ID_rs1_data_sel      (ID_rs1_data_sel),
@@ -161,9 +165,9 @@ module CPU (
         .WB_fwb_en      (WB_fwb_en),
         .WB_wb_data_sel (WB_wb_data_sel)
     );
-
+ 
     assign im_request_o = 1'b1;
-    assign im_pc_o = IF_pc;  // Word aligned
+    assign im_pc_o = (load_use_stall) ? ID_pc : IF_pc;  // Word aligned
     assign IF_inst = im_dout_i;
     assign IF_pc_plus_4 = IF_pc + 32'd4;
     assign EX_pc_plus_4 = EX_pc + 32'd4;
@@ -213,6 +217,8 @@ module CPU (
         .clk        (clk),
         .rst        (rst),
         .stall      (stall),
+        .mem_wait   (im_wait_i | dm_wait_i),
+
         .next_pc    (next_pc),
         .current_pc (IF_pc)
     );
@@ -303,9 +309,8 @@ module CPU (
         .rst                  (rst),
         .stall                (stall),
         .mem_wait             (im_wait_i | dm_wait_i),
-
-
         .flush                (ID_flush),
+
         .ID_pc                (ID_pc),
         .ID_op                (ID_op),
       	.ID_func3             (ID_func3),
@@ -423,7 +428,7 @@ module CPU (
     MEM_WB_reg Reg_MEM_WB (
         .clk         (clk),
         .rst         (rst),
-        .mem_wait       (im_wait_i | dm_wait_i),
+        .mem_wait    (im_wait_i | dm_wait_i),
         .dm_wait     (dm_wait_i),
 
         .MEM_op      (MEM_op),

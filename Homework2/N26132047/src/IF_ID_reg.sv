@@ -23,6 +23,7 @@ module IF_ID_reg (
     // rst_released: active low -> 製程限定 sequential part 在 reset 時要為0
     logic        prev_stall, prev_flush, rst_released;
     logic [31:0] stored_inst;
+    logic        prev_wait;
 
     // PC register logic
     always_ff @(posedge clk or posedge rst) begin
@@ -41,10 +42,12 @@ module IF_ID_reg (
     always_ff @(posedge clk or posedge rst) begin
         if (rst) begin
             prev_stall   <= 1'b0;
+            prev_wait <= 1'b0;
             prev_flush   <= 1'b0;
             rst_released <= 1'b0;
         end else begin 
             prev_stall   <= stall;
+            prev_wait <= mem_wait;
             prev_flush   <= flush;
             rst_released <= 1'b1;
         end
@@ -75,6 +78,19 @@ module IF_ID_reg (
             ID_inst = IF_inst;
         end
     end
+
+    /*
+    always_ff @(posedge clk or posedge rst) begin
+        if (rst) begin
+            ID_inst <= `NOP;
+        end else if (flush) begin
+            ID_inst <= `NOP;
+        end else if (stall & !prev_wait) begin
+            ID_inst <= stored_inst;
+        end else begin
+            ID_inst <= IF_inst;
+        end
+    end*/
     
     always_ff @(posedge clk or posedge rst) begin
         if (rst) begin
