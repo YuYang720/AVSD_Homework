@@ -450,6 +450,7 @@ module CPU (
     CSR_Unit csr (
         .clk        (clk),
         .rst        (rst),
+        .mem_wait   (im_wait_i | dm_wait_i),
         .WB_op      (WB_op),
         .WB_rd      (WB_rd),
         .WB_CSR_imm (WB_CSR_imm),

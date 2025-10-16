@@ -5,10 +5,10 @@
 # version   : 2018.03p001 64 bits
 # build date: 2018.04.24 18:13:05 PDT
 #----------------------------------------
-# started Wed Oct 15 20:29:08 CST 2025
+# started Thu Oct 16 20:14:10 CST 2025
 # hostname  : superdome2
-# pid       : 28039
-# arguments : '-label' 'session_0' '-console' 'superdome2:34201' '-style' 'windows' '-data' 'AQAAADx/////AAAAAAAAA3oBAAAAEABMAE0AUgBFAE0ATwBWAEU=' '-proj' '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/build/jgproject/sessionLogs/session_0' '-init' '-hidden' '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/build/jgproject/.tmp/.initCmds.tcl' '../script/jg_master.tcl'
+# pid       : 108639
+# arguments : '-label' 'session_0' '-console' 'superdome2:34178' '-style' 'windows' '-data' 'AQAAADx/////AAAAAAAAA3oBAAAAEABMAE0AUgBFAE0ATwBWAEU=' '-proj' '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/build/jgproject/sessionLogs/session_0' '-init' '-hidden' '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/build/jgproject/.tmp/.initCmds.tcl' '../script/jg_master.tcl'
 #DO NOT MODIFY THIS FILE
 set ABVIP_INST_DIR /usr/cad/cadence/VIPCAT/cur/tools/abvip
 set vip_dir $::env(vip_dir)

@@ -5,10 +5,10 @@
 # version   : 2018.03p001 64 bits
 # build date: 2018.04.24 18:13:05 PDT
 #----------------------------------------
-# started Wed Oct 15 20:29:08 CST 2025
+# started Thu Oct 16 20:14:10 CST 2025
 # hostname  : superdome2
-# pid       : 28039
-# arguments : '-label' 'session_0' '-console' 'superdome2:34201' '-style' 'windows' '-data' 'AQAAADx/////AAAAAAAAA3oBAAAAEABMAE0AUgBFAE0ATwBWAEU=' '-proj' '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/build/jgproject/sessionLogs/session_0' '-init' '-hidden' '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/build/jgproject/.tmp/.initCmds.tcl' '../script/jg_master.tcl'
+# pid       : 108639
+# arguments : '-label' 'session_0' '-console' 'superdome2:34178' '-style' 'windows' '-data' 'AQAAADx/////AAAAAAAAA3oBAAAAEABMAE0AUgBFAE0ATwBWAEU=' '-proj' '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/build/jgproject/sessionLogs/session_0' '-init' '-hidden' '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/build/jgproject/.tmp/.initCmds.tcl' '../script/jg_master.tcl'
 
 Any disclosure about the Cadence Design Systems software or its use
 model to any third party violates the written Non-Disclosure Agreement
@@ -84,11 +84,11 @@ INFO: reading configuration file "/home/user1/avsd25/avsd2541/.config/jasper/jas
 [-- (VERI-1482)] Analyzing Verilog file '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/CPU.sv'
 [INFO (VERI-1328)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/CPU.sv(1): analyzing included file '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/instruction_pkg.sv'
 [INFO (VERI-1328)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/CPU.sv(2): analyzing included file '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/Controller.sv'
-[WARN (VERI-1206)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/Controller.sv(189): overwriting previous definition of module 'Controller'
-[INFO (VERI-2142)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/Controller.sv(189): previous definition of design element 'Controller' is here
+[WARN (VERI-1206)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/Controller.sv(190): overwriting previous definition of module 'Controller'
+[INFO (VERI-2142)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/Controller.sv(190): previous definition of design element 'Controller' is here
 [INFO (VERI-1328)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/CPU.sv(3): analyzing included file '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/CSR_Unit.sv'
-[WARN (VERI-1206)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/CSR_Unit.sv(40): overwriting previous definition of module 'CSR_Unit'
-[INFO (VERI-2142)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/CSR_Unit.sv(40): previous definition of design element 'CSR_Unit' is here
+[WARN (VERI-1206)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/CSR_Unit.sv(47): overwriting previous definition of module 'CSR_Unit'
+[INFO (VERI-2142)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/CSR_Unit.sv(47): previous definition of design element 'CSR_Unit' is here
 [INFO (VERI-1328)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/CPU.sv(4): analyzing included file '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/Decoder.sv'
 [WARN (VERI-1206)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/Decoder.sv(18): overwriting previous definition of module 'Decoder'
 [INFO (VERI-2142)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/Decoder.sv(18): previous definition of design element 'Decoder' is here
@@ -126,14 +126,14 @@ INFO: reading configuration file "/home/user1/avsd25/avsd2541/.config/jasper/jas
 [WARN (VERI-1206)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/ALU.sv(52): overwriting previous definition of module 'ALU'
 [INFO (VERI-2142)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/ALU.sv(52): previous definition of design element 'ALU' is here
 [INFO (VERI-1328)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/CPU.sv(15): analyzing included file '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/IF_ID_reg.sv'
-[WARN (VERI-1206)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/IF_ID_reg.sv(114): overwriting previous definition of module 'IF_ID_reg'
-[INFO (VERI-2142)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/IF_ID_reg.sv(114): previous definition of design element 'IF_ID_reg' is here
+[WARN (VERI-1206)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/IF_ID_reg.sv(125): overwriting previous definition of module 'IF_ID_reg'
+[INFO (VERI-2142)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/IF_ID_reg.sv(125): previous definition of design element 'IF_ID_reg' is here
 [INFO (VERI-1328)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/CPU.sv(16): analyzing included file '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/ID_EX_reg.sv'
 [WARN (VERI-1206)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/ID_EX_reg.sv(113): overwriting previous definition of module 'ID_EX_reg'
 [INFO (VERI-2142)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/ID_EX_reg.sv(113): previous definition of design element 'ID_EX_reg' is here
 [INFO (VERI-1328)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/CPU.sv(17): analyzing included file '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/EX_MEM_reg.sv'
-[WARN (VERI-1206)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/EX_MEM_reg.sv(65): overwriting previous definition of module 'EX_MEM_reg'
-[INFO (VERI-2142)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/EX_MEM_reg.sv(65): previous definition of design element 'EX_MEM_reg' is here
+[WARN (VERI-1206)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/EX_MEM_reg.sv(66): overwriting previous definition of module 'EX_MEM_reg'
+[INFO (VERI-2142)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/EX_MEM_reg.sv(66): previous definition of design element 'EX_MEM_reg' is here
 [INFO (VERI-1328)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/CPU.sv(18): analyzing included file '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/MEM_WB_reg.sv'
 [WARN (VERI-1206)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/MEM_WB_reg.sv(57): overwriting previous definition of module 'MEM_WB_reg'
 [INFO (VERI-2142)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/MEM_WB_reg.sv(57): previous definition of design element 'MEM_WB_reg' is here
@@ -143,8 +143,8 @@ INFO: reading configuration file "/home/user1/avsd25/avsd2541/.config/jasper/jas
 [INFO (VERI-1328)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/CPU.sv(20): analyzing included file '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/BHR_PHT.sv'
 [WARN (VERI-1206)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/BHR_PHT.sv(38): overwriting previous definition of module 'BHR_PHT'
 [INFO (VERI-2142)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/BHR_PHT.sv(38): previous definition of design element 'BHR_PHT' is here
-[WARN (VERI-1206)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/CPU.sv(475): overwriting previous definition of module 'CPU'
-[INFO (VERI-2142)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/CPU.sv(475): previous definition of design element 'CPU' is here
+[WARN (VERI-1206)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/CPU.sv(477): overwriting previous definition of module 'CPU'
+[INFO (VERI-2142)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/../src/CPU.sv(477): previous definition of design element 'CPU' is here
 [-- (VERI-1482)] Analyzing Verilog file '/home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/master_duv/top.v'
 [WARN (VERI-9025)] /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip/master_duv/top.v(20): Empty Port in Module Declaration
 [-- (VERI-1482)] Analyzing Verilog file '/usr/cad/cadence/VIPCAT/cur/tools/abvip/axi4/rtl/axi4_slave.sv'
@@ -464,3 +464,6 @@ SUMMARY
 failed
 ERROR: problem encountered at line 71 in file ../script/jg_master.tcl
 
+INFO (IPL005): Received request to exit from the console.
+INFO: Waiting for proof threads to stop...
+INFO: Proof threads stopped.

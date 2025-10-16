@@ -1,6 +1,7 @@
 module CSR_Unit (
     input  logic        clk,
     input  logic        rst,
+    input  logic        mem_wait,
     input  logic [ 6:0] WB_op,
     input  logic [ 4:0] WB_rd,
     input  logic [11:0] WB_CSR_imm,
@@ -11,17 +12,23 @@ module CSR_Unit (
     logic [63:0] CSR_cycle_rsg;
 
     always_ff @(posedge clk or posedge rst)begin
-        unique if (rst) begin
+        if (rst) begin
             CSR_instr_reg <= 64'b0;
-            CSR_cycle_rsg <= 64'b0;
-        end else if (WB_op == `I_arth && WB_rd == 5'b0) begin 
+        end else if ((WB_op == `I_arth && WB_rd == 5'b0) || mem_wait) begin // NOP
             CSR_instr_reg <= CSR_instr_reg;
-            CSR_cycle_rsg <= CSR_cycle_rsg + 64'd1;
         end else begin
             CSR_instr_reg <= CSR_instr_reg + 64'd1;
+        end 
+    end
+
+    always_ff @(posedge clk or posedge rst)begin
+        if (rst) begin
+            CSR_cycle_rsg <= 64'b0;
+        end else begin
             CSR_cycle_rsg <= CSR_cycle_rsg + 64'd1;
         end 
     end
+
 
     always_comb begin
         if (WB_op == `CSR) begin
