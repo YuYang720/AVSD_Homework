@@ -158,7 +158,7 @@ module FP_calculator ( // should be pipeline, but no time left
 
     // 輔助信號
     always_comb begin
-        significant = |rounded_frac[23:0];
+        significant = |normalized_frac[23:0];
         sticky = significant || over_push;
         
         if (rounded_frac[25:24] == 2'b00 || rounded_frac[25:24] == 2'b01) begin

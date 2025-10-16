@@ -166,11 +166,19 @@ module CPU (
         .WB_wb_data_sel (WB_wb_data_sel)
     );
  
-    assign im_request_o = 1'b1;
+    //assign im_request_o = 1'b1;
     assign im_pc_o = (load_use_stall) ? ID_pc : IF_pc;  // Word aligned
     assign IF_inst = im_dout_i;
     assign IF_pc_plus_4 = IF_pc + 32'd4;
     assign EX_pc_plus_4 = EX_pc + 32'd4;
+
+    always_ff @(posedge clk or posedge rst) begin
+        if (rst) begin
+            im_request_o <= 1'b0;
+        end else begin
+            im_request_o <= 1'b1;
+        end
+    end
 
 
     // assign dm_w_en = MEM_dm_w_en;
