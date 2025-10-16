@@ -42,16 +42,27 @@ module IF_ID_reg (
     always_ff @(posedge clk or posedge rst) begin
         if (rst) begin
             prev_stall   <= 1'b0;
-            prev_wait <= 1'b0;
-            prev_flush   <= 1'b0;
+            prev_wait    <= 1'b0;
+            //prev_flush   <= 1'b0;
             rst_released <= 1'b0;
         end else begin 
             prev_stall   <= stall;
-            prev_wait <= mem_wait;
-            prev_flush   <= flush;
+            prev_wait    <= mem_wait;
+            //prev_flush   <= flush;
             rst_released <= 1'b1;
         end
     end
+
+    always_ff @(posedge clk or posedge rst) begin
+        if (rst) begin
+            prev_flush   <= 1'b0;
+        end else if (mem_wait) begin 
+            prev_flush   <= prev_flush;
+        end else begin 
+            prev_flush   <= flush;
+        end
+    end
+
 
     // Instruction storage register (for stall handling)
     always_ff @(posedge clk or posedge rst) begin
@@ -70,9 +81,9 @@ module IF_ID_reg (
     always_comb begin
         if (rst) begin
             ID_inst = `NOP;
-        end else if(prev_flush || !rst_released) begin 
+        end else if (prev_flush || !rst_released) begin 
             ID_inst = `NOP;
-        end else if(prev_stall & !mem_wait) begin
+        end else if (prev_stall & !mem_wait) begin
             ID_inst = stored_inst;
         end else begin
             ID_inst = IF_inst;

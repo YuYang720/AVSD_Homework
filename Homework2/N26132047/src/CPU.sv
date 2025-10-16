@@ -406,6 +406,7 @@ module CPU (
     EX_MEM_reg Reg_EX_MEM (
         .clk          (clk),
         .rst          (rst),
+        .stall        (stall),
         .mem_wait     (im_wait_i | dm_wait_i),
 
         .EX_pc        (EX_pc),

@@ -1,6 +1,7 @@
 module EX_MEM_reg (
     input logic        clk,
     input logic        rst,
+    input logic        stall, 
     input logic        mem_wait,
 
     input logic [31:0] EX_pc, 

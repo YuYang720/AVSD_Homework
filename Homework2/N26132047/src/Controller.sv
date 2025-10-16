@@ -105,9 +105,10 @@ module Controller(
     
 
     // flush control
-    assign IF_flush = EX_mispredict || (EX_op == `JAL && !EX_btb_j_hit) || EX_op == `JALR;
-    assign ID_flush = EX_mispredict || (EX_op == `JAL && !EX_btb_j_hit) || EX_op == `JALR;
-
+    // assign IF_flush = EX_mispredict || (EX_op == `JAL && !EX_btb_j_hit) || EX_op == `JALR;
+    // assign ID_flush = EX_mispredict || (EX_op == `JAL && !EX_btb_j_hit) || EX_op == `JALR;
+   assign ID_flush = (EX_mispredict || (EX_op == `JAL && !EX_btb_j_hit) || EX_op == `JALR) && !mem_wait;
+   assign IF_flush = (EX_mispredict || (EX_op == `JAL && !EX_btb_j_hit) || EX_op == `JALR) && !mem_wait;
     // next pc control
     always_comb begin
         if (EX_mispredict) begin
@@ -124,7 +125,7 @@ module Controller(
     end
 
     // memory operation control
-    assign MEM_ceb = (MEM_op == `S_type || MEM_op == `I_load || MEM_op == `F_FSW || MEM_op == `F_FLW) && !stall && !mem_wait;
+    assign MEM_ceb = (MEM_op == `S_type || MEM_op == `I_load || MEM_op == `F_FSW || MEM_op == `F_FLW) && !stall;
     assign MEM_dm_w_en = (MEM_op == `I_load || MEM_op == `F_FLW); // read: active high, write: active low
 
     always_comb begin
