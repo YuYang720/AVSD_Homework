@@ -16,7 +16,7 @@
 // 	Date:			2024/11/3								   		//
 // 	Version:		1.0	    								   		//
 //////////////////////////////////////////////////////////////////////
-`include "AXI_define.svh"
+`include "../include/AXI_define.svh"
 
 module SRAM_wrapper(
     input                              ACLK,		

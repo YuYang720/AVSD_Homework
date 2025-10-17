@@ -19,7 +19,7 @@
 
 `include "CPU_wrapper.sv"
 `include "SRAM_wrapper.sv"
-`include "AXI.sv"
+`include "./AXI/AXI.sv"
 `include "../include/AXI_define.svh"
 
 module top (

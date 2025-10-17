@@ -1,2 +1,31 @@
-Error: Current design is not defined. (UID-4)
-0
+ 
+****************************************
+Report : area
+Design : top
+Version: P-2019.03-SP1-1
+Date   : Fri Oct 17 20:50:20 2025
+****************************************
+
+Library(s) Used:
+
+    N16ADFP_StdCellss0p72vm40c (File: /usr/cad/CBDK/Executable_Package/Collaterals/IP/stdcell/N16ADFP_StdCell/NLDM/N16ADFP_StdCellss0p72vm40c.db)
+    SRAM_ss0p72v0p72vm40c_100a (File: /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/sim/SRAM/SRAM_ss0p72v0p72vm40c_100a.db)
+
+Number of ports:                         7157
+Number of nets:                         31396
+Number of cells:                        24227
+Number of combinational cells:          20865
+Number of sequential cells:              3304
+Number of macros/black boxes:               2
+Number of buf/inv:                       4828
+Number of references:                       8
+
+Combinational area:               7446.971692
+Buf/Inv area:                     1023.528982
+Noncombinational area:            3366.697041
+Macro/Black Box area:             9082.750000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                 19896.418733
+Total area:                 undefined
+1

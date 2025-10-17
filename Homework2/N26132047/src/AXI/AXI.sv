@@ -15,7 +15,7 @@
 //	Description:	Top module of AXI	 							//
 // 	Version:		1.0	    								   		//
 //////////////////////////////////////////////////////////////////////
-`include "AXI_define.svh"
+`include "../include/AXI_define.svh"
 
 module AXI (
 
@@ -191,19 +191,16 @@ module AXI (
         decoded_AR_M0 = DEFAULT_SLAVE;
         decoded_AR_M1 = DEFAULT_SLAVE;
         decoded_AW_M1 = DEFAULT_SLAVE;
-
-        if (ARVALID_M0) begin
-            if      (ARADDR_M0 >= `S0_start_addr && ARADDR_M0 <= `S0_end_addr) decoded_AR_M0 = S0;
-            else if (ARADDR_M0 >= `S1_start_addr && ARADDR_M0 <= `S1_end_addr) decoded_AR_M0 = S1;
-        end
-        if (ARVALID_M1) begin
-            if      (ARADDR_M1 >= `S0_start_addr && ARADDR_M1 <= `S0_end_addr) decoded_AR_M1 = S0;
-            else if (ARADDR_M1 >= `S1_start_addr && ARADDR_M1 <= `S1_end_addr) decoded_AR_M1 = S1;
-        end
-        if (AWVALID_M1) begin
-            if      (AWADDR_M1 >= `S0_start_addr && AWADDR_M1 <= `S0_end_addr) decoded_AW_M1 = S0;
-            else if (AWADDR_M1 >= `S1_start_addr && AWADDR_M1 <= `S1_end_addr) decoded_AW_M1 = S1;
-        end
+       
+        if      (ARADDR_M0 >= `S0_start_addr && ARADDR_M0 <= `S0_end_addr) decoded_AR_M0 = S0;
+        else if (ARADDR_M0 >= `S1_start_addr && ARADDR_M0 <= `S1_end_addr) decoded_AR_M0 = S1;
+       
+        if      (ARADDR_M1 >= `S0_start_addr && ARADDR_M1 <= `S0_end_addr) decoded_AR_M1 = S0;
+        else if (ARADDR_M1 >= `S1_start_addr && ARADDR_M1 <= `S1_end_addr) decoded_AR_M1 = S1;
+       
+        if      (AWADDR_M1 >= `S0_start_addr && AWADDR_M1 <= `S0_end_addr) decoded_AW_M1 = S0;
+        else if (AWADDR_M1 >= `S1_start_addr && AWADDR_M1 <= `S1_end_addr) decoded_AW_M1 = S1;
+       
     end
 
     // --------------------------------------------
@@ -257,7 +254,8 @@ module AXI (
                     S1: begin request_valid_s1 = 1'b1; request_type_s1 = READ; request_master_s1 = M0; end
                 endcase
             end
-        end else if (master_priority_c == M1) begin
+        end 
+        if (master_priority_c == M1) begin
             if (ARVALID_M1) begin
                 case (decoded_AR_M1)
                     S0: begin request_valid_s0 = 1'b1; request_type_s0 = READ; request_master_s0 = M1; end
@@ -290,21 +288,21 @@ module AXI (
         if (slave_status_c_s0.busy & transaction_done_s0) begin
             slave_status_n_s0.busy = 1'b0;
             // remain busy if next request is still the same master and same type
-            if (request_valid_s0 & 
+            /*if (request_valid_s0 & 
                 request_master_s0 == slave_status_c_s0.current_master &
                 request_type_s0 == slave_status_c_s0.transaction_type) begin
                 slave_status_n_s0.busy = 1'b1;        
-            end
+            end*/
         end
         
         if (slave_status_c_s1.busy & transaction_done_s1) begin
             slave_status_n_s1.busy = 1'b0;
             // remain busy if next request is still the same master and same type
-            if (request_valid_s1 & 
+            /*if (request_valid_s1 & 
                 request_master_s1 == slave_status_c_s1.current_master &
                 request_type_s1 == slave_status_c_s1.transaction_type) begin
                 slave_status_n_s1.busy = 1'b1;        
-            end
+            end*/
         end
 
         // Next state logic for Slave
@@ -425,6 +423,71 @@ module AXI (
                     end
                 end 
             endcase
+        end 
+        else if (!slave_status_c_s0.busy & request_valid_s0) begin // slave_status_n_s0.busy -> combinational loop
+            case (slave_status_n_s0.transaction_type)
+                READ: begin
+                    case (slave_status_n_s0.current_master)
+                        M0: begin // M0 - S0
+                            // AR channel
+                            ARVALID_S0 = ARVALID_M0;
+                            ARREADY_M0 = ARREADY_S0; 
+                            ARID_S0    = {4'b0, ARID_M0};
+                            ARADDR_S0  = ARADDR_M0 ;
+                            ARLEN_S0   = ARLEN_M0  ;
+                            ARSIZE_S0  = ARSIZE_M0 ;
+                            ARBURST_S0 = ARBURST_M0;
+                            // R channel
+                            RVALID_M0  = RVALID_S0;
+                            RREADY_S0  = RREADY_M0;
+                            RID_M0     = RID_S0[`AXI_ID_BITS-1:0];
+                            RDATA_M0   = RDATA_S0 ;
+                            RRESP_M0   = RRESP_S0 ;
+                            RLAST_M0   = RLAST_S0 ;
+                        end
+                        M1: begin // M1 - S0
+                            // AR channel
+                            ARVALID_S0 = ARVALID_M1;
+                            ARREADY_M1 = ARREADY_S0; 
+                            ARID_S0    = {4'b0, ARID_M1};
+                            ARADDR_S0  = ARADDR_M1 ;
+                            ARLEN_S0   = ARLEN_M1  ;
+                            ARSIZE_S0  = ARSIZE_M1 ;
+                            ARBURST_S0 = ARBURST_M1;
+                            // R channel
+                            RVALID_M1  = RVALID_S0;
+                            RREADY_S0  = RREADY_M1;
+                            RID_M1     = RID_S0[`AXI_ID_BITS-1:0];
+                            RDATA_M1   = RDATA_S0 ;
+                            RRESP_M1   = RRESP_S0 ;
+                            RLAST_M1   = RLAST_S0 ;
+                        end 
+                    endcase
+                end 
+                WRITE: begin // M1 - S0
+                    if (slave_status_n_s0.current_master == M1) begin
+                        // AW channel
+                        AWVALID_S0 = AWVALID_M1;
+                        AWREADY_M1 = AWREADY_S0;
+                        AWID_S0    = {4'b0, AWID_M1};
+                        AWADDR_S0  = AWADDR_M1 ;
+                        AWLEN_S0   = AWLEN_M1  ;
+                        AWSIZE_S0  = AWSIZE_M1 ;
+                        AWBURST_S0 = AWBURST_M1;
+                        // W channel
+                        WVALID_S0  = WVALID_M1;
+                        WREADY_M1  = WREADY_S0;
+                        WDATA_S0   = WDATA_M1 ;
+                        WSTRB_S0   = WSTRB_M1 ;
+                        WLAST_S0   = WLAST_M1 ;
+                        // B channel
+                        BVALID_M1  = BVALID_S0;
+                        BREADY_S0  = BREADY_M1;
+                        BID_M1     = BID_S0[`AXI_ID_BITS-1:0];
+                        BRESP_M1   = BRESP_S0 ;
+                    end
+                end 
+            endcase
         end
 
         if (slave_status_c_s1.busy) begin
@@ -469,6 +532,71 @@ module AXI (
                 end 
                 WRITE: begin // M1 - S1
                     if (slave_status_c_s1.current_master == M1) begin
+                        // AW channel
+                        AWVALID_S1 = AWVALID_M1;
+                        AWREADY_M1 = AWREADY_S1;
+                        AWID_S1    = {4'b0, AWID_M1};
+                        AWADDR_S1  = AWADDR_M1 ;
+                        AWLEN_S1   = AWLEN_M1  ;
+                        AWSIZE_S1  = AWSIZE_M1 ;
+                        AWBURST_S1 = AWBURST_M1;
+                        // W channel
+                        WVALID_S1  = WVALID_M1;
+                        WREADY_M1  = WREADY_S1;
+                        WDATA_S1   = WDATA_M1 ;
+                        WSTRB_S1   = WSTRB_M1 ;
+                        WLAST_S1   = WLAST_M1 ;
+                        // B channel
+                        BVALID_M1  = BVALID_S1;
+                        BREADY_S1  = BREADY_M1;
+                        BID_M1     = BID_S1[`AXI_ID_BITS-1:0];
+                        BRESP_M1   = BRESP_S1 ;
+                    end
+                end 
+            endcase
+        end 
+        else if (!slave_status_c_s1.busy & request_valid_s1) begin // combinational loop
+            case (slave_status_n_s1.transaction_type)
+                READ: begin
+                    case (slave_status_n_s1.current_master)
+                        M0: begin // M0 - S1
+                            // AR channel
+                            ARVALID_S1 = ARVALID_M0;
+                            ARREADY_M0 = ARREADY_S1; 
+                            ARID_S1    = {4'b0, ARID_M0};
+                            ARADDR_S1  = ARADDR_M0 ;
+                            ARLEN_S1   = ARLEN_M0  ;
+                            ARSIZE_S1  = ARSIZE_M0 ;
+                            ARBURST_S1 = ARBURST_M0;
+                            // R channel
+                            RVALID_M0  = RVALID_S1;
+                            RREADY_S1  = RREADY_M0;
+                            RID_M0     = RID_S1[`AXI_ID_BITS-1:0];
+                            RDATA_M0   = RDATA_S1 ;
+                            RRESP_M0   = RRESP_S1 ;
+                            RLAST_M0   = RLAST_S1 ;
+                        end
+                        M1: begin // M1 - S1
+                            // AR channel
+                            ARVALID_S1 = ARVALID_M1;
+                            ARREADY_M1 = ARREADY_S1; 
+                            ARID_S1    = {4'b0, ARID_M1};
+                            ARADDR_S1  = ARADDR_M1 ;
+                            ARLEN_S1   = ARLEN_M1  ;
+                            ARSIZE_S1  = ARSIZE_M1 ;
+                            ARBURST_S1 = ARBURST_M1;
+                            // R channel
+                            RVALID_M1  = RVALID_S1;
+                            RREADY_S1  = RREADY_M1;
+                            RID_M1     = RID_S1[`AXI_ID_BITS-1:0];
+                            RDATA_M1   = RDATA_S1 ;
+                            RRESP_M1   = RRESP_S1 ;
+                            RLAST_M1   = RLAST_S1 ;
+                        end 
+                    endcase
+                end 
+                WRITE: begin // M1 - S1
+                    if (slave_status_n_s1.current_master == M1) begin
                         // AW channel
                         AWVALID_S1 = AWVALID_M1;
                         AWREADY_M1 = AWREADY_S1;

@@ -16,7 +16,7 @@
 // 	Date:			2024/10/18								   		//
 // 	Version:		1.0	    								   		//
 //////////////////////////////////////////////////////////////////////
-`include "AXI_define.svh"
+`include "../include/AXI_define.svh"
 `include "CPU.sv"
 
 module CPU_wrapper(
