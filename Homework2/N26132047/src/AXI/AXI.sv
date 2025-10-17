@@ -229,7 +229,7 @@ module AXI (
         request_valid_s1 = 1'b0; request_type_s1 = READ; request_master_s1 = M0;
 
         // set up request?
-        /*
+        
         if (ARVALID_M0) begin
             case (decoded_AR_M0)
                 S0: begin request_valid_s0 = 1'b1; request_type_s0 = READ; request_master_s0 = M0; end
@@ -247,7 +247,7 @@ module AXI (
                 S0: begin request_valid_s0 = 1'b1; request_type_s0 = WRITE; request_master_s0 = M1; end
                 S1: begin request_valid_s1 = 1'b1; request_type_s1 = WRITE; request_master_s1 = M1; end
             endcase
-        end*/
+        end
 
         // check the highest priority can get the request
         if (master_priority_c == M0) begin

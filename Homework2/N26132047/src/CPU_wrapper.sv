@@ -336,7 +336,7 @@ module CPU_wrapper(
                     dm_wait  = 1'b0;
                 end
             end
-            default: D_state_n = IDLE;
+            default: D_state_n = IDLE; 
         endcase
     end
 

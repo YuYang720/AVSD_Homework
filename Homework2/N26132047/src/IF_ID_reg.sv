@@ -4,6 +4,7 @@ module IF_ID_reg (
     input logic        mem_wait,
     input logic        stall,
     input logic        flush,
+    
     input logic [31:0] IF_pc,
     input logic [31:0] IF_inst,
     input logic        IF_btb_b_hit,

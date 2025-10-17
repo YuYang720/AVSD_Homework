@@ -172,11 +172,24 @@ module CPU (
     assign IF_pc_plus_4 = IF_pc + 32'd4;
     assign EX_pc_plus_4 = EX_pc + 32'd4;
 
+    // M1找S0且上一個cycle發生load-use時，dm_wait會拉得比im_wait更長，導致資料回來前，M0就找抓下一個inst進來了
+    logic rst_released;
+    always_comb begin
+        im_request_o = 1'b0;
+        if (rst_released) begin
+            if (!im_wait_i && dm_wait_i) begin
+                im_request_o = 1'b0;
+            end else begin
+                im_request_o = 1'b1;
+            end
+        end
+    end
+
     always_ff @(posedge clk or posedge rst) begin
         if (rst) begin
-            im_request_o <= 1'b0;
-        end else begin
-            im_request_o <= 1'b1;
+            rst_released <= 1'b0;
+        end else begin 
+            rst_released <= 1'b1;
         end
     end
 

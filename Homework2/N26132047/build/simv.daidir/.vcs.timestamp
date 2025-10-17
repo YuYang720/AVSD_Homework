@@ -107,7 +107,7 @@ vip_dir=/home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/vip
 mraarch=linux_64
 installdir=/usr/cad/synopsys/hspice/2020.03-sp2-2/hspice
 XLOCALEDIR=/usr/cad/synopsys/icc2/2020.09-sp3/etc/locale
-XDG_SESSION_ID=34326
+XDG_SESSION_ID=36284
 XDG_RUNTIME_DIR=/run/user/4864
 VMR_MODE_FLAG=64
 VERDI_HOME=/usr/cad/synopsys/verdi/cur
@@ -131,9 +131,9 @@ SYNOPSYS_SYSTYPE=LINUX64_L31el
 SYNOPSYS_NCX_ROOT=/usr/cad/synopsys/star-rcxt/2023.12-sp2/
 SYNOPSYS_LC_ROOT=/usr/cad/synopsys/lc/cur/bin
 SYNOPSYS=/usr/cad/synopsys/synthesis/cur/
-SSH_TTY=/dev/pts/13
-SSH_CONNECTION=140.116.49.120 49945 192.168.200.12 22
-SSH_CLIENT=140.116.49.120 49945 22
+SSH_TTY=/dev/pts/35
+SSH_CONNECTION=140.116.49.120 49975 192.168.200.12 22
+SSH_CLIENT=140.116.49.120 49975 22
 SPAPI_AHDL_INCLUDE=/usr/cad/synopsys/hspice/2020.03-sp2-2/hspice/include
 SNPS_VCS_PYTHON3=/usr/cad/synopsys/vcs/cur/linux64/bin/Python-3.6.1/bin/python3
 SNPS_VCS_CLANG_PATH=/usr/cad/synopsys/vcs/cur/linux64/clang
@@ -184,16 +184,17 @@ CDPL_HOME=/usr/cad/synopsys/hspice/2020.03-sp2-2/hspice/cdpl
 CALIBRE_HOME=/usr/cad/mentor/calibre/aoi_cal_2019.2_26.18/
 0
 0
-31
+32
 1760423503 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/./sim/./SRAM/SRAM_rtl.sv
-1760529455 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/./src/AXI/AXI.sv
-1760410845 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/./src/SRAM_wrapper.sv
+1760365979 ../include/AXI_define.svh
+1760690320 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/./src/AXI/AXI.sv
+1760690278 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/./src/SRAM_wrapper.sv
 1760174118 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/./src/BHR_PHT.sv
 1760174118 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/./src/BTB.sv
-1760514291 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/./src/MEM_WB_reg.sv
+1760691083 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/./src/MEM_WB_reg.sv
 1760614246 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/./src/EX_MEM_reg.sv
 1760613385 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/./src/ID_EX_reg.sv
-1760611237 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/./src/IF_ID_reg.sv
+1760690918 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/./src/IF_ID_reg.sv
 1760618695 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/./src/FP_calculator.sv
 1760364774 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/./src/ALU.sv
 1760426521 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/./src/Register_File.sv
@@ -209,10 +210,10 @@ CALIBRE_HOME=/usr/cad/mentor/calibre/aoi_cal_2019.2_26.18/
 1760617690 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/./src/CSR_Unit.sv
 1760614240 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/./src/Controller.sv
 1760174118 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/./src/instruction_pkg.sv
-1760621685 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/./src/CPU.sv
+1760690522 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/./src/CPU.sv
 1760365979 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/./include/AXI_define.svh
-1760614243 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/./src/CPU_wrapper.sv
-1760410716 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/./src/top.sv
+1760626289 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/./src/CPU_wrapper.sv
+1760626549 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/./src/top.sv
 1727673525 /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/./sim/top_tb.sv
 1693225683 /usr/cad/synopsys/verdi/cur/share/PLI/VCS/LINUX64/verdi.tab
 1701102734 /usr/cad/synopsys/vcs/cur/linux64/lib/vcsdp_lite.tab
@@ -221,5 +222,5 @@ CALIBRE_HOME=/usr/cad/mentor/calibre/aoi_cal_2019.2_26.18/
 1701103518 /usr/cad/synopsys/vcs/cur/linux64/lib/liberrorinf.so
 1701103440 /usr/cad/synopsys/vcs/cur/linux64/lib/libsnpsmalloc.so
 1701103511 /usr/cad/synopsys/vcs/cur/linux64/lib/libvfs.so
-1760622156 simv.daidir
+1760691149 simv.daidir
 -1 partitionlib

@@ -26,32 +26,31 @@ module MEM_WB_reg (
             WB_rd      <= 5'b0;
             WB_cal_out <= 32'b0;
             WB_CSR_imm <= 12'b0;
-            // WB_ld_data <= 31'b0;
         end else if (mem_wait) begin
             WB_op      <= WB_op;
             WB_func3   <= WB_func3;
             WB_rd      <= WB_rd;
             WB_cal_out <= WB_cal_out;
             WB_CSR_imm <= WB_CSR_imm;
-            // WB_ld_data <= WB_ld_data;
         end else begin
             WB_op      <= MEM_op;
             WB_func3   <= MEM_func3;
             WB_rd      <= MEM_rd;
             WB_cal_out <= MEM_cal_out;
             WB_CSR_imm <= MEM_CSR_imm;
-            // WB_ld_data <= MEM_ld_data;
         end
     end
 
-    // assign WB_ld_data = (mem_wait) ? 32'b0 : MEM_ld_data;
+    assign WB_ld_data = MEM_ld_data;
 
-    always_ff @(posedge clk or posedge rst) begin
-        if (rst) begin
-            WB_ld_data <= 32'b0; 
-        end else if (!dm_wait) begin
-            WB_ld_data <= MEM_ld_data;
-        end
-    end
+    // 原本 1 inst 4 clock以下設計為正常，但改 3 clock後
+    // 慢近來會導致 forwarding 抓到上一個 wb_data 
+    // always_ff @(posedge clk or posedge rst) begin
+    //     if (rst) begin
+    //         WB_ld_data <= 32'b0; 
+    //     end else if (!dm_wait) begin
+    //         WB_ld_data <= MEM_ld_data;
+    //     end
+    // end
 
 endmodule
