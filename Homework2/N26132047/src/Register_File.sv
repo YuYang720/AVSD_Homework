@@ -20,9 +20,8 @@ module Register_File (
     // Write
     always_ff @(posedge clk or posedge rst) begin
         if (rst) begin
-            register[0] <= 32'b0;
-            for (int i = 1; i < 32; i++) begin
-                register[i] <= 32'bx;
+            for (int i = 0; i < 32; i++) begin
+                register[i] <= 32'b0;
             end
         end else if (w_en && rd_index != 5'd0) begin
             register[rd_index] <= w_data;

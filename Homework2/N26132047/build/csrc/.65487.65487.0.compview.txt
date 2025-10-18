@@ -1,0 +1,9 @@
+{"vcs1":{"timestamp_begin":1760774279.136521991, "rt":3.83, "ut":3.07, "st":0.36}}
+{"vcselab":{"timestamp_begin":1760774283.034030167, "rt":1.64, "ut":1.23, "st":0.07}}
+{"link":{"timestamp_begin":1760774284.729445257, "rt":0.52, "ut":0.29, "st":0.14}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1760774278.681969499}
+{"VCS_COMP_START_TIME": 1760774278.681969499}
+{"VCS_COMP_END_TIME": 1760774294.819335187}
+{"VCS_USER_OPTIONS": "-R -sverilog +neg_tchk -negdelay -v /usr/cad/CBDK/Executable_Package/Collaterals/IP/stdcell/N16ADFP_StdCell/VERILOG/N16ADFP_StdCell.v /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/./sim/top_tb.sv -debug_access+all -full64 -diag=sdf:verbose +incdir+/home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/./syn+/home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/./src+/home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/./src/AXI+/home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/./include+/home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/./sim +define+SYN+prog0 +define+CYCLE=1.02 +define+MAX=300000 +prog_path=/home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/./sim/prog0 +rdcycle=1"}
+{"vcs1": {"peak_mem": 419336}}
+{"vcselab": {"peak_mem": 268776}}
