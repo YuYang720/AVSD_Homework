@@ -16,12 +16,15 @@ module ALU (
         .fp_result(fp_result)
     );
 
+    wire [31:0] operand_A2 = (op == `JAL || op == `JALR) ? 32'd4 : ((op == `R_type && func7[5]) ? ~operand2 + 32'd1 : operand2); 
+    wire [31:0] ADD_result = operand1 + operand_A2;
+
     always_comb begin
         case(op)
         // for R_type func7 define add/sub, I_type always add
         `R_type, `I_arth: begin
             case(func3)
-                `ADD_SUB: alu_out = (op == `R_type && func7[5]) ? (operand1 - operand2) : (operand1 + operand2);
+                `ADD_SUB: alu_out = ADD_result;
                 `SLL:     alu_out = operand1 << operand2[4:0];
                 `SLT:     alu_out = {{31{1'b0}}, ($signed(operand1) < $signed(operand2))};
                 `SLTU:    alu_out = {{31{1'b0}}, (operand1 < operand2)};
@@ -44,8 +47,8 @@ module ALU (
         end
         `LUI:             alu_out = operand2; 
         `F_arth:          alu_out = fp_result;
-        `JAL, `JALR:      alu_out = operand1 + 32'd4;
-        `AUIPC, `I_load, `S_type, `F_FLW, `F_FSW: alu_out = operand1 + operand2;
+        `JAL, `JALR,
+        `AUIPC, `I_load, `S_type, `F_FLW, `F_FSW: alu_out = ADD_result;
         default:          alu_out = 32'b0;
         endcase
     end

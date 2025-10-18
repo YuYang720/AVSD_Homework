@@ -3,7 +3,7 @@
 Report : area
 Design : top
 Version: P-2019.03-SP1-1
-Date   : Sat Oct 18 16:36:21 2025
+Date   : Sat Oct 18 21:21:49 2025
 ****************************************
 
 Library(s) Used:
@@ -12,20 +12,20 @@ Library(s) Used:
     SRAM_ss0p72v0p72vm40c_100a (File: /home/user1/avsd25/avsd2541/AVSD_Homework/Homework2/N26132047/sim/SRAM/SRAM_ss0p72v0p72vm40c_100a.db)
 
 Number of ports:                         7157
-Number of nets:                         31628
-Number of cells:                        24451
-Number of combinational cells:          21089
+Number of nets:                         31530
+Number of cells:                        24360
+Number of combinational cells:          20998
 Number of sequential cells:              3304
 Number of macros/black boxes:               2
-Number of buf/inv:                       4931
-Number of references:                       8
+Number of buf/inv:                       4821
+Number of references:                      10
 
-Combinational area:               7486.577453
-Buf/Inv area:                     1052.559384
-Noncombinational area:            3778.358538
+Combinational area:               7493.938732
+Buf/Inv area:                     1027.572503
+Noncombinational area:            3369.237201
 Macro/Black Box area:             9082.750000
 Net Interconnect area:      undefined  (Wire load has zero net area)
 
-Total cell area:                 20347.685992
+Total cell area:                 19945.925933
 Total area:                 undefined
 1

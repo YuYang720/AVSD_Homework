@@ -2,9 +2,9 @@ Warning: The trip points for the library named SRAM_ss0p72v0p72vm40c_100a differ
 Information: Updating design information... (UID-85)
 Warning: Design 'top' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
 Information: Timing loop detected. (OPT-150)
-	cpu_wrapper/U1000/B2 cpu_wrapper/U1000/ZN cpu_wrapper/U1562/A1 cpu_wrapper/U1562/ZN axi/U390/A1 axi/U390/ZN axi/U320/A1 axi/U320/ZN axi/U397/I axi/U397/ZN axi/U20/A1 axi/U20/ZN axi/U377/I axi/U377/ZN axi/U345/A1 axi/U345/ZN axi/U305/A1 axi/U305/ZN axi/U469/B axi/U469/ZN axi/U187/A2 axi/U187/ZN axi/U470/I axi/U470/ZN cpu_wrapper/U1075/A1 cpu_wrapper/U1075/ZN cpu_wrapper/U1049/B1 cpu_wrapper/U1049/ZN cpu_wrapper/cpu/U6/A2 cpu_wrapper/cpu/U6/Z cpu_wrapper/cpu/controller/U108/A1 cpu_wrapper/cpu/controller/U108/ZN 
+	cpu_wrapper/cpu/U6/A2 cpu_wrapper/cpu/U6/Z cpu_wrapper/cpu/U158/I cpu_wrapper/cpu/U158/Z cpu_wrapper/cpu/controller/U96/A1 cpu_wrapper/cpu/controller/U96/ZN cpu_wrapper/U701/A3 cpu_wrapper/U701/ZN cpu_wrapper/U1267/A1 cpu_wrapper/U1267/ZN axi/U399/A1 axi/U399/Z axi/U279/I axi/U279/ZN axi/U278/A1 axi/U278/ZN axi/U400/I axi/U400/ZN axi/U20/A1 axi/U20/ZN axi/U397/I axi/U397/ZN axi/U345/A1 axi/U345/ZN axi/U305/A1 axi/U305/ZN axi/U308/B axi/U308/ZN axi/U187/A2 axi/U187/ZN axi/U389/I axi/U389/ZN cpu_wrapper/U690/A1 cpu_wrapper/U690/ZN cpu_wrapper/U660/A1 cpu_wrapper/U660/ZN 
 Information: Timing loop detected. (OPT-150)
-	cpu_wrapper/U1081/B2 cpu_wrapper/U1081/ZN cpu_wrapper/U1563/A1 cpu_wrapper/U1563/ZN axi/U422/I axi/U422/ZN axi/U390/B1 axi/U390/ZN axi/U320/A1 axi/U320/ZN axi/U397/I axi/U397/ZN axi/U20/A1 axi/U20/ZN axi/U377/I axi/U377/ZN axi/U345/A1 axi/U345/ZN axi/U305/A1 axi/U305/ZN axi/U469/B axi/U469/ZN axi/U187/A2 axi/U187/ZN axi/U470/I axi/U470/ZN cpu_wrapper/U1075/A1 cpu_wrapper/U1075/ZN cpu_wrapper/U1049/B1 cpu_wrapper/U1049/ZN cpu_wrapper/cpu/U6/A2 cpu_wrapper/cpu/U6/Z cpu_wrapper/cpu/controller/U108/A1 cpu_wrapper/cpu/controller/U108/ZN 
+	cpu_wrapper/U758/I cpu_wrapper/U758/Z cpu_wrapper/U639/A1 cpu_wrapper/U639/ZN axi/U1006/I axi/U1006/ZN axi/U938/A1 axi/U938/ZN axi/U920/A1 axi/U920/ZN axi/U921/A1 axi/U921/ZN axi/U445/A1 axi/U445/ZN axi/U443/A1 axi/U443/Z axi/U23/A1 axi/U23/ZN axi/U22/A1 axi/U22/ZN axi/U20/A2 axi/U20/ZN axi/U397/I axi/U397/ZN axi/U345/A1 axi/U345/ZN axi/U305/A1 axi/U305/ZN axi/U308/B axi/U308/ZN axi/U187/A2 axi/U187/ZN axi/U389/I axi/U389/ZN cpu_wrapper/U690/A1 cpu_wrapper/U690/ZN cpu_wrapper/U660/A1 cpu_wrapper/U660/ZN cpu_wrapper/cpu/U149/A1 cpu_wrapper/cpu/U149/ZN cpu_wrapper/U724/A1 cpu_wrapper/U724/ZN cpu_wrapper/U792/I cpu_wrapper/U792/ZN 
 Warning: Disabling timing arc between pins 'A2' and 'Z' on cell 'cpu_wrapper/cpu/U6'
          to break a timing loop. (OPT-314)
 Warning: Disabling timing arc between pins 'A1' and 'ZN' on cell 'axi/U445'
@@ -15,85 +15,61 @@ Warning: Disabling timing arc between pins 'A1' and 'ZN' on cell 'axi/U16'
          to break a timing loop. (OPT-314)
 Warning: Disabling timing arc between pins 'A1' and 'ZN' on cell 'axi/U16'
          to break a timing loop. (OPT-314)
-Warning: Disabling timing arc between pins 'A2' and 'Z' on cell 'cpu_wrapper/cpu/U30'
-         to break a timing loop. (OPT-314)
-Warning: Disabling timing arc between pins 'A2' and 'Z' on cell 'cpu_wrapper/cpu/U30'
-         to break a timing loop. (OPT-314)
-Warning: Disabling timing arc between pins 'A2' and 'Z' on cell 'cpu_wrapper/cpu/U30'
+Warning: Disabling timing arc between pins 'A2' and 'Z' on cell 'axi/U443'
          to break a timing loop. (OPT-314)
 Warning: Disabling timing arc between pins 'A3' and 'ZN' on cell 'axi/U23'
          to break a timing loop. (OPT-314)
-Warning: Disabling timing arc between pins 'A1' and 'ZN' on cell 'axi/U442'
-         to break a timing loop. (OPT-314)
-Warning: Disabling timing arc between pins 'A3' and 'ZN' on cell 'axi/U187'
-         to break a timing loop. (OPT-314)
-Warning: Disabling timing arc between pins 'A3' and 'ZN' on cell 'axi/U187'
-         to break a timing loop. (OPT-314)
-Warning: Disabling timing arc between pins 'A3' and 'ZN' on cell 'axi/U187'
-         to break a timing loop. (OPT-314)
-Warning: Disabling timing arc between pins 'A2' and 'Z' on cell 'axi/U443'
-         to break a timing loop. (OPT-314)
-Warning: Disabling timing arc between pins 'B2' and 'Z' on cell 'cpu_wrapper/cpu/U30'
-         to break a timing loop. (OPT-314)
-Warning: Disabling timing arc between pins 'B2' and 'Z' on cell 'cpu_wrapper/cpu/U30'
-         to break a timing loop. (OPT-314)
-Warning: Disabling timing arc between pins 'B2' and 'Z' on cell 'cpu_wrapper/cpu/U30'
-         to break a timing loop. (OPT-314)
-Warning: Disabling timing arc between pins 'B1' and 'ZN' on cell 'axi/U16'
-         to break a timing loop. (OPT-314)
-Warning: Disabling timing arc between pins 'B1' and 'ZN' on cell 'axi/U16'
-         to break a timing loop. (OPT-314)
-Warning: Disabling timing arc between pins 'B1' and 'ZN' on cell 'axi/U16'
-         to break a timing loop. (OPT-314)
-Warning: Disabling timing arc between pins 'B1' and 'ZN' on cell 'axi/U16'
-         to break a timing loop. (OPT-314)
-Warning: Disabling timing arc between pins 'B1' and 'ZN' on cell 'axi/U16'
-         to break a timing loop. (OPT-314)
-Warning: Disabling timing arc between pins 'B1' and 'ZN' on cell 'axi/U16'
-         to break a timing loop. (OPT-314)
-Warning: Disabling timing arc between pins 'B1' and 'ZN' on cell 'axi/U16'
-         to break a timing loop. (OPT-314)
-Warning: Disabling timing arc between pins 'A3' and 'ZN' on cell 'axi/U20'
-         to break a timing loop. (OPT-314)
-Warning: Disabling timing arc between pins 'A3' and 'ZN' on cell 'axi/U20'
-         to break a timing loop. (OPT-314)
-Warning: Disabling timing arc between pins 'A3' and 'ZN' on cell 'axi/U20'
-         to break a timing loop. (OPT-314)
 Warning: Disabling timing arc between pins 'A2' and 'ZN' on cell 'axi/U22'
          to break a timing loop. (OPT-314)
-Warning: Disabling timing arc between pins 'A2' and 'Z' on cell 'cpu_wrapper/cpu/U29'
-         to break a timing loop. (OPT-314)
-Warning: Disabling timing arc between pins 'A2' and 'Z' on cell 'cpu_wrapper/cpu/U29'
-         to break a timing loop. (OPT-314)
-Warning: Disabling timing arc between pins 'A2' and 'Z' on cell 'cpu_wrapper/cpu/U29'
-         to break a timing loop. (OPT-314)
 Warning: Disabling timing arc between pins 'A3' and 'ZN' on cell 'axi/U3'
          to break a timing loop. (OPT-314)
 Warning: Disabling timing arc between pins 'A3' and 'ZN' on cell 'axi/U3'
          to break a timing loop. (OPT-314)
 Warning: Disabling timing arc between pins 'A3' and 'ZN' on cell 'axi/U3'
          to break a timing loop. (OPT-314)
-Warning: Disabling timing arc between pins 'B1' and 'ZN' on cell 'axi/U20'
+Warning: Disabling timing arc between pins 'A1' and 'ZN' on cell 'axi/U442'
          to break a timing loop. (OPT-314)
-Warning: Disabling timing arc between pins 'B1' and 'ZN' on cell 'axi/U20'
+Warning: Disabling timing arc between pins 'A3' and 'ZN' on cell 'axi/U20'
          to break a timing loop. (OPT-314)
-Warning: Disabling timing arc between pins 'B1' and 'ZN' on cell 'axi/U20'
+Warning: Disabling timing arc between pins 'A3' and 'ZN' on cell 'axi/U20'
          to break a timing loop. (OPT-314)
-Warning: Disabling timing arc between pins 'B1' and 'ZN' on cell 'axi/U20'
-         to break a timing loop. (OPT-314)
-Warning: Disabling timing arc between pins 'B1' and 'ZN' on cell 'axi/U20'
-         to break a timing loop. (OPT-314)
-Warning: Disabling timing arc between pins 'B1' and 'ZN' on cell 'axi/U20'
-         to break a timing loop. (OPT-314)
-Warning: Disabling timing arc between pins 'B1' and 'ZN' on cell 'axi/U20'
-         to break a timing loop. (OPT-314)
-Warning: Disabling timing arc between pins 'B1' and 'ZN' on cell 'axi/U345'
-         to break a timing loop. (OPT-314)
-Warning: Disabling timing arc between pins 'A2' and 'ZN' on cell 'axi/U305'
+Warning: Disabling timing arc between pins 'A3' and 'ZN' on cell 'axi/U20'
          to break a timing loop. (OPT-314)
 Warning: Disabling timing arc between pins 'B1' and 'ZN' on cell 'axi/U17'
          to break a timing loop. (OPT-314)
-Warning: Disabling timing arc between pins 'B1' and 'ZN' on cell 'axi/U3'
+Warning: Disabling timing arc between pins 'A3' and 'ZN' on cell 'axi/U187'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A3' and 'ZN' on cell 'axi/U187'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A3' and 'ZN' on cell 'axi/U187'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B1' and 'ZN' on cell 'axi/U20'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B1' and 'ZN' on cell 'axi/U20'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B1' and 'ZN' on cell 'axi/U20'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B1' and 'ZN' on cell 'axi/U20'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B1' and 'ZN' on cell 'axi/U20'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B1' and 'ZN' on cell 'axi/U20'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B1' and 'ZN' on cell 'axi/U20'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B1' and 'ZN' on cell 'axi/U16'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B1' and 'ZN' on cell 'axi/U16'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B1' and 'ZN' on cell 'axi/U16'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B1' and 'ZN' on cell 'axi/U16'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B1' and 'ZN' on cell 'axi/U16'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B1' and 'ZN' on cell 'axi/U16'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B1' and 'ZN' on cell 'axi/U16'
          to break a timing loop. (OPT-314)
 Warning: Disabling timing arc between pins 'B1' and 'ZN' on cell 'axi/U3'
          to break a timing loop. (OPT-314)
@@ -107,11 +83,7 @@ Warning: Disabling timing arc between pins 'B1' and 'ZN' on cell 'axi/U3'
          to break a timing loop. (OPT-314)
 Warning: Disabling timing arc between pins 'B1' and 'ZN' on cell 'axi/U3'
          to break a timing loop. (OPT-314)
-Warning: Disabling timing arc between pins 'B2' and 'Z' on cell 'cpu_wrapper/cpu/U29'
-         to break a timing loop. (OPT-314)
-Warning: Disabling timing arc between pins 'B2' and 'Z' on cell 'cpu_wrapper/cpu/U29'
-         to break a timing loop. (OPT-314)
-Warning: Disabling timing arc between pins 'B2' and 'Z' on cell 'cpu_wrapper/cpu/U29'
+Warning: Disabling timing arc between pins 'B1' and 'ZN' on cell 'axi/U3'
          to break a timing loop. (OPT-314)
 Warning: Disabling timing arc between pins 'B1' and 'ZN' on cell 'axi/U338'
          to break a timing loop. (OPT-314)
@@ -123,6 +95,10 @@ Warning: Disabling timing arc between pins 'C' and 'ZN' on cell 'axi/U336'
          to break a timing loop. (OPT-314)
 Warning: Disabling timing arc between pins 'C' and 'ZN' on cell 'axi/U336'
          to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'B1' and 'ZN' on cell 'axi/U345'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A2' and 'ZN' on cell 'axi/U305'
+         to break a timing loop. (OPT-314)
  
 ****************************************
 Report : timing
@@ -132,7 +108,7 @@ Report : timing
         -sort_by group
 Design : top
 Version: P-2019.03-SP1-1
-Date   : Sat Oct 18 16:36:21 2025
+Date   : Sat Oct 18 21:21:49 2025
 ****************************************
 
  # A fanout number of 1000 was used for high fanout net computations.
@@ -141,7 +117,7 @@ Operating Conditions: ss0p72vm40c   Library: N16ADFP_StdCellss0p72vm40c
 Wire Load Model Mode: segmented
 
   Startpoint: rst (input port clocked by clk)
-  Endpoint: IM1/i_SRAM (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: DM1/i_SRAM (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: max
 
@@ -149,82 +125,90 @@ Wire Load Model Mode: segmented
   ------------------------------------------------
   top                ZeroWireload          N16ADFP_StdCellss0p72vm40c
   CPU_wrapper        ZeroWireload          N16ADFP_StdCellss0p72vm40c
-  IF_ID_reg          ZeroWireload          N16ADFP_StdCellss0p72vm40c
-  Controller         ZeroWireload          N16ADFP_StdCellss0p72vm40c
   CPU                ZeroWireload          N16ADFP_StdCellss0p72vm40c
+  IF_ID_reg          ZeroWireload          N16ADFP_StdCellss0p72vm40c
   Decoder            ZeroWireload          N16ADFP_StdCellss0p72vm40c
+  Controller         ZeroWireload          N16ADFP_StdCellss0p72vm40c
   AXI                ZeroWireload          N16ADFP_StdCellss0p72vm40c
-  SRAM_wrapper_1     ZeroWireload          N16ADFP_StdCellss0p72vm40c
+  SRAM_wrapper_0     ZeroWireload          N16ADFP_StdCellss0p72vm40c
 
   Point                                                   Incr       Path
   --------------------------------------------------------------------------
   clock clk (rise edge)                                 0.0000     0.0000
   clock network delay (ideal)                           0.2000     0.2000
-  input external delay                                  0.6600     0.8600 r
-  rst (in)                                              0.0029     0.8629 r
-  U4/ZN (CKND2BWP16P90LVT)                              0.0061     0.8691 f
-  cpu_wrapper/ARESETn (CPU_wrapper)                     0.0000     0.8691 f
-  cpu_wrapper/U1011/ZN (INVD4BWP16P90LVT)               0.0065     0.8756 r
-  cpu_wrapper/cpu/rst (CPU)                             0.0000     0.8756 r
-  cpu_wrapper/cpu/Reg_IF_ID/rst (IF_ID_reg)             0.0000     0.8756 r
-  cpu_wrapper/cpu/Reg_IF_ID/U12/ZN (INVD4BWP16P90LVT)   0.0053     0.8809 f
-  cpu_wrapper/cpu/Reg_IF_ID/U80/ZN (IND2D2BWP16P90LVT)
-                                                        0.0073     0.8882 r
-  cpu_wrapper/cpu/Reg_IF_ID/U79/ZN (OAI22D1BWP16P90LVT)
-                                                        0.0131     0.9013 f
-  cpu_wrapper/cpu/Reg_IF_ID/ID_inst[5] (IF_ID_reg)      0.0000     0.9013 f
-  cpu_wrapper/cpu/DEC/ID_inst[5] (Decoder)              0.0000     0.9013 f
-  cpu_wrapper/cpu/DEC/U8/Z (BUFFD4BWP16P90LVT)          0.0133     0.9146 f
-  cpu_wrapper/cpu/DEC/ID_op[5] (Decoder)                0.0000     0.9146 f
-  cpu_wrapper/cpu/controller/ID_op[5] (Controller)      0.0000     0.9146 f
-  cpu_wrapper/cpu/controller/U102/ZN (CKNR2D4BWP16P90LVT)
-                                                        0.0051     0.9197 r
-  cpu_wrapper/cpu/controller/U66/ZN (CKND2BWP16P90LVT)
-                                                        0.0052     0.9250 f
-  cpu_wrapper/cpu/controller/U103/ZN (NR3D4BWP16P90LVT)
-                                                        0.0111     0.9361 r
-  cpu_wrapper/cpu/controller/U13/ZN (IND3D4BWP16P90LVT)
-                                                        0.0090     0.9451 f
-  cpu_wrapper/cpu/controller/U8/ZN (AOI31D2BWP16P90LVT)
-                                                        0.0091     0.9543 r
-  cpu_wrapper/cpu/controller/U3/ZN (OAI211D2BWP16P90LVT)
-                                                        0.0127     0.9670 f
-  cpu_wrapper/cpu/controller/U30/ZN (OAI21D4BWP16P90LVT)
-                                                        0.0085     0.9755 r
+  input external delay                                  0.6120     0.8120 f
+  rst (in)                                              0.0029     0.8149 f
+  U5/ZN (CKND2BWP16P90LVT)                              0.0064     0.8213 r
+  cpu_wrapper/ARESETn (CPU_wrapper)                     0.0000     0.8213 r
+  cpu_wrapper/U50/ZN (INVD4BWP16P90LVT)                 0.0060     0.8273 f
+  cpu_wrapper/cpu/rst (CPU)                             0.0000     0.8273 f
+  cpu_wrapper/cpu/U16/ZN (CKND8BWP16P90LVT)             0.0058     0.8331 r
+  cpu_wrapper/cpu/U14/ZN (CKND12BWP16P90LVT)            0.0045     0.8376 f
+  cpu_wrapper/cpu/Reg_IF_ID/rst (IF_ID_reg)             0.0000     0.8376 f
+  cpu_wrapper/cpu/Reg_IF_ID/U21/Z (OR2D4BWP16P90LVT)    0.0154     0.8531 f
+  cpu_wrapper/cpu/Reg_IF_ID/U47/ZN (OAI221D2BWP16P90LVT)
+                                                        0.0117     0.8648 r
+  cpu_wrapper/cpu/Reg_IF_ID/ID_inst[1] (IF_ID_reg)      0.0000     0.8648 r
+  cpu_wrapper/cpu/DEC/ID_inst[1] (Decoder)              0.0000     0.8648 r
+  cpu_wrapper/cpu/DEC/U5/Z (BUFFD4BWP16P90LVT)          0.0126     0.8773 r
+  cpu_wrapper/cpu/DEC/ID_op[1] (Decoder)                0.0000     0.8773 r
+  cpu_wrapper/cpu/controller/ID_op[1] (Controller)      0.0000     0.8773 r
+  cpu_wrapper/cpu/controller/U76/ZN (IND3D4BWP16P90LVT)
+                                                        0.0096     0.8869 f
+  cpu_wrapper/cpu/controller/U7/ZN (CKND2BWP16P90LVT)   0.0065     0.8934 r
+  cpu_wrapper/cpu/controller/U12/ZN (IND4D2BWP16P90LVT)
+                                                        0.0115     0.9050 f
+  cpu_wrapper/cpu/controller/U17/ZN (AOI31D2BWP16P90LVT)
+                                                        0.0096     0.9145 r
+  cpu_wrapper/cpu/controller/U77/ZN (OAI211D2BWP16P90LVT)
+                                                        0.0089     0.9235 f
+  cpu_wrapper/cpu/controller/U56/ZN (CKNR2D2BWP16P90LVT)
+                                                        0.0078     0.9313 r
+  cpu_wrapper/cpu/controller/U55/ZN (CKND2D2BWP16P90LVT)
+                                                        0.0087     0.9400 f
+  cpu_wrapper/cpu/controller/U48/ZN (ND2D4BWP16P90LVT)
+                                                        0.0077     0.9476 r
   cpu_wrapper/cpu/controller/load_use_stall (Controller)
-                                                        0.0000     0.9755 r
-  cpu_wrapper/cpu/U40/Z (BUFFD4BWP16P90LVT)             0.0127     0.9882 r
-  cpu_wrapper/cpu/U41/Z (MUX2D1BWP16P90LVT)             0.0165     1.0048 f
-  cpu_wrapper/cpu/im_pc_o[22] (CPU)                     0.0000     1.0048 f
-  cpu_wrapper/U1063/ZN (IOA22D4BWP16P90LVT)             0.0152     1.0200 f
-  cpu_wrapper/ARADDR_M0[22] (CPU_wrapper)               0.0000     1.0200 f
-  axi/ARADDR_M0[22] (AXI)                               0.0000     1.0200 f
-  axi/U246/ZN (NR4D4BWP16P90LVT)                        0.0157     1.0357 r
-  axi/U237/ZN (AOI32D2BWP16P90LVT)                      0.0166     1.0523 f
-  axi/AWREADY_M1 (AXI)                                  0.0000     1.0523 f
-  cpu_wrapper/AWREADY_M1 (CPU_wrapper)                  0.0000     1.0523 f
-  cpu_wrapper/U891/ZN (CKND2BWP16P90LVT)                0.0068     1.0591 r
-  cpu_wrapper/U890/ZN (OAI21D2BWP16P90LVT)              0.0082     1.0673 f
-  cpu_wrapper/WVALID_M1 (CPU_wrapper)                   0.0000     1.0673 f
-  axi/WVALID_M1 (AXI)                                   0.0000     1.0673 f
-  axi/U250/ZN (INR2D4BWP16P90LVT)                       0.0135     1.0807 f
-  axi/WVALID_S0 (AXI)                                   0.0000     1.0807 f
-  IM1/WVALID_S (SRAM_wrapper_1)                         0.0000     1.0807 f
-  IM1/U243/ZN (AOI21D2BWP16P90LVT)                      0.0099     1.0907 r
-  IM1/i_SRAM/CEB (TS1N16ADFPCLLLVTA512X45M4SWSHOD)      0.0000     1.0907 r
-  data arrival time                                                1.0907
+                                                        0.0000     0.9476 r
+  cpu_wrapper/cpu/U144/ZN (INVD4BWP16P90LVT)            0.0079     0.9555 f
+  cpu_wrapper/cpu/U41/ZN (CKND2BWP16P90LVT)             0.0084     0.9640 r
+  cpu_wrapper/cpu/U40/ZN (INVD1BWP16P90LVT)             0.0091     0.9731 f
+  cpu_wrapper/cpu/U31/ZN (INVD4BWP16P90LVT)             0.0119     0.9850 r
+  cpu_wrapper/cpu/U47/ZN (CKND1BWP16P90)                0.0115     0.9965 f
+  cpu_wrapper/cpu/U30/Z (AO22D1BWP16P90LVT)             0.0163     1.0128 f
+  cpu_wrapper/cpu/im_pc_o[18] (CPU)                     0.0000     1.0128 f
+  cpu_wrapper/U849/ZN (INVD1BWP16P90LVT)                0.0091     1.0219 r
+  cpu_wrapper/U611/ZN (OAI22D4BWP16P90LVT)              0.0081     1.0300 f
+  cpu_wrapper/ARADDR_M0[18] (CPU_wrapper)               0.0000     1.0300 f
+  axi/ARADDR_M0[18] (AXI)                               0.0000     1.0300 f
+  axi/U1010/ZN (CKND1BWP16P90)                          0.0161     1.0461 r
+  axi/U322/ZN (IND4D2BWP16P90LVT)                       0.0145     1.0606 f
+  axi/U919/ZN (NR3D1BWP16P90LVT)                        0.0123     1.0729 r
+  axi/U367/ZN (IAO21D1BWP16P90LVT)                      0.0075     1.0804 f
+  axi/AWREADY_M1 (AXI)                                  0.0000     1.0804 f
+  cpu_wrapper/AWREADY_M1 (CPU_wrapper)                  0.0000     1.0804 f
+  cpu_wrapper/U1185/ZN (CKND2BWP16P90LVT)               0.0084     1.0888 r
+  cpu_wrapper/U640/ZN (OAI21D4BWP16P90LVT)              0.0089     1.0977 f
+  cpu_wrapper/WVALID_M1 (CPU_wrapper)                   0.0000     1.0977 f
+  axi/WVALID_M1 (AXI)                                   0.0000     1.0977 f
+  axi/U313/ZN (INR2D4BWP16P90LVT)                       0.0157     1.1134 f
+  axi/WVALID_S1 (AXI)                                   0.0000     1.1134 f
+  DM1/WVALID_S (SRAM_wrapper_0)                         0.0000     1.1134 f
+  DM1/U204/ZN (AOI21D2BWP16P90LVT)                      0.0096     1.1231 r
+  DM1/i_SRAM/CEB (TS1N16ADFPCLLLVTA512X45M4SWSHOD)      0.0000     1.1231 r
+  data arrival time                                                1.1231
 
-  clock clk (rise edge)                                 1.1000     1.1000
-  clock network delay (ideal)                           0.2000     1.3000
-  clock uncertainty                                    -0.0200     1.2800
-  IM1/i_SRAM/CLK (TS1N16ADFPCLLLVTA512X45M4SWSHOD)      0.0000     1.2800 r
-  library setup time                                   -0.1895     1.0905
-  data required time                                               1.0905
+  clock clk (rise edge)                                 1.0200     1.0200
+  clock network delay (ideal)                           0.2000     1.2200
+  clock uncertainty                                    -0.0200     1.2000
+  DM1/i_SRAM/CLK (TS1N16ADFPCLLLVTA512X45M4SWSHOD)      0.0000     1.2000 r
+  library setup time                                   -0.1894     1.0106
+  data required time                                               1.0106
   --------------------------------------------------------------------------
-  data required time                                               1.0905
-  data arrival time                                               -1.0907
+  data required time                                               1.0106
+  data arrival time                                               -1.1231
   --------------------------------------------------------------------------
-  slack (VIOLATED)                                                -0.0001
+  slack (VIOLATED)                                                -0.1125
 
 
 1

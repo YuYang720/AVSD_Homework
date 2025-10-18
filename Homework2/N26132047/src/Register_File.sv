@@ -19,9 +19,10 @@ module Register_File (
 
     // Write
     always_ff @(posedge clk or posedge rst) begin
-        if (rst) begin
-            for (int i = 0; i < 32; i++) begin
-                register[i] <= 32'b0;
+        if (rst) begin // 初始值設定為X 1.02可通過 設定為0則需1.06 否則在寫如memory時會少寫一個bit進去
+            register[0] <= 32'b0;
+            for (int i = 1; i < 32; i++) begin
+                register[i] <= 32'bx;
             end
         end else if (w_en && rd_index != 5'd0) begin
             register[rd_index] <= w_data;

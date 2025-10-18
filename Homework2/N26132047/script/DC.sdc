@@ -4,7 +4,7 @@
 # Setting Clock freq & some parameter
 #=====================================================================
 
-set clk_period 1.1
+set clk_period 1.02
 set input_max   [expr {double(round(1000*$clk_period * 0.6))/1000}]
 set input_min   [expr {double(round(1000*$clk_period * 0.0))/1000}]
 set output_max  [expr {double(round(1000*$clk_period * 0.1))/1000}]
@@ -21,6 +21,8 @@ set_clock_uncertainty  0.02  [get_clocks clk]
 set_clock_latency      0.2   [get_clocks clk]
 set_clock_latency -source 0  [get_clocks clk]
 set_ideal_network            [get_clocks clk]
+
+
 set_input_transition   0.2   [all_inputs]
 set_clock_transition   0.1   [get_clocks clk]
 
